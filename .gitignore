@@ -1,0 +1,4 @@
+.firecrawl/
+*.key
+fc_key
+.env
