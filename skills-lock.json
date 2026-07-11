@@ -360,6 +360,72 @@
       "sourceType": "github",
       "skillPath": "skills/xlsx/SKILL.md",
       "computedHash": "efd0c8011cf0677d8075cf93867ecec804f9a8754a777e1d2fdb46197e9c247f"
+    },
+    "apply-profile-reader": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-profile-reader/SKILL.md",
+      "computedHash": "e877b831a943f24aebaed8b0f057d776591bad4e0cff3385daadce178a83b697"
+    },
+    "apply-program-fit-mapper": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-program-fit-mapper/SKILL.md",
+      "computedHash": "9f572776c793a5f970f60183a6a09979e4a6b0e56c667b83c8210f2bd9aac08b"
+    },
+    "apply-research-direction-mapper": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-research-direction-mapper/SKILL.md",
+      "computedHash": "c1f14028b2fcc497a7c49c028c9c02203ab5a40d336de4fe2256b99d50269a2d"
+    },
+    "apply-motivation-keeper": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-motivation-keeper/SKILL.md",
+      "computedHash": "81581a6b6f95e2a8ac7cd80c5a1387b8ea194adfdc7a540ea4ea37e00eb8c18d"
+    },
+    "apply-cv-builder": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-cv-builder/SKILL.md",
+      "computedHash": "6844c02d2ca03309e6287115d8b064a34372cecdb13c5583519fd0b8e3730ee0"
+    },
+    "apply-sop-writer": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-sop-writer/SKILL.md",
+      "computedHash": "b754291d9d25a3d5634cf23a18563c6ddb4ad090f64d8a13cee13dee1858df42"
+    },
+    "apply-cold-email-drafter": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-cold-email-drafter/SKILL.md",
+      "computedHash": "6b641b4e9ac73817883a5435e0f0adc1ee6b19bd9739c131112179c63122f348"
+    },
+    "apply-recommendation-letter-strategist": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-recommendation-letter-strategist/SKILL.md",
+      "computedHash": "b65ef69422fa30b065a91ce2a51b6b1e56f0b54352bf0762a3749a8bcfe364d2"
+    },
+    "apply-dossier-evaluator": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-dossier-evaluator/SKILL.md",
+      "computedHash": "a5b8b4572e179b0bb9264d52fb27d59337c7da30fd347de4ecc8a1a2ff9b0a59"
+    },
+    "apply-package-auditor": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/applications-and-career/apply-package-auditor/SKILL.md",
+      "computedHash": "67827ef0542177e73d8b736dc550ea309d30af9a28cbf84193309136107c7d93"
+    },
+    "flow-phd-application": {
+      "source": "jurgendn/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-skills/orchestrators/flow-phd-application/SKILL.md",
+      "computedHash": "004f6c4b47660d5d2cfafe207b48ccffdf4df2e69129652d124b097b1516b324"
     }
   }
 }

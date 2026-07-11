@@ -1,7 +1,30 @@
 # Installed Skills
 
-This repository has **60 agent skills** installed from `skills-lock.json` using the
+This repository has **71 agent skills** installed from `skills-lock.json` using the
 [`skills`](https://www.npmjs.com/package/skills) CLI (`npx skills experimental_install`).
+
+## Grad-school application kit (`jurgendn/agent-skills`)
+
+Added to help **search for and apply to a master's / research program** — find
+fitting programs and supervisors, reach out, and build the application package:
+
+| Skill | Use |
+| --- | --- |
+| `flow-phd-application` | Orchestrator — sequences the whole application, entry at your current stage |
+| `apply-profile-reader` | Turn your CV/transcripts/writeups into one structured profile |
+| `apply-program-fit-mapper` | Shortlist programs, labs, and faculty that fit your interests |
+| `apply-research-direction-mapper` | Turn interests into searchable research themes |
+| `apply-motivation-keeper` | Pin down the "why" before writing anything |
+| `apply-cv-builder` | Build an academic CV |
+| `apply-sop-writer` | Statement of purpose / motivation letter |
+| `apply-cold-email-drafter` | Cold-email professors / prospective supervisors |
+| `apply-recommendation-letter-strategist` | Plan and brief your recommenders |
+| `apply-dossier-evaluator` | Eligibility + scholarship-fit (DAAD/Fulbright/Erasmus/MSCA) |
+| `apply-package-auditor` | Final consistency check before submitting |
+
+These pair with skills you already have: `firecrawl-*` (find programs, extract
+requirements/deadlines), `xlsx` (track & compare programs), `pdf` (fill
+application forms), and `docx` (final documents).
 
 ## Layout
 
