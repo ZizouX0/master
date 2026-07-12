@@ -43,3 +43,12 @@ checkpoint loop, so partial results survive even if the container dies.
 ## Progress log
 - 2026-07-11: 71 skills installed+verified+pushed. Both workflows launched.
   Checkpoint loop started (every 5 min → `.masters-search/checkpoints/`, auto-commit+push).
+- 2026-07-11 ~18:40: SESSION USAGE LIMIT hit mid-run. Phase-1 results salvaged:
+  **183 unique opportunities** saved to `.masters-search/results/phase1-opportunities.json`.
+  - Main sweep `wf_115032de-39e` — COMPLETED slices: em-arts, em-cs-biz, daad, france,
+    uk, usa, nl-au-nz, other-gov, t-smc (9/33). FAILED (need re-run): t-prod,
+    t-acoustics, t-musicbiz, t-mba, and ALL 20 region slices, ALL verification batches.
+  - Deep-Europe `wf_f2cf9994-a1a` — COMPLETED: nl-deep, es-deep, pt-deep,
+    eu-directories (4/6). FAILED: eu-tuitionfree, eu-foundations, all verification.
+- 2026-07-12 01:26: limit reset confirmed; resuming both workflows with
+  resumeFromRunId (cached slices replay free; failed slices run live).
