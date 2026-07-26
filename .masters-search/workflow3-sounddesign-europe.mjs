@@ -155,7 +155,13 @@ ${JSON.stringify(b, null, 1)}
 Return ONLY the structured object.`,
       { label: `verify:${slice[0]}-${i + 1}`, phase: 'Verify', agentType: 'general-purpose', schema: VER })
       .then(r => (r && r.programs) ? r.programs : [])))
-      .then(a => a.filter(Boolean).flat())
+      .then(a => {
+        const out = a.filter(Boolean).flat()
+        // never lose discovery data if verification dies (usage limit etc.)
+        return out.length ? out : progs.map(p => ({ ...p, verified: 'Unverified',
+          verificationNotes: 'verification agent did not run — confirm on the official page',
+          rating: 'B' }))
+      })
   }
 )
 
