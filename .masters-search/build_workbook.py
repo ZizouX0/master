@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build a readable, filterable Excel workbook from opportunities.json."""
-import json, re
+import json, re, sys
+sys.path.insert(0, '.masters-search')
+import cost_model
 from collections import Counter, defaultdict
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
@@ -222,16 +224,20 @@ for o in data:
         "Funding detail (raw)": o.get("fundingLevel", ""),
         "Verification notes": o.get("verificationNotes", ""),
     })
+    rows[-1].update(cost_model.estimate(rows[-1], o))
 rows.sort(key=lambda r: (-r["Fit score"], r["Country"], r["Program"]))
 
 MAIN = ["Program","University","Country","Region","Track","Funding","Fit score",
         "Admission difficulty","Why (difficulty)","Language",
-        "Portfolio?","Tunisian eligible?","Verified","Deadline status","Scholarship",
+        "Portfolio?","Tunisian eligible?","Verified","Deadline status","Est. YOUR cost/yr (EUR)","Cost verdict","Scholarship",
         "Stipend / coverage","Tuition (intl)","Application opens","Deadline","Fit notes","Source URL"]
-DETAIL = MAIN + ["Multi-country?","Entry requirements","Public/Private","All countries (raw)",
+DETAIL = MAIN + ["Est. living/yr (EUR)","Est. tuition/yr (EUR)",
+                 "Est. year-1 cost incl. setup (EUR)","Cost confidence","Multi-country?","Entry requirements","Public/Private","All countries (raw)",
                  "Funding detail (raw)","Verification notes"]
 WIDTH = {"Program":46,"University":34,"Country":16,"Region":15,"Track":24,"Funding":20,"Fit score":9,
-         "Language":12,"Admission difficulty":15,"Why (difficulty)":52,"Portfolio?":11,"Tunisian eligible?":15,"Verified":10,"Deadline status":17,
+         "Language":12,"Admission difficulty":15,"Why (difficulty)":52,"Est. YOUR cost/yr (EUR)":16,"Cost verdict":46,
+         "Est. living/yr (EUR)":15,"Est. tuition/yr (EUR)":15,
+         "Est. year-1 cost incl. setup (EUR)":18,"Cost confidence":13,"Portfolio?":11,"Tunisian eligible?":15,"Verified":10,"Deadline status":17,
          "Scholarship":34,"Stipend / coverage":42,"Tuition (intl)":28,"Application opens":26,
          "Deadline":34,"Fit notes":70,"Source URL":40,"Multi-country?":13,"Entry requirements":70,
          "Public/Private":14,"All countries (raw)":28,"Funding detail (raw)":36,"Verification notes":70}
@@ -261,7 +267,7 @@ def add_sheet(wb, title, records, cols=MAIN, tab_color=None):
         ws.column_dimensions[get_column_letter(i)].width = WIDTH.get(c, 20)
         for cell in ws[get_column_letter(i)][1:]:
             cell.alignment = Alignment(vertical="center", horizontal="center" if c in
-                ("Fit score","Portfolio?","Tunisian eligible?","Verified","Language","Region","Admission difficulty") else "left")
+                ("Fit score","Portfolio?","Tunisian eligible?","Verified","Language","Region","Admission difficulty","Est. YOUR cost/yr (EUR)","Cost confidence") else "left")
     # clickable URLs
     if "Source URL" in cols:
         ci = cols.index("Source URL") + 1
@@ -321,6 +327,12 @@ guide = [
     "                       text, so treat it as a strong hint — always confirm on the source page.",
     "  Fit score vs Difficulty   Fit score = how good the PRIZE is.  Difficulty = your CHANCE.",
     "                       A 100 with a Red is a great program you cannot get into yet.",
+    "  Est. YOUR cost/yr    Ballpark of what YOU pay per year = tuition + living - scholarship.",
+    "                       0 means the funding covers it. 'Cost verdict' spells it out in words.",
+    "                       !! Tuition/stipend are parsed from the verified official text, but the",
+    "                       LIVING-COST part is my own country estimate (modest student lifestyle),",
+    "                       NOT from official pages. Check 'Cost confidence'. Budget properly before",
+    "                       you commit - city matters (Paris/Amsterdam/Dublin cost more than average).",
     "  Funding              Full / Full (external scheme) / Partial / None / Check  — colour coded.",
     "                       'Full (external scheme)' = program has no money itself, but Chevening/DAAD etc. can fund it.",
     "  Country              Cleaned to ONE main country so filtering works. Full list in 'All countries (raw)'.",
