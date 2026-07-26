@@ -95,6 +95,82 @@ def deadline_status(raw):
     if not s or "unverified" in s or "check" in s: return "Not published"
     return "Date published"
 
+# ---------- admission difficulty (for THIS candidate) ----------
+# Candidate: software-engineering BSc, no music degree, no professional audio experience,
+# no performance training, IELTS pending, portfolio in progress; Arabic/French/English.
+RX_CS       = re.compile(r"computational science|computer science|software engineer", re.I)
+RX_ANY      = re.compile(r"any field|any discipline|any academic|all academic disciplines|regardless of (the )?field", re.I)
+RX_OPEN     = re.compile(r"other (fields|degrees|subjects)|related field|or related|non-music|"
+                         r"relevant (recognised )?bachelor|professional experience at comparable|exceptional talent", re.I)
+# a bachelor's with NO subject restriction named = effectively open
+RX_GENERIC  = re.compile(r"^\s*(a )?bachelor'?s?\b(?![^.;]{0,40}\b(of|in)\s+(music|art|law|econom))", re.I)
+RX_MUSICBA  = re.compile(r"bachelor of music|bachelor'?s? (degree )?in music|instrumental bachelor|"
+                         r"music bachelor|ba in music", re.I)
+RX_PERF     = re.compile(r"live (performance|computer-performance) demonstration|in-person (entrance|audition)|audition", re.I)
+RX_ONLINE   = re.compile(r"online audition|video (recording|audition)|no live admission|recorded audition|"
+                         r"without a live audition", re.I)
+RX_PROEXP   = re.compile(r"significant experience[^.]{0,60}professional level|professional[- ]level "
+                         r"(experience|audio)|\d[,.]?\d*00 hours|years of (relevant )?work experience|"
+                         r"experience is mandatory|professional experience[^.]{0,30}required", re.I)
+RX_SKILLTEST= re.compile(r"on-the-spot|mix test|stereo mix of a pre-r", re.I)
+RX_GPA      = re.compile(r"gpa\s*>?=?\s*[23]\.\d|2:1|second class", re.I)
+RX_AGE      = re.compile(r"under 30|age limit|born on or after", re.I)
+RX_PREFER   = re.compile(r"preferably in (a )?related|art history|cultural management, economics, law", re.I)
+LANG_BLOCK  = ("spanish","portuguese","german","italian","greek","korean","romanian","bulgarian",
+               "serbian","polish","czech","hungarian","dutch","danish","swedish","norwegian",
+               "finnish","turkish","japanese","chinese","slovak","slovenian","croatian",
+               "lithuanian","latvian","estonian")
+RX_LANG_UNSURE = re.compile(r"conflict|check|depend|n/?a|programme-dependent|host", re.I)
+TECH_TRACKS = ("Sound & Music Tech", "Acoustics / Audio Eng")
+
+def admission_difficulty(o, lang, elig, track):
+    """Green / Amber / Red + reason, judged from the official entry text."""
+    txt = " ".join(str(o.get(k, "")) for k in ("entryRequirements", "portfolioReq", "program", "fitNotes"))
+    entry = str(o.get("entryRequirements", ""))
+    low = (lang or "").lower()
+    lang_unsure = bool(RX_LANG_UNSURE.search(low)) or low in ("", "check")
+
+    # ---- hard blockers ----
+    if elig == "No":
+        return "Red", "Tunisian nationals not eligible"
+    if low.startswith(LANG_BLOCK) and not lang_unsure:
+        return "Red", f"Taught in {lang} — you don't have the language"
+    if RX_PROEXP.search(txt):
+        return "Red", "Requires professional-level audio/work experience you don't have yet"
+    if RX_MUSICBA.search(txt) and not (RX_OPEN.search(txt) or RX_CS.search(txt) or RX_ANY.search(txt)):
+        return "Red", "Requires a Bachelor of Music — you don't have one"
+    if RX_PERF.search(txt) and not RX_ONLINE.search(txt) and not (RX_CS.search(txt) or RX_ANY.search(txt)):
+        return "Red", "Live audition — assumes performance training"
+
+    # ---- your background explicitly fits ----
+    if RX_CS.search(txt):
+        return "Green", "Officially accepts computer/computational science degrees"
+    if RX_ANY.search(txt):
+        return "Green", "Accepts a bachelor's in any field"
+    if RX_SKILLTEST.search(txt):
+        return "Amber", "Practical skills test on the day — prepare hard"
+    if RX_GENERIC.search(entry.strip()) and not RX_MUSICBA.search(txt):
+        return "Green", "Open entry — a bachelor's in any subject, no field restriction named"
+    if track in TECH_TRACKS and not RX_MUSICBA.search(txt) and not RX_PERF.search(txt):
+        return "Green", "Technical program — an engineering background is the expected profile"
+    if RX_PREFER.search(txt):
+        return "Amber", "Prefers arts/economics/law backgrounds — you'd argue your case"
+    if RX_OPEN.search(txt):
+        return "Green", "Open to other/related fields with relevant experience"
+
+    # ---- clearable gates ----
+    if elig == "Check":
+        return "Amber", "Tunisian eligibility not confirmed — verify first"
+    if lang_unsure:
+        return "Amber", "Language of instruction unclear — verify before applying"
+    if RX_GPA.search(txt):
+        return "Amber", "GPA threshold — check against your transcript"
+    if RX_AGE.search(txt):
+        return "Amber", "Age limit applies — confirm you qualify"
+    if RX_PERF.search(txt):
+        return "Amber", "Audition required, but a recorded/online route exists"
+    return "Amber", "No explicit statement on non-music backgrounds — ask admissions"
+
 def fit_score(o, fund, track, ver):
     """Rough heuristic to sort by overall attractiveness for this candidate."""
     s = 0
@@ -114,6 +190,9 @@ for o in data:
     track = clean_track(o.get("track"))
     ver = (o.get("verified") or "Unverified").title()
     country = clean_country(o.get("country"))
+    lang_c = clean_language(o.get("language"))
+    elig_c = yes_no(o.get("tunisianEligible"))
+    diff, diff_why = admission_difficulty(o, lang_c, elig_c, track)
     rows.append({
         "Program": o.get("program", ""),
         "University": o.get("university", ""),
@@ -123,6 +202,8 @@ for o in data:
         "Track": track,
         "Funding": fund,
         "Fit score": fit_score(o, fund, track, ver),
+        "Admission difficulty": diff,
+        "Why (difficulty)": diff_why,
         "Language": clean_language(o.get("language")),
         "Portfolio?": yes_no(o.get("portfolioReq")),
         "Tunisian eligible?": yes_no(o.get("tunisianEligible")),
@@ -143,13 +224,14 @@ for o in data:
     })
 rows.sort(key=lambda r: (-r["Fit score"], r["Country"], r["Program"]))
 
-MAIN = ["Program","University","Country","Region","Track","Funding","Fit score","Language",
+MAIN = ["Program","University","Country","Region","Track","Funding","Fit score",
+        "Admission difficulty","Why (difficulty)","Language",
         "Portfolio?","Tunisian eligible?","Verified","Deadline status","Scholarship",
         "Stipend / coverage","Tuition (intl)","Application opens","Deadline","Fit notes","Source URL"]
 DETAIL = MAIN + ["Multi-country?","Entry requirements","Public/Private","All countries (raw)",
                  "Funding detail (raw)","Verification notes"]
 WIDTH = {"Program":46,"University":34,"Country":16,"Region":15,"Track":24,"Funding":20,"Fit score":9,
-         "Language":12,"Portfolio?":11,"Tunisian eligible?":15,"Verified":10,"Deadline status":17,
+         "Language":12,"Admission difficulty":15,"Why (difficulty)":52,"Portfolio?":11,"Tunisian eligible?":15,"Verified":10,"Deadline status":17,
          "Scholarship":34,"Stipend / coverage":42,"Tuition (intl)":28,"Application opens":26,
          "Deadline":34,"Fit notes":70,"Source URL":40,"Multi-country?":13,"Entry requirements":70,
          "Public/Private":14,"All countries (raw)":28,"Funding detail (raw)":36,"Verification notes":70}
@@ -161,6 +243,7 @@ GREEN = PatternFill("solid", fgColor="C6EFCE")
 LIGHTGREEN = PatternFill("solid", fgColor="E2F0D9")
 YELLOW = PatternFill("solid", fgColor="FFF2CC")
 GREY = PatternFill("solid", fgColor="F2F2F2")
+RED = PatternFill("solid", fgColor="FFC7CE")
 
 def add_sheet(wb, title, records, cols=MAIN, tab_color=None):
     ws = wb.create_sheet(title)
@@ -178,7 +261,7 @@ def add_sheet(wb, title, records, cols=MAIN, tab_color=None):
         ws.column_dimensions[get_column_letter(i)].width = WIDTH.get(c, 20)
         for cell in ws[get_column_letter(i)][1:]:
             cell.alignment = Alignment(vertical="center", horizontal="center" if c in
-                ("Fit score","Portfolio?","Tunisian eligible?","Verified","Language","Region") else "left")
+                ("Fit score","Portfolio?","Tunisian eligible?","Verified","Language","Region","Admission difficulty") else "left")
     # clickable URLs
     if "Source URL" in cols:
         ci = cols.index("Source URL") + 1
@@ -193,6 +276,11 @@ def add_sheet(wb, title, records, cols=MAIN, tab_color=None):
         ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Full (external scheme)"'], fill=LIGHTGREEN))
         ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Partial"'], fill=YELLOW))
         ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"None"'], fill=GREY))
+    if "Admission difficulty" in cols:
+        L = get_column_letter(cols.index("Admission difficulty") + 1); rng = f"{L}2:{L}{ws.max_row}"
+        ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Green"'], fill=GREEN))
+        ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Amber"'], fill=YELLOW))
+        ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Red"'], fill=RED))
     ws.freeze_panes = "C2"                      # keep Program + University visible
     ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
     return ws
@@ -211,6 +299,7 @@ guide = [
     "", "TABS",
     "  All Opportunities   Every program (546). Filter it any way you like.",
     "  Fully Funded        Only full scholarships — start here if funding is the priority.",
+    "  BEST BETS           Fully funded AND your background qualifies. Your real application list.",
     "  Sound & Music Tech  Your primary track (music technology, sound & music computing, audio DSP).",
     "  Sound Design/Prod   Production, sound design, studio & conservatory programs.",
     "  Music Business      Music business, arts & cultural management.",
@@ -225,6 +314,13 @@ guide = [
     "", "COLUMNS WORTH KNOWING",
     "  Fit score            Rough 0-100 guide (funding + track match + verified + eligibility + English).",
     "                       Rows are pre-sorted by it. It is a helper, not gospel — read Fit notes.",
+    "  Admission difficulty Can YOU get in?  Green = your degree qualifies.  Amber = a gate to clear",
+    "                       (audition, GPA, eligibility).  Red = blocked (needs a music degree, a live",
+    "                       audition, pro experience, a language you lack, or Tunisians ineligible).",
+    "                       Read 'Why (difficulty)' for the reason. It is read from the official entry",
+    "                       text, so treat it as a strong hint — always confirm on the source page.",
+    "  Fit score vs Difficulty   Fit score = how good the PRIZE is.  Difficulty = your CHANCE.",
+    "                       A 100 with a Red is a great program you cannot get into yet.",
     "  Funding              Full / Full (external scheme) / Partial / None / Check  — colour coded.",
     "                       'Full (external scheme)' = program has no money itself, but Chevening/DAAD etc. can fund it.",
     "  Country              Cleaned to ONE main country so filtering works. Full list in 'All countries (raw)'.",
@@ -253,6 +349,9 @@ ws.sheet_view.showGridLines = False
 add_sheet(wb, "All Opportunities", rows, MAIN, "1F4E79")
 add_sheet(wb, "Fully Funded",
           [r for r in rows if r["Funding"] in ("Full", "Full (external scheme)")], MAIN, "2E7D32")
+add_sheet(wb, "BEST BETS",
+          [r for r in rows if r["Admission difficulty"] == "Green"
+           and r["Funding"].startswith("Full")], MAIN, "C62828")
 add_sheet(wb, "Sound & Music Tech",
           [r for r in rows if r["Track"] == "Sound & Music Tech"], MAIN, "6A1B9A")
 add_sheet(wb, "Sound Design & Prod",
