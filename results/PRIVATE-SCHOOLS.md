@@ -12,8 +12,8 @@ is still running — see *Status* at the bottom.
 
 In all four countries a private school may legally sell you something called a "Master" that is
 **not a master's degree**. This is not a scam in the criminal sense — the schools are real, the
-teaching is often good — but the piece of paper is not what the word implies, and for a Tunisian
-passport holder it usually means **no student visa**.
+teaching is often good — but the piece of paper is not what the word implies, and you will often be
+paying master's-level money for it.
 
 | Country | A real degree | What gets sold instead |
 |---|---|---|
@@ -22,8 +22,29 @@ passport holder it usually means **no student visa**.
 | **Netherlands** | NVAO-accredited MA/MSc | CRKBO "diploma", NRTO certificate |
 | **Italy** | *Laurea magistrale* / *Diploma Accademico di II livello* | "Master" di I livello (60 CFU) |
 
-Only the left column gives you: a degree valid across Europe, access to a PhD, and — decisively —
-a study residence permit.
+Only the left column gives you a degree valid across Europe and access to a PhD.
+
+### ⚠️ Correction — the visa test is *not* the same as the accreditation test
+
+An earlier version of this document said an unofficial award usually blocks a student visa. The
+verification pass established that is **wrong for Spain**, and the real rule is more useful:
+
+> Spain's official management criteria for *estancia por estudios* (Ministerio de Inclusión, June
+> 2025, under RD 1155/2024) state that **both *títulos oficiales* and *títulos propios* are
+> admissible** for a study authorisation. What actually decides it is **study intensity**: the
+> course must run **at least 91 days**, you must enrol in **at least 90% of the credits**, and it
+> must carry **a minimum of 20 contact hours per week** — with a narrow exception for concentrated
+> programmes only where **at least 12 of those hours are delivered in person**.
+
+So the two tests are separate, and you must pass both:
+
+| Test | What it decides | What fails it |
+|---|---|---|
+| **Accreditation** | Whether it's a real degree — PhD access, recognition back home | *Título propio*, CRKBO diploma, "Master di I livello" |
+| **Contact hours / in-person** | Whether you get the visa | Evening courses, part-time, hybrid, online |
+
+This is why a cheap *título propio* is not automatically ruled out — and why an evening timetable
+is fatal even at a legitimate university.
 
 **The single clearest trap found:** *Pro Audio Education NL* awards a diploma titled
 **"Master Geluidstechniek / Media Productie"**. It is not NVAO-accredited, carries no ECTS, and the
@@ -153,22 +174,31 @@ Spain has by far the most private provision, and by far the worst signal-to-nois
 *título propio* problem is pervasive: **most Spanish private "masters" in this field are not
 official degrees.**
 
-### The best value in the entire sweep — with three caveats you must clear first
+### The cheapest credible option — and why verification pushed it down the list
 
 **UCAM (Universidad Católica San Antonio de Murcia) — *Máster de Formación Permanente en
-Producción Musical***
+Producción Musical*** — ✅ *verified* · verdict **CONDITIONAL** · rating **C**
 
-- **€4,194 all-in** (€3,900 tuition + €235 pre-enrolment + €59 insurance). That is roughly
-  **one-twelfth of Berklee Valencia**
-- **Your degree is named as a welcome background** — the published target profile explicitly lists
-  *Ingeniería de Telecomunicaciones o Informática*
-- No portfolio required. No IELTS required. Sony Music involvement, named Spanish electronic
-  producers teaching. Only 12 places
-- ⚠️ **It is a *título propio*** — legally a certificate, not an official master
-- ⚠️ **It is *semipresencial*** (hybrid) — and consulates routinely refuse student visas for
-  programmes that are not full-time face-to-face. **Get written confirmation from UCAM's
-  international office that this specific programme supports a type-D visa before paying anything**
-- ⚠️ **Taught in Spanish**
+Everything good about it survived verification, confirmed to the cent:
+
+- **€4,194.12 all-in** (€3,900 tuition + €235 pre-enrolment + €59.12 insurance) — about
+  **one-fifteenth of Berklee's all-in cost**, and €65 per ECTS against La Salle's €199
+- **Your degree is named by name.** Verified wording: the programme *"de forma especial se dirige a
+  egresados en áreas de Comunicación Audiovisual, Periodismo, Musicología, Magisterio Musical,
+  **Ingenierías en Telecomunicaciones e Informática***…*"*
+- No portfolio. No IELTS. Foreign degrees accepted **without homologation**. Sony Music España
+  involvement, named Spanish electronic producers teaching, a Cubase licence and Steinberg
+  certification included. September start. Only **12 places** — effectively first-come
+- ⚠️ It is a *título propio* — a university certificate, not an official master
+
+**But the visa is the problem, and it's the format not the paperwork.** It is *semipresencial*
+(hybrid). Against the 20-contact-hours / 12-in-person test above, a hybrid programme is at high
+risk of failing — and verification's judgement was blunt: *"if he were already living legally in
+Spain, this would be the clear recommendation."* He isn't.
+
+**Do not pay anything** until UCAM's international office confirms **in writing** that this specific
+programme, in its hybrid format, supports a *type-D estancia por estudios*. Also: taught entirely in
+Spanish, realistically needing B2 for a Spanish-language final project.
 
 ### The strongest degree — and the weakest fit for your goal
 
@@ -196,10 +226,18 @@ Producción Musical***
 | Fit for you | Good — DJing, electronic production, Ableton/Max | Poor — needs a strong composition background |
 | Visa | **Yes** — most visa-reliable private option in Spain | Yes |
 
+Both are ✅ *verified*. **MPTI: verdict CONDITIONAL, rating A** — the highest rating awarded to any
+Spanish option. **SFTV: verdict AVOID, rating C** — right school, wrong programme for you.
+
 MPTI accepts non-music bachelors *"provided the student demonstrates a high degree of
 musicianship"* — the burden shifts entirely onto your portfolio, though the "technological
-proficiency" criterion is where your software background genuinely helps. No audition; selected
-applicants get an interview.
+proficiency" criterion is where your software background genuinely helps.
+
+Two corrections from verification: **an interview is required for *all* graduate programmes**, not
+just for selected applicants (an *audition* is required only for Contemporary Performance). And the
+USD 2,990 Professional Recording Services fee applies to **SFTV only** — MPTI is not charged it.
+Also budget for a paid third-party credential evaluation (SpanTran or ECE) of your SMU transcript,
+typically USD 150–250, which Berklee requires for all non-US/Canada degrees.
 
 **Deadlines (recurring annual pattern, so these are your 2027 dates):**
 Early Action **1 Nov 2026** (scholarship 15 Nov) · Regular **15 Jan 2027** (scholarship 1 Feb) ·
@@ -215,7 +253,12 @@ Extended **10 Mar 2027**. Note the scholarship deadlines differ from the applica
 - **Universidad Europea** *Investigación Musical* — musicology research, Spanish, online. Its
   attractive *Máster en Producción Creativa de la Música* (Carlos Jean on faculty) **has no live
   page and appears to no longer run** — email before building any plan on it
-- **SAE Spain, TAI, Microfusa, CEV, CICE, ENTI, ECIB, UAX, UFV, Nebrija, UDIMA, DJP, Trazos, Point
+- **Universidad Francisco de Vitoria** *Postgrado en Producción Musical* — ✅ *verified* · **AVOID** ·
+  rating **C**. €6,100–6,500 for a **30-ECTS, three-month evening certificate** — the most expensive
+  Spanish option per credit (~€203–217/ECTS against UCAM's €65). Its timetable is Mon–Fri 18:00–20:00
+  = **10 contact hours a week**, which fails *both* limbs of the Spanish visa test. It also expects
+  prior music or sound training you don't have. Legally unusable as a relocation plan
+- **SAE Spain, TAI, Microfusa, CEV, CICE, ENTI, ECIB, UAX, Nebrija, UDIMA, DJP, Trazos, Point
   Blank Ibiza** — all *título propio* or plain private certificates
 
 ---
@@ -319,7 +362,7 @@ Sorted by what you'd actually pay for the whole qualification.
 
 | Option | Country | Real degree? | Total tuition | Right subject? | Language | Visa |
 |---|---|---|---|---|---|---|
-| **UCAM Producción Musical** | 🇪🇸 | ❌ título propio | **€3,900** | ✅ | Spanish | ⚠️ hybrid — verify |
+| **UCAM Producción Musical** | 🇪🇸 | ❌ título propio | **€3,900** | ✅ | Spanish | ⚠️ hybrid — high risk |
 | **Lusófona Produção e Tec. do Som** | 🇵🇹 | ✅ mestrado | **€7,600–9,130** | ✅ | Portuguese | ✅ |
 | IULM / Cattolica music business | 🇮🇹 | ⚠️ I livello (60 CFU) | €7,400–7,500 | partly | Italian | ✅ |
 | **Saint Louis Rome — Sound Design** | 🇮🇹 | ✅ **II livello** | **€14,460–17,000** | ✅✅ | It + En | ✅ |
@@ -400,9 +443,15 @@ means starting it now.
 - **All four countries complete:** Spain 45 · Netherlands 26 · Italy 22 · Portugal 21 = **114
   unique institutions and programmes**, including the international chain-school and funding
   slices.
-- **Outstanding:** the verification pass, which re-checks each record against its official page and
-  assigns a WORTH IT / CONDITIONAL / AVOID value judgement. Until it finishes, treat the figures
-  here as good discovery data with the schools' own caveats attached, not as double-checked fact.
+- **Verification:** 5 records have been fully re-checked against their official pages and carry a
+  verdict and rating (marked ✅ *verified* above): Berklee MPTI (**A**), Berklee SFTV (AVOID),
+  La Salle (B), UCAM (C), UFV (AVOID). The remaining 109 are discovery-quality — well-sourced, with
+  the schools' own caveats attached, but not yet double-checked. The verification pass kept hitting
+  session limits and is being resumed.
+- **What verification changed:** it overturned my claim that an unofficial award blocks a Spanish
+  student visa — it does not; study intensity does. That correction is in the box near the top, and
+  it matters because it re-opens *título propio* options that I had written off, while ruling out
+  evening and part-time courses at perfectly legitimate universities.
 - Figures marked UNVERIFIED in the dataset are exactly that — the schools do not publish them.
   Nothing here is estimated where a school stayed silent; where I give a range, it is derived from
   published per-month or per-instalment figures and labelled as derived.
