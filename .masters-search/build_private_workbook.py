@@ -28,6 +28,22 @@ RED = PatternFill("solid", fgColor="FFC7CE")
 GREY = PatternFill("solid", fgColor="EDEDED")
 
 
+COUNTRIES = ("Spain", "Portugal", "Netherlands", "Italy")
+
+
+def country_of(r):
+    """Records sometimes carry a sentence in the country field (e.g. a joint
+    programme naming all three partners). Take the first country named."""
+    raw = (r.get("country") or "").strip()
+    for c in COUNTRIES:
+        if raw.startswith(c):
+            return c
+    for c in COUNTRIES:
+        if c.lower() in raw.lower():
+            return c
+    return raw or "Unknown"
+
+
 def txt(s, n=None):
     s = re.sub(r"\s+", " ", str(s or "")).strip()
     if not s or s.lower() in ("n/a", "na", "none", "unknown", "-"):
@@ -112,7 +128,7 @@ def build_rows(data):
         b, why = accred_bucket(r)
         rows.append({"_rec": r, "_bucket": b, "_why": why, "_verdict": verdict(r),
                      "_visa": visa(r)})
-    rows.sort(key=lambda x: (x["_rec"].get("country") or "zz",
+    rows.sort(key=lambda x: (country_of(x["_rec"]),
                              ORDER.get(x["_bucket"], 5),
                              VORDER.get(x["_verdict"], 2),
                              x["_rec"].get("institution") or ""))
@@ -121,6 +137,8 @@ def build_rows(data):
 
 def value(row, key, label):
     r = row["_rec"]
+    if label == "Country":
+        return country_of(r)
     if label == "Accreditation":
         return row["_bucket"]
     if label == "What that means":
@@ -218,7 +236,7 @@ def main():
 
     by = defaultdict(list)
     for r in rows:
-        by[r["_rec"].get("country") or "Unknown"].append(r)
+        by[country_of(r["_rec"])].append(r)
     for country in sorted(by):
         sheet(wb, country, by[country], f"{country} — {len(by[country])} private options found.")
 
