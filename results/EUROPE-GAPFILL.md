@@ -2,7 +2,7 @@
 
 **Sound design · music production · audio engineering · music technology. September 2027 intake.**
 
-**79 institutions across 24 countries**, none of which appear in any earlier file. The 905
+**82 institutions across 24 countries**, none of which appear in any earlier file. The 905
 institutions already found were handed to the agents as an exclusion list, so every row here is new.
 
 Each was searched in English **and** the local language, and each record carries the three things
@@ -11,11 +11,11 @@ and **the fee a Tunisian national pays** — which is frequently not the headlin
 
 | | |
 |---|---|
-| Public | **64** |
-| Private | **15** |
-| Free or under ~€5,000/yr for you | **37** |
-| Taught in English | **24** |
-| No portfolio *and* no audition | **13** |
+| Public | **78** |
+| Private | **3** |
+| Free or under ~€5,000/yr for you | **40** |
+| Taught in English | **25** |
+| No portfolio *and* no audition | **15** |
 
 ---
 
@@ -28,28 +28,65 @@ North Rhine-Westphalia, Bavaria, Bremen, Lower Saxony, Saarland, Rhineland-Palat
 That single fact makes Germany cheaper than every private option in the earlier sweep, including
 the ones I called good value.
 
-### ⭐ TU Ilmenau — M.Sc. Medieningenieurwissenschaften — the best structural fit found
+### ⭐ TU Ilmenau — M.Sc. Medieningenieurwissenschaften — ✅ **verified · WORTH IT · rating A**
 
-- **PUBLIC** · **German *and* English** (officially bilingual) · **no tuition**, semester
-  contribution only
-- **No portfolio. No audition. No music degree.** It is an engineering master — the one thing you
-  unambiguously have. Verification's own note: *"the single most important reason to put Ilmenau at
-  the top of his German list."*
-- **Fraunhofer IDMT — the institute that invented mp3 and AAC — is on the same campus.** The
-  curriculum is audio signal processing, psychoacoustics, audio coding, filterbanks, virtual
-  acoustics
-- **Apply 16 January – 15 May 2027** via uni-assist for an October 2027 start
-- Two things to settle by email before committing: which language certificate is actually demanded
-  (not published), and whether your SMU transcript carries enough signal-processing/EE credits for
-  the departmental aptitude assessment
+- **PUBLIC** · **no tuition**, semester contribution only
+- **Confirmed: the degree can be completed entirely in English.** Ilmenau's own wording is that it
+  "can be completed in either German or English" — better than the first pass suggested
+- **No portfolio. No audition. No music degree. No entrance exam** — verification corrected the
+  earlier claim of a sit-down aptitude test; there isn't one. And it is **NC-frei**: no numerus
+  clausus, no competitive ranking against other applicants
+- **Fraunhofer IDMT — the institute that invented mp3 and AAC — is on the same campus.** Curriculum:
+  audio signal processing, psychoacoustics, audio coding, filterbanks, virtual acoustics
+- **⚠️ Corrected: you DO need an English certificate.** B2 CEFR minimum for conditional admission,
+  **C1 for unrestricted** — roughly **IELTS Academic 7.0 / TOEFL iBT 95**. My earlier advice not to
+  book a test yet was wrong for this programme
+- **⚠️ Corrected: the application fee is €75**, not €25, and **all 2027 applications route through
+  uni-assist** (its own handling fee on top). Assessment takes 6+ weeks — start early
+- **Apply 16 January – 15 May 2027** for an October 2027 start. Ilmenau extended the 2026 deadline
+  to 15 July; don't plan around a repeat
 
 It will not make you a DJ. It makes you employable in audio technology and buys you years in
 Germany to build the production career alongside it.
 
-**Other German options** (all public, all no-tuition): TH Köln *Medientechnologie* (German only),
-HMT München *Sound Art*, HfM Mainz *Klangkunst-Komposition*, Paderborn *Populäre Musik und Medien*,
-HMTM Hannover *Medien und Musik*, HBK Saar *Media Art & Design*, Hochschule Mittweida
-*Media Production*. **HfK Bremen's *Digital Media* M.A. is English-taught at €431.40 per semester.**
+### ⭐ HfK Bremen — M.A. Digital Media — ✅ **verified · WORTH IT · rating A**
+
+The only record in this sweep that **survived verification with zero corrections** — every figure,
+date and requirement checked out exactly.
+
+- **PUBLIC** · **English-taught, no German required at all** · **€431.40 per semester**, which is
+  the entire published cost and already includes the semester travel ticket
+- **Entry: 150 ECTS in a relevant field** — computer science, design, media arts, systems
+  engineering. A software-engineering BSc "fits cleanly", and 150 ECTS is a notably low bar
+- **English: IELTS 7.0 / TOEFL 95 / C1 — but with a waiver worth chasing.** The requirement is
+  dropped if your qualifying degree or school education was taught in English, with proof. **SMU
+  MedTech teaches substantially in English**, so a medium-of-instruction letter could remove this
+  gate outright. Ask SMU for one — it costs nothing and could save you the test entirely
+- **Portfolio required: 10–20 works**, spanning artistic, design, academic *or professional*
+  projects. Your software projects count here
+- **Cycle: applications 1 April – 31 May · interviews 2–3 July · results mid-July · start 1 October**
+- ⚠️ It is **not** a dedicated sound degree — sound is a legitimate project area within digital
+  media, not the subject itself
+
+### The rest of Germany, after verification
+
+- **HfM Mainz — *Klangkunst-Komposition*** (CONDITIONAL, **B**) — the re-check *upgraded* this one.
+  **Only A1 German** is demanded on paper, and the regulation **explicitly admits applicants from
+  unrelated degrees** on demonstrated artistic aptitude via the *Eignungsprüfung*. Registration
+  **1 February – 1 April** for the following winter semester — a date the first pass recorded as
+  "not published". Real electronic-composition content
+- **HMT München — *Sound Art*** (CONDITIONAL, C) — accredited to 2031, German-taught, **no language
+  certificate demanded**, deadline 31 May, semester fee only
+- **TH Köln — *Medientechnologie*** (CONDITIONAL, C) — the best spatial-audio content of any German
+  UAS here, and the hardest gates, all confirmed verbatim: **110 ECTS in maths/physics/EE/CS**, a
+  first degree worth **at least 210 ECTS**, grade 2.7 or better, and **C1 German**. A standard
+  three-year BSc is 180 ECTS, so the 210 rule alone may exclude you — check your transcript before
+  spending time here. Semester contribution €352.70
+- **Paderborn — *Populäre Musik und Medien*** (CONDITIONAL, C) — every fact held up; the problem is
+  fit. It is an academic degree *about* popular music, not one that teaches you to make it
+
+Also public and tuition-free: HMTM Hannover *Medien und Musik*, HBK Saar *Media Art & Design*,
+Hochschule Mittweida *Media Production*.
 
 ---
 
@@ -197,7 +234,8 @@ Ranked by what you'd actually pay, with the language you'd actually study in:
 
 | Programme | Country | Public | Language | Your cost | Portfolio? |
 |---|---|---|---|---|---|
-| **TU Ilmenau — Media Engineering** | 🇩🇪 | ✅ | German + **English** | **€0** + semester fee | **None** |
+| **TU Ilmenau — Media Engineering** ✅ | 🇩🇪 | ✅ | **English** or German | **€0** + semester fee | **None** |
+| **HfK Bremen — Digital Media** ✅ | 🇩🇪 | ✅ | **English** | **€431/semester** | 10–20 works |
 | Uniarts Helsinki | 🇫🇮 | ✅ | Finnish | **€0** | yes |
 | German options (7 more) | 🇩🇪 | ✅ | mostly German | **€0** | varies |
 | **Bologna — Musica Elettronica** | 🇮🇹 | ✅ | Italian | **≈€166/yr** with ISEEE | likely |
@@ -211,9 +249,10 @@ Ranked by what you'd actually pay, with the language you'd actually study in:
 
 **Three routes are now clearly ahead of anything in the private sweep:**
 
-1. **TU Ilmenau** — free, no portfolio, no audition, partly English, world-class audio engineering.
-   The lowest-risk application you can make, because it is decided on your transcript, not on a
-   portfolio you don't have yet.
+1. **TU Ilmenau** — free, no portfolio, no audition, no entrance exam, no numerus clausus,
+   completable entirely in English, world-class audio engineering. The lowest-risk application you
+   can make, because it is decided on your transcript rather than on a portfolio you don't have yet.
+   **HfK Bremen** is the English-taught companion bet at €431 a semester.
 2. **France** — €3,950, and you already speak the language. No year of preparation needed.
 3. **Ankara** — potentially free via Türkiye Bursları, accepts any bachelor, no English test. The
    biggest upside and the biggest language cost.
@@ -222,12 +261,17 @@ Ranked by what you'd actually pay, with the language you'd actually study in:
 
 ## Status & honesty
 
-- **12 of 13 discovery slices complete.** The eastern slice (Ukraine, Moldova, Georgia, Armenia) is
-  still running.
-- **Verification has not yet run on this dataset.** It kept losing its budget to the session limit
-  while discovery was still going, so I stopped letting the two compete and will run it once
-  discovery finishes. Every record here is discovery-quality: sourced to an official page, with the
-  agent's own UNVERIFIED flags left intact where a school publishes nothing.
+- **All 13 discovery slices complete** — 82 records. The eastern slice (Ukraine, Moldova, Georgia,
+  Armenia) is still writing at the time of this update.
+- **Verification is running and has completed the German batch (6 records, marked ✅ above).** It
+  changed real things: it confirmed Ilmenau as completable entirely in English and NC-frei, but
+  corrected the language requirement from "possibly none" to a firm **C1/IELTS 7**, and the
+  application fee from €25 to €75. It also promoted HfK Bremen to a top-rated option and surfaced
+  TH Köln's 210-ECTS rule, which may exclude a standard three-year bachelor outright.
+- **The other 76 records have not been verified yet.** They are discovery-quality: sourced to an
+  official page, with the agents' own UNVERIFIED flags left intact where a school publishes nothing.
+  Given what verification changed in the German batch, treat the unverified figures as good
+  starting points to confirm, not as settled facts.
 - Dates marked **PRIOR CYCLE** are last year's, shown because these calendars repeat closely.
   Confirm each when the 2027/28 cycle opens.
 - Full detail — every fee, deadline, entry requirement, portfolio spec and source URL — is in
