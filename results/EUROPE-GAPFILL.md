@@ -17,6 +17,18 @@ and **the fee a Tunisian national pays** — which is frequently not the headlin
 | Taught in English | **25** |
 | No portfolio *and* no audition | **15** |
 
+The public/private split is lopsided on purpose: the private sectors of Spain, Portugal, Italy and
+the Netherlands were already swept exhaustively in the previous report, so this sweep was pointed at
+public institutions in those four and at everything, both kinds, everywhere else. The three private
+finds are **FAMO Písek** (Czechia), **Univerzitet Metropolitan** (Serbia) and **Bahçeşehir**
+(Turkey).
+
+A caveat on that column: in some systems the label is genuinely contested, and the records say so
+rather than guessing. Austria's *Fachhochschulen* are privately constituted but publicly funded and
+regulated; Hungary's MOME sits in the "public-interest asset-management foundation" model; Denmark's
+SDMK runs on a performance contract with the ministry. Ten records explain an ambiguity like that
+instead of forcing a binary — worth reading the full cell before drawing conclusions.
+
 ---
 
 ## The single most important finding: where you pay nothing
