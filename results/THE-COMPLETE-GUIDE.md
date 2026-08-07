@@ -8,7 +8,7 @@ Target intake: **September 2027**.
 
 ## What you're holding
 
-**1,029 unique opportunities across 56 countries** — master's programmes at public and private
+**1,079 unique opportunities across 56 countries** — master's programmes at public and private
 institutions, plus every scholarship scheme attached to them. Merged and de-duplicated from five
 searches that ran over several weeks:
 
@@ -17,8 +17,8 @@ searches that ran over several weeks:
 | Worldwide sweep | 539 | Every region, every funding scheme, all five subject tracks |
 | Deep Europe | 102 | Follow-up on every European country individually |
 | Sound design deep dive | 319 | Conservatoires, film schools, private academies across Europe |
-| Private ES/PT/NL/IT | 114 | Private institutions in four countries, with accreditation checked |
-| Europe gap sweep | 85 | Everything the first four missed, public and private |
+| Private ES/PT/NL/IT | 177 | Private institutions in four countries, with accreditation checked |
+| Europe gap sweep | 104 | Everything the first four missed, public and private |
 
 Everything was searched **in English and in the local language** — *Tontechnik*, *conception
 sonore*, *realizacja dźwięku*, *musica elettronica*, *hangmérnök*, *ses tasarımı* — because
@@ -71,7 +71,63 @@ it caught real errors in my own logic:
   wide open** — Ankara accepts literally any bachelor's, but it teaches in Turkish, so it is
   Possible rather than Strong
 
-Across 1,029 records: **401 Strong · 419 Possible · 209 Weak**.
+Across 1,079 records: **421 Strong · 429 Possible · 229 Weak** — and 178 of them additionally carry a human-readable WORTH IT / CONDITIONAL / AVOID verdict from the verification pass (see below).
+
+---
+
+## ✅ What verification actually found
+
+The verification pass is now essentially complete on the two newest datasets: **178 records were
+re-checked against their official pages by a second agent** and given a verdict for *your* profile.
+
+| Verdict | Count | Meaning |
+|---|---|---|
+| **WORTH IT** | **17** | Accredited, affordable, and genuinely open to you |
+| CONDITIONAL | 64 | Real, but with a caveat you must resolve first |
+| **AVOID** | **97** | Wrong qualification, wrong subject, unaffordable, or closed to you |
+
+**The most important number here: in the private sector, 64 of 96 verified options — 66% — came
+back AVOID.** In the public sweep the AVOID rate is 40%, and 15 came back WORTH IT. That gap is the
+clearest single argument in this whole search for pointing yourself at public institutions.
+
+### The 17 that survived verification
+
+**Rated A — apply to these**
+
+| Programme | Where | Cost | Language |
+|---|---|---|---|
+| **TU Ilmenau — Medieningenieurwissenschaften** | 🇩🇪 Ilmenau | **Free** + €332/sem | English or German |
+| **HfK Bremen — Digital Media** | 🇩🇪 Bremen | **€431/semester** | English |
+| **MTU Cork — MA Music and Technology** | 🇮🇪 Cork | €13,500 | English |
+| **Saint Louis Rome — Sound Design & Post Produzione** | 🇮🇹 Rome | **~€8.5k/yr** | Italian + English |
+| **Saint Louis Rome — Music Production** | 🇮🇹 Rome | **~€8.5k/yr** | Italian + English |
+| **Conservatorio Verdi Milano — Musica Elettronica** | 🇮🇹 Milan | €3,500/yr | Italian |
+| **Conservatorio Rovigo — Musica Applicata, Sound** | 🇮🇹 Rovigo | income-scaled | Italian |
+| **Kunstuniversität Linz — Interface Cultures** | 🇦🇹 Linz | near-free | English |
+| **ČVUT Prague — Electronics and Communications** | 🇨🇿 Prague | cheap | English |
+| **Buckinghamshire New University — MA Music and Audio Production** | 🇬🇧 | £16,280 | English |
+
+**Rated B — strong, with a caveat**
+
+Kunstuniversität Linz *Timebased Media* 🇦🇹 · UPHF Valenciennes *Ingénierie* 🇫🇷 · University of
+Žilina *Multimedia Engineering* 🇸🇰 · **Ankara MGÜ *Müzik Teknolojileri*** 🇹🇷 · Dokuz Eylül *Music
+Technology* 🇹🇷 · Hertfordshire *Music Production and Artist Development* 🇬🇧 · University of South
+Wales *MSc Music Engineering and Production* 🇬🇧
+
+### Corrections verification forced
+
+- **Saint Louis Rome's admission gate is a production test, not an ensemble audition.** An earlier
+  draft of mine said otherwise. That single correction moves it from "probably closed" to one of
+  only two private options in four countries rated WORTH IT
+- **MTU Cork's English requirement was stated with false confidence** in the first pass. The
+  verifier flagged its own predecessor. Its non-EU deadline is also **31 May**, three months earlier
+  than the EU deadline — and the course page itself carries contradictory stale text
+- **TU Ilmenau**: English certificate required after all (C1, ~IELTS 7.0); application fee €75 not
+  €25; no sit-down entrance exam, just a document review; a **180-ECTS bachelor is sufficient**,
+  unlike TH Köln's 210-ECTS rule
+- **Two Spanish and one Italian institution turned out to be defunct or closing** — one has its
+  domain listed for sale on a public marketplace
+
 
 ---
 
