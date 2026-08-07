@@ -54,3 +54,41 @@ checkpoint loop, so partial results survive even if the container dies.
   resumeFromRunId (cached slices replay free; failed slices run live).
 
 - 2026-07-13 23:0x: SEARCH COMPLETE. Both workflows 100% done (0 errors). 546 unique opportunities (272 Verified, 269 Partial, 5 Unverified; 121 fully-funded). FINAL DELIVERABLES built in ./deliverables/ (opportunities.csv/.xlsx/.json, SHORTLIST.md, ACTION-TIMELINE.md, COULD-NOT-VERIFY.md, README.md). Delivered to user.
+
+---
+
+## Europe gap sweep (workflow5) — status as of 7 Aug 2026
+
+**Run ID:** `wf_c9f776ea-31d` · script `.masters-search/workflow5-europe-gapfill.mjs`
+**Banked:** `.masters-search/results/europe-gapfill.json` — 85 records, 26 countries, 9 verified.
+
+**DISCOVERY IS COMPLETE.** All 13 slices ran. Nothing outstanding on the search.
+
+**OUTSTANDING: verification of the 76 unverified records.**
+Blocked by the WEEKLY usage limit, which resets **15:00 UTC on Friday 8 August 2026**.
+
+To resume after that time:
+```
+Workflow({scriptPath: '.masters-search/workflow5-europe-gapfill.mjs',
+          resumeFromRunId: 'wf_c9f776ea-31d'})
+```
+All 13 discovery agents replay from cache for free; only the verify batches run.
+Outstanding batches: fr-deep-1, uk-ie-deep-1/2, nordic-1/2, baltic-1, poland-cz-sk-1/2,
+hu-ro-bg-1/2, balkans-1, at-ch-lu-1, benelux-public-1, med-1/2, iberia-it-public-1/2, east-1.
+
+Then re-bank and rebuild:
+```
+python3 .masters-search/build_gapfill_workbook.py      # -> results/europe-gapfill.xlsx
+```
+(the bank step is the journal-extraction snippet used throughout: read every `type=="result"`
+line, walk for dicts with both `program` and `institution`, dedupe on
+(institution[:60], program[:60]) preferring records that carry `valueVerdict`).
+
+**Also still outstanding:** verification of the private-schools dataset
+(`private-es-pt-nl-it.json`, run `wf_800ea13c-692`) — 5 of 114 verified.
+
+**Lesson worth keeping:** the workflow's own return value is not trustworthy for counts.
+It reported "103 CONDITIONAL" when only 5 records had actually been verified (the rest were
+the pipeline's fallback label), and its `byType` counted 15 private because it matched the
+substring "priv" anywhere in a field that often reads "PUBLIC ... not a private institution".
+Always re-derive counts from `journal.jsonl`.

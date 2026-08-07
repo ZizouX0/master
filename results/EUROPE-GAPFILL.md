@@ -2,7 +2,7 @@
 
 **Sound design · music production · audio engineering · music technology. September 2027 intake.**
 
-**82 institutions across 24 countries**, none of which appear in any earlier file. The 905
+**85 institutions across 26 countries**, none of which appear in any earlier file. The 905
 institutions already found were handed to the agents as an exclusion list, so every row here is new.
 
 Each was searched in English **and** the local language, and each record carries the three things
@@ -11,10 +11,10 @@ and **the fee a Tunisian national pays** — which is frequently not the headlin
 
 | | |
 |---|---|
-| Public | **78** |
+| Public | **81** |
 | Private | **3** |
 | Free or under ~€5,000/yr for you | **40** |
-| Taught in English | **25** |
+| Taught in English | **27** |
 | No portfolio *and* no audition | **15** |
 
 The public/private split is lopsided on purpose: the private sectors of Spain, Portugal, Italy and
@@ -240,6 +240,41 @@ Set against tuition-free Germany and €3,950 France, the UK is hard to justify 
 
 ---
 
+## 🇬🇪🇺🇦 The eastern edge — one real find, and two honest refusals
+
+**Tbilisi State Conservatoire — MA Music Technology, English stream (PUBLIC)** — the best find in
+this slice and the only English-taught one.
+
+- **€3,423/year — €6,846 for the whole two-year degree**, published by the Conservatoire itself as
+  the rate for foreign citizens, plus a €50 exam fee
+- **No instrumental audition and no music-theory exam.** Entry is a written artistic project, a
+  portfolio, and an **English-language interview**
+- The English stream was **internationally accredited by MusiQuE on 31 March 2025**
+- **English: B2 — with an escape clause.** IELTS/TOEFL are accepted, but so is *"any other official
+  document issued by an accredited educational institution confirming at least B2-level
+  proficiency"*. An SMU medium-of-instruction letter may satisfy it without a test
+- ⚠️ **The entry rule is the risk.** The admission page says the prerequisite is *"a Bachelor's
+  academic degree, higher academic musical education"*, which read literally excludes you — but the
+  Music Technology entrance has no musical component at all. **This contradiction must be resolved
+  in writing before you invest anything.**
+- ⚠️ Whether a Tunisian national needs a visa before arrival is unpublished — check the Georgian MFA
+  visa navigator
+- Registration closed 3 June in the last cycle; expect late May–early June 2027
+
+**Ukraine — two genuinely well-matched programmes I would not advise pursuing.** The National
+Academy of Culture and Arts Management (NAKKKiM) has **the most open entry rule found anywhere in
+this sweep** — *"a bachelor's, specialist's or master's degree"*, no field of study named — and a
+curriculum running from musical acoustics through MIDI and mixing. Kyiv National University of
+Theatre, Film and Television has the most distinctive curriculum of the three: spatial sound for
+theatre, film and television, electronic music technologies, DSP. Both are public.
+
+Both are also **Ukrainian-taught** (KNUTKiT requires a Ukrainian-language entrance exam), neither
+publishes a readable foreign-tuition figure, and the country is at war. The agent's own conclusion
+was that legal eligibility is not the operative question. I am recording them because you asked not
+to miss anything — not because they are options for September 2027.
+
+---
+
 ## What this changes
 
 Ranked by what you'd actually pay, with the language you'd actually study in:
@@ -257,6 +292,7 @@ Ranked by what you'd actually pay, with the language you'd actually study in:
 | **Centrale Lyon — MSc Acoustics** | 🇫🇷 | ✅ | **English** | **€3,770/yr** | none |
 | **French public (4)** | 🇫🇷 | ✅ | **French** | **€3,950/yr** | varies |
 | Milano Verdi | 🇮🇹 | ✅ | Italian | €3,500/yr | likely |
+| **Tbilisi Conservatoire** | 🇬🇪 | ✅ | **English** | **€3,423/yr** | project + portfolio |
 | UB Barcelona | 🇪🇸 | ✅ | Catalan/Spanish | ≈€4,900 | likely |
 
 **Three routes are now clearly ahead of anything in the private sweep:**
@@ -273,14 +309,16 @@ Ranked by what you'd actually pay, with the language you'd actually study in:
 
 ## Status & honesty
 
-- **All 13 discovery slices complete** — 82 records. The eastern slice (Ukraine, Moldova, Georgia,
-  Armenia) is still writing at the time of this update.
+- **DISCOVERY IS COMPLETE.** All 13 slices ran; 85 records across 26 countries. Nothing further is
+  outstanding on the search itself.
 - **Verification is running and has completed the German batch (6 records, marked ✅ above).** It
   changed real things: it confirmed Ilmenau as completable entirely in English and NC-frei, but
   corrected the language requirement from "possibly none" to a firm **C1/IELTS 7**, and the
   application fee from €25 to €75. It also promoted HfK Bremen to a top-rated option and surfaced
   TH Köln's 210-ECTS rule, which may exclude a standard three-year bachelor outright.
-- **The other 76 records have not been verified yet.** They are discovery-quality: sourced to an
+- **The other 76 records have not been verified yet, and are now blocked until 15:00 UTC on
+  Friday 8 August**, when the weekly usage limit resets. Verification is queued and will resume
+  from cache — no discovery work will be repeated. They are discovery-quality: sourced to an
   official page, with the agents' own UNVERIFIED flags left intact where a school publishes nothing.
   Given what verification changed in the German batch, treat the unverified figures as good
   starting points to confirm, not as settled facts.
