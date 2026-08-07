@@ -8,7 +8,7 @@ Target intake: **September 2027**.
 
 ## What you're holding
 
-**1,079 unique opportunities across 56 countries** — master's programmes at public and private
+**1,091 unique opportunities across 56 countries** — master's programmes at public and private
 institutions, plus every scholarship scheme attached to them. Merged and de-duplicated from five
 searches that ran over several weeks:
 
@@ -17,7 +17,7 @@ searches that ran over several weeks:
 | Worldwide sweep | 539 | Every region, every funding scheme, all five subject tracks |
 | Deep Europe | 102 | Follow-up on every European country individually |
 | Sound design deep dive | 319 | Conservatoires, film schools, private academies across Europe |
-| Private ES/PT/NL/IT | 177 | Private institutions in four countries, with accreditation checked |
+| Private ES/PT/NL/IT | 198 | Private institutions in four countries, with accreditation checked |
 | Europe gap sweep | 104 | Everything the first four missed, public and private |
 
 Everything was searched **in English and in the local language** — *Tontechnik*, *conception
@@ -71,22 +71,23 @@ it caught real errors in my own logic:
   wide open** — Ankara accepts literally any bachelor's, but it teaches in Turkish, so it is
   Possible rather than Strong
 
-Across 1,079 records: **421 Strong · 429 Possible · 229 Weak** — and 178 of them additionally carry a human-readable WORTH IT / CONDITIONAL / AVOID verdict from the verification pass (see below).
+Across 1,091 records: **421 Strong · 429 Possible · 229 Weak** — and 178 of them additionally carry a human-readable WORTH IT / CONDITIONAL / AVOID verdict from the verification pass (see below).
 
 ---
 
 ## ✅ What verification actually found
 
-The verification pass is now essentially complete on the two newest datasets: **178 records were
+The verification pass is now essentially complete on the two newest datasets: **209 records were
 re-checked against their official pages by a second agent** and given a verdict for *your* profile.
+Both verification passes are now complete — 70 agents, zero failures.
 
 | Verdict | Count | Meaning |
 |---|---|---|
-| **WORTH IT** | **17** | Accredited, affordable, and genuinely open to you |
-| CONDITIONAL | 64 | Real, but with a caveat you must resolve first |
-| **AVOID** | **97** | Wrong qualification, wrong subject, unaffordable, or closed to you |
+| **WORTH IT** | **18** | Accredited, affordable, and genuinely open to you |
+| CONDITIONAL | 74 | Real, but with a caveat you must resolve first |
+| **AVOID** | **117** | Wrong qualification, wrong subject, unaffordable, or closed to you |
 
-**The most important number here: in the private sector, 64 of 96 verified options — 66% — came
+**The most important number here: in the private sector, 84 of 127 verified options — 66% — came
 back AVOID.** In the public sweep the AVOID rate is 40%, and 15 came back WORTH IT. That gap is the
 clearest single argument in this whole search for pointing yourself at public institutions.
 
@@ -347,6 +348,56 @@ The ones that matter for a Tunisian applicant with your profile:
 | Aalto Scholarship | Finland | Tuition waiver | 🟡 Possible |
 | NL Scholarship | Netherlands | €5,000 one-off | 🟡 Possible |
 
+### 💰 The most important funding finding: Italy pays non-EU students at *private* academies
+
+Verification of the funding slice turned up something that changes the economics of the Italian
+options completely, and it is the kind of thing nobody tells you.
+
+**Italian regional DSU right-to-study scholarships are open to non-EU students — including at
+private AFAM academies — and non-EU students automatically land in the highest-paying band.**
+
+- **Eligibility, verbatim from the IED bando:** applications may be made by Italian citizens, EU
+  citizens, *and* *"i cittadini di Stati non appartenenti all'Unione Europea"* (DPR 394/1999
+  arts. 44-bis and 46(5))
+- **The mechanism:** under Art. 13(3) DPCM 9/4/2001, non-EU foreign students are **automatically
+  treated as *fuori sede*** regardless of where they live in Italy — and *fuori sede* is the top
+  payment band. You qualify for the highest rate by virtue of being non-EU
+- **The money (IED/Lombardy 2025/26):** **€8,134 · €7,073 · €5,776** per year by income band, versus
+  €3,383–€2,950 for *in sede* students
+- **A third of first-year awards are ring-fenced for non-EU nationals**
+
+Set against Saint Louis Rome at ~€8.5k/year, this can take a real, official, second-cycle Italian
+degree in your exact craft to **roughly zero net cost**.
+
+⚠️ **The paperwork is the whole game, and it starts in 2026, not 2027.** You need official
+**Tunisian tax-authority income statements for every household member** for the reference calendar
+year (for a September 2027 entry, that is calendar **2025** — get them while they're easy to
+obtain), plus property/no-property certificates for everyone over 18, movable-asset statements, and
+a household-composition certificate. Employer letters and self-certification are **inadmissible**.
+All of it must be translated into Italian by a recognised translator and **fully consular-legalised
+— Tunisia has no Apostille shortcut for this.** You also need a **registered rental contract** to
+claim *fuori sede* status, and a ***dichiarazione di valore*** for your SMU degree from the Italian
+embassy.
+
+Deadlines fall in **September–November of the enrolment year** (IED: application by 7 Nov, rental
+contract by 10 Dec; NABA: 22 Sept). Note that **NABA's own international scholarship and DSU are
+incompatible — you must choose one.**
+
+### And the mirror image: where public money is definitively closed
+
+- **🇪🇸 Spain — zero.** Two independent published exclusions mean no Spanish public money reaches a
+  Tunisian at a private institution: *título propio* programmes are excluded outright, and Spanish
+  grants require *residencia*, whereas a student visa grants *estancia*. **Every Spanish private
+  price tag is therefore the real, final, self-paid price.**
+- **🇵🇹 Portugal — closed.** State cash is definitively unavailable to an *estudante internacional*.
+  Portugal remains the strongest *self-funded* option on cheap accredited tuition, but budget for
+  paying all of it
+- **🇳🇱 Netherlands — closed twice over.** Private Dutch audio schools sit outside both the NL
+  Scholarship and IND recognised-sponsor status. **SAE states in writing that enrolment "cannot
+  grant you a Student Visa in the Netherlands"**, and Abbey Road Institute that it "cannot assist
+  non-EU residents with their VISA application." Those are the schools' own words
+
+
 **The honest summary on funding:** the fully-funded routes that genuinely fit a non-music engineering
 graduate are **Erasmus Mundus (DIGICREA, ReSound)**, **Stipendium Hungaricum**, **Türkiye Bursları**
 and **DAAD**. Everything else either wants a portfolio you're still building, work experience you
@@ -375,6 +426,7 @@ don't have, or is a partial discount rather than funding.
 |---|---|
 | **Now → early 2027** | **Build the portfolio.** Target the best spec found: **4–8 finished tracks, different roles (producer, engineer, writer), your role stated per track** (Abbey Road's standard). This is the binding constraint on everything portfolio-based |
 | **Now** | Ask SMU for a **medium-of-instruction letter**. Decide your second language and start it |
+| **Now (2026)** | If Italy is in play, collect **calendar-2025 Tunisian tax statements** for the whole household, property and asset certificates, and a household-composition certificate — these are the DSU scholarship's evidence base and they get harder to obtain with age |
 | **Now** | If Italy is in play, start the **Dichiarazione di Valore** or **CIMEA** statement — it's slow and it blocks applications, not just visas |
 | **~Sept–Dec 2026** | **Sit IELTS.** Ilmenau needs ~7.0; NABA accepts 5.0; several ask for nothing |
 | **1 Nov 2026** | Berklee Valencia Early Action (scholarship 15 Nov) |
