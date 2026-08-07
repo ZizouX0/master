@@ -27,6 +27,12 @@ English-only searching misses most of this field.
 **The companion spreadsheet is `MASTER-all-opportunities.xlsx`.** This document explains what's in
 it and what it means. The spreadsheet is where you filter and decide.
 
+**Nothing was dropped.** The five source files hold **1,262 records** between them. Merging them on
+institution + programme collapses the overlaps to **1,091 unique rows** — and I checked every source
+file back against the master: **0 records from any of the five are unrepresented.** Where the same
+programme was found twice, the richer record wins and any field the winner was missing is filled in
+from the other, so de-duplication adds detail rather than losing it.
+
 ---
 
 ## Your profile, which every judgement here is based on
@@ -71,13 +77,13 @@ it caught real errors in my own logic:
   wide open** — Ankara accepts literally any bachelor's, but it teaches in Turkish, so it is
   Possible rather than Strong
 
-Across 1,091 records: **421 Strong · 429 Possible · 229 Weak** — and 178 of them additionally carry a human-readable WORTH IT / CONDITIONAL / AVOID verdict from the verification pass (see below).
+Across 1,091 records: **422 Strong · 436 Possible · 233 Weak** — and **199 of them additionally carry a WORTH IT / CONDITIONAL / AVOID verdict** from the verification pass (see below). 209 verdicts were issued in total; 199 survive de-duplication into the master file.
 
 ---
 
 ## ✅ What verification actually found
 
-The verification pass is now essentially complete on the two newest datasets: **209 records were
+**209 records were
 re-checked against their official pages by a second agent** and given a verdict for *your* profile.
 Both verification passes are now complete — 70 agents, zero failures.
 
@@ -88,10 +94,11 @@ Both verification passes are now complete — 70 agents, zero failures.
 | **AVOID** | **117** | Wrong qualification, wrong subject, unaffordable, or closed to you |
 
 **The most important number here: in the private sector, 84 of 127 verified options — 66% — came
-back AVOID.** In the public sweep the AVOID rate is 40%, and 15 came back WORTH IT. That gap is the
+back AVOID, and only 3 came back WORTH IT.** In the public-heavy gap sweep the AVOID rate is 40% of
+82, and 15 came back WORTH IT. That gap is the
 clearest single argument in this whole search for pointing yourself at public institutions.
 
-### The 17 that survived verification
+### The 18 that survived verification
 
 **Rated A — apply to these**
 
@@ -107,6 +114,12 @@ clearest single argument in this whole search for pointing yourself at public in
 | **Kunstuniversität Linz — Interface Cultures** | 🇦🇹 Linz | near-free | English |
 | **ČVUT Prague — Electronics and Communications** | 🇨🇿 Prague | cheap | English |
 | **Buckinghamshire New University — MA Music and Audio Production** | 🇬🇧 | £16,280 | English |
+
+**Plus one that isn't a programme at all**
+
+| | |
+|---|---|
+| **Italian regional DSU right-to-study scholarship** 🇮🇹 | Rated **A** — the only public money in four countries that a Tunisian at a *private* institution can actually receive. Details in the funding section below |
 
 **Rated B — strong, with a caveat**
 
