@@ -24,18 +24,20 @@ def g(r, *keys, n=400):
     return ""
 
 
+# Identity first (these three stay frozen while you scroll right), then the six
+# decision columns, then everything else.
 COLS = [
+    ("Country", lambda r: r["Country"], 17),
+    ("Institution", lambda r: r["Institution"], 40),
+    ("Programme / scheme", lambda r: r["Programme / scheme"], 42),
     ("Chance for you", lambda r: r["Chance for you"], 14),
-    ("Why that chance", lambda r: r["Why that chance"], 46),
     ("Cost band (you)", lambda r: r["Cost band (you)"], 15),
     ("Taught in", lambda r: r["Taught in"], 16),
     ("Public/Private", lambda r: r["Public/Private"], 13),
     ("Funding", lambda r: r["Funding"], 10),
-    ("Country", lambda r: r["Country"], 17),
+    ("Why that chance", lambda r: r["Why that chance"], 46),
     ("Region", lambda r: r["Region"], 22),
     ("City", lambda r: r["City"], 20),
-    ("Institution", lambda r: r["Institution"], 44),
-    ("Programme / scheme", lambda r: r["Programme / scheme"], 46),
     ("Scholarship", lambda r: r["Scholarship"], 30),
     ("Track", lambda r: r["Track"], 26),
     ("Degree awarded", lambda r: g(r, "qualification", "degree"), 34),
@@ -63,6 +65,8 @@ COLS = [
     ("Source", lambda r: r["_rec"].get("sourceUrl") or "", 26),
 ]
 
+IDX = {name: i for i, (name, _fn, _w) in enumerate(COLS, 1)}
+
 
 def sheet(wb, title, rows, note=None):
     ws = wb.create_sheet(title[:31])
@@ -82,20 +86,22 @@ def sheet(wb, title, rows, note=None):
         rr = top + 1 + n
         for i, (_, fn, _w) in enumerate(COLS, 1):
             ws.cell(rr, i, fn(r)).alignment = Alignment(vertical="top", wrap_text=False)
-        ws.cell(rr, 1).fill = {"Strong": GREEN, "Possible": AMBER, "Weak": RED}[r["Chance for you"]]
-        ws.cell(rr, 1).font = Font(bold=True)
-        ws.cell(rr, 3).fill = {"Free": GREEN, "Under €1,500": GREEN, "€1,500–5,000": GREEN,
-                               "€5,000–15,000": AMBER, "Over €15,000": RED}.get(r["Cost band (you)"], GREY)
-        ws.cell(rr, 4).fill = GREEN if M.language_ok(r["Taught in"]) else GREY
-        ws.cell(rr, 5).fill = GREEN if r["Public/Private"] == "Public" else (
+        ws.cell(rr, IDX["Chance for you"]).fill = {
+            "Strong": GREEN, "Possible": AMBER, "Weak": RED}[r["Chance for you"]]
+        ws.cell(rr, IDX["Chance for you"]).font = Font(bold=True)
+        ws.cell(rr, IDX["Cost band (you)"]).fill = {
+            "Free": GREEN, "Under €1,500": GREEN, "€1,500–5,000": GREEN,
+            "€5,000–15,000": AMBER, "Over €15,000": RED}.get(r["Cost band (you)"], GREY)
+        ws.cell(rr, IDX["Taught in"]).fill = GREEN if M.language_ok(r["Taught in"]) else GREY
+        ws.cell(rr, IDX["Public/Private"]).fill = GREEN if r["Public/Private"] == "Public" else (
             AMBER if r["Public/Private"] == "Private" else GREY)
-        ws.cell(rr, 6).fill = {"Full": GREEN, "Partial": AMBER}.get(r["Funding"], GREY)
+        ws.cell(rr, IDX["Funding"]).fill = {"Full": GREEN, "Partial": AMBER}.get(r["Funding"], GREY)
         src = ws.cell(rr, len(COLS))
         u = r["_rec"].get("sourceUrl") or ""
         if u.startswith("http"):
             src.hyperlink, src.value, src.font = u, "official page", Font(color="0563C1", underline="single")
     ws.auto_filter.ref = f"A{top}:{get_column_letter(len(COLS))}{top + len(rows)}"
-    ws.freeze_panes = ws.cell(top + 1, 11)
+    ws.freeze_panes = ws.cell(top + 1, 4)   # header + Country/Institution/Programme
     return ws
 
 
@@ -112,7 +118,8 @@ def main():
         (f"{len(rows)} unique opportunities · {len({r['Country'] for r in rows})} countries · "
          f"merged and de-duplicated from five separate searches.", False),
         ("", False),
-        ("THE FIRST SIX COLUMNS ARE THE DECISION. Everything after them is supporting detail.", True),
+        ("COLUMNS A-C identify the programme and stay frozen while you scroll right.", True),
+        ("COLUMNS D-H are the decision. Everything after them is supporting detail.", True),
         ("", False),
         ("  Chance for you   GREEN  Strong   — the entry rules name your background, or accept any degree", False),
         ("                   AMBER  Possible — plausible, but something needs asking or arguing", False),
@@ -184,13 +191,9 @@ def main():
 
     wb.save(M.OUT_XLSX)
 
-    with open(M.OUT_CSV, "w", newline="", encoding="utf-8") as fh:
-        w = csv.writer(fh)
-        w.writerow([c[0] for c in COLS])
-        for r in rows:
-            w.writerow([fn(r) for _, fn, _w in COLS])
-
-    print(f"wrote {M.OUT_XLSX} and {M.OUT_CSV}")
+    # Excel only — the CSV duplicate was dropped at the user's request, and the
+    # workbook carries the filters and colour coding that make the data usable.
+    print(f"wrote {M.OUT_XLSX}")
     print(f"  {len(rows)} rows · {len(best)} best bets · {len(workable)} strong+EN/FR · "
           f"{len(funded)} fully funded · {len(schol)} with a scheme · {len(idx)} distinct schemes · {len(by)} regions")
 

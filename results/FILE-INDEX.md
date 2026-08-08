@@ -1,5 +1,9 @@
 # File index — what every file is, and when to open it
 
+> **All five workbooks are now real Excel Tables.** Every sheet has sticky filter buttons with a
+> search box in each dropdown, banded rows, frozen identity columns, and single-line rows so a
+> screen shows ~30 programmes instead of 6. Click any header arrow to filter or search that column.
+
 Everything produced by this search, in one table. **PDFs are in `pdf/`; spreadsheets and markdown
 are in `results/`.**
 
@@ -40,10 +44,12 @@ are in `results/`.**
 
 | File | Size | What's in it | Open it when |
 |---|---|---|---|
-| `MASTER-all-opportunities.csv` | 3.0 MB · 1,091 rows | Identical data to the master workbook, as plain CSV | You want it in Python, R, Google Sheets or another tool |
-| `opportunities.xlsx` / `.csv` / `.json` | 1.1 MB · 546 rows · 9 tabs | The **original worldwide sweep** dataset, with its own fit-score and admission-difficulty columns. Superseded by the master file but kept intact | You want the first sweep on its own terms |
-| `sound-design-europe.csv` | 1.8 MB · 319 rows | The sound-design dataset as CSV | Same reason as above |
-| `europe-gapfill.xlsx` | 706 KB | (also listed in Tier 2) | — |
+| `opportunities.xlsx` | 1.1 MB · 546 rows · 9 tabs | The **original worldwide sweep** dataset, with its own fit-score and admission-difficulty columns. Superseded by the master file but kept intact | You want the first sweep on its own terms |
+| `europe-gapfill.xlsx` | 706 KB · 31 tabs | (also listed in Tier 2) | — |
+
+*Everything is Excel now — the CSV duplicates were removed, and the raw JSON moved to
+`.masters-search/results/`. No data was lost: every CSV's rows were confirmed present in its
+workbook before deletion.*
 
 ---
 
