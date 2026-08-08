@@ -1,5 +1,7 @@
 # Results — start here
 
+**`FILE-INDEX.md` (or `pdf/FILE-INDEX.pdf`) is the full table of every file and what it contains.**
+
 **👉 `THE-COMPLETE-GUIDE.pdf` (in `pdf/`) explains everything. `MASTER-all-opportunities.xlsx` is
 where you filter and decide.**
 
