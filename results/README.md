@@ -1,5 +1,9 @@
 # Results — start here
 
+> ℹ️ **Click a `.md` file to read it here on GitHub.** GitHub renders Markdown but cannot preview
+> PDFs or spreadsheets, so those show an "unable to render" message — use the download button.
+> The content is identical.
+
 **`FILE-INDEX.md` (or `pdf/FILE-INDEX.pdf`) is the full table of every file and what it contains.**
 
 **👉 `THE-COMPLETE-GUIDE.pdf` (in `pdf/`) explains everything. `MASTER-all-opportunities.xlsx` is
