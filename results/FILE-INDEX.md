@@ -9,20 +9,12 @@ are in `results/`.**
 
 ---
 
-## 🎛️ The interactive version
-
-| | |
-|---|---|
-| **`console.html`** — *The Console* | Three modes. **Picks** leads with the 18 that survived verification, as cards, plus the three things worth doing this month. **Explore** is the full 1,091 with nine filter groups, live counts, search, sort and keyboard navigation. **Shortlist** is whatever you star, compared side by side — saved in your browser, no account. Any row opens a full record with every field and a link to the official page. Filtered views are shareable by URL. Works offline. |
-
----
-
 ## 🟢 Tier 1 — read these
 
 | File | Size | What's in it | Open it when |
 |---|---|---|---|
 | **`THE-COMPLETE-GUIDE.pdf`** | 515 lines | **The whole search explained.** 1,091 opportunities · 56 countries. How the "chance of acceptance" column works and how it was validated · the 18 verified WORTH IT options · the accreditation trap in each country · the two separate tests (accreditation vs contact hours) that decide a visa · country-by-country cost table · the Italian DSU scholarship finding · scholarship comparison · your deadline calendar · what to do in the next month · an honest limits section | **First. Before anything else.** It is the map for every other file |
-| **`MASTER-all-opportunities.xlsx`** | 3.8 MB · **18 tabs** | **Every opportunity found, merged from all five searches.** 1,091 rows × 36 columns. Tabs: *START HERE · ★ BEST BETS · Strong + English or French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything ·* then one per region (Western Europe, Southern Europe, Central Europe, Nordics & Baltics, Balkans & Türkiye, Eastern Europe & Caucasus, North America, Asia-Pacific, MENA). Colour-coded on chance, cost, language, public/private and funding | **Whenever you want to decide something.** Start on ★ BEST BETS (119 rows), then filter *Everything* |
+| **`MASTER-all-opportunities.xlsx`** | 3.8 MB · **18 tabs** | **Every opportunity found, merged from all five searches.** 1,091 rows × 36 columns. Tabs: *START HERE · ★ BEST BETS · Strong + English or French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything ·* then one per region (Western Europe, Southern Europe, Central Europe, Nordics & Baltics, Balkans & Türkiye, Eastern Europe & Caucasus, North America, Asia-Pacific, MENA). Colour-coded on chance, cost, language, public/private and funding | **Whenever you want to decide something.** Start on ★ BEST BETS (140 rows), then filter *Everything* |
 | **`PATHS-DEEP-DIVE.pdf`** | 336 lines | **What you'd actually study and become.** The three career paths — sound & music tech, sound design & production, music business — explained in depth: the modules, the daily reality, the job you end up doing, and what each does *not* teach. Plus a full explanation of what a portfolio means in practice and how to build one | **Before you choose a direction.** The other files tell you *where*; this tells you *what toward* |
 
 ---
@@ -54,6 +46,7 @@ are in `results/`.**
 |---|---|---|---|
 | `opportunities.xlsx` | 1.1 MB · 546 rows · 9 tabs | The **original worldwide sweep** dataset, with its own fit-score and admission-difficulty columns. Superseded by the master file but kept intact | You want the first sweep on its own terms |
 | `europe-gapfill.xlsx` | 706 KB · 31 tabs | (also listed in Tier 2) | — |
+| `console.html` | 3.4 MB | An interactive browser for the same 1,091 records — filter, star, compare. Kept for completeness; the documents and workbooks above carry the same data | You'd rather click than scroll a spreadsheet |
 
 *Everything is Excel now — the CSV duplicates were removed, and the raw JSON moved to
 `.masters-search/results/`. No data was lost: every CSV's rows were confirmed present in its

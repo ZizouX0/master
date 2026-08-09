@@ -77,7 +77,7 @@ it caught real errors in my own logic:
   wide open** — Ankara accepts literally any bachelor's, but it teaches in Turkish, so it is
   Possible rather than Strong
 
-Across 1,091 records: **422 Strong · 436 Possible · 233 Weak** — and **199 of them additionally carry a WORTH IT / CONDITIONAL / AVOID verdict** from the verification pass (see below). 209 verdicts were issued in total; 199 survive de-duplication into the master file.
+Across 1,091 records: **423 Strong · 435 Possible · 233 Weak** — and **199 of them additionally carry a WORTH IT / CONDITIONAL / AVOID verdict** from the verification pass (see below). 209 verdicts were issued in total; 199 survive de-duplication into the master file.
 
 ---
 
@@ -159,14 +159,17 @@ programmes disproportionately valuable to you.
 
 This is what **you** pay as a non-EU national, which is frequently *not* the headline rate.
 
+Every band below is **tuition per year, at the rate you pay as a non-EU national**. Where a school
+publishes only a whole-programme total, it is halved to give a comparable per-year figure.
+
 | Band | Count | Reality |
 |---|---|---|
-| **Free** | 98 | Mostly German public universities and fully-funded schemes |
-| Under €1,500/yr | 94 | Italian conservatoires with ISEEE, Turkish public, Greek public |
-| €1,500–5,000/yr | 138 | French public (€3,950 flat), Georgian, Iberian public |
-| €5,000–15,000/yr | 209 | Portuguese private, Irish, some Nordic |
-| **Over €15,000/yr** | 201 | All UK, Berklee, Aalto, Dutch private, Norway |
-| Not published | 289 | The institution publishes nothing — ask them |
+| **Free** | 92 | Mostly German public universities and fully-funded schemes |
+| Under €1,500/yr | 153 | Italian conservatoires with ISEEE, Turkish public, Greek public |
+| €1,500–5,000/yr | 140 | French public (€3,950 flat), Georgian, Iberian public |
+| €5,000–15,000/yr | 219 | Portuguese private, Irish, some Nordic |
+| **Over €15,000/yr** | 173 | All UK, Berklee, Aalto, Dutch private, Norway |
+| Not published | 314 | The institution publishes no figure — **not the same as free**. Ask them |
 
 ### 3. Can you follow the teaching? → the *Taught in* column
 
@@ -178,7 +181,7 @@ public system at €3,950/year — programmes you could follow from day one, wit
 
 ## ★ Where I would actually apply
 
-**114 opportunities are both Strong and cheap-or-free.** These are the ones worth your attention.
+**140 opportunities are both Strong and cheap-or-free.** These are the ones worth your attention.
 Grouped by what kind of bet each one is:
 
 ### The lowest-risk applications — no portfolio, no audition, free
@@ -220,7 +223,7 @@ English at C1 (~IELTS 7.0), and the application fee is €75.
 | **École Centrale de Lyon + INSA — MSc Acoustics** | Lyon 🇫🇷 | €3,770/yr | **English** |
 | Cnam Angoulême — *Conception sonore* | 🇫🇷 | €3,950/yr | French |
 
-**France is 34 of the 114 best bets** — by far the largest single block, precisely because your
+**France is the largest single block of the 140 best bets** — by far the largest single block, precisely because your
 French removes the language gate that blocks most applicants.
 
 ### Best value if you'll learn a language
@@ -242,7 +245,7 @@ degree.
 
 ## Public vs private — and the trap that runs through it
 
-**647 public · 277 private · 105 unclear.**
+**652 public · 335 private · 104 not stated.**
 
 Public almost always means cheaper *and* accredited by default. Private is where the money and the
 risk both live — because **in every country surveyed, a private school may legally sell you
@@ -320,7 +323,7 @@ low · Barcelona/Valencia ~€900–1,000 · Milan €1,100–1,400 · Amsterdam
 
 | Language | Programmes | Your position |
 |---|---|---|
-| **English** | ~390 Strong-chance rows | Working level. **You still need IELTS** — Ilmenau wants C1 (~7.0), NABA only 5.0 |
+| **English** | 419 Strong-chance rows in English or French | Working level. **You still need IELTS** — Ilmenau wants C1 (~7.0), NABA only 5.0 |
 | **French** | 34 of the 114 best bets | **Fluent. This is your unfair advantage and it is under-used** |
 | German | Large, mostly free | A1 suffices at HfM Mainz; C1 at TH Köln |
 | Italian | Cheapest accredited degrees | Would need ~a year |
