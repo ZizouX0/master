@@ -132,15 +132,41 @@ LANGS = ["English", "German", "French", "Italian", "Spanish", "Portuguese", "Dut
          "Bulgarian", "Greek", "Turkish", "Estonian", "Latvian", "Lithuanian", "Slovenian",
          "Croatian", "Serbian", "Icelandic", "Ukrainian", "Georgian", "Catalan", "Flemish"]
 
+# Records often name the language in its own tongue — "Deutsch/Englisch", "Mova: Ukrainska".
+# Without these, a bilingual German programme reads as "Check".
+AUTONYM = {
+    "englisch": "English", "anglais": "English", "inglese": "English", "inglés": "English",
+    "ingles": "English", "engels": "English", "englanti": "English", "angielski": "English",
+    "deutsch": "German", "allemand": "German", "tedesco": "German", "duits": "German",
+    "français": "French", "francais": "French", "französisch": "French", "francese": "French",
+    "italiano": "Italian", "italiensk": "Italian",
+    "español": "Spanish", "espanol": "Spanish", "castellano": "Spanish", "spanisch": "Spanish",
+    "português": "Portuguese", "portugues": "Portuguese",
+    "nederlands": "Dutch", "vlaams": "Flemish",
+    "polski": "Polish", "čeština": "Czech", "cestina": "Czech", "slovenčina": "Slovak",
+    "magyar": "Hungarian", "română": "Romanian", "romana": "Romanian",
+    "български": "Bulgarian", "ελληνικά": "Greek", "türkçe": "Turkish", "turkce": "Turkish",
+    "eesti": "Estonian", "latviešu": "Latvian", "lietuvių": "Lithuanian",
+    "slovenščina": "Slovenian", "hrvatski": "Croatian", "српски": "Serbian",
+    "українська": "Ukrainian", "ukrainska": "Ukrainian", "català": "Catalan",
+    "suomi": "Finnish", "svenska": "Swedish", "norsk": "Norwegian", "dansk": "Danish",
+}
+
 
 def language_of(r):
     s = (r.get("language") or "").strip()
     if not s:
         return "Check"
     head = re.split(r"[.;(]", s)[0]
-    hits = [L for L in LANGS if re.search(rf"\b{L}\b", head, re.I)]
-    if not hits:
-        hits = [L for L in LANGS if re.search(rf"\b{L}\b", s[:90], re.I)]
+
+    def find(text):
+        found = [L for L in LANGS if re.search(rf"\b{L}\b", text, re.I)]
+        for a, L in AUTONYM.items():
+            if a in text.lower() and L not in found:
+                found.append(L)
+        return found
+
+    hits = find(head) or find(s[:140])
     if not hits:
         return "Check"
     if len(hits) == 1:
@@ -184,24 +210,39 @@ def _eur(raw, cur):
     return v * FX.get(cur.upper(), FX.get(cur, 1.0))
 
 
+# "no tuition schedule is published" is not "no tuition".
+RX_NOTFREE = re.compile(r"no\s+\S*\s*(?:tuition|fee)?\s*(?:schedule|figure|rate|price|amount|"
+                        r"information)\b|not published|could not be (?:found|retrieved)", re.I)
+# Figures introduced by these words are admin charges, not the price of the degree.
+# Milan's field lists a EUR 56.04 application fee and a EUR 50 language test before
+# any tuition, so reading the first number gave "Under EUR 1,500" for a EUR 3,500 course.
+RX_PROC = re.compile(r"(applicat|registrat|enrol|inscri|admission|exam|test|deposit|down payment|"
+                     r"insurance|stamp|bollo|PagoPA|matr[ií]cula|candidatura|late[- ]payment|"
+                     r"student (?:id|card)|graduation|diploma fee)", re.I)
+
+
 def cost_band(r):
     """What HE pays. Non-EU/international rate wherever the dataset has one."""
     for key in ("tuitionNonEU", "tuitionIntl", "tuitionTotal", "tuitionPerYear", "tuitionEU"):
         s = (r.get(key) or "").strip()
         if not s:
             continue
-        if RX_FREE.search(s[:120]):
+        if RX_FREE.search(s[:120]) and not RX_NOTFREE.search(s[:220]):
             return "Free", 0.0
         vals = []
         for m in RX_MONEY.finditer(s):
             v = _eur(m.group(2) or m.group(3), m.group(1) or m.group(4))
-            if v and 20 <= v <= 500_000:
-                vals.append(v)
+            if not v or not (20 <= v <= 500_000):
+                continue
+            if RX_PROC.search(s[max(0, m.start() - 46):m.start()]):
+                continue                      # an admin charge, not tuition
+            vals.append(v)
         if vals:
-            big = max(vals)
-            # a stated programme total for a 2-year degree — halve it to compare per-year
+            # The first surviving figure is the rate being quoted; later ones are usually
+            # comparisons to other institutions, which banded MTU's EUR 13,500 as over 15k.
+            big = vals[0]
             if re.search(r"\btotal\b|whole programme|two[- ]year|2[- ]year", s, re.I) and big > 8000:
-                big /= 2
+                big /= 2                      # a programme total — halve for a per-year view
             if big < 1500:
                 return "Under €1,500", big
             if big < 5000:

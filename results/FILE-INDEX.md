@@ -13,7 +13,7 @@ are in `results/`.**
 
 | | |
 |---|---|
-| **`console.html`** — *The Console* | All 1,091 opportunities as a filterable web page. Search by name, filter by chance / cost / language / public-private / funding / region / country / subject, one-click views (Best bets, Verified worth it, Fully funded, English or French, Free, The avoid list), and click any row for the full record. Works offline — just open the file. Published to claude.ai as a private page too. |
+| **`console.html`** — *The Console* | Three modes. **Picks** leads with the 18 that survived verification, as cards, plus the three things worth doing this month. **Explore** is the full 1,091 with nine filter groups, live counts, search, sort and keyboard navigation. **Shortlist** is whatever you star, compared side by side — saved in your browser, no account. Any row opens a full record with every field and a link to the official page. Filtered views are shareable by URL. Works offline. |
 
 ---
 
