@@ -122,7 +122,7 @@ def pubpriv(r):
         return "Public"
     if "private" in low[:40]:
         return "Private"
-    return "Check"
+    return "Not stated"
 
 
 # ---------------------------------------------------------------- language
@@ -156,7 +156,7 @@ AUTONYM = {
 def language_of(r):
     s = (r.get("language") or "").strip()
     if not s:
-        return "Check"
+        return "Not stated"
     head = re.split(r"[.;(]", s)[0]
 
     def find(text):
@@ -168,7 +168,7 @@ def language_of(r):
 
     hits = find(head) or find(s[:140])
     if not hits:
-        return "Check"
+        return "Not stated"
     if len(hits) == 1:
         return hits[0]
     hits.sort(key=lambda L: (L != "English", L))
@@ -244,17 +244,17 @@ def cost_band(r):
             if re.search(r"\btotal\b|whole programme|two[- ]year|2[- ]year", s, re.I) and big > 8000:
                 big /= 2                      # a programme total — halve for a per-year view
             if big < 1500:
-                return "Under €1,500", big
+                return "Under EUR 1.5k/yr", big
             if big < 5000:
-                return "€1,500–5,000", big
+                return "EUR 1.5k-5k/yr", big
             if big < 15000:
-                return "€5,000–15,000", big
-            return "Over €15,000", big
-    return "Check", None
+                return "EUR 5k-15k/yr", big
+            return "Over EUR 15k/yr", big
+    return "Not published", None
 
 
-COST_ORDER = {"Free": 0, "Under €1,500": 1, "€1,500–5,000": 2, "€5,000–15,000": 3,
-              "Over €15,000": 4, "Check": 5}
+COST_ORDER = {"Free": 0, "Under EUR 1.5k/yr": 1, "EUR 1.5k-5k/yr": 2, "EUR 5k-15k/yr": 3,
+              "Over EUR 15k/yr": 4, "Not published": 5}
 
 
 def funding_of(r):
@@ -270,7 +270,7 @@ def funding_of(r):
         return "Full"
     if re.search(r"\d{1,3}\s?%|discount|bursary|partial|reduction", sch, re.I):
         return "Partial"
-    return "Check"
+    return "Not stated"
 
 
 # ---------------------------------------------------------------- chance of admission

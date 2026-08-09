@@ -90,8 +90,8 @@ def sheet(wb, title, rows, note=None):
             "Strong": GREEN, "Possible": AMBER, "Weak": RED}[r["Chance for you"]]
         ws.cell(rr, IDX["Chance for you"]).font = Font(bold=True)
         ws.cell(rr, IDX["Cost band (you)"]).fill = {
-            "Free": GREEN, "Under €1,500": GREEN, "€1,500–5,000": GREEN,
-            "€5,000–15,000": AMBER, "Over €15,000": RED}.get(r["Cost band (you)"], GREY)
+            "Free": GREEN, "Under EUR 1.5k/yr": GREEN, "EUR 1.5k-5k/yr": GREEN,
+            "EUR 5k-15k/yr": AMBER, "Over EUR 15k/yr": RED}.get(r["Cost band (you)"], GREY)
         ws.cell(rr, IDX["Taught in"]).fill = GREEN if M.language_ok(r["Taught in"]) else GREY
         ws.cell(rr, IDX["Public/Private"]).fill = GREEN if r["Public/Private"] == "Public" else (
             AMBER if r["Public/Private"] == "Private" else GREY)
@@ -146,8 +146,8 @@ def main():
             c.font = Font(bold=True, size=12, color="1F3864")
 
     strong = [r for r in rows if r["Chance for you"] == "Strong"]
-    cheap = [r for r in rows if r["Cost band (you)"] in ("Free", "Under €1,500", "€1,500–5,000")]
-    best = [r for r in strong if r["Cost band (you)"] in ("Free", "Under €1,500", "€1,500–5,000")]
+    cheap = [r for r in rows if r["Cost band (you)"] in ("Free", "Under EUR 1.5k/yr", "EUR 1.5k-5k/yr")]
+    best = [r for r in strong if r["Cost band (you)"] in ("Free", "Under EUR 1.5k/yr", "EUR 1.5k-5k/yr")]
     workable = [r for r in strong if M.language_ok(r["Taught in"])]
     funded = [r for r in rows if r["Funding"] == "Full"]
     schol = [r for r in rows if r["Scholarship"] != "—"]
