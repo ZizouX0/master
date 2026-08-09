@@ -30,6 +30,7 @@ COLS = [
     ("Country", lambda r: r["Country"], 17),
     ("Institution", lambda r: r["Institution"], 40),
     ("Programme / scheme", lambda r: r["Programme / scheme"], 42),
+    ("Qualification level", lambda r: r["Qualification level"], 24),
     ("Chance for you", lambda r: r["Chance for you"], 14),
     ("Cost band (you)", lambda r: r["Cost band (you)"], 15),
     ("Taught in", lambda r: r["Taught in"], 16),
@@ -86,6 +87,9 @@ def sheet(wb, title, rows, note=None):
         rr = top + 1 + n
         for i, (_, fn, _w) in enumerate(COLS, 1):
             ws.cell(rr, i, fn(r)).alignment = Alignment(vertical="top", wrap_text=False)
+        ws.cell(rr, IDX["Qualification level"]).fill = {
+            "Master's degree": GREEN, "Master di I livello (60 CFU)": AMBER,
+            "Not a degree": RED, "Bachelor / first cycle": RED}.get(r["Qualification level"], GREY)
         ws.cell(rr, IDX["Chance for you"]).fill = {
             "Strong": GREEN, "Possible": AMBER, "Weak": RED}[r["Chance for you"]]
         ws.cell(rr, IDX["Chance for you"]).font = Font(bold=True)
@@ -119,7 +123,16 @@ def main():
          f"merged and de-duplicated from five separate searches.", False),
         ("", False),
         ("COLUMNS A-C identify the programme and stay frozen while you scroll right.", True),
-        ("COLUMNS D-H are the decision. Everything after them is supporting detail.", True),
+        ("COLUMNS D-I are the decision. Everything after them is supporting detail.", True),
+        ("", False),
+        ("  Qualification    READ THIS FIRST. Not everything sold as a 'Master' is a degree.", True),
+        ("  level            GREEN  Master's degree — a real second-cycle award (M.Sc., M.A., MMus,", False),
+        ("                          mestrado, laurea magistrale, master universitario oficial)", False),
+        ("                   AMBER  Master di I livello — Italian 60-CFU certificate AFTER a degree.", False),
+        ("                          Useful locally, but it is NOT a master's and NOT a second cycle", False),
+        ("                   RED    Not a degree — titulo propio, CRKBO diploma, advanced diploma.", False),
+        ("                          No official recognition. Do not pay for one expecting a degree", False),
+        ("                   GREY   Unclear / Funding scheme / Aggregate entry — see the tab notes", False),
         ("", False),
         ("  Chance for you   GREEN  Strong   — the entry rules name your background, or accept any degree", False),
         ("                   AMBER  Possible — plausible, but something needs asking or arguing", False),
@@ -145,15 +158,29 @@ def main():
         if b:
             c.font = Font(bold=True, size=12, color="1F3864")
 
-    strong = [r for r in rows if r["Chance for you"] == "Strong"]
-    cheap = [r for r in rows if r["Cost band (you)"] in ("Free", "Under EUR 1.5k/yr", "EUR 1.5k-5k/yr")]
+    # A "Master's degree" here means a real second-cycle award — an M.Sc./M.A./mestrado/
+    # laurea magistrale. Everything else (título propio, CRKBO diploma, Italian Master di
+    # I livello, advanced diplomas) is separated out rather than deleted, so the rejects
+    # stay checkable.
+    degrees = [r for r in rows if r["Qualification level"] == "Master's degree"]
+    notdeg = [r for r in rows if r["Qualification level"] in
+              ("Not a degree", "Bachelor / first cycle", "Master di I livello (60 CFU)")]
+    strong = [r for r in degrees if r["Chance for you"] == "Strong"]
+    cheap = [r for r in degrees if r["Cost band (you)"] in ("Free", "Under EUR 1.5k/yr", "EUR 1.5k-5k/yr")]
     best = [r for r in strong if r["Cost band (you)"] in ("Free", "Under EUR 1.5k/yr", "EUR 1.5k-5k/yr")]
     workable = [r for r in strong if M.language_ok(r["Taught in"])]
-    funded = [r for r in rows if r["Funding"] == "Full"]
+    funded = [r for r in degrees if r["Funding"] == "Full"]
     schol = [r for r in rows if r["Scholarship"] != "—"]
 
     sheet(wb, "★ BEST BETS", best,
-          "Strong chance AND cheap or free. If you read one tab, read this one.")
+          "REAL MASTER'S DEGREES ONLY — strong chance AND cheap or free. If you read one tab, read this one.")
+    sheet(wb, "Master's degrees only", degrees,
+          f"The {len(degrees)} records confirmed to award an actual master's degree — M.Sc., M.A., "
+          "MMus, mestrado, laurea magistrale, máster universitario oficial. Certificates removed.")
+    sheet(wb, "NOT a degree — avoid", notdeg,
+          "What was filtered OUT and why: título propio, CRKBO diploma, advanced diploma, "
+          "Italian 'Master di I livello' (60 CFU, a post-degree certificate). Read the "
+          "'Qualification level' and 'Accreditation' columns.")
     sheet(wb, "Strong + English or French", workable,
           "Strong chance, taught in a language you already work in.")
     sheet(wb, "Fully funded", funded, "Funding covers tuition and usually a stipend.")
@@ -194,7 +221,8 @@ def main():
     # Excel only — the CSV duplicate was dropped at the user's request, and the
     # workbook carries the filters and colour coding that make the data usable.
     print(f"wrote {M.OUT_XLSX}")
-    print(f"  {len(rows)} rows · {len(best)} best bets · {len(workable)} strong+EN/FR · "
+    print(f"  {len(rows)} rows · {len(degrees)} real degrees · {len(notdeg)} not degrees · "
+          f"{len(best)} best bets · {len(workable)} strong+EN/FR · "
           f"{len(funded)} fully funded · {len(schol)} with a scheme · {len(idx)} distinct schemes · {len(by)} regions")
 
 

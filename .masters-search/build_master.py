@@ -16,6 +16,9 @@ taught in, whether it is public or private, and his realistic chance of admissio
 import json, re, sys, glob, csv
 from collections import defaultdict, Counter
 
+sys.path.insert(0, ".masters-search")
+import qual_level          # separates real master's degrees from certificates
+
 OUT_XLSX = "results/MASTER-all-opportunities.xlsx"
 OUT_CSV = "results/MASTER-all-opportunities.csv"
 OUT_JSON = ".masters-search/results/master-all.json"
@@ -429,13 +432,16 @@ def main():
         lang = language_of(r)
         band, amount = cost_band(r)
         ch, why = chance(r, lang)
+        inst = institution_of(r)
+        prog = txt(r.get("program") or r.get("scholarshipName"), 120)
         out.append({
             "_rec": r,
+            "Qualification level": qual_level.level(r, prog, inst),
             "Country": c,
             "Region": COUNTRY_REGION.get(c, "Other"),
             "City": txt(r.get("city"), 40),
-            "Institution": institution_of(r),
-            "Programme / scheme": txt(r.get("program") or r.get("scholarshipName"), 120),
+            "Institution": inst,
+            "Programme / scheme": prog,
             "Scholarship": scheme_name(r) or "—",
             "Public/Private": pubpriv(r),
             "Track": track_of(r),
@@ -462,4 +468,5 @@ if __name__ == "__main__":
     print("  by type   :", dict(Counter(r["Public/Private"] for r in rows)))
     print("  by cost   :", dict(Counter(r["Cost band (you)"] for r in rows)))
     print("  by region :", dict(Counter(r["Region"] for r in rows)))
+    print("  by level  :", dict(Counter(r["Qualification level"] for r in rows)))
     print("  countries :", len({r["Country"] for r in rows}))

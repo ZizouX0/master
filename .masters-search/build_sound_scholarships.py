@@ -24,7 +24,12 @@ CHEAP = {"Free", "Under EUR 1.5k/yr", "EUR 1.5k-5k/yr"}
 
 def main():
     allrows = M.main()
-    sound = [r for r in allrows if r["Track"] in SOUND_TRACKS]
+    sound_all = [r for r in allrows if r["Track"] in SOUND_TRACKS]
+    # only genuine second-cycle degrees carry the main tabs; the rejects get their own tab
+    sound = [r for r in sound_all if r["Qualification level"] == "Master's degree"]
+    notdeg = [r for r in sound_all if r["Qualification level"] in
+              ("Not a degree", "Bachelor / first cycle", "Master di I livello (60 CFU)")]
+    unclear = [r for r in sound_all if r["Qualification level"] == "Unclear"]
     # Funding schemes are attached to programmes rather than standing alone, so a
     # scholarship tab means "rows carrying a named scheme" — kept across every track,
     # because a scheme found on a business programme may still be open to him.
@@ -38,8 +43,14 @@ def main():
     lines = [
         ("SOUND & FUNDING — the making-sound half of the search, plus all the money", True),
         ("", False),
-        (f"{len(sound)} programmes about sound, and {len(schemes)} rows carrying a named "
-         f"scholarship scheme.", False),
+        (f"{len(sound)} sound programmes that award a REAL MASTER'S DEGREE, and {len(schemes)} rows "
+         f"carrying a named scholarship scheme.", False),
+        ("", False),
+        ("CERTIFICATES HAVE BEEN SEPARATED OUT.", True),
+        (f"  {len(notdeg)} sound 'Masters' are not degrees — titulo propio, CRKBO diploma, advanced", False),
+        ("  diploma, Italian Master di I livello (60 CFU). They sit on the 'NOT a degree' tab.", False),
+        (f"  {len(unclear)} more do not state their award clearly; they are on 'Award unclear'.", False),
+        ("  Column D 'Qualification level' shows the verdict on every row.", False),
         ("", False),
         ("WHAT IS IN, AND WHAT IS NOT", True),
         ("  IN   Sound design / production   — making records: production, mixing, sound design, DJing", False),
@@ -73,7 +84,8 @@ def main():
                if not (r["_rec"].get("portfolioSpec") or r["_rec"].get("portfolioReq") or "").strip()
                or (r["_rec"].get("portfolioSpec") or r["_rec"].get("portfolioReq") or "").lower().startswith(("none", "no portfolio", "not required"))]
     funded = [r for r in sound if r["Funding"] == "Full"]
-    sfunded = [r for r in schemes if r["Track"] in SOUND_TRACKS]
+    sfunded = [r for r in schemes if r["Track"] in SOUND_TRACKS
+               and r["Qualification level"] == "Master's degree"]
 
     W.sheet(wb, "★ BEST BETS", best,
             "Sound programmes that are BOTH a strong chance for you AND cheap or free. Start here.")
@@ -92,7 +104,16 @@ def main():
     W.sheet(wb, "All scholarships", schemes,
             "Every row carrying a named scheme, across ALL tracks — a scheme found on another "
             "programme may still be open to you.")
-    W.sheet(wb, "All sound programmes", sound, "Every sound, audio and music-technology programme found.")
+    W.sheet(wb, "All sound programmes", sound,
+            "Every sound, audio and music-technology MASTER'S DEGREE found.")
+    if notdeg:
+        W.sheet(wb, "NOT a degree — avoid", notdeg,
+                "Sold as a 'Master' but not one: título propio, CRKBO diploma, advanced diploma, "
+                "Italian Master di I livello (60 CFU). Kept so you can check them, not apply to them.")
+    if unclear:
+        W.sheet(wb, "Award unclear — ask them", unclear,
+                "The institution does not state clearly enough what it awards. Email and ask for the "
+                "exact qualification name and its accreditation before applying.")
 
     # one row per scheme, so the funding landscape is visible on its own
     idx = defaultdict(list)
@@ -126,7 +147,8 @@ def main():
 
     wb.save(OUT)
     print(f"wrote {OUT}")
-    print(f"  {len(sound)} sound programmes · {len(best)} best bets · {len(nofolio)} no-portfolio · "
+    print(f"  {len(sound)} sound DEGREES (of {len(sound_all)} sound records) · {len(notdeg)} not degrees · "
+          f"{len(unclear)} unclear · {len(best)} best bets · {len(nofolio)} no-portfolio · "
           f"{len(funded)} fully funded · {len(schemes)} with a scheme · {len(idx)} distinct schemes")
     print("  by track:", dict(Counter(r["Track"] for r in sound)))
 

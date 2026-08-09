@@ -35,6 +35,36 @@ from the other, so de-duplication adds detail rather than losing it.
 
 ---
 
+## First: is it actually a master's degree?
+
+Not everything sold as a "Master" is one. Every record was re-checked against **what it actually
+awards**, and the verdict now sits in **column D — *Qualification level*** of both workbooks.
+
+| Verdict | Records | What it means |
+|---|---:|---|
+| **Master's degree** | **889** | A real second-cycle award — M.Sc., M.A., M.Mus., M.Phil., *mestrado*, *laurea magistrale* / *diploma accademico di II livello*, *máster universitario oficial*, *magisterský*, *yüksek lisans*. **This is what you want** |
+| Master di I livello | 10 | Italian **first-level** master — 60 CFU, one year, taken *after* a bachelor. Not a second cycle, no PhD access |
+| **Not a degree** | 133 | *Título propio* / *máster propio*, CRKBO or NRTO diploma, *pós-graduação*, advanced diploma, short course |
+| Bachelor / first cycle | 2 | You already hold one of these |
+| Funding scheme | 23 | Money, not a qualification |
+| Aggregate entry | 24 | A summary row covering many institutions at once |
+| Unclear | 10 | The page does not say plainly enough — **email and ask** |
+
+**889 of the 1,091 records award a genuine master's degree. 145 do not.** Nothing was deleted: the
+rejects sit on their own **NOT a degree — avoid** tab so you can check the reasoning.
+
+All your top-rated options survive this test — TU Ilmenau, HfK Bremen, Kunstuni Linz, Saint Louis
+Rome, MTU Cork, ČVUT Prague, Žilina, Tbilisi and UCP Porto are every one of them real degrees.
+
+**One correction worth knowing:** ESMUC Barcelona is a genuine *public* conservatoire, but four of
+its "Masters" are *màster propi* — its own title, not a state-validated one. A public institution is
+not automatically a guarantee.
+
+→ The full breakdown, the country-by-country trap, and the complete list of the 145 rejects are in
+**`DEGREE-CHECK.md`**.
+
+---
+
 ## Your profile, which every judgement here is based on
 
 - Tunisian national — **you need a student visa for everywhere in this document.** This constraint
@@ -508,11 +538,14 @@ don't have, or is a partial discount rather than funding.
 
 | File | What it is |
 |---|---|
-| **`MASTER-all-opportunities.xlsx`** | **Everything — 1,029 rows, filterable. Start here.** Tabs: ★ Best Bets · Strong + English/French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything · one per region |
-| `MASTER-all-opportunities.csv` | Same data, plain CSV |
+| **`MASTER-all-opportunities.xlsx`** | **Everything — 1,091 rows, 36 columns, 20 tabs. Start here.** Tabs: ★ Best Bets · **Master's degrees only (889)** · **NOT a degree — avoid (145)** · Strong + English/French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything · one per region |
+| **`SOUND-and-SCHOLARSHIPS.xlsx`** | The sound half plus all the money — 460 sound **degrees**, 27 tabs, music business stripped out |
+| **`DEGREE-CHECK.md`** / `.pdf` | **Which records are real degrees and which are certificates**, the trap in each country, and the full list of the 145 rejects |
 | `THE-COMPLETE-GUIDE.md` / `.pdf` | This document |
-| `EUROPE-GAPFILL.md` / `.pdf` + `.xlsx` | The 85 institutions the earlier searches missed |
+| `EUROPE-GAPFILL.md` / `.pdf` + `.xlsx` | The 104 institutions the earlier searches missed |
 | `PRIVATE-SCHOOLS.md` / `.pdf` + `.xlsx` | Private institutions in ES/PT/NL/IT, accreditation-first |
-| `SOUND-DESIGN-EUROPE.md` + `.xlsx` | The 319-programme sound-design deep dive |
-| `SHORTLIST.md`, `ACTION-TIMELINE.md`, `PATHS-DEEP-DIVE.md` | The earlier shortlist, timeline and the three-paths explainer |
-| `COULD-NOT-VERIFY.md` | Everything I could not confirm, listed honestly |
+| `SOUND-DESIGN-EUROPE.md` / `.pdf` + `.xlsx` | The 319-programme sound-design deep dive |
+| `PATHS-DEEP-DIVE.md` / `.pdf` | The three career paths explained, and what a portfolio means |
+| `SHORTLIST.md`, `ACTION-TIMELINE.md` | The earlier shortlist and the month-by-month plan |
+| `COULD-NOT-VERIFY.md` / `.pdf` | Everything I could not confirm, listed honestly |
+| `FILE-INDEX.md` / `.pdf` | Every file, what's in it, and when to open it |

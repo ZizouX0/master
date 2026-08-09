@@ -12,7 +12,8 @@ An exhaustive, source-verified search of master's programmes and scholarships fo
 software-engineering graduate** targeting **sound design, music production, music technology and
 music business** (goal: international DJ and producer), **September 2027 intake**, funding preferred.
 
-**1,091 unique opportunities · 56 countries · 209 re-verified against official pages.**
+**1,091 unique opportunities · 56 countries · 209 re-verified against official pages ·
+889 confirmed to award a real master's degree.**
 
 ---
 
@@ -21,8 +22,9 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 | File | What it is |
 |---|---|
 | 📘 **[THE-COMPLETE-GUIDE.md](./results/THE-COMPLETE-GUIDE.md)** *(reads here)* · [PDF](./results/pdf/THE-COMPLETE-GUIDE.pdf) | **START HERE.** The whole search explained: the 18 verified *worth it* options, how the "chance of acceptance" rating works, the accreditation trap in each country, the two separate tests that decide a visa, country-by-country costs, the Italian DSU scholarship finding, your deadline calendar, and an honest limits section |
-| 📊 **[MASTER-all-opportunities.xlsx](./results/MASTER-all-opportunities.xlsx)** *(download)* | **All 1,091 opportunities, 36 columns, 18 tabs.** Real Excel tables — filter buttons with a search box on every column. Tabs: *★ Best Bets (140) · Strong + English or French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything ·* one per region |
-| 🎚️ **[SOUND-and-SCHOLARSHIPS.xlsx](./results/SOUND-and-SCHOLARSHIPS.xlsx)** *(download)* | **The sound half of the search plus all the money** — 537 programmes across sound design/production, audio engineering and music tech, with music business and adjacent media stripped out. 25 tabs: *★ Best bets (78) · Sound design & production (269) · Audio engineering (225) · Music tech (43) · No portfolio needed (63) · Fully funded (73) · Sound + a scholarship · All scholarships (335) · Scholarship index (308 schemes) ·* one per country |
+| 🎓 **[DEGREE-CHECK.md](./results/DEGREE-CHECK.md)** *(reads here)* · [PDF](./results/pdf/DEGREE-CHECK.pdf) | **"Is it actually a master's degree?"** — **889 of the 1,091 records are real degrees, 145 are not.** The look-alike in every country (*título propio*, *Master di I livello*, *pós-graduação*, CRKBO) and how to check it against the national register, plus the full list of the 145 to avoid |
+| 📊 **[MASTER-all-opportunities.xlsx](./results/MASTER-all-opportunities.xlsx)** *(download)* | **All 1,091 opportunities, 37 columns, 20 tabs.** Column D says whether it's a real degree. Real Excel tables — filter buttons with a search box on every column. Tabs: *★ Best Bets (116) · **Master's degrees only (889)** · **NOT a degree — avoid (145)** · Strong + English or French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything ·* one per region |
+| 🎚️ **[SOUND-and-SCHOLARSHIPS.xlsx](./results/SOUND-and-SCHOLARSHIPS.xlsx)** *(download)* | **The sound half of the search plus all the money — degrees only.** 460 sound programmes that award a real master's, with music business and adjacent media stripped out and 64 certificates moved aside. 27 tabs: *★ Best bets (64) · Audio engineering (209) · Sound design & production (208) · Music tech (43) · No portfolio needed · Fully funded (68) · Sound + a scholarship · All scholarships (335) · Scholarship index (308 schemes) · **NOT a degree — avoid** · **Award unclear** ·* one per country |
 | 🎧 **[PATHS-DEEP-DIVE.md](./results/PATHS-DEEP-DIVE.md)** *(reads here)* · [PDF](./results/pdf/PATHS-DEEP-DIVE.pdf) | **What you'd actually study and become** on each of the three paths — and what a portfolio really means. Read before choosing a direction |
 | 🗂️ **[FILE-INDEX.md](./results/FILE-INDEX.md)** *(reads here)* · [PDF](./results/pdf/FILE-INDEX.pdf) | Every file, what's in it, and when to open it |
 
@@ -56,9 +58,10 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 | | |
 |---|---|
 | Unique opportunities | **1,091** across **56 countries** |
+| Award a **real master's degree** | **889** — 145 are certificates, 10 unclear |
 | Re-verified against official pages | **209** — 18 *worth it* · 74 *conditional* · 117 *avoid* |
 | Your chance of admission | **423 Strong** · 435 Possible · 233 Weak |
-| Both Strong **and** cheap or free | **140** |
+| Both Strong **and** cheap or free | **116** real degrees (140 before certificates were filtered out) |
 | Taught in English or French | **708** (419 of them Strong) |
 | Public / private | 652 public · 335 private · 104 not stated |
 | Free tuition for you | **92** · under €1,500/yr: 153 · €1,500–5,000/yr: 140 |
