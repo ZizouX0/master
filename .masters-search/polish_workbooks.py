@@ -26,6 +26,7 @@ FREEZE_COLS = {
     "MASTER-all-opportunities.xlsx": 3,      # Country · Institution · Programme
     "europe-gapfill.xlsx": 3,                # Country · Region · City
     "private-schools-es-pt-nl-it.xlsx": 4,   # Country · City · Institution · Programme
+    "SOUND-and-SCHOLARSHIPS.xlsx": 3,    # Country / Institution / Programme
     "sound-design-europe.xlsx": 2,
     "opportunities.xlsx": 2,
 }
