@@ -9,6 +9,14 @@ are in `results/`.**
 
 ---
 
+## 🎛️ The interactive version
+
+| | |
+|---|---|
+| **`console.html`** — *The Console* | All 1,091 opportunities as a filterable web page. Search by name, filter by chance / cost / language / public-private / funding / region / country / subject, one-click views (Best bets, Verified worth it, Fully funded, English or French, Free, The avoid list), and click any row for the full record. Works offline — just open the file. Published to claude.ai as a private page too. |
+
+---
+
 ## 🟢 Tier 1 — read these
 
 | File | Size | What's in it | Open it when |

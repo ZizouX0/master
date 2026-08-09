@@ -1,0 +1,485 @@
+<title>The Console — 1,091 master's programmes, filtered for you</title>
+<style>
+/* ---------- tokens: complete light palette on bare :root ---------- */
+:root{
+  --ground:#F4F6F6; --surface:#FFFFFF; --raised:#FBFCFC;
+  --ink:#0F1719; --ink-2:#3D4C4F; --muted:#65767A;
+  --line:#DBE3E3; --line-2:#EAF0F0;
+  --accent:#0B6E77; --accent-soft:#E2F0F1; --accent-ink:#064F56;
+  --ok:#2E7D4F; --ok-bg:#E4F2EA;
+  --warn:#9A6714; --warn-bg:#FAEFDC;
+  --bad:#A8332C; --bad-bg:#FAE7E5;
+  --shadow:0 1px 2px rgba(15,23,25,.06), 0 8px 24px -12px rgba(15,23,25,.18);
+  --serif:Georgia,'Iowan Old Style','Times New Roman',serif;
+  --sans:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0D1315; --surface:#141D20; --raised:#192427;
+    --ink:#E7EEEF; --ink-2:#B7C6C8; --muted:#88999C;
+    --line:#243133; --line-2:#1D2A2C;
+    --accent:#45C3CC; --accent-soft:#122E31; --accent-ink:#8BDDE3;
+    --ok:#5FBF87; --ok-bg:#12291D;
+    --warn:#D6A24A; --warn-bg:#2C2211;
+    --bad:#E4736B; --bad-bg:#2E1614;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0D1315; --surface:#141D20; --raised:#192427;
+  --ink:#E7EEEF; --ink-2:#B7C6C8; --muted:#88999C;
+  --line:#243133; --line-2:#1D2A2C;
+  --accent:#45C3CC; --accent-soft:#122E31; --accent-ink:#8BDDE3;
+  --ok:#5FBF87; --ok-bg:#12291D;
+  --warn:#D6A24A; --warn-bg:#2C2211;
+  --bad:#E4736B; --bad-bg:#2E1614;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--sans); font-size:15px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+/* ---------- masthead ---------- */
+.top{
+  position:sticky; top:0; z-index:40; background:var(--surface);
+  border-bottom:1px solid var(--line);
+}
+.top-in{max-width:1560px; margin:0 auto; padding:14px 22px; display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+.mark{display:flex; align-items:baseline; gap:10px; margin-right:auto}
+.mark h1{font-size:20px; letter-spacing:-.01em}
+.mark .sub{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.searchwrap{position:relative; flex:1 1 300px; max-width:440px}
+.searchwrap svg{position:absolute; left:11px; top:50%; transform:translateY(-50%); color:var(--muted)}
+#q{
+  width:100%; padding:9px 12px 9px 34px; font:inherit; font-size:14px;
+  color:var(--ink); background:var(--raised); border:1px solid var(--line); border-radius:3px;
+}
+#q::placeholder{color:var(--muted)}
+.tbtn{
+  background:var(--raised); border:1px solid var(--line); color:var(--ink-2);
+  border-radius:3px; padding:8px 10px; cursor:pointer; font:inherit; font-size:13px; display:flex; gap:6px; align-items:center;
+}
+.tbtn:hover{border-color:var(--accent); color:var(--accent-ink)}
+
+/* ---------- presets ---------- */
+.presets{max-width:1560px; margin:0 auto; padding:12px 22px 0; display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+.presets .lbl{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin-right:2px}
+.preset{
+  font:inherit; font-size:13px; cursor:pointer; padding:6px 12px; border-radius:999px;
+  background:var(--surface); border:1px solid var(--line); color:var(--ink-2);
+}
+.preset:hover{border-color:var(--accent); color:var(--accent-ink)}
+.preset[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .preset[aria-pressed="true"],
+:root:not([data-theme="light"]) .preset[aria-pressed="true"]{color:#06181A}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1560px; margin:0 auto; padding:16px 22px 64px; display:grid; grid-template-columns:250px 1fr; gap:22px; align-items:start}
+@media (max-width:1000px){ .wrap{grid-template-columns:1fr} .rail{position:static!important; max-height:none!important} }
+
+.rail{position:sticky; top:74px; max-height:calc(100vh - 96px); overflow-y:auto; padding-right:4px}
+.fgroup{border-top:1px solid var(--line); padding:13px 0 3px}
+.fgroup:first-child{border-top:none; padding-top:4px}
+.fgroup h3{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-bottom:8px}
+.opt{display:flex; align-items:center; gap:8px; padding:3.5px 0; cursor:pointer; font-size:13.5px; color:var(--ink-2)}
+.opt:hover{color:var(--ink)}
+.opt input{accent-color:var(--accent); width:14px; height:14px; margin:0; flex:none}
+.opt .n{margin-left:auto; font-family:var(--mono); font-size:11px; color:var(--muted); font-variant-numeric:tabular-nums}
+.opt.on{color:var(--ink); font-weight:500}
+
+/* ---------- meter: the console element, encoding chance as level ---------- */
+.meter{display:flex; gap:2px; align-items:flex-end; height:15px; flex:none}
+.meter i{width:4px; border-radius:1px; background:var(--line); display:block}
+.meter i:nth-child(1){height:7px} .meter i:nth-child(2){height:11px} .meter i:nth-child(3){height:15px}
+.m-Strong i{background:var(--ok)}
+.m-Possible i:nth-child(1),.m-Possible i:nth-child(2){background:var(--warn)}
+.m-Weak i:nth-child(1){background:var(--bad)}
+
+/* ---------- results ---------- */
+.bar{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:10px}
+.count{font-family:var(--mono); font-size:13px; color:var(--ink); font-variant-numeric:tabular-nums}
+.count b{font-size:19px; color:var(--accent-ink)}
+.bar .sortwrap{margin-left:auto; display:flex; align-items:center; gap:7px}
+.bar label{font-family:var(--mono); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+select{font:inherit; font-size:13px; padding:6px 8px; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:3px}
+
+.list{background:var(--surface); border:1px solid var(--line); border-radius:4px; overflow:hidden}
+.row{
+  display:grid; grid-template-columns:22px minmax(0,1fr) 128px 116px 104px 92px;
+  gap:14px; align-items:center; width:100%; text-align:left;
+  padding:11px 16px; background:none; border:none; border-top:1px solid var(--line-2);
+  cursor:pointer; font:inherit; color:inherit;
+}
+.row:first-child{border-top:none}
+.row:hover{background:var(--raised)}
+.row:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+.row>*{min-width:0}                     /* grid children must be allowed to shrink */
+.rmain{display:block; min-width:0}
+/* inline elements ignore overflow:hidden, so every clipped label is block-level */
+.rinst{display:block; font-weight:600; font-size:14px; color:var(--ink); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.rprog{display:block; font-size:12.5px; color:var(--muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:1px}
+.rwhere{display:block; font-size:12.5px; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.rwhere small{display:block; color:var(--muted); font-size:11.5px; overflow:hidden; text-overflow:ellipsis}
+.chip{
+  display:inline-block; font-family:var(--mono); font-size:11px; padding:3px 7px; border-radius:2px;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%;
+}
+.c-free{background:var(--ok-bg); color:var(--ok)} .c-mid{background:var(--warn-bg); color:var(--warn)}
+.c-high{background:var(--bad-bg); color:var(--bad)} .c-unk{background:var(--line-2); color:var(--muted)}
+.lang{display:block; font-size:12.5px; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.lang.speak{color:var(--accent-ink); font-weight:600}
+.vd{font-family:var(--mono); font-size:10px; letter-spacing:.05em; padding:3px 6px; border-radius:2px; white-space:nowrap}
+.vd-W{background:var(--ok-bg); color:var(--ok)} .vd-A{background:var(--bad-bg); color:var(--bad)}
+.vd-C{background:var(--warn-bg); color:var(--warn)} .vd-N{color:var(--muted)}
+@media (max-width:900px){
+  .row{grid-template-columns:22px minmax(0,1fr) 96px; row-gap:6px}
+  .rwhere,.lang{display:none}
+}
+.more{width:100%; padding:13px; background:var(--raised); border:none; border-top:1px solid var(--line);
+  cursor:pointer; font:inherit; font-size:13.5px; color:var(--accent-ink)}
+.more:hover{background:var(--accent-soft)}
+.empty{padding:56px 20px; text-align:center; color:var(--muted)}
+
+/* ---------- detail panel ---------- */
+.scrim{position:fixed; inset:0; background:rgba(8,14,15,.5); z-index:50; opacity:0; pointer-events:none; transition:opacity .18s}
+.scrim.open{opacity:1; pointer-events:auto}
+.panel{
+  position:fixed; top:0; right:0; height:100%; width:min(620px,100%); z-index:60;
+  background:var(--surface); border-left:1px solid var(--line); box-shadow:var(--shadow);
+  transform:translateX(100%); transition:transform .22s ease; display:flex; flex-direction:column;
+}
+.panel.open{transform:none}
+.phead{padding:20px 24px 16px; border-bottom:1px solid var(--line); display:flex; gap:14px; align-items:flex-start}
+.phead h2{font-size:19px; line-height:1.25}
+.phead .pp{font-size:13px; color:var(--muted); margin-top:4px}
+.close{margin-left:auto; flex:none; background:var(--raised); border:1px solid var(--line); color:var(--ink-2);
+  border-radius:3px; width:30px; height:30px; cursor:pointer; font-size:17px; line-height:1}
+.close:hover{border-color:var(--accent); color:var(--accent-ink)}
+.pbody{overflow-y:auto; padding:4px 24px 40px}
+.pstat{display:flex; gap:8px; flex-wrap:wrap; padding:16px 0; border-bottom:1px solid var(--line-2)}
+.fld{padding:13px 0; border-bottom:1px solid var(--line-2)}
+.fld:last-child{border-bottom:none}
+.fld dt{font-family:var(--mono); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:4px}
+.fld dd{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.55}
+.fld.hi dd{color:var(--ink)}
+.plink{display:inline-block; margin-top:14px; font-family:var(--mono); font-size:12px; padding:8px 12px;
+  border:1px solid var(--accent); color:var(--accent-ink); border-radius:3px; text-decoration:none}
+.plink:hover{background:var(--accent-soft)}
+
+/* ---------- intro ---------- */
+.intro{background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:20px 22px; margin-bottom:16px}
+.intro h2{font-size:17px; margin-bottom:8px}
+.intro p{margin:0 0 10px; font-size:14px; color:var(--ink-2); max-width:66ch}
+.intro p:last-child{margin-bottom:0}
+.intro details{margin-top:10px}
+.intro summary{cursor:pointer; font-size:13.5px; color:var(--accent-ink); font-weight:500}
+.intro .key{display:grid; grid-template-columns:repeat(auto-fit,minmax(168px,1fr)); gap:12px; margin:14px 0 4px}
+.kbox{border:1px solid var(--line); border-radius:3px; padding:11px 13px}
+.kbox b{display:block; font-family:var(--mono); font-size:21px; color:var(--accent-ink); font-variant-numeric:tabular-nums}
+.kbox span{font-size:12.5px; color:var(--muted)}
+.legend{font-size:13px; color:var(--ink-2); margin-top:12px; display:grid; gap:6px}
+.legend div{display:flex; gap:9px; align-items:center}
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <div class="mark">
+      <h1>The Console</h1>
+      <span class="sub">1,091 programmes · 56 countries</span>
+    </div>
+    <div class="searchwrap">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search institution, programme, city…" autocomplete="off">
+    </div>
+    <button class="tbtn" id="theme" type="button" aria-label="Switch theme"><span id="themeIcon">◐</span> Theme</button>
+  </div>
+</header>
+
+<div class="presets">
+  <span class="lbl">Views</span>
+  <button class="preset" data-preset="best" type="button">★ Best bets</button>
+  <button class="preset" data-preset="worth" type="button">Verified worth it</button>
+  <button class="preset" data-preset="funded" type="button">Fully funded</button>
+  <button class="preset" data-preset="speak" type="button">English or French</button>
+  <button class="preset" data-preset="free" type="button">Free or near-free</button>
+  <button class="preset" data-preset="noport" type="button">No portfolio needed</button>
+  <button class="preset" data-preset="avoid" type="button">The avoid list</button>
+  <button class="preset" data-preset="all" type="button">Reset</button>
+</div>
+
+<div class="wrap">
+  <aside class="rail" id="rail"></aside>
+
+  <main>
+    <section class="intro">
+      <h2>Everything the search found, in one place</h2>
+      <p>Five separate sweeps, merged and de-duplicated. Every row carries the three things that
+      actually decide this: <strong>whether you can get in</strong>, <strong>what you'd pay as a
+      Tunisian national</strong>, and <strong>what language you'd be taught in</strong>.</p>
+      <div class="key">
+        <div class="kbox"><b id="kA">—</b><span>strong chance for you</span></div>
+        <div class="kbox"><b id="kB">—</b><span>free or under €5,000/yr</span></div>
+        <div class="kbox"><b id="kC">—</b><span>taught in English or French</span></div>
+        <div class="kbox"><b id="kD">18</b><span>verified <em>worth it</em></span></div>
+      </div>
+      <details>
+        <summary>How to read the meter, and what it isn't</summary>
+        <div class="legend">
+          <div><span class="meter m-Strong"><i></i><i></i><i></i></span> <b>Strong</b> — the entry rules name your background, or accept any bachelor's</div>
+          <div><span class="meter m-Possible"><i></i><i></i><i></i></span> <b>Possible</b> — plausible, but something needs asking or arguing</div>
+          <div><span class="meter m-Weak"><i></i><i></i><i></i></span> <b>Weak</b> — a music degree, an audition, pro experience, or a language you lack</div>
+        </div>
+        <p style="margin-top:12px">This is computed from the entry text each institution publishes — not from an
+        admissions officer and not from acceptance statistics. It's a filter to save you weeks of reading,
+        not a prediction. Open any row and read <em>Entry requirements</em> before ruling something in or out.
+        Blank fields mean the institution publishes nothing, not that the answer is zero.</p>
+      </details>
+    </section>
+
+    <div class="bar">
+      <span class="count"><b id="n">0</b> of 1,091 shown</span>
+      <span class="sortwrap">
+        <label for="sort">Sort</label>
+        <select id="sort">
+          <option value="best">Best for you</option>
+          <option value="cost">Cheapest first</option>
+          <option value="country">Country A–Z</option>
+          <option value="inst">Institution A–Z</option>
+        </select>
+      </span>
+    </div>
+
+    <div class="list" id="list"></div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="pTitle" aria-hidden="true"></aside>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const RAW = JSON.parse(document.getElementById('data').textContent);
+const CHANCE = ['Strong','Possible','Weak'];
+const COSTS = ['Free','Under €1,500','€1,500–5,000','€5,000–15,000','Over €15,000','Check'];
+const COST_RANK = Object.fromEntries(COSTS.map((c,i)=>[c,i]));
+const CH_RANK = {Strong:0, Possible:1, Weak:2};
+const CHEAP = new Set(['Free','Under €1,500','€1,500–5,000']);
+const speaks = l => l.startsWith('English') || l.includes('French');
+
+/* ---- filter definitions: key on the record, label, and how to list values ---- */
+const FILTERS = [
+  {k:'ch',  t:'Chance for you', order:CHANCE},
+  {k:'cb',  t:'What you pay',   order:COSTS},
+  {k:'lg',  t:'Taught in'},
+  {k:'pp',  t:'Public or private'},
+  {k:'fu',  t:'Funding'},
+  {k:'vd',  t:'Verified verdict'},
+  {k:'rg',  t:'Region'},
+  {k:'c',   t:'Country'},
+  {k:'tr',  t:'Subject'},
+];
+const active = {};
+FILTERS.forEach(f => active[f.k] = new Set());
+let query = '', sortBy = 'best', shown = 60, preset = null;
+
+const norm = s => (s||'').toLowerCase();
+function matches(r){
+  if (query){
+    const hay = norm(r.i)+' '+norm(r.p)+' '+norm(r.c)+' '+norm(r.ct)+' '+norm(r.sch)+' '+norm(r.tr);
+    if (!query.split(/\s+/).every(w => hay.includes(w))) return false;
+  }
+  for (const f of FILTERS){
+    const sel = active[f.k];
+    if (sel.size && !sel.has(r[f.k] || '—')) return false;
+  }
+  if (preset === 'noport' && !/^(none|no portfolio)/i.test(r.pf||'none')) return false;
+  return true;
+}
+function sortRows(rows){
+  const by = {
+    best:  (a,b) => (CH_RANK[a.ch]-CH_RANK[b.ch]) || ((COST_RANK[a.cb]??9)-(COST_RANK[b.cb]??9)) || a.i.localeCompare(b.i),
+    cost:  (a,b) => ((COST_RANK[a.cb]??9)-(COST_RANK[b.cb]??9)) || (CH_RANK[a.ch]-CH_RANK[b.ch]),
+    country:(a,b) => a.c.localeCompare(b.c) || a.i.localeCompare(b.i),
+    inst:  (a,b) => a.i.localeCompare(b.i),
+  }[sortBy];
+  return rows.slice().sort(by);
+}
+const costClass = c => c==='Free'||c==='Under €1,500'||c==='€1,500–5,000' ? 'c-free'
+                     : c==='€5,000–15,000' ? 'c-mid' : c==='Over €15,000' ? 'c-high' : 'c-unk';
+const vdClass = v => v==='WORTH IT' ? 'vd-W' : v==='AVOID' ? 'vd-A' : v==='CONDITIONAL' ? 'vd-C' : 'vd-N';
+const esc = s => (s||'').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+
+/* ---- the filter rail, with live counts so you can see what a filter would cost you ---- */
+function buildRail(){
+  const rail = document.getElementById('rail');
+  rail.innerHTML = FILTERS.map(f => {
+    const counts = {};
+    RAW.forEach(r => { const v = r[f.k] || '—'; counts[v] = (counts[v]||0)+1; });
+    let vals = Object.keys(counts);
+    vals.sort(f.order ? (a,b)=>f.order.indexOf(a)-f.order.indexOf(b) : (a,b)=>counts[b]-counts[a] || a.localeCompare(b));
+    if (!f.order && vals.length > 12) vals = vals.slice(0,12);
+    return `<div class="fgroup"><h3>${esc(f.t)}</h3>` + vals.map(v =>
+      `<label class="opt" data-k="${f.k}" data-v="${esc(v)}">
+         <input type="checkbox"><span>${esc(v==='—' ? 'not stated' : v)}</span><span class="n">${counts[v]}</span>
+       </label>`).join('') + `</div>`;
+  }).join('');
+  rail.addEventListener('change', e => {
+    const lab = e.target.closest('.opt'); if (!lab) return;
+    const {k,v} = lab.dataset;
+    e.target.checked ? active[k].add(v) : active[k].delete(v);
+    lab.classList.toggle('on', e.target.checked);
+    preset = null; document.querySelectorAll('.preset').forEach(b=>b.setAttribute('aria-pressed','false'));
+    shown = 60; render();
+  });
+}
+function syncRail(){
+  document.querySelectorAll('.opt').forEach(lab => {
+    const on = active[lab.dataset.k].has(lab.dataset.v);
+    lab.querySelector('input').checked = on;
+    lab.classList.toggle('on', on);
+  });
+}
+
+let current = [];
+function render(){
+  current = sortRows(RAW.filter(matches));
+  document.getElementById('n').textContent = current.length.toLocaleString();
+  const list = document.getElementById('list');
+  if (!current.length){
+    list.innerHTML = `<p class="empty">Nothing matches that combination.<br>Try removing a filter, or hit Reset.</p>`;
+    return;
+  }
+  const slice = current.slice(0, shown);
+  list.innerHTML = slice.map((r,i) => `
+    <button class="row" data-i="${RAW.indexOf(r)}" type="button">
+      <span class="meter m-${r.ch}" title="${r.ch} chance"><i></i><i></i><i></i></span>
+      <span class="rmain">
+        <span class="rinst">${esc(r.i)}</span>
+        <span class="rprog">${esc(r.p)}</span>
+      </span>
+      <span class="rwhere">${esc(r.c)}<small>${esc(r.ct||r.rg)}</small></span>
+      <span><span class="chip ${costClass(r.cb)}">${esc(r.cb)}</span></span>
+      <span class="lang ${speaks(r.lg)?'speak':''}">${esc(r.lg)}</span>
+      <span><span class="vd ${vdClass(r.vd)}">${r.vd ? esc(r.vd) : '—'}</span></span>
+    </button>`).join('')
+    + (current.length > shown ? `<button class="more" id="more" type="button">Show ${Math.min(60, current.length-shown)} more — ${(current.length-shown).toLocaleString()} left</button>` : '');
+  const more = document.getElementById('more');
+  if (more) more.onclick = () => { shown += 60; render(); };
+}
+
+/* ---- detail panel ---- */
+const panel = document.getElementById('panel'), scrim = document.getElementById('scrim');
+let lastFocus = null;
+function openRow(idx){
+  const r = RAW[idx];
+  const F = (label, val, hi) => val ? `<div class="fld ${hi?'hi':''}"><dt>${label}</dt><dd>${esc(val)}</dd></div>` : '';
+  panel.innerHTML = `
+    <div class="phead">
+      <span class="meter m-${r.ch}" style="margin-top:6px"><i></i><i></i><i></i></span>
+      <div>
+        <h2 id="pTitle">${esc(r.p)}</h2>
+        <div class="pp">${esc(r.i)} · ${esc(r.ct ? r.ct+', ' : '')}${esc(r.c)}</div>
+      </div>
+      <button class="close" id="pClose" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="pbody">
+      <div class="pstat">
+        <span class="chip ${costClass(r.cb)}">${esc(r.cb)}</span>
+        <span class="chip c-unk">${esc(r.lg)}</span>
+        <span class="chip c-unk">${esc(r.pp)}</span>
+        ${r.fu&&r.fu!=='Check' ? `<span class="chip c-unk">Funding: ${esc(r.fu)}</span>`:''}
+        ${r.vd ? `<span class="vd ${vdClass(r.vd)}">${esc(r.vd)}${r.rt?' · '+esc(r.rt):''}</span>`:''}
+      </div>
+      <dl>
+        ${F('Why that chance', r.why, true)}
+        ${F('Recommendation', r.rec, true)}
+        ${F('What you pay', r.fee, true)}
+        ${F('Other fees', r.fees2)}
+        ${F('All-in estimate', r.allin)}
+        ${F('Scholarship', r.sch && r.sch!=='—' ? r.sch : '')}
+        ${F('Scholarship detail', r.schd)}
+        ${F('Deadline', r.dl, true)}
+        ${F('Applications open', r.op)}
+        ${F('Entry requirements', r.entry, true)}
+        ${F('Accepts a non-music degree', r.nm)}
+        ${F('Portfolio', r.pf)}
+        ${F('Audition or interview', r.au)}
+        ${F('Language certificate', r.lgr)}
+        ${F('English test', r.eng)}
+        ${F('Degree awarded', r.deg)}
+        ${F('Accreditation', r.acc)}
+        ${F('Student visa', r.visa)}
+        ${F('Length', r.dur)}
+        ${F('What you study', r.study)}
+        ${F('Subject area', r.tr)}
+        ${F('Found by', r.sw)}
+      </dl>
+      ${r.src && r.src.startsWith('http') ? `<a class="plink" href="${esc(r.src)}" target="_blank" rel="noopener">Open the official page ↗</a>`:''}
+    </div>`;
+  panel.classList.add('open'); scrim.classList.add('open'); panel.setAttribute('aria-hidden','false');
+  document.getElementById('pClose').onclick = closePanel;
+  document.getElementById('pClose').focus();
+}
+function closePanel(){
+  panel.classList.remove('open'); scrim.classList.remove('open'); panel.setAttribute('aria-hidden','true');
+  if (lastFocus) lastFocus.focus();
+}
+document.getElementById('list').addEventListener('click', e => {
+  const row = e.target.closest('.row'); if (!row) return;
+  lastFocus = row; openRow(+row.dataset.i);
+});
+scrim.onclick = closePanel;
+addEventListener('keydown', e => { if (e.key === 'Escape' && panel.classList.contains('open')) closePanel(); });
+
+/* ---- presets ---- */
+const PRESETS = {
+  best:  () => { active.ch = new Set(['Strong']); active.cb = new Set(['Free','Under €1,500','€1,500–5,000']); },
+  worth: () => { active.vd = new Set(['WORTH IT']); },
+  funded:() => { active.fu = new Set(['Full']); },
+  speak: () => { active.lg = new Set([...new Set(RAW.map(r=>r.lg))].filter(speaks)); },
+  free:  () => { active.cb = new Set(['Free','Under €1,500']); },
+  noport:() => { active.ch = new Set(['Strong','Possible']); },
+  avoid: () => { active.vd = new Set(['AVOID']); },
+  all:   () => {},
+};
+document.querySelectorAll('.preset').forEach(btn => {
+  btn.onclick = () => {
+    FILTERS.forEach(f => active[f.k] = new Set());
+    preset = btn.dataset.preset === 'all' ? null : btn.dataset.preset;
+    PRESETS[btn.dataset.preset]();
+    document.querySelectorAll('.preset').forEach(b => b.setAttribute('aria-pressed', String(b === btn && preset !== null)));
+    syncRail(); shown = 60; render();
+    scrollTo({top:0, behavior:'smooth'});
+  };
+});
+
+/* ---- search, sort, theme ---- */
+let deb;
+document.getElementById('q').addEventListener('input', e => {
+  clearTimeout(deb);
+  deb = setTimeout(() => { query = norm(e.target.value).trim(); shown = 60; render(); }, 130);
+});
+document.getElementById('sort').addEventListener('change', e => { sortBy = e.target.value; render(); });
+document.getElementById('theme').onclick = () => {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.setAttribute('data-theme', dark ? 'light' : 'dark');
+};
+
+/* ---- headline numbers, computed from the data rather than hard-coded ---- */
+document.getElementById('kA').textContent = RAW.filter(r=>r.ch==='Strong').length;
+document.getElementById('kB').textContent = RAW.filter(r=>CHEAP.has(r.cb)).length;
+document.getElementById('kC').textContent = RAW.filter(r=>speaks(r.lg)).length;
+document.getElementById('kD').textContent = RAW.filter(r=>r.vd==='WORTH IT').length;
+
+buildRail(); render();
+</script>
