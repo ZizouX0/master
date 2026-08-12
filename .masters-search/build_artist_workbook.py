@@ -91,8 +91,12 @@ RX_AUD = re.compile(r"live audition|in[- ]person audition|instrumental audition|
                     r"audition (?:is )?(?:required|mandatory)|esame di ammissione|"
                     r"prueba de acceso|[eé]preuve d'admission|vorspiel", re.I)
 RX_NOAUD = re.compile(r"no live (?:admission )?exam|no audition|no live audition|"
-                      r"not? (?:instrumental )?audition|audition: none|selection is "
-                      r"(?:entirely )?(?:document|portfolio)", re.I)
+                      r"audition: none|selection is (?:entirely )?(?:document|portfolio)|"
+                      # "YES, but NOT an instrumental audition" — an entrance test that is a
+                      # production or coding task is not the barrier a performance audition is
+                      r"not an? (?:instrumental|performance|live|music|classical)[- ]?\w* ?audition|"
+                      r"not? (?:instrumental )?audition|"
+                      r"does not test (?:classical )?instrumental|practical production test", re.I)
 RX_EXAM = re.compile(r"entrance exam|written exam|aptitude test|eignungspr[uü]fung|"
                      r"admission interview|interview", re.I)
 RX_PF = re.compile(r"portfolio|works? must be submitted|representative works|"
