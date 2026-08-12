@@ -230,7 +230,9 @@ def load_verdicts():
     """
     import glob as _g, json as _j
     out = {}
-    for f in _g.glob(".masters-search/results/artist-sweep/verify-0*.json"):
+    for f in _g.glob(".masters-search/results/artist-sweep/verify-*.json"):
+        if "verify-targets" in f:
+            continue
         for v in _j.load(open(f, encoding="utf-8")):
             k = (norm(v.get("institution")), norm(v.get("programme")))
             if v.get("verdict"):
