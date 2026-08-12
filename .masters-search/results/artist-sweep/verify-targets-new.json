@@ -1,0 +1,762 @@
+[
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "Université Jean Monnet Saint-Étienne (coordinator), Universidade Católica Portuguesa — School of Arts Porto, …",
+  "programme": "DIGICREA — Erasmus Mundus Joint Master 'Digital Creativity, Art & Science' — SOUND-MUSIC specialization path",
+  "cost": "Free",
+  "funding": "Full",
+  "gate": "Exam/interview only",
+  "url": "https://master-digicrea.univ-st-etienne.fr/en/the-digicrea-master/a-word-from-the-head-of-the-master.html ; https://master-digicrea.univ-st-etienne.fr/en/join-digicrea/how-to-apply.html ; https://master-digicrea.univ-st-etienne.fr/en/join-digicrea/financial-aid.html"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Hochschule für Musik und Theater Hamburg (HfMT Hamburg)",
+  "programme": "Multimediale Komposition / Multimedia Composition",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.hfmt-hamburg.de/en/musik/multimedia-composition"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "TU Berlin (Audio Communication Group) + Institute of Sonology, Royal Conservatoire The Hague",
+  "programme": "Audio Communication and Sonology — joint master's route",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Portfolio only",
+  "url": "https://sonology.org/audio-communication-sonology-admission/ ; https://www.tu.berlin/en/ak/study-and-teaching/degree-programs/audio-communication-and-sonology"
+ },
+ {
+  "door": "Door 1",
+  "country": "Netherlands",
+  "institution": "Royal Conservatoire The Hague (Institute of Sonology) with TU Berlin",
+  "programme": "Master specialisation in Audio Communication & Sonology",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://www.koncon.nl/en/programmes/master/sonology/masterspecialisation-audiocommsonology/entry-requirements"
+ },
+ {
+  "door": "Door 1",
+  "country": "Portugal",
+  "institution": "Universidade Lusófona (coordinator), Lithuanian Academy of Music and Theatre — National Film School KIMO, LUC…",
+  "programme": "DocNomadsPlus — Erasmus Mundus Joint Master Degree in Documentary Film Directing",
+  "cost": "Free",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.docnomadsplus.eu/application ; https://www.docnomadsplus.eu/ ; https://www.docnomads.eu/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Austria",
+  "institution": "Universität für künstlerische und industrielle Gestaltung Linz (Kunstuniversität Linz)",
+  "programme": "Interface Cultures (media art / interactive media, includes sonic interfaces and sound art practice)",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.kunstuni-linz.at/en/studies/degree-programmes/interface-cultures/interface-cultures-master-programme"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "Le Fresnoy — Studio national des arts contemporains",
+  "programme": "Diplôme du Fresnoy — Studio national des arts contemporains (2-year post-master creation cursus; sound art / electronic…",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.lefresnoy.net/en/school/admissions/ ; https://www.lefresnoy.net/app/uploads/2025/10/Concours-2026_Procedure-de-selection_Le-Fresnoy-Studio-national-des-arts-contemporains.pdf"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "Sorbonne Université, with IRCAM and Télécom Paris",
+  "programme": "Master ATIAM — Acoustique, Traitement du signal et Informatique Appliqués à la Musique",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio only",
+  "url": "https://www.atiam.ircam.fr/en/ ; https://www.ircam.fr/transmission/formations-superieures/master-scientifique-atiam"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "Université Gustave Eiffel (UFR LACT), with INA-GRM, IRCAM, CDMC and École des Beaux-Arts de Bourges as partne…",
+  "programme": "Master Musiques, Créations, Technologies (MCT) — parcours: 'Musiques et musicologies', 'Musiques numériques et musicolo…",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://formations.univ-gustave-eiffel.fr/master/detail/musiques-creations-technologies-mct-414 ; https://sfa.asso.fr/formations/master-creation-musicale-et-arts-sonores-universite-gustave-eiffel/"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "École nationale supérieure Louis-Lumière (ENS Louis-Lumière)",
+  "programme": "Diplôme de l'ENS Louis-Lumière, section Son ('Master Son') — options Son pour l'image, Sonorisation, Arts sonores",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio only",
+  "url": "https://www.ens-louis-lumiere.fr/formations/formation-initiale/master-son/ ; https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042322808"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "École nationale supérieure d'art de Bourges (ENSA Bourges)",
+  "programme": "DNSEP option Art — pôle Son / Arts et créations sonores ('Dimensions sonores')",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://ensa-bourges.fr/dnsep-master/ ; https://ensa-bourges.fr/pole/son/ ; https://www.francecompetences.fr/recherche/rncp/36752/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Switzerland",
+  "institution": "Hochschule der Künste Bern (HKB) / Bern Academy of the Arts (BFH)",
+  "programme": "Contemporary Arts Practice — specialisation SOUND ARTS",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.hkb.bfh.ch/en/studies/master/contemporary-arts-practice/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Estonia",
+  "institution": "Eesti Kunstiakadeemia / Estonian Academy of Arts (EKA)",
+  "programme": "Interaction Design — MA",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.artun.ee/en/admissions/masters-studies/ ; https://www.artun.ee/en/admissions/tuition-fees/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Latvia",
+  "institution": "Liepājas Universitāte / Liepāja University — MPLab (Art Research Laboratory), with RIXC New Media Culture Cen…",
+  "programme": "New Media and Audiovisual Art (Jaunie mediji un audiovizuālā māksla) — MA; pathway ACOUSTIC ARTS / DIGITAL MUSIC",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.globaladmissions.com/program/master-new-media-and-audiovisual-art-2-years-at-liepaja-university/pMLIEJ560 ; https://mplab.lv/en/notikumi/0/173/ ; http://rixc.org/en/home___/0/802/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Ireland",
+  "institution": "FilmEU consortium: Institute of Art, Design + Technology (IADT, coordinator), Universidade Lusófona, Lithuani…",
+  "programme": "ReSound — Erasmus Mundus Joint Master of Arts in Sound / Sound Design for Media Arts",
+  "cost": "EUR 5k-15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://resound-ma.eu/ ; https://resound-ma.eu/application/ ; https://iadt.ie/courses/erasmus-mundus-joint-ma-resound/ ; https://www.filmeu.eu/news/new-erasmus-mundus-master-in-sound-call-open"
+ },
+ {
+  "door": "Door 1",
+  "country": "Netherlands",
+  "institution": "ArtEZ University of the Arts — Academy of Pop Music, Enschede",
+  "programme": "Master The Sound of Innovation",
+  "cost": "EUR 5k-15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.artez.nl/en/courses/master/the-sound-of-innovation/admission ; https://www.artez.nl/en/study-at-artez/arrange-your-study/tuition-fees"
+ },
+ {
+  "door": "Door 1",
+  "country": "Norway",
+  "institution": "Universitetet i Oslo / University of Oslo — Department of Musicology (with NTNU)",
+  "programme": "Music, Communication and Technology (MCT) — 2-year master's programme",
+  "cost": "EUR 5k-15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio only",
+  "url": "https://www.uio.no/english/studies/programmes/mct-master/ ; https://www.uio.no/english/studies/programmes/mct-master/admission/ ; https://www.ntnu.edu/studies/mmct/music-communication-and-technology-mct-"
+ },
+ {
+  "door": "Door 1",
+  "country": "Sweden",
+  "institution": "Kungliga Musikhögskolan / Royal College of Music in Stockholm (KMH)",
+  "programme": "AIM — Artistic Interdisciplinary Master (Master's Programme in Music)",
+  "cost": "EUR 5k-15k/yr",
+  "funding": "Full",
+  "gate": "Exam/interview only",
+  "url": "https://www.kmh.se/in-english/education/programmes-and-courses/masters-programmes/aim.html ; https://www.kmh.se/in-english/education/how-to-apply/application-and-tuition-fees.html"
+ },
+ {
+  "door": "Door 1",
+  "country": "USA",
+  "institution": "California Institute of the Arts (CalArts) — The Herb Alpert School of Music",
+  "programme": "M.F.A. in Music Technology: Interaction, Intelligence & Design (MTIID)",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://calarts.edu/apply/mfa-music-tech ; https://mtiid.calarts.edu/mfa/ ; https://mtiid.calarts.edu/program/ ; https://calarts.edu/admissions-aid/financial-aid/aid-graduate-students/scholarships ; https://calarts.edu/admissions-aid/tuition/tuition-and-fees/cost-attendance"
+ },
+ {
+  "door": "Door 1",
+  "country": "USA",
+  "institution": "Stanford University — CCRMA (Center for Computer Research in Music and Acoustics), Department of Music",
+  "programme": "M.A. in Music, Science and Technology (MA/MST)",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio only",
+  "url": "https://ccrma.stanford.edu/academics/masters ; https://ccrma.stanford.edu/wiki/MA_MST_Info ; https://music.sites.stanford.edu/academics/graduate-students/prospective-graduates/funding"
+ },
+ {
+  "door": "Door 1",
+  "country": "United Kingdom",
+  "institution": "University of Edinburgh — Reid School of Music / Acoustics and Audio Group",
+  "programme": "MSc Acoustics and Music Technology",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio only",
+  "url": "https://study.ed.ac.uk/programmes/postgraduate-taught/478-acoustics-and-music-technology"
+ },
+ {
+  "door": "Door 1",
+  "country": "United Kingdom",
+  "institution": "University of Manchester — NOVARS Research Centre",
+  "programme": "MusM Composition (Electroacoustic Music and Interactive Media)",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio only",
+  "url": "https://www.manchester.ac.uk/study/masters/courses/list/10164/musm-composition-electroacoustic-music-and-interactive-media/"
+ },
+ {
+  "door": "Door 1",
+  "country": "United Kingdom",
+  "institution": "University of Westminster",
+  "programme": "MA Audio Production",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.westminster.ac.uk/music-courses/2026-27/september/full-time/audio-production-ma"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Folkwang Universität der Künste — ICEM, Institut für Computermusik und Elektronische Medien (founded 1990, th…",
+  "programme": "Integrative Komposition (M.Mus.) — four artistic focus areas including ELEKTRONISCHE KOMPOSITION (also instrumental com…",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.folkwang-uni.de/en/home/musik/courses-of-studies/integrative-composition-mmus/basic-info-application ; https://icem-www.folkwang-uni.de/ ; https://icem-www.folkwang-uni.de/icem-web/elektronische-komposition/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Hochschule für Künste Bremen (HfK Bremen)",
+  "programme": "Komposition / Elektroakustische Komposition (M.M., künstlerische Ausbildung)",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.hfk-bremen.de/en/study/music/composition-electroacoustic-composition-m-m-ka/38"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Hochschule für Musik FRANZ LISZT Weimar — Institut für Neue Musik und Jazz",
+  "programme": "Komposition (Master of Music) — NEW MASTER, first intake summer semester 2026. The Bachelor at the same institute has a…",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.hfm-weimar.de/studieren/studienfinder/detail/komposition"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Hochschule für Musik und Tanz Köln (Cologne University of Music and Dance)",
+  "programme": "Master of Music — Electronic Composition (Elektronische Komposition)",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.hfmt-koeln.de/en/music/study-programs-music/master-of-music/electronic-composition-master-of-music/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Hochschule für Musik und Tanz Köln (HfMT Köln)",
+  "programme": "Elektronische Komposition (Electronic Composition)",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.hfmt-koeln.de/en/music/study-programs-music/master-of-music/electronic-composition-master-of-music/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Technische Universität Berlin — Audio Communication Group / Elektronisches Studio der TU Berlin (founded 1953…",
+  "programme": "M.Sc. Audio Communication and Technology (Audiokommunikation und -technologie). The Elektronisches Studio is a facility…",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Portfolio only",
+  "url": "https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/audio-communication-and-technology-m-sc ; https://www.tu.berlin/en/i-a-office-of-student-affairs/masters-application-enrollment/admission-requirements/language-skills"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Technische Universität Berlin — Fachgebiet Audiokommunikation",
+  "programme": "Audiokommunikation und -technologie / Audio Communication and Technology",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/audio-communication-and-technology-m-sc"
+ },
+ {
+  "door": "Door 1",
+  "country": "Austria",
+  "institution": "Anton Bruckner Privatuniversität (ABPU)",
+  "programme": "Masterstudium in the field 'Komposition, Dirigieren und Computermusik' (includes the Medienkomposition/Computermusik br…",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.bruckneruni.ac.at/de/studieren/studienangebot/masterstudien"
+ },
+ {
+  "door": "Door 1",
+  "country": "Cyprus",
+  "institution": "University of Nicosia (UNIC)",
+  "programme": "Master of Music (MMus) — Music Technology specialisation",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.unic.ac.cy/music-mmus-1-5-years-or-3-semesters/"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "Université d'Évry — Université Paris-Saclay",
+  "programme": "Master Musicologie, parcours Enseignement et pratiques musicales (EPM)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://musique.univ-evry.fr/accueil/filieres/master.html"
+ },
+ {
+  "door": "Door 1",
+  "country": "Greece",
+  "institution": "Ionian University — Department of Music Studies + Department of Audio and Visual Arts (joint interdepartmenta…",
+  "programme": "Τέχνες και Τεχνολογίες του Ήχου / Audio Arts and Technologies (Sonic Arts and Audio Technologies)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Full",
+  "gate": "None found in the text",
+  "url": "https://studies.minedu.gov.gr/program/?programme_id=1254"
+ },
+ {
+  "door": "Door 1",
+  "country": "Switzerland",
+  "institution": "Conservatorio della Svizzera italiana (CSI) — Scuola universitaria di Musica",
+  "programme": "Master of Arts in Music Composition & Theory — Major in Composition",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://www.conservatorio.ch/en/university-of-music/degree-courses/master-of-arts/in-music-composition-theory"
+ },
+ {
+  "door": "Door 1",
+  "country": "Norway",
+  "institution": "Universitetet i Bergen (UiB) — Griegakademiet / The Grieg Academy, Department of Music",
+  "programme": "Master's Programme in Music Performance or Composition (MAHF-MUUT) — composition track",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www4.uib.no/en/studies/MAHF-MUUT ; https://www.uib.no/en/grieg/23971/master-music-performance-or-composition"
+ },
+ {
+  "door": "Door 1",
+  "country": "Sweden",
+  "institution": "University of Gothenburg — Högskolan för scen och musik / Academy of Music and Drama (HSM)",
+  "programme": "Master's Programme in Experimental Composition and Creation (K2KMP)",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "None found in the text",
+  "url": "https://www.gu.se/en/study-gothenburg/experimental-composition-and-creation-k2kmp"
+ },
+ {
+  "door": "Door 1",
+  "country": "USA",
+  "institution": "Brown University — Department of Music",
+  "programme": "Ph.D. in Music and Multimedia Composition (MEME — Multimedia and Electronic Music Experiments). NOTE: the standalone MA…",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://music.brown.edu/graduate/graduate-programs/music-multimedia-composition ; https://graduateprograms.brown.edu/graduate-program/music-and-multimedia-composition-phd"
+ },
+ {
+  "door": "Door 1",
+  "country": "China",
+  "institution": "China Scholarship Council (CSC) / Chinese Government Scholarship; Central Conservatory of Music (CCOM) among …",
+  "programme": "Chinese Government Scholarship (CSC) — Master's in music / music technology",
+  "cost": "Not published",
+  "funding": "Full",
+  "gate": "None found in the text",
+  "url": "https://www.campuschina.org ; https://www.chinesescholarshipcouncil.com/central-conservatory-of-music-csc-scholarship.html"
+ },
+ {
+  "door": "Door 1",
+  "country": "South Korea",
+  "institution": "NIIED — National Institute for International Education (Korean government)",
+  "programme": "Global Korea Scholarship (GKS-G, graduate) — potential route to Korean music technology / electronic music master's pro…",
+  "cost": "Not published",
+  "funding": "Full",
+  "gate": "None found in the text",
+  "url": "https://www.studyinkorea.go.kr ; https://www.globaladmissions.com/scholarship/gks-scholarship ; https://www.topuniversities.com/scholarships/gks-global-korea-scholarship"
+ },
+ {
+  "door": "Door 1",
+  "country": "Switzerland",
+  "institution": "Swiss universities of the arts, via the State Secretariat for Education, Research and Innovation (SBFI/SERI)",
+  "programme": "Swiss Government Excellence Scholarships — ART SCHOLARSHIPS (Bourses d'excellence — bourses d'art)",
+  "cost": "Not published",
+  "funding": "Full",
+  "gate": "Exam/interview only",
+  "url": "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships ; https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships-at-a-glance"
+ },
+ {
+  "door": "Door 3",
+  "country": "Germany",
+  "institution": "Filmuniversität Babelsberg KONRAD WOLF",
+  "programme": "Sound Design for Audiovisual Media / Tonmeister*in für audiovisuelle Medien",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.filmuniversitaet.de/en/studies/study-programs/master-programs/sound-design-for-audiovisual-media"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Hochschule für Musik und Theater »Felix Mendelssohn Bartholdy« Leipzig (HMT Leipzig)",
+  "programme": "Komposition — Elektroakustische Musik",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.hmt-leipzig.de/studium/bewerbung/aufnahmebedingungen-3-1"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Universität der Künste Berlin (Berlin University of the Arts)",
+  "programme": "Sound Studies and Sonic Arts (Master of Arts)",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.udk-berlin.de/en/courses/sound-studies-and-sonic-arts-master-of-arts/apply/requirements/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Slovakia",
+  "institution": "Academy of Performing Arts in Bratislava (Vysoká škola múzických umení, VŠMU) — Film and Television Faculty, …",
+  "programme": "Sound Design (Zvuková skladba) M.A.",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.vsmu.sk/en/ftf/faculty-organizational-stucture/department-of-sound-design/sound-design-m-a/ ; https://www.vsmu.sk/en/academy/practical-information/fees-and-scholarships/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Slovakia",
+  "institution": "Academy of Performing Arts in Bratislava (VŠMU) — Music and Dance Faculty (HTF)",
+  "programme": "Music (Hudobné umenie) M.A. — Composition specialisation",
+  "cost": "Free",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://www.vsmu.sk/en/applicant/master-study-programs-m-a/ ; https://www.vsmu.sk/en/academy/practical-information/fees-and-scholarships/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Austria",
+  "institution": "Kunstuniversität Graz (KUG) — Institut für Elektronische Musik und Akustik (IEM)",
+  "programme": "Computermusik und Klangkunst (Computer Music and Sound Art)",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.kug.ac.at/studium/studienangebot/studienrichtungen/computermusik/computermusik-ma"
+ },
+ {
+  "door": "Door 1",
+  "country": "Austria",
+  "institution": "Universität Mozarteum Salzburg — Department of Composition & Music Theory",
+  "programme": "Master Komposition (specialisations reported to include 'Elektronische Musik und Audiovisuelle Medien' and 'Angewandte …",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.moz.ac.at/en/study/departments/composition-music-theory"
+ },
+ {
+  "door": "Door 1",
+  "country": "Austria",
+  "institution": "Universität für angewandte Kunst Wien (die Angewandte)",
+  "programme": "TransArts (MA) — transdisciplinary art practice",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://www.dieangewandte.at/transarts"
+ },
+ {
+  "door": "Door 1",
+  "country": "Czech Republic",
+  "institution": "Janáček Academy of Performing Arts (JAMU) — Faculty of Music",
+  "programme": "Electroacoustic Music Composition (Kompozice elektroakustické hudby)",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://hf.jamu.cz/en/specializations/electroacoustic-music-composition/ ; https://hf.jamu.cz/en/applicants-2/study-programmes/ ; https://www.jamu.cz/en/studies/scholarships-and-fees/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Czech Republic",
+  "institution": "Janáček Academy of Performing Arts (JAMU) — Faculty of Music",
+  "programme": "Composition (Kompozice) and Film and Scenic Music Composition",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://hf.jamu.cz/en/applicants-2/study-programmes/"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "CNSMD Lyon — Conservatoire National Supérieur de Musique et de Danse de Lyon",
+  "programme": "Master Composition Électroacoustique (also: Master Composition of Mixed Music; Master Composition for Film & Image; Mas…",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://cnsmd-lyon.fr/en/formations-musique/master-electroacoustic-composition/ ; https://cnsmd-lyon.fr/en/apply/ ; https://cnsmd-lyon.fr/en/study-costs/ ; https://cnsmd-lyon.fr/en/music-application-requirements/"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "CNSMD Paris — Conservatoire National Supérieur de Musique et de Danse de Paris",
+  "programme": "Composition (1er, 2e et 3e cycles supérieurs), with the 'Nouvelles technologies appliquées à la composition' discipline…",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.conservatoiredeparis.fr/en/disciplined/new-technologies-applied-composing ; https://www.conservatoiredeparis.fr/fr/discipline/composition-1er-2e-et-3e-cycles-superieurs ; https://www.conservatoiredeparis.fr/en/curriculum/composition-0"
+ },
+ {
+  "door": "Door 3",
+  "country": "France",
+  "institution": "SAE Institute Paris in partnership with Université Gustave Eiffel",
+  "programme": "Master Arts, lettres et civilisations, parcours Musique et production musicale",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio only",
+  "url": "https://www.letudiant.fr/etudes/annuaire-enseignement-superieur/formation/formation-master-musique-et-production-musicale-241017.html ; https://formations.univ-gustave-eiffel.fr/?type=10&pdfId=203 ; https://www.profilculture-formation.com/formation-culture/formation/master-musique-et-production-musicale-bac-5-3001553-50011246"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "Université Gustave Eiffel with INA (Institut national de l'audiovisuel) / INA GRM; degree also listed by Univ…",
+  "programme": "Master Création musicale et arts sonores",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://campus.ina.fr/formation/son/production-musicale/master-creation-musicale-et-arts-sonores ; https://www.assas-universite.fr/fr/master-creation-musicale-arts-sonores-mention-arts-lettres-civilisations"
+ },
+ {
+  "door": "Door 1",
+  "country": "Switzerland",
+  "institution": "Haute école de musique de Genève (HEM Genève – HES-SO)",
+  "programme": "Master of Arts in Composition and Music Theory — Composition de musique mixte (mixed/electroacoustic music); a 'multime…",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.hesge.ch/hem/en/studies/admissions/admissions-master's-degree"
+ },
+ {
+  "door": "Door 1",
+  "country": "Turkey",
+  "institution": "Istanbul Technical University (İTÜ) — MIAM",
+  "programme": "Music MA — Composition concentration",
+  "cost": "Under EUR 1.5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://miam.itu.edu.tr/docs/librariesprovider88/default-document-library/miam-handbook-fall25-26.pdf"
+ },
+ {
+  "door": "Door 3",
+  "country": "Belgium",
+  "institution": "KASK & Conservatorium — School of Arts, HOGENT & Howest (Flemish Community)",
+  "programme": "Master in Music — Music Production (muziekproductie)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://schoolofartsgent.be/en/study/courses/music-production ; https://schoolofartsgent.be/en/study/courses/music"
+ },
+ {
+  "door": "Door 1",
+  "country": "France",
+  "institution": "Université Paris 8 Vincennes–Saint-Denis",
+  "programme": "Master Arts, mention Musique/Musicologie, parcours Création musicale et sonore (CMS)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://www.univ-paris8.fr/-Master-Creation-musicale-et-sonore-680- ; https://www.univ-paris8.fr/Criteres-d-admission-5643"
+ },
+ {
+  "door": "Door 1",
+  "country": "Georgia",
+  "institution": "Vano Sarajishvili Tbilisi State Conservatoire",
+  "programme": "Music Technology — Master's Degree Educational Programme (English-Language Programme)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://tsc.edu.ge/en/ma-admission/ ; https://tsc.edu.ge/wp-content/uploads/2026/06/2.Program-Cost-per-year-MA.pdf"
+ },
+ {
+  "door": "Door 1",
+  "country": "Georgia",
+  "institution": "Vano Sarajishvili Tbilisi State Conservatoire",
+  "programme": "Composition — Master's Degree Educational Programme (English-Language Programme)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://tsc.edu.ge/en/ma-admission/ ; https://tsc.edu.ge/wp-content/uploads/2026/06/2.Program-Cost-per-year-MA.pdf"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Hochschule für Musik Freiburg — Institut für Neue Musik",
+  "programme": "Master Elektronische Komposition (within Master Musik, major Komposition / Elektronische Medien)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.mh-freiburg.de/hochschule/allgemeines/aktuelles/details/pressemitteilung-neu-gestalteter-studiengang-master-elektronische-komposition"
+ },
+ {
+  "door": "Door 1",
+  "country": "Germany",
+  "institution": "Staatliche Hochschule für Musik Trossingen",
+  "programme": "Master of Music Komposition — profile 'AI in Music' / Music Design (also: elektroakustische Komposition, instrumental/v…",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "None found in the text",
+  "url": "https://www.hfm-trossingen.de/en/studium/studiengaenge/master-musik"
+ },
+ {
+  "door": "Door 1",
+  "country": "Hungary",
+  "institution": "Liszt Ferenc Academy of Music (Liszt Academy / Zeneakadémia)",
+  "programme": "MA Composition — Classical and Electroacoustic specialisations",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://uni.lisztacademy.hu/composition/ma-composition-requirements-116457 ; https://uni.lisztacademy.hu/tuition-fees/tuition-fees-bachelor-training-116473 ; https://stipendiumhungaricum.hu/apply/"
+ },
+ {
+  "door": "Door 3",
+  "country": "Lithuania",
+  "institution": "Lithuanian Academy of Music and Theatre (LMTA)",
+  "programme": "Film Art (Kino menas) — MA, specialisation SOUND DESIGN",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://lmta.lt/en/english-lmta-welcomes-foreign-students/english-studies/master-study-programmes/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Portugal",
+  "institution": "Universidade de Évora",
+  "programme": "Mestrado em Ensino de Música (Master in Music Teaching)",
+  "cost": "EUR 1.5k-5k/yr",
+  "funding": "Not stated",
+  "gate": "Exam/interview only",
+  "url": "https://www.uevora.pt/estudar/cursos/mestrados?cod=M527"
+ },
+ {
+  "door": "Door 1",
+  "country": "Denmark",
+  "institution": "Rytmisk Musikkonservatorium / Rhythmic Music Conservatory (RMC)",
+  "programme": "Music Creation — Master",
+  "cost": "EUR 5k-15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://rmc.dk/en/education/music-creation ; https://rmc.dk/en/tuition"
+ },
+ {
+  "door": "Door 1",
+  "country": "Sweden",
+  "institution": "Kungliga Musikhögskolan / Royal College of Music in Stockholm (KMH)",
+  "programme": "Master's Programme in Composition – Electroacoustic Music (code KMH-29000)",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Exam/interview only",
+  "url": "https://www.kmh.se/in-english/education/programmes-and-courses/masters-programmes/composition---electroacoustic-music.html ; https://www.kmh.se/in-english/education/how-to-apply/application-and-tuition-fees.html"
+ },
+ {
+  "door": "Door 1",
+  "country": "Sweden",
+  "institution": "Luleå tekniska universitet / Luleå University of Technology — Musikhögskolan i Piteå (Piteå School of Music),…",
+  "programme": "Master Programme in Music Performance (KMMGA) — specialisation COMPOSITION",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "None found in the text",
+  "url": "https://www.ltu.se/en/education/programme/kmmga-master-programme-in-music-performance"
+ },
+ {
+  "door": "Door 1",
+  "country": "Sweden",
+  "institution": "Lunds universitet / Lund University — Musikhögskolan i Malmö / Malmö Academy of Music",
+  "programme": "Master's Programme in Music, Composition (KAMUS-KOMP)",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "None found in the text",
+  "url": "https://www.lunduniversity.lu.se/lubas/i-uoh-lu-KAMUS-KOMP ; https://www.mhm.lu.se/en/education/performance-programmes-music-and-church-music/composition"
+ },
+ {
+  "door": "Door 1",
+  "country": "USA",
+  "institution": "New York University — Steinhardt School, Department of Music and Performing Arts Professions",
+  "programme": "M.M. in Music Technology",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio only",
+  "url": "https://steinhardt.nyu.edu/degree/mm-music-technology/how-apply ; https://steinhardt.nyu.edu/degree/mm-music-technology ; https://steinhardt.nyu.edu/admissions/paying-your-education/masters-and-advanced-study/scholarships-and-grants"
+ },
+ {
+  "door": "Door 1",
+  "country": "USA",
+  "institution": "Peabody Institute of the Johns Hopkins University — Peabody Conservatory",
+  "programme": "M.M. in Computer Music",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://peabody.jhu.edu/academics/instruments-areas-of-study/computer-music/auditions ; https://peabody.jhu.edu/audition-apply/instructions/master-of-music-instructions/ ; https://peabody.jhu.edu/audition-apply/financial-aid-scholarships/tuition-fees/ ; https://peabody.jhu.edu/audition-apply/financial-aid-scholarships/"
+ },
+ {
+  "door": "Door 1",
+  "country": "USA",
+  "institution": "University of Cincinnati — College-Conservatory of Music (CCM), Composition/Musicology/Theory",
+  "programme": "M.M. in Composition (acoustic and electroacoustic; Center for Computer Music '(ccm)²')",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Portfolio + exam/interview",
+  "url": "https://www.ccm.uc.edu/areas-of-study/academic-units/composition-musicology-theory/composition/master-of-music.html ; https://www.ccm.uc.edu/areas-of-study/academic-units/composition-musicology-theory/programs-events/computer-music.html ; https://www.ccm.uc.edu/admissions-and-aid.html"
+ },
+ {
+  "door": "Door 1",
+  "country": "United Kingdom",
+  "institution": "Goldsmiths, University of London",
+  "programme": "MMus Creative Practice (focuses: Sonic Arts; Popular Music Composition and Production; Audiovisual Cultures; Practice R…",
+  "cost": "Over EUR 15k/yr",
+  "funding": "Full",
+  "gate": "Exam/interview only",
+  "url": "https://www.gold.ac.uk/pg/mmus-creative-practice/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Romania",
+  "institution": "National University of Music Bucharest (Universitatea Națională de Muzică București, UNMB) — Faculty of Compo…",
+  "programme": "Stil și limbaj compozițional (Compositional Style and Language), masterat",
+  "cost": "Not published",
+  "funding": "Full",
+  "gate": "Exam/interview only",
+  "url": "https://www.unmb.ro/ ; https://admitere.unmb.ro/"
+ },
+ {
+  "door": "Door 1",
+  "country": "Turkey",
+  "institution": "İstanbul Teknik Üniversitesi — Dr. Erol Üçer Center for Advanced Studies in Music (MIAM). Also eligible under…",
+  "programme": "Music MA at İTÜ MIAM — Sonic Arts concentration (funded via Türkiye Bursları Arts Scholarship Programme / Sanat Bursu)",
+  "cost": "Not published",
+  "funding": "Full",
+  "gate": "Portfolio only",
+  "url": "https://www.turkiyeburslari.gov.tr/fulltimeprograms ; https://www.turkiyeburslari.gov.tr/scholarshipsprograms ; https://www.miam.itu.edu.tr/en/1st-education-masters/ ; https://miam.itu.edu.tr/en/academic-program/admission"
+ }
+]
