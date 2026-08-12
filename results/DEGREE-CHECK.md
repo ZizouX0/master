@@ -10,16 +10,16 @@ things to **not** pay for.
 
 | Verdict | Records | What it means |
 |---|---:|---|
-| **Master's degree** | 889 | **A real second-cycle degree.** M.Sc., M.A., M.Mus., M.Phil., mestrado, laurea magistrale / diploma accademico di II livello, máster universitario oficial, magisterský, yüksek lisans. This is what you want. |
+| **Master's degree** | 1300 | **A real second-cycle degree.** M.Sc., M.A., M.Mus., M.Phil., mestrado, laurea magistrale / diploma accademico di II livello, máster universitario oficial, magisterský, yüksek lisans. This is what you want. |
 | **Master di I livello (60 CFU)** | 10 | Italian **first-level master** — a one-year certificate taken *after* a bachelor. It is not a second cycle, it does not lead to a PhD, and Italy itself does not count it as a master's degree in the Bologna sense. |
-| **Not a degree** | 133 | **Sold as a 'Master', but it is not one.** *Título propio* / *máster propio* (Spain), CRKBO or NRTO diploma (Netherlands), *pós-graduação* (Portugal), advanced diploma, private-school certificate, short course. |
+| **Not a degree** | 168 | **Sold as a 'Master', but it is not one.** *Título propio* / *máster propio* (Spain), CRKBO or NRTO diploma (Netherlands), *pós-graduação* (Portugal), advanced diploma, private-school certificate, short course. |
 | **Bachelor / first cycle** | 2 | A first-cycle award. You already have one of these. |
-| **Funding scheme** | 23 | Money, not a qualification — a scholarship or grant record. |
-| **Aggregate entry** | 24 | A summary row covering many institutions at once, not a single programme. |
-| **Unclear** | 10 | The institution does not state clearly enough what it awards. **Email and ask** before applying — these are on the 'Award unclear' tab. |
-| | **1,091** | |
+| **Funding scheme** | 99 | Money, not a qualification — a scholarship or grant record. |
+| **Aggregate entry** | 31 | A summary row covering many institutions at once, not a single programme. |
+| **Unclear** | 25 | The institution does not state clearly enough what it awards. **Email and ask** before applying — these are on the 'Award unclear' tab. |
+| | **1,635** | |
 
-So: **889 of the 1,091 records award a genuine master's degree.** **145 do not** and are listed in full below. 10 could not be settled from the published pages.
+So: **1300 of the 1,635 records award a genuine master's degree.** **180 do not** and are listed in full below. 25 could not be settled from the published pages.
 
 > Nothing was deleted. The rejects stay in every workbook, on their own tab, so you can
 > check the reasoning rather than take my word for it.
@@ -30,8 +30,8 @@ So: **889 of the 1,091 records award a genuine master's degree.** **145 do not**
 
 | File | Tab | Holds |
 |---|---|---|
-| `MASTER-all-opportunities.xlsx` | **Master's degrees only** | all 889 real degrees |
-| `MASTER-all-opportunities.xlsx` | **NOT a degree — avoid** | the 145 rejects |
+| `MASTER-all-opportunities.xlsx` | **Master's degrees only** | all 1300 real degrees |
+| `MASTER-all-opportunities.xlsx` | **NOT a degree — avoid** | the 180 rejects |
 | `MASTER-all-opportunities.xlsx` | **★ BEST BETS** | now degrees-only: strong chance *and* cheap |
 | `SOUND-and-SCHOLARSHIPS.xlsx` | every tab | already filtered to degrees |
 | `SOUND-and-SCHOLARSHIPS.xlsx` | **NOT a degree — avoid** / **Award unclear — ask them** | the excluded sound records |
@@ -58,14 +58,14 @@ on any page before you believe it:
 
 ---
 
-## The 145 that are NOT degrees
+## The 180 that are NOT degrees
 
 Grouped by country. **Do not pay any of these expecting a master's degree.** A few are still
 worth doing on their own terms — IRCAM's Cursus is world-class training and Italian
 *Master di I livello* programmes can be genuinely useful — but none of them is a master's.
 
 
-### Spain — 62
+### Spain — 68
 
 | Institution | Programme | Verdict | What it really is |
 |---|---|---|---|
@@ -83,7 +83,10 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 | ESMUC - Escola Superior de Musica de Catalunya, Barcelona | Master's Degree in Music Management and Production (titulo propio) | Not a degree | — |
 | ESMUC — Escola Superior de Música de Catalunya | Màster propi en Composició de Bandes Sonores i Música per a Mitjans Au | Not a degree | Máster propio (institution's own master's title), 60 ECTS |
 | ESMUC — Escola Superior de Música de Catalunya | Màster propi en Composició Musical amb Tecnologies (Master in Composit | Not a degree | Máster propio (institution's own master's title), 60 ECTS |
+| ESMUC — Escola Superior de Música de Catalunya | Màster propi de Composició amb Tecnologies (Master in Composition with | Not a degree | Màster propi — ESMUC's OWN title, NOT an official Spanish master's degree (not a 'màster universitari'). Important: this does not carry automatic EQF-7 official recognition and may complica… |
 | Escola Superior de Música de Catalunya (ESMUC) | Master's Degree in Composition with Technologies (Màster propi de Comp | Not a degree | Master propio (ESMUC's own master's degree — NOT an official/state-validated Spanish master; this matters for later PhD access and for some visa and recognition purposes) |
+| Escola Superior de Música de Catalunya (ESMUC) | Màster de Composició amb Tecnologies / Máster en Composición Musical c | Not a degree | MÀSTER PROPI — NOT AN OFFICIAL DEGREE. ESMUC's own site classifies this under "ESMUC Master's Degrees (Màsters Propis)", separate from its "Màsters Oficials" and "Màsters Universitaris Ofic… |
+| Escola Superior de Música de Catalunya (ESMUC) | Màster de Management i Producció Musical / Management and Music Produc | Not a degree | MÀSTER PROPI — NOT AN OFFICIAL DEGREE. Listed by ESMUC under "Màsters Propis"; URL is /master-propi-de-management-i-produccio-musical/. |
 | Escuela Microfusa | Curso de Producción Musical (9 months) — NOT A MASTER, short course | Not a degree | A Microfusa course completion certificate. NOT a master, NOT a postgraduate award, no ECTS, no university validation. |
 | Escuela Microfusa | Diploma de Producción Musical (2 years) — NOT A MASTER, undergraduate  | Not a degree | Microfusa's own DIPLOMA — an UNDERGRADUATE-LEVEL award, not a master and not a postgraduate qualification. Its function is to feed into Level 6 (third and final year) of a UK BA/BSc (Hons) … |
 | Escuela Microfusa (Microfusa Formació, S.L.) | Curso de Producción Musical (9 months) — NOT A MASTER, short course | Not a degree | A Microfusa course completion certificate. NOT a master, NOT a postgraduate award, no ECTS, no university validation. Marketed as the 'Curso Integral de Producción Musical'. |
@@ -92,6 +95,8 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 | Escuela Universitaria de Artes TAI, Madrid | Master en Produccion Musical (titulo propio, 60 ECTS) | Not a degree | — |
 | Escuela microFusa (Microfusa Formació, S.L.), Barcelona and  | Diploma de Producción Musical (2 years) — NOT a master's, NOT a degree | Not a degree | Private vocational school diploma issued by Microfusa Formació, S.L. It is NOT a Máster Universitario Oficial, NOT a university Título Propio / Máster de Formación Permanente, and NOT any o… |
 | Escuela microFusa, Barcelona (private specialist audio/DJ sc | Diploma de Producción Musical (2-year) — NOT A MASTER, NOT A DEGREE | Not a degree | Private school diploma. NOT a master's, NOT a título propio of any university, NOT an official Spanish degree. Included here solely because its published payment mechanics illustrate a trap… |
+| Fundació Phonos (inside UPF Poblenou campus, allied to the M | Phonos artistic residencies (incl. ESPORA programme) and studio access | Not a degree | NOT A DEGREE — artist residency programme and studio facility |
+| Gràcia Territori Sonor / LEM Festival | LEM — Encontre Internacional de Músiques Experimentals de Gràcia-Barce | Not a degree | NOT A DEGREE — an experimental-music festival and cultural network, no teaching programme |
 | La Salle Campus Barcelona — Universitat Ramon Llull (URL) | Master of Science in Acoustics, Audio and Vibrations (Máster Universit | Not a degree | MÁSTER UNIVERSITARIO OFICIAL — an official Spanish university master's degree, 60 ECTS. VERIFIED: the programme page states the degree certificate is issued by the Ministry of Education, an… |
 | Microfusa - Escuela de Tecnologia Musical, Sonido y DJ (Barc | Diploma en Produccion Musical (2-year, pathway to UK BA(Hons) top-up y | Bachelor / first cycle | — |
 | Point Blank Music School (Ibiza campus) | 1-Week and 2-Week DJ/Producer courses (Ibiza) — NOT A MASTER, short in | Not a degree | A course completion certificate. NOT a master, NOT a postgraduate qualification, no ECTS, no university validation, no Spanish accreditation of any kind. |
@@ -130,9 +135,10 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 | Universidad Francisco de Vitoria (UFV) in collaboration with | Postgrado en Producción Musical y Artística (with Warner Music Spain)  | Not a degree | TÍTULO PROPIO of Universidad Francisco de Vitoria — a 30-ECTS POSTGRADO (postgraduate certificate), VERIFIED on UFV's own page. EXPLICITLY NOT A MASTER: at 30 ECTS over 3 months it is half … |
 | Universidad Nebrija | Máster de Formación Permanente en Radio, Podcast y Audio Digital | Not a degree | TÍTULO PROPIO — 'Máster de Formación Permanente en Radio, Podcast y Audio Digital', 60 ECTS. CONFIRMED on Nebrija's own programme page. NOT a Máster Universitario Oficial. |
 | Universidad de Sevilla | Master de Formacion Permanente en Produccion Musical Sinfonica | Not a degree | — |
+| Universitat Politècnica de València (UPV), Centro de Formaci | Especialista Universitario en Música Electrónica, Electroacústica, Int | Not a degree | NOT A MASTER'S DEGREE — the UPV page itself labels this a "Título propio" (own title). It is a specialist certificate, not an official máster universitario, and is not in RUCT. |
 | Universitat de Barcelona — Facultat de Belles Arts | Màster en Art Sonor (Master in Sound Art) | Not a degree | Máster propio (UB own title), 70 ECTS, composed of two 30-ECTS postgraduate certificates plus a 10-ECTS final master's project |
 
-### Netherlands — 26
+### Netherlands — 28
 
 | Institution | Programme | Verdict | What it really is |
 |---|---|---|---|
@@ -151,6 +157,7 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 | Mediacollege Amsterdam (Ma) — a public ROC | Audiovisueel (MBO) and related media tracks — checked for a private/in | Not a degree | Dutch MBO diploma (niveau 2–4), senior secondary VOCATIONAL education. NOT a master, NOT a postgraduate qualification, NOT a degree. Below bachelor level. |
 | Music Production Academy | Full Course (Beginners), Full Course (Advanced), Full Course Year 2, D | Not a degree | NO RECOGNISED QUALIFICATION — but a CORRECTION to my earlier 'nothing is awarded'. The site does state that the Full Courses lead to an 'Ableton and Steinberg certified diploma'. Read that … |
 | Pro Audio Education NL | Opleiding Geluidstechniek / Muziekproductie — diploma titled 'Master G | Not a degree | ACCREDITATION TRAP — TREAT WITH EXTREME CAUTION. The school awards a diploma it calls 'Master Geluidstechniek / Media Productie Pro Audio Education NL'. This is NOT a master's degree. It is… |
+| Royal Conservatoire The Hague — Institute of Sonology | One-Year Course in Sonology | Not a degree | NOT A DEGREE — course certificate only. 'The one-year Sonology course is not a degree programme and students are therefore not entitled to Dutch student finance or a student travel product.' |
 | SAE Institute Amsterdam | DJ Certificate (1 month) | Not a degree | SAE Certificate. NOT a master, NOT a degree, NOT NVAO-accredited, no ECTS. A one-month vocational short course issued by SAE itself. |
 | SAE Institute Amsterdam | Electronic Music Production Certificate (8 months) | Not a degree | SAE Certificate. SHORT COURSE — explicitly NOT a master, NOT a degree, NOT NVAO-accredited, no credit value. |
 | SAE Institute Amsterdam | Advanced Mixing & Mastering Certificate (4 months) — ONLINE | Not a degree | SAE Certificate. NOT a master, NOT a degree, NOT NVAO-accredited, no ECTS. A short vocational certificate issued by SAE itself. |
@@ -161,14 +168,18 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 | SAE Institute Amsterdam (SAE Institute Netherlands, part of  | MA/MSc Professional Practice in Creative Media Industries (Audio Produ | Not a degree | UK degree delivered in the Netherlands by a private provider — NOT a Dutch NVAO-accredited award. VERIFIED on SAE's own accreditation page: 'The 2026/7 degree programmes featured are develo… |
 | SAE Institute Amsterdam (SAE Institute, Navitas group – glob | Audio Production Diploma | Not a degree | 'SAE Professional Diploma' — an internal school award. NOT a master, NOT a bachelor, NOT a Dutch degree, and not credit-bearing. The University of Hertfordshire validation that SAE advertis… |
 | SAE Institute Amsterdam, degree awarded by the University of | BA/BSc (Hons) Audio Production | Not a degree | BA/BSc (Hons) — a genuine UK BACHELOR degree, 'awarded by and quality assured by the University of Hertfordshire' (confirmed verbatim on SAE's accreditation page for 2026/27 programmes). It… |
+| STEIM (STudio for Electro-Instrumental Music) | n/a — organisation dissolved | Not a degree | NOT A DEGREE — defunct research/residency studio; ceased to exist as an organisation at the end of 2020 |
 | Sound Education Nederland | Beroepsopleiding Geluidstechniek / Music Producer (1 year, part-time)  | Not a degree | The school's OWN diploma. NOT a master, NOT a degree, NOT NVAO-accredited, no ECTS. Classified as 'kort beroepsonderwijs' (short vocational education). |
 
-### Italy — 23
+### Italy — 27
 
 | Institution | Programme | Verdict | What it really is |
 |---|---|---|---|
+| AGON — Acustica Informatica Musica (Centro Studi Armando Gen | AGON Action Lab and related workshops ('Suoni in Corso' etc.) | Not a degree | NOT A DEGREE — workshop/laboratory programme, no academic credential |
+| Accademia Nazionale di Santa Cecilia (NOT the Conservatorio  | Corso di Musica Elettronica — Indirizzo Specialistico (Paolo Ketoff st | Not a degree | NOT A DEGREE — one-year postgraduate specialisation course ending in a 'Certificate of Merit' (attestato), no academic credits |
 | Accademia del Suono (Accademia del Suono Srl) | Corsi Tecnico del Suono / DJ / Music Producer — INSTITUTION HAS CLOSED | Not a degree | N/A — CEASED OPERATIONS. Formerly private certificate courses plus a 'Corso di Laurea BSc' route; never a MUR/AFAM award. |
 | CPM Music Institute | Electronic Music Producer (Corso Pre-Accademico) — NOT A MASTER | Not a degree | NOT A DEGREE AND NOT A MASTER — CONFIRMED. Classified by CPM as 'Pre-Accademico', a foundation course positioned BELOW first-degree level and designed to prepare students for entry into the… |
+| CRM — Centro Ricerche Musicali | Corso di specializzazione in musica informatica (specialisation course | Not a degree | NOT A DEGREE — non-accredited specialisation course / research collaboration; CRM is recognised by the Ministry as a 'Centro di ricerca nel settore musicale' (1990), not as an AFAM degree-a… |
 | Event Horizon School of Digital Art | Game Audio Production — private course, NOT A MASTER | Not a degree | PRIVATE CERTIFICATE — UNVERIFIED. Event Horizon is a private digital-art school; the course is not presented as a MUR/AFAM award and no Diploma Accademico is claimed. Treat as a non-degree … |
 | IED – Istituto Europeo di Design (international private desi | Diploma Accademico di Primo Livello in Sound Design (BA in Sound Desig | Not a degree | Diploma Accademico di Primo Livello in Sound Design — an official, MIUR/AFAM-accredited FIRST-level academic diploma (bachelor-equivalent). NOT a master. IED Milano's first-level diploma co… |
 | IED – Istituto Europeo di Design (international private desi | Diploma Accademico di Primo Livello in New Technologies of Arts – Spec | Not a degree | CORRECTED TO EXACT TITLE: "First Level Academic Diploma in New Technologies of Arts – Specialization Sound Design" (Rome variant: "New Art Technologies"). An official, MIUR/AFAM-accredited … |
@@ -184,6 +195,7 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 | Saint Louis College of Music, Rome | Master di I livello in Music Business & Management (sibling masters: C | Master di I livello (60 CFU) | VERIFIED AND CRITICALLY DIFFERENT FROM THE BIENNI. The Master di I livello page states: "Master di I livello (60 CFA, aut. MUR)". This is a MUR-authorised POST-FIRST-DEGREE SPECIALISATION C… |
 | Saint Louis College of Music, Rome (Saint Louis Music Center | Biennio Accademico di II livello in Sound Design e Post Produzione Aud | Master di I livello (60 CFU) | OFFICIAL for the biennio route — Diploma Accademico di II livello, 120 CFA, under MUR authorisation; the school styles itself 'scuola autorizzata dal MUR' and its own English page calls thi… |
 | Scuola Mohole | Produzione Musicale e Sound Design — Bachelor of Arts (3 years) / Cors | Not a degree | NOT A MASTER, AND NOT AN ITALIAN RECOGNISED DEGREE. The awarding/accrediting body is now IDENTIFIED (it was not in the prior entry): EABHES — the European Accreditation Board of Higher Educ… |
+| Tempo Reale — Centro di ricerca, produzione e didattica musi | Formazione — unità formative, workshops, internships (tirocini) | Not a degree | NOT A DEGREE — non-accredited training units, workshops and internships; no laurea/diploma accademico awarded |
 | Università Cattolica del Sacro Cuore - ALMED, Milano | Master in Comunicazione Musicale (1st-level university master, 60 ECTS | Master di I livello (60 CFU) | — |
 | Università Cattolica del Sacro Cuore — ALMED (Alta Scuola in | Master Universitario di I livello in Comunicazione Musicale (ALMED) | Master di I livello (60 CFU) | VERIFIED on the official page: "Master Universitario di I Livello", 60 CFU, 1,500 hours, one academic year. This is a POST-DEGREE qualification issued by a MUR-recognised private university… |
 | Università IULM (Libera Università di Lingue e Comunicazione | Master Universitario di I livello in Editoria e Produzione Musicale (P | Master di I livello (60 CFU) | MASTER UNIVERSITARIO DI I LIVELLO, 60 ECTS/CFU — CONFIRMED. This is a recognised POST-DEGREE university qualification issued by a legally recognised private Italian university. It is NOT a … |
@@ -231,23 +243,81 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 | Point Blank Music School, London | BA/BSc Higher Education courses incl. BA (Hons) Music Production & DJ  | Bachelor / first cycle | — |
 | pointblank Music School (Point Blank Music School) | NO POSTGRADUATE / MASTER'S PROVISION EXISTS — verified: Point Blank's  | Not a degree | There is no master's. The prior record listed an "MA Music Production" that could not be read because of Cloudflare; I got past that and can now state the position positively. Point Blank's… |
 
-### France — 1
+### France — 5
 
 | Institution | Programme | Verdict | What it really is |
 |---|---|---|---|
-| IRCAM (Institut de Recherche et Coordination Acoustique/Musi | Cursus — Programme on Composition and Computer Music | Not a degree | NOT A DEGREE — a one-year postgraduate professional training programme at master level, delivered under contract between IRCAM and the participant. It confers no MA/MMus. Partner conservato… |
+| Conservatoires à Rayonnement Régional (CRR) and Pôles supéri | DNSPM — Diplôme national supérieur professionnel de musicien (includin | Not a degree | NOT A MASTER — NEGATIVE FINDING FOR THE WHOLE CATEGORY. The DNSPM is a LICENCE-LEVEL (bac+3) national diploma. It is listed on Parcoursup (first-cycle entry). CRRs and pôles supérieurs do N… |
+| INA-GRM (Groupe de Recherches Musicales, Institut national d | Master Création Musicale et Arts Sonores (formerly co-recruited with I | Not a degree | NOT A DEGREE IN ITS OWN RIGHT — INA-GRM is a research/production unit of INA and awards no diploma. It contributed to a Bac+5 master delivered by Université Gustave Eiffel. CRITICAL: 'From … |
+| IRCAM — Institut de Recherche et Coordination Acoustique/Mus | Cursus — Programme on Composition and Computer Music | Not a degree | NOT A DEGREE — a one-year non-diploma professional training programme (850 hours) in composition and computer music. IRCAM itself awards no master's. Only students ALREADY enrolled in the c… |
+| IRCAM — Institut de recherche et coordination acoustique/mus | Cursus de composition et d'informatique musicale (IRCAM Cursus); ManiF | Not a degree | NOT A MASTER'S DEGREE — NEGATIVE FINDING. The IRCAM Cursus is a one-year professional training programme in composition and music computing that issues an IRCAM attestation/certificate, NOT… |
+| SAE Institute France (private) | Formation Production musicale (MAO); Formation Son & Musique; Bachelor | Not a degree | NOT A MASTER'S DEGREE. 'Certificat d'école délivré par SAE Institute' for the Production musicale course; RNCP level 5 (Technicien son) and RNCP level 6 (Chargé de productions audiovisuelle… |
 
-### Hungary — 1
+### Germany — 5
 
 | Institution | Programme | Verdict | What it really is |
 |---|---|---|---|
+| DAAD — Deutscher Akademischer Austauschdienst | DAAD Study Scholarships — Postgraduate Studies in the Field of Music | Not a degree | N/A — a scholarship, not a degree. Assessed here because it is the obvious funding route for the TU Berlin/Sonology double degree and for German conservatoires generally. |
+| HfG Karlsruhe (Staatliche Hochschule für Gestaltung), founde | Media Art (Medienkunst) — with the 'Sound' study focus (medienkunst-so | Not a degree | NOT A MASTER — HfG awards a DIPLOM (9 semesters, described by the school as 'comparable to a Master's degree') in Media Art, and a Magister in Art Research and Media Philosophy. There is no… |
+| Hochschule für Musik und Theater »Felix Mendelssohn Barthold | Meisterklasse Elektroakustische Musik (Meisterklassenexamen) | Not a degree | REJECT — NOT A MASTER'S DEGREE. The Meisterklassenexamen is a post-master artistic qualification (the German equivalent of a concert-exam / soloist diploma), taken AFTER a Master. It is not… |
+| SWR Experimentalstudio (Südwestrundfunk) — the live-electron | Work-scholarship residencies for composers and musicians; production p | Not a degree | NOT A DEGREE — a broadcaster's studio. 'Several composers and musicians are invited every year for a work-scholarship to realize their works in a creative discourse with the specialized equ… |
+| ZKM \| Zentrum für Kunst und Medien — Institut für Musik und | Production residencies, Giga-Hertz Production Awards (jointly with SWR | Not a degree | NOT A DEGREE — ZKM is a museum and production/research institute. It awards no diploma and enrols no students. Its academic partner for teaching is HfG Karlsruhe (previous record). |
+
+### Austria — 4
+
+| Institution | Programme | Verdict | What it really is |
+|---|---|---|---|
+| Universität für Musik und darstellende Kunst Wien (mdw) | Elektroakustische Komposition — POSTGRADUATE UNIVERSITÄTSLEHRGANG | Not a degree | REJECT — NOT A MASTER'S DEGREE. This is a 'Postgradualer Universitätslehrgang' (continuing-education university course), 2 semesters, and it REQUIRES an already-completed Master's or Diplom… |
+| Universität für Musik und darstellende Kunst Wien (mdw) | Komposition — POSTGRADUATE UNIVERSITÄTSLEHRGANG | Not a degree | REJECT — NOT A MASTER'S DEGREE. 'Postgradualer Universitätslehrgang', 2 semesters, requiring a completed Master's or Diploma degree. |
+| Universität für Musik und darstellende Kunst Wien (mdw) | Medienkomposition — POSTGRADUATE UNIVERSITÄTSLEHRGANG | Not a degree | REJECT — NOT A MASTER'S DEGREE. 'Postgradualer Universitätslehrgang', 2 semesters, requiring an already-completed Master's or Diploma degree. |
+| Universität für angewandte Kunst Wien (die Angewandte) | Medienkunst — Digitale Kunst / Transmediale Kunst | Not a degree | NOT A MASTER — this is a DIPLOMSTUDIUM awarding Mag.art. (240 ECTS, 8 semesters). It is a single-cycle long programme entered at first-cycle level, NOT a second-cycle Master's degree. It do… |
+
+### Belgium — 2
+
+| Institution | Programme | Verdict | What it really is |
+|---|---|---|---|
+| Koninklijk Conservatorium Antwerpen (AP Hogeschool, School o | Master in de muziek (Master of Music) — Compositie, with elektronische | Not a degree | Master in de muziek (Master of Music) — Vlaamse Gemeenschap recognised. REAL master's degree. A postgraduate specialisation in Composition also exists (a postgraduate is NOT a master). |
+| Musiques & Recherches / Studios Métamorphoses d'Orphée (foun | Métamorphoses international acousmatic composition competition; Espace | Not a degree | NOT A DEGREE — an independent non-profit studio, competition organiser and summer-workshop provider. It awards no diploma and enrols no degree students. |
+
+### Hungary — 2
+
+| Institution | Programme | Verdict | What it really is |
+|---|---|---|---|
+| Liszt Ferenc Zeneművészeti Egyetem (Liszt Ferenc Academy of  | No master's programme in electronic/electroacoustic music. Electronic  | Not a degree | NOT A DEGREE IN THIS FIELD AT MASTER LEVEL — the electroacoustic studio supports teaching but no standalone MA in electronic music is offered; MA Composition is the only master's route and … |
 | Moholy-Nagy Művészeti Egyetem (MOME) / Moholy-Nagy Universit | Sound Design — szakirányú továbbképzés (postgraduate specialist traini | Not a degree | NOT A MASTER'S DEGREE — CONFIRMED. The award is a szakirányú továbbképzés (postgraduate specialist training) qualification. It requires a prior degree to enter and does issue an oklevél, bu… |
 
-### Norway — 1
+### Norway — 2
 
 | Institution | Programme | Verdict | What it really is |
 |---|---|---|---|
+| NOTAM — Norsk senter for teknologi i musikk og kunst (Norweg | Studio and workspace rental, sound-based residencies (with partner Sou | Not a degree | NOT A DEGREE — 'a centre for artists in the independent field who work with art, music and technology, where you can rent studios and workspaces'. No enrolment, no diploma. |
 | University of Bergen (Universitetet i Bergen), The Grieg Aca | Master's Programme in Music Performance or Composition (MAHF-MUUT) — c | Not a degree | Real second-cycle degree: Master's, 120 ECTS, four semesters full time, autumn start. Genuine master's — not a diploma. (Note: the Grieg Academy separately runs an 'International Diploma in… |
+
+### Poland — 2
+
+| Institution | Programme | Verdict | What it really is |
+|---|---|---|---|
+| Ignacy Jan Paderewski Academy of Music in Poznań (Akademia M | Publicystyka muzyczna i kompozycja elektroakustyczna (Music Journalism | Not a degree | NOT A MASTER'S — this is a FIRST-CYCLE (licencjat / bachelor) programme only. FLAGGED: does not satisfy the second-cycle requirement. |
+| Studio Eksperymentalne Polskiego Radia (Polish Radio Experim | Artistic residency programme, production activity, workshops and publi | Not a degree | NOT A DEGREE — historic radio studio (1957–2004) reconstructed inside the Museum of Modern Art in Warsaw as a working electronic-music studio with a residency programme |
+
+### Sweden — 2
+
+| Institution | Programme | Verdict | What it really is |
+|---|---|---|---|
+| EMS — Elektronmusikstudion (founded 1964; since 2011 part of | Studio access, introductory and continuing-education courses, workshop | Not a degree | NOT A DEGREE — 'a public non-commercial recording studio in Stockholm for Swedish electroacoustic and non-popular electronic music'. It awards no diploma and enrols no degree students. 'Thr… |
+| Luleå University of Technology (LTU) — School of Music in Pi | Bachelor Programme in Audio Technology (Ljudteknik, 180 credits) confi | Not a degree | PARTLY NOT A MASTER — the flagship audio offer at Piteå is a BACHELOR. The only 120-credit master found is in Music Performance. UNVERIFIED whether any English-taught master in audio/music … |
+
+### Czech Republic — 1
+
+| Institution | Programme | Verdict | What it really is |
+|---|---|---|---|
+| CIANT — International Centre for Art and New Technologies | Media Lab, Creative R&D, residencies, workshops, festivals and confere | Not a degree | NOT A DEGREE — a non-profit new-media art organisation running residencies, workshops and R&D projects; no academic credential |
+
+### Monaco — 1
+
+| Institution | Programme | Verdict | What it really is |
+|---|---|---|---|
+| Académie de Musique et de Théâtre Prince Rainier III (Fondat | NEGATIVE FINDING — no master's degree in music of any kind in Monaco | Not a degree | NONE. The Académie Rainier III is a Conservatoire à Rayonnement Départemental (CRD), pedagogically supervised by the Direction de la Musique of the French Ministry of Culture, and can deliv… |
 
 ### Romania — 1
 
@@ -257,23 +327,38 @@ worth doing on their own terms — IRCAM's Cursus is world-class training and It
 
 ---
 
-## 10 where the award is unclear — ask before applying
+## 25 where the award is unclear — ask before applying
 
 The page does not state the qualification plainly enough to judge. Send one email:
 *"What is the exact name of the qualification awarded, and which body accredits it?"*
 
 | Country | Institution | Programme |
 |---|---|---|
+| Argentina | Universidad Nacional de Quilmes (UNQ) | Postgraduate programmes in electronic art / sound; UNQ is the Argentine centre f |
+| Belgium | _REFERENCE_ Belgium non-EU tuition table (Wallonia-Brussels  | _REFERENCE RECORD — not a programme. Settles GAP 2: the non-EU cost of every Bel |
 | Canada | Université de Montréal (Faculté de musique) | DESS en musiques numériques (1-year graduate diploma in digital music) |
 | Czech Republic | Akademie múzických umění v Praze — HAMU | Zvuková tvorba a hudební režie — specializace Hudební režie (Music Direction / c |
+| EU-wide | European Commission / EACEA — Erasmus Mundus Joint Masters c | STRUCTURAL FINDING: the 37 newly selected EMJM projects starting September 2027 |
 | EU-wide | European Commission Erasmus+ (via inter-institutional agreem | Erasmus+ International Credit Mobility (ICM) - EU-funded exchange (typically 2-1 |
 | France | Conservatoire National Supérieur de Musique et de Danse de P | Formation Supérieure aux Métiers du Son (FSMS) |
 | France | Conservatoire national superieur de musique et de danse de P | Higher education in Music, Sound and Image - Sound option (Metiers du son / MSI) |
 | France | Sorbonne Universite | Option 'Creation musicale, nouvelles technologies, design sonore' (Radio France  |
 | France | Wells International Foundation | Study Abroad support programme (Paris, France focus) |
 | Germany | DAAD (German Academic Exchange Service) | DAAD Development-Related Postgraduate Courses (EPOS) |
+| Mexico | Universidad Nacional Autónoma de México (UNAM) — Posgrado en | Maestría en Música — field of knowledge 'Tecnología Musical' |
 | Portugal | ETIC — Escola de Tecnologias, Inovacao e Criacao, Lisbon | Producao de Musica Eletronica / Sound Design for Live, Studio and Interactive Me |
 | Portugal | Restart — Creative Education (Lisbon, Porto, Algarve) | Producao Musical (Music Production) — professional certificate, 336h (NON-DEGREE |
+| Singapore | Nanyang Technological University — School of Art, Design and | Graduate programmes in art, design and media — sound-art strand not confirmed |
+| South Korea | Sogang University — Art & Technology / Graduate School of Me | Art & Technology graduate programme (existence and current form not confirmed) |
+| Tunisia | Institut Supérieur de Musique de Sfax (ISMSF) — Université d | Mastère de Recherche en Musique et Musicologie |
+| Tunisia | Institut Supérieur de Musique de Sousse (ISMS) — Université  | Mastère de recherche en Interprétation de la Musique Arabe (code M264) |
+| Tunisia | Institut Supérieur de Musique de Tunis and the other Tunisia | Mastère programmes in musique/musicologie — a dedicated electronic-music or musi |
+| Tunisia | Institut Supérieur des Arts Multimédia de la Manouba (ISAMM) | Mastère Professionnel en Ingénierie des Médias (options: Développement Web / Con |
+| Tunisia | Institut Supérieur des Beaux-Arts de Tunis (ISBAT), de Souss | NEGATIVE FINDING — no mastère with any sound or music component |
+| Tunisia | Private Tunisian universities — ESPRIT, Université Centrale, | NEGATIVE FINDING — no accredited mastère in electronic music, music production,  |
+| Ukraine | Ukrainian national music academies (Tchaikovsky National Mus | NOT ASSESSED — excluded on safety and feasibility grounds |
+| United Kingdom | Falmouth University | NO POSTGRADUATE MUSIC OR SOUND COURSE FOUND |
+| United Kingdom | NOT REACHED IN THIS SWEEP — institutions whose sites blocked | UNRESOLVED TARGETS: Royal Academy of Music; City St George's University of Londo |
 
 ---
 

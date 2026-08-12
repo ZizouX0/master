@@ -12,8 +12,8 @@ An exhaustive, source-verified search of master's programmes and scholarships fo
 software-engineering graduate** targeting **sound design, music production, music technology and
 music business** (goal: international DJ and producer), **September 2027 intake**, funding preferred.
 
-**1,091 unique opportunities · 56 countries · 209 re-verified against official pages ·
-889 confirmed to award a real master's degree.**
+**1,635 unique opportunities · 78 countries · 403 re-verified against official pages ·
+1,300 confirmed to award a real master's degree.**
 
 ---
 
@@ -21,10 +21,11 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 
 | File | What it is |
 |---|---|
-| 📘 **[THE-COMPLETE-GUIDE.md](./results/THE-COMPLETE-GUIDE.md)** *(reads here)* · [PDF](./results/pdf/THE-COMPLETE-GUIDE.pdf) | **START HERE.** The whole search explained: the 18 verified *worth it* options, how the "chance of acceptance" rating works, the accreditation trap in each country, the two separate tests that decide a visa, country-by-country costs, the Italian DSU scholarship finding, your deadline calendar, and an honest limits section |
-| 🎓 **[DEGREE-CHECK.md](./results/DEGREE-CHECK.md)** *(reads here)* · [PDF](./results/pdf/DEGREE-CHECK.pdf) | **"Is it actually a master's degree?"** — **889 of the 1,091 records are real degrees, 145 are not.** The look-alike in every country (*título propio*, *Master di I livello*, *pós-graduação*, CRKBO) and how to check it against the national register, plus the full list of the 145 to avoid |
-| 📊 **[MASTER-all-opportunities.xlsx](./results/MASTER-all-opportunities.xlsx)** *(download)* | **All 1,091 opportunities, 37 columns, 20 tabs.** Column D says whether it's a real degree. Real Excel tables — filter buttons with a search box on every column. Tabs: *★ Best Bets (116) · **Master's degrees only (889)** · **NOT a degree — avoid (145)** · Strong + English or French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything ·* one per region |
-| 🎚️ **[SOUND-and-SCHOLARSHIPS.xlsx](./results/SOUND-and-SCHOLARSHIPS.xlsx)** *(download)* | **The sound half of the search plus all the money — degrees only.** 460 sound programmes that award a real master's, with music business and adjacent media stripped out and 64 certificates moved aside. 27 tabs: *★ Best bets (64) · Audio engineering (209) · Sound design & production (208) · Music tech (43) · No portfolio needed · Fully funded (68) · Sound + a scholarship · All scholarships (335) · Scholarship index (308 schemes) · **NOT a degree — avoid** · **Award unclear** ·* one per country |
+| 📘 **[THE-COMPLETE-GUIDE.md](./results/THE-COMPLETE-GUIDE.md)** *(reads here)* · [PDF](./results/pdf/THE-COMPLETE-GUIDE.pdf) | **START HERE.** The whole search explained: the verified *worth it* options, how the "chance of acceptance" rating works, the accreditation trap in each country, the two separate tests that decide a visa, country-by-country costs, the Italian DSU scholarship finding, your deadline calendar, and an honest limits section |
+| 🎧 **[ARTIST-ROUTE.md](./results/ARTIST-ROUTE.md)** *(reads here)* · [PDF](./results/pdf/ARTIST-ROUTE.pdf) · [xlsx](./results/ARTIST-ROUTE.xlsx) | **THE ONE TO READ NOW.** The two doors you chose — electronic music / sound art, and music production — searched by sixteen agents and re-verified. **717 real degrees, and only 49 need an audition.** The verified shortlist, every scheme closed to you by nationality or timing, and the four emails worth sending this week |
+| 🎓 **[DEGREE-CHECK.md](./results/DEGREE-CHECK.md)** *(reads here)* · [PDF](./results/pdf/DEGREE-CHECK.pdf) | **"Is it actually a master's degree?"** — **1,300 of the 1,635 records are real degrees, 180 are not.** The look-alike in every country (*título propio*, *Master di I livello*, *pós-graduação*, CRKBO) and how to check it against the national register, plus the full list of the 180 to avoid |
+| 📊 **[MASTER-all-opportunities.xlsx](./results/MASTER-all-opportunities.xlsx)** *(download)* | **All 1,635 opportunities, 37 columns, 20 tabs.** Column D says whether it's a real degree. Real Excel tables — filter buttons with a search box on every column. Tabs: *★ Best Bets (145) · **Master's degrees only (1,300)** · **NOT a degree — avoid (180)** · Strong + English or French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything ·* one per region |
+| 🎚️ **[SOUND-and-SCHOLARSHIPS.xlsx](./results/SOUND-and-SCHOLARSHIPS.xlsx)** *(download)* | **The sound half of the search plus all the money — degrees only.** 737 sound programmes that award a real master's, with music business and adjacent media stripped out and 88 certificates moved aside. 27 tabs: *★ Best bets (87) · Audio engineering (358) · Sound design & production (314) · Music tech (65) · No portfolio needed · Fully funded (133) · Sound + a scholarship · All scholarships (725) · Scholarship index (623 schemes) · **NOT a degree — avoid** · **Award unclear** ·* one per country |
 | 🎧 **[PATHS-DEEP-DIVE.md](./results/PATHS-DEEP-DIVE.md)** *(reads here)* · [PDF](./results/pdf/PATHS-DEEP-DIVE.pdf) | **What you'd actually study and become** on each of the three paths — and what a portfolio really means. Read before choosing a direction |
 | 🗂️ **[FILE-INDEX.md](./results/FILE-INDEX.md)** *(reads here)* · [PDF](./results/pdf/FILE-INDEX.pdf) | Every file, what's in it, and when to open it |
 
@@ -49,7 +50,7 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 | File | What it is |
 |---|---|
 | [opportunities.xlsx](./results/opportunities.xlsx) | The original worldwide sweep (546 rows), kept intact. Superseded by the master file |
-| [console.html](./results/console.html) | An interactive browser for the same 1,091 records — filter, star, compare. Optional; the documents carry the same data |
+| [console.html](./results/console.html) | An interactive browser for an earlier 1,091-record snapshot — filter, star, compare. Optional; the documents carry the same data |
 
 ---
 
@@ -57,17 +58,17 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 
 | | |
 |---|---|
-| Unique opportunities | **1,091** across **56 countries** |
-| Award a **real master's degree** | **889** — 145 are certificates, 10 unclear |
-| Re-verified against official pages | **209** — 18 *worth it* · 74 *conditional* · 117 *avoid* |
-| Your chance of admission | **423 Strong** · 435 Possible · 233 Weak |
-| Both Strong **and** cheap or free | **116** real degrees (140 before certificates were filtered out) |
-| Taught in English or French | **708** (419 of them Strong) |
-| Public / private | 652 public · 335 private · 104 not stated |
-| Free tuition for you | **92** · under €1,500/yr: 153 · €1,500–5,000/yr: 140 |
-| Fully funded | **175** · 308 distinct scholarship schemes |
+| Unique opportunities | **1,635** across **78 countries** |
+| Award a **real master's degree** | **1,300** — 180 are certificates, 25 unclear |
+| Re-verified against official pages | **403** — 31 *worth it* · 128 *conditional* · 244 *avoid* |
+| Your chance of admission | **560 Strong** · 672 Possible · 403 Weak |
+| Both Strong **and** cheap or free | **145** real degrees |
+| Taught in English or French | **1,019** (553 of them Strong) |
+| Public / private | 1,051 public · 379 private · 205 not stated |
+| Free tuition for you | **125** · under €1,500/yr: 198 · €1,500–5,000/yr: 180 |
+| Fully funded | **243** · 623 distinct scholarship schemes |
 
-Assembled from **five separate searches** (1,262 raw records), merged and de-duplicated with **zero
+Assembled from **six separate searches** (1,646 raw records), merged and de-duplicated with **zero
 records lost**. Everything was searched in English **and** the local language — *Tontechnik*,
 *conception sonore*, *realizacja dźwięku*, *musica elettronica*, *hangmérnök*, *ses tasarımı*.
 
@@ -75,16 +76,18 @@ records lost**. Everything was searched in English **and** the local language �
 
 ## 🚀 Three things worth doing this month — all free
 
-1. **Email TU Ilmenau** (`info.apply@tu-ilmenau.de`) — ask which English certificate the programme
-   demands, and whether your SMU transcript carries enough signal-processing credits. It is the
-   strongest structural fit found anywhere: **free, no portfolio, no audition, no entrance exam**.
-2. **Ask SMU for a medium-of-instruction letter.** It may waive the IELTS requirement outright at
-   HfK Bremen and Tbilisi.
-3. **Start the portfolio** — four to eight finished tracks, different roles, your role stated per
-   track. Almost everything else waits on this.
+1. **Start the portfolio** — four finished pieces. **Only 49 of 717 programmes in your two doors
+   need an audition**; almost every other door opens with a portfolio, and nothing else you can do
+   unlocks as much.
+2. **Sit IELTS.** Sonology needs 6.0, KAIST 6.5.
+3. **Send four emails** — KUG Graz (what German level?), HfM Karlsruhe (`imwi@hfm-karlsruhe.de`,
+   does a CS bachelor qualify?), Glasgow (does Tunisia qualify for the African/Caribbean full
+   tuition waiver?), and Conservatorio Santa Cecilia Rome (confirm the non-music admission track
+   for 2027).
 
-**The real crunch is April–May 2027, not September.** Saint Louis Rome closes **30 April**, UCP Porto's
-usable phase ends **9 April**, TU Ilmenau closes **15 May**. Türkiye Bursları closes **20 February**.
+**Three windows decide 2027:** Türkiye Bursları arts **10 Jan – 20 Feb**, DIGICREA's call opening
+**November 2026**, KUG Graz **1 March – 1 May 2027**. Chevening is **not** available to you for
+2027 — it needs two years' post-degree work experience.
 
 ---
 
