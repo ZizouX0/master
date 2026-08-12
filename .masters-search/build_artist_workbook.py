@@ -136,6 +136,9 @@ COLS = [
     ("Country", lambda r: r["Country"], 16),
     ("Institution", lambda r: r["Institution"], 42),
     ("Programme", lambda r: r["Programme / scheme"], 44),
+    ("Verified verdict", lambda r: r["_verdict"] or "—", 16),
+    ("Why that verdict", lambda r: M.txt(r["_verdictWhy"], 600), 56),
+    ("Correction found", lambda r: M.txt(r["_correction"], 400), 44),
     ("Admission gate", lambda r: r["_gate"], 26),
     ("Qualification level", lambda r: r["Qualification level"], 22),
     ("Chance for you", lambda r: r["Chance for you"], 14),
@@ -188,6 +191,11 @@ def sheet(wb, title, rows, note=None):
         for i, (_, fn, _w) in enumerate(COLS, 1):
             ws.cell(rr, i, fn(r)).alignment = Alignment(vertical="top", wrap_text=False)
         ws.cell(rr, IDX["Admission gate"]).fill = GATE_FILL.get(r["_gate"], W.GREY)
+        vc = ws.cell(rr, IDX["Verified verdict"])
+        vc.fill = {"WORTH IT": W.GREEN, "CONDITIONAL": W.AMBER, "AVOID": W.RED}.get(
+            r["_verdict"], W.GREY)
+        if r["_verdict"]:
+            vc.font = Font(bold=True)
         ws.cell(rr, IDX["Qualification level"]).fill = (
             W.GREEN if r["Qualification level"] == "Master's degree" else W.RED)
         ws.cell(rr, IDX["Chance for you"]).fill = {
@@ -208,7 +216,30 @@ def sheet(wb, title, rows, note=None):
     return ws
 
 
+def norm(s):
+    return re.sub(r"[^a-z0-9]", "", str(s or "").lower())[:26]
+
+
+def load_verdicts():
+    """The re-verification pass, keyed loosely on institution + programme.
+
+    The verifiers were given the OLD dataset, so their targets span several source
+    files and the strings do not match exactly. Institution prefix plus programme
+    prefix is enough: within one institution, two programmes in the same door rarely
+    share a 26-character prefix.
+    """
+    import glob as _g, json as _j
+    out = {}
+    for f in _g.glob(".masters-search/results/artist-sweep/verify-0*.json"):
+        for v in _j.load(open(f, encoding="utf-8")):
+            k = (norm(v.get("institution")), norm(v.get("programme")))
+            if v.get("verdict"):
+                out[k] = v
+    return out
+
+
 def main():
+    verdicts = load_verdicts()
     rows = []
     for r in M.main():
         d = door(r)
@@ -217,7 +248,13 @@ def main():
         r["_door"] = d
         r["_sub"] = subtype(r)
         r["_gate"] = gate(r)
+        v = verdicts.get((norm(r["Institution"]), norm(r["Programme / scheme"])))
+        r["_verdict"] = (v or {}).get("verdict", "")
+        r["_verdictWhy"] = (v or {}).get("verdictWhy", "")
+        r["_correction"] = (v or {}).get("correction", "")
         rows.append(r)
+    nv = sum(1 for r in rows if r["_verdict"])
+    print(f"  verdicts attached: {nv} of {len(verdicts)} available")
 
     degrees = [r for r in rows if r["Qualification level"] == "Master's degree"]
     d1 = [r for r in degrees if r["_door"].startswith("Door 1")]
@@ -250,7 +287,18 @@ def main():
         ("  The actual record-making skills. Narrower and more competitive, and fewer of them", False),
         ("  are affordable - but it is the most directly useful to a producer.", False),
         ("", False),
-        ("COLUMN E - ADMISSION GATE. This is the column that decides where you can apply.", True),
+        ("COLUMNS E-G - THE VERIFICATION PASS. A second agent re-opened the institution's own", True),
+        ("pages for 103 of these and judged them FOR YOU: WORTH IT / CONDITIONAL / AVOID, with", False),
+        ("the reason in column F and any correction it found in column G. Where column E is blank", False),
+        ("the record has not been re-verified - treat it as a lead, not a finding.", False),
+        ("", False),
+        ("TWO CORRECTIONS THE VERIFIERS FOUND THAT THE COST COLUMN STILL SHOWS WRONG:", True),
+        ("  Kunstuni Linz is NOT free. Austria charges third-country nationals EUR 726.72 per", False),
+        ("  semester - about EUR 1,505/yr including the OeH fee. Still affordable, but not zero.", False),
+        ("  Sonology (The Hague) and DIGICREA each appear THREE TIMES under slightly different", False),
+        ("  institution names. Each is ONE programme and ONE application, not three.", False),
+        ("", False),
+        ("COLUMN H - ADMISSION GATE. This is the column that decides where you can apply.", True),
         ("  GREEN Portfolio only / Portfolio + exam / Exam only  -> you can BUILD your way in.", False),
         ("        Four finished pieces by December 2026 and these open.", False),
         ("  RED   AUDITION  -> needs conservatoire performance training. You cannot acquire this", False),
@@ -261,7 +309,7 @@ def main():
         ("either - column N quotes each page on exactly that question. Read it before ruling", False),
         ("anything out on the grounds that you did software engineering.", False),
         ("", False),
-        ("COLUMN L gives the EXACT portfolio specification where the institution published one -", False),
+        ("The PORTFOLIO column gives the EXACT specification where the institution published one -", False),
         ("how many works, how long, what format. That is your build brief. Sort by it.", False),
         ("", False),
         ("TABS  Best bets - Door 1 - Door 3 - No audition - Free or cheap - Fully funded -", False),
@@ -272,6 +320,20 @@ def main():
         if b:
             c.font = Font(bold=True, size=12, color="1F3864")
 
+    worth = [r for r in rows if r["_verdict"] == "WORTH IT"]
+    cond = [r for r in rows if r["_verdict"] == "CONDITIONAL"]
+    avoid = [r for r in rows if r["_verdict"] == "AVOID"]
+
+    if worth:
+        sheet(wb, "✅ VERIFIED WORTH IT", worth,
+              "Re-opened on the institution's own pages by a second agent and judged worth an "
+              "application FOR YOU. The strongest evidence in the whole file.")
+    if cond:
+        sheet(wb, "⚠️ VERIFIED CONDITIONAL", cond,
+              "Real, but something must be resolved first — column F names it.")
+    if avoid:
+        sheet(wb, "⛔ VERIFIED AVOID", avoid,
+              "Re-checked and ruled out for you. Column F says why. Do not spend an application here.")
     sheet(wb, "★ BEST BETS", best,
           "Real degree · strong chance · cheap or free · NO audition. If you read one tab, read this one.")
     sheet(wb, "DOOR 1 — electronic & sound art", d1,

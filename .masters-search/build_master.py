@@ -13,7 +13,7 @@ This maps all of them onto one row shape, dedupes, and derives the four judgemen
 columns the candidate actually chooses on: what it costs HIM, what language he'd be
 taught in, whether it is public or private, and his realistic chance of admission.
 """
-import json, re, sys, glob, csv
+import json, re, sys, glob, csv, os
 from collections import defaultdict, Counter
 
 sys.path.insert(0, ".masters-search")
@@ -30,6 +30,12 @@ SRC = [
     (".masters-search/results/private-es-pt-nl-it.json", "private ES/PT/NL/IT"),
     (".masters-search/results/europe-gapfill.json", "Europe gap sweep"),
 ]
+# The artist-route sweep: Door 1 (electronic music / computer music / sound art) and
+# Door 3 (music production / studio). Written by region and by angle, so the file list
+# is a glob rather than a fixed table — a run that dies partway still leaves its records.
+SRC += [(p, "artist sweep") for p in sorted(
+    glob.glob(".masters-search/results/artist-sweep/*.json"))
+    if not os.path.basename(p).startswith(("verify-", "_"))]
 
 # ---------------------------------------------------------------- normalising
 
