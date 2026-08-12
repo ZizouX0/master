@@ -1,9 +1,7 @@
 [
  {
   "_field": "A",
-  "_source": "artist-sweep-d1-centres-2"
- },
- {
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Netherlands",
   "city": "Amsterdam",
   "institution": "STEIM (STudio for Electro-Instrumental Music)",
@@ -30,6 +28,8 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/STEIM ; https://nieuweinstituut.nl/en/projects/minus-one/steim-24"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Italy",
   "city": "Florence",
   "institution": "Tempo Reale — Centro di ricerca, produzione e didattica musicale (founded by Luciano Berio)",
@@ -56,6 +56,8 @@
   "sourceUrl": "https://temporeale.it/formazione/ (site returns empty body / CAPTCHA to automated fetch)"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Italy",
   "city": "Rome",
   "institution": "CRM — Centro Ricerche Musicali",
@@ -82,6 +84,8 @@
   "sourceUrl": "https://www.crm-music.it/index.php/crm"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Italy",
   "city": "Rome",
   "institution": "Accademia Nazionale di Santa Cecilia (NOT the Conservatorio — a separate institution)",
@@ -108,6 +112,8 @@
   "sourceUrl": "https://santacecilia.it/en/corso/musica-elettronica-indirizzo-specialistico/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Italy",
   "city": "Rome",
   "institution": "Conservatorio di Musica Santa Cecilia, Roma",
@@ -134,6 +140,8 @@
   "sourceUrl": "https://conservatoriosantacecilia.it/presentazione-biennio-secondo-livello/ ; https://conservatoriosantacecilia.it/biennio-piani-di-studio-e-ammissione/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Italy",
   "city": "Milan",
   "institution": "Conservatorio di Musica 'Giuseppe Verdi' di Milano",
@@ -160,6 +168,8 @@
   "sourceUrl": "https://www.consmi.it/it/studiare/inizia-gli-studi/l-ammissione/requisiti-di-ammissione ; https://siami.conservatoriodimusica.it/corsi/view/630"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Italy",
   "city": "Milan",
   "institution": "AGON — Acustica Informatica Musica (Centro Studi Armando Gentilucci)",
@@ -186,6 +196,8 @@
   "sourceUrl": "https://agon.news/about/ ; https://agon.news/builders-club/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Spain",
   "city": "Barcelona",
   "institution": "Universitat Pompeu Fabra (UPF) — Music Technology Group, Department of Engineering",
@@ -212,6 +224,8 @@
   "sourceUrl": "https://www.upf.edu/web/smc ; https://www.upf.edu/web/smc/faq ; https://www.upf.edu/web/smc/overview ; https://estudis.aqu.cat/euc/en/Titulacions/Fitxa?titulacioId=11134"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Spain",
   "city": "Barcelona",
   "institution": "Fundació Phonos (inside UPF Poblenou campus, allied to the Music Technology Group)",
@@ -238,6 +252,8 @@
   "sourceUrl": "https://www.upf.edu/en/web/phonos/presentacio/fundacio ; https://www.upf.edu/en/web/phonos/presentacio/espais"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Spain",
   "city": "Barcelona",
   "institution": "Gràcia Territori Sonor / LEM Festival",
@@ -264,6 +280,8 @@
   "sourceUrl": "https://www.gracia-territori.com/ ; https://lemfestival.wordpress.com/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Greece",
   "city": "Corfu",
   "institution": "Ionian University — Department of Music Studies and Department of Audio & Visual Arts (School of Music and Audiovisual Arts), joint programme",
@@ -290,6 +308,8 @@
   "sourceUrl": "https://music.ionio.gr/sonarts/gr/regulation/ ; https://music.ionio.gr/sonarts/ ; https://avarts.ionio.gr/gr/studies/postgraduate/sonarts/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Greece",
   "city": "Corfu",
   "institution": "Ionian University — Department of Audio & Visual Arts",
@@ -316,6 +336,8 @@
   "sourceUrl": "https://avarts.ionio.gr/ada/v2/gr/call/ ; https://avarts.ionio.gr/gr/studies/postgraduate/ada/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Czech Republic",
   "city": "Prague",
   "institution": "Akademie múzických umění v Praze — HAMU (Music and Dance Faculty), Sound Design and Recording Direction Department (Katedra zvukové tvorby)",
@@ -342,6 +364,8 @@
   "sourceUrl": "https://sp.amu.cz/en/program27083491805.html ; https://sp.amu.cz/cs/program27083491805.html ; https://www.hamu.cz/en/studies/admission-procedures/ ; https://www.hamu.cz/en/news/vynos-dekana-c-182025-podminky-a-prubeh-prijima-5078/ ; https://www.hamu.cz/en/deans-decree-no-182023-setting-prices-for-study-in-english-within-accredited-study-programmes-3474/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Czech Republic",
   "city": "Prague",
   "institution": "CIANT — International Centre for Art and New Technologies",
@@ -368,6 +392,8 @@
   "sourceUrl": "https://www.transartists.org/air/ciant.8208.html ; https://artlist.cz/en/prostory/ciant-international-centre-for-art-and-new-technologies/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Poland",
   "city": "Warsaw",
   "institution": "Uniwersytet Muzyczny Fryderyka Chopina (UMFC / Chopin University of Music) — Chopin University Electronic Music Studio (CUEMS), Faculty of Composition and Music Theory",
@@ -394,6 +420,8 @@
   "sourceUrl": "https://chopin.edu.pl/uniwersytet/wydzialy/wydzial-kompozycji-i-teorii-muzyki/chopin-university-electronic-music-studio ; https://chopin.edu.pl/kandydat/rekrutacja ; https://irk.chopin.edu.pl/pl/offer/ ; https://chopin.edu.pl/student/dzial-nauczania/oplaty-za-studia-cenniki"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Poland",
   "city": "Warsaw",
   "institution": "Studio Eksperymentalne Polskiego Radia (Polish Radio Experimental Studio, PRES) — reconstructed at Muzeum Sztuki Nowoczesnej w Warszawie",
@@ -420,6 +448,8 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Polish_Radio_Experimental_Studio ; https://muno.pl/news/powrot-studia-eksperymentalnego-polskiego-radia/ ; https://artinfo.pl/artinformacje/powrot-studia-eksperymentalnego-polskiego-radia"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Slovakia",
   "city": "Bratislava",
   "institution": "Vysoká škola múzických umení v Bratislave (VŠMU) — Hudobná a tanečná fakulta (HTF)",
@@ -446,6 +476,8 @@
   "sourceUrl": "https://www.vsmu.sk/en/htf/admission-procedure-for-master-study/ ; https://www.vsmu.sk/htf/prijimacie-skusky-hudba-tanec-bc/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Hungary",
   "city": "Budapest",
   "institution": "Liszt Ferenc Zeneművészeti Egyetem (Liszt Ferenc Academy of Music) — Composition Department / electroacoustic studio",
@@ -472,6 +504,8 @@
   "sourceUrl": "https://uni.lisztacademy.hu/application/full-time-and-non-degree-programmes-109988 ; https://uni.lisztacademy.hu/composition/ba-electronic-music-media-requirements-109242 ; https://uni.lisztacademy.hu/composition-department/course-descriptions-117332"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "United Kingdom (Northern Ireland)",
   "city": "Belfast",
   "institution": "Queen's University Belfast — Sonic Arts Research Centre (SARC), School of Arts, English and Languages",
@@ -498,6 +532,8 @@
   "sourceUrl": "https://www.qub.ac.uk/courses/postgraduate-taught/sound-music-ma/ ; http://www.sarc.qub.ac.uk/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Switzerland",
   "city": "Basel",
   "institution": "Hochschule für Musik Basel, FHNW — Elektronisches Studio Basel / sonic space basel",
@@ -524,6 +560,8 @@
   "sourceUrl": "https://www.fhnw.ch/en/music/degree-programmes/offerings/programmes/ma-composition-music-theory-audio-design ; https://www.fhnw.ch/de/musik/studium/ma-komposition-musiktheorie"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Switzerland",
   "city": "Zurich",
   "institution": "Zürcher Hochschule der Künste (ZHdK) — Departement Musik, with the Institute for Computer Music and Sound Technology (ICST)",
@@ -550,6 +588,8 @@
   "sourceUrl": "https://www.zhdk.ch/6933 ; https://www.zhdk.ch/studium/musik/ma-komposition-und-theorie-1203/ma-elektroakustische-komposition-3482 ; https://www.zhdk.ch/forschung/icst"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Switzerland",
   "city": "Zurich",
   "institution": "Zürcher Hochschule der Künste (ZHdK) — Departement Musik",
@@ -576,6 +616,8 @@
   "sourceUrl": "https://www.zhdk.ch/studium/musik/sounddesign ; https://www.zhdk.ch/studium/musik/sounddesign/anmeldung-musik-ma-composition-and-theory-sound-design-6468"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "United Kingdom",
   "city": "Huddersfield",
   "institution": "University of Huddersfield — Centre for Research in New Music (CeReNeM)",
@@ -602,6 +644,8 @@
   "sourceUrl": "https://research.hud.ac.uk/institutes-centres/cerenem/ ; https://courses.hud.ac.uk/full-time/postgraduate/music-ma-by-research ; https://courses.hud.ac.uk/2026-27/postgraduate/creative-music-production-ma/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "United Kingdom",
   "city": "Newcastle upon Tyne",
   "institution": "Newcastle University — International Centre for Music Studies (ICMuS), School of Arts and Cultures",
@@ -628,6 +672,8 @@
   "sourceUrl": "https://www.ncl.ac.uk/postgraduate/degrees/4190f/ ; https://www.ncl.ac.uk/postgraduate/degrees/4134f/ (Creative Arts Practice MA — suspended)"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "United Kingdom",
   "city": "Leicester",
   "institution": "De Montfort University (DMU) — Music, Technology and Innovation Research Centre (MTIRC)",
@@ -654,6 +700,8 @@
   "sourceUrl": "https://www.dmu.ac.uk/study/courses/postgraduate-courses/music-technology-ma/music-technology-innovation-ma.aspx (returns generic landing page) ; https://www.dmu.ac.uk/research/research-faculties-and-institutes/technology/mtirc/index.aspx"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Ireland",
   "city": "Dublin",
   "institution": "Trinity College Dublin — School of Creative Arts / Department of Music (Music and Media Technologies group)",
@@ -680,6 +728,8 @@
   "sourceUrl": "https://www.tcd.ie/courses/postgraduate/courses/music-and-media-technologies-mphil/ ; https://www.tcd.ie/courses/postgraduate/az/course.php?id=DPTMU-MMTC-1F09"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Spain",
   "city": "Barcelona",
   "institution": "ESMUC — Escola Superior de Música de Catalunya",
@@ -706,6 +756,8 @@
   "sourceUrl": "https://www.esmuc.cat/en/masters-i-postgraus/master-propi-de-composicio-amb-tecnologies/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Austria",
   "city": "Graz",
   "institution": "Universität für Musik und darstellende Kunst Graz (KUG) — Institut für Elektronische Musik und Akustik (IEM)",
@@ -732,6 +784,8 @@
   "sourceUrl": "https://www.kug.ac.at/en/studying/studies-offered/fields-of-study/computer-music/masters-programme-computer-music ; https://iem.kug.ac.at/ ; https://www.kug.ac.at/en/studying/before-studying/admission-requirements"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "Austria",
   "city": "Graz",
   "institution": "FH JOANNEUM in cooperation with KUG / IEM",
@@ -758,6 +812,8 @@
   "sourceUrl": "https://iem.kug.ac.at/studium/studienrichtungen/sound-design"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "United Kingdom (Scotland)",
   "city": "Glasgow",
   "institution": "University of Glasgow — School of Culture and Creative Arts",
@@ -784,6 +840,8 @@
   "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/sounddesignaudiovisualpractice/"
  },
  {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
   "country": "United Kingdom",
   "city": "York",
   "institution": "University of York — School of Physics, Engineering and Technology (AudioLab)",
@@ -808,5 +866,33 @@
   "deadline": "No specific application deadline is stated on the course page (rolling admission). Start date September 2026 for the current cycle.",
   "applicationOpens": "UNVERIFIED (rolling)",
   "sourceUrl": "https://www.york.ac.uk/study/postgraduate-taught/courses/msc-audio-music-technology/"
+ },
+ {
+  "_field": "A",
+  "_source": "artist-sweep-d1-centres-2",
+  "country": "Germany",
+  "city": "Karlsruhe",
+  "institution": "Hochschule für Musik Karlsruhe — Institut für Musikinformatik und Musikwissenschaft (IMWI). NOTE: a different institution from ZKM and HfG Karlsruhe, which were covered by the earlier sweep.",
+  "program": "Master Musikinformatik (Master of Music, Music Informatics)",
+  "qualification": "Master of Music — German state university-of-music master's degree",
+  "accreditationStatus": "State university of music (Baden-Württemberg); accredited degree programme",
+  "institutionType": "Public university of music (Musikhochschule)",
+  "language": "German. QUOTE: 'Bewerber aus nicht deutschsprachigen Ländern müssen ausreichende Kenntnisse der deutschen Sprache nachweisen' — applicants from non-German-speaking countries must prove sufficient German.",
+  "durationEcts": "QUOTE: 'Regelstudienzeit: 4 Semester (2 Jahre)', '120 ECTS Punkte'. Study begins in the winter semester.",
+  "whatYouStudy": "Music informatics at the intersection of science, technology, creativity and critical reflection — algorithmic composition, live electronics, sound synthesis and analysis, media art, combined with musicology. The IMWI runs Bachelor Musikinformatik/Musikwissenschaft, Master Musikinformatik, Master Musikwissenschaft and doctoral study.",
+  "entryRequirements": "UNVERIFIED — the programme page links to 'Anforderungen bei der Eignungsprüfung' (aptitude-examination requirements) and the Master study regulations, but neither the accepted prior degrees nor the examination contents were retrievable. Registration deadline is stated: 'Anmeldung bis zum 15. Juni des Jahres', with 'Studienbeginn zum Wintersemester'.",
+  "acceptsNonMusic": "I COULD NOT FIND AN OFFICIAL SENTENCE either naming or excluding Informatik/computer science. The IMWI's own institutional identity is music informatics and its bachelor combines Musikinformatik with Musikwissenschaft, which makes a computing background plausible, but that is an inference — NOT a published acceptance. Verdict: UNVERIFIED. Contact imwi@hfm-karlsruhe.de directly and ask for the Zulassungssatzung for the Master Musikinformatik. This is the single most promising German programme found in this sweep for a software engineer and deserves a direct enquiry.",
+  "portfolioSpec": "UNVERIFIED — an Eignungsprüfung is required but its contents are published only via a separate linked page/PDF that could not be retrieved.",
+  "auditionSpec": "An Eignungsprüfung (aptitude examination) is required. Format UNVERIFIED.",
+  "tuitionNonEU": "QUOTE (Studiengebühren page): '1.500 € pro Semester' for international students who are non-EU/EEA citizens, applying to Bachelor's, other undergraduate and consecutive Master's programmes — i.e. €3,000 per year for a Tunisian national. Exemption applies to international students with established ties to Germany or a German higher-education entrance qualification.",
+  "otherFees": "Semesterbeitrag not stated on the fees page (UNVERIFIED)",
+  "totalCostEstimate": "€3,000/year tuition plus Karlsruhe living costs (UNVERIFIED). Cheap by Western-European standards.",
+  "scholarshipName": "DAAD scholarships (Study Scholarships for Artists / Musicians) — Tunisia is a DAAD-eligible country; programme-specific eligibility UNVERIFIED",
+  "scholarships": "UNVERIFIED at institutional level",
+  "languageRequirement": "German — proof of sufficient German required for applicants from non-German-speaking countries; exact level set in the enrolment regulations (UNVERIFIED, typically DSH-2 / TestDaF 4)",
+  "englishTest": "Not applicable — German-language programme",
+  "deadline": "15 June each year ('Anmeldung bis zum 15. Juni des Jahres'), for a winter-semester (October) start. For an autumn 2027 start: 15 June 2027.",
+  "applicationOpens": "UNVERIFIED",
+  "sourceUrl": "https://www.hfm-karlsruhe.de/studieren/faecher-und-instrumente/musikinformatik ; https://www.hfm-karlsruhe.de/hochschule/institute/institut-fuer-musikinformatik-und-musikwissenschaft ; https://www.hfm-karlsruhe.de/studieren/studienorganisation/studiengebuehren ; https://www.hfm-karlsruhe.de/studieren/studienangebote/master"
  }
 ]
