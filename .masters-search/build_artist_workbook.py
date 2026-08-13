@@ -70,6 +70,13 @@ def hay(r):
 
 
 def door(r):
+    # A record found by a Door-3 sweep IS Door 3. Those agents were briefed to return
+    # production and studio craft only, and that beats a regex over the title — French
+    # and Belgian degrees in this field are called "Ingénierie du son", "Master Son" or
+    # "Musicologie parcours production", none of which contain the words a pattern looks for.
+    origin = str(r["_rec"].get("_origin") or "")
+    if origin.startswith("door3"):
+        return "Door 3 — Music production & studio"
     t = hay(r)
     if D1.search(t):
         return "Door 1 — Electronic music & sound art"

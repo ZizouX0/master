@@ -889,5 +889,86 @@
   "correction": "TWO corrections, the first serious. (1) Gate recorded as 'Portfolio + exam/interview' — this drastically understates it. The examination includes an EAR-TRAINING TEST ('identification of intervals, rhythms, and chords') and a LIVE INSTRUMENTAL AUDITION ('Piano audition: One piece from the period from Baroque to Romantic as well as one piece from the 20th century'). It also, separately, includes a real production test (scoring a film clip in Pro Tools) — but that is the third of three parts and cannot be reached without passing the first. (2) The record does not note that instruction requires DSH-1 GERMAN, nor that entry requires a subject-specific BFA in Sound or Tonmeister. Its 'Possible' chance rating is wrong; this is closed to him.",
   "verifiedAt": "2026-08",
   "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "HAW Hamburg – Hochschule für Angewandte Wissenschaften Hamburg, Dept. Medientechnik",
+  "programme": "Zeitabhängige Medien / Sound – Vision (M.A.) — the Sound–Vision branch of Sound–Vision–Games",
+  "url": "https://www.haw-hamburg.de/en/master-sound-vision/",
+  "stillExists2027": "YES — live August 2026 with a published admission timetable. Annual winter-semester intake (PRIOR CYCLE): aptitude-test registration by 14 October, formal application 1 December–15 January.",
+  "award": "REAL MASTER'S — 'Master of Arts (M.A.)' awarded directly by HAW Hamburg, a German state university of applied sciences with its own degree-awarding powers. No validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — EXPLICITLY, AND THIS IS THE ONLY ENTRY IN THE BATCH THAT NAMES HIS DEGREE FIELD",
+   "quote": "The programme accepts first degrees in 'IT, media technology, media systems, media informatics, design, communication design, illustration, communication studies or audio/video production.' 'IT' and 'media informatics' lead the list. Nowhere else in these 48 records does an admissions rule name computing as a welcome background — every other programme treats it as the exception to be argued."
+  },
+  "gate": {
+   "type": "WORK SAMPLE, THEN INTERVIEW — no audition, no ear test",
+   "quote": "A three-part process: '1. Portfolio/Work sample: Submission of a sample of your work'; '2. Aptitude assessment interview: Interview, to which you will be invited if your performance in Part 1 merits it'; '3. Language proficiency'.",
+   "isProductionTestNotAudition": "Not an audition. There is no instrumental performance and no ear-training exam anywhere in this process — which is what separates HAW Hamburg from the Tonmeister conservatoires. It is a work sample followed by a conversation."
+  },
+  "portfolioSpec": "UNDER-SPECIFIED: 'Submission of a sample of your work'. No track count, duration or format is published. Given the programme is Sound–Vision, the sample should show sound working against picture rather than standalone music. He must ask the department for the specification.",
+  "costForTunisian": "ESSENTIALLY FREE — 'Semester contribution €397 including semester ticket and Germany-wide rail pass', and 'the stated amount appears to apply universally', with no separate non-EU rate. That is roughly €794 per year, all in, and the fee includes nationwide rail travel. On price this is the best offer in the entire batch by an enormous margin.",
+  "funding": "Not needed for tuition, which is effectively free. The real financial requirement is the German student-visa blocked account for living costs, which is not addressed on this page and must be budgeted separately.",
+  "deadline": "PRIOR CYCLE pattern, no 2027-specific dates published: register for the aptitude test 'until October 14', then the formal application period runs '1 December–15 January'. Note the aptitude-test registration comes FIRST and closes in mid-October, months before the application itself — a sequencing trap that catches applicants who only watch the application window.",
+  "languageAndCertificate": "GERMAN, AND THIS IS THE BLOCKER. 'Language of Instruction: German.' Required: 'C1 in the Common European Framework' for German, with English tested only at 'B1' level during the interview. He has no German whatsoever. C1 is near-fluency — realistically two to three years of full-time study — and cannot be reached from zero by the October 2026 aptitude-test registration or even by the 2027 cycle.",
+  "verdict": "AVOID",
+  "verdictWhy": "Painful, because on every axis except one this is the best-designed option he will find: it explicitly welcomes IT and media-informatics graduates, the gate is a work sample and an interview with no audition or ear test, and it costs €397 a semester including a nationwide rail pass. But instruction is in German at C1, and he has none. C1 from zero is not achievable for September 2027, so the door is shut for this cycle.",
+  "correction": "TWO corrections. (1) The record does not mention that the programme is TAUGHT IN GERMAN and requires C1 — the single fact that decides the case. Its 'Possible' rating is therefore wrong; it is not possible for him in this cycle. (2) Gate recorded as 'Portfolio + exam/interview' — there is no exam. It is a work sample, then an interview, then language proof. Also worth recording as a genuine positive for a later cycle: this is the only programme in the batch whose entry rule names IT and media informatics as accepted backgrounds.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "Hochschule für Musik und Tanz Köln (HfMT Köln)",
+  "programme": "Production (Master of Music) — contemporary popular music production",
+  "url": "https://www.hfmt-koeln.de/en/music/study-programs-music/master-of-music/production-master-of-music/",
+  "stillExists2027": "YES — live August 2026. Described as 'a non-consecutive two-year specialized Master's programme with a focus on contemporary popular music'. Annual winter-semester intake; applications via the muvac platform.",
+  "award": "REAL MASTER'S — 'Master of Music' in Production, awarded directly by the Hochschule für Musik und Tanz Köln, a German state music university with its own degree-awarding powers. No validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'Successfully completed bachelor's degree or comparable degree in an affine subject.' 'Affine' (related/adjacent) is not defined and the page does not list qualifying programmes; it directs enquiries to Prof. Jonathan Podmore at jonathan.podmore@hfmt-koeln.de. For a POPULAR MUSIC production master's, a software engineering degree plus a strong portfolio is a more arguable 'affine subject' than it would be at a classical Tonmeister institute — but it must be asked, and the contact is published precisely so that it can be."
+  },
+  "gate": {
+   "type": "PORTFOLIO + A GENUINE PRACTICAL PRODUCTION TEST — AND THIS IS THE CLEAREST 'HERE IS RAW MATERIAL, MAKE A PRODUCTION' GATE IN THE ENTIRE BATCH",
+   "quote": "Applicants submit 'two self-produced audio files (wav, aiff, or mp3) with production documentation', then complete a practical task: 'you prepare a production from the (raw) material you receive from us in advance after the application deadline.' The jury then discusses 'the result and working method.'",
+   "isProductionTestNotAudition": "THIS IS A PRODUCTION TEST, NOT AN AUDITION — say so plainly. HfMT sends him raw material and he produces it. There is no instrumental performance, no singing, and no ear-training exam anywhere in the process. This is literally the job he wants to do, set as the entrance requirement. For a candidate with no conservatoire training and no performance ability, a gate of this shape is an opportunity rather than an obstacle: it rewards exactly the skill he intends to spend twelve months building."
+  },
+  "portfolioSpec": "TWO PARTS, both specified. (1) Submitted in advance: 'two self-produced audio files (wav, aiff, or mp3)' plus production documentation — and the documentation is expected to be substantial, evidencing 'their working methods through photos, video, software screenshots, sheet music, or other relevant materials'. (2) Produced to brief after the deadline: a finished production worked up from raw material HfMT supplies. So his build is only two finished tracks — the smallest portfolio demand of any serious programme here — but he must also be able to document his process and then perform under a real brief.",
+  "costForTunisian": "NO TUITION FEE — HfMT Köln is a German state music university in North Rhine-Westphalia, where tuition is free; only the semester social contribution applies. The exact amount is not published on this page and should be confirmed, but it is of the order of a few hundred euros per semester rather than thousands. Cost is not the barrier here.",
+  "funding": "Not required for tuition, which is free. He would still need to satisfy the German blocked-account requirement for the student visa, which the page does not address.",
+  "deadline": "For applicants holding degrees from non-EU countries — which is his position — the application deadline is 2 MARCH for the winter semester. This is markedly earlier than the general deadline, and it is the date he must work to. Applications go through the muvac platform. PRIOR CYCLE: expect 2 March 2027 for a winter-semester 2027 start.",
+  "languageAndCertificate": "German required, but AT A STRIKINGLY LOW LEVEL: 'min. level A2 according to the European Framework of Reference'. A2 is elementary German — reachable from zero in roughly six to nine months of part-time study, and a completely different proposition from the C1 that HAW Hamburg demands or the DSH-1 that Babelsberg demands. This single fact makes HfMT Köln the only German option in the batch that is actually open to him.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "This is the best value proposition in the batch and deserves to be at the top of his list. A real Master of Music in contemporary popular music production, from a German state university, with no tuition fee; entry demands only two self-produced tracks plus a production made from raw material they send him — a production test, not an audition, with no ear-training exam and no instrument; and the German requirement is A2, not C1, which he can genuinely reach by March 2027. Confirm with Prof. Podmore that a software engineering BSc counts as an 'affine subject', and treat the 2 March non-EU deadline as the real date.",
+  "correction": "THREE corrections, all substantial. (1) Gate recorded as 'Portfolio + exam/interview' — this misses the defining feature. The gate is a PRACTICAL PRODUCTION TEST: 'you prepare a production from the (raw) material you receive from us in advance after the application deadline'. That is the job, not a barrier, and it should never be filed with the auditions. (2) The record does not capture that the German requirement is only A2 — far below HAW Hamburg's C1 and Babelsberg's DSH-1 — which is what makes this the one reachable German programme in the batch. (3) The record gives no deadline; the operative one for a Tunisian is the non-EU deadline of 2 March for winter-semester entry, not the general deadline.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Austria",
+  "institution": "mdw – University of Music and Performing Arts Vienna (Department of Composition Studies and Music Production,…",
+  "programme": "MA Tonmeister_in (Sound Engineering, 4 semesters)",
+  "url": "https://www.mdw.ac.at/1981/",
+  "stillExists2027": "YES — live August 2026 with a published application window and exam date for the current cycle: application '01. April 2026 – 26. May 2026', video submission by 2 June 2026, examination day 25 June 2026. Annual cycle (PRIOR CYCLE); expect the same April–June pattern in 2027.",
+  "award": "REAL MASTER'S — 'Master of Arts (MA)' in Tonmeister_in, four semesters, awarded directly by mdw, an Austrian public university with its own degree-awarding powers. Specialisations offered: 'Musikproduktion Klassik', 'Musikproduktion Popularmusik' and 'Filmton'.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO — the rule requires a subject-relevant degree and the reference point is mdw's own Tonmeister bachelor",
+   "quote": "'abgeschlossenes fachlich in Frage kommendes Bachelor- oder Diplomstudium' — a completed bachelor's or diploma study in a SUBJECT-RELEVANT field, requiring 'completion of a relevant Bachelor's degree programme or another relevant degree programme of at least the same higher education level'. The department states that mdw's own Tonmeister_in bachelor is the most relevant prerequisite programme. This is a master's built as the continuation of a Tonmeister bachelor, not an entry point for outsiders."
+  },
+  "gate": {
+   "type": "UNVERIFIED IN DETAIL, BUT A FORMAL ZULASSUNGSPRÜFUNG WITH A VIDEO SUBMISSION AND A SINGLE EXAM DAY",
+   "quote": "The master's page publishes only the timetable — video submission deadline 2 June 2026, examination 25 June 2026 — and says 'Detaillierte Informationen folgen zeitnah' (detailed information will follow shortly). The corresponding BACHELOR examination, which IS enumerated, comprises 'musical ear tests, acoustic/technical ear tests, written exams, and individual practical exams'.",
+   "isProductionTestNotAudition": "CANNOT BE RESOLVED FROM THE PUBLISHED PAGES — the master's exam components are not published. WARNING: the bachelor exam at the same institute contains explicit MUSICAL EAR TESTS, and this is a Tonmeister degree whose stated feeder is that bachelor. It would be unsafe to assume the master's entrance exam is a production test rather than an ear-based examination. He must obtain the 'Informationen zur Zulassungsprüfung' document before investing any effort."
+  },
+  "portfolioSpec": "UNVERIFIED — no portfolio specification is published for the master's. What is published is a VIDEO submission deadline (2 June in the current cycle), so some form of recorded submission is required, but its content and length are not stated.",
+  "costForTunisian": "€726.72 per semester tuition for third-country nationals, plus the ÖH students' union fee including insurance of €26.20, giving '752.92 € per semester' — approximately €1,506 per year. Tunisia is a third country for this purpose and is NOT exempt. Cheap by international standards but not free, unlike the German state universities.",
+  "funding": "UNVERIFIED — no scholarship published on the programme page.",
+  "deadline": "PRIOR CYCLE (2026 dates published, 2027 not yet): application 1 April – 26 May, video submission by 2 June, examination 25 June. Expect the same window in 2027.",
+  "languageAndCertificate": "German required — 'Nachweis der Deutschkenntnisse' (proof of German knowledge). The exact level is held in a linked information document that could not be retrieved, so the precise certificate is UNVERIFIED. Austrian public universities typically require German at B2 or C1 for degree programmes. He has no German.",
+  "verdict": "AVOID",
+  "verdictWhy": "Two hard blocks and one unknown. Entry requires a subject-relevant bachelor's with mdw's own Tonmeister BA as the reference point, which a software engineering BSc is not; and the programme requires proof of German he does not have. On top of that the master's entrance exam is not published at all, while the sibling bachelor exam contains musical ear tests — so he would be preparing blind for an examination that may well test exactly the ability he lacks.",
+  "correction": "THREE corrections. (1) Gate recorded as 'Portfolio only' — this is not supportable. mdw runs a formal Zulassungsprüfung with a video submission and a fixed examination day, and the components are not published; the equivalent bachelor exam includes musical and acoustic EAR TESTS. Calling it 'Portfolio only' understates it badly. (2) The record does not mention the German language requirement, which alone rules him out. (3) The cost band 'Under EUR 1.5k/yr' is marginally low: third-country nationals pay €752.92 per semester, i.e. about €1,506 per year, just over the band.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
  }
 ]

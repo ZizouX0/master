@@ -392,6 +392,12 @@ def load():
             print(f"  ! missing {path}", file=sys.stderr)
             continue
         for r in data:
+            # keep the sweep's own tag before stamping the coarse label over it —
+            # it says which agent found the record, and Door-3 agents were told to
+            # return production programmes only, which is better evidence than any
+            # regex run over a programme title afterwards
+            if r.get("_source") and r["_source"] != label:
+                r.setdefault("_origin", r["_source"])
             r["_source"] = label
             rows.append(r)
     return rows
