@@ -12,8 +12,8 @@ An exhaustive, source-verified search of master's programmes and scholarships fo
 software-engineering graduate** targeting **sound design, music production, music technology and
 music business** (goal: international DJ and producer), **September 2027 intake**, funding preferred.
 
-**1,635 unique opportunities · 78 countries · 403 re-verified against official pages ·
-1,300 confirmed to award a real master's degree.**
+**1,839 unique opportunities · 88 countries · 530 re-verified against official pages ·
+1,433 confirmed to award a real master's degree.**
 
 ---
 
@@ -23,6 +23,7 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 |---|---|
 | 📘 **[THE-COMPLETE-GUIDE.md](./results/THE-COMPLETE-GUIDE.md)** *(reads here)* · [PDF](./results/pdf/THE-COMPLETE-GUIDE.pdf) | **START HERE.** The whole search explained: the verified *worth it* options, how the "chance of acceptance" rating works, the accreditation trap in each country, the two separate tests that decide a visa, country-by-country costs, the Italian DSU scholarship finding, your deadline calendar, and an honest limits section |
 | 🎧 **[ARTIST-ROUTE.md](./results/ARTIST-ROUTE.md)** *(reads here)* · [PDF](./results/pdf/ARTIST-ROUTE.pdf) · [xlsx](./results/ARTIST-ROUTE.xlsx) | **THE ONE TO READ NOW.** The two doors you chose — electronic music / sound art, and music production — searched by sixteen agents and re-verified. **717 real degrees, and only 49 need an audition.** The verified shortlist, every scheme closed to you by nationality or timing, and the four emails worth sending this week |
+| 🎚️ **[DOOR3.md](./results/DOOR3.md)** *(reads here)* · [PDF](./results/pdf/DOOR3.pdf) · [xlsx](./results/DOOR3.xlsx) | **Music production and studio craft — every European option in one file.** 398 records, **261 real master's degrees across 37 countries**, 127 re-verified. Only 14 need an audition. The 29 that are strong, cheap and audition-free; the 130 sold as masters that are not; 49 funding schemes; and why the German Tonmeister degrees are closed by a prerequisite degree rather than by ear training |
 | 🎓 **[DEGREE-CHECK.md](./results/DEGREE-CHECK.md)** *(reads here)* · [PDF](./results/pdf/DEGREE-CHECK.pdf) | **"Is it actually a master's degree?"** — **1,300 of the 1,635 records are real degrees, 180 are not.** The look-alike in every country (*título propio*, *Master di I livello*, *pós-graduação*, CRKBO) and how to check it against the national register, plus the full list of the 180 to avoid |
 | 📊 **[MASTER-all-opportunities.xlsx](./results/MASTER-all-opportunities.xlsx)** *(download)* | **All 1,635 opportunities, 37 columns, 20 tabs.** Column D says whether it's a real degree. Real Excel tables — filter buttons with a search box on every column. Tabs: *★ Best Bets (145) · **Master's degrees only (1,300)** · **NOT a degree — avoid (180)** · Strong + English or French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything ·* one per region |
 | 🎚️ **[SOUND-and-SCHOLARSHIPS.xlsx](./results/SOUND-and-SCHOLARSHIPS.xlsx)** *(download)* | **The sound half of the search plus all the money — degrees only.** 737 sound programmes that award a real master's, with music business and adjacent media stripped out and 88 certificates moved aside. 27 tabs: *★ Best bets (87) · Audio engineering (358) · Sound design & production (314) · Music tech (65) · No portfolio needed · Fully funded (133) · Sound + a scholarship · All scholarships (725) · Scholarship index (623 schemes) · **NOT a degree — avoid** · **Award unclear** ·* one per country |
@@ -58,9 +59,9 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 
 | | |
 |---|---|
-| Unique opportunities | **1,635** across **78 countries** |
-| Award a **real master's degree** | **1,300** — 180 are certificates, 25 unclear |
-| Re-verified against official pages | **403** — 31 *worth it* · 128 *conditional* · 244 *avoid* |
+| Unique opportunities | **1,839** across **88 countries** |
+| Award a **real master's degree** | **1,433** — 199 are certificates, 28 unclear |
+| Re-verified against official pages | **530** — 39 *worth it* · 161 *conditional* · 330 *avoid* |
 | Your chance of admission | **560 Strong** · 672 Possible · 403 Weak |
 | Both Strong **and** cheap or free | **145** real degrees |
 | Taught in English or French | **1,019** (553 of them Strong) |
