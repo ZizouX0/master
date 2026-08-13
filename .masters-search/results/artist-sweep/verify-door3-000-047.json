@@ -1051,5 +1051,248 @@
   "correction": "TWO corrections, the first severe. (1) COST BAND BADLY WRONG: recorded as 'Under EUR 1.5k/yr'. The overseas rate is approximately GBP 29,900 per year — around twenty times the recorded band, and among the three most expensive entries in the batch. Any shortlist built on that figure would be dangerously misleading. (2) The record does not note the two-round deadline structure (Round 1 mid-December, Round 2 early May) or the IELTS two-year validity rule, both of which affect his timing.",
   "verifiedAt": "2026-08",
   "_source": "door3-verify"
+ },
+ {
+  "country": "Bulgaria",
+  "institution": "New Bulgarian University (Нов български университет, NBU) — Department of Music",
+  "programme": "Тонрежисура (Sound Engineering / Tonmeister) — master's programme",
+  "url": "https://ecatalog.nbu.bg/default.asp?V_Year=2026&PageShow=programpresent&P_Menu=generalinfo&Fac_ID=4&M_PHD=0&TabIndex=1&l=0&P_ID=3311",
+  "stillExists2027": "YES — the NBU e-catalogue entry is live and carries V_Year=2026, i.e. it is the current 2026 catalogue record. Annual intake (PRIOR CYCLE).",
+  "award": "REAL MASTER'S — 'магистър по тонрежисура' (Master's in Sound Direction), awarded directly by New Bulgarian University, an accredited Bulgarian higher-education institution. Structure: 51 credits across two semesters, combining 'classroom lectures, practical courses, and training modules'. Content covers 'тонрежисура, звукови технологии, софтуерни решения в музикалното студио, електронен звук, звуков монтаж, аудиодизайн' — sound direction, sound technologies, software solutions in the music studio, electronic sound, sound editing and audio design.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — AND NBU HAS WRITTEN THE ACCOMMODATION INTO THE PROGRAMME STRUCTURE, WHICH ALMOST NOTHING ELSE IN THIS BATCH DOES",
+   "quote": "Candidates need a 'завършено ниво \"бакалавър\"' (completed bachelor's degree). Those holding degrees in 'музикалните и танцови изкуства' (music and dance arts) study for 2 semesters; 'others receive an individualized program lasting minimum 3 semesters, with the first being preparatory.' So a non-music graduate is not rejected — he is admitted onto a longer route with a built-in preparatory semester designed to close exactly his gap. This is a formal, published bridge for someone with no music degree."
+  },
+  "gate": {
+   "type": "ESSAY + INTERVIEW — the softest gate of any real master's in this batch",
+   "quote": "'Есе на тема: Защо избрах да се обучавам в Магистърска програма \"Тонрежисура\" в НБУ' (an essay on why you chose this master's programme) and 'Интервю на кандидата с Комисията по прием' (an interview with the admissions committee).",
+   "isProductionTestNotAudition": "NO AUDITION, NO EAR-TRAINING EXAM, NO PRODUCTION TEST, AND NO PORTFOLIO. The entire published gate is one essay and one conversation. For a Tonmeister-titled degree this is remarkable, and it is the direct opposite of the German and Austrian Tonmeister programmes, which is exactly why the record's grouping of them together is misleading."
+  },
+  "portfolioSpec": "NONE REQUIRED — no portfolio appears anywhere in the published admission procedure. He would not need finished tracks to be admitted, though building them would still be the point of going.",
+  "costForTunisian": "10,800–13,200 BGN per year for non-EU citizens, i.e. approximately €5,522–6,749 per year. NBU states that fees 'are paid per semester and remain unchanged for the entire course of study', so the rate is locked at entry. NOTE the trap: the widely quoted €1,355–1,738 range is the EU-CITIZEN rate. A Tunisian pays roughly four times that.",
+  "funding": "UNVERIFIED — no scholarship published for this programme.",
+  "deadline": "UNVERIFIED — no application deadline published on the catalogue page.",
+  "languageAndCertificate": "BULGARIAN — the programme catalogue is entirely in Bulgarian with no English-taught track advertised, and the degree title, curriculum and admission essay are all specified in Bulgarian. NBU teaches many programmes in English but this is not one of them. He has no Bulgarian, and the admission essay itself would have to be written in it. No certificate level is published.",
+  "verdict": "AVOID",
+  "verdictWhy": "Everything about the entry design suits him — a formal preparatory semester for non-music graduates, and a gate consisting of one essay and one interview with no audition, no portfolio and no ear test. But it is taught in Bulgarian, including the admission essay, and the non-EU fee is roughly €5,522–6,749 a year rather than the low figure the record assumed. Language alone closes it for September 2027.",
+  "correction": "THREE corrections. (1) Gate recorded as 'Portfolio + exam/interview' — WRONG on two of three counts. There is no portfolio and no exam. The published procedure is an essay plus an interview, full stop. This is one of the most accessible gates in the batch and the record makes it look like one of the harder ones. (2) COST BAND WRONG: recorded 'EUR 1.5k-5k/yr', but that is the EU-citizen rate. The non-EU rate is 10,800–13,200 BGN, roughly €5,522–6,749 per year. (3) The record does not record that instruction is in BULGARIAN, which is the fact that actually decides the case — nor the genuinely notable positive that NBU offers non-music graduates a published three-semester route with a preparatory first semester.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Bulgaria",
+  "institution": "New Bulgarian University (Нов български университет, NBU) — Master's Faculty, Department of Music",
+  "programme": "Тонрежисура (Sound Engineering / Tonmeister) — master's programme",
+  "url": "https://ecatalog.nbu.bg/default.asp?V_Year=2026&PageShow=programpresent&P_Menu=admission&Fac_ID=4&M_PHD=0&TabIndex=1&l=0&P_ID=3311",
+  "stillExists2027": "YES — live 2026 catalogue entry. DUPLICATE of index 39: same programme, same P_ID=3311, differing only in which tab of the same catalogue record the URL opens (admission tab versus general-info tab).",
+  "award": "REAL MASTER'S — 'магистър по тонрежисура', awarded by New Bulgarian University. 51 credits, two semesters for music graduates.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — via the published extended route",
+   "quote": "Holders of bachelor's degrees in 'музикалните и танцови изкуства' study two semesters; 'others receive an individualized program lasting minimum 3 semesters, with the first being preparatory.'"
+  },
+  "gate": {
+   "type": "ESSAY + INTERVIEW",
+   "quote": "'Есе на тема: Защо избрах да се обучавам в Магистърска програма \"Тонрежисура\" в НБУ' plus 'Интервю на кандидата с Комисията по прием'.",
+   "isProductionTestNotAudition": "No audition, no ear test, no production test, no portfolio."
+  },
+  "portfolioSpec": "NONE REQUIRED — no portfolio is part of the published admission procedure.",
+  "costForTunisian": "Approximately €5,522–6,749 per year (10,800–13,200 BGN), the non-EU rate, fixed for the duration of study. The EU rate of roughly €1,355–1,738 does not apply to him.",
+  "funding": "UNVERIFIED — none published.",
+  "deadline": "UNVERIFIED — none published on the admission tab.",
+  "languageAndCertificate": "Bulgarian. No English-taught track advertised for this programme; no certificate level published.",
+  "verdict": "AVOID",
+  "verdictWhy": "Same programme as index 39 and the same conclusion. An unusually welcoming admission design — essay, interview, and a preparatory semester for non-music graduates — defeated by Bulgarian-language instruction and a non-EU fee around four times the EU rate.",
+  "correction": "DUPLICATE of index 39 — the two records are the same NBU programme (P_ID=3311) reached through two tabs of one catalogue entry, so this is one opportunity, not two. NOTE ALSO that index 53 in the same input file is a THIRD copy of this NBU programme under an older catalogue year. Substantive corrections as at index 39: no portfolio and no exam (essay plus interview only); non-EU fee €5,522–6,749/yr rather than the recorded €1.5k–5k band; instruction in Bulgarian.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Italy",
+  "institution": "Saint Louis College of Music (Saint Louis Music Center srl)",
+  "programme": "Biennio Accademico di II livello in Sound Design & Post Produzione Audio",
+  "url": "https://saintlouis.eu/corsi_saint_louis/sound-design-e-post-produzione-audio/",
+  "stillExists2027": "YES — live and marketed August 2026 as a current two-year specialisation. (saintlouis.eu returns empty content to automated fetching; confirmed via the search index — reconfirm details directly.)",
+  "award": "REAL MASTER'S-EQUIVALENT — 'Diploma Accademico di II Livello in Sound Design, a title recognized by the Ministry of University and Research (MUR)'. Within the Italian AFAM system a diploma accademico di secondo livello is the legal equivalent of a laurea magistrale, i.e. EQF level 7, a genuine master's-level award. Saint Louis describes itself throughout as a 'scuola autorizzata dal MUR' — authorised by the ministry. This is a real second-cycle qualification, unlike the ETIC BTEC at index 1 or the 3iS school diploma at index 0.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "UNVERIFIED — leaning CASE-BY-CASE",
+   "quote": "The only published access statement concerns internal progression: 'The first-level academic diploma pathway allows direct access to second-level biennium programs (authorized by MUR)'. No rule for external applicants holding non-music bachelor's degrees is published. In the Italian AFAM system a foreign bachelor's is normally assessed for equivalence plus subject prerequisites, so he would face a discretionary decision. Must be asked of the Segreteria Accademica."
+  },
+  "gate": {
+   "type": "ESAME DI AMMISSIONE — an admission examination, contents UNVERIFIED",
+   "quote": "The published material references 'admission exam procedures' and an admission process with a discount 'for completing the admission process by June 15', but the exam's contents are not published.",
+   "isProductionTestNotAudition": "CANNOT BE DETERMINED FROM PUBLISHED SOURCES. For a Sound Design and audio post-production biennio an audition would be unusual and a practical/technical test more likely, but this is inference, not evidence. He must obtain the bando di ammissione before assuming it is passable."
+  },
+  "portfolioSpec": "UNVERIFIED — no portfolio specification published.",
+  "costForTunisian": "APPROXIMATELY €2,800 PER YEAR, plus an enrolment fee 'between €240 and €290 depending on the month of enrollment', a '€250 deposit that will be deducted from the annual tuition', and a one-off '€500 for the second level diploma exam'. Discounts are published: '15% reduction on annual tuition for early payment by April 30, or a 10% reduction for completing the admission process by June 15'. No separate non-EU rate is advertised, so a Tunisian appears to pay the same. Saint Louis stresses that costs vary by programme and a quote must be requested from the Academic Secretariat (info@slmc.it).",
+  "funding": "No scholarship published, but the two published EARLY-ACTION DISCOUNTS function as funding he can actually capture without competing: 15% off the annual tuition for paying by 30 April, and 10% off for completing admission by 15 June. These are automatic on meeting the date, not a separate competitive application — the opposite of the Berklee and Leeds scholarship model.",
+  "deadline": "PRIOR CYCLE, inferred from the discount structure: admission process completed by 15 JUNE earns 10% off, and payment by 30 APRIL earns 15% off. No hard closing date is published. Expect the same spring pattern for a 2027 start.",
+  "languageAndCertificate": "ITALIAN presumed — all course pages are in Italian and the qualification is an Italian AFAM award. Saint Louis maintains an international-students page (https://www.slmc.it/international/studiare-al-saint-louis-college-of-music/), so some support exists, but no language of instruction and no certificate level could be verified. He has no Italian, though fluent French would make Italian the fastest of the Romance languages for him to reach.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "The award is genuine — an MUR-recognised diploma accademico di II livello, the Italian legal equivalent of a master's — and at roughly €2,800 a year it is by a wide margin the cheapest real second-cycle qualification in this batch outside the free German universities. Three things must be resolved before it can be trusted: whether a Software Engineering BSc gains access, what the admission exam actually contains, and whether he can study in Italian by autumn 2027.",
+  "correction": "TWO corrections. (1) COST BAND OVERSTATED: recorded as 'EUR 5k-15k/yr'; the published figure is approximately €2,800 per year plus roughly €500–800 in enrolment and exam fees — under a third of the bottom of the recorded band. This moves Saint Louis from 'expensive private school' to one of the cheapest genuine options in the set. (2) Gate recorded as 'Portfolio + exam/interview' — an admission exam exists but its contents are not published, and no portfolio requirement could be found. The record asserts more than the sources support.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Netherlands",
+  "institution": "Royal Conservatoire The Hague",
+  "programme": "Master Art of Sound (music recording, production and sound reinforcement)",
+  "url": "https://www.koncon.nl/en/programmes/master/art-of-sound/master-artofsound/toelatingseisen",
+  "stillExists2027": "YES — live August 2026 with a fully published admission timetable and a 2026-2027 institutional fee already set. Annual cycle (PRIOR CYCLE): portfolio deadline late February, interviews in April, final admission decisions by end of August.",
+  "award": "REAL MASTER'S — Master Art of Sound, awarded by the Royal Conservatoire The Hague (Koninklijk Conservatorium), part of the Dutch state higher-education system with its own degree-awarding powers. A genuine, accredited Dutch master's.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "UNVERIFIED — no subject rule is published",
+   "quote": "'The page does not specify which bachelor's degrees are accepted.' Notably, the admission process is built entirely around demonstrated work rather than prior qualification, which usually signals that the portfolio decides. Contact p.jeukendrup@koncon.nl."
+  },
+  "gate": {
+   "type": "PORTFOLIO + WRITTEN REPORTS + MASTER PROJECT PLAN + ONLINE INTERVIEW — no audition anywhere",
+   "quote": "Four components: (1) a portfolio of 'three recording projects, music productions or sound reinforcement projects that you have initiated and designed yourself'; (2) a Master Project Plan addressing 'artistic development, research and entrepreneurship'; (3) a CV in Europass format and a motivation form; (4) a 'Motivation interview... max. 30 minutes per candidate' conducted 'online via Microsoft Teams with three jury members discussing portfolio, master plan, and study intentions'.",
+   "isProductionTestNotAudition": "NOT AN AUDITION — and this matters, because it is a conservatoire, where an audition would be the default expectation. There is no instrumental performance, no ear-training exam and no set production test. The jury reads his work and then talks to him for half an hour over Teams, so he never has to travel to be assessed."
+  },
+  "portfolioSpec": "THE MOST DEMANDING WRITTEN COMPONENT IN THE BATCH, AND FULLY SPECIFIED. Three projects — 'recording projects, music productions or sound reinforcement projects that you have initiated and designed yourself'. For each: lossless/uncompressed audio files, optional video, AND a written report of '300-600 words per project' covering description, his responsibilities, creative vision, technological approach and evaluation. Plus a separate Master Project Plan on artistic development, research and entrepreneurship, and a Europass CV. So the build is three self-initiated productions plus roughly 900–1,800 words of reflective writing plus a research plan — heavier on articulation than anywhere else here, which suits a graduate used to writing technical documentation.",
+  "costForTunisian": "€11,488 for 2026-2027 — the institutional tuition fee, which is what 'students from outside the EEA' pay. Note the far larger visa requirement behind it: non-EU/EEA students 'must show proof of financial means by paying tuition fees, living expenses, and residence permit costs up front, which amounts to almost €26,000'. That €26,000 up-front proof, not the €11,488 fee, is the real financial gate. Fees are indexed annually, so budget above €11,488 for 2027.",
+  "funding": "UNVERIFIED — no scholarship published on the admissions page.",
+  "deadline": "PRIOR CYCLE, fully dated for the 2026 round: portfolio, Master Project Plan and CV all due 26 FEBRUARY; invitation decisions by 31 March; motivation interviews in the week of 13 April; final admission notification by 31 August. For a September 2027 start expect a late-February 2027 portfolio deadline — which means the work must be finished by winter 2026/27, roughly six months earlier than the UK rolling deadlines.",
+  "languageAndCertificate": "English — the programme and its admission materials are published in English and the interview is conducted in English. The exact certificate and score are NOT published on this page and must be confirmed. He has no Dutch, which does not appear to be required.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "A genuine Dutch conservatoire master's in exactly his field, assessed entirely on submitted work and a Teams interview with no audition and no ear test, at €11,488 — well below the mid-range UK options. Two things to resolve: the €26,000 up-front financial proof required for the residence permit, which is a harder number than the fee itself; and the late-February portfolio deadline, which pulls his build forward by about six months relative to the UK.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — there is no exam. The gate is a portfolio of three self-initiated projects, 300-600 words of written report per project, a Master Project Plan, a Europass CV, and a 30-minute online motivation interview. The record understates how much WRITING is involved, which is actually good news for this candidate. (2) The record gives no deadline; the operative date is 26 February for portfolio submission, materially earlier than any UK equivalent, and the non-EU financial proof of almost €26,000 is not captured at all.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Norway",
+  "institution": "Kristiania University College (Oslo)",
+  "programme": "Master in Media Arts (sound design / music production pathways)",
+  "url": "https://www.kristiania.no/en/studies/masters-degree/master-in-media-arts/",
+  "stillExists2027": "YES — live August 2026, a two-year 120 ECTS master's. Annual intake with a 15 June portfolio deadline (PRIOR CYCLE).",
+  "award": "REAL MASTER'S — 'Master in Media Arts', 2 years, 120 ECTS, awarded by Kristiania University College, an accredited Norwegian higher-education institution. A full two-year European master's rather than the one-year UK model, which means twice the studio time for the money.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE — the subject list helps him, the credit rule may not",
+   "quote": "'A bachelor's degree minimum 180 ECTS in audiovisual media, storytelling, screenwriting, visual art, design, technology, or equivalent education' is required, 'with at least 80 ECTS within the master's subject field.' TECHNOLOGY is named, which is rare and favourable. But the second clause is the obstacle: 80 ECTS — two-thirds of a year's study — must sit within the master's subject field, and a BSc Software Engineering is unlikely to contain 80 ECTS of media arts. This is the specific point to argue with admissions."
+  },
+  "gate": {
+   "type": "PORTFOLIO ONLY — no interview, no audition",
+   "quote": "'Portfolio-based assessment. The entrance exam consists of: Application letter explaining objectives and motivation; Artistic or practice-based portfolio that shows the applicant's professional level; CV and diploma documentation.' Explicitly: 'No interview or audition mentioned.'",
+   "isProductionTestNotAudition": "No audition, no ear test, no production task, and not even an interview. The lowest-friction gate of any accredited master's in the batch — he submits work and documents and waits."
+  },
+  "portfolioSpec": "UNDER-SPECIFIED AT SOURCE: an 'artistic or practice-based portfolio that shows the applicant's professional level'. Usefully, collaborative work counts — 'Examples can be independent works or the candidate's part in collaborative projects.' Kristiania states 'The specific requirements will be published in Kristiania University College's admissions portal', so the exact brief exists but only appears in the portal. He must register there to get it.",
+  "costForTunisian": "NOK 65,600 per semester — approximately €5,500 per semester, i.e. roughly €11,000 per year and around €22,000 across the two-year degree. Kristiania is a private institution, so unlike Norwegian public universities it charges tuition to everyone; there is no non-EU penalty on top.",
+  "funding": "UNVERIFIED — no scholarship published on the programme page.",
+  "deadline": "15 JUNE for the portfolio and motivation letter — 'Portfolio and motivation letter must also be submitted by June 15th.' PRIOR CYCLE: expect 15 June 2027 for a 2027 intake.",
+  "languageAndCertificate": "ENGLISH — 'Language of Instruction: English', with no Norwegian required. Certificate: 'TOEFL (minimum 60 iBT), IELTS (5.0), PTE (51), or equivalent'. IELTS 5.0 IS THE LOWEST ENGLISH REQUIREMENT IN THE ENTIRE BATCH — two and a half bands below Berklee MPTI and 1.5 below the standard UK 6.5. For a candidate with 'working' English who has not yet sat the test, this is close to a formality.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Taught in English at IELTS 5.0, assessed on a portfolio alone with no interview or audition, two full years for roughly €11,000 a year — on access grounds this is one of the easiest real master's here to get into. What must be resolved first is subject fit: it is a Media Arts degree with no formal sound or music production pathway, so he needs to confirm both that his BSc can satisfy the 80-ECTS-in-field rule and that the electives can actually be steered toward audio.",
+  "correction": "TWO corrections. (1) THE PATHWAYS DO NOT EXIST AS DESCRIBED. The record calls this 'Master in Media Arts (sound design / music production pathways)'. There are no such named pathways: the programme offers electives including 'Procedural Art' and 'Exploring AI', and sound design appears only as a career destination and as the teaching area of one professor (Svenn Jakobsen). Presenting it as having a music production pathway is misleading. (2) Gate recorded as 'Portfolio + exam/interview' — there is no exam and no interview. It is a portfolio, a letter, a CV and diplomas. Also worth adding: the English requirement is IELTS 5.0, the lowest in the batch.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "dBs Institute (Bristol / Manchester / Plymouth / Online)",
+  "programme": "MA Music Production (awarded by Falmouth University)",
+  "url": "https://www.dbsinstitute.ac.uk/all-courses/ma-music-production-sound-engineering",
+  "stillExists2027": "QUALIFIED YES — this URL resolves to a live 'MA Music Production' page, but it is flagged 'subject to validation', meaning the version at this address is not yet a confirmed running course. It is the FOURTH copy of the dBs MA Music Production in this batch (see indices 3, 5, 6).",
+  "award": "REAL MASTER'S — awarding body **Falmouth University**. dBs Institute teaches; Falmouth awards. dBs holds no degree-awarding powers of its own.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'Typically an undergraduate degree of 2:2 or above in a related discipline', with 'Accreditation of Prior Learning (APL)' considered 'from formal or certified learning gained within the last five years'. Software Engineering must be argued as 'related'."
+  },
+  "gate": {
+   "type": "INTERVIEW (portfolio not specified)",
+   "quote": "'Portfolio Requirement: Not explicitly stated in the content provided.' The dBs admissions process invites applicants to an interview.",
+   "isProductionTestNotAudition": "No audition and no ear-training exam anywhere in the dBs process."
+  },
+  "portfolioSpec": "UNVERIFIED — no portfolio specification is published on any dBs course page. This is a persistent gap across all four dBs records.",
+  "costForTunisian": "HE CANNOT TAKE THIS ON CAMPUS AT ANY PRICE. Quoted: 'International students cannot study this course on-campus... At this time, we are currently able to accept international students on our online postgraduate degree programmes only.' Online rates are GBP 10,500 full-time (1 year) or GBP 5,250 part-time (2 years). The concession that exists — 'EU students with settled/pre-settled status under the EU Settlement Scheme may qualify for home fees' — requires UK settled status and does not reach a Tunisian national.",
+  "funding": "UNVERIFIED — none published. Chevening is closed to him (two years' post-degree work experience required), so no UK-government route exists.",
+  "deadline": "None published; rolling against a September start. PRIOR CYCLE: annual September intake.",
+  "languageAndCertificate": "English. dBs's standard requirement is IELTS Academic 6.5 overall with 6.0 in each of Reading, Writing, Speaking and Listening.",
+  "verdict": "AVOID",
+  "verdictWhy": "The record advertises Bristol, Manchester and Plymouth campuses, and he cannot attend any of them: dBs accepts international students on online programmes only. The award is a genuine Falmouth MA at a fair price, but it delivers no student visa, no studio and no relocation — which are the things he actually needs.",
+  "correction": "THREE corrections. (1) THE CAMPUS LIST IS MISLEADING FOR THIS CANDIDATE. The record's title advertises 'Bristol / Manchester / Plymouth / Online', but for an international applicant only the last of those four is real — dBs accepts international students on online postgraduate programmes only. (2) DUPLICATE — this is the fourth copy of the dBs MA Music Production (indices 3, 5, 6, 44), and the four copies disagree with each other on the gate ('Portfolio only', 'None found in the text', 'Portfolio + exam/interview', 'Portfolio only'). The truth is: an interview, with no portfolio specification published anywhere. (3) The page at this particular URL is marked 'subject to validation', so even the course version recorded here is not confirmed as running.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Bath Spa University — Bath School of Music and Performing Arts",
+  "programme": "MA Commercial Music (specialisms: Music Production, Songwriting, Music Business)",
+  "url": "https://www.bathspa.ac.uk/courses/pg-commercial-music/",
+  "stillExists2027": "YES — AND 2027 ENTRY IS PRICED, WHICH ALMOST NOTHING ELSE IN THIS BATCH IS. The page publishes separate international fees for '2026 entry' and '2027 entry', so the September 2027 intake he is aiming at is already a live, costed proposition rather than an inference.",
+  "award": "REAL MASTER'S — MA Commercial Music awarded directly by Bath Spa University, a publicly funded UK university with its own degree-awarding powers. No partner provider, no validation chain. Three specialisms are offered: 'Music Production, Songwriting, or Music Business' — he would take Music Production.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES on the written rule, CASE-BY-CASE in practice",
+   "quote": "'a good honours degree or equivalent' along with 'equivalent music industry experience'. No subject is named and no music degree is demanded, so a BSc Software Engineering satisfies the letter of the requirement. The unwritten expectation is that the portfolio carries the music case, since he has no industry experience."
+  },
+  "gate": {
+   "type": "DIGITAL PORTFOLIO + ONLINE INTERVIEW",
+   "quote": "A 'digital portfolio of your creative/business work' is required, and 'we'll then interview you online to discuss your suitability'. Explicitly: 'No audition or practical test mentioned.'",
+   "isProductionTestNotAudition": "Not an audition and not a set production task. He submits his own work and discusses it on a video call — no travel needed to be assessed, which matters for a candidate who would otherwise need a visa merely to attend."
+  },
+  "portfolioSpec": "LOOSE: a 'digital portfolio of your creative/business work' relevant to the chosen specialism. No track count, duration or format is published — the only steer is that it must match the specialism, so for Music Production it should be finished productions. He should request a specification from admissions@bathspa.ac.uk.",
+  "costForTunisian": "GBP 18,755 per year for 2026 entry, rising to GBP 19,685 per year for 2027 entry — and since he is targeting September 2027, GBP 19,685 is his actual number. Note this is one of the very few entries where the 2027 figure is published rather than guessed at, so it can be budgeted with confidence.",
+  "funding": "WEAK — 'The page references general funding options but provides no scholarship details specific to international students.' Chevening is closed to him (it requires two years' post-degree work experience and he has none), so the usual UK-government route does not exist. On present evidence this is a GBP 19,685 self-pay proposition.",
+  "deadline": "31 JULY, softly enforced: 'Late applications (generally those made after 31 July) will only be considered if places remain'. September start. For a September 2027 entry that means 31 July 2027, though applying far earlier is obviously wiser given that places are the limiting factor.",
+  "languageAndCertificate": "English. Certificate: UNVERIFIED — 'Not specified on this page'. Bath Spa's institutional standard for taught master's is normally IELTS 6.5, but that is not stated on the course page and must be confirmed.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "A real university MA with a Music Production specialism, an entry rule that names no subject, a portfolio-and-video-call gate with no audition, and — unusually — a published 2027 fee of GBP 19,685 so he can budget precisely. The thing to resolve is that GBP 19,685 with no international scholarship and Chevening closed to him is a lot of money for a candidate who can pay a little. Confirm the IELTS score too, since the page does not state it.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — there is no exam. It is a digital portfolio followed by an online interview, and Bath Spa's own material states there is no audition or practical test. (2) The record does not capture the most useful fact on the page: the 2027 entry fee is already published at GBP 19,685, distinct from the GBP 18,755 charged for 2026 entry. For a September 2027 candidate that is the figure that matters.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Leeds Conservatoire",
+  "programme": "MA Music Production (validated by University of Hull)",
+  "url": "https://www.leedsconservatoire.ac.uk/courses/postgraduate-courses/ma-music-production/",
+  "stillExists2027": "YES — AND CONFIRMED FOR 2027. The course page lists September start dates for both 2026 and 2027. DUPLICATE of index 17 (and of index 47), same URL.",
+  "award": "REAL MASTER'S THROUGH A VALIDATION CHAIN — and the record names the chain correctly here. Degree-awarding body: **University of Hull**, a publicly funded UK university with its own degree-awarding powers. Leeds Conservatoire teaches and assesses; Hull awards the MA. Leeds Conservatoire does not award its own degrees.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE, leaning favourable",
+   "quote": "'qualifications in other fields will also be reviewed and considered'."
+  },
+  "gate": {
+   "type": "PORTFOLIO, THEN ONLINE INTERVIEW",
+   "quote": "'All applicants are invited to submit a portfolio', followed by an online interview if the portfolio succeeds.",
+   "isProductionTestNotAudition": "NOT an audition, despite the conservatoire setting. For the Production pathway the submission is recorded studio work; there is no live playing and no ear-training exam. This is the crucial distinction between Leeds Conservatoire and the German and Austrian Tonmeister schools, which share the conservatoire label but not the gate."
+  },
+  "portfolioSpec": "For the PRODUCTION pathway: 'two recent projects (e.g., studio production, sound design, electronic composition work) totalling around 10 minutes'. (The Composition pathway asks instead for 'two recent original works and/or recordings with a total duration of around 10 minutes'.) Two finished productions, roughly ten minutes together — and the bracketed examples explicitly admit sound design and electronic composition, so he is not confined to band recordings.",
+  "costForTunisian": "GBP 20,600 for one year full-time — the international rate for 2026 entry across the MA Music programmes including Production. The highest UK fee in this batch apart from York, UAL and Edinburgh. CASH-FLOW TRAP: 'International students must pay 50% of tuition fees before receiving a CAS', so GBP 10,300 must be paid before the visa application can even begin.",
+  "funding": "TWO NAMED AWARDS, both separate earlier applications. (1) 'Leeds Conservatoire Postgraduate Principal's Scholarship' — four awards of 'GBP 5,000' for new international postgraduate students; as of August 2026 'Applications for September 2026 entry are now closed', establishing that it closes well ahead of the intake. (2) 'Leeds Conservatoire Excellence Scholarships' — 'GBP 1,000 – GBP 7,500', awarded 'based on audition performance', which for a production applicant means the portfolio-and-interview result. Neither is automatic on admission. Even both together leave a gap of GBP 8,000 or more. Chevening is closed to him.",
+  "deadline": "No fixed course deadline; September start dates published for 2026 and 2027. The binding dates are the scholarship ones — the Principal's Scholarship for September 2026 entry had already closed by August 2026 (PRIOR CYCLE), so the 2027 round must be tracked from early in the cycle.",
+  "languageAndCertificate": "English. 'British Council English Language Testing System (IELTS) score of 6.0' — tied with Huddersfield and USW for the lowest English bar among the UK entries, and a full band and a half below Berklee MPTI.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "A genuine Hull-awarded MA that explicitly considers other-field degrees, with a two-project ten-minute portfolio, an online interview rather than an audition, and the lowest English requirement of the UK options at IELTS 6.0. The blocker is money: GBP 20,600, half of it payable before a CAS is issued, against published scholarships that cannot close the gap.",
+  "correction": "ONE correction plus a duplicate flag. Gate recorded as 'Portfolio + exam/interview' — there is no exam; it is a portfolio followed by an online interview, with no performance element for the Production pathway. DUPLICATE: indices 17, 46 and 47 are the same course at the same URL. This copy is the only one of the three that correctly names the awarding body as the University of Hull.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Leeds Conservatoire",
+  "programme": "MA Music Production (also offered online)",
+  "url": "https://www.leedsconservatoire.ac.uk/courses/postgraduate-courses/ma-music-production/",
+  "stillExists2027": "YES — September start dates published for 2026 and 2027. DUPLICATE of indices 17 and 46, same URL.",
+  "award": "REAL MASTER'S — validated by and awarded through the **University of Hull**. Leeds Conservatoire teaches; Hull awards.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE, leaning favourable",
+   "quote": "'qualifications in other fields will also be reviewed and considered'."
+  },
+  "gate": {
+   "type": "PORTFOLIO, THEN ONLINE INTERVIEW",
+   "quote": "'All applicants are invited to submit a portfolio', followed by an online interview.",
+   "isProductionTestNotAudition": "Not an audition. No live performance and no ear-training exam for the Production pathway."
+  },
+  "portfolioSpec": "Production pathway: 'two recent projects (e.g., studio production, sound design, electronic composition work) totalling around 10 minutes'.",
+  "costForTunisian": "GBP 20,600 one year full-time, international rate. 'International students must pay 50% of tuition fees before receiving a CAS' — GBP 10,300 up front before the visa application.",
+  "funding": "Principal's Scholarship — four awards of GBP 5,000 for new international postgraduates, a separate application that had already closed for September 2026 entry by August 2026. Excellence Scholarships of GBP 1,000–7,500 based on the audition/portfolio outcome. Alumni discount 10%, not applicable to him. Chevening closed to him.",
+  "deadline": "No fixed course deadline; September 2026 and September 2027 starts published. The Principal's Scholarship closes well before the intake and is the date that actually binds.",
+  "languageAndCertificate": "English. IELTS 6.0 — among the lowest in the batch.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Same course as indices 17 and 46: a real Hull-awarded MA, other-field degrees considered, a small two-project portfolio, an interview rather than an audition, and IELTS 6.0. Money remains the only genuine obstacle, and it is a large one at GBP 20,600 with half payable before a CAS.",
+  "correction": "ONE FACTUAL CORRECTION plus a duplicate flag, and the correction matters. (1) 'ALSO OFFERED ONLINE' IS WRONG. The course page describes the delivery as 'In-Person, Leeds Conservatoire' and 'Full Time'. There is no online mode. Anyone relying on this record to plan a remote study route would be planning against a course that does not exist in that form — and, conversely, the in-person-only delivery is precisely why this course CAN carry a student visa, unlike the dBs online-only offering. (2) DUPLICATE of indices 17 and 46, and the three copies disagree with one another: one omits the awarding body, one names Hull, and this one invents an online mode. The accurate description is a full-time, in-person MA at Leeds Conservatoire awarded by the University of Hull.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
  }
 ]
