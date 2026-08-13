@@ -4,3 +4,6 @@ fc_key
 .env
 __pycache__/
 *.pyc
+
+# scratch helpers written by sweep agents inside the results directory
+.masters-search/results/artist-sweep/_*.py

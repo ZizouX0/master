@@ -591,5 +591,113 @@
   "correction": "DUPLICATE of indices 66, 67, 73 and 88. Same corrections: the master's gate is a portfolio plus colloquium, NOT an ear-training or instrumental exam; what closes it is the prerequisite Tonmeister bachelor and German C1, neither of which the record carries.",
   "verifiedAt": "2026-08",
   "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "Robert Schumann Hochschule Düsseldorf – Institut für Musik und Medien (IMM)",
+  "programme": "Künstlerische Musikproduktion (Artistic Music Production) – Master of Music",
+  "url": "https://www.rsh-duesseldorf.de/en/academic-programs/master-degrees/artistic-music-production",
+  "stillExists2027": "YES — live master's page August 2026 with two majors and a published 1 March application deadline. Genuine second cycle (Master of Music), not a Lehrgang.",
+  "award": "Master of Music in Artistic Music Production (Künstlerische Musikproduktion), with two majors: 'Classical Acoustic Music Production' and 'Jazz and Pop Music Production'. The Jazz and Pop major is, on paper, the closest thing in the German-speaking set to making records.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "The page does not name a required prior degree — it says only 'successful completion of the proficiency test for the concentration chosen'. But the proficiency test settles it: it requires 'completion of an instrumental/vocal audition' and 'written examinations of musical and technical hearing ability'. A software engineer with no instrument and no ear training cannot pass, whatever his bachelor says. Treat as NO."
+  },
+  "gate": {
+   "type": "ALL THREE GATES AT ONCE — portfolio, production task, INSTRUMENTAL AUDITION and EAR-TRAINING EXAM",
+   "quote": "'The proficiency test includes evaluation of work samples to be submitted in advance as well as completion of an instrumental/vocal audition', 'a practical task in the intended major', and 'written examinations of musical and technical hearing ability'.",
+   "isProductionTestNotAudition": "IT IS BOTH, AND THAT IS THE PROBLEM. The 'practical task in the intended major' IS a production test — the good kind, the job itself. But it sits alongside an explicit 'instrumental/vocal audition' and 'written examinations of musical and technical hearing ability'. Two of the three components are exactly the gate he cannot pass. Note the phrase 'musical AND technical hearing ability': the technical half (identifying EQ, distortion, level) is learnable in a year; the musical half (intervals, chords, dictation) is not, from zero."
+  },
+  "portfolioSpec": "'work samples to be submitted in advance' — no count, no duration, no format published on the English page. Ask the IMM directly.",
+  "costForTunisian": "Effectively free. Düsseldorf is a state Hochschule in North Rhine-Westphalia, which levies no tuition on non-EU students; the only compulsory payment is a Semesterbeitrag in the usual German range. The record's 'cost: Free' is right in substance.",
+  "funding": "Not needed for tuition; DAAD for living costs, applied for separately and much earlier than admission.",
+  "deadline": "'The application deadline is March 1.' For a winter-semester 2027 start that means 1 March 2027 — a full six months before the intake and well before most of this slice.",
+  "languageAndCertificate": "GERMAN at B2. Verbatim: 'International applicants must possess adequate German language skills. The B2 certificate (according to the Goethe Institute classification system) or a comparable qualification is required.' Note this is a lower bar than Detmold's C1 — but he has no German at all.",
+  "verdict": "AVOID",
+  "verdictWhy": "The entrance test contains an instrumental or vocal audition and written examinations of musical hearing ability. Those are precisely the two things he cannot do, and no portfolio compensates for them. German at B2 is a second bar on top.",
+  "correction": "Corrects 'gate: Portfolio + exam/interview' by naming all four components, and in particular the two the record hides: an 'instrumental/vocal audition' and 'written examinations of musical and technical hearing ability'. Worth noting separately that this programme ALSO contains a genuine production test — 'a practical task in the intended major' — so it is an example of a school that runs a production test and an audition side by side; the two must not be conflated. Adds German B2, which the record omits entirely.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Austria",
+  "institution": "mdw – Universität für Musik und darstellende Kunst Wien (University of Music and Performing Arts Vienna), Ins…",
+  "programme": "Masterstudium Tonmeister_in (specialisations: Musikproduktion Klassik / Musikproduktion Popularmusik / Filmton)",
+  "url": "https://www.mdw.ac.at/1981/ ; https://www.mdw.ac.at/ikt/?PageId=3716 ; https://www.mdw.ac.at/ikt/?PageId=3715 ; https://www.mdw.ac.at/studiencenter/studienbeitrag/",
+  "stillExists2027": "YES — 'MA Tonmeister_in', 'Master of Arts (MA)', '4 Semester', live at the Institut für Kompositionsstudien, Ton- und Musikproduktion (IKT). A genuine second-cycle degree, not a Lehrgang — note that mdw's Tonmeister Vorbereitungslehrgang (2 semesters) is a separate PREPARATORY course attached to the bachelor, and should not be confused with this master.",
+  "award": "Master of Arts (MA) Tonmeister_in, four semesters. The programme 'qualifies students for complex audio productions from artistic-technical planning through creative implementation to completion'. The page confirms specialisation options exist but does not name them, so the record's list (Musikproduktion Klassik / Popularmusik / Filmton) is UNVERIFIED against the live page.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "'abgeschlossenes fachlich in Frage kommendes Bachelor- oder Diplomstudium' — a completed bachelor's or diploma study THAT IS RELEVANT TO THE FIELD, from a recognised domestic or foreign post-secondary institution. The IKT page adds that mdw's own BA Tonmeister_in 'is definitely relevant prior study', which tells you what 'fachlich in Frage kommend' means in practice. A BSc in software engineering would have to be argued as relevant and would still face a two-part artistic entrance exam. Treat as NO."
+  },
+  "gate": {
+   "type": "TWO-PART ZULASSUNGSPRÜFUNG — video submission, then in-person exam",
+   "quote": "Part one is a video upload: 'Upload der Videos für den 1. Teil bis: 02. Juni 2026 (23:59h)', with results by 11 June 2026 and the main exam on 'Do., 25. Juni 2026'. The detailed component list sits in an 'Infoblatt für die Zulassungsprüfung MA' which is not reachable — 'Detaillierte Informationen folgen zeitnah'. The MASTER exam components are therefore UNVERIFIED. For contrast, mdw's BACHELOR entrance exam is documented and does contain 'Hearing tests (musical - written)', 'hearing tests (acoustic/technical - written)' and written exams in musical and scientific/technical subjects.",
+   "isProductionTestNotAudition": "UNVERIFIED for the master. Do NOT assume, however, that the requirement 'Nachweis der einwandfreien Gehörfähigkeit' is an ear-training exam — it is a MEDICAL certificate of intact hearing, the same species as Novi Sad's audiogram. That is an audiologist's appointment, not a musicianship test, and it should not be counted against him."
+  },
+  "portfolioSpec": "UNVERIFIED. Part one requires uploaded VIDEOS by 2 June, but the page does not say what they must contain, how many, or how long. The Infoblatt would say; it could not be retrieved.",
+  "costForTunisian": "EUR 752.92 per semester = EUR 1,505.84 per year, made up of the third-country-national Studienbeitrag of 'EUR 726,72' plus the 'ÖH-Beitrag inkl. Versicherung' of 'EUR 26,20'. Over four semesters that is EUR 3,011.68 in total. This is one of the few genuinely affordable Western European options in the slice — Austria charges third-country nationals double the EU rate, but double a very small number is still small.",
+  "funding": "UNVERIFIED — no programme-level scholarship published. The OeAD administers Austrian government scholarships for non-EU students; those are separate, earlier applications, not automatic on admission.",
+  "deadline": "PRIOR CYCLE: application window '01. April 2026 – 26. May 2026'; part-one videos by 2 June 2026; results 11 June; main exam 25 June 2026. Expect the same April–June shape for 2027, with the in-person exam in Vienna in late June.",
+  "languageAndCertificate": "GERMAN. The programme page requires 'German language proficiency verification'; the exact level sits in the 'Informationen zur Zulassungsprüfung' PDF and could not be read, so the level is UNVERIFIED. Austrian universities typically require A2 at admission rising to B2, which is milder than Detmold's C1 — but he has no German at all, and the exam itself runs in German.",
+  "verdict": "AVOID",
+  "verdictWhy": "Entry demands a bachelor 'relevant to the field', which in an institute whose own Tonmeister BA is the benchmark means a music or audio degree, and the whole process runs in German with an in-person exam in Vienna. The fee is genuinely cheap at about EUR 1,506 a year, which makes this the most painful near-miss on cost grounds — but the door is a musical one.",
+  "correction": "Three corrections. (1) The cost band 'Under EUR 1.5k/yr' is marginally wrong: the real figure for a Tunisian is EUR 752.92 per semester, i.e. EUR 1,505.84 per year — just over the band, and worth stating precisely rather than as a band. (2) The gate 'Portfolio only' is wrong: it is a two-part Zulassungsprüfung, video submission followed by an in-person exam in Vienna, whose master-level components mdw does not publish. (3) The record's specialisation list is unverified against the live page. Also flags a trap for the whole sweep: 'Nachweis der einwandfreien Gehörfähigkeit' is a medical hearing certificate, NOT an ear-training exam, and should not be scored as one.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "France",
+  "institution": "Conservatoire National Superieur de Musique et de Danse de Paris (CNSMDP)",
+  "programme": "Formation Superieure aux Metiers du Son - FSMS (musician sound engineer, grade master)",
+  "url": "https://www.conservatoiredeparis.fr/en/curriculum/higher-education-music-sound-and-image-sound-option ; https://www.conservatoiredeparis.fr/en/academics/study/international",
+  "stillExists2027": "YES — the FSMS sound option is live with a published 2026 competition calendar. The recurring pattern is a January-to-April application window with project submission in May.",
+  "award": "'Master's-level 2nd cycle diploma in Music and Sound Engineering' — a diplôme conferring the grade de master, awarded by a Ministry of Culture school rather than a university. Note the structure: the FSMS spans FOUR years in total, 'with the first two years covering common knowledge and the final two years devoted to individualised pathways', so the master-level portion is the back half of a longer conservatoire cursus, not a standalone two-year second cycle.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "'Applicants must hold a BAC+3 diploma (European bachelor's degree or bachelor's degree from a scientific, technical or audiovisual training course)' — so far so good, his BSc qualifies on that half. But the requirement continues: applicants must also possess 'a D.E.M level from a Conservatoire for music', requiring 'strong music theory knowledge, cultural background, and composition skills'. The DEM (Diplôme d'Études Musicales) is the French conservatoire's own end-of-cycle-3 music diploma. He has no conservatoire training and cannot obtain a DEM by 2027. This is the clearest NO in the French set."
+  },
+  "gate": {
+   "type": "CONCOURS — oral musical training and science tests, critical listening, interviews",
+   "quote": "'The selection process includes oral tests in musical training and sciences, a critical listening test based on recordings OR comparative analysis test based on films, videos or extracts, and interviews addressing personal projects and professional experience.'",
+   "isProductionTestNotAudition": "MIXED, and the record's 'Portfolio + exam/interview' label flattens it. The 'critical listening test based on recordings' is genuine sound-craft assessment — closer to a production test than to an audition, and the kind of thing he could train for. But 'oral tests in MUSICAL TRAINING' means formation musicale — French conservatoire ear training, sung and heard aloud — and that, plus the DEM prerequisite behind it, is the barrier. There is no instrumental performance audition per se; the musicianship is tested through formation musicale instead."
+  },
+  "portfolioSpec": "Not a portfolio of tracks. What is submitted is a 'project' by 'midnight on 24 May 2026', discussed at interview alongside professional experience. No count, length or format of recorded work is specified.",
+  "costForTunisian": "UNVERIFIED. The CNSMDP international page discusses only Erasmus+ mobility grants of 'EUR 250-EUR 2,000' for exchange students and gives no degree-seeking tuition figure. What can be said with confidence: as a Ministry of CULTURE school, CNSMDP is OUTSIDE the Ministry of Higher Education's differentiated non-EU rate, so the EUR 3,941/yr figure that applies at French public universities does NOT apply here. Conservatoire droits de scolarité are historically far lower. Get the figure from international@cnsmdp.fr rather than assuming.",
+  "funding": "UNVERIFIED for degree-seeking non-EU students. The only funding named on the international page is Erasmus+ mobility, which is for incoming exchange students from partner institutions and does not apply to him.",
+  "deadline": "PRIOR CYCLE (2026): applications 'from January 12 to April 13, 2026', project submission 'by midnight on 24 May 2026'. Expect the same January–April window for the 2027 entry. Note also, in his favour: 'No age limit for this competition.'",
+  "languageAndCertificate": "FRENCH, with a staged requirement quoted verbatim: 'B1 level...before 30 June' of enrolment and 'B2 level...before 10 December'. He is fluent in French, so this is the one major continental Tonmeister-equivalent where language is NOT the obstacle — which makes the DEM requirement all the more decisive.",
+  "verdict": "AVOID",
+  "verdictWhy": "He clears the language bar that closes Germany, Austria and Czechia to him, and there is no age limit. But entry requires a conservatoire DEM in music on top of the bachelor, and the concours tests formation musicale orally. Twelve months of portfolio building does not produce a DEM.",
+  "correction": "Corrects the record's gate by naming the real barrier: not a portfolio, but the 'D.E.M level from a Conservatoire for music' entry requirement plus oral formation musicale tests in the concours. Also corrects the implied shape — the FSMS is a FOUR-year cursus whose master-level grade sits at the end, not a two-year second cycle. And flags the cost band 'Under EUR 1.5k/yr' as UNVERIFIED: no figure is published, though the record is right in spirit that the university non-EU rate of EUR 3,941 does not apply to a Ministry of Culture school.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "Hochschule für Musik Detmold (Detmold University of Music)",
+  "programme": "Musikübertragung / Tonmeister, Musikregie (Master of Music)",
+  "url": "https://www.hfm-detmold.de/studium/studienbereiche-und-bewerbung/musikuebertragung/tonmeister-musikregie/",
+  "stillExists2027": "YES — DUPLICATE (fourth of five) of the Detmold M.Mus. Musikregie record. Note the programme title again conflates the bachelor (Musikübertragung/Tonmeister) with the master (Musikregie).",
+  "award": "'Master of Music Music Directing' (Musikregie) at the Erich-Thienhaus-Institut. 'Musikübertragung / Tonmeister' is the BACHELOR and is a separate, first-cycle degree.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "'erfolgreich absolvierten Studiums mit dem Abschlussgrad Bachelor of Music Musikübertragung bzw. Diplom-Tonmeister'."
+  },
+  "gate": {
+   "type": "PORTFOLIO (three own productions) + COLLOQUIUM",
+   "quote": "'Presentation of a CD/DVD with three of the applicant's own productions from the last year' and 'Colloquium: questions about knowledge of musical repertoire, basic musical and technical principles and studio experience'. About 30 minutes, graded 'qualified' or 'not qualified'.",
+   "isProductionTestNotAudition": "Neither an audition nor a production test — a portfolio review plus an oral colloquium. Detmold's ear tests and instrumental auditions belong to the BACHELOR entrance exam, not this one."
+  },
+  "portfolioSpec": "Three of the applicant's own productions from the last year, on CD/DVD.",
+  "costForTunisian": "Tuition free (NRW charges no non-EU tuition), plus a Semesterbeitrag of roughly EUR 290 per semester — which is what the record's 'Under EUR 1.5k/yr' band is capturing. Both this record and the 'Free' records are describing the same reality.",
+  "funding": "No tuition to fund. DAAD for living costs — separate, earlier, competitive.",
+  "deadline": "Winter semester 15.02–15.03; summer semester 01.10–01.11. Aptitude tests 8–10 June in the 2026 cycle.",
+  "languageAndCertificate": "GERMAN at C1 for non-native speakers.",
+  "verdict": "AVOID",
+  "verdictWhy": "Same programme, same closed prerequisite: only holders of a Bachelor of Music Musikübertragung or a Diplom-Tonmeister may sit the aptitude test, and German must be at C1.",
+  "correction": "DUPLICATE of indices 66, 67, 68 and 88. Also corrects the cost band: at roughly EUR 290 per semester the annual cost is about EUR 580, so 'Under EUR 1.5k/yr' is true but loose — and the underlying fact is that NRW levies no tuition at all on non-EU students, which is a materially different thing from a low fee. Gate correction as before: portfolio plus colloquium at master level, with no ear test and no instrumental audition; the barrier is the prerequisite degree and German C1.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
  }
 ]
