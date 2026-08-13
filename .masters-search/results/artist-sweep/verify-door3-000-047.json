@@ -1,0 +1,893 @@
+[
+ {
+  "country": "France",
+  "institution": "3iS - International Institute of Image & Sound (Paris)",
+  "programme": "Master in Recording & Music Production (MFA-level, 2 years)",
+  "url": "https://3is-international.com/programs/master-in-recording-music-production-paris/",
+  "stillExists2027": "YES — page live August 2026, but advertises 'Next intake: October 2026'. A September/October 2027 intake is the recurring annual pattern; no 2027 date published. PRIOR CYCLE pattern: annual October start.",
+  "award": "NOT A MASTER'S DEGREE. Course page: 'Upon graduation, students receive a school diploma recognized by industry professionals.' 3iS's own certification register (https://3is-education.fr/ecole-3is/diplomes-et-certifications) lists its sound qualification as 'Chef opérateur du son' at RNCP **niveau 6** (RNCP39888) — i.e. bachelor's level — and its only niveau 7 (master's-level) RNCP title is 'Concepteur-réalisateur en animation, jeu vidéo' (RNCP41111), which is animation/games, not sound. The state-validated diploma DESTIS is explicitly 'Bac+3'. There is no 'grade de master' and no RNCP niveau 7 attached to this programme.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES",
+   "quote": "'a bachelor's degree in any field and a keen interest in music, sound engineering, or audio production'"
+  },
+  "gate": {
+   "type": "NONE PUBLISHED",
+   "quote": "The page has no admissions section. No portfolio, no production test, no audition and no interview is specified anywhere on the programme page. Entry appears to be by application form plus the stated degree requirement.",
+   "isProductionTestNotAudition": "N/A — no test of any kind published."
+  },
+  "portfolioSpec": "UNVERIFIED — no portfolio specification published on the programme page. Contact international@3is.fr.",
+  "costForTunisian": "EUR 15,000 per year, quoted verbatim: '15000 € per year'. Two-year programme = EUR 30,000 total. The page draws no distinction between EU and non-EU rates, so a Tunisian pays the same EUR 15,000/yr. Private school, so the French public-university rate of EUR 3,941/yr does NOT apply.",
+  "funding": "UNVERIFIED — no scholarship or financial-aid information published on the programme page or the admissions link.",
+  "deadline": "UNVERIFIED — no application deadline published. PRIOR CYCLE: intake is October, annually.",
+  "languageAndCertificate": "English — 'English' listed as the sole language of instruction. Certificate: none named; the page asks only for 'fluent' English. No IELTS score is specified.",
+  "verdict": "AVOID",
+  "verdictWhy": "This is not a master's degree. It is a private school diploma; 3iS's own RNCP register puts its sound qualification at niveau 6, which is bachelor's level, and its only master's-level RNCP title is in animation and games. He would pay EUR 30,000 over two years for a credential that ranks below the BSc he already holds.",
+  "correction": "THREE corrections. (1) The record calls this 'MFA-level' — it is not. It is a diplôme d'établissement; 3iS's sound RNCP title is niveau 6 (bachelor's), not niveau 7. (2) Cost band recorded as 'EUR 5k-15k/yr' — the true figure is EUR 15,000/yr, at the very top of that band, EUR 30,000 for the full two years. (3) Gate recorded as 'Portfolio only' — no portfolio requirement is published anywhere on the page; there is no published gate at all.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Portugal",
+  "institution": "ETIC – Escola de Tecnologias, Inovação e Criação (private school, Lisbon; Pearson BTEC Accredited Centre sinc…",
+  "programme": "Sound Design for Live, Studio and Interactive Media",
+  "url": "https://etic.pt/en/course/sound-design-en/",
+  "stillExists2027": "YES — course page live August 2026. Recurring annual intake; no 2027 date published.",
+  "award": "NOT A MASTER'S DEGREE, AND NOT EVEN A BACHELOR'S. The page states the award is a 'Pearson BTEC Level 5 Professional Certification (240 CATS)' granted at the end of year two, and states outright: 'ETIC is not a higher education institution.' Level 5 sits BELOW a bachelor's degree (Level 6) in the UK framework and below his existing BSc.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — trivially, because no degree at all is required",
+   "quote": "The only stated academic entry condition is 'Recommended english entry level: B1'. There is no degree requirement, because the award is below degree level."
+  },
+  "gate": {
+   "type": "INTERVIEW ONLY — portfolio explicitly optional",
+   "quote": "Applicants must 'Submit a motivation letter, outlining reasons for applying and professional goals' and 'Attend an interview.' Portfolio submission is 'not mandatory.'",
+   "isProductionTestNotAudition": "No audition and no production test. An interview only."
+  },
+  "portfolioSpec": "No portfolio required — the page states portfolio submission is 'not mandatory'. No track count, length or format is specified.",
+  "costForTunisian": "UNVERIFIED as text — fees are published only inside a table image (https://etic.pt/wp-content/uploads/2024/03/tabelas_CI_2ANOS_2025_ING.jpg), which cannot be read as text. No non-EU differential is stated on the reachable pages.",
+  "funding": "UNVERIFIED — the page mentions only 'financing programs available through various Portuguese banks', i.e. commercial loans, not scholarships. No grant, amount or deadline published.",
+  "deadline": "UNVERIFIED — no application deadline published; admission is by rolling application form followed by an interview date.",
+  "languageAndCertificate": "English — 'delivered in English'. Certificate demanded: none. The page states only 'Recommended english entry level: B1' (CEFR), which is a recommendation, not a required certificate. No IELTS.",
+  "verdict": "AVOID",
+  "verdictWhy": "This is a Pearson BTEC Level 5 professional certificate from a school that says in writing it is not a higher education institution. Level 5 is below the BSc he already holds, so it is an academic step backwards and cannot support a master's-level student visa route. Bank loans are the only published funding.",
+  "correction": "TWO corrections. (1) This is not a master's and was collected as though it were: the award is a 'Pearson BTEC Level 5 Professional Certification (240 CATS)' and the school states 'ETIC is not a higher education institution.' Level 5 is below bachelor's level. (2) Gate recorded as 'Portfolio + exam/interview' — wrong on the portfolio: the page states portfolio submission is 'not mandatory'. The real gate is a motivation letter plus an interview.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Thinkspace Education — degree awarded by Arts University Bournemouth (AUB)",
+  "programme": "MA Sound Design for Video Games (Online)",
+  "url": "https://thinkspace.ac.uk/postgraduate/ma-sound-design-for-video-games/",
+  "stillExists2027": "YES — live and recruiting August 2026: 'Accepting applications for September 14th start'.",
+  "award": "REAL MASTER'S, awarded by a genuine UK university. Quoted: the course is 'accredited and awarded by our academic partner, Arts University Bournemouth (AUB)' and the graduate receives a 'Master of Arts degree from the Arts University Bournemouth'. Degree-awarding body: **Arts University Bournemouth**. Thinkspace itself is the teaching provider only, not the awarding body.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES",
+   "quote": "'Ideally, applicants will have completed an undergraduate degree before they apply. However, there is an option for those who do not have a degree, taking into account real-world work experience in related fields.' No subject restriction is stated — any undergraduate degree satisfies it, and a degree is not even strictly required."
+  },
+  "gate": {
+   "type": "PORTFOLIO",
+   "quote": "The school asks for 'examples of audio manipulation in some form', including 'sound design replacements you have done to video games or film clips', audio/dialogue editing, mixing, field recording, or foley. No interview or audition is stated as required.",
+   "isProductionTestNotAudition": "Not an audition. Not a set production test either — it is a submitted portfolio of prior work."
+  },
+  "portfolioSpec": "LOOSE. No track count, no duration and no file format is specified. The brief is qualitative: 'examples of audio manipulation in some form' — sound-design replacement to game or film clips, dialogue editing, mixing, field recording, or foley. NOTE: this is a games/linear-media sound-design brief, not a music-production brief; the work he builds for this will not be the same work that satisfies a record-making MA.",
+  "costForTunisian": "GBP 13,500 — quoted as '£13,500' for students outside the UK. This is the full programme fee for an online course, so there is no additional UK living cost, but equally no UK residence.",
+  "funding": "UNVERIFIED — no scholarship published on the course page. NOTE: Chevening is closed to him (it requires two years' post-degree work experience and he has none), so no UK-government route exists here.",
+  "deadline": "No deadline published. Currently 'Accepting applications for September 14th start'. PRIOR CYCLE: rolling admission against a September start.",
+  "languageAndCertificate": "English. Certificate: UNVERIFIED — no English test or score is specified on the course page.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "The degree is real — an AUB Master of Arts — the entry bar is genuinely open to a software-engineering BSc, and GBP 13,500 is the cheapest real UK master's in this whole set. The thing to resolve first: it is ONLINE ONLY, so it brings no student visa and no studio time, and it teaches games sound design, not record-making. If he wants to make records and to physically leave Tunisia, this is the wrong course despite being the most affordable.",
+  "correction": "ONE correction. Gate recorded as 'Portfolio + exam/interview' — no interview or exam is stated as required. The gate is a portfolio of prior audio work only. Also worth flagging that the record does not note the course is online-only, which is decisive for a candidate who needs a student visa.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "dBs Institute (awarded by Falmouth University)",
+  "programme": "MA Music Production",
+  "url": "https://www.dbsinstitute.ac.uk/all-courses/ma-music-production",
+  "stillExists2027": "YES — live August 2026, 'Start date: September 2026'. Annual September intake, so a September 2027 start is the expected pattern (PRIOR CYCLE).",
+  "award": "REAL MASTER'S, but not dBs's own. Quoted: 'This course is taught by dBs Institute and awarded by Falmouth University.' Degree-awarding body: **Falmouth University**. dBs Institute has no degree-awarding powers of its own — the MA certificate is a Falmouth award.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "Requires 'an undergraduate degree in a related discipline' at '2:2 or above, or equivalent experience', with 'Accreditation of Prior Learning (APL)' available. A BSc Software Engineering is not self-evidently 'a related discipline'; it would have to be argued, most plausibly on the audio-DSP/programming side, and backed by the portfolio."
+  },
+  "gate": {
+   "type": "INTERVIEW (plus a portfolio that is not specified on the page)",
+   "quote": "Applicants 'will be invited to an interview'.",
+   "isProductionTestNotAudition": "Not an audition. No live playing or ear-training exam anywhere in the process."
+  },
+  "portfolioSpec": "UNVERIFIED — the course page specifies no track quantity, length or format. This is a real gap in his build brief; it must be requested from admissions.",
+  "costForTunisian": "GBP 10,500 full-time (1 year) online, or GBP 5,250/yr part-time over two years. DECISIVE CAVEAT, quoted: 'At this time, we are currently able to accept international students on our online postgraduate degree programmes only.' There is no on-campus international fee because there is no on-campus international place.",
+  "funding": "UNVERIFIED — none published on the course page. Chevening is closed to him (two years' post-degree work experience required), so there is no UK-government route.",
+  "deadline": "No published deadline; rolling against a September start. PRIOR CYCLE: September intake, annually.",
+  "languageAndCertificate": "English. Certificate: 'IELTS Academic minimum score of 6.5 overall, with a minimum of 6.0 in Reading, Writing, Speaking and Listening.' He has not sat IELTS yet — this is a hard prerequisite he must book.",
+  "verdict": "AVOID",
+  "verdictWhy": "The degree is genuine — a Falmouth University MA — and GBP 10,500 is cheap for the UK. But dBs states in writing that it can currently accept international students on online programmes only, which means no student visa, no studio, no move to Britain. For a Tunisian who needs a visa, this course cannot do the one thing he needs it to do.",
+  "correction": "TWO corrections. (1) The record does not record the single most important fact about dBs: international students are accepted on ONLINE postgraduate programmes only — 'At this time, we are currently able to accept international students on our online postgraduate degree programmes only.' No student visa is available through this route. (2) Gate recorded as 'Portfolio only' — the page states applicants 'will be invited to an interview', so an interview is part of the gate; conversely the portfolio itself is never specified on the page.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "dBs Institute (awarded by Falmouth University)",
+  "programme": "MA Innovation in Sound",
+  "url": "https://www.dbsinstitute.ac.uk/all-courses/ma-innovation-in-sound",
+  "stillExists2027": "YES — live August 2026, campus delivery at Bristol/Plymouth. Annual September intake (PRIOR CYCLE).",
+  "award": "REAL MASTER'S, awarded by another institution. Quoted: 'This course is taught by dBs Institute and awarded by Falmouth University.' Degree-awarding body: **Falmouth University**.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'an undergraduate degree in a related discipline', typical offer '2:2 or above, or equivalent experience', with 'Accreditation of Prior Learning (APL)' accepted for formal training 'within the last five years'. Software Engineering would need arguing as related."
+  },
+  "gate": {
+   "type": "INTERVIEW",
+   "quote": "Applicants will be 'invited to an interview'. No portfolio requirement is specified on the page.",
+   "isProductionTestNotAudition": "THE RECORD IS WRONG TO CALL THIS AN AUDITION. Nothing on the page requires playing an instrument, singing, or sitting an ear-training exam. The published gate is an interview."
+  },
+  "portfolioSpec": "None published — 'The content does not specify a portfolio requirement for entry.' No track count, length or format.",
+  "costForTunisian": "NOT AVAILABLE AT ANY PRICE. Quoted: 'At this time, we are currently able to accept international students on our online postgraduate degree programmes only.' This course is campus-based at Bristol/Plymouth and is restricted to UK/home, Channel Islands and Isle of Man students. A Tunisian cannot enrol.",
+  "funding": "Irrelevant — he is not eligible to enrol. Chevening is in any case closed to him for want of two years' post-degree work experience.",
+  "deadline": "Not applicable — closed to international applicants. PRIOR CYCLE: September intake.",
+  "languageAndCertificate": "English; IELTS Academic 6.5 overall with 6.0 in each band per dBs's standard requirement. Academic only — he cannot use it.",
+  "verdict": "AVOID",
+  "verdictWhy": "He is not eligible. This is a campus course and dBs accepts international students on online programmes only, so a Tunisian cannot take it whatever his portfolio looks like. The record's 'AUDITION' label is also simply wrong.",
+  "correction": "TWO corrections, the second important. (1) Gate recorded as 'AUDITION — hardest for you' — THERE IS NO AUDITION. The page requires an interview and specifies no portfolio, no performance and no ear test. This entry was wrongly scored as his hardest category when it is in fact one of the softest gates in the set. (2) The record misses that the course is closed to international students entirely: campus delivery, and dBs accepts international students online-only.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "dBs Institute (validated by Falmouth University)",
+  "programme": "MA Music Production",
+  "url": "https://www.dbsinstitute.ac.uk/all-courses/ma-music-production",
+  "stillExists2027": "YES — live August 2026; 'Start date: September 2026'. Annual September intake (PRIOR CYCLE). This is a DUPLICATE RECORD of index 3 — same institution, same course, same URL.",
+  "award": "REAL MASTER'S awarded by a different institution. Quoted: 'This course is taught by dBs Institute and awarded by Falmouth University.' Degree-awarding body: **Falmouth University**. dBs Institute does not award its own degrees. NOTE the record's wording 'validated by' is the older, looser term — dBs's own page says 'awarded by'.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'an undergraduate degree in a related discipline' at '2:2 or above, or equivalent experience', with 'Accreditation of Prior Learning (APL)' available. Software Engineering is not automatically 'related'; it must be argued."
+  },
+  "gate": {
+   "type": "INTERVIEW",
+   "quote": "Applicants 'will be invited to an interview'.",
+   "isProductionTestNotAudition": "No audition, no ear-training exam, no live performance anywhere in the process."
+  },
+  "portfolioSpec": "UNVERIFIED — no track count, length or format published on the course page.",
+  "costForTunisian": "GBP 10,500 full-time online (1 year), GBP 5,250/yr part-time (2 years). But: 'At this time, we are currently able to accept international students on our online postgraduate degree programmes only.' No campus place exists for a Tunisian at any price.",
+  "funding": "UNVERIFIED — none published. Chevening is closed to him (requires two years' post-degree work experience), so there is no UK-government scholarship route to this course.",
+  "deadline": "None published; rolling against a September start. PRIOR CYCLE: annual September intake.",
+  "languageAndCertificate": "English. 'IELTS Academic minimum score of 6.5 overall, with a minimum of 6.0 in Reading, Writing, Speaking and Listening.' He has not sat IELTS.",
+  "verdict": "AVOID",
+  "verdictWhy": "Same course as index 3, and the same blocker: online only for international students, so no student visa. A real Falmouth MA at a fair price that he nonetheless cannot use to leave Tunisia or to get inside a studio.",
+  "correction": "THREE corrections. (1) DUPLICATE — indices 3, 5, 6 and 44 are all the same dBs MA Music Production; only one is a distinct opportunity. (2) The record says 'validated by Falmouth University'; dBs's own page uses the stronger and more accurate 'awarded by Falmouth University'. (3) Gate recorded as 'None found in the text' — an interview IS stated on the page: applicants 'will be invited to an interview'.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "dBs Institute, awarded by Falmouth University",
+  "programme": "MA Music Production (dBs Institute, awarded by Falmouth University) — SELF-PAY / ONLINE-ONLY FALLBACK",
+  "url": "https://www.dbsinstitute.ac.uk/all-courses/ma-music-production",
+  "stillExists2027": "YES — live August 2026, September intake. DUPLICATE of indices 3 and 5, same URL.",
+  "award": "REAL MASTER'S. 'This course is taught by dBs Institute and awarded by Falmouth University.' Degree-awarding body: **Falmouth University**.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'an undergraduate degree in a related discipline' at '2:2 or above, or equivalent experience'; 'Accreditation of Prior Learning (APL)' available."
+  },
+  "gate": {
+   "type": "INTERVIEW",
+   "quote": "Applicants 'will be invited to an interview'.",
+   "isProductionTestNotAudition": "Not an audition. No performance or ear test."
+  },
+  "portfolioSpec": "UNVERIFIED — not specified on the course page.",
+  "costForTunisian": "GBP 10,500 full-time online (1 year) or GBP 5,250/yr part-time (2 years). The record's own label 'ONLINE-ONLY FALLBACK' is the correct reading of dBs's position: 'At this time, we are currently able to accept international students on our online postgraduate degree programmes only.'",
+  "funding": "UNVERIFIED — none published. Chevening closed to him (two years' post-degree work experience required).",
+  "deadline": "None published; rolling, September start. PRIOR CYCLE: annual September intake.",
+  "languageAndCertificate": "English. IELTS Academic 6.5 overall with 6.0 in each of Reading, Writing, Speaking and Listening.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Judged strictly as what this record says it is — a self-pay online fallback, not a visa route — it is defensible: a genuine Falmouth University MA for GBP 10,500, with an interview rather than an audition, and no music degree demanded. The thing to resolve first is that it gives him no visa, no studio and no move abroad, so it only makes sense as a credential he stacks on top of a portfolio he builds himself in Tunis.",
+  "correction": "ONE correction plus a duplicate flag. Gate recorded as 'Portfolio + exam/interview' — there is an interview, but the page specifies NO portfolio at all, so the portfolio half is unsupported. DUPLICATE: this is the third copy of the same dBs MA Music Production (see indices 3, 5, 44). This copy is the only one of the four whose framing — self-pay, online-only — is actually accurate.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Spain",
+  "institution": "Berklee College of Music – Valencia Campus",
+  "programme": "Master of Music in Contemporary Performance (Production Concentration)",
+  "url": "https://valencia.berklee.edu/graduate-programs/cppd/contemporary-performance-production-concentration",
+  "stillExists2027": "YES — live August 2026 with a published 2026/2027 cost schedule and a full three-round deadline cycle.",
+  "award": "REAL MASTER'S — Master of Music (M.M.), awarded directly by Berklee College of Music, which is a US-accredited degree-awarding institution operating the Valencia campus. No partner or validation chain: Berklee awards its own degree.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE — and in his case effectively NO",
+   "quote": "'Applicants should possess a bachelor's degree in music. Bachelor's degrees in other disciplines will be considered, provided the student demonstrates a high degree of musicianship.' The escape clause exists, but it is bought with musicianship, which is exactly what he does not have."
+  },
+  "gate": {
+   "type": "AUDITION — CONFIRMED, and this is the real thing",
+   "quote": "'An interview is required for entry into all of our graduate programs' AND 'applicants to the contemporary performance (production concentration) program must also complete an audition.' The submitted materials compound it: 'links for three recent performances, at least one being a video of a live performance'.",
+   "isProductionTestNotAudition": "This IS a genuine performance audition, not a production test. He must perform, and must supply video of himself performing live. He cannot pass this."
+  },
+  "portfolioSpec": "NOT a production portfolio. Required: 'links for three recent performances, at least one being a video of a live performance', plus 'a self-produced video describing one to three possible ideas for your Culminating Experience (thesis) project' (maximum three minutes). Three performances of himself playing — not three tracks he produced.",
+  "costForTunisian": "USD 50,430 tuition for 2026/2027, plus USD 2,500 nonrefundable tuition deposit, USD 1,600 comprehensive fee, USD 150 application fee and USD 200–850 required software bundle. Total direct costs approximately USD 58,570–59,420, before housing (USD 10,000–12,000) and a required laptop (USD 3,000). Spain charges no lower non-EU rate here — Berklee Valencia is a private US institution and a Tunisian pays the full sticker.",
+  "funding": "Scholarships exist and run on their own EARLIER deadlines, separate from admission: 'Scholarship deadline: November 15' (Early Action), 'February 1' (Regular Action), 'March 10' (Extended Action). NOT automatic on admission — a separate application, and for Early and Regular rounds it falls AFTER the application deadline but is a distinct submission. No amounts are published on the costs page.",
+  "deadline": "Published three-round cycle (PRIOR CYCLE pattern, no 2027-specific dates given): Early Action application 1 November, decisions by 15 December; Regular Action application 15 January, decisions by 15 March; Extended Action application 10 March, decisions by 20 April. For a September 2027 intake, expect 1 November 2026 / 15 January 2027 / 10 March 2027.",
+  "languageAndCertificate": "English. For Contemporary Performance specifically the bar is the LOWER of Berklee's two: 'Duolingo: 110, TOEFL iBT: 80, IELTS Academic: 6.5'. He has not sat IELTS.",
+  "verdict": "AVOID",
+  "verdictWhy": "This is the one gate he genuinely cannot pass: a required performance audition plus three videos of him performing, on top of an entry rule that waives the music degree only for applicants showing 'a high degree of musicianship'. Add roughly USD 59,000 in direct costs and it is out of reach twice over.",
+  "correction": "NO correction — the record's 'AUDITION — hardest for you' is CONFIRMED CORRECT, and is one of only a handful of genuine auditions in this set. Refinement worth adding: Berklee's own page pins the audition to this concentration specifically — 'applicants to the contemporary performance (production concentration) program must also complete an audition' — while every other Berklee graduate programme needs only an interview. Cost band 'Over EUR 15k/yr' is a severe understatement: USD 50,430 tuition alone.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Spain",
+  "institution": "Berklee College of Music — Valencia Campus",
+  "programme": "MM in Music Production, Technology, and Innovation (MPTI)",
+  "url": "https://valencia.berklee.edu/graduate-programs/mpti/music-production-technology-and-innovation",
+  "stillExists2027": "YES — live August 2026, 2026/2027 costs published, three application rounds open.",
+  "award": "REAL MASTER'S — Master of Music (M.M.) awarded by Berklee College of Music itself. No validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'Music production, technology, and innovation applicants should possess a bachelor's degree in music' though 'Bachelor's degrees in other disciplines will be considered, provided the student demonstrates a high degree of musicianship.' MPTI is the Berklee programme where a technologist's case is most plausible — but 'musicianship' is still the stated currency."
+  },
+  "gate": {
+   "type": "PORTFOLIO + INTERVIEW — NO AUDITION",
+   "quote": "'An interview is required for entry into all of our graduate programs' and, decisively, only 'applicants to the contemporary performance (production concentration) program must also complete an audition.' MPTI is therefore interview-based only. The interview covers 'preparation for study at Berklee, professional/career goals, reasons for choosing Berklee, and what you'll contribute to the community' — no ear training, no sight reading, no playing.",
+   "isProductionTestNotAudition": "No audition and no set production test. He submits finished work of his own choosing and then talks about it. This is the softest possible version of the gate for someone with no performance training."
+  },
+  "portfolioSpec": "PRECISE AND BUILDABLE — this is his clearest build brief in the whole set. Required: 'three recorded musical projects, audio or video files', plus 'a self-produced video describing three projects you feel passionate about' (maximum three minutes). Scores are optional ('Optional: corresponding scores'). So: three finished productions, any genre, audio or video, plus one three-minute talking-head video about them.",
+  "costForTunisian": "USD 50,430 tuition (2026/2027) plus USD 2,500 tuition deposit, USD 1,600 comprehensive fee, USD 150 application fee, USD 200–850 software bundle — approximately USD 58,570–59,420 direct, before housing at USD 10,000–12,000 and a USD 3,000 laptop. Full private rate for a Tunisian; no EU/non-EU distinction that helps him.",
+  "funding": "Scholarships run on SEPARATE, EARLIER deadlines and are NOT automatic on admission: 'Scholarship deadline: November 15' (Early Action), 'February 1' (Regular), 'March 10' (Extended). Amounts not published. He must treat the scholarship as its own application, filed alongside or immediately after the admission file.",
+  "deadline": "PRIOR CYCLE (no 2027-dated page): Early Action 1 November (decisions by 15 December); Regular Action 15 January (decisions by 15 March); Extended Action 10 March (decisions by 20 April). For September 2027, that means a 1 November 2026 Early Action target.",
+  "languageAndCertificate": "English. MPTI falls under 'All other graduate programs', which carries the HIGH bar: 'Duolingo: 130, TOEFL iBT: 100, IELTS Academic: 7.5'. IELTS 7.5 is a demanding score for someone at 'working' English who has not yet sat the test — this is a real obstacle and needs a year of preparation.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Academically this is the best fit for him in the entire batch: no audition, a concrete three-track portfolio brief he can build in twelve months, and an entry rule that explicitly considers non-music degrees. Two things must be resolved first, and both are hard: roughly USD 59,000 in direct costs against a candidate who 'can pay a little', and an IELTS 7.5 requirement he has not begun. Only pursue if he wins substantial scholarship money at the 15 November scholarship deadline.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — there is no exam. It is a portfolio plus a conversational interview, and Berklee's own page confirms the audition applies ONLY to Contemporary Performance, not to MPTI. (2) The record misses that MPTI sits in Berklee's HIGHER English band — IELTS 7.5, not the 6.5 that applies to Contemporary Performance. That one point of IELTS is a bigger practical barrier for him than the portfolio.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "ACM (Academy of Contemporary Music)",
+  "programme": "MA / MSc Creative Industries Futures — Music Production specialism (powered by Metropolis Studios)",
+  "url": "https://www.acm.ac.uk/courses/postgraduate-creative-industries-futures/",
+  "stillExists2027": "YES — live August 2026, with a published 2026/27 fee schedule.",
+  "award": "REAL MASTER'S, but the course page HIDES the awarding body — a red flag worth naming. The ACM course page never states who awards the degree; it says only that 'you will be able to discuss your pathway with your programme leader to choose between Arts-based or Science-based practice, which will decide whether you graduate with an MA or an MSc.' The awarding body is established off-site: Middlesex University's own academic-partnerships register lists 'ACM Guildford Limited' as a partner whose courses are 'developed and delivered and assessed by ACM Guildford Limited, awarded by and quality assured by Middlesex University.' ACM has historically also had a Falmouth University validation for some provision. Degree-awarding body: **Middlesex University** (to be confirmed in writing with ACM before applying — ACM's own page will not tell him).",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'2.2 or above at the Undergraduate Degree Level in a suitable field of study', or 'Three years of professional experience in creative industries with documented evidence', or 'A combination of formal qualifications and experiential learning, which...can be demonstrated to be equivalent'. 'A suitable field of study' is undefined — Software Engineering is neither included nor excluded, so it turns on how he argues it."
+  },
+  "gate": {
+   "type": "NOT PUBLISHED",
+   "quote": "No admission gate of any kind is described on the course page — no portfolio, no interview, no audition, no practical task.",
+   "isProductionTestNotAudition": "Nothing published. He must ask ACM directly."
+  },
+  "portfolioSpec": "UNVERIFIED — no portfolio specification published for the postgraduate course. (ACM publishes a 'Specialist Entry Portfolio' only for its undergraduate/foundation route.)",
+  "costForTunisian": "GBP 17,200 per year, full-time international rate, 2026/27. Quoted: UK full-time GBP 10,950, International full-time GBP 17,200, International part-time 'Unavailable'. The published EU concession does NOT reach him: 'EU, EEA and Swiss Learners are eligible for a £4000 discount on the Full-Time Master's Course' — Tunisia is not EU/EEA/Swiss, so he pays the full GBP 17,200, not the GBP 13,950 discounted rate. Note also that the online mode is GBP 10,950 for international students, but online brings no visa.",
+  "funding": "UNVERIFIED — no scholarship published. The EUR 4,000 EU/EEA/Swiss discount is explicitly nationality-restricted and excludes Tunisia. Chevening is closed to him (two years' post-degree work experience required), so there is no realistic UK-government route — which makes GBP 17,200/yr an unfunded self-pay proposition.",
+  "deadline": "UNVERIFIED — no application deadline or start date published on the course page.",
+  "languageAndCertificate": "English. Certificate: no score published — the page says only 'Proof of English language proficiency in line with University requirements'. He cannot plan an IELTS target from this page.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "The Metropolis Studios link and a real Middlesex-awarded master's are genuinely attractive, and no audition is anywhere in sight. But the page is unusually opaque: it will not name its own awarding body, publishes no entry gate, no portfolio brief, no deadline and no English score. Resolve first: get ACM to confirm in writing who awards the degree and what the entry gate is, because at GBP 17,200 unfunded he cannot afford to find out late.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — the course page publishes NO gate at all; that label is unsupported by the source. (2) The record does not capture that the advertised EUR 4,000 master's discount is restricted to 'EU, EEA and Swiss Learners' and therefore does not apply to a Tunisian, who pays the undiscounted GBP 17,200.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Bournemouth University",
+  "programme": "MA Sound Design for Screen (a sibling MA Sound Design for Film and Television is also listed)",
+  "url": "https://www.bournemouth.ac.uk/study/courses/ma-sound-design-screen",
+  "stillExists2027": "YES — course live and listed August 2026; a sibling MA Sound Design for Film and Television also exists at https://www.bournemouth.ac.uk/study/courses/ma-sound-design-film-television. NOTE: the official BU page returns HTTP 403 to automated fetching, so the details below come from the aggregator record and search index rather than a direct read of the BU page — treat the fee as indicative and reconfirm.",
+  "award": "REAL MASTER'S — MA awarded directly by Bournemouth University, a publicly funded UK university with its own degree-awarding powers. No validation chain, no partner provider. Described as 'the first UK university programme offering an MA in Sound Design'.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — and this is the most open entry rule found so far",
+   "quote": "'A Bachelors Honours degree with 2:2 in any subject, or equivalent'. The phrase 'in any subject' is explicit: a BSc Software Engineering qualifies on its face, with no music prerequisite."
+  },
+  "gate": {
+   "type": "UNVERIFIED — no portfolio or showreel requirement could be confirmed",
+   "quote": "No portfolio, showreel, interview or audition requirement appears in the reachable sources. The only stated entry condition is the 2:2 in any subject.",
+   "isProductionTestNotAudition": "No audition found. No ear-training exam found."
+  },
+  "portfolioSpec": "UNVERIFIED — no showreel or portfolio specification could be retrieved (BU's own page blocks automated access). This must be confirmed directly with BU admissions.",
+  "costForTunisian": "Approximately GBP 15,500 full-time international rate (against GBP 9,250 for UK students). Reconfirm directly — this figure comes from aggregator listings, not from a successful read of BU's own fees page.",
+  "funding": "UNVERIFIED — no international scholarship confirmed. Chevening is closed to him (requires two years' post-degree work experience), so a UK-government route is not available.",
+  "deadline": "UNVERIFIED — no 2027 deadline published in reachable sources. PRIOR CYCLE: September start, rolling postgraduate admission.",
+  "languageAndCertificate": "English. 'IELTS (Academic) 6.5 with a minimum of 6.0 in writing, speaking, listening and reading.' He has not sat IELTS — this is bookable and realistic at 6.5.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "The entry rule is the friendliest he will find — a 2:2 in ANY subject, no music degree, no audition — at a real university for around GBP 15,500. Two things to resolve: whether a showreel is demanded at application (BU's page cannot be read automatically and must be phoned), and that this is screen sound design, not record production. It trains him for film and games audio, not for making records.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — no portfolio, exam or interview requirement could be substantiated in any reachable source; the only confirmed entry condition is an honours degree at 2:2 in any subject. (2) Subject mismatch not flagged in the record: this is sound design for screen, not music production. It does not lead to making records.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Buckinghamshire New University (BNU)",
+  "programme": "MA Music and Audio Production",
+  "url": "https://www.bucks.ac.uk/courses/postgraduate/ma-music-and-audio-production",
+  "stillExists2027": "YES — course live August 2026 with a published 2026-2027 international fee, and listed on UCAS for 2026 entry including a part-time route.",
+  "award": "REAL MASTER'S — MA awarded directly by Buckinghamshire New University, a publicly funded UK university with its own degree-awarding powers. No partner or validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'A typical applicant will hold a 2:1 and have an interest in pursuing a career in music, or have several years' experience in the industry at an appropriate level.' No subject is specified, and the stated requirement is an INTEREST in a music career rather than a music qualification — which is unusually favourable to him. But the bar is a 2:1, not a 2:2."
+  },
+  "gate": {
+   "type": "WHOLE-APPLICATION REVIEW, portfolio only 'where appropriate'",
+   "quote": "'the university assesses the entire application, including personal statements, relevant experience and where appropriate portfolios.' No audition. No interview stated as compulsory.",
+   "isProductionTestNotAudition": "No audition and no production test. Portfolio is conditional, not universal."
+  },
+  "portfolioSpec": "UNVERIFIED at application stage — no track count, duration or format published. The portfolio language on the course page refers mainly to what he BUILDS during the course ('building a diverse portfolio that showcases your creative talent and technical expertise'), not to what he submits to get in. Confirm with admissions.",
+  "costForTunisian": "GBP 16,280 per year — the overseas/international rate for Academic Year 2026-2027. The page warns 'Tuition fees are expected to increase each academic year in line with the maximum permitted value set by the Government', so a 2027 entrant should budget above GBP 16,280.",
+  "funding": "UNVERIFIED — no international scholarship confirmed. Chevening is closed to him for want of two years' post-degree work experience, so there is no UK-government route and this is a self-pay proposition.",
+  "deadline": "UNVERIFIED — no published deadline. PRIOR CYCLE: September start, rolling postgraduate admission; a part-time route is also listed for 2026 entry.",
+  "languageAndCertificate": "English. IELTS Academic 6.5 overall with a minimum of 6.0 in all areas (the standard applied to BNU's related music programmes). He has not sat IELTS.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "This is a genuine own-awarded university MA in exactly his subject, with no audition and an entry rule that asks for 'an interest in pursuing a career in music' rather than a music degree. Two things to resolve: the 2:1 bar is higher than the 2:2 most of its rivals ask, and at GBP 16,280 rising, with Chevening closed to him, there is no funding path visible.",
+  "correction": "ONE correction. Gate recorded as 'Portfolio + exam/interview' — there is no exam and no compulsory interview. BNU reviews the whole application and takes portfolios only 'where appropriate'. Also worth recording that the entry bar is 2:1, stricter than the 2:2 used by Bournemouth, dBs and Leeds Beckett.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "ICMP (The Institute of Contemporary Music Performance)",
+  "programme": "MA Creative Music Production",
+  "url": "https://www.icmp.ac.uk/course/ma-creative-music-production",
+  "stillExists2027": "YES — live August 2026 with a published start date of '14th September 2026' and a 2026/27 fee schedule. Annual September intake (PRIOR CYCLE), so September 2027 is the expected next cycle.",
+  "award": "REAL MASTER'S, AWARDED BY ICMP ITSELF — this overturns the assumption that ICMP is part of a validation chain. The course page states the degree is awarded by 'The Institute of Contemporary Music Performance' and names no external validating university, because it no longer needs one: ICMP was granted FULL Degree Awarding Powers in November 2021 and has awarded its own undergraduate and postgraduate music degrees since September 2022. Degree-awarding body: **ICMP itself**. There is no partner university in this chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — explicitly",
+   "quote": "'a 2:1 Honours degree or above...usually in music or the arts, but also from other fields of study if music experience has been gained alongside this study', and ICMP goes further: applicants from 'non-music-related academic backgrounds who are actively writing and involved in music' are welcome. The condition is demonstrable music activity alongside the degree, not a music degree — and that is precisely what a twelve-month portfolio build would supply."
+  },
+  "gate": {
+   "type": "PORTFOLIO + PRESENTATION + INTERVIEW — CALLED AN 'AUDITION' BUT IS NOT ONE",
+   "quote": "ICMP's own Audition Guidance for MA Creative Music Production: 'At ICMP, your audition is just you and a tutor of your discipline, one-on-one.' Before the interview: 'Please submit a portfolio (10-15 minutes) of your original music.' During: 'we also ask you to prepare a short presentation outlining a proposal for your major production project... This should be no longer than 5 minutes' and 'You should critically evaluate other artists' work, concepts, and/or production techniques.' Then: 'Your presentation will be followed by an interview, of up to 45 minutes.' ICMP's general production audition guidance adds that for production applicants the session is 'relaxed, simply a chance to listen to and discuss music with your prospective tutors' and that 'you will be played a track chosen by the tutor and asked to comment on it from a production perspective.'",
+   "isProductionTestNotAudition": "CRITICAL: despite the word 'audition' in ICMP's own paperwork, NO LIVE MUSICAL PERFORMANCE IS REQUIRED and there is no ear-training exam. He submits recordings, gives a five-minute presentation, discusses a tutor-chosen track from a production standpoint, and is interviewed. This is the job, not a barrier — the only element resembling a test is being asked to critique a track he has not heard before, which is production commentary, not ear training."
+  },
+  "portfolioSpec": "THE MOST PRECISE BUILD BRIEF IN THE ENTIRE BATCH. Verbatim: a portfolio of '10-15 minutes' of 'your original music'; 'This should contain contrasting pieces that demonstrate creative approaches to music production'; 'Files should be compressed into a Zip file of 320k MP3/Wav files'; 'Please make sure all files are clearly titled and include your name'; submitted by email to enquiries@icmp.ac.uk 'no later than 24 hours before your audition'. PLUS a separate 5-minute presentation proposing his major production project — ICMP notes this 'could typically take the form of an artist album'. So: roughly three to five contrasting finished tracks totalling 10-15 minutes, 320kbps MP3 or WAV, zipped, named. He can build exactly this in twelve months.",
+  "costForTunisian": "GBP 16,250 for 2026/27 — ICMP charges EU/EEA/Switzerland and Non-EU the SAME GBP 16,250, so there is no non-EU penalty. But the cash-flow requirement is severe: a deposit of 'GBP 5,000 required to obtain a CAS' for most international students (GBP 2,000 for students from UKVI differential-evidence-listed countries — Tunisia's status on that list is UNVERIFIED and must be checked), and 'Full 1st year tuition fees are required prior to enrolment' unless he can document an alternative arrangement. For a candidate who 'can pay a little', being asked for the whole GBP 16,250 before enrolment is the real obstacle, not the headline fee.",
+  "funding": "UNVERIFIED — the course page links 'Scholarships & Bursaries' but publishes no award, amount or deadline. The only funding named on the page is the UK postgraduate master's loan of 'up to £13,206', which is restricted to UK students and is NOT available to him. Chevening is closed to him (two years' post-degree work experience required). On present evidence this is unfunded self-pay.",
+  "deadline": "No application deadline published. Start date '14th September 2026'. PRIOR CYCLE: annual mid-September start with rolling admission; the operative deadline in practice is the portfolio-submission rule — 'no later than 24 hours before your audition'.",
+  "languageAndCertificate": "English. Certificate: 'Minimum level B2 of the CEFR' for international applicants — notably ICMP states a CEFR level rather than an IELTS score, which is a LOWER and more flexible bar than the IELTS 6.5–7.5 demanded elsewhere. B2 is consistent with his stated 'working' English.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "This is the strongest match in the batch for what he actually wants. It is a real, self-awarded master's in creative music production; it explicitly welcomes applicants from non-music academic backgrounds who are active in music; the gate is a portfolio plus a conversation, with no performance and no ear test despite the word 'audition'; and the portfolio brief is spelled out precisely enough to start building tomorrow. The English bar is CEFR B2 rather than IELTS 7.5. The one hard problem is money: GBP 16,250 with the first year payable before enrolment and no scholarship published.",
+  "correction": "THREE corrections, the first two significant. (1) AWARDING BODY: ICMP is NOT a validated provider awarding through a partner university. It holds full Degree Awarding Powers granted in November 2021 and has awarded its own degrees since September 2022. Any assumption that ICMP degrees come from a partner is out of date. (2) GATE MISLABELLED: ICMP uses the word 'audition', and the record's 'Portfolio + exam/interview' half-captures it, but there is NO performance and NO exam. It is a portfolio, a 5-minute presentation and a 45-minute interview. This must not be filed alongside genuine performance auditions. (3) The record gives no portfolio specification, when ICMP publishes an unusually exact one: 10-15 minutes of contrasting original music, 320k MP3/WAV, zipped, named, sent 24 hours before.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "ICMP — Institute of Contemporary Music Performance",
+  "programme": "MA Creative Music Production",
+  "url": "https://www.icmp.ac.uk/course/ma-creative-music-production",
+  "stillExists2027": "YES — live August 2026, start '14th September 2026'. DUPLICATE of index 12 (identical institution, programme and URL).",
+  "award": "REAL MASTER'S awarded by ICMP itself under full Degree Awarding Powers granted November 2021, in effect for awards from September 2022. No partner university.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES",
+   "quote": "'a 2:1 Honours degree or above...usually in music or the arts, but also from other fields of study if music experience has been gained alongside this study'; applicants from 'non-music-related academic backgrounds who are actively writing and involved in music' are welcome."
+  },
+  "gate": {
+   "type": "PORTFOLIO + 5-MINUTE PRESENTATION + 45-MINUTE INTERVIEW",
+   "quote": "'Please submit a portfolio (10-15 minutes) of your original music'; 'we also ask you to prepare a short presentation outlining a proposal for your major production project'; 'Your presentation will be followed by an interview, of up to 45 minutes.'",
+   "isProductionTestNotAudition": "Not an audition. No playing, no singing, no ear-training exam."
+  },
+  "portfolioSpec": "10-15 minutes of original music, 'contrasting pieces that demonstrate creative approaches to music production', compressed 'into a Zip file of 320k MP3/Wav files', all files 'clearly titled and include your name', emailed to enquiries@icmp.ac.uk at least 24 hours before the interview. Plus a 5-minute presentation proposing his major production project, which ICMP says 'could typically take the form of an artist album'.",
+  "costForTunisian": "GBP 16,250 (2026/27), identical for EU/EEA/Switzerland and Non-EU. Deposit GBP 5,000 to obtain a CAS (GBP 2,000 for UKVI differential-evidence-listed nationalities; Tunisia's listing UNVERIFIED). 'Full 1st year tuition fees are required prior to enrolment.'",
+  "funding": "UNVERIFIED — no published award. The GBP 13,206 postgraduate loan named on the page is UK-students-only. Chevening closed to him (two years' post-degree work experience required).",
+  "deadline": "None published; rolling against a 14 September start. PRIOR CYCLE: annual mid-September.",
+  "languageAndCertificate": "English; 'Minimum level B2 of the CEFR'. No IELTS score demanded.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "Same course as index 12 and the same conclusion: the best subject fit, an explicitly non-music-degree-friendly entry rule, a portfolio-and-conversation gate with no performance element, and a CEFR B2 language bar he can meet. The obstacle is paying GBP 16,250 up front with no scholarship published.",
+  "correction": "DUPLICATE — indices 12, 13 and 14 are the same ICMP MA Creative Music Production at the same URL; they represent one opportunity, not three. Substantive corrections as at index 12: ICMP awards its own degrees (full DAPs since November 2021, awards from September 2022), and its 'audition' involves no performance whatsoever.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Institute of Contemporary Music Performance (ICMP)",
+  "programme": "MA Creative Music Production",
+  "url": "https://www.icmp.ac.uk/course/ma-creative-music-production",
+  "stillExists2027": "YES — live August 2026. DUPLICATE of indices 12 and 13, same URL.",
+  "award": "REAL MASTER'S awarded by ICMP itself. Full Degree Awarding Powers since November 2021; own-awarded degrees from September 2022. No validating partner university.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES",
+   "quote": "'also from other fields of study if music experience has been gained alongside this study'; applicants from 'non-music-related academic backgrounds who are actively writing and involved in music' are welcome."
+  },
+  "gate": {
+   "type": "PORTFOLIO + PRESENTATION + INTERVIEW",
+   "quote": "'At ICMP, your audition is just you and a tutor of your discipline, one-on-one.' Portfolio 10-15 minutes submitted beforehand; 5-minute presentation; interview of up to 45 minutes.",
+   "isProductionTestNotAudition": "No performance audition. The nearest thing to a test is that 'you will be played a track chosen by the tutor and asked to comment on it from a production perspective' — a production critique, not an ear-training exam."
+  },
+  "portfolioSpec": "10-15 minutes of original music, contrasting pieces, zipped 320k MP3/WAV, files titled with his name, emailed to enquiries@icmp.ac.uk no later than 24 hours before the interview; plus a 5-minute presentation on his proposed major production project.",
+  "costForTunisian": "GBP 16,250 (2026/27), same rate for EU/EEA/Swiss and Non-EU. CAS deposit GBP 5,000 (GBP 2,000 for UKVI-listed nationalities, Tunisia's status UNVERIFIED). Full first-year fees payable before enrolment.",
+  "funding": "UNVERIFIED — none published. UK postgraduate loan of up to GBP 13,206 is not open to him. Chevening closed to him.",
+  "deadline": "None published; rolling, 14 September start. PRIOR CYCLE: annual mid-September intake.",
+  "languageAndCertificate": "English; 'Minimum level B2 of the CEFR'.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "The third copy of the same strong option. Real own-awarded MA in creative music production, no performance gate, an exact portfolio brief, and a B2 language bar instead of a high IELTS. Money is the only genuine barrier.",
+  "correction": "DUPLICATE of indices 12 and 13 — one opportunity recorded three times. Corrections as above: ICMP is a self-awarding institution, not a validated provider, and the 'audition' contains no performance.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Leeds Beckett University — Leeds School of Arts",
+  "programme": "MA Music Production",
+  "url": "https://www.leedsbeckett.ac.uk/courses/music-production-ma/",
+  "stillExists2027": "YES — live August 2026 with a published 2026/27 fee and a start date of 21 September 2026. Annual September intake (PRIOR CYCLE).",
+  "award": "REAL MASTER'S — MA awarded directly by Leeds Beckett University, a publicly funded UK university with its own degree-awarding powers. No validation chain, no partner provider.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — with a condition that is explicitly written into the rule",
+   "quote": "'at least a second class honours degree in the cognate subjects of Music, Music Production or Audio Technology, at least a second class honours degree in a non-cognate subject supported by evidence of an aptitude for the subject applied for, or have equivalent experience or training'. A BSc Software Engineering is the 'non-cognate subject' case, and the university tells him exactly what buys his way in: 'evidence of an aptitude for the subject applied for' — which is the portfolio."
+  },
+  "gate": {
+   "type": "PORTFOLIO + REFERENCE",
+   "quote": "'Please provide at least three examples of your music production work. All applications should be supported by a reference, either academic or professional.'",
+   "isProductionTestNotAudition": "No audition, no ear test, no interview stated as compulsory. He submits finished work."
+  },
+  "portfolioSpec": "'at least three examples of your music production work'. No duration, format or genre is specified — so three finished tracks is the floor, and more helps. He also needs one reference, 'either academic or professional', which he can get from a BSc supervisor.",
+  "costForTunisian": "GBP 18,440 per year — 'the tuition fee for the year for students entering in 2026/27 is £18440 for international students'. BEWARE the widely quoted GBP 10,400 figure: that is the UK/home rate, not his. He pays GBP 18,440, and the university warns 'the amount you will pay may increase each year to take into account the effects of inflation', so a 2027 entrant should budget higher.",
+  "funding": "REAL AND SUBSTANTIAL, BUT A SEPARATE AND EARLIER APPLICATION — the Leeds School of Arts Scholarship: '14 x 50% scholarships are available', '50% fee waiver', 'applied as fee waivers towards the cost of tuition fees' for full-time taught master's courses. Worth roughly GBP 9,220 against the GBP 18,440 international fee. NOT automatic on admission: 'You must receive an unconditional offer from Leeds Beckett for the above courses by 22 May 2026' and 'You must submit your application through the online Applicant Portal'. Selection is competitive: 'awarded on the basis of exceptional academic performance and design experience, evidenced through an interview and design portfolio', with 'Shortlisted scholarship applicants... invited to an online interview in June 2026, during which you will be asked to present your portfolios'. ELIGIBILITY RISK: it requires 'at least a UK first-class or upper second (or overseas equivalent) undergraduate award from a related course' — 'from a related course' may exclude Software Engineering, and must be checked. PRIOR CYCLE deadline: 22 May, with interviews in June; for September 2027 entry expect 22 May 2027.",
+  "deadline": "No course application deadline — listed as 'Apply anytime', rolling. The binding date is the SCHOLARSHIP date: an unconditional offer must be in hand by 22 May (PRIOR CYCLE), which means applying by roughly March to be safe. Start date 21 September 2026 (PRIOR CYCLE: third week of September annually).",
+  "languageAndCertificate": "English. 'IELTS 6.5 with no skill below 6.0.' He has not sat IELTS; 6.5 is an achievable target with a year of preparation.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "This is the best-funded realistic option in the batch. A real university MA in music production, an entry rule that names the non-cognate degree case and tells him the portfolio is what fixes it, no audition, and a 50% fee waiver that is genuinely winnable — 14 awards, not one. Resolve one thing early: whether the scholarship's 'related course' requirement admits a Software Engineering BSc, because that waiver is what makes GBP 18,440 survivable.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — there is no exam and no compulsory interview for admission. The gate is three examples of production work plus one reference. (An interview appears only in the separate SCHOLARSHIP competition.) (2) The record's cost band 'Over EUR 15k/yr' is right but the useful figure was missing and is easy to get wrong: GBP 18,440 international, NOT the GBP 10,400 that appears in many listings, which is the home rate.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Leeds Beckett University — Leeds School of Arts",
+  "programme": "MSc Sound and Music for Interactive Games (sister courses: MA Music and the Moving Image; MA Popular Music Performance;…",
+  "url": "https://www.leedsbeckett.ac.uk/courses/sound-music-interactive-games-msc/",
+  "stillExists2027": "YES — live August 2026 with a published 2026/27 international fee. Sister courses confirmed live: MA Music for the Moving Image (https://www.leedsbeckett.ac.uk/courses/music-moving-image-ma/) and MA Sound Design (https://www.leedsbeckett.ac.uk/courses/sound-design-ma/).",
+  "award": "REAL MASTER'S — MSc awarded directly by Leeds Beckett University. Own degree-awarding powers, no validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — and this is the course where his BSc actually helps",
+   "quote": "'at least a second class honours degree in the cognate subjects of Music, Music Production or Audio Technology, at least a second class honours degree in a non-cognate subject supported by evidence of an aptitude for the subject applied for, or have equivalent experience or training'. For a games-audio MSc, a software engineering background is an asset rather than an anomaly — the course is about implementing audio in game engines."
+  },
+  "gate": {
+   "type": "PRACTICAL PRODUCTION TEST — SAY SO PLAINLY",
+   "quote": "'All suitable candidates will be required to submit a portfolio prior to acceptance on the course. This should include a 60-90 second video clip of gameplay from a video game with the original audio removed and replaced with either your sound design, your music, or both, accompanied with a PDF document that describes what your approach might be to implementing what you've done in a real game.'",
+   "isProductionTestNotAudition": "THIS IS A PRODUCTION TEST, NOT AN AUDITION. He is handed a defined task — take existing gameplay footage, strip its audio, and replace it with his own — and asked to do the job. There is no performance, no ear-training exam, and no requirement to have made anything before. This is the single most concrete, most passable gate in the whole batch: it rewards someone who can sit down and do the work, which is exactly his position."
+  },
+  "portfolioSpec": "EXACT AND SMALL. One '60-90 second video clip of gameplay from a video game with the original audio removed and replaced with either your sound design, your music, or both', PLUS 'a PDF document that describes what your approach might be to implementing what you've done in a real game'. That is 60-90 seconds of finished audio and one written document — far less work than the 10-15 minutes ICMP wants, and it can be built in weeks rather than a year.",
+  "costForTunisian": "GBP 18,440 per year international ('£10400 for UK students... £18440 for international students', 2026/27). Expect inflationary increase for 2027.",
+  "funding": "Leeds School of Arts Scholarship — 14 awards of 50% fee waiver, roughly GBP 9,220 here. SEPARATE, EARLIER application: unconditional offer required by 22 May (PRIOR CYCLE), scholarship submitted via the online Applicant Portal, shortlisted candidates interviewed online in June and asked to present portfolios. Requires 'at least a UK first-class or upper second... undergraduate award from a related course' — the 'related course' test is the risk, though a Software Engineering BSc is more plausibly 'related' to a games MSc than to a music MA. Chevening is closed to him (two years' post-degree work experience required).",
+  "deadline": "Rolling course application ('Apply anytime'); the operative date is the 22 May scholarship deadline (PRIOR CYCLE). September start.",
+  "languageAndCertificate": "English. IELTS 6.5 with no skill below 6.0.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "The gate is the friendliest he will meet anywhere — a defined 60-90 second production task, no audition, and a degree rule where his software background is a genuine advantage rather than something to explain away. The thing to resolve is whether he wants it: this is games audio implementation, not record-making. If his goal is to make records, this trains him for a different job, however much easier the door is.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — it is neither an exam nor an interview. It is a PRACTICAL PRODUCTION TEST: replace the audio on a 60-90 second gameplay clip and write up your implementation approach. This is the job, not a barrier, and the record's label obscures the single most useful fact about this course. (2) The record does not distinguish the international fee: GBP 18,440, not the GBP 10,400 home rate quoted in many aggregator listings.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Leeds Conservatoire",
+  "programme": "MA Music Production",
+  "url": "https://www.leedsconservatoire.ac.uk/courses/postgraduate-courses/ma-music-production/",
+  "stillExists2027": "YES — AND CONFIRMED FOR 2027 SPECIFICALLY. The course page lists September start dates for both 2026 and 2027, which makes this one of the few entries in the batch with a published 2027 intake rather than an inferred one.",
+  "award": "REAL MASTER'S, awarded through a validation chain. Quoted: the degree is validated by the 'University of Hull'. Degree-awarding body: **University of Hull**. Leeds Conservatoire teaches and assesses; Hull awards. This is a genuine master's — Hull is a publicly funded UK university with its own degree-awarding powers.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE, leaning favourable",
+   "quote": "'qualifications in other fields will also be reviewed and considered'. It is an open door rather than a guarantee — the portfolio decides."
+  },
+  "gate": {
+   "type": "PORTFOLIO, THEN ONLINE INTERVIEW",
+   "quote": "'All applicants are invited to submit a portfolio', followed by an online interview if the portfolio succeeds.",
+   "isProductionTestNotAudition": "NOT an audition despite being a conservatoire. For the Production track the submission is recorded studio work, not performance. No ear-training exam and no live playing is required for this pathway."
+  },
+  "portfolioSpec": "PRECISE, AND TRACK-SPECIFIC. For the PRODUCTION pathway — which is his — 'two recent projects (e.g., studio production, sound design, electronic composition work) totalling around 10 minutes'. (The Composition pathway instead asks for 'two recent original works and/or recordings with a total duration of around 10 minutes'.) So: two finished productions, about ten minutes in total. That is a smaller build than ICMP's 10-15 minutes of contrasting pieces, and the examples given explicitly include sound design and electronic composition, not just band recordings.",
+  "costForTunisian": "GBP 20,600 for one year full-time — the international rate for 2026 entry, covering the MA Music programmes including Production. This is the most expensive UK option in the batch. CASH-FLOW TRAP: 'International students must pay 50% of tuition fees before receiving a CAS', i.e. GBP 10,300 must be paid before he can even apply for the visa, with the remainder due at enrolment.",
+  "funding": "TWO NAMED AWARDS, both separate applications, and one already demonstrably closes early. (1) 'Leeds Conservatoire Postgraduate Principal's Scholarship' — four awards of 'GBP 5,000' for new international postgraduate students; as of August 2026 'Applications for September 2026 entry are now closed', which establishes the PRIOR CYCLE pattern that it closes well before the intake and must be applied for early in the 2027 round. (2) 'Leeds Conservatoire Excellence Scholarships' — 'GBP 1,000 – GBP 7,500', awarded 'based on audition performance', which for a production applicant means the portfolio-and-interview outcome. (3) Alumni discount of 10% — not applicable to him. Even the best case (GBP 7,500 + GBP 5,000) leaves over GBP 8,000 to find. Chevening is closed to him.",
+  "deadline": "No fixed course deadline published; September start dates listed for 2026 and 2027. The binding dates are the scholarship ones — the Principal's Scholarship for September 2026 entry had already closed by August 2026 (PRIOR CYCLE), so he must track its 2027 opening from early in the cycle.",
+  "languageAndCertificate": "English. 'British Council English Language Testing System (IELTS) score of 6.0' — the LOWEST IELTS demand of any UK entry in this batch, a full half-band below Leeds Beckett, Bournemouth, BNU and dBs, and 1.5 bands below Berklee MPTI. For a candidate at 'working' English who has not sat the test, this materially widens his options.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Everything about the academic gate suits him: a real Hull-awarded MA, other-field degrees explicitly considered, a two-project ten-minute portfolio, an online interview rather than an audition, and the lowest English bar in the batch at IELTS 6.0. The blocker is purely financial — GBP 20,600 is the highest UK fee here, GBP 10,300 of it payable before he can even get a CAS, and the published scholarships top out well short of the gap. Resolve the money before anything else.",
+  "correction": "ONE correction plus a duplicate flag. Gate recorded as 'Portfolio + exam/interview' — there is no exam; it is a portfolio followed by an online interview, and for the Production pathway no performance is involved despite the conservatoire setting. DUPLICATE: indices 17, 46 and 47 are the same Leeds Conservatoire MA Music Production at the same URL.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "SAE Institute Glasgow (SAE Institute UK, AD Education group) — course details published by ICMP",
+  "programme": "MA Creative Music Production (SAE Glasgow delivery)",
+  "url": "https://www.sae.edu/gbr/ma-creative-music-production/",
+  "stillExists2027": "YES — live and marketed August 2026, listed among SAE UK's current postgraduate courses alongside MA Songwriting and MSc Audio Engineering & Music Technology.",
+  "award": "REAL MASTER'S, AND THE VALIDATION CHAIN HERE IS DIFFERENT FROM ICMP LONDON'S — this is the single most important finding on this entry. Quoted: the course is 'Delivered by ICMP at SAE Glasgow' and is 'awarded by and quality assured by the University of Hertfordshire' (for 2022/3 onwards). Degree-awarding body: **University of Hertfordshire**. So although ICMP now awards its OWN degrees in London under the full Degree Awarding Powers it gained in November 2021, the SAE Glasgow delivery of the same-named MA is awarded by Hertfordshire instead. The award is genuine either way, but it is not the same certificate as the London course.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE — inferred, not quoted",
+   "quote": "The SAE page publishes NO entry requirements at all. The ICMP-published rule for the same MA is 'a 2:1 Honours degree or above...usually in music or the arts, but also from other fields of study if music experience has been gained alongside this study', and ICMP welcomes applicants from 'non-music-related academic backgrounds who are actively writing and involved in music'. Since ICMP delivers the course, that rule should govern — but he must have Hertfordshire's version confirmed in writing, because Hertfordshire's own music master's are markedly stricter about music degrees."
+  },
+  "gate": {
+   "type": "NOT PUBLISHED ON THE SAE PAGE — ICMP's gate presumed to apply",
+   "quote": "SAE's page states no portfolio, interview, audition or test. ICMP's guidance for this MA requires a portfolio of '10-15 minutes' of original music, a presentation of 'no longer than 5 minutes', and 'an interview, of up to 45 minutes'.",
+   "isProductionTestNotAudition": "On ICMP's rules there is no performance audition and no ear-training exam. Confirm SAE Glasgow applies the same process."
+  },
+  "portfolioSpec": "UNVERIFIED for the SAE delivery. If ICMP's specification governs: 10-15 minutes of original music in contrasting pieces, zipped as 320k MP3/WAV files, all clearly titled with his name, submitted at least 24 hours before interview, plus a 5-minute presentation proposing his major production project.",
+  "costForTunisian": "UNVERIFIED — SAE UK does not publish postgraduate fees on its fees page, which lists only undergraduate rates and states merely that 'Tuition fee funding is not available for international students'. He must request the figure directly on +44 (0)3330 112 315.",
+  "funding": "UNVERIFIED — no scholarship published. SAE's fees page states plainly that UK Student Finance 'tuition fee funding is not available for international students'. Chevening is closed to him (two years' post-degree work experience required), so a UK-government route does not exist.",
+  "deadline": "UNVERIFIED — no start dates or deadlines published on the SAE page.",
+  "languageAndCertificate": "UNVERIFIED on the SAE page. ICMP's equivalent requirement is 'Minimum level B2 of the CEFR'; Hertfordshire, as awarding body, normally requires IELTS 6.5. Which applies here must be confirmed.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "A genuine Hertfordshire-awarded MA taught by ICMP, and crucially SAE Institute UK does sponsor Student visas and issues CAS numbers — so unlike dBs, this route can actually get him to Britain. What must be resolved first is that SAE publishes almost nothing: no fee, no entry requirement, no deadline, no English score. He cannot plan against a page this empty, so the first step is a direct written quote from SAE Glasgow.",
+  "correction": "TWO corrections. (1) AWARDING BODY: the record names no awarding body. It is the University of Hertfordshire — 'awarded by and quality assured by the University of Hertfordshire' — NOT ICMP, even though ICMP delivers the teaching. This matters because the same-named ICMP London MA is now ICMP's own award; the Glasgow and London versions of 'MA Creative Music Production' lead to different certificates. (2) Gate recorded as 'Portfolio + exam/interview' — SAE's page publishes no gate whatsoever; the portfolio-and-interview description is borrowed from ICMP and is unconfirmed for the Glasgow delivery.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "SAE Institute Glasgow (SAE Institute UK, AD Education group; delivered with ICMP)",
+  "programme": "MA Creative Music Production",
+  "url": "https://www.sae.edu/gbr/ma-creative-music-production/",
+  "stillExists2027": "YES — live August 2026. DUPLICATE of index 18, identical URL.",
+  "award": "REAL MASTER'S. 'Delivered by ICMP at SAE Glasgow', 'awarded by and quality assured by the University of Hertfordshire' (2022/3 onwards). Degree-awarding body: **University of Hertfordshire**.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "No entry requirement is published by SAE. ICMP's rule for the same MA admits candidates 'from other fields of study if music experience has been gained alongside this study'."
+  },
+  "gate": {
+   "type": "NOT PUBLISHED",
+   "quote": "SAE's page describes no admission gate of any kind.",
+   "isProductionTestNotAudition": "No audition is published or implied. ICMP's process, if it applies, is portfolio plus presentation plus interview, with no performance element."
+  },
+  "portfolioSpec": "UNVERIFIED for this delivery. ICMP's specification is 10-15 minutes of contrasting original music, zipped 320k MP3/WAV, named files, submitted 24 hours before the interview.",
+  "costForTunisian": "UNVERIFIED — SAE publishes no postgraduate fee. Must be obtained from SAE directly.",
+  "funding": "UNVERIFIED — none published; SAE states UK tuition fee funding 'is not available for international students'. Chevening closed to him.",
+  "deadline": "UNVERIFIED — none published.",
+  "languageAndCertificate": "UNVERIFIED — no English requirement published on the SAE page.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Same course as index 18: a real Hertfordshire MA, taught by ICMP, at a provider that genuinely sponsors student visas. But nothing about price, entry or deadline is published, so it cannot be planned against until SAE answers in writing.",
+  "correction": "TWO corrections plus a duplicate flag. (1) Gate recorded as 'Exam/interview only' — SAE publishes NO gate at all, and there is certainly no exam; index 18 records the same course as 'Portfolio + exam/interview', so the input file contradicts itself between two copies of one course. (2) The awarding body — University of Hertfordshire — is absent from the record. DUPLICATE of index 18.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of Hertfordshire — School of Creative Arts",
+  "programme": "MA Music Production and Artist Development",
+  "url": "https://www.herts.ac.uk/courses/postgraduate-masters/ma-music-production-and-artist-development",
+  "stillExists2027": "YES — course live August 2026 and listed as a 12-month postgraduate programme. NOTE: herts.ac.uk returns HTTP 403 to automated fetching, so details below come from the search index and course aggregators rather than a direct read; reconfirm with the university.",
+  "award": "REAL MASTER'S — MA awarded directly by the University of Hertfordshire, a publicly funded UK university with its own degree-awarding powers. (It is also the body that awards the SAE Glasgow MA at indices 18-19.)",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO — this is the entry rule that shuts him out",
+   "quote": "'a good (1st, 2.1 or 2.2) BMus/BSc/BA in Music / Music Technology (or equivalent qualification), or 5 years professional industry experience at the discretion of the admissions or programme tutor.' The degree must be IN MUSIC or MUSIC TECHNOLOGY — the 'BSc' in that list means a BSc in Music, not a BSc in anything. The only alternative door is five years of professional industry experience, and he has none: he is graduating now with no post-degree work experience at all."
+  },
+  "gate": {
+   "type": "PORTFOLIO — and a second, harder requirement behind it",
+   "quote": "'Evidence of solid compositional work with technology prior to undertaking the course is required (determined by the submission of a small portfolio of original compositions with the student's application).'",
+   "isProductionTestNotAudition": "Not an audition and not an ear test. But note the wording: what is demanded is 'solid compositional work with technology', i.e. original composition, not only engineering or mixing."
+  },
+  "portfolioSpec": "'a small portfolio of original compositions' submitted with the application. No track count, duration or file format is specified — 'small' is the only quantifier given. He would have to ask for the numbers.",
+  "costForTunisian": "GBP 16,450 per year — the international rate.",
+  "funding": "UNVERIFIED — no international scholarship confirmed for this course. Chevening is closed to him (two years' post-degree work experience required).",
+  "deadline": "UNVERIFIED — no published deadline. PRIOR CYCLE: September start, 12-month programme.",
+  "languageAndCertificate": "English. 'A minimum of IELTS 6.5 with at least 5.5 in every component or equivalent is required.' The 5.5 component floor is unusually forgiving — most rivals demand 6.0 in every band — which helps a candidate whose speaking or writing may lag.",
+  "verdict": "AVOID",
+  "verdictWhy": "The entry rule names the degrees it accepts and they are all music degrees; the only alternative route is five years of professional industry experience, which he does not have and cannot manufacture by September 2027. A twelve-month portfolio build does not convert a Software Engineering BSc into a BMus. He would be applying against an explicit bar.",
+  "correction": "TWO corrections, the first decisive. (1) The record scores this 'Strong' with a 'Portfolio only' gate, implying it is accessible. It is not: entry requires a 'BMus/BSc/BA in Music / Music Technology' or five years' professional experience. For this candidate the answer is NO, not 'Strong'. This is one of the most misleading entries in the batch. (2) The portfolio is not merely production work — it must show 'solid compositional work with technology', i.e. original composition.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of Hertfordshire — School of Creative Arts",
+  "programme": "MSc Sound for Film and Television",
+  "url": "https://www.herts.ac.uk/courses/postgraduate-masters/msc-sound-for-film-and-television",
+  "stillExists2027": "YES — live August 2026 and listed on UCAS for 2026 entry. (herts.ac.uk blocks automated fetching with HTTP 403; details from the search index and aggregators — reconfirm.)",
+  "award": "REAL MASTER'S — MSc awarded directly by the University of Hertfordshire, own degree-awarding powers, no validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE — meaningfully more open than its sibling at index 20",
+   "quote": "'A good honours degree (1st, 2:1 or 2:2) in Music, Music Technology, Music Performance, or a related discipline (or an equivalent international qualification)'. The phrase 'or a related discipline' is the opening that the MA Music Production rule does not contain — and for a SOUND FOR SCREEN course, software engineering is more arguably related than it would be for a music MA. Herts also states that 'Candidates who do not satisfy these requirements will be considered on a case-by-case basis.'"
+  },
+  "gate": {
+   "type": "PORTFOLIO — with an unusually relaxed submission method",
+   "quote": "'Applications should be accompanied by a small sample of your compositions/productions submitted in digital format: scores (if any) can be attached to your online application as PDF; for audio and video material, please upload your work on any hosting website (e.g. Soundcloud, MySpace, Vimeo, Youtube, etc.) and provide links in your personal statement attached to your application.'",
+   "isProductionTestNotAudition": "No audition, no exam, no performance. He uploads work to SoundCloud or YouTube and pastes links into his personal statement — the lowest-friction submission mechanism in the entire batch."
+  },
+  "portfolioSpec": "'a small sample of your compositions/productions' — no track count, no duration, no format constraint. Delivery is by public link (SoundCloud, Vimeo, YouTube) pasted into the personal statement, with any scores attached as PDF. Because no minimum is stated, the portfolio is judged qualitatively, which favours a small number of genuinely finished pieces.",
+  "costForTunisian": "GBP 16,450 per year — international rate.",
+  "funding": "ONE REAL LEAD, WITH AN ELIGIBILITY QUESTION: the course 'is one of only nine courses nominated for the BAFTA Scholarship Programme which exists to support talented individuals to study a practical course in film, television or games at postgraduate level'. This is a separate, earlier application to BAFTA, not automatic on admission, and BAFTA's UK scholarships normally carry a UK-residency condition that must be checked before relying on it — do not assume a Tunisian applicant qualifies. No amount or deadline is published on the course listing. Chevening is closed to him.",
+  "deadline": "UNVERIFIED — no published deadline. PRIOR CYCLE: September start.",
+  "languageAndCertificate": "English. 'An IELTS score of 6.0 (or equivalent) would typically be required', though Herts notes that for related programmes 'Students would normally need an IELTS score of 6.5', and that borderline candidates 'will be considered on a case-by-case basis'. IELTS 6.0 would be among the lowest bars in the batch — confirm which figure binds this course.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Unlike its sibling MA next door, this one leaves the door open — 'or a related discipline', plus an explicit case-by-case clause, a link-based portfolio with no minimum, and possibly only IELTS 6.0. Two things to resolve: it is sound for film and television, not record production, so it points at a different career; and the BAFTA scholarship that makes GBP 16,450 affordable may well be closed to non-UK residents.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio only' — accurate as far as it goes, but the record misses that submission is by public streaming links pasted into the personal statement, with no stated minimum quantity, which is materially easier than the zipped-file submissions demanded elsewhere. (2) The record does not record the entry-rule difference between this MSc and the Hertfordshire MA at index 20: this course says 'or a related discipline' and offers case-by-case consideration, whereas the MA demands a music degree outright. The two Hertfordshire entries are NOT equally accessible to him, and the record treats them as if they were.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of Huddersfield",
+  "programme": "Creative Music Production MA",
+  "url": "https://courses.hud.ac.uk/2026-27/postgraduate/creative-music-production-ma/",
+  "stillExists2027": "YES — AND THIS IS ONE OF ONLY TWO ENTRIES IN THE BATCH WITH A FULLY PUBLISHED 2027-28 PAGE. https://courses.hud.ac.uk/2027-28/postgraduate/creative-music-production-ma/ is live, with a stated start date of '20 September 2027'. He does not have to infer the 2027 cycle here; it is published.",
+  "award": "REAL MASTER'S — MA awarded directly by the University of Huddersfield, a publicly funded UK university with its own degree-awarding powers. No validation chain, no partner provider.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — and Huddersfield writes the alternative route into the rule itself",
+   "quote": "'You are required to have a minimum of a 2:2 honours degree' and must demonstrate 'a good level of technical skill and experience in the field of music production, demonstrated through an undergraduate degree in (or including modules in) this area, OR through submission of a representative portfolio of work.' That final clause is the whole game: where other universities demand a music degree, Huddersfield says explicitly that a portfolio substitutes for one. The course is also described as being 'designed for both music and music technology graduates, but also for learners from industry or practitioner backgrounds'."
+  },
+  "gate": {
+   "type": "PORTFOLIO — used explicitly as a SUBSTITUTE for a music degree",
+   "quote": "'through submission of a representative portfolio of work'. No interview, audition or exam is stated as required.",
+   "isProductionTestNotAudition": "Not an audition. No performance, no ear-training exam, no set task. He submits his own finished work."
+  },
+  "portfolioSpec": "'a representative portfolio of work' demonstrating 'a good level of technical skill and experience in the field of music production'. No track count, duration or format is specified — the word doing the work is 'representative', meaning it must fairly show what he can do across production. He should ask admissions for a number, but on the published wording a coherent set of finished productions is what is wanted.",
+  "costForTunisian": "GBP 18,700 per year — the international rate quoted for 2026/27, with '2027/28 fees to be published later', so budget above GBP 18,700 for a 2027 entry.",
+  "funding": "UNVERIFIED — no international scholarship published on the course page. Chevening is closed to him (it requires two years' post-degree work experience), so there is no UK-government route and this is a self-pay proposition unless a departmental award surfaces.",
+  "deadline": "13 July 2027 for the September 2027 intake, with a start date of 20 September 2027. This is a genuine published 2027-cycle deadline, not an inferred one.",
+  "languageAndCertificate": "English. 'The minimum for IELTS is 6.0 overall with no element lower than 5.5, or equivalent' (TOEFL iBT 87 quoted as an alternative elsewhere). IELTS 6.0/5.5 ties Leeds Conservatoire and USW for the lowest English bar in the batch — a full 1.5 bands below Berklee MPTI.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "This is the cleanest fit in the UK set. The entry rule states in writing that a portfolio can stand in for a music degree, which is exactly his situation; there is no audition, no interview and no exam; the English bar is IELTS 6.0 with 5.5 minimum; and unusually the 2027 cycle is already published with a 13 July 2027 deadline and a 20 September 2027 start. The only problem is money — GBP 18,700 with no scholarship published.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — there is no exam and no interview. It is a portfolio alone, and critically it functions as an ALTERNATIVE to holding a music degree rather than as an extra hurdle on top of one. (2) The record does not note that Huddersfield has already published its 2027-28 course page with a firm 20 September 2027 start and a 13 July 2027 application deadline — one of the very few 2027-confirmed entries in this batch.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of Huddersfield, School of Arts and Humanities",
+  "programme": "MA Creative Music Production",
+  "url": "https://courses.hud.ac.uk/2026-27/postgraduate/creative-music-production-ma/",
+  "stillExists2027": "YES — 2027-28 page live at https://courses.hud.ac.uk/2027-28/postgraduate/creative-music-production-ma/, start '20 September 2027'. DUPLICATE of index 22, same URL.",
+  "award": "REAL MASTER'S — MA awarded directly by the University of Huddersfield. Own degree-awarding powers; no partner institution.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES",
+   "quote": "'a minimum of a 2:2 honours degree' plus technical skill in music production 'demonstrated through an undergraduate degree in (or including modules in) this area, or through submission of a representative portfolio of work.'"
+  },
+  "gate": {
+   "type": "PORTFOLIO",
+   "quote": "'through submission of a representative portfolio of work'.",
+   "isProductionTestNotAudition": "No audition, no exam, no performance requirement."
+  },
+  "portfolioSpec": "'a representative portfolio of work' evidencing 'a good level of technical skill and experience in the field of music production'. No count, duration or format published.",
+  "costForTunisian": "GBP 18,700 per year international (2026/27 published; 2027/28 to follow and likely higher).",
+  "funding": "UNVERIFIED — none published. Chevening closed to him for want of two years' post-degree work experience.",
+  "deadline": "13 July 2027 application deadline; 20 September 2027 start.",
+  "languageAndCertificate": "English. IELTS 6.0 overall with no element lower than 5.5.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "Same course as index 22: a portfolio can replace a music degree, the gate is a portfolio alone, the English bar is low, and the 2027 dates are already published. Cost is the sole obstacle.",
+  "correction": "DUPLICATE of index 22 — one course recorded twice. Note also that the two copies disagree with each other on the gate ('Portfolio + exam/interview' at index 22 versus 'Portfolio only' at index 23); the second is the correct one, and neither records that the portfolio substitutes for a music degree.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of South Wales (Prifysgol De Cymru)",
+  "programme": "MA Music Production and Songwriting",
+  "url": "https://www.southwales.ac.uk/courses/ma-music-production-and-songwriting/",
+  "stillExists2027": "YES, BUT RENAMED AND MOVED. The course now runs as 'MA Songwriting and Production' at https://www.southwales.ac.uk/courses/ma-songwriting-and-production/ — note the reversed word order, which puts songwriting first. Live August 2026 with a 2026-2027 fee published. September start at the Cardiff (ATRiuM) campus. (southwales.ac.uk returns HTTP 403 to automated fetching; details from the search index — reconfirm.)",
+  "award": "REAL MASTER'S — MA awarded directly by the University of South Wales, a publicly funded UK university with its own degree-awarding powers. No validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE, and weaker than it looks",
+   "quote": "'An Honours degree at class 2:2 or above in music or other related arts subjects is required. Applications are also welcomed from those with other equivalent qualifications, or those with significant prior practical/professional experience.' The named field is 'music or other related arts subjects' — Software Engineering is neither. His route is the 'other equivalent qualifications' clause or 'significant prior practical/professional experience', and he has no professional experience at all."
+  },
+  "gate": {
+   "type": "INTERVIEW — stated as the mechanism of entry",
+   "quote": "'entry is by way of an interview'.",
+   "isProductionTestNotAudition": "No audition and no ear test are published. But be careful: this is a SONGWRITING course as much as a production course, and an interview for a songwriting MA will probe whether he writes songs, which is a different claim from being able to produce."
+  },
+  "portfolioSpec": "NO APPLICATION PORTFOLIO IS PUBLISHED — and this is a trap in the record. The only portfolio mentioned is the one he would PRODUCE during the degree: 'For your final project, you will create an original portfolio of work to be showcased at our state-of-the-art ATRiuM building.' That is an outcome of the course, not an entry requirement. He must ask admissions what, if anything, to submit.",
+  "costForTunisian": "GBP 17,900 — 'The 2026-2027 course fee is £17,900.' International rate, Cardiff campus.",
+  "funding": "UNVERIFIED — no international scholarship confirmed. Chevening is closed to him (two years' post-degree work experience required).",
+  "deadline": "UNVERIFIED — no published deadline. PRIOR CYCLE: September start, Cardiff campus.",
+  "languageAndCertificate": "English. 'IELTS 6.0 with a minimum of 5.5 in each component or equivalent' — among the lowest English bars in the batch.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "A real university MA at a low English bar, and entry by interview rather than audition. But two things must be resolved. The named entry subjects are 'music or other related arts subjects', which his BSc is not, and the fallback clause asks for professional experience he does not have. And the course now leads with SONGWRITING — if he wants to produce records rather than write songs, he would be buying half a degree he did not ask for.",
+  "correction": "THREE corrections. (1) THE PROGRAMME HAS BEEN RENAMED: it is now 'MA Songwriting and Production', not 'MA Music Production and Songwriting', and lives at /ma-songwriting-and-production/. The recorded URL is stale. (2) Gate recorded as 'Portfolio only' — WRONG on both counts. There is no published application portfolio, and USW states that 'entry is by way of an interview'. The portfolio referred to on the course page is the final-project portfolio he would create while studying. (3) The record does not flag that the reordered title reflects the course's emphasis: songwriting leads.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of Westminster",
+  "programme": "Audio Production MA",
+  "url": "https://www.westminster.ac.uk/music-courses/2026-27/september/full-time/audio-production-ma",
+  "stillExists2027": "YES — AND EXPLICITLY CONFIRMED FOR 2027. The page lists a 'Start date: September 2026 (also September 2027 available)'. Along with Huddersfield and Leeds Conservatoire, this is one of the few entries with a stated 2027 intake rather than an inferred one.",
+  "award": "REAL MASTER'S — MA awarded directly by the University of Westminster, a publicly funded UK university with its own degree-awarding powers. No partner, no validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES — one of the two most open entry rules in the batch",
+   "quote": "'a minimum of a lower second class honours degree (2:2) or lower with substantial experience', and applicants without standard qualifications but possessing 'a strong portfolio and professional industry experience can be considered.' No subject restriction of any kind is imposed — the degree merely has to be a 2:2, and the door is left open even below that."
+  },
+  "gate": {
+   "type": "PORTFOLIO + PERSONAL STATEMENT + ONLINE INTERVIEW",
+   "quote": "Required are 'a portfolio of audio and/or audio visual production works', a personal statement, and an interview 'conducted via Teams'. Explicitly: 'No traditional audition or practical test' — evaluation 'centers on portfolio quality'.",
+   "isProductionTestNotAudition": "NOT an audition and not a set production test. He submits his own work and then talks about it over Teams — meaning he never has to travel for the gate, which matters for a Tunisian applicant who would otherwise need a visa just to attend."
+  },
+  "portfolioSpec": "LOOSE BUT BROAD: 'a portfolio of audio and/or audio visual production works' demonstrating 'your potential to work in audio at a high level'. No track count, duration or format is specified. The personal statement must discuss his aspirations as a 'creative contemporary audio producer and sound specialist'. The breadth — audio OR audio-visual — means game audio, film sound and music productions all count toward the same submission.",
+  "costForTunisian": "GBP 16,000 per academic year, international rate, and notably the page states fees 'remain constant throughout enrollment' — i.e. no mid-course inflation increase, which distinguishes it from Huddersfield, BNU and Leeds Beckett, all of which warn of annual rises.",
+  "funding": "PARTIALLY VERIFIED — the site states scholarships exist for eligible postgraduate students but publishes no international-specific award, amount or deadline on this page. Chevening is closed to him (two years' post-degree work experience required), so no UK-government route exists.",
+  "deadline": "UNVERIFIED — 'not explicitly stated' on the course page, which refers applicants to a separate 'How to apply' page. PRIOR CYCLE: September start, with September 2027 already listed as available.",
+  "languageAndCertificate": "English. 'IELTS 6.5 with at least 6.0 in writing and no element below 5.5.' The 5.5 floor across most components with only writing pinned at 6.0 is a forgiving structure for someone with strong reading and weaker output.",
+  "verdict": "WORTH IT",
+  "verdictWhy": "London, a real university MA in exactly audio production, an entry rule with no subject restriction at all, a Teams interview rather than an audition, a September 2027 intake already published, and GBP 16,000 fixed for the duration — the cheapest campus-based London option here. The gap is funding: nothing international-specific is published and Chevening is shut to him, so he would be self-paying GBP 16,000 in one of the most expensive cities in Europe.",
+  "correction": "ONE correction. Gate recorded as 'Portfolio + exam/interview' — there is no exam. Westminster's own guidance says there is 'no traditional audition or practical test'; the gate is a portfolio, a personal statement and a Teams interview. Worth adding to the record: this is one of the few programmes that names September 2027 explicitly, and its fee is fixed rather than inflation-linked.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of York",
+  "programme": "Music Production and Audio Cultures (MA)",
+  "url": "https://www.york.ac.uk/study/postgraduate-taught/courses/ma-music-production/",
+  "stillExists2027": "YES — live August 2026 with a published 2026/27 fee and a September 2026 start. Annual September intake (PRIOR CYCLE). Both recorded URLs resolve to the same live course.",
+  "award": "REAL MASTER'S — MA awarded directly by the University of York, a Russell Group university with its own degree-awarding powers. By academic standing this is the most prestigious institution in the UK portion of the batch.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE — with a music-theory condition attached",
+   "quote": "'We will also consider unrelated first degrees provided you can demonstrate a good grasp of music theory and some practical ability in music making.' The door is open, but the price of entry is stated: music theory AND practical music-making ability. A portfolio of productions alone may not satisfy the theory half — this is the one entry rule in the batch that reaches toward conservatoire expectations without being an audition."
+  },
+  "gate": {
+   "type": "PORTFOLIO + WRITTEN COMMENTARY",
+   "quote": "'a short portfolio of 2 music tracks (no longer than 10 minutes in total)' plus a written commentary of maximum 500 words, and a separate statement 'describing musicianship and audio technology experience (maximum 750 words)'. No interview, audition or practical test is mentioned.",
+   "isProductionTestNotAudition": "Not an audition. No live performance, no ear-training exam. But note that a 750-word statement specifically about MUSICIANSHIP is demanded, which is where his gap will show."
+  },
+  "portfolioSpec": "THE MOST EXACTLY SPECIFIED PORTFOLIO IN THE BATCH. Verbatim: 'a short portfolio of 2 music tracks (no longer than 10 minutes in total)' which he 'recorded/produced, edited, and mixed'. Format: non-compressed .wav, or 'mp3 at 320kb/s if upload constraints exist'. Plus a written commentary of 'maximum 500 words' giving track credits and describing workflow. Plus a separate statement of up to 750 words on his musicianship and audio-technology experience. Two tracks, ten minutes, WAV — a small and completely achievable build.",
+  "costForTunisian": "GBP 32,900 for one year full-time, international rate 2026/27 (against GBP 13,900 for UK students). A part-time route exists at GBP 16,450 per year over two years, but part-time study does not normally support a Student visa. This is the second most expensive programme in the entire batch after Berklee.",
+  "funding": "THIS IS THE DECISIVE PROBLEM. The only international scholarship named on the course page is Chevening — 'Chevening Scholarships are available, offering one year of fully-funded postgraduate study in the UK for international (including EU) students.' CHEVENING IS CLOSED TO HIM: it requires at least two years of post-degree work experience and he is graduating now with none. Because Chevening is the only route the page offers, a GBP 32,900 fee is unaffordable in practice for this candidate. No other award is published.",
+  "deadline": "UNVERIFIED — no application deadline published on the course page. PRIOR CYCLE: September start, rolling postgraduate admission.",
+  "languageAndCertificate": "English. 'IELTS 6.5, minimum 6.0 in each component.' He has not sat IELTS.",
+  "verdict": "AVOID",
+  "verdictWhy": "The portfolio brief is beautifully clear and the university is the best-regarded here, but the money does not work: GBP 32,900 with Chevening named as the only international scholarship, and Chevening requires two years of post-degree work experience he does not have. Add an entry rule that asks unrelated-degree applicants to demonstrate music theory and practical music-making, and this is a course he would be paying a premium to be marginal at.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — there is no exam and no interview. It is a portfolio of two tracks plus two pieces of writing. (2) The record's cost band 'Over EUR 15k/yr' badly understates the position: GBP 32,900 is more than double most of its UK peers, and the only funding route the university names is one he is categorically ineligible for. On funding grounds this should never have been scored 'Strong'.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of York — School of Arts and Creative Technologies",
+  "programme": "MA Music Production and Audio Cultures",
+  "url": "https://www.york.ac.uk/study/postgraduate-taught/courses/ma-music-production-audio-cultures/",
+  "stillExists2027": "YES — this URL resolves to the same live 2026/27 course page as index 26, September 2026 start. DUPLICATE: indices 26 and 27 are one course reached by two URLs, both of which work.",
+  "award": "REAL MASTER'S — MA awarded directly by the University of York. Own degree-awarding powers, no validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'We will also consider unrelated first degrees provided you can demonstrate a good grasp of music theory and some practical ability in music making.'"
+  },
+  "gate": {
+   "type": "PORTFOLIO + WRITTEN COMMENTARY",
+   "quote": "'a short portfolio of 2 music tracks' totalling no longer than 10 minutes, with a written commentary of maximum 500 words, plus a statement on musicianship and audio technology experience of maximum 750 words.",
+   "isProductionTestNotAudition": "Not an audition and not a production test. No performance element."
+  },
+  "portfolioSpec": "Two music tracks, no longer than 10 minutes combined, recorded/produced/edited/mixed by him. Non-compressed .wav files, or 'mp3 at 320kb/s if upload constraints exist'. Written commentary maximum 500 words with track credits and workflow. Statement on musicianship and audio technology experience, maximum 750 words.",
+  "costForTunisian": "GBP 32,900 full-time (1 year) international/EU for 2026/27; part-time GBP 16,450 per year over two years (part-time does not normally support a Student visa). UK/home comparison: GBP 13,900 full-time.",
+  "funding": "Chevening is the only international scholarship named — and Chevening is CLOSED TO HIM, requiring two years of post-degree work experience. With no alternative award published, GBP 32,900 is unaffordable in practice.",
+  "deadline": "UNVERIFIED — none published. PRIOR CYCLE: September start.",
+  "languageAndCertificate": "English. IELTS 6.5 with a minimum of 6.0 in each component.",
+  "verdict": "AVOID",
+  "verdictWhy": "Same course as index 26 and the same verdict. An excellent, precisely specified portfolio brief attached to a GBP 32,900 fee whose only named funding route requires two years of work experience he does not have.",
+  "correction": "TWO corrections plus a duplicate flag. (1) DUPLICATE — indices 26 and 27 are the same York MA under two working URLs, so this is one opportunity, not two. The two copies also contradict each other on the gate ('Portfolio + exam/interview' versus 'Portfolio only'); 'Portfolio only' is the accurate one. (2) Neither copy records that the sole named international scholarship is Chevening, which he cannot apply for — the single most important fact about this course's affordability.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of the Arts London — London College of Communication",
+  "programme": "MA Music Production",
+  "url": "https://www.arts.ac.uk/subjects/animation-interactive-film-and-sound/postgraduate/ma-music-production-lcc",
+  "stillExists2027": "YES — AND THE 2027/28 CYCLE IS EXPLICITLY ANNOUNCED. Quoted: 'Applications for 2027/28 entry will open in autumn 2026.' This is the clearest forward signal in the batch: the cycle he needs opens within months of this verification.",
+  "award": "REAL MASTER'S — MA awarded by the University of the Arts London, a publicly funded UK university with its own degree-awarding powers. London College of Communication is a constituent college of UAL, not a separate provider awarding through a partner.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE, with an explicit non-exclusion clause",
+   "quote": "'Applicants will be considered for admission if they have achieved an educational level equivalent to an honours degree in a relevant subject such as music production, music technology, audio technology, sound design, sound arts, or a closely related subject. However, we do not exclude candidates who have graduated from other less strongly aligned disciplines.' That last sentence is written for someone in his position — but the compensation demanded is a portfolio showing music production experience."
+  },
+  "gate": {
+   "type": "THREE STAGES: application review, then PORTFOLIO AND A VIDEO TASK, then interview",
+   "quote": "'The selection involves three gates: initial application review, portfolio/video task submission, and interviews. There is no audition or practical test mentioned.'",
+   "isProductionTestNotAudition": "Not an audition — no performance, no ear-training exam. Note the VIDEO TASK sitting alongside the portfolio: UAL asks him to make something to their brief as well as submit existing work, which is closer to a production task than a pure portfolio review. He must obtain the video-task brief from UAL, because it is the part he cannot prepare blind."
+  },
+  "portfolioSpec": "SMALL AND CAPPED: 'Maximum 3 audio files (recordings, mixes, compositions, performances)' with 'supporting captions explaining motivation and development', and the set should 'demonstrate knowledge of music production work and collaborative experience'. Three files is a ceiling, not a floor. Plus a separate video task whose brief is not published. Note the word 'collaborative' — UAL wants evidence he has worked with other people, not only alone in a bedroom, which is worth planning into his twelve-month build.",
+  "costForTunisian": "GBP 30,890 for 2026/27 entry, 'subject to change' — so a 2027/28 entrant should budget higher. Together with York this is the top of the UK price range, roughly double Westminster or ICMP.",
+  "funding": "UNVERIFIED and weak — 'The page references a general scholarships search tool but does not specify dedicated international scholarships for this program.' Chevening is closed to him (two years' post-degree work experience required). At GBP 30,890 with no named award, this is effectively an unfunded self-pay proposition.",
+  "deadline": "PUBLISHED FORWARD SIGNAL: 'Applications for 2027/28 entry will open in autumn 2026. The specific deadline date has not yet been announced.' He should watch the UAL page from autumn 2026 — this is the one course in the batch where the 2027 application window is already dated in principle.",
+  "languageAndCertificate": "English. 'IELTS 6.5 (or equivalent) is required, with a minimum of 5.5 in each of the four skills.' The 5.5 component floor is more forgiving than York's 6.0 or Leeds Beckett's 6.0.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "A genuine UAL master's in exactly his subject, with an entry rule that explicitly does not exclude unaligned degrees, a three-file portfolio cap that keeps the build small, and the 2027/28 application window already announced for autumn 2026. The blocker to resolve is money: GBP 30,890 rising, no named international scholarship, and Chevening shut to him. He should also get the video-task brief early, since it is the only element of the gate he cannot prepare in advance.",
+  "correction": "TWO corrections. (1) Gate recorded as 'Portfolio + exam/interview' — closer than most, but it misses that UAL runs a THREE-stage selection including a VIDEO TASK set by the college, which is not the same as submitting existing tracks. There is no exam. (2) The record does not capture the most actionable fact available: applications for 2027/28 entry — the cycle he actually needs — open in autumn 2026.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Netherlands",
+  "institution": "Tio University of Applied Sciences (Hogeschool Tio)",
+  "programme": "NO SOUND DESIGN OR MUSIC PRODUCTION PROGRAMME EXISTS — institution checked and excluded",
+  "url": "https://www.tio.nl/en/ ; https://www.tio.nl/en/about-tio/",
+  "stillExists2027": "NEGATIVE FINDING CONFIRMED — the exclusion stands. Tio is live and recruiting in August 2026, but it is a business school and offers nothing in this field.",
+  "award": "N/A. Tio's complete one-year master's list is: Master of Business Administration, Commercial Management, Data Strategy & Business Intelligence, Entrepreneurship, Hospitality Management, Global Leadership & Intercultural Management, Real Estate Management, and MBA Internship. Its own description: 'Tio Business School offers English-taught degree programmes in business, entrepreneurship, hospitality and marketing.' There is no sound, audio or music award of any kind.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "N/A",
+   "quote": "No relevant programme exists to apply to."
+  },
+  "gate": {
+   "type": "N/A",
+   "quote": "No relevant programme exists.",
+   "isProductionTestNotAudition": "N/A"
+  },
+  "portfolioSpec": "N/A — no relevant programme.",
+  "costForTunisian": "N/A — no relevant programme.",
+  "funding": "N/A — no relevant programme.",
+  "deadline": "N/A — no relevant programme.",
+  "languageAndCertificate": "N/A. (For completeness: Tio teaches its business masters in English.)",
+  "verdict": "AVOID",
+  "verdictWhy": "Confirmed dead end. Tio is a business and hospitality school with no audio, sound or music provision whatsoever. Nothing here to apply to.",
+  "correction": "NO correction — the record's negative finding is CONFIRMED. The only thing worth adding is the positive evidence behind it: Tio's full master's catalogue is business, hospitality, real estate and data, and the school describes itself as offering programmes 'in business, entrepreneurship, hospitality and marketing'. The exclusion is safe and does not need re-checking in a future sweep.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Netherlands",
+  "institution": "Wittenborg University of Applied Sciences",
+  "programme": "NO SOUND DESIGN OR MUSIC PRODUCTION PROGRAMME EXISTS — institution checked and excluded",
+  "url": "https://www.wittenborg.eu/overview-master-science-programmes.htm ; https://www.wittenborg.eu/entrance-criteria-bachelor-and-master-degree-programmes.htm ; https://www.wittenborg.eu/programmes.htm",
+  "stillExists2027": "NEGATIVE FINDING CONFIRMED — the exclusion stands. Wittenborg is live in August 2026 but has no provision in this field. (wittenborg.eu returns HTTP 403 to automated fetching; confirmed instead through the search index and course aggregators.)",
+  "award": "N/A. Wittenborg's master's provision is the Master of Business Management (MBM) and MBA, with 'nine specialisations within the Master of Business Management, with five falling under the School of Business and four under the School of Hospitality & Tourism' — including Cyber Security and Entrepreneurship & Innovation. No music, sound or audio award exists.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "N/A",
+   "quote": "No relevant programme exists to apply to. (Incidentally its MBM programmes 'do not require work experience', which would have suited his profile — but they are business degrees, not music.)"
+  },
+  "gate": {
+   "type": "N/A",
+   "quote": "No relevant programme exists.",
+   "isProductionTestNotAudition": "N/A"
+  },
+  "portfolioSpec": "N/A — no relevant programme.",
+  "costForTunisian": "N/A — no relevant programme.",
+  "funding": "N/A — no relevant programme.",
+  "deadline": "N/A — no relevant programme.",
+  "languageAndCertificate": "N/A. (Wittenborg teaches in English.)",
+  "verdict": "AVOID",
+  "verdictWhy": "Confirmed dead end. Wittenborg is a business and hospitality school. There is no audio or music provision at any level, so there is nothing here for someone who wants to make records.",
+  "correction": "NO correction — the record's negative finding is CONFIRMED. Supporting evidence now attached: Wittenborg's entire master's catalogue is the Master of Business Management with nine business and hospitality specialisations, plus the MBA. The exclusion is safe.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Point Blank Music School",
+  "programme": "MA Music Production (postgraduate provision) — COULD NOT BE VERIFIED",
+  "url": "https://www.pointblankmusicschool.com/london/courses/postgraduate/",
+  "stillExists2027": "NO — AND THIS OVERTURNS THE RECORD. The earlier sweep left this as 'COULD NOT BE VERIFIED'; it can now be settled as a definite negative. Point Blank has NO postgraduate provision. Middlesex University's own academic-partnerships register for Point Blank lists every award it makes, and all of them are undergraduate or sub-degree: 'CertHE Radio, Audio and Podcasting (validated) BA Honours/DipHE/CertHE Music Production and Sound Engineering (validated) BA Honours/DipHE/CertHE Music Industry Management (validated, phasing out)', continuing through further BA Honours combinations (DJ Practice, Vocal Performance, DJ Performance, Songwriting, Music Business) and a BSc Honours in Music Production and Software Engineering. There is no MA, no MSc and no postgraduate award anywhere in the list.",
+  "award": "NO MASTER'S EXISTS. Point Blank has no degree-awarding powers of its own — 'Point Blank Higher Education programmes are quality assured by Middlesex University and graduates receive a Middlesex award' — and the Middlesex award list contains no postgraduate qualification. The partnership, running since 2012, covers 'online, distance-learning Higher Education programmes' at undergraduate level only.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "N/A",
+   "quote": "There is no master's programme to apply to. (Ironically Middlesex does award Point Blank a 'BSc Honours in Music Production and Software Engineering' — but it is a bachelor's, which he already holds the equivalent of, so it would be a step sideways at best.)"
+  },
+  "gate": {
+   "type": "N/A",
+   "quote": "No postgraduate programme exists.",
+   "isProductionTestNotAudition": "N/A"
+  },
+  "portfolioSpec": "N/A — no postgraduate programme.",
+  "costForTunisian": "N/A — no postgraduate programme.",
+  "funding": "N/A — no postgraduate programme.",
+  "deadline": "N/A — no postgraduate programme.",
+  "languageAndCertificate": "N/A.",
+  "verdict": "AVOID",
+  "verdictWhy": "There is no master's here to apply for. Point Blank is an undergraduate and sub-degree provider whose awards all come from Middlesex, and the Middlesex list stops at BA Honours. The earlier 'could not be verified' can now be closed as a firm no.",
+  "correction": "CORRECTION — NEGATIVE FINDING NOW CONFIRMED, not merely unverified. The record left this open as 'COULD NOT BE VERIFIED'; it is now settled. Point Blank offers NO postgraduate award of any kind. Evidence: Middlesex University's partner register for Point Blank lists only CertHE, DipHE, BA Honours and BSc Honours awards, with no MA or MSc among them. This entry can be struck from any future sweep rather than re-checked.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "Filmuniversität Babelsberg KONRAD WOLF (Potsdam)",
+  "programme": "M.A. Tonmeister*in für audiovisuelle Medien (Sound for Audiovisual Media)",
+  "url": "https://www.filmuniversitaet.de/en/studies/study-programs/master-programs/sound-design-for-audiovisual-media/application",
+  "stillExists2027": "YES — AND THE 2027 DATES ARE PUBLISHED IN FULL. Quoted: 'Applications are accepted only once a year for the winter semester. The application period begins on 12 April and ends on 18 May 2027.' This is the most precisely dated 2027 cycle in the entire batch.",
+  "award": "REAL MASTER'S — 'M.A.' in 'Tonmeister*in für audiovisuelle Medien', awarded directly by Filmuniversität Babelsberg KONRAD WOLF, a state film university with its own degree-awarding powers. No validation chain. Tuition is free at German state level; only a semester contribution applies.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "'Bachelor of Fine Arts (B.F.A.) degree in Sound, Tonmeister*in or a comparable subject-specific degree.' The requirement is a subject-specific sound or Tonmeister BFA. A BSc in Software Engineering is not comparable, and international credentials must additionally be evaluated through 'uni-assist e.V.' before applying, which will classify his degree on its face."
+  },
+  "gate": {
+   "type": "EAR-TRAINING EXAM **AND** A LIVE PIANO AUDITION — the hardest gate in the batch, and it contains all three gate types at once",
+   "quote": "Part 1, Music Test: 'Identification of intervals, rhythms, and chords', harmonic analysis of orchestral scores, and a 'Piano audition: One piece from the period from Baroque to Romantic as well as one piece from the 20th century', plus an audio evaluation assessment. Part 2, Interview: portfolio presentation and discussion, testing 'knowledge in the fields of acoustics, audio recording technology, and audio production'. Part 3, Practical Examination: 'Creation of a score for a short film clip...using a DAW system (Pro Tools)'.",
+   "isProductionTestNotAudition": "IMPORTANT DISTINCTION, AND IT CUTS BOTH WAYS. Part 3 IS a genuine practical production test — he is handed a short film clip and told to score it in Pro Tools, which is the job rather than a barrier, and he could learn to do it. But Part 1 contains BOTH an ear-training exam (identifying intervals, rhythms and chords by ear) AND a literal instrumental audition requiring two prepared piano pieces from named historical periods. The production test does not rescue him, because he must pass Part 1 first. This is exactly the case where a free German Tonmeister degree stays out of reach."
+  },
+  "portfolioSpec": "SPECIFIED, AND SCREEN-ORIENTED: documentation of 'max 12 pages', video samples totalling '15 minutes', comprising 'minimum three films with sound work', and 'at least one piece of music they recorded or mixed themselves'. Note this is a showreel of sound-for-picture across at least three films — not an album. Even setting aside the piano, building this in twelve months from zero would require three completed film sound projects.",
+  "costForTunisian": "NO TUITION FEE — this is a German state university and the programme is free, with only a semester contribution payable (amount not published on this page, typically a few hundred euros). Cost is emphatically NOT the barrier here; the entrance examination is.",
+  "funding": "Not applicable in the usual sense — tuition is free, so the question is living costs rather than fees. He would still need to satisfy the German blocked-account requirement for a student visa, which is a separate financial hurdle not addressed on this page.",
+  "deadline": "PUBLISHED AND FIRM FOR 2027: application period opens 12 April 2027 and closes 18 May 2027, for winter-semester entry, once a year only. Note this is a WINTER SEMESTER start (October), which aligns with his September 2027 target. Credential evaluation through uni-assist must be completed BEFORE applying, so the real personal deadline is months earlier.",
+  "languageAndCertificate": "GERMAN, and this alone excludes him. Required: 'DSH-1 level or an equivalent language certificate according to the Common European Framework'. He has no German at all. Reaching DSH-1 from zero by April 2027 is not realistic alongside building a sound portfolio and sitting IELTS.",
+  "verdict": "AVOID",
+  "verdictWhy": "This is the clearest example of the free-but-unreachable German Tonmeister degree. Three separate walls, any one of which stops him: entry demands a BFA in Sound or Tonmeister; the entrance exam requires identifying intervals, rhythms and chords by ear and performing two prepared piano pieces; and instruction requires DSH-1 German, which he does not have. The fact that it costs nothing is irrelevant when he cannot get through the door.",
+  "correction": "TWO corrections, the first serious. (1) Gate recorded as 'Portfolio + exam/interview' — this drastically understates it. The examination includes an EAR-TRAINING TEST ('identification of intervals, rhythms, and chords') and a LIVE INSTRUMENTAL AUDITION ('Piano audition: One piece from the period from Baroque to Romantic as well as one piece from the 20th century'). It also, separately, includes a real production test (scoring a film clip in Pro Tools) — but that is the third of three parts and cannot be reached without passing the first. (2) The record does not note that instruction requires DSH-1 GERMAN, nor that entry requires a subject-specific BFA in Sound or Tonmeister. Its 'Possible' chance rating is wrong; this is closed to him.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ }
+]
