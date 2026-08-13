@@ -970,5 +970,86 @@
   "correction": "THREE corrections. (1) Gate recorded as 'Portfolio only' — this is not supportable. mdw runs a formal Zulassungsprüfung with a video submission and a fixed examination day, and the components are not published; the equivalent bachelor exam includes musical and acoustic EAR TESTS. Calling it 'Portfolio only' understates it badly. (2) The record does not mention the German language requirement, which alone rules him out. (3) The cost band 'Under EUR 1.5k/yr' is marginally low: third-country nationals pay €752.92 per semester, i.e. about €1,506 per year, just over the band.",
   "verifiedAt": "2026-08",
   "_source": "door3-verify"
+ },
+ {
+  "country": "Greece",
+  "institution": "Πανεπιστήμιο Δυτικής Αττικής / University of West Attica (UniWA)",
+  "programme": "ΠΜΣ «Τεχνολογίες Ήχου, Βίντεο και Μετάδοσης» / MSc in Audio, Video and Broadcasting Engineering — Department of Electri…",
+  "url": "http://mscavb.eee.uniwa.gr/index.php/el/",
+  "stillExists2027": "PROBABLY DORMANT — THE RECORD'S SUSPICION IS CONFIRMED AND STRENGTHENED. The programme is still LISTED on the department's master's page (https://eee.uniwa.gr/el/spoudes/metaptyxiaka) as ΠΜΣ 'Τεχνολογίες Ήχου, Βίντεο και Μετάδοσης', but it carries NO call for applications: 'no current 2026-27 or 2027-28 calls are advertised... The programme appears listed without accompanying announcement documents or application deadlines, suggesting it may be inactive'. Its sibling programmes in the same department DO carry live calls — 'ΠΜΣ Ηλεκτρολόγου και Ηλεκτρονικού Μηχανικού μέσω Έρευνας — Current call for 2025-2026' and 'ΞΔΠΜΣ Τεχνητή Νοημοσύνη και Βαθιά Μάθηση — Call announced for 2026-27'. So the department is actively recruiting for other masters and not for this one. The programme's own site is additionally unreachable (HTTP 503 in August 2026) and, per the record, has no valid HTTPS certificate and no announcement newer than 2021-22.",
+  "award": "MSc from the University of West Attica, a Greek public university — a real master's when it runs. The historical design was 25 places per year, operating since 2018-19. But an award that is not being offered cannot be applied for.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "LIKELY YES IF IT RAN — but academic, since there is no call",
+   "quote": "UNVERIFIED. The programme sits in the Department of Electrical and Electronic Engineering, which would ordinarily make an engineering bachelor's a natural fit — this is an ENGINEERING master's, not a music one. But no current admission rule is published."
+  },
+  "gate": {
+   "type": "HISTORICALLY FILE PLUS INTERVIEW — no audition",
+   "quote": "Per the archived selection page cited in the record, 'selection: file and interview weighted equally'. No portfolio, no audition, no ear test.",
+   "isProductionTestNotAudition": "No audition and no production test. It was an engineering-style admission on documents and interview."
+  },
+  "portfolioSpec": "NONE — no portfolio was ever required. This is an audio/video/broadcasting ENGINEERING degree, not a production degree, so it would not have built him a record-making portfolio in any case.",
+  "costForTunisian": "HISTORICAL ONLY AND LEGALLY STALE: '€700/semester, part-time 50%, extension 50%'. The record notes this fee page cites Ν.4485/2017, a law that has since been REPEALED, so even the published fee rests on superseded legislation. Treat as UNVERIFIED for any future cycle.",
+  "funding": "UNVERIFIED — none published.",
+  "deadline": "NO CURRENT DEADLINE. The last traceable call closed on 23 September 2021 for 25 places. Nothing has been issued for 2025-26, 2026-27 or 2027-28.",
+  "languageAndCertificate": "Greek — the programme site and all its materials are in Greek, and no English-taught track is advertised. He has no Greek. UNVERIFIED whether any certificate was demanded, since no current call exists.",
+  "verdict": "AVOID",
+  "verdictWhy": "There is nothing to apply to. The programme is listed but dormant: no call for 2026-27 or 2027-28 while its sibling programmes in the same department are actively recruiting, no announcement since 2021-22, a site that returns 503, and a published fee resting on repealed legislation. Even if it revived, it is broadcasting engineering taught in Greek, not record production.",
+  "correction": "CONFIRMED AND UPGRADED. The record hedged this as a programme whose 'latest announcements and application-date pages [are] all 2021-22'. That suspicion is now confirmed from the department's own current master's index: the programme is listed with no call, while two sibling programmes carry live 2025-26 and 2026-27 calls. Additional correction: the record's 'Possible' chance rating is untenable — there is no open admission route, the language is Greek, and the subject is broadcasting engineering rather than music production.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Spain",
+  "institution": "Universitat de Barcelona (UB) with Universitat Rovira i Virgili (URV) and Escola Superior de Música de Catalu…",
+  "programme": "Màster Universitari en Música com a Art Interdisciplinari / University Master's Degree in Music as an Interdisciplinary…",
+  "url": "https://www.esmuc.cat/en/master-universitari-de-musica-com-a-art-interdisciplinari/",
+  "stillExists2027": "YES — live August 2026. A 60 ECTS official university master's.",
+  "award": "REAL MASTER'S — an official Spanish 'màster universitari' jointly awarded by three institutions: 'Universitat de Barcelona, Universitat Rovira i Virgili and the Escola Superior de Música de Catalunya'. Degree-awarding bodies: **Universitat de Barcelona and Universitat Rovira i Virgili**, with ESMUC as the conservatoire partner. This is a genuine, state-recognised master's.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE — but the programme is aimed somewhere else entirely",
+   "quote": "'graduates in any of the branches of human sciences, preferably in history of art' are welcomed, and 'Graduates will also be admitted from other university disciplines, but each case will be studied individually.' The preferred applicant is an art historian. A software engineer is inside the 'other university disciplines' clause, which is discretionary."
+  },
+  "gate": {
+   "type": "NOT PUBLISHED",
+   "quote": "'The document does not specify whether admission requires a portfolio, interview, audition, or practical test.' No gate of any kind is described.",
+   "isProductionTestNotAudition": "No audition is published, but equally no production test and no portfolio. Nothing here trains or tests record-making."
+  },
+  "portfolioSpec": "NONE PUBLISHED — 'No portfolio requirements are detailed'. This programme would not give him a build brief.",
+  "costForTunisian": "€82 PER CREDIT for non-EU students — 'quoted as 82 euros for students who are not EU nationals and do not currently reside in Spain'. At 60 ECTS that is approximately €4,920 for the full master's. Note this is a per-credit non-EU rate, so Tunisia is charged at the higher band and is NOT exempt.",
+  "funding": "UNVERIFIED — none published on the programme page.",
+  "deadline": "UNVERIFIED — 'No specific deadline is mentioned'.",
+  "languageAndCertificate": "CATALAN AND SPANISH — 'Language of Instruction: Catalan, Spanish'. He speaks Arabic, French and working English, and has no Spanish or Catalan. No certificate requirement is published, but the teaching language alone is decisive. (His fluent French would shorten the road to Spanish, but not by September 2027 alongside everything else.)",
+  "verdict": "AVOID",
+  "verdictWhy": "Wrong subject and wrong language. This is an interdisciplinary music-and-art master's whose preferred applicant is a history-of-art graduate, taught in Catalan and Spanish, with no portfolio, no production element and no studio training published anywhere. It would not teach him to make records even if he could follow the lectures.",
+  "correction": "THREE corrections. (1) COST BAND WRONG: recorded as 'Under EUR 1.5k/yr', but the published non-EU rate is €82 per credit, which over 60 ECTS is roughly €4,920 — more than three times the recorded band. (2) Gate recorded as 'Portfolio only' — no portfolio requirement is published at all, nor any other gate. (3) The record does not flag that instruction is in CATALAN AND SPANISH, nor that the programme is aimed at humanities and history-of-art graduates rather than producers. Its 'Possible' rating is not sustainable for this candidate.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "The University of Edinburgh — Edinburgh College of Art (Reid School of Music)",
+  "programme": "MSc Sound Design",
+  "url": "https://study.ed.ac.uk/programmes/postgraduate-taught/51-sound-design",
+  "stillExists2027": "YES — live August 2026 with a published two-round admission cycle. Annual September intake (PRIOR CYCLE): Round 1 closes mid-December, Round 2 closes early May.",
+  "award": "REAL MASTER'S — MSc awarded directly by the University of Edinburgh, an ancient Russell Group university with its own degree-awarding powers. No validation chain.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'A UK 2:1 honours degree, or its international equivalent, in a relevant subject such as music, sound design, media arts, sound engineering, acoustics, film, animation, and art and design subjects.' Software engineering is not on that list, though 'acoustics' and 'sound engineering' sit adjacent to it. Edinburgh adds that it 'welcomes applicants without meeting academic requirements if they demonstrate relevant professional experience' — but he has no professional experience, so that fallback is shut and he must rely on the portfolio and on arguing adjacency."
+  },
+  "gate": {
+   "type": "PORTFOLIO — mandatory, no interview or audition",
+   "quote": "'Portfolio submission is mandatory. No interview, audition, or practical test is mentioned in the application requirements.'",
+   "isProductionTestNotAudition": "Not an audition, not a production test. A submitted portfolio of prior work, judged on paper."
+  },
+  "portfolioSpec": "CLEAR AND UNUSUALLY BROAD IN WHAT IT ACCEPTS: 'Your portfolio should include at least three pieces of work', which may be 'sound design examples for films, games, animations, essays on sound, or documentation of sound-based projects'. Delivery: 'Submit as a single PDF (maximum 4MB, or link if larger)', with 'Audio/video files... hosted online with links provided'. Note that ESSAYS ON SOUND and PROJECT DOCUMENTATION count as portfolio pieces — so a candidate with a strong writing and analysis background can partly compensate for a thin catalogue of finished audio, which is rare and worth exploiting.",
+  "costForTunisian": "APPROXIMATELY GBP 29,900 per year, the overseas rate for 2026-27. Note this figure comes from an aggregator rather than a successful read of Edinburgh's own registry pages and should be reconfirmed at https://registryservices.ed.ac.uk/tuition-fees/find/postgraduate-taught/2026-2027/taught-masters — but it is in the same band as York and UAL, i.e. roughly double the mid-range UK options.",
+  "funding": "WEAK — 'Only Edinburgh College of Art scholarships are mentioned; no international-specific scholarships are detailed'. Chevening is closed to him (two years' post-degree work experience required). At roughly GBP 29,900 with no named international award, this is an unfunded self-pay proposition.",
+  "deadline": "TWO-ROUND CYCLE, PRIOR CYCLE dates published: 'Round 1: Apply by Monday 15 December 2025' with a decision by 19 March 2026; Round 2 closes 4 May 2026; 'Applications may remain open after Round 2 if places are available'. For a September 2027 entry, expect Round 1 to close around 15 December 2026 and Round 2 around early May 2027. Applying in Round 1 matters at a competitive school.",
+  "languageAndCertificate": "English. 'IELTS Academic: total 6.5 with at least 6.0 in each component', and importantly 'Tests must be no more than two years old before your program start date' — so if he sits IELTS too early it will expire. For a September 2027 start he should not sit it before roughly September 2025, which is not a constraint in practice, but he must not sit it and then delay entry by a further year.",
+  "verdict": "AVOID",
+  "verdictWhy": "The portfolio brief is generous — three pieces, and written essays on sound count — but everything else works against him. His degree subject is not on the accepted list, the professional-experience fallback needs experience he does not have, the fee is around GBP 29,900, and no international scholarship is named while Chevening is closed to him. It is also sound design for screen rather than record production.",
+  "correction": "TWO corrections, the first severe. (1) COST BAND BADLY WRONG: recorded as 'Under EUR 1.5k/yr'. The overseas rate is approximately GBP 29,900 per year — around twenty times the recorded band, and among the three most expensive entries in the batch. Any shortlist built on that figure would be dangerously misleading. (2) The record does not note the two-round deadline structure (Round 1 mid-December, Round 2 early May) or the IELTS two-year validity rule, both of which affect his timing.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
  }
 ]
