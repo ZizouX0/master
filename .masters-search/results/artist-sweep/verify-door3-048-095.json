@@ -188,33 +188,6 @@
   "_source": "door3-verify"
  },
  {
-  "country": "Bulgaria",
-  "institution": "Софийски университет 'Св. Климент Охридски' / Sofia University 'St. Kliment Ohridski' — Факултет по науки за …",
-  "programme": "Аудиовизуален дизайн / Audiovisual Design — MA, in the specialty 'Музикални медийни технологии и тонрежисура' (Musical …",
-  "url": "https://www.uni-sofia.bg/index.php/bul/universitet_t/fakulteti/fakultet_po_nauki_za_obrazovanieto_i_izkustvata/specialnosti/magist_rski_programi/fakultet_po_nauki_za_obrazovanieto_i_izkustvata/muzikalni_medijni_tehnologii_i_tonrezhisura/audiovizualen_dizajn ; https://fnoi.uni-sofia.bg/?page_id=1284",
-  "stillExists2027": "YES — and importantly, in TWO versions: the Bulgarian 'Аудиовизуален дизайн' and a separate 'Audiovisual Design (in English)' listed on the ФНОИ master's index. This is the only English-taught sound-adjacent master in the Bulgarian set.",
-  "award": "Master's degree, '2 семестъра /1 година/', 'редовна (платено обучение)' — full-time, fee-paying, with professional qualification 'multimedia designer'. Graduates are placed as 'video editors in electronic media and specialists in the field of audiovisual processing; editors and audiovisual designers for broadcasted and electronic media'. Note what that is: broadcast video post-production, not record-making.",
-  "acceptsSoftwareEngineeringBachelor": {
-   "verdict": "NO",
-   "quote": "The ENGLISH-language version page states the programme is for 'people interested in current digital media technologies and who have a Bachelor's degree in the professional fields \"Pedagogy of musical education\" and \"Art of music and dance\"'. The Bulgarian page says the same: candidates must have completed a bachelor's in '1.3 Педагогика на обучението по музика' or '8.3 Музикално и танцово изкуство'. The English track does NOT relax the degree condition — it only changes the language."
-  },
-  "gate": {
-   "type": "DIPLOMA GRADE + ENGLISH CERTIFICATE + INTERVIEW ON A SUBMITTED MEDIA PROJECT",
-   "quote": "English version, verbatim: 'Applicants must have acquired a certificate / diploma for the level of their command of English, which needs to equal the language level of specialized secondary language school graduates at the least' and 'They must have graduated from a Bachelor's degree program with an average grade not less than \"good\" (B).' Bulgarian version: 'успех от дипломата за висше образование, не по-нисък от добър и събеседване', with candidates presenting 'реализиран медиен проект, самостоятелно разработен' in electronic format.",
-   "isProductionTestNotAudition": "NOT AN AUDITION and not an ear-training exam. It is a portfolio interview: one finished media project, defended. He could pass this assessment comfortably. He simply is not allowed to sit it."
-  },
-  "portfolioSpec": "One completed, independently developed media project ('реализиран медиен проект, самостоятелно разработен'), submitted in electronic format on a standard digital storage medium and discussed at interview. No count, duration or codec specified.",
-  "costForTunisian": "UNVERIFIED. The programme is explicitly 'платено обучение' (fee-paying) even for domestic students, and foreign-language delivery carries its own Article 95(8) schedule for non-EU nationals, held in PDFs that do not render on the university's international fees page. Do not assume a low figure because Bulgaria is cheap — the English-medium non-EU rate is a separate line.",
-  "funding": "UNVERIFIED — none published on either programme page. Contact the programme head, Assoc. Prof. Silvana Karagyozova (skkaraguoz@uni-sofia.bg), or the administrator Valentina Eduard (v.eduard@fppse.uni-sofia.bg).",
-  "deadline": "UNVERIFIED for 2027. PRIOR CYCLE: ФНОИ runs an annual 'Прием в ОКС Магистър' campaign over the summer.",
-  "languageAndCertificate": "ENGLISH VERSION EXISTS — 'Audiovisual Design (in English)'. Required proof is a certificate 'equal to the language level of specialized secondary language school graduates at the least', which is roughly B2 and softer than a named IELTS band; his working English plus an IELTS certificate would clear it. This is the one Bulgarian record where language is NOT the obstacle.",
-  "verdict": "AVOID",
-  "verdictWhy": "The English track is real and the assessment — one media project defended at interview — is one he could pass. But both the Bulgarian and the English pages restrict entry to graduates of two named music bachelor's fields, and he has neither. Even if he got in, the qualification is 'multimedia designer' aimed at broadcast video editing, which is not making records.",
-  "correction": "Two corrections. (1) The record's cost band 'Under EUR 1.5k/yr' is unsupported and almost certainly wrong for him: the programme is fee-paying even domestically, and non-EU nationals pay a separate Article 95(8) rate for foreign-language study. Recorded as UNVERIFIED rather than replaced, since no figure could be read — but the sub-1.5k assumption should not be relied on. (2) The record misses the two facts that decide it: an English-taught version exists (good), and entry is restricted to bachelors in professional fields 1.3 and 8.3 music (fatal).",
-  "verifiedAt": "2026-08",
-  "_source": "door3-verify"
- },
- {
   "country": "Czech Republic",
   "institution": "FAMU — Film and TV School of the Academy of Performing Arts in Prague (AMU)",
   "programme": "Zvuková tvorba (Sound Design) — navazující magisterský studijní program, code N0211A310015, Katedra zvukové tvorby (KZT)",
@@ -647,6 +620,33 @@
   "_source": "door3-verify"
  },
  {
+  "country": "Bulgaria",
+  "institution": "Софийски университет 'Св. Климент Охридски' / Sofia University 'St. Kliment Ohridski' — Факултет по науки за …",
+  "programme": "Аудиовизуален дизайн / Audiovisual Design — MA, in the specialty 'Музикални медийни технологии и тонрежисура' (Musical …",
+  "url": "https://www.uni-sofia.bg/index.php/bul/universitet_t/fakulteti/fakultet_po_nauki_za_obrazovanieto_i_izkustvata/specialnosti/magist_rski_programi/fakultet_po_nauki_za_obrazovanieto_i_izkustvata/muzikalni_medijni_tehnologii_i_tonrezhisura/audiovizualen_dizajn ; https://fnoi.uni-sofia.bg/?page_id=1284",
+  "stillExists2027": "YES — and importantly, in TWO versions: the Bulgarian 'Аудиовизуален дизайн' and a separate 'Audiovisual Design (in English)' listed on the ФНОИ master's index. This is the only English-taught sound-adjacent master in the Bulgarian set.",
+  "award": "Master's degree, '2 семестъра /1 година/', 'редовна (платено обучение)' — full-time, fee-paying, with professional qualification 'multimedia designer'. Graduates are placed as 'video editors in electronic media and specialists in the field of audiovisual processing; editors and audiovisual designers for broadcasted and electronic media'. Note what that is: broadcast video post-production, not record-making.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "The ENGLISH-language version page states the programme is for 'people interested in current digital media technologies and who have a Bachelor's degree in the professional fields \"Pedagogy of musical education\" and \"Art of music and dance\"'. The Bulgarian page says the same: candidates must have completed a bachelor's in '1.3 Педагогика на обучението по музика' or '8.3 Музикално и танцово изкуство'. The English track does NOT relax the degree condition — it only changes the language."
+  },
+  "gate": {
+   "type": "DIPLOMA GRADE + ENGLISH CERTIFICATE + INTERVIEW ON A SUBMITTED MEDIA PROJECT",
+   "quote": "English version, verbatim: 'Applicants must have acquired a certificate / diploma for the level of their command of English, which needs to equal the language level of specialized secondary language school graduates at the least' and 'They must have graduated from a Bachelor's degree program with an average grade not less than \"good\" (B).' Bulgarian version: 'успех от дипломата за висше образование, не по-нисък от добър и събеседване', with candidates presenting 'реализиран медиен проект, самостоятелно разработен' in electronic format.",
+   "isProductionTestNotAudition": "NOT AN AUDITION and not an ear-training exam. It is a portfolio interview: one finished media project, defended. He could pass this assessment comfortably. He simply is not allowed to sit it."
+  },
+  "portfolioSpec": "One completed, independently developed media project ('реализиран медиен проект, самостоятелно разработен'), submitted in electronic format on a standard digital storage medium and discussed at interview. No count, duration or codec specified.",
+  "costForTunisian": "UNVERIFIED. The programme is explicitly 'платено обучение' (fee-paying) even for domestic students, and foreign-language delivery carries its own Article 95(8) schedule for non-EU nationals, held in PDFs that do not render on the university's international fees page. Do not assume a low figure because Bulgaria is cheap — the English-medium non-EU rate is a separate line.",
+  "funding": "UNVERIFIED — none published on either programme page. Contact the programme head, Assoc. Prof. Silvana Karagyozova (skkaraguoz@uni-sofia.bg), or the administrator Valentina Eduard (v.eduard@fppse.uni-sofia.bg).",
+  "deadline": "UNVERIFIED for 2027. PRIOR CYCLE: ФНОИ runs an annual 'Прием в ОКС Магистър' campaign over the summer.",
+  "languageAndCertificate": "ENGLISH VERSION EXISTS — 'Audiovisual Design (in English)'. Required proof is a certificate 'equal to the language level of specialized secondary language school graduates at the least', which is roughly B2 and softer than a named IELTS band; his working English plus an IELTS certificate would clear it. This is the one Bulgarian record where language is NOT the obstacle.",
+  "verdict": "AVOID",
+  "verdictWhy": "The English track is real and the assessment — one media project defended at interview — is one he could pass. But both the Bulgarian and the English pages restrict entry to graduates of two named music bachelor's fields, and he has neither. Even if he got in, the qualification is 'multimedia designer' aimed at broadcast video editing, which is not making records.",
+  "correction": "Two corrections. (1) The record's cost band 'Under EUR 1.5k/yr' is unsupported and almost certainly wrong for him: the programme is fee-paying even domestically, and non-EU nationals pay a separate Article 95(8) rate for foreign-language study. Recorded as UNVERIFIED rather than replaced, since no figure could be read — but the sub-1.5k assumption should not be relied on. (2) The record misses the two facts that decide it: an English-taught version exists (good), and entry is restricted to bachelors in professional fields 1.3 and 8.3 music (fatal).",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
   "country": "France",
   "institution": "Conservatoire National Superieur de Musique et de Danse de Paris (CNSMDP)",
   "programme": "Formation Superieure aux Metiers du Son - FSMS (musician sound engineer, grade master)",
@@ -697,6 +697,599 @@
   "verdict": "AVOID",
   "verdictWhy": "Same programme, same closed prerequisite: only holders of a Bachelor of Music Musikübertragung or a Diplom-Tonmeister may sit the aptitude test, and German must be at C1.",
   "correction": "DUPLICATE of indices 66, 67, 68 and 88. Also corrects the cost band: at roughly EUR 290 per semester the annual cost is about EUR 580, so 'Under EUR 1.5k/yr' is true but loose — and the underlying fact is that NRW levies no tuition at all on non-EU students, which is a materially different thing from a low fee. Gate correction as before: portfolio plus colloquium at master level, with no ear test and no instrumental audition; the barrier is the prerequisite degree and German C1.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Serbia",
+  "institution": "Akademija umetnosti (Academy of Arts), Univerzitet u Novom Sadu",
+  "programme": "Master akademske studije MUZIČKA PRODUKCIJA (MAS Music Production) — Interdisciplinary Studies",
+  "url": "https://akademija.uns.ac.rs/wp-content/uploads/2026/06/Tekst-Konkursa-Master-Doktorske-2026.pdf ; https://akademija.uns.ac.rs/wp-content/uploads/2026/07/Informator-MAS-Muzicka-produkcija-2026-27.pdf",
+  "stillExists2027": "YES — DUPLICATE of index 60, but this record carries the better sources. Accredited 03.10.2023 per the Serbian National Accreditation Body register. The 2026/2027 konkurs lists Muzička produkcija under 'ИНТЕРДИСЦИПЛИНАРНЕ СТУДИЈЕ' with 2 budget and 8 self-financing places.",
+  "award": "Master akademske studije, 60 ECTS, one year: 'Мастер академске студије имају 60 ЕСПБ бодова што одговара периоду од једне школске године или два семестра студирања.' Accredited title: 'Мастер музички продуцент' — Master Music Producer.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "'Пријемни испит могу полагати лица која су завршила основне академске студије у четворогодишњем трајању (240 ЕСПБ)' — four-year, 240-ECTS undergraduate studies. The konkurs repeats this as a general rule: '...остваривши најмање 240 ЕСПБ бодова, односно 180 ЕСПБ за студијске програме Конзервација и рестаурација..., Заједнички мастер академски студијски програм Гитара/Извођачке уметности, Креирање сериј[ala]...' — the 180-ECTS concession is granted to three named programmes and Muzička produkcija is not one of them. No subject restriction, but a hard credit floor."
+  },
+  "gate": {
+   "type": "TWO-PART ENTRANCE EXAM INCLUDING A MULTI-DAY PRACTICAL PRODUCTION TEST",
+   "quote": "Part one (pass/fail): 'Тест из стручно уметничке области Музичка продукција'; 'Писана анализа - евалуација музичког дела на основу субјективних и објективних критеријума које предлаже испитна комисија'; 'Разговор са комисијом'. Those who pass 'приступају вишедневним вежбама и другом делу пријемног испита'. Part two (scored): 'Оцењивање предатих радова … до 30 бодова'; 'Практичан рад на материјалу Академије … до 20 бодова'; 'Провера знања из стручне уметничке области аудиовизуелних медија (разговор са комисијом) … до 30 бодова'. Fail below 50 points.",
+   "isProductionTestNotAudition": "PRODUCTION TEST, EMPHATICALLY NOT AN AUDITION. 'Практичан рад на материјалу Академије' — practical work on the Academy's own material, conducted over 'вишедневним вежбама' (multi-day exercises). Raw material in, production out: this is the job, not a barrier, and it is the second-clearest example of the pattern in the whole slice after Amsterdam's 24-track Pro Tools mix. There is no instrument, no singing, no solfeggio and no interval test anywhere in the process. The required 'ЛЕКАРСКО УВЕРЕЊЕ СА АУДИОГРАМОМ' is a medical hearing certificate from an ENT, not a musicianship exam."
+  },
+  "portfolioSpec": "'Портфолио радова насталих у претходне 3 године од датума пријемног испита' — works made in the three years before the exam. Submission is tightly constrained: electronic only, PDF documents, one email per candidate to aunsprijemni.dramski@uns.ac.rs, total attachments not exceeding 12 MB, photo minimum 1200x800 px in JPG under 1 MB, every filename containing the candidate's full name. Plus diploma/certificate of a four-year bachelor, CV, motivation letter, medical certificate with audiogram, ID scan, photo and proof of application-fee payment.",
+  "costForTunisian": "EUR 1,800 per year — 'Школарина за странце (евра) 1800', beside a domestic self-financing rate of '125.000,00 динара'. Since the degree is 60 ECTS / one year, EUR 1,800 is the whole tuition bill. Plus '12.000,00 дин.' entrance-exam fee, '5.500,00 дин.' enrolment, and University of Novi Sad foreign-diploma recognition at 30,000 RSD (~EUR 260) plus 14,900 RSD. Cheapest fee-charging option in the slice by a wide margin.",
+  "funding": "UNVERIFIED — none published for foreign nationals. At EUR 1,800 total, living costs dominate.",
+  "deadline": "PRIOR CYCLE, autumn round of 2026/27: electronic application by 21.10.2026, entrance exam 23.10–28.10.2026 (six days, in person in Novi Sad), preliminary rank list 30.10.2026, final list 03.11.2026, enrolment 03.11.2026.",
+  "languageAndCertificate": "SERBIAN — the hard stop. Konkurs, section 9 'Упис страних држављана': foreign nationals may enrol 'под истим условима као и домаћи држављанин' but must additionally file 'решење о извршеном признавању стране дипломе', 'доказ о здравственом осигурању' and 'ДОКАЗ О ПОЗНАВАЊУ СРПСКОГ ЈЕЗИКА'. The written analysis and both commission interviews run in Serbian.",
+  "verdict": "AVOID",
+  "verdictWhy": "A one-year Master Music Producer degree for EUR 1,800, gated by an entrance exam whose scored centre is producing on supplied raw material — the ideal shape for him — and closed anyway by two conditions: documented proof of Serbian, and a 240-ECTS four-year bachelor that a three-year licence would not meet.",
+  "correction": "DUPLICATE of index 60; merge. The cost band 'EUR 1.5k-5k/yr' is correct but imprecise — the exact figure is EUR 1,800 for the entire degree, since it is one year, not per-year-times-two. Corrects the gate 'Portfolio + exam/interview' by naming the PRACTICAL PRODUCTION TEST at its centre and confirming there is no audition and no ear-training exam. Adds the decisive missing condition: documented proof of Serbian language for foreign nationals.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Bulgaria",
+  "institution": "АМТИИ „Проф. Асен Диамандиев“ – Пловдив jointly with Национална музикална академия „Проф. Панчо Владигеров“ –…",
+  "programme": "Музикално продуцентство (Music Production), магистър — joint AMTII Plovdiv / NMA Sofia — NOT OFFERED FOR 2026/2027",
+  "url": "https://artacademyplovdiv.com/specialnosti/MP.html",
+  "stillExists2027": "AMBIGUOUS, AND IT DOES NOT MATTER. The AMTII specialty page is still live and describes the programme as running: 'Междууниверситетска магистърска програма, съвместно с Национална музикална академия' — an inter-university master's jointly with the National Music Academy. But the page 'contains no explicit information regarding programme continuation or scheduling' for 2026/2027, and the record's finding that it is absent from both institutions' 2026/2027 handbooks stands unchallenged. Either way, the entry rule below closes it.",
+  "award": "One year of full-time study conferring 'Master - музикален продуцент' (Music Producer). A genuine one-year second cycle if it runs.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "Entry is a closed list of six named bachelor specialisations. From NMA Sofia's Theoretical-Compositional and Conducting Faculty: Sound Engineering, Choral Conducting, Composition, Opera-Symphonic Conducting. From AMTII Plovdiv's Music Pedagogy Faculty: Conducting (choral and orchestral), Composition, Sound Direction. A BSc in software engineering is not on the list, and the list admits no discretion."
+  },
+  "gate": {
+   "type": "SINGLE-STAGE INTERVIEW",
+   "quote": "'Single-stage examination consisting of a candidate interview on four specified topics (music industry development, music labels, technology, copyright law).' Applications are lodged with NMA Sofia.",
+   "isProductionTestNotAudition": "NEITHER — no audition, no ear test, no production task. Just a conversation about the music business. Ironically the softest assessment in the entire Bulgarian set, sitting behind the tightest entry list."
+  },
+  "portfolioSpec": "NONE — no portfolio is required. The gate is an interview on four business topics.",
+  "costForTunisian": "UNVERIFIED. The record's band 'EUR 5k-15k/yr' is consistent with the known NMA Sofia non-EU rate of EUR 8,500/yr, which is the likely applicable figure since applications are lodged with NMA. But nothing is published for this programme specifically, and if it is not running the question is moot.",
+  "funding": "UNVERIFIED — none published.",
+  "deadline": "UNVERIFIED — no dates published; the programme is absent from the 2026/2027 handbooks of both partner institutions.",
+  "languageAndCertificate": "BULGARIAN — both partners are Bulgarian-medium conservatoires and nothing suggests an English track.",
+  "verdict": "AVOID",
+  "verdictWhy": "Entry is a closed list of six conservatoire bachelor specialisations, none of which he can hold, and the programme is missing from both partner institutions' 2026/2027 handbooks. Taught in Bulgarian on top of that.",
+  "correction": "Refines rather than overturns the record's negative finding: the AMTII specialty page is still live and still describes the programme as an active inter-university master's with NMA Sofia, so 'NOT OFFERED' should be softened to 'absent from both 2026/2027 handbooks; specialty page still live and not withdrawn'. Adds the fact that settles it independently of whether it runs — entry is restricted to six named conservatoire bachelor specialisations. Also corrects the gate: 'Exam/interview only' is right but underspecified — it is a single interview on four business topics, with no portfolio, no audition and no production task at all.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Denmark",
+  "institution": "The Royal Danish Academy of Music (Det Kongelige Danske Musikkonservatorium, DKDM / RDAM)",
+  "programme": "Master of Music (MMus) in Tonmeister / Sound Engineer (Tonemester)",
+  "url": "https://www.dkdm.dk/en/entrance-examinations-tonmeister ; https://www.dkdm.dk/en/prerequisites-admission ; https://www.dkdm.dk/en/tuition-fee-non-eueea-applicants ; https://www.dkdm.dk/en/how-apply-non-eueea-applicants",
+  "stillExists2027": "YES, AND THE 2027 CYCLE IS ALREADY OPEN. Verbatim: 'The new application deadline for non-EU applicants is 1 December 2026 for autumn 2027 intake.' This is the only record in the slice with a published, currently-live deadline for exactly his target intake — and it falls roughly four months from now.",
+  "award": "Master of Music (MMus) as Tonmeister / Sound Engineer, qualifying graduates for 'employment in music production and sound engineering, e.g. in broadcasting services, concert halls, sound studios and record companies'. A genuine second cycle.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "The qualifying education is a closed list, quoted verbatim from the prerequisites page: 'Bachelor of Music as tonemeister from RDAM', 'Bachelor of Music as tonemeister or equivalent from another Danish music academy', 'Bachelor of Music as tonemeister from an institution of higher education abroad at a level equivalent to RDAM'. The general regulations add: 'A passed entrance examination AND a passed bachelor education … are the prerequisites for admission to the Master's programme' — the exam alone is never enough. A BSc in software engineering does not qualify."
+  },
+  "gate": {
+   "type": "SUBMITTED PORTFOLIO + 20-MINUTE DISCUSSION — NO LIVE EXAM AT ALL",
+   "quote": "The submission is 'two examples of their own musical productions – one in the rhythmic genre (e.g. pop/rock/jazz) and one in the classical genre. Each of the examples must be at least 7 minutes'. Non-EU/EEA applicants must also submit 'a production plan' detailing 'the recording's timeline, equipment, participants, and musical context'. The exam is 'a 20-minute discussion about the submitted Works' with questions on 'technical and musical standpoint', 30 minutes total including assessment. Note also: master's applicants normally submit 'a set task recording (EXCEPT composers and tonmeisters)' — tonmeisters are exempt from the set task.",
+   "isProductionTestNotAudition": "NEITHER — and this is a genuine surprise worth recording. For a Tonmeister degree, DKDM runs NO ear-training test, NO instrumental audition, NO music-theory paper and not even a set practical task: 'There is no live entrance exams for Bachelor's and Master's programmes.' The whole assessment is two submitted productions and a conversation about them. If he could satisfy the entry degree, this is a gate he could pass. One soft signal to note: applicants are asked to 'describe their piano experience in their application' — declared, not tested."
+  },
+  "portfolioSpec": "The most precisely specified and most demanding portfolio in the slice: TWO of the applicant's own musical productions, ONE rhythmic (pop/rock/jazz) and ONE CLASSICAL, each AT LEAST SEVEN MINUTES, plus — for non-EU/EEA applicants only — a written production plan covering timeline, equipment, participants and musical context. The classical requirement is the hard half: it means booking and recording acoustic classical players, which is a different craft and a different budget from making tracks in a bedroom.",
+  "costForTunisian": "Expensive and confirmed non-EU. The tuition page states plainly 'There are no tuition fees for students with a citizenship in an EU country' and then lists 2026-2027 annual rates by programme — master's examples given are 'Orchestral Instrument: 13.700 EUR' and 'Piano: 13.600 EUR', with the overall published range across programmes running from 'Instrumentalist (2 years): 9.100 EUR' to 'Orchestra conductor (3-4 years): 17.900 EUR'. Fees are charged 'per academic year (two semesters)' and 'split into two installments due June and September', and 'may be subject to an annual increase'. The Tonmeister-specific figure is not in the extract and is UNVERIFIED, but it sits inside that band — so budget roughly EUR 11,000–14,000 per year, EUR 22,000–28,000 for the degree. Plus a 500 DKK application fee.",
+  "funding": "UNVERIFIED — the tuition page 'does not mention scholarships'; it references possible statutory exemptions under Danish law via a linked PDF and directs enquiries to admission@dkdm.dk. Denmark has no broad scholarship scheme for non-EEA arts students.",
+  "deadline": "1 DECEMBER 2026 for the autumn 2027 intake (non-EU applicants). Applications go through the Studieoptag portal with a 500 DKK fee. Applicants 'may be asked to participate in a short, mandatory online interview and language screening'.",
+  "languageAndCertificate": "Effectively ENGLISH for this programme — the general regulations require Danish only for 'the Master's in Aural Training', where applicants must be 'proficient in Danish orally as well as written'. No Danish requirement is stated for Tonmeister, and DKDM runs a full English-language non-EU admissions track. A specific English test level is not published; expect the online 'language screening'.",
+  "verdict": "AVOID",
+  "verdictWhy": "The assessment is one he could genuinely pass — two submitted productions and a twenty-minute conversation, with no live exam of any kind — but entry is restricted by regulation to holders of a Bachelor of Music as tonemeister, which he does not and cannot have. Add roughly EUR 11,000–14,000 a year and it is closed twice over.",
+  "correction": "Two significant corrections. (1) The record's gate 'Exam/interview only' misses that DKDM runs NO LIVE ENTRANCE EXAM AT ALL for master's — no ear test, no audition, no set task for tonmeisters. The gate is two submitted productions (one rhythmic, one classical, each at least 7 minutes) plus a production plan for non-EU applicants and a 20-minute discussion. Contrary to the Tonmeister stereotype, the assessment is not what closes this door. (2) The record omits the closed prerequisite that does close it — 'Bachelor of Music as tonemeister' — and omits the live 2027 deadline: 1 December 2026 for the autumn 2027 intake, which is the single most time-critical date found in this slice.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Netherlands",
+  "institution": "Conservatorium van Amsterdam (Amsterdam University of the Arts / AHK)",
+  "programme": "Master in Immersive Audio (Focus Master within Master of Music)",
+  "url": "https://www.conservatoriumvanamsterdam.nl/en/study/focus-masters/immersive-audio/ ; https://www.ahk.nl/en/study/during-your-study-programme/student-affairs/financial-matters/tuition-fees/",
+  "stillExists2027": "YES — a new programme, announced March 2025 and running since; 'Master of Music (MMus)', '2 years, full-time'. Enrolment deadline for the most recent cohort was 1 March 2026; expect the same 1 March pattern for 2027.",
+  "award": "'Master of Music (MMus)' in Immersive Audio, two years full time, a Focus Master within the CvA Master of Music. Students 'specialise in either composing or production in the final year'. A genuine second cycle.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "'a bachelor's degree (BA) in Music or a closely related field', with an alternative route for holders of 'degrees in sound engineering or music technology (e.g., Abbey Road Institute, SAE, or equivalent)'. Then the clause that ends it: 'Significant experience in audio engineering at a professional level', plus proficiency with 'Pro Tools (or main DAW), Ableton, or other industry-standard digital audio workstations'. He has no music degree, no audio degree and — decisively — no professional audio experience at all. This programme is aimed at working engineers upgrading into spatial audio."
+  },
+  "gate": {
+   "type": "PORTFOLIO + INTERVIEW + LIVE PRACTICAL MIX TEST",
+   "quote": "Three stages: 'portfolio submission (motivation letter, CV, and audio recordings)', then a '10-minute interview', then a practical test where candidates 'create in 10 minutes an on-the-spot stereo mix of a pre-recorded 24-track session in Pro Tools'. 'No ear test is mentioned.'",
+   "isProductionTestNotAudition": "THIS IS THE PUREST PRODUCTION TEST IN THE ENTIRE SLICE, AND IT MUST NOT BE CALLED AN AUDITION. They hand you a 24-track Pro Tools session and give you ten minutes to mix it. That is literally the job. There is no ear-training exam, no instrument and no singing anywhere in the process. Anyone who has actually mixed records can do this; it filters for craft, not for conservatoire background. The barrier at CvA is the entry requirement of professional experience, not the test."
+  },
+  "portfolioSpec": "'motivation letter, CV, and audio recordings' — no number of tracks, no duration and no format published on the page. Given the professional-experience requirement, the recordings are expected to be professional credits rather than personal projects.",
+  "costForTunisian": "Non-EEA institutional fee, AHK, 2026/2027: EUR 8,250 per year for CvA master's programmes, against a statutory (EEA) fee of EUR 2,694 — AHK states plainly that institutional fees apply to 'students from outside the EEA' because 'the Dutch government does not fund the education of the above-mentioned group of students'. Two significant trends: the rate rose from EUR 7,375 in 2025/2026 to EUR 8,250 in 2026/2027, and AHK has said institutional fees are 'gradually increasing to a minimum of EUR 10,000 over a period of four years'. For a 2027 start budget around EUR 9,000+ per year, roughly EUR 18,000–20,000 for the two years.",
+  "funding": "UNVERIFIED — none published on the programme page. The Holland Scholarship and AHK-specific awards would need separate, earlier applications.",
+  "deadline": "PRIOR CYCLE: '1 March 2026' for the most recent cohort. Expect 1 March 2027 for a September 2027 start.",
+  "languageAndCertificate": "ENGLISH — 'Language of Instruction: English'. Language is not the obstacle here; the Netherlands is one of the few places in this slice where an English-taught sound master genuinely exists.",
+  "verdict": "AVOID",
+  "verdictWhy": "Entry demands a music or audio bachelor AND 'significant experience in audio engineering at a professional level'. He has neither, and no amount of portfolio building in twelve months manufactures a professional track record. The ten-minute Pro Tools mix test would be fair to him; the eligibility bar is not.",
+  "correction": "Corrects the gate label 'Portfolio + exam/interview' with the specific and important truth: the third stage is a LIVE PRODUCTION TEST — 'create in 10 minutes an on-the-spot stereo mix of a pre-recorded 24-track session in Pro Tools' — and explicitly NOT an ear test or an audition. This is the model case of the distinction the sweep is meant to draw. Also fills 'cost: Not published' with EUR 8,250/yr non-EEA for 2026/27 (rising toward a stated EUR 10,000 minimum), and adds the entry clause the record omits and which actually closes the door: 'Significant experience in audio engineering at a professional level'.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Netherlands",
+  "institution": "Conservatorium van Amsterdam (Amsterdam University of the Arts, AHK)",
+  "programme": "Master Immersive Audio (Focus Master)",
+  "url": "https://www.conservatoriumvanamsterdam.nl/en/study/interdisciplinary-masters-programmes/immersive-audio/ ; https://www.conservatoriumvanamsterdam.nl/en/study/focus-masters/immersive-audio/",
+  "stillExists2027": "YES — DUPLICATE of index 77. The same Focus Master appears under two CvA URL paths (focus-masters and interdisciplinary-programmes); it is one programme.",
+  "award": "'Master of Music (MMus)' in Immersive Audio, two years full time, with specialisation in composing or production in the final year.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "'a bachelor's degree (BA) in Music or a closely related field' or 'degrees in sound engineering or music technology (e.g., Abbey Road Institute, SAE, or equivalent)', PLUS 'Significant experience in audio engineering at a professional level'. He satisfies none of these."
+  },
+  "gate": {
+   "type": "PORTFOLIO + INTERVIEW + LIVE PRACTICAL MIX TEST",
+   "quote": "'portfolio submission (motivation letter, CV, and audio recordings)'; a '10-minute interview'; and a practical test to 'create in 10 minutes an on-the-spot stereo mix of a pre-recorded 24-track session in Pro Tools'.",
+   "isProductionTestNotAudition": "A PRODUCTION TEST, NOT AN AUDITION. Ten minutes, a 24-track session, make a mix. No ear-training exam, no instrument, no performance. Record it as the benchmark example of the good kind of gate."
+  },
+  "portfolioSpec": "Motivation letter, CV and audio recordings; count, length and format not published.",
+  "costForTunisian": "EUR 8,250 per year for 2026/2027 (non-EEA institutional fee, AHK master's at CvA), versus a EUR 2,694 statutory fee for EEA students; the rate has risen year on year (EUR 7,375 in 2025/2026) and AHK has signalled a move to a minimum of EUR 10,000. Budget around EUR 9,000+ per year for a 2027 start.",
+  "funding": "UNVERIFIED — none published.",
+  "deadline": "PRIOR CYCLE: 1 March 2026 for the most recent cohort; expect 1 March 2027.",
+  "languageAndCertificate": "ENGLISH.",
+  "verdict": "AVOID",
+  "verdictWhy": "Same programme as index 77 and the same answer: the ten-minute Pro Tools mix test is exactly the kind of gate he should want, but eligibility requires a music or audio bachelor plus significant professional audio experience, and he has neither.",
+  "correction": "DUPLICATE of index 77 — one programme catalogued under two CvA URL paths; merge. Same corrections: the third admission stage is a live production test (10-minute stereo mix of a 24-track Pro Tools session), not an audition and not an ear test; the fee is EUR 8,250/yr non-EEA for 2026/27; and the entry bar the record omits is 'Significant experience in audio engineering at a professional level'.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Spain",
+  "institution": "CEV Escuela Superior de Comunicacion, Imagen y Sonido (Madrid)",
+  "programme": "Master en Produccion Musical",
+  "url": "https://www.cev.com/master-en-produccion-musical/ ; https://www.educaweb.com/curso/master-produccion-musical-370246/",
+  "stillExists2027": "YES — the CEV page shows 'INSCRIPCIONES ABIERTAS' (enrolment open) August 2026. No start date is published; CEV runs annual October intakes.",
+  "award": "NOT AN OFFICIAL MASTER'S DEGREE. CEV is a 'centro privado' and its own page never claims a título oficial or a título universitario; the qualification is a título propio — a private school certificate. This matters for him twice over: a título propio does not carry the grade de máster in the Spanish system, and, critically, it is far harder to base a Spanish student visa on a non-official private course than on an official master. Modules are 'Industria Musical y Música para Audiovisuales', 'Major Project: Production', 'Tecnología Musical', 'Técnicas Avanzadas de Grabación en Estudio', 'Lenguaje Musical y Técnicas Creativas'.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "YES",
+   "quote": "'El máster … requiere haber superado anteriormente un Técnico Superior, el HND o tener conocimientos, estudios o experiencia previa demostrable en el ámbito de la música. Además, el acceso es flexible y personalizado a tu perfil.' No university degree at all is required — the entry route is a Spanish vocational Técnico Superior, a BTEC HND, or simply demonstrable prior knowledge, study or experience in music. His BSc exceeds what is asked academically; what he lacks is the 'experiencia previa demostrable en el ámbito de la música', which a twelve-month portfolio would supply."
+  },
+  "gate": {
+   "type": "NO FORMAL TEST — flexible personalised admission",
+   "quote": "'el acceso es flexible y personalizado a tu perfil, ya que lo principal es garantizar un desarrollo profesional y un correcto seguimiento del curso.' No portfolio specification, no entrance exam, no audition and no interview format is published.",
+   "isProductionTestNotAudition": "NEITHER. There is no audition, no ear test and no production test. This is the least gated programme in the slice — and that is a warning sign about what the qualification is worth, not a recommendation."
+  },
+  "portfolioSpec": "NONE PUBLISHED. The record's 'Portfolio only' is unsupported; nothing on CEV's page or the Educaweb listing specifies a portfolio.",
+  "costForTunisian": "EUR 7,245 — quoted as '7.245 €' on the Educaweb listing, 'Presencial' at C/ Gaztambide 65, 28015 Madrid. CEV is private, so there is no EU/non-EU distinction: a Tunisian pays the same EUR 7,245. Duration is not published, so whether that is a one-year or a longer figure is UNVERIFIED. The Spanish public-university non-EU rules are irrelevant here.",
+  "funding": "CEV states students 'puede solicitar ayudas del Ministerio de Educación, la Comunidad de Madrid, y acceder a becas de progresión y excelencia académica exclusivas para estudiantes de CEV'. The Ministerio and Comunidad de Madrid aids are Spanish state grants that in practice require Spanish residency or a título oficial, so a non-EU student on a título propio is very unlikely to qualify. The internal CEV progression/excellence scholarships are the only realistic route and no amounts or deadlines are published. Treat as UNVERIFIED and assume nothing.",
+  "deadline": "UNVERIFIED — no application deadline published; enrolment is described simply as open.",
+  "languageAndCertificate": "SPANISH. The site is Spanish-only, teaching is in Madrid by 'profesionales en activo', and no English track is advertised. He has no Spanish. No language certificate requirement is published, but that is because the course does not expect foreign applicants.",
+  "verdict": "AVOID",
+  "verdictWhy": "This is a private school certificate, not an official Spanish master's, which makes it both academically weightless and awkward as a basis for a student visa. It costs EUR 7,245, is taught in Spanish, and has no meaningful funding open to a non-EU student. The open-door admission is not an advantage here — it is what a EUR 7,245 unaccredited course looks like.",
+  "correction": "TWO CORRECTIONS. (1) The record treats this as a master's; it is a título propio from a private centre, with no claim to official Spanish master's status anywhere on CEV's own pages. (2) The gate 'Portfolio only' is unsupported — no portfolio is specified; admission is described as 'flexible y personalizado'. Fills the cost as EUR 7,245 (same for a Tunisian as for a Spaniard, since the school is private), and adds the missing decisive fact: instruction is in Spanish.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Sweden",
+  "institution": "SKH — Stockholm University of the Arts (Stockholms konstnärliga högskola)",
+  "programme": "Master's Programme in Film and Media — Film Sound Design",
+  "url": "https://www.skh.se/english/courses/master-programmes/master-s-programme-in-film-and-media-film-sound-design",
+  "stillExists2027": "YES, AND THERE IS A 2027 INTAKE. The Swedish page states 'Planerad start höstterminen 2027' (planned start autumn term 2027) with an application period 'Planerad 1 december 2026-15 januari 2027'. SKH runs this programme on a cycle, so the autumn 2027 start is the next one after the cohort currently running '1 September 2025–6 June 2027'.",
+  "award": "'Masterprogram i film och media med inriktning filmljuddesign' — a second-cycle master's degree, 120 credits, 'two years of full-time studies at second cycle level'.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "Entry requires 'an artistic bachelor's degree or equivalent relevant bachelor's degree', plus '15 credits and a thesis from a relevant film and media bachelor programme', plus 'Swedish language courses (1, 2, 3) and English 6', plus a mandatory 'behörighetsprov' (competency assessment) 'demonstrating artistic ability in the chosen specialization'. A BSc in software engineering satisfies none of the film-and-media credit requirements, and the Swedish upper-secondary language courses are a separate hard bar."
+  },
+  "gate": {
+   "type": "BEHÖRIGHETSPROV — work samples, written materials and committee review",
+   "quote": "'A selection committee of teachers at the institution reviews artistic qualifications. Applicants must submit a motivation letter, CV, artistic research question, WORK SAMPLES (TWO 4-5 MINUTE CLIPS), process description, and a signed statement from a collaborator confirming their role.'",
+   "isProductionTestNotAudition": "NOT AN AUDITION and not an ear test — it is a submitted work-sample assessment, exactly the kind of gate he could in principle prepare for. The blockers here are the entry credits and the Swedish language courses, not the artistic test. Note the unusual requirement of 'a signed statement from a collaborator confirming their role', which means solo bedroom work will not satisfy it: they want proof he worked on someone else's film."
+  },
+  "portfolioSpec": "Precisely specified: TWO work-sample clips of FOUR TO FIVE MINUTES each, submitted with a motivation letter, CV, an 'artistic research question', a process description, and a signed statement from a collaborator confirming the applicant's role on the work. Short, but it must be verifiable collaborative film work.",
+  "costForTunisian": "SEK 370,500 PER SEMESTER and SEK 1,482,000 FOR THE WHOLE PROGRAMME — roughly EUR 32,000 per semester and EUR 130,000 in total at August 2026 rates. This is the most expensive item found anywhere in this slice by an enormous margin. Sweden charges no tuition to EU/EEA citizens; Tunisia is neither, so the full fee applies with no reduction.",
+  "funding": "UNVERIFIED — nothing published on the programme page. The Swedish Institute Scholarships for Global Professionals is the standard route for non-EU students in Sweden, but it is a separate, much earlier and extremely competitive application, and it requires relevant work experience he does not have. At SEK 1.48 million nothing short of a full award would matter.",
+  "deadline": "PUBLISHED FOR THE 2027 CYCLE: 'Planerad 1 december 2026-15 januari 2027'. That is a live, imminent window — roughly four to five months from now.",
+  "languageAndCertificate": "SWEDISH ONLY, stated twice and unambiguously: 'Please note! The language of instruction for this programme is Swedish' and 'Huvudsakligt undervisningsspråk: Svenska'. Entry additionally requires Swedish upper-secondary courses 'Swedish 1, 2, 3' plus 'English 6'. He has no Swedish.",
+  "verdict": "AVOID",
+  "verdictWhy": "Taught entirely in Swedish, with Swedish 1–3 as a formal entry requirement, and it costs SEK 1,482,000 — about EUR 130,000 — for the two years. Either fact alone would close it. The work-sample gate is fair, but he will never reach it.",
+  "correction": "THE COST BAND IS CATASTROPHICALLY WRONG AND THIS IS THE BIGGEST CORRECTION IN THE SLICE. The record says 'Over EUR 15k/yr'. The published figure is 'SEK 370 500 per termin och 1 482 000 SEK för hela programmet' — about EUR 65,000 per year and EUR 130,000 in total, four times the band's implied ceiling. Also adds: the language of instruction is Swedish only with Swedish 1–3 required for eligibility; there IS a confirmed autumn 2027 intake with a 1 December 2026 – 15 January 2027 application window; and the gate is a work-sample behörighetsprov of two 4–5 minute clips, not the 'exam/interview' the record implies.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Sweden",
+  "institution": "SKH — Stockholm University of the Arts (Stockholms konstnärliga högskola)",
+  "programme": "Masterprogram i film och media — Filmljuddesign (Master's Programme in Film and Media — Film Sound Design)",
+  "url": "https://www.skh.se/utbildningar/magister-masterprogram/filmljuddesign%20-%20program",
+  "stillExists2027": "YES — DUPLICATE of index 80 (Swedish-language page of the same programme). 'Planerad start höstterminen 2027', application 'Planerad 1 december 2026-15 januari 2027'.",
+  "award": "'Masterprogram i film och media med inriktning filmljuddesign', 120 hp, two years full time, second cycle.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "Requires 'konstnärlig kandidatexamen eller motsvarande relevant kandidatexamen' (artistic bachelor's or equivalent relevant bachelor's) plus 15 credits and a thesis from a relevant film and media bachelor programme, plus 'Svenska 1, 2, 3' and 'Engelska 6', plus a mandatory behörighetsprov of artistic ability."
+  },
+  "gate": {
+   "type": "BEHÖRIGHETSPROV — submitted work samples reviewed by a teacher committee",
+   "quote": "Submission comprises a motivation letter, CV, an artistic research question, 'work samples (two 4-5 minute clips)', a process description, and a signed statement from a collaborator confirming the applicant's role.",
+   "isProductionTestNotAudition": "A WORK-SAMPLE ASSESSMENT, not an audition and not an ear test. The record's label 'AUDITION — hardest for you' is wrong: nothing is performed. What is hard here is the Swedish-language entry requirement and the requirement that the work be verifiable collaborative film sound."
+  },
+  "portfolioSpec": "Two clips of 4–5 minutes each, plus motivation letter, CV, artistic research question, process description, and a collaborator's signed confirmation of role.",
+  "costForTunisian": "'370 500 SEK per termin och 1 482 000 SEK för hela programmet' — approximately EUR 32,000 per semester, EUR 130,000 for the degree. No EU/EEA exemption applies to a Tunisian national.",
+  "funding": "UNVERIFIED — none published. Swedish Institute scholarships are separate, earlier and require work experience he lacks.",
+  "deadline": "1 December 2026 – 15 January 2027 (planned) for an autumn 2027 start.",
+  "languageAndCertificate": "SWEDISH — 'Huvudsakligt undervisningsspråk: Svenska', with Svenska 1, 2, 3 and Engelska 6 required for eligibility.",
+  "verdict": "AVOID",
+  "verdictWhy": "Same programme as index 80: Swedish-only teaching with Swedish 1–3 as an entry condition, and a total fee of about EUR 130,000 for a non-EEA student. Unreachable on both counts.",
+  "correction": "DUPLICATE of index 80 — the Swedish and English pages of one programme, catalogued twice; merge. Corrects the gate label 'AUDITION — hardest for you': there is NO audition. The assessment is a submitted behörighetsprov of two 4–5 minute work-sample clips plus written materials, reviewed by a committee. And repeats the cost correction: 'Over EUR 15k/yr' understates SEK 1,482,000 (~EUR 130,000 total) by roughly a factor of four.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Belgium",
+  "institution": "LUCA School of Arts (KU Leuven association)",
+  "programme": "Master in Music (Lemmens campus, Leuven) and Educatieve Master in muziek en podiumkunsten; Advanced Master in Music",
+  "url": "https://www.luca-arts.be/nl/opleidingen/muziek ; https://www.luca-arts.be/en/advanced-master-in-music",
+  "stillExists2027": "YES for the music masters, but NOT what the sweep is looking for. LUCA Lemmens offers at master level (2 years, 120 credits): 'Compositie', 'Instrument/Zang', 'Muziektherapie' and the 'Educatieve Master in muziek en podiumkunsten'. The Advanced Master in Music page returned HTTP 403 and is UNVERIFIED.",
+  "award": "Master of Music in Composition, Instrument/Voice or Music Therapy, or an Educational Master — all classical-conservatoire awards. NOTE on the Advanced Master: by definition in the Flemish system a 'Master-na-master' is a POST-master programme requiring an existing master's degree, so even if it were reachable it would not be a first second-cycle degree for him.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "There is no music production, sound engineering or studio-craft master at LUCA to accept him into: 'No, there is no master programme specifically in music production, sound engineering, or studio craft listed.' The masters that exist are performance, composition, therapy and teaching — all requiring conservatoire-level musicianship."
+  },
+  "gate": {
+   "type": "CONSERVATOIRE ADMISSION (toelatingsproef) — not published on the overview page",
+   "quote": "The overview page 'does not provide information about toelatingsproef (entrance examination) requirements'. But every programme listed is a performance, composition or therapy master, and Flemish conservatoire masters admit on an artistic entrance test in the principal subject.",
+   "isProductionTestNotAudition": "For Instrument/Zang this would be a straightforward PERFORMANCE AUDITION — the hardest gate shape for him. Not applicable in any useful sense, since no production programme exists."
+  },
+  "portfolioSpec": "N/A — no production master exists.",
+  "costForTunisian": "EUR 9,824 per year (the LUCA non-EEA rate carried in the brief). Flemish institutions set their own institutional rate for non-EEA students well above the statutory Flemish tuition, so a Tunisian pays this regardless of programme.",
+  "funding": "UNVERIFIED — none published.",
+  "deadline": "UNVERIFIED — none published on the overview page.",
+  "languageAndCertificate": "DUTCH for almost everything: 'Most programmes are taught in Dutch (Nederlands).' The single exception is the Composition master, offered in 'Engels, Nederlands' — that is the only English-accessible music master at LUCA, and it is a composition degree requiring a composition portfolio and conservatoire training, not a production degree.",
+  "verdict": "AVOID",
+  "verdictWhy": "LUCA has no master in music production, sound engineering or studio craft at all — only Composition, Instrument/Voice, Music Therapy and the Educational Master, and all but Composition are Dutch-only. At EUR 9,824 a year for a non-EEA student, there is nothing here worth pursuing.",
+  "correction": "Corrects the record's premise. LUCA's music master offer is Compositie, Instrument/Zang, Muziektherapie and the Educatieve Master — NO music production or sound master exists, which the record's programme title implies without stating. Adds two facts it lacks: almost all teaching is in Dutch, with only the Composition master offered bilingually in 'Engels, Nederlands'; and an 'Advanced Master' in the Flemish system is a master-na-master requiring an existing master's degree, so it could never be his entry route. Fills 'cost: Not published' with the EUR 9,824/yr non-EEA rate. The Advanced Master page itself returned HTTP 403 — UNVERIFIED.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Bulgaria",
+  "institution": "Sofia University 'St. Kliment Ohridski' — Faculty of Educational Sciences and Arts (ФНОИ)",
+  "programme": "Аудиовизуален дизайн (Audiovisual Design) — MA, within the 'Музикални медийни технологии и тонрежисура' specialty",
+  "url": "https://www.uni-sofia.bg/index.php/bul/universitet_t/fakulteti/fakultet_po_nauki_za_obrazovanieto_i_izkustvata/specialnosti/magist_rski_programi/fakultet_po_nauki_za_obrazovanieto_i_izkustvata/muzikalni_medijni_tehnologii_i_tonrezhisura/audiovizualen_dizajn ; https://fnoi.uni-sofia.bg/?page_id=1284",
+  "stillExists2027": "YES — DUPLICATE of index 71, the same ФНОИ programme catalogued twice under different institution strings. Both the Bulgarian 'Аудиовизуален дизайн' and the separate 'Audiovisual Design (in English)' are live on the ФНОИ master's list.",
+  "award": "Master's degree, '2 семестъра /1 година/', 'редовна (платено обучение)' — full-time, fee-paying, professional qualification 'multimedia designer'. Graduates are placed as 'video editors in electronic media and specialists in the field of audiovisual processing'. Broadcast video post-production rather than record-making.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "English version: applicants must 'have a Bachelor's degree in the professional fields \"Pedagogy of musical education\" and \"Art of music and dance\"'. Bulgarian version: '1.3 Педагогика на обучението по музика' or '8.3 Музикално и танцово изкуство'. The English track relaxes the language, not the degree condition."
+  },
+  "gate": {
+   "type": "DIPLOMA GRADE + INTERVIEW ON A SUBMITTED MEDIA PROJECT (+ English certificate on the English track)",
+   "quote": "'успех от дипломата за висше образование, не по-нисък от добър и събеседване', with candidates presenting 'реализиран медиен проект, самостоятелно разработен' in electronic format on standard digital media. English track adds: 'Applicants must have acquired a certificate / diploma for the level of their command of English, which needs to equal the language level of specialized secondary language school graduates at the least.'",
+   "isProductionTestNotAudition": "NOT AN AUDITION and not an ear test — a portfolio interview around one finished media project. He could pass the assessment easily; he is simply not eligible to sit it."
+  },
+  "portfolioSpec": "One completed, independently developed media project in electronic format on standard digital storage media, defended at interview. No count, duration or codec published.",
+  "costForTunisian": "UNVERIFIED. The programme is 'платено обучение' (fee-paying) even domestically, and non-EU nationals fall under a separate Article 95(8) schedule for foreign-language study which Sofia University publishes only in PDFs that do not render.",
+  "funding": "UNVERIFIED — none published. Contact Assoc. Prof. Silvana Karagyozova (skkaraguoz@uni-sofia.bg).",
+  "deadline": "UNVERIFIED for 2027. PRIOR CYCLE: annual summer 'Прием в ОКС Магистър' campaign.",
+  "languageAndCertificate": "An ENGLISH-language version exists — 'Audiovisual Design (in English)' — requiring an English certificate at roughly specialised-language-school level, i.e. about B2. This is the only English-taught programme in the Bulgarian set, and language is genuinely not the obstacle here.",
+  "verdict": "AVOID",
+  "verdictWhy": "The English track is real and the gate — one media project defended at interview — is one he could pass, but entry is restricted by both language versions to holders of bachelors in two named music fields. He has neither, and the award trains broadcast multimedia designers rather than record producers.",
+  "correction": "DUPLICATE of index 71 — the same ФНОИ Audiovisual Design master entered twice under different institution strings; merge. Corrects 'gate: Exam/interview only' by naming the portfolio component (one self-made media project, defended). Adds the two facts that decide it and appear in neither record: an English-taught version exists, and entry is restricted to bachelors in professional fields 1.3 and 8.3.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Czech Republic",
+  "institution": "Academy of Performing Arts in Prague (AMU) — Music and Dance Faculty (HAMU), Department of Sound Design and R…",
+  "programme": "Sound Design / Zvuková tvorba (Continuing Master's)",
+  "url": "https://www.hamu.cz/en/departments-sections/sound-design--and-recording-department/admission-procedures/ ; https://www.hamu.cz/cs/studium/prijimaci-rizeni/magisterske-studium/",
+  "stillExists2027": "YES — HAMU's Czech-language master's admissions page publishes exam slots for 'zvuková tvorba 2027' and 'hudební režie 2027', so both continue into the 2027 cycle. Distinct from FAMU's Zvuková tvorba: HAMU's sits in the MUSIC faculty and is the music-recording side, FAMU's is the film-sound side.",
+  "award": "Navazující magisterské studium (continuing master's) in Zvuková tvorba, a genuine second cycle at the Hudební a taneční fakulta AMU.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "UNVERIFIED",
+   "quote": "HAMU publishes nothing in English on this: 'At the moment the Sound Design Bachelor´s, Continuing Master's and Ph.D. Programmes are available in Czech language only!' The central Czech admissions page defers entirely: 'Požadavky k přijímacím zkouškám naleznete u jednotlivých kateder' (exam requirements are held by the individual departments). Contact the department secretary Michaela Šlapalová, michaela.slapalova@hamu.cz."
+  },
+  "gate": {
+   "type": "UNVERIFIED — department-held requirements not published centrally",
+   "quote": "No exam content is published on either the English department page or the central Czech magisterské studium page. What IS published is the timetable: applications 15 March – 15 April 2026, admission exams 8–19 June 2026, with sound design examined 11:00–13:00 and music directing 09:00–11:00.",
+   "isProductionTestNotAudition": "UNVERIFIED. But calibrate against the neighbours: FAMU's equivalent master's requires a live musical performance plus pitch-memory and rhythmic-dictation tests, and HAMU sits inside a MUSIC faculty rather than a film school, so if anything a musicianship component is more likely here, not less. Do not assume it is a production test."
+  },
+  "portfolioSpec": "UNVERIFIED — not published in English or on the central Czech page.",
+  "costForTunisian": "FREE for Czech-taught study — and this programme is explicitly Czech-only, so the free rate is the applicable one. Czech public universities charge no tuition for study in Czech regardless of nationality.",
+  "funding": "Not needed for tuition. Note that Czech government (MŠMT) development scholarships attach to English-taught programmes, so they do not apply here.",
+  "deadline": "PUBLISHED: applications 15 March – 15 April 2026, exams 8–19 June 2026, with 2027 exam slots already timetabled. Expect the same March–April application window and June exam period for 2027.",
+  "languageAndCertificate": "CZECH ONLY, and HAMU says so in bold on its own English page: 'At the moment the Sound Design Bachelor´s, Continuing Master's and Ph.D. Programmes are available in Czech language only!' There is no English track. He has no Czech.",
+  "verdict": "AVOID",
+  "verdictWhy": "HAMU states on its own English-language page that the Sound Design continuing master's is available in Czech only. Free tuition and a well-timetabled cycle are irrelevant when he cannot follow or be examined in the language, and the exam content is not even published for outsiders to assess.",
+  "correction": "Corrects 'gate: Exam/interview only' to UNVERIFIED — HAMU publishes no exam content centrally and defers to the department. Adds the decisive fact the record omits, quoted from HAMU's own English page: the programme is 'available in Czech language only'. Fills 'cost: Not published' as FREE, since Czech-taught study at Czech public universities is free to all nationalities. Also flags a distinction the sweep should keep: HAMU's Zvuková tvorba (music faculty, music recording) is a DIFFERENT programme from FAMU's Zvuková tvorba (film school, film sound) at indices 55/64/65.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Czech Republic",
+  "institution": "HAMU — Music and Dance Faculty, Academy of Performing Arts in Prague",
+  "programme": "MA programmes of the Sound Design and Music Directing Department (Zvukova tvorba / Hudebni rezie)",
+  "url": "https://www.hamu.cz/en/departments-sections/sound-design-department/ ; https://www.hamu.cz/cs/studium/prijimaci-rizeni/magisterske-studium/",
+  "stillExists2027": "YES — DUPLICATE of index 84, covering the same department. Both master's tracks are timetabled for 2027: 'zvuková tvorba 2027, 11 - 13 hod.' and 'hudební režie 2027, 9 - 11 hod.'",
+  "award": "Two continuing master's tracks in the Katedra zvukové tvorby a hudební režie: Zvuková tvorba (Sound Design) and Hudební režie (Music Directing). Both are genuine second cycles.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "UNVERIFIED",
+   "quote": "Not published. HAMU's English page states only that these programmes are 'available in Czech language only!' and directs applicants to the Czech admissions section, which in turn defers to the departments."
+  },
+  "gate": {
+   "type": "UNVERIFIED",
+   "quote": "'Požadavky k přijímacím zkouškám naleznete u jednotlivých kateder' — exam requirements are held by the individual departments and are not published on the pages reachable in English or from the central admissions page.",
+   "isProductionTestNotAudition": "UNVERIFIED. Note that Hudební režie (music directing) is by nature a musicianship discipline — a music director reads scores and follows performances in the control room — so an ear or score-reading component would be entirely expected on that track in particular."
+  },
+  "portfolioSpec": "UNVERIFIED.",
+  "costForTunisian": "FREE — Czech-taught study at a Czech public university, no tuition for any nationality.",
+  "funding": "Not needed for tuition.",
+  "deadline": "Applications 15 March – 15 April 2026; exams 8–19 June 2026. Same pattern expected for 2027.",
+  "languageAndCertificate": "CZECH ONLY — 'available in Czech language only!'",
+  "verdict": "AVOID",
+  "verdictWhy": "Same department as index 84 and closed for the same reason: Czech-only delivery and examination, with entrance requirements HAMU does not publish outside the Czech departmental pages.",
+  "correction": "DUPLICATE of index 84 — merge. Corrects 'gate: Portfolio + exam/interview' to UNVERIFIED, since nothing of the kind is published. Adds the Czech-only fact and fills 'cost: Not published' as FREE. Also worth recording: Hudební režie (music directing) and Zvuková tvorba (sound design) are two separate tracks with separately timetabled exams, not one programme.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Czech Republic",
+  "institution": "Janáček Academy of Performing Arts (JAMU) — Faculty of Music",
+  "programme": "Music Production (Hudební produkce)",
+  "url": "https://hf.jamu.cz/en/specializations/music-production-5/",
+  "stillExists2027": "YES — live at both levels. Bachelor: 'Study period: 3 years', 'Title: BcA.'. Master: 'Study period: 2 years', 'Title: MgA.'. The master is a genuine second cycle.",
+  "award": "MgA. in Hudební produkce, two years, full-time with specialisation. CRITICAL POINT ABOUT WHAT THIS ACTUALLY IS: the page describes a 'Neučitelský' (non-teaching) track 'combining theoretical knowledge with practical skills in CULTURAL MANAGEMENT with music specialization'. Czech 'hudební produkce' means music PRODUCING in the promoter/impresario/arts-management sense — concerts, festivals, budgets, contracts — not record production. It is an arts-administration degree, not a studio degree.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "UNVERIFIED",
+   "quote": "The page publishes no admission requirements and no entrance-exam content, directing enquiries to the faculty at info@jamu.cz or +420 542 591 601."
+  },
+  "gate": {
+   "type": "UNVERIFIED",
+   "quote": "No entrance exam content published. Being a cultural-management track rather than a performance or sound track, an ear test would be unusual — but nothing is published either way."
+  },
+  "portfolioSpec": "UNVERIFIED — none published.",
+  "costForTunisian": "FREE. 'Language of instruction: Czech' at a Czech public university means no tuition for any nationality.",
+  "funding": "Not needed for tuition. Czech MŠMT development scholarships apply to English-taught study only.",
+  "deadline": "UNVERIFIED — none published on the specialisation page.",
+  "languageAndCertificate": "CZECH — stated explicitly for both the bachelor and the master: 'Language of instruction: Czech'. No English track.",
+  "verdict": "AVOID",
+  "verdictWhy": "Two independent reasons. It is taught in Czech with no English track, and — more fundamentally — 'Hudební produkce' at JAMU is cultural management with a music specialisation, i.e. producing concerts and festivals, not producing records. Even in English it would be the wrong degree for him.",
+  "correction": "IMPORTANT SUBSTANTIVE CORRECTION. The record's English gloss 'Music Production' invites exactly the wrong inference. JAMU's own page describes the track as 'combining theoretical knowledge with practical skills in CULTURAL MANAGEMENT with music specialization' — Czech 'hudební produkce' is arts/event production and management, not studio record production. This programme should probably not be in a music-production sweep at all. Also corrects 'gate: Exam/interview only' to UNVERIFIED (nothing published), fills 'cost: Not published' as FREE, and adds that instruction is in Czech.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Estonia",
+  "institution": "Baltic Film, Media and Arts School (BFM), Tallinn University",
+  "programme": "Sound and Film Sound Engineering (MA) — joint programme with University of Tartu Viljandi Culture Academy [LEAD ONLY — …",
+  "url": "https://www.tlu.ee/en/bfm ; https://www.tlu.ee/en/bfm/admissions/masters-studies ; https://www.tlu.ee/en/bfm/about-us/study-areas",
+  "stillExists2027": "NO — NOT IN THE CURRENT ADMISSIONS OFFER. BFM's own master's admissions page lists exactly four programmes: 'Documentary Film', 'Communication Management', 'JMD Film Arts (Kino Eyes)' and 'Joint Master of Arts in European Film Heritage, History and Cultures (FilmMemory)'. Sound and Film Sound Engineering is NOT among them, and the study-areas page does not mention it either. The programme exists in BFM's published description of its work but is not currently recruiting.",
+  "award": "When it ran, a two-year joint MA between BFM and the University of Tartu Viljandi Culture Academy. Described as: 'During the first year, students are supervised individually and in teams by masters in a hands-on learning process, and in the second year, students develop and complete their graduation works', with 'all student works developed and produced in teams, closely reproducing the industry work flow'.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "Even in its published description the entry expectation is explicit and disqualifying: 'Applicants are expected to have prior skills and knowledge in film sound and/or sound engineering that allow them to focus on practical film sound directing, recording and mixing FROM WEEK ONE under the supervision of internationally acknowledged professionals.' A software engineer with no audio experience is the exact profile this sentence excludes."
+  },
+  "gate": {
+   "type": "N/A — not currently admitting",
+   "quote": "No admission procedure is published because the programme is not in the current master's offer.",
+   "isProductionTestNotAudition": "N/A. Note for the pattern file: the programme's whole pedagogy was practical team production from week one, which is the production-test philosophy applied to a whole degree rather than to an entrance exam."
+  },
+  "portfolioSpec": "N/A — not currently admitting.",
+  "costForTunisian": "UNVERIFIED. Estonian public universities charge non-EU students programme-set fees; BFM's English-taught master's typically sit in the EUR 3,000–6,000/yr range, but nothing can be quoted for a programme that is not recruiting.",
+  "funding": "UNVERIFIED. Tallinn University offers tuition-waiver scholarships on merit for English-taught master's, applied for with admission — but not for a programme that does not appear in the offer.",
+  "deadline": "N/A — no admission cycle published.",
+  "languageAndCertificate": "The programme was described in English and BFM's master's offer is English-taught, so language would not have been the obstacle. That makes its absence from the current offer the more disappointing.",
+  "verdict": "AVOID",
+  "verdictWhy": "The programme is not in BFM's current master's admissions list — the four that are on offer are Documentary Film, Communication Management, Kino Eyes and FilmMemory. And even in its published description it expected applicants to arrive able to direct, record and mix film sound from week one, which he cannot.",
+  "correction": "OVERTURNS THE RECORD'S PREMISE. The record carries this as a 'LEAD ONLY' to be chased; the chase ends here. Sound and Film Sound Engineering does NOT appear in BFM's current master's admissions offer, which lists only Documentary Film, Communication Management, JMD Film Arts (Kino Eyes) and FilmMemory. Also adds the entry expectation that would have excluded him anyway: 'prior skills and knowledge in film sound and/or sound engineering that allow them to focus on practical film sound directing, recording and mixing from week one'.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "Hochschule für Musik Detmold — Erich-Thienhaus-Institut (ETI)",
+  "programme": "Musikregie (Music Directing)",
+  "url": "https://www.hfm-detmold.de/en/study/fields-of-study/music-recording/tonmeister-music-directing/ ; https://www.hfm-detmold.de/studium/studienbereiche-und-bewerbung/musikuebertragung/tonmeister-musikregie/",
+  "stillExists2027": "YES — DUPLICATE (fifth and last) of the Detmold M.Mus. Musikregie record. Live at the ETI, aptitude tests in June.",
+  "award": "'M.Mus. Musikregie' — one of the ETI's degrees, listed on the institute page alongside 'B.Mus. Music Transmission (Tonmeister)', 'M.Mus. Klangregie' and 'M.Sc. Music Acoustics'. A genuine second cycle.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "'erfolgreich absolvierten Studiums mit dem Abschlussgrad Bachelor of Music Musikübertragung bzw. Diplom-Tonmeister' — a closed prerequisite. Only holders of that specific bachelor may apply."
+  },
+  "gate": {
+   "type": "PORTFOLIO (three own productions) + COLLOQUIUM",
+   "quote": "'Presentation of a CD/DVD with three of the applicant's own productions from the last year'; 'Colloquium: questions about knowledge of musical repertoire, basic musical and technical principles and studio experience'. Approximately 30 minutes, 'qualified' or 'not qualified'.",
+   "isProductionTestNotAudition": "NEITHER — portfolio plus oral colloquium. Detmold's ear-training tests and instrumental auditions belong to its BACHELOR entrance exam, not to this master's aptitude test. The record's 'Exam/interview only' is closer to right than the other Detmold entries, but still misses that a three-track portfolio is the primary component."
+  },
+  "portfolioSpec": "Three of the applicant's own productions from the last year, on CD/DVD. Three pieces, recent, no duration stated.",
+  "costForTunisian": "Tuition free — North Rhine-Westphalia levies no tuition on non-EU students — plus a Semesterbeitrag of roughly EUR 290 per semester, identical for EU and non-EU students.",
+  "funding": "No tuition to fund. DAAD is the route for living costs; separate, earlier, competitive, and DAAD's music awards generally expect a music first degree.",
+  "deadline": "'Wintersemester: 15.02 – 15.03; Sommersemester: 01.10 – 01.11'. For an autumn 2027 start, apply 15 February – 15 March 2027; aptitude tests fall in June.",
+  "languageAndCertificate": "GERMAN at C1 — 'C1' is 'demanded for applicants whose native language is not German'.",
+  "verdict": "AVOID",
+  "verdictWhy": "Fifth entry for the same programme and the same verdict: entry is restricted to holders of a Bachelor of Music Musikübertragung or a Diplom-Tonmeister, and German must be at C1. Nothing about the aptitude test itself would stop him — the door simply is not open to him.",
+  "correction": "DUPLICATE of indices 66, 67, 68 and 73 — five records for one Detmold master's; merge all five. And the key finding for the whole German-language set: what makes Detmold unreachable is NOT an ear-training exam or an audition, contrary to expectation. The master's aptitude test is three own productions plus a colloquium. The barriers are the prerequisite Tonmeister bachelor and German C1. The ear tests live on the bachelor entrance exam.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "Hochschule für Musik Detmold — Erich-Thienhaus-Institut (ETI)",
+  "programme": "Klangregie (Sound Direction)",
+  "url": "https://www.hfm-detmold.de/en/the-university/institutes/the-erich-thienhaus-institute/ ; https://www.hfm-detmold.de/studium/studienbereiche-und-bewerbung/musikuebertragung/tonmeister-musikregie/",
+  "stillExists2027": "NO — SUSPENDED. The ETI institute page still lists 'M.Mus. Klangregie' among its programmes, but the admissions page states plainly: 'Dieser Studiengang wird aktuell nicht angeboten' — this degree programme is not currently offered. Nothing indicates a 2027 revival.",
+  "award": "When offered, 'M.Mus. Klangregie' — a Master of Music in sound direction, distinct from Musikregie, sitting alongside 'B.Mus. Music Transmission (Tonmeister)', 'M.Mus. Musikregie', 'M.Sc. Music Acoustics' and a doctorate in Music Acoustics at the Erich-Thienhaus-Institut.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "Moot — the programme is not running. 'Dieser Studiengang wird aktuell nicht angeboten.' No requirements, aptitude-test details, language levels, deadlines or fees are published because the programme is unavailable."
+  },
+  "gate": {
+   "type": "N/A — programme suspended",
+   "quote": "'Dieser Studiengang wird aktuell nicht angeboten' — no admission requirements are published.",
+   "isProductionTestNotAudition": "N/A."
+  },
+  "portfolioSpec": "N/A — programme suspended.",
+  "costForTunisian": "N/A. Were it revived, the Detmold position would apply: no tuition for non-EU students in North Rhine-Westphalia, plus a Semesterbeitrag of roughly EUR 290 per semester.",
+  "funding": "N/A.",
+  "deadline": "N/A.",
+  "languageAndCertificate": "N/A. Detmold requires German at C1 from non-native speakers across its programmes.",
+  "verdict": "AVOID",
+  "verdictWhy": "The programme is not currently offered — Detmold says so in one sentence on its own admissions page. There is nothing to apply to, and nothing suggests it returns for 2027.",
+  "correction": "MATERIAL CORRECTION. The record carries Klangregie as a live option with 'gate: None found in the text'. The reason nothing was found is that the programme is suspended: 'Dieser Studiengang wird aktuell nicht angeboten.' It should be marked as NOT OFFERED rather than as an unverified lead. Note the trap that produced the error — the ETI institute page still lists M.Mus. Klangregie among its programmes, so only the admissions page reveals the suspension.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Germany",
+  "institution": "Robert Schumann Hochschule Düsseldorf — Institut für Musik und Medien (IMM)",
+  "programme": "Artistic Music Production (Künstlerische Musikproduktion) — majors: Classical Acoustic Music Production OR Jazz and Pop…",
+  "url": "https://www.rsh-duesseldorf.de/en/academic-programs/master-degrees/artistic-music-production",
+  "stillExists2027": "YES — DUPLICATE of index 69. Live master's page with two majors and a 1 March application deadline.",
+  "award": "Master of Music in Artistic Music Production, with majors 'Classical Acoustic Music Production' and 'Jazz and Pop Music Production'. A genuine second cycle.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "No prior-degree subject is published — the stated requirement is 'successful completion of the proficiency test for the concentration chosen'. But that test includes 'completion of an instrumental/vocal audition' and 'written examinations of musical and technical hearing ability', which he cannot pass regardless of his bachelor."
+  },
+  "gate": {
+   "type": "WORK SAMPLES + PRACTICAL TASK + INSTRUMENTAL/VOCAL AUDITION + EAR-TRAINING EXAM",
+   "quote": "'evaluation of work samples to be submitted in advance as well as completion of an instrumental/vocal audition'; 'A practical task in the intended major'; 'written examinations of musical and technical hearing ability'.",
+   "isProductionTestNotAudition": "BOTH ARE PRESENT AND THEY MUST NOT BE CONFLATED. 'A practical task in the intended major' is a genuine production test — the job. But it sits beside an explicit 'instrumental/vocal audition' and 'written examinations of musical and technical hearing ability', which are precisely the two gates he cannot clear. Düsseldorf is the clearest case in the slice of a school that runs a production test AND an audition AND an ear exam in one sitting."
+  },
+  "portfolioSpec": "'work samples to be submitted in advance' — no count, duration or format published. Ask the IMM.",
+  "costForTunisian": "Tuition free (NRW state Hochschule, no non-EU tuition) plus a Semesterbeitrag in the normal German range. The record's 'cost: Not published' should read: effectively free.",
+  "funding": "No tuition to fund; DAAD for living costs, separate and earlier.",
+  "deadline": "'The application deadline is March 1.' For a winter 2027 start that is 1 March 2027.",
+  "languageAndCertificate": "GERMAN at B2 — 'The B2 certificate (according to the Goethe Institute classification system) or a comparable qualification is required.' Lower than Detmold's C1 but still out of reach from zero in twelve months.",
+  "verdict": "AVOID",
+  "verdictWhy": "The proficiency test contains an instrumental or vocal audition and written examinations of musical hearing ability. He cannot pass either, and German at B2 is required on top. Free tuition does not help.",
+  "correction": "DUPLICATE of index 69 — merge. Corrects 'gate: Exam/interview only', which conceals the two decisive components: an 'instrumental/vocal audition' and 'written examinations of musical and technical hearing ability'. Adds German B2 and the 1 March deadline, and records that the same test ALSO contains a real production task — the distinction between the two matters and the record collapses it.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Hungary",
+  "institution": "University of Theatre and Film Arts (Színház- és Filmművészeti Egyetem, SZFE)",
+  "programme": "Hangmester (film sound engineer) — SPECIALISATION OF THE BA, NOT A MASTER'S",
+  "url": "https://szfe.hu/szak-tipus/mesterkepzes/ ; https://felveteli.szfe.hu/2026-ben-indulo-kepzeseink/ ; https://szfe.hu/szakok/",
+  "stillExists2027": "THE NEGATIVE FINDING STANDS, though it could not be re-confirmed from the primary source — both szfe.hu/szak-tipus/mesterkepzes/ and felveteli.szfe.hu/2026-ben-indulo-kepzeseink/ returned HTTP 403 to automated fetching. Searching SZFE's published programme lists surfaced master's degrees in theatre and film disciplines (film directing, cinematography, production design, Színházművészeti tanár MA) and a 'Hangképzés mesterkurzus' — which is a VOICE-TRAINING masterclass, not a sound-engineering master — but no hangmester MA. Record as: negative finding upheld, primary source UNREACHABLE.",
+  "award": "Hangmester is a specialisation within SZFE's film BA (the record's own framing, which nothing found contradicts). Not a second-cycle degree.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "Moot: there is no hangmester master's to apply to, and a BA specialisation would be a step backwards from the BSc he already holds."
+  },
+  "gate": {
+   "type": "N/A — no master's programme",
+   "quote": "N/A",
+   "isProductionTestNotAudition": "N/A"
+  },
+  "portfolioSpec": "N/A",
+  "costForTunisian": "N/A. Hungarian state universities charge non-EU self-funded students programme-set fees; irrelevant without a programme.",
+  "funding": "N/A. Worth noting for the wider sweep: Stipendium Hungaricum is the fully funded Hungarian government scholarship open to Tunisian nationals, but it can only be used on programmes actually offered, and SZFE's arts programmes are Hungarian-taught.",
+  "deadline": "N/A",
+  "languageAndCertificate": "HUNGARIAN — SZFE's degree programmes are Hungarian-taught, and the pages themselves are Hungarian-only. He has no Hungarian. Even if a hangmester master existed, this alone would close it.",
+  "verdict": "AVOID",
+  "verdictWhy": "There is no sound-engineering master's at SZFE — hangmester is a BA specialisation, and the one thing with 'master' in its name that surfaced is a voice-training masterclass. Everything at SZFE is taught in Hungarian in any case.",
+  "correction": "Upholds the record's negative finding but flags a source problem worth carrying: SZFE's own site returns HTTP 403 to automated fetching, so this could not be verified against the primary page and rests on published programme listings instead. Adds one trap for future sweeps — SZFE's 'Hangképzés mesterkurzus' is a VOICE-training masterclass, not a sound-engineering master's, and its name will otherwise generate a false positive. Also adds the language fact the record omits: SZFE teaches in Hungarian.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Italy",
+  "institution": "Conservatorio di Musica \"Fausto Torrefranca\" di Vibo Valentia",
+  "programme": "DCSL61 Tecnico del Suono — Biennio (activated a.a. 2025-26)",
+  "url": "https://consvv.it/corsi-accademici-di-secondo-livello ; https://consvv.it/wp-content/uploads/ammissione-biennio-tecnico-del-suono.pdf",
+  "stillExists2027": "YES — 'attivato nell'a.a. 2025-26' and listed among the Corsi accademici di secondo livello. The admission-exam document is published and current. Note a code discrepancy worth recording: the course listing calls it DCSL61, the official admission document heads it 'TECNICO DEL SUONO (DCPL61)'.",
+  "award": "Corso accademico di secondo livello (Diploma Accademico di secondo livello), 120 credits, ECTS-compliant — the Italian conservatoire equivalent of a master's degree. Run by the 'Dipartimento di Nuove Tecnologie e Linguaggi musicali, Scuola di Musica elettronica'.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "CASE-BY-CASE",
+   "quote": "The admission document imposes no subject condition on the prior degree. The only reference to prior qualification is an EXEMPTION, not a requirement: 'Il candidato in possesso di Diploma Accademico di primo livello in Tecnico del suono è esonerato dalla prova pratica' — a candidate already holding a first-level diploma in Tecnico del suono is EXCUSED from the practical test. Everyone else simply sits it. That is an unusually open door for a conservatoire."
+  },
+  "gate": {
+   "type": "PRACTICAL PRODUCTION TEST + PORTFOLIO OF PRIOR WORK + MOTIVATIONAL INTERVIEW",
+   "quote": "Verbatim, the three prove: '1. Prova pratica: Mixaggio e finalizzazione della registrazione su tracce indipendenti di un brano fornito dalla commissione'; '2. Presentazione di lavori pregressi del candidato nell'ambito della tecnica del suono'; '3. Colloquio motivazionale'.",
+   "isProductionTestNotAudition": "THIS IS A PRODUCTION TEST AND EMPHATICALLY NOT AN AUDITION — and it overturns the record's label outright. The commission hands the candidate the independent tracks of a song and he mixes and finalises it. That is the job. There is NO instrumental audition, NO singing, NO solfeggio, NO ear-training exam and NO music-theory paper anywhere in the three prove. The reading list is technical, not musical: Lombardo & Valle 'Audio e Multimedia', Bartlett 'Tecniche Stereofoniche di Microfonaggio', Prosperi 'Elementi di Acustica Psicoacustica e stereofonia', Everest 'Manuale di Acustica', Huber & Runstein 'Manuale della registrazione Sonora'. Every one of those is a recording-engineering textbook a software engineer can read and absorb in a year."
+  },
+  "portfolioSpec": "'Presentazione di lavori pregressi del candidato nell'ambito della tecnica del suono' — presentation of the candidate's prior works in sound technique. No number, duration or format is specified. Twelve months of building would satisfy it in principle.",
+  "costForTunisian": "UNVERIFIED. Italian conservatoire fees ('contributi') are normally set on the ISEE income scale, which non-EU applicants without Italian income documentation cannot use; conservatoires then apply a flat band, typically EUR 1,000–2,500 a year for a public conservatorio. Nothing is published on the pages reached — check consvv.it/ammissioni. Italian public conservatoires are among the cheapest second-cycle routes in Western Europe, so the real figure is likely well under the record's implied uncertainty.",
+  "funding": "UNVERIFIED — none published by the conservatorio. The relevant route is the Italian regional right-to-study grant (borsa di studio DSU, in Calabria administered regionally), which is means-tested, open to non-EU students, and applied for separately after enrolment. Also relevant: the Italian government MAECI scholarships for foreign students, a separate and much earlier application.",
+  "deadline": "UNVERIFIED — no dates on the pages reached; see consvv.it/ammissioni. Italian conservatoire admission exams normally run in September, with applications over the summer.",
+  "languageAndCertificate": "ITALIAN. The admission document, the reading list and the motivational interview are all in Italian, and nothing indicates an English track. Italian universities normally require B2 Italian from non-EU applicants. He has no Italian — but as a fluent French speaker he is far better placed to reach B2 Italian in twelve months than B2 German, Czech, Serbian or Hungarian.",
+  "verdict": "CONDITIONAL",
+  "verdictWhy": "Of every conservatoire in this slice, this is the one whose entrance exam is genuinely built for him: mix a song from supplied multitracks, show prior work, explain your motivation — no audition, no ear test, no music theory. The prior degree carries no subject condition. What must be resolved first is Italian, which he would need to about B2, and the fee, which the conservatorio does not publish.",
+  "correction": "MAJOR CORRECTION — the record's gate label 'AUDITION — hardest for you' is simply wrong, and wrong in the most consequential direction. The published admission document lists three prove and none of them is an audition or an ear test: a PRACTICAL MIXING TEST on multitracks supplied by the commission, a presentation of prior sound work, and a motivational interview. This is the single most misclassified record in the slice, and it turns a supposed AVOID into a genuine CONDITIONAL. Also records a code discrepancy (course listing says DCSL61, the official admission document says DCPL61) and adds the language fact the record omits (Italian).",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Poland",
+  "institution": "Fryderyk Chopin University of Music (UMFC), Warsaw",
+  "programme": "MA Sound Engineering (Rezyseria Dzwieku) — specialties: Music Production; Film & TV Sound Engineering; Sound Engineerin…",
+  "url": "https://chopin.edu.pl/university/departments/department-of-sound-engineering ; https://usosweb.chopin.edu.pl/kontroler.php?_action=katalog2%2Fprogramy%2FpokazProgram&prg_kod=RD-RM-SM",
+  "stillExists2027": "YES — the Wydział Reżyserii Dźwięku runs second-cycle studies and the USOS programme catalogue confirms 'Reżyseria dźwięku - reżyseria muzyczna, stacjonarne, II stopnia', '2-letnie', at least 4 semesters and 120 ECTS. The department page states: 'After three years of BA-level studies graduates may apply for 2-year MA studies.'",
+  "award": "'Magister na kierunku reżyseria dźwięku' — Master's in Sound Direction, two years, full-time, second cycle. Three specialisations: 'Music Production, Film and TV Sound Engineering and Sound Engineering in the Multimedia'. The Music Production specialisation is on target for what he wants.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "UNVERIFIED",
+   "quote": "USOS states the formal conditions as 'posiadanie dyplomu ukończenia studiów co najmniej pierwszego stopnia' (a first-cycle diploma), a secondary school certificate, 'positive assessment results from knowledge and skills examinations', and successful completion of the qualification process. No degree SUBJECT is stipulated in the formal conditions — but the department frames the master's as the continuation of its own three-year BA, and the 'knowledge and skills examinations' are where a non-musician would be filtered. Detailed criteria sit in a PDF referenced but not reachable from the department page; contact rezyseriadzwieku@chopin.edu.pl or Anna Szewczyk, room 309, +48 22 2789 283."
+  },
+  "gate": {
+   "type": "ENTRANCE EXAMINATION OF KNOWLEDGE AND SKILLS — content not published",
+   "quote": "'positive assessment results from knowledge and skills examinations, and successful completion of the qualification process'. The specific exam content — whether it includes kształcenie słuchu (ear training), music theory, a piano test or a practical production task — is NOT published on any page reachable in English or through USOS.",
+   "isProductionTestNotAudition": "UNVERIFIED, and do not assume the benign reading. UMFC is a music university, its sound-engineering faculty grew out of a conservatoire tradition, and Polish reżyseria dźwięku entrance exams have historically tested kształcenie słuchu and piano. Treat an ear-training component as likely until the department says otherwise in writing."
+  },
+  "portfolioSpec": "UNVERIFIED — no portfolio specification published in English or in the USOS record.",
+  "costForTunisian": "UNVERIFIED. Polish public universities charge non-EU students fees set per programme, commonly EUR 2,000–5,000 a year for arts, with a Polish Card or certain statuses giving exemptions that do not apply to him. Nothing is published on the reachable pages.",
+  "funding": "UNVERIFIED. The relevant route is NAWA (Polish National Agency for Academic Exchange) scholarships for foreign students, notably the Poland My First Choice and bilateral programmes — separate, earlier applications, not automatic on admission.",
+  "deadline": "UNVERIFIED — no dates published on the reachable pages.",
+  "languageAndCertificate": "POLISH for the degree itself. The department publishes an English-language page, but the USOS record gives no English track and UMFC's reżyseria dźwięku is delivered in Polish. UMFC does run some English-taught provision, but nothing found confirms it for this programme. He has no Polish.",
+  "verdict": "AVOID",
+  "verdictWhy": "The programme is real, the Music Production specialisation is on target, and the formal entry condition is only a first-cycle diploma with no subject named — but it is taught in Polish, the entrance examination content is not published anywhere reachable, and a Polish music university's sound-direction exam very likely includes ear training. Too much unknown, behind a language he does not have.",
+  "correction": "Corrects 'gate: Portfolio + exam/interview' to UNVERIFIED — no portfolio requirement and no exam content is published on any reachable page; the only formal statement is 'positive assessment results from knowledge and skills examinations'. Adds the language of instruction (Polish), which the record omits and which is decisive, and confirms the programme's structure from the USOS register (2 years, 120 ECTS, 'Magister na kierunku reżyseria dźwięku').",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "Spain",
+  "institution": "Taller de Músics — ESEM (Escola Superior d'Estudis Musicals)",
+  "programme": "COVERAGE CHECK — no music production or sound design master; only Máster en Creación de Teatro Musical",
+  "url": "https://tallerdemusics.com/superior/",
+  "stillExists2027": "N/A — negative finding, CONFIRMED. The only master's listed is the 'Máster en Creación de Teatro Musical' (Master's in Musical Theatre Creation). There is 'no master's programme in music production, sound engineering, or studio craft'.",
+  "award": "N/A for this sweep. The single master's on offer is in musical theatre creation, which is neither production nor sound.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "Moot — there is no relevant programme. A musical theatre creation master would in any case require performance or writing craft he does not have."
+  },
+  "gate": {
+   "type": "N/A — no relevant programme",
+   "quote": "N/A",
+   "isProductionTestNotAudition": "N/A"
+  },
+  "portfolioSpec": "N/A",
+  "costForTunisian": "UNVERIFIED and irrelevant. Taller de Músics is a private school; the site mentions only that they 'ofrecemos la posibilidad de fraccionar el pago de los estudios' (payment can be split into instalments) and publishes no figure.",
+  "funding": "N/A",
+  "deadline": "N/A",
+  "languageAndCertificate": "The site is offered in Catalan, Spanish and English, but teaching at ESEM is in Catalan and Spanish. Irrelevant given there is no applicable programme.",
+  "verdict": "AVOID",
+  "verdictWhy": "Confirmed coverage check: Taller de Músics has no master's in music production, sound engineering or studio craft. Its only master's is in musical theatre creation. Nothing here to pursue.",
+  "correction": "Confirms the record's coverage check rather than overturning it. Adds only that the school is private with no published fee — it advertises instalment payment rather than a price — and that its master's-level offer is genuinely limited to one musical-theatre programme.",
+  "verifiedAt": "2026-08",
+  "_source": "door3-verify"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of Surrey",
+  "programme": "Taught master's programmes (incl. MMus Music); Institute of Sound Recording (IoSR/Tonmeister) is UG-taught/research-onl…",
+  "url": "https://iosr.surrey.ac.uk/ ; https://www.surrey.ac.uk/postgraduate/sound-recording-phd ; https://www.surrey.ac.uk/undergraduate/music-and-sound-recording-tonmeister",
+  "stillExists2027": "THE NEGATIVE FINDING IS CONFIRMED. The Institute of Sound Recording 'offers postgraduate research-based MPhil and PhD programmes, as well as being home to the world-famous Tonmeister® BMus/BSc undergraduate degree course in Music & Sound Recording'. There is no postgraduate TAUGHT master's in sound recording. The Tonmeister degree is live for 2027 entry — but as an UNDERGRADUATE BMus (Hons) or BSc (Hons).",
+  "award": "At IoSR: 'Music and Sound Recording (Tonmeister) BMus (Hons) or BSc (Hons)' at undergraduate level, and MPhil/PhD by research at postgraduate level. Nothing taught in between.",
+  "acceptsSoftwareEngineeringBachelor": {
+   "verdict": "NO",
+   "quote": "There is no taught master's in sound recording to accept him into. The only postgraduate route at IoSR is research — an MPhil or PhD in Audio Engineering — which requires a research proposal, a supervisor and normally a relevant master's or a strong relevant first degree plus research experience. He has neither the audio background nor a research track record."
+  },
+  "gate": {
+   "type": "N/A for taught study; research-degree admission for MPhil/PhD",
+   "quote": "The published postgraduate route is 'Audio Engineering PhD research course'. Research-degree admission turns on a proposal and supervisor agreement, not on a portfolio, an audition or a production test.",
+   "isProductionTestNotAudition": "N/A — no taught programme, so no artistic gate of any kind."
+  },
+  "portfolioSpec": "N/A — no taught master's.",
+  "costForTunisian": "UNVERIFIED for the research degrees; the record's cited URL is Surrey's International Excellence Award page rather than a fee page. UK overseas PhD fees at Surrey sit in the usual UK band, well above what he can pay, and a self-funded overseas MPhil/PhD is not a realistic route for someone who 'can pay a little'.",
+  "funding": "The record's URL points to Surrey's 'International Excellence Award (postgraduate)', a partial fee discount for international postgraduate students. It cannot help here because there is no taught programme in his subject to apply it to, and it is a tuition discount rather than a full award.",
+  "deadline": "N/A for taught study. Research-degree applications at Surrey are rolling.",
+  "languageAndCertificate": "English — Surrey's standard IELTS requirement would apply. Irrelevant given the absence of a taught programme.",
+  "verdict": "AVOID",
+  "verdictWhy": "Surrey's famous Tonmeister degree is an undergraduate BMus/BSc, and IoSR's only postgraduate provision is research — MPhil and PhD. There is no taught master's in sound recording for him to apply to, and a self-funded overseas research degree is neither affordable nor a route into making records.",
+  "correction": "Confirms the record's negative finding and sharpens it: the Tonmeister degree at Surrey is UNDERGRADUATE (BMus (Hons) or BSc (Hons), open for 2027 entry) and IoSR's postgraduate provision is research-only (MPhil/PhD in Audio Engineering). Also notes that the record's URL is a scholarship page rather than a programme page — the International Excellence Award is a partial fee discount and is of no use without an eligible taught programme.",
   "verifiedAt": "2026-08",
   "_source": "door3-verify"
  }
