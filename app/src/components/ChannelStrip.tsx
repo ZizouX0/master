@@ -1,7 +1,7 @@
 /**
  * THE CHANNEL STRIP — the signature of the whole design.
  *
- * A 24px strip in the left gutter of every record, in the list and on the record page, carrying
+ * A 32px strip in the left gutter of every record, in the list and on the record page, carrying
  * three ORTHOGONAL truths in three different *kinds* of mark, so all three are legible at scroll
  * speed without reading a word:
  *
@@ -45,17 +45,20 @@ import type { AuditionSource, Verdict } from '../types';
 import { hasConfirmedAudition, hasSuspectedAudition } from '../data/filters';
 
 // ── geometry ─────────────────────────────────────────────────────────────────
-// The 24px column, in CSS pixels from the top of the strip.
+// The 32px column, in CSS pixels from the top of the strip. The canvas is a laptop at
+// 1280–1600px: at 24px the strip read as a pinstripe beside 17.5px prose, and a signature that
+// reads as a pinstripe is a decoration. 32px is the width of a structural divider.
 
-const RAIL_X = 7; // centre of the 2px rail
-const METER_X = 2; // the block spans 2 → 12, centred on the rail
-const METER_W = 10;
-const METER_TOP = 2; // 0–2 is the cap bar's lane
-const METER_H = 20;
+const RAIL_X = 9.5; // centre of the 3px rail
+const METER_X = 3; // the block spans 3 → 16, centred on the rail
+const METER_W = 13;
+const METER_TOP = 3; // 0–3 is the cap bar's lane
+const METER_H = 28;
 const METER_BOTTOM = METER_TOP + METER_H;
-const RUNG_END = 21; // rungs run from the rail out to 21 — 14px, inside the 24px column
-const RUNG_GAP = 10; // rungs are 10px apart, built bottom-up
-const LADDER_BASE = 62; // far enough below the meter that the two systems cannot blur
+const RUNG_END = 28; // rungs run from the rail out to 28 — 18.5px, inside the 32px column
+const RUNG_GAP = 13; // rungs are 13px apart, built bottom-up
+const LADDER_BASE = 84; // far enough below the meter that the two systems cannot blur
+const STROKE = 2; // a rung; the rail is 3, drawn in CSS (styles.css §5)
 
 // ── the three readings ───────────────────────────────────────────────────────
 
@@ -229,7 +232,7 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
     // The densest mark on the page. Solid fill, plus a cap bar across the top edge — a channel
     // sending signal at nominal. Unmistakable at 20 cm, and a solid black block in greyscale.
     marks.push(
-      <rect key="cap" class="strip__meter--nominal" x={METER_X - 1.5} y={0} width={METER_W + 3} height={2} />,
+      <rect key="cap" class="strip__meter--nominal" x={METER_X - 1.5} y={0} width={METER_W + 3} height={2.5} />,
       <rect key="m" class="strip__meter--nominal" x={METER_X} y={METER_TOP} width={METER_W} height={METER_H} rx={1} />
     );
   } else if (meter === 'over') {
@@ -245,20 +248,20 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
         width={METER_W - 1}
         height={METER_H - 1}
         rx={1}
-        stroke-width={1}
+        stroke-width={1.25}
       />,
       <path
         key="h"
         class="strip__hatch--over"
-        d={hatch(METER_X + 1, fillTop, METER_X + METER_W - 1, METER_BOTTOM - 1, 3)}
-        stroke-width={1}
+        d={hatch(METER_X + 1, fillTop, METER_X + METER_W - 1, METER_BOTTOM - 1, 4)}
+        stroke-width={1.25}
         fill="none"
       />,
       <path
         key="t"
         class="strip__hatch--over"
-        d={`M${METER_X + METER_W} ${fillTop}L${METER_X + METER_W + 4} ${fillTop}`}
-        stroke-width={1.5}
+        d={`M${METER_X + METER_W} ${fillTop}L${METER_X + METER_W + 5} ${fillTop}`}
+        stroke-width={2}
       />
     );
   } else if (meter === 'clip') {
@@ -272,13 +275,13 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
         width={METER_W - 1}
         height={METER_H - 1}
         rx={1}
-        stroke-width={1}
+        stroke-width={1.25}
       />,
       <path
         key="s"
         class="strip__wall"
-        d={`M${METER_X - 2} ${METER_TOP + METER_H / 2}L${METER_X + METER_W + 2} ${METER_TOP + METER_H / 2}`}
-        stroke-width={2}
+        d={`M${METER_X - 2.5} ${METER_TOP + METER_H / 2}L${METER_X + METER_W + 2.5} ${METER_TOP + METER_H / 2}`}
+        stroke-width={2.5}
       />
     );
   } else if (meter === 'absent') {
@@ -288,8 +291,8 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
       <path
         key="d"
         class="strip__absent"
-        d={`M${METER_X + 1} ${METER_TOP + METER_H / 2}L${METER_X + METER_W - 1} ${METER_TOP + METER_H / 2}`}
-        stroke-width={1.5}
+        d={`M${METER_X + 1.5} ${METER_TOP + METER_H / 2}L${METER_X + METER_W - 1.5} ${METER_TOP + METER_H / 2}`}
+        stroke-width={2}
       />
     );
   }
@@ -300,7 +303,7 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
       // An open hole — unknown, not absent. The one circle in the application, and it is here
       // because a hole is what it means.
       marks.push(
-        <circle key="hole" class="strip__hole" cx={RAIL_X + 5} cy={base} r={2} stroke-width={1} />
+        <circle key="hole" class="strip__hole" cx={RAIL_X + 6.5} cy={base} r={2.5} stroke-width={1.5} />
       );
     } else {
       for (let i = 0; i < l.rungs; i++) {
@@ -317,8 +320,8 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
             <path
               key={'r' + i}
               class={cls}
-              d={`M${RAIL_X} ${y}L${RAIL_X + 4.5} ${y}M${RAIL_X + 9.5} ${y}L${RUNG_END} ${y}`}
-              stroke-width={1.5}
+              d={`M${RAIL_X} ${y}L${RAIL_X + 6} ${y}M${RAIL_X + 12.5} ${y}L${RUNG_END} ${y}`}
+              stroke-width={STROKE}
             />,
             // and the stile terminates above it. The rail is a CSS background running the whole
             // height of the channel, so the terminus is drawn as a positive mark rather than a
@@ -327,8 +330,8 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
             <path
               key="cut"
               class={'strip__rung strip__rung--' + (l.suspect ? 'suspect' : 'stop')}
-              d={`M${RAIL_X} ${y - 4}L${RAIL_X} ${y - 9}`}
-              stroke-width={2}
+              d={`M${RAIL_X} ${y - 5}L${RAIL_X} ${y - 12}`}
+              stroke-width={3}
             />
           );
         } else if (l.kind === 'unpublished') {
@@ -337,17 +340,17 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
               key={'r' + i}
               class="strip__rung"
               d={`M${RAIL_X} ${y}L${RUNG_END} ${y}`}
-              stroke-width={1.5}
-              stroke-dasharray="1.5 2"
+              stroke-width={STROKE}
+              stroke-dasharray="2 2.5"
             />
           );
         } else {
           marks.push(
-            <path key={'r' + i} class="strip__rung" d={`M${RAIL_X} ${y}L${RUNG_END} ${y}`} stroke-width={1.5} />
+            <path key={'r' + i} class="strip__rung" d={`M${RAIL_X} ${y}L${RUNG_END} ${y}`} stroke-width={STROKE} />
           );
           // Rung 2 is the production test: a filled dot at the outer end, the raw material you
           // are handed. Deliberately not green — it is passable, but it is not a verdict.
-          if (i === 1 && l.dot) marks.push(<circle key="dot" class="strip__dot" cx={RUNG_END} cy={y} r={1.5} />);
+          if (i === 1 && l.dot) marks.push(<circle key="dot" class="strip__dot" cx={RUNG_END} cy={y} r={2} />);
         }
       }
     }
@@ -356,14 +359,14 @@ export function ChannelStrip(props: ChannelStripProps): JSX.Element {
   // ── the prerequisite wall: across the whole channel, ladder above it intact ─
   if (props.prerequisiteWall) {
     marks.push(
-      <path key="wall" class="strip__wall" d={`M0 ${base + 9}L24 ${base + 9}`} stroke-width={2} />
+      <path key="wall" class="strip__wall" d={`M0 ${base + 12}L32 ${base + 12}`} stroke-width={2.5} />
     );
   }
 
   return (
     <svg
       class={railClass + (noSlot ? ' strip--noslot' : '') + (props.class ? ' ' + props.class : '')}
-      width="24"
+      width="32"
       height="100%"
       role="img"
       aria-label={describeStrip(props)}

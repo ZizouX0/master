@@ -222,7 +222,11 @@ export function splitUrls(raw: string | null | undefined): string[] {
  * can label the note, not resolve it.
  */
 export function mentionsStaleDuplicatePointer(correction: string | null | undefined): boolean {
-  return /DUPLICATE of indic?e?s?\s/i.test(correction ?? '');
+  // Both spellings occur, and the singular is the commoner one: 12 records say "DUPLICATE of
+  // index N" against 8 that say "DUPLICATE of indices N, M". An earlier pattern here only
+  // matched the plural stem, so on the 12 the sentence was printed without the warning that its
+  // number points at a record in another country. The rule is worth nothing if it fires on 8/20.
+  return /DUPLICATE of ind(ex|exes|ice|ices)\b/i.test(correction ?? '');
 }
 
 /** "2026-08-14T09:12:03.000Z" → "14 August 2026". For personal-state timestamps only. */

@@ -40,10 +40,12 @@
  * strings, which are set in the mono face, and the system stack renders them correctly.
  *
  * The three fallback faces below are what make `font-display: swap` cost nothing. Their
- * size-adjust / ascent-override / descent-override values are COMPUTED, not guessed — the mean
- * advance width of each real face weighted by this app's own character frequencies, divided by
- * the mean advance of Roboto (Android's default) measured the same way. Run
- * `node scripts/build-fonts.mjs --check` and it fails if this table has drifted from the fonts.
+ * size-adjust / ascent-override / descent-override values are COMPUTED, not guessed: 40,000
+ * characters of this app's own prose are SHAPED with HarfBuzz — the shaper Chromium itself uses,
+ * so kerning is included — in the real face and in the fallback, and the ratio of the two mean
+ * advances is the size-adjust. Verified against a live Chromium measurement: 1.0620 predicted,
+ * 1.0620 laid out. Run `node scripts/build-fonts.mjs --check` and it fails if this table has
+ * drifted from the fonts.
  */
 
 @font-face {
@@ -79,32 +81,39 @@
   font-display: swap;
 }
 
-/* Metric-matched fallbacks. Same line box, same mean advance — the swap moves nothing. */
+/*
+ * Metric-matched fallbacks. Same line box, same mean advance — the swap moves nothing.
+ *
+ * Computed against Arial's metrics, because the canvas is a laptop and Arial or Helvetica is
+ * what will actually paint the first frame. The Android numbers differ by about 1% and are
+ * recorded in public/fonts/metrics.json.
+ */
 @font-face {
   font-family: 'Literata Fallback';
-  src: local('Roboto'), local('Arial'), local('Helvetica Neue'), local('Liberation Sans');
-  size-adjust: 108.5%;
-  ascent-override: 108.5%;
-  descent-override: 28.4%;
+  src: local('Arial'), local('Helvetica Neue'), local('Liberation Sans'), local('Roboto');
+  size-adjust: 106.2%;
+  ascent-override: 110.8%;
+  descent-override: 29.0%;
   line-gap-override: 0%;
 }
 
 @font-face {
   font-family: 'Literata Fallback';
-  src: local('Roboto Italic'), local('Arial Italic'), local('Liberation Sans Italic');
+  src: local('Arial Italic'), local('Helvetica Neue Italic'), local('Liberation Sans Italic'),
+    local('Roboto Italic');
   font-style: italic;
-  size-adjust: 102.3%;
-  ascent-override: 115.1%;
-  descent-override: 30.1%;
+  size-adjust: 99.9%;
+  ascent-override: 117.8%;
+  descent-override: 30.8%;
   line-gap-override: 0%;
 }
 
 @font-face {
   font-family: 'Archivo Fallback';
-  src: local('Roboto'), local('Arial'), local('Helvetica Neue'), local('Liberation Sans');
-  size-adjust: 99.7%;
-  ascent-override: 88.0%;
-  descent-override: 21.1%;
+  src: local('Arial'), local('Helvetica Neue'), local('Liberation Sans'), local('Roboto');
+  size-adjust: 98.7%;
+  ascent-override: 89.0%;
+  descent-override: 21.3%;
   line-gap-override: 0%;
 }
 
@@ -185,13 +194,27 @@
   --sans: 'Archivo', 'Archivo Fallback', 'Helvetica Neue', Arial, sans-serif;
   --mono: 'Spline Sans Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* ── the channel geometry (§Layout): 14 pad · 24 rail · 12 gap · 326 prose · 16 pad ── */
-  --rail: 24px;
-  --rail-gap: 12px;
-  --pad-l: 14px;
-  --pad-r: 16px;
+  /* ── the channel geometry ──────────────────────────────────────────────────
+   * The canvas is a laptop: 1280–1600px. The rail is 32px there, not the 24 a phone would
+   * allow — at 1600px a 24px strip reads as a pinstripe beside 17.5px prose, and the strip is
+   * the signature, not a decoration. It is the structural divider between channels, so it is
+   * given the width of one.
+   */
+  --rail: 32px;
+  --rail-gap: 20px;
+  --pad-l: 40px;
+  --pad-r: 40px;
   --tap: 44px;
-  --measure: 36rem;
+  /* The working area. Left-aligned in the viewport, never centred: a document sits at the left
+     of the desk, it does not float in the middle of it. */
+  --measure: 72rem;
+  /* What a text block may occupy … */
+  --measure-body: 46rem;
+  /* … and the hard cap on anything that is read as prose. `correction`, `verdictWhy`,
+     `recommendation` and `acceptsNonMusic` average 361–755 characters; at 1600px with no cap
+     they set at 150 characters a line, which is unreadable. 38rem is ~70 characters of
+     Literata at 17.5px. This lives on the type token, never on a view. */
+  --measure-prose: 38rem;
 
   /* ── spacing scale. Only these values exist. ── */
   --s1: 4px;
@@ -209,10 +232,59 @@
   /* The single duration in the application. See §8. */
   --mute: 120ms;
 
+  /* ── the scale ─────────────────────────────────────────────────────────────
+   * One place to tune it. Laptop is the base — sizes chosen to survive a 390px viewport read
+   * as a phone app blown up when they land on a 1400px canvas: the display line is undersized
+   * and the body is oversized against the space around it. The narrow column below is a
+   * fallback that must not break, not the target.
+   */
+  --t-statement: 34px;
+  --t-statement-lh: 1.22;
+  --t-title: 28px;
+  --t-card: 20px;
+  --t-prose: 17.5px;
+  --t-prose-2: 16px;
+  --t-sentence: 16px;
+  --t-inst: 15px;
+  --t-legend: 11.5px;
+  --t-verdict: 15px;
+  --t-ui: 14.5px;
+  --t-tab: 11px;
+  --t-data: 13.5px;
+  --t-num: 22px;
+  --t-micro: 12.5px;
+  /* The full length of the fader's throw on this canvas. */
+  --throw-length: 480px;
+
   /* Never synthesise: a faux-bold serif is the most unconsidered thing a page can do, and the
      variable range covers 400–700 for real. */
   font-synthesis: none;
   font-variant-numeric: tabular-nums;
+}
+
+/* Narrow — a phone, or a laptop window dragged small. Everything still works; nothing here is
+   the target. The rail keeps its width: it is 8% of a 390px screen and it is the design. */
+@media (max-width: 720px) {
+  :root {
+    --t-statement: 25px;
+    --t-statement-lh: 1.28;
+    --t-title: 21px;
+    --t-card: 17px;
+    --t-prose: 16.5px;
+    --t-prose-2: 15px;
+    --t-sentence: 14.5px;
+    --t-inst: 14px;
+    --t-legend: 11px;
+    --t-ui: 14px;
+    --t-tab: 10.5px;
+    --t-data: 13px;
+    --t-num: 20px;
+    --t-micro: 12px;
+    --rail-gap: 12px;
+    --pad-l: 14px;
+    --pad-r: 16px;
+    --throw-length: 380px;
+  }
 }
 
 /* ── compatibility aliases ────────────────────────────────────────────────────
@@ -328,21 +400,25 @@ hr,
    the landing screen is set in the body face, so the app never stops looking like a document. */
 
 .t-statement {
-  font: 450 25px/1.28 var(--serif);
+  font: 450 var(--t-statement) / var(--t-statement-lh) var(--serif);
   letter-spacing: -0.015em;
   color: var(--legend);
+  /* The one large line in the app. It is a sentence, so it obeys the reading measure too. */
+  max-width: var(--measure-prose);
 }
 
 .t-title {
-  font: 500 21px/1.25 var(--serif);
-  letter-spacing: -0.01em;
+  font: 500 var(--t-title) / 1.2 var(--serif);
+  letter-spacing: -0.012em;
   color: var(--legend);
+  max-width: var(--measure-body);
 }
 
 .t-cardtitle {
-  font: 500 17px/1.3 var(--serif);
+  font: 500 var(--t-card) / 1.3 var(--serif);
   letter-spacing: -0.005em;
   color: var(--legend);
+  max-width: var(--measure-body);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
@@ -353,28 +429,32 @@ hr,
 /* The four load-bearing fields — verdictWhy, acceptsNonMusic, portfolio, recommendation, which
    average 361, 302, 228 and 755 characters. This face exists for exactly these. Never clamped. */
 .t-prose {
-  font: 400 16.5px/1.6 var(--serif);
+  font: 400 var(--t-prose) / 1.62 var(--serif);
   color: var(--legend);
+  max-width: var(--measure-prose);
 }
 
 .t-prose-2 {
-  font: 400 15px/1.55 var(--serif);
+  font: 400 var(--t-prose-2) / 1.58 var(--serif);
   color: var(--legend);
+  max-width: var(--measure-prose);
 }
 
 /* Their voice, not ours. Set in the recess, behind a 2px rule of the strip's rank. */
 .t-quote {
-  font: italic 400 16.5px/1.55 var(--serif);
+  font: italic 400 var(--t-prose) / 1.55 var(--serif);
   color: var(--legend);
   margin: 0;
-  padding: var(--s2) var(--s3);
+  padding: var(--s3) var(--s4);
   border-left: 2px solid var(--strip);
   background: var(--console-recess);
+  max-width: var(--measure-prose);
 }
 
 .t-sentence {
-  font: italic 400 14.5px/1.5 var(--serif);
+  font: italic 400 var(--t-sentence) / 1.5 var(--serif);
   color: var(--legend);
+  max-width: var(--measure-prose);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
@@ -393,13 +473,13 @@ hr,
    legends are, and the chrome is set at normal width, in the same family. */
 
 .t-inst {
-  font: 400 14px/1.4 var(--sans);
+  font: 400 var(--t-inst) / 1.4 var(--sans);
   font-stretch: 100%;
   color: var(--legend);
 }
 
 .t-legend {
-  font: 600 11px/1 var(--sans);
+  font: 600 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -408,14 +488,14 @@ hr,
 
 /* The widest thing in the app. A panel legend, and it always sits beside its mark. */
 .t-verdict {
-  font: 700 15px/1 var(--sans);
+  font: 700 var(--t-verdict) / 1 var(--sans);
   font-stretch: 125%;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .t-verdict--sm {
-  font-size: 11px;
+  font-size: var(--t-legend);
   font-stretch: 115%;
   letter-spacing: 0.14em;
 }
@@ -435,20 +515,20 @@ hr,
 }
 
 .t-ui {
-  font: 500 14px/1.2 var(--sans);
+  font: 500 var(--t-ui) / 1.2 var(--sans);
   font-stretch: 100%;
   letter-spacing: 0.01em;
 }
 
 .t-tab {
-  font: 600 10.5px/1 var(--sans);
+  font: 600 var(--t-tab) / 1 var(--sans);
   font-stretch: 110%;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .t-micro {
-  font: 400 12px/1.45 var(--sans);
+  font: 400 var(--t-micro) / 1.45 var(--sans);
   font-stretch: 100%;
   letter-spacing: 0.01em;
   color: var(--strip);
@@ -458,13 +538,13 @@ hr,
    I HAVE NOT TOUCHED IT. Deadlines, costs, counts, row numbers, the UNVERIFIED token. */
 
 .t-data {
-  font: 400 13px/1.45 var(--mono);
+  font: 400 var(--t-data) / 1.45 var(--mono);
   letter-spacing: 0.01em;
   font-variant-numeric: tabular-nums;
 }
 
 .t-num {
-  font: 400 20px/1 var(--mono);
+  font: 400 var(--t-num) / 1 var(--mono);
   font-variant-numeric: tabular-nums;
   text-align: right;
 }
@@ -524,7 +604,7 @@ hr,
   grid-column: 1;
   align-self: stretch;
   /* A channel is at least tall enough to carry a meter block and a three-rung ladder. */
-  min-height: 76px;
+  min-height: 104px;
 }
 
 .channel__body {
@@ -551,7 +631,9 @@ hr,
 }
 
 .channel--card > .channel__body {
-  padding: var(--s5) 0;
+  /* The only air between two records. With no rule to do the separating, the rhythm is what
+     groups a title with its own metadata and holds it off the next channel. */
+  padding: var(--s6) 0;
 }
 
 /* Section-level separation is 32px and a rule; group 24; field 16; line 8. */
@@ -572,26 +654,26 @@ hr,
 .rail {
   --rail-top: 0px;
   background-repeat: no-repeat;
-  background-position: 6px var(--rail-top);
-  background-size: 2px calc(100% - var(--rail-top));
+  background-position: 8px var(--rail-top);
+  background-size: 3px calc(100% - var(--rail-top));
   background-image: linear-gradient(var(--strip), var(--strip));
 }
 
 .rail--dashed {
   background-image: repeating-linear-gradient(
     to bottom,
-    var(--strip) 0 4px,
-    transparent 4px 7px
+    var(--strip) 0 5px,
+    transparent 5px 9px
   );
 }
 
 .rail--hatched {
   background-position: 2px var(--rail-top);
-  background-size: 9px calc(100% - var(--rail-top));
+  background-size: 15px calc(100% - var(--rail-top));
   background-image: repeating-linear-gradient(
     45deg,
-    var(--strip) 0 1px,
-    transparent 1px 5px
+    var(--strip) 0 1.25px,
+    transparent 1.25px 7px
   );
 }
 
@@ -609,14 +691,15 @@ hr,
   width: var(--rail);
   overflow: visible;
   /* The rail starts below the meter's lane, so an outlined meter never has a line through it. */
-  --rail-top: 24px;
+  --rail-top: 34px;
 }
 
 /* The 137 non-degrees have no meter slot: they were never given a verdict, they were judged on
-   their accreditation. The rail is hatched for its whole height and the space where the block
-   would sit is simply not drawn. */
+   their accreditation. The rail is hatched almost to the top and the space where the block would
+   sit is simply not drawn — but the 8px break stays, because that break is what separates one
+   channel from the next now that no rule does. */
 .strip--noslot {
-  --rail-top: 0px;
+  --rail-top: 8px;
 }
 
 /* The one place a colour is allowed to be a fill. */
@@ -714,8 +797,8 @@ hr,
   margin: 0;
   /* Where the travel runs: number column + gap + half the tick cell. */
   --track-x: calc(3.4em + 23px);
-  /* The full length of the fader's throw. Each row takes its share of it. */
-  --throw: 420px;
+  /* Each row takes its share of the throw. */
+  --throw: var(--throw-length);
 }
 
 /* The rail: one element, top of travel to bottom of travel. */
@@ -750,7 +833,7 @@ hr,
 }
 
 .throw__n {
-  font: 400 20px/1 var(--mono);
+  font: 400 var(--t-num) / 1 var(--mono);
   font-variant-numeric: tabular-nums;
   text-align: right;
   color: var(--legend);
@@ -801,20 +884,20 @@ hr,
 
 .throw__label {
   display: block;
-  font: 400 15px/1.35 var(--serif);
+  font: 400 var(--t-prose-2) / 1.35 var(--serif);
   color: var(--legend);
 }
 
 .throw__drop {
   display: block;
   margin-top: var(--s1);
-  font: 400 12px/1.4 var(--mono);
+  font: 400 var(--t-micro) / 1.4 var(--mono);
   color: var(--strip);
 }
 
 .throw__go {
   color: var(--strip);
-  font: 400 14px/1.4 var(--sans);
+  font: 400 var(--t-ui) / 1.4 var(--sans);
   text-align: right;
 }
 
@@ -875,7 +958,7 @@ hr,
 .topbar__title {
   flex: 1;
   min-width: 0;
-  font: 600 11px/1 var(--sans);
+  font: 600 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -916,7 +999,7 @@ hr,
   border: 1px solid var(--strip);
   border-radius: var(--radius);
   color: var(--legend);
-  font: 500 14px/1.2 var(--sans);
+  font: 500 var(--t-ui) / 1.2 var(--sans);
   font-stretch: 100%;
   letter-spacing: 0.01em;
   cursor: pointer;
@@ -970,7 +1053,7 @@ hr,
   justify-content: center;
   gap: 4px;
   color: var(--strip);
-  font: 600 10.5px/1 var(--sans);
+  font: 600 var(--t-tab) / 1 var(--sans);
   font-stretch: 110%;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1014,7 +1097,7 @@ hr,
 }
 
 .kicker {
-  font: 600 11px/1 var(--sans);
+  font: 600 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1022,7 +1105,8 @@ hr,
 }
 
 .prose {
-  font: 400 16.5px/1.6 var(--serif);
+  font: 400 var(--t-prose) / 1.62 var(--serif);
+  max-width: var(--measure-prose);
 }
 
 .muted,
@@ -1047,13 +1131,14 @@ hr,
   padding-top: var(--s3);
   border-top: 1px solid var(--rule);
   color: var(--strip);
-  font: 400 12px/1.45 var(--mono);
+  font: 400 var(--t-micro) / 1.45 var(--mono);
 }
 
 .thesis {
-  font: 450 25px/1.28 var(--serif);
+  font: 450 var(--t-statement) / var(--t-statement-lh) var(--serif);
   letter-spacing: -0.015em;
   margin: var(--s1) 0 var(--s4);
+  max-width: var(--measure-prose);
 }
 
 /* The landing statement never acquires a hero: no rule, no colour, no underline. */
@@ -1063,8 +1148,9 @@ hr,
 }
 
 .standfirst {
-  font: 400 16.5px/1.6 var(--serif);
+  font: 400 var(--t-prose) / 1.62 var(--serif);
   color: var(--legend);
+  max-width: var(--measure-prose);
 }
 
 /* The seven-step funnel, until the fader throw replaces it. */
@@ -1091,7 +1177,7 @@ hr,
 
 .funnel__n {
   flex: 0 0 3.4em;
-  font: 400 20px/1 var(--mono);
+  font: 400 var(--t-num) / 1 var(--mono);
   font-variant-numeric: tabular-nums;
   text-align: right;
   color: var(--legend);
@@ -1099,7 +1185,7 @@ hr,
 
 .funnel__label {
   flex: 1;
-  font: 400 15px/1.35 var(--serif);
+  font: 400 var(--t-prose-2) / 1.35 var(--serif);
   color: var(--legend);
 }
 
@@ -1110,7 +1196,7 @@ hr,
 }
 
 .funnel__drop {
-  font: 400 12px/1.4 var(--mono);
+  font: 400 var(--t-micro) / 1.4 var(--mono);
   color: var(--strip);
 }
 
@@ -1162,7 +1248,7 @@ hr,
 
 .split__label {
   display: block;
-  font: 600 11px/1.35 var(--sans);
+  font: 600 var(--t-legend) / 1.35 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1197,7 +1283,7 @@ hr,
 
 .bigbtn__title {
   display: block;
-  font: 400 16.5px/1.4 var(--serif);
+  font: 400 var(--t-prose) / 1.4 var(--serif);
 }
 
 .bigbtn__sub {
@@ -1223,7 +1309,7 @@ hr,
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0 var(--s2);
-  font: 400 13px/1.45 var(--mono);
+  font: 400 var(--t-data) / 1.45 var(--mono);
   letter-spacing: 0.01em;
   color: var(--strip);
 }
@@ -1253,7 +1339,7 @@ hr,
 }
 
 .vword {
-  font: 700 11px/1 var(--sans);
+  font: 700 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1274,7 +1360,7 @@ hr,
 }
 
 .levelchip {
-  font: 400 12px/1.45 var(--sans);
+  font: 400 var(--t-micro) / 1.45 var(--sans);
   color: var(--strip);
 }
 
@@ -1286,6 +1372,7 @@ hr,
   align-items: center;
   gap: var(--s2);
   width: 100%;
+  max-width: var(--measure-body);
   margin: 0 0 var(--s2);
   padding: var(--s1) 0;
   border: 0;
@@ -1293,7 +1380,7 @@ hr,
   border-bottom: 1px solid var(--meter-clip);
   background: none;
   color: var(--meter-clip);
-  font: 500 17px/1.25 var(--serif);
+  font: 500 var(--t-card) / 1.25 var(--serif);
   letter-spacing: -0.005em;
 }
 
@@ -1305,7 +1392,7 @@ hr,
 }
 
 .notdegree__what {
-  font: 400 12px/1.45 var(--sans);
+  font: 400 var(--t-micro) / 1.45 var(--sans);
   color: var(--strip);
 }
 
@@ -1318,7 +1405,7 @@ hr,
 .field__label {
   display: block;
   margin-bottom: var(--s1);
-  font: 600 11px/1 var(--sans);
+  font: 600 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1326,14 +1413,15 @@ hr,
 }
 
 .field__value {
-  font: 400 15px/1.55 var(--serif);
+  font: 400 var(--t-prose-2) / 1.58 var(--serif);
+  max-width: var(--measure-prose);
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 
 .field--wide .field__value {
-  font-size: 16.5px;
-  line-height: 1.6;
+  font-size: var(--t-prose);
+  line-height: 1.62;
 }
 
 /* They were asked and nobody published it. Amber, dotted — never italic, because italic in this
@@ -1360,7 +1448,7 @@ hr,
 
 .field--empty .field__value {
   display: inline;
-  font: 400 12px/1.45 var(--mono);
+  font: 400 var(--t-micro) / 1.45 var(--mono);
   color: var(--strip);
 }
 
@@ -1384,7 +1472,7 @@ hr,
   margin-bottom: var(--s4);
   padding-bottom: var(--s2);
   border-bottom: 1px solid var(--rule);
-  font: 600 11px/1 var(--sans);
+  font: 600 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1396,7 +1484,8 @@ hr,
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
   color: var(--strip);
-  font: 400 16.5px/1.6 var(--serif);
+  font: 400 var(--t-prose) / 1.62 var(--serif);
+  max-width: var(--measure-prose);
 }
 
 .placeholder {
@@ -1426,7 +1515,7 @@ hr,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font: 400 13px/1.45 var(--mono);
+  font: 400 var(--t-data) / 1.45 var(--mono);
   font-variant-numeric: tabular-nums;
   color: var(--strip);
 }
@@ -1471,13 +1560,14 @@ hr,
 
 .search {
   width: 100%;
+  max-width: var(--measure-body);
   min-height: var(--tap);
   padding: var(--s2) var(--s3);
   background: var(--console-recess);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   color: var(--legend);
-  font: 400 15px/1.4 var(--serif);
+  font: 400 var(--t-prose-2) / 1.4 var(--serif);
 }
 
 .cards {
@@ -1512,13 +1602,14 @@ hr,
 
 .card__title {
   margin: 0 0 var(--s1);
-  font: 500 17px/1.3 var(--serif);
+  font: 500 var(--t-card) / 1.3 var(--serif);
   letter-spacing: -0.005em;
+  max-width: var(--measure-body);
 }
 
 .card__inst {
   margin-bottom: var(--s2);
-  font: 400 14px/1.4 var(--sans);
+  font: 400 var(--t-inst) / 1.4 var(--sans);
   font-stretch: 100%;
   color: var(--legend);
 }
@@ -1529,8 +1620,9 @@ hr,
 
 .card__sentence {
   margin: var(--s2) 0 0;
-  font: italic 400 14.5px/1.5 var(--serif);
+  font: italic 400 var(--t-sentence) / 1.5 var(--serif);
   color: var(--legend);
+  max-width: var(--measure-prose);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
@@ -1545,7 +1637,7 @@ hr,
 
 .card__dupes {
   margin-top: var(--s2);
-  font: 400 12px/1.45 var(--mono);
+  font: 400 var(--t-micro) / 1.45 var(--mono);
   color: var(--strip);
 }
 
@@ -1602,7 +1694,7 @@ hr,
 
 .sheet__title {
   flex: 1;
-  font: 600 11px/1 var(--sans);
+  font: 600 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1648,7 +1740,7 @@ hr,
 
 .fsection__name {
   flex: 1;
-  font: 600 11px/1 var(--sans);
+  font: 600 var(--t-legend) / 1 var(--sans);
   font-stretch: 115%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1704,7 +1796,7 @@ hr,
 
 .switch__label {
   display: block;
-  font: 400 15px/1.35 var(--serif);
+  font: 400 var(--t-prose-2) / 1.35 var(--serif);
 }
 
 .switch__hint {

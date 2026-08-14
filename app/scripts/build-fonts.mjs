@@ -126,11 +126,11 @@ const LATIN_ONLY = (cp) =>
   (cp >= 0x2100 && cp <= 0x25ff) || // letterlike, arrows, math, geometric shapes
   (cp >= 0x2600 && cp <= 0x27bf); // misc symbols + dingbats (✓ ✕ ⚙)
 
-// ── codepoints ───────────────────────────────────────────────────────────────
+// ── codepoints, and the corpus the metrics are measured over ─────────────────
 
-/** Every character the app can render, with how often it occurs. Frequency drives the metrics. */
-function codepointFrequencies() {
-  const freq = new Map();
+/** Every character the app can render. This drives the SUBSET. */
+function codepointsInData() {
+  const chars = new Set();
   const files = ['index.json', 'meta.json', 'detail.json', 'funding.json'];
   for (const name of files) {
     const file = join(DATA, name);
@@ -139,7 +139,7 @@ function codepointFrequencies() {
     while (stack.length) {
       const v = stack.pop();
       if (typeof v === 'string') {
-        for (const ch of v) freq.set(ch, (freq.get(ch) ?? 0) + 1);
+        for (const ch of v) chars.add(ch);
       } else if (Array.isArray(v)) {
         stack.push(...v);
       } else if (v && typeof v === 'object') {
@@ -147,12 +147,48 @@ function codepointFrequencies() {
       }
     }
   }
-  // The interface's own furniture, and the printable ASCII the UI is built from, at weight 0 —
-  // present in the subset, absent from the frequency weighting so they cannot skew the metrics.
-  for (let cp = 0x20; cp <= 0x7e; cp++) if (!freq.has(String.fromCodePoint(cp))) freq.set(String.fromCodePoint(cp), 0);
-  for (const ch of UI_GLYPHS) if (!freq.has(ch)) freq.set(ch, 0);
-  freq.set(' ', 0);
-  return freq;
+  for (let cp = 0x20; cp <= 0x7e; cp++) chars.add(String.fromCodePoint(cp));
+  for (const ch of UI_GLYPHS) chars.add(ch);
+  return chars;
+}
+
+/**
+ * The fields that are actually SET in the reading face — the app's own argument, in its own
+ * words. This drives the METRICS, and it is deliberately not the same set as the subset above.
+ *
+ * Weighting the mean advance over every string in the JSON (keys, URLs, enum values, the raw
+ * `url` citation lists) measures a text nobody reads: it came out 2.0% wide for Literata against
+ * the same font measured on real prose, which is a whole line every 50, and the swap would move
+ * the page. The subset must contain every codepoint the data can produce; the metric must
+ * describe the sentences a human will read.
+ */
+const PROSE_FIELDS = [
+  'verdictWhy', 'acceptsNonMusic', 'portfolio', 'recommendation', 'entry', 'study',
+  'correction', 'scholarshipDetail', 'whyChance', 'qualification', 'accreditation',
+  'programme', 'institution',
+];
+
+function proseCorpus(keep) {
+  const out = [];
+  for (const name of ['detail.json', 'index.json']) {
+    const file = join(DATA, name);
+    if (!existsSync(file)) continue;
+    const stack = [JSON.parse(readFileSync(file, 'utf8'))];
+    while (stack.length) {
+      const v = stack.pop();
+      if (Array.isArray(v)) stack.push(...v);
+      else if (v && typeof v === 'object') {
+        for (const [k, val] of Object.entries(v)) {
+          if (typeof val === 'string') {
+            if (PROSE_FIELDS.includes(k) && val.length > 12) out.push(val);
+          } else stack.push(val);
+        }
+      }
+    }
+  }
+  // Only what the subset can actually render: a Greek institution name falls to the system
+  // stack, so it must not move a number that describes our own faces.
+  return [...out.join(' ')].filter((ch) => keep.has(ch)).join('').slice(0, 40000);
 }
 
 // ── shell helpers ────────────────────────────────────────────────────────────
@@ -167,35 +203,76 @@ async function download(url, to) {
   return to;
 }
 
+/** Glyphs in the shipped file. fontTools reads woff2 directly; HarfBuzz does not. */
+function glyphCount(woff2) {
+  return Number(
+    py(['-c', "import sys;from fontTools.ttLib import TTFont;print(len(TTFont(sys.argv[1]).getGlyphOrder()))", woff2]).trim()
+  );
+}
+
 /**
- * Mean advance width in em, weighted by this app's character frequencies, plus the vertical
- * metrics the browser will actually use for the line box (hhea; every face here sets hhea and
- * OS/2 typo to the same values, so there is no ambiguity to resolve).
+ * Mean advance in em over that corpus, SHAPED — not summed.
+ *
+ * Summing `hmtx` advances ignores kerning, and Literata kerns hard: over 12,000 characters of
+ * this app's prose the sum said 1.0737× Liberation Sans where the browser laid out 1.0620×, a
+ * 1.1% error on its own. Shaping with HarfBuzz — the same shaper Chromium uses — reproduces the
+ * browser to four decimal places (verified: 1.0620 and 0.9856 against a live measurement in
+ * Chromium 141). The vertical metrics come from hhea, which is what the browser uses for the
+ * line box; every face here sets hhea and OS/2 typo to the same values, so there is nothing to
+ * disambiguate.
+ *
+ * Measured on the axis-clipped TTF rather than the woff2: HarfBuzz does not decompress woff2,
+ * and woff2 is lossless, so the advances are identical.
  */
-function measure(fontPath, freq) {
+function measure(fontPath, corpusFile, variations) {
   const script = `
 import json, sys
 from fontTools.ttLib import TTFont
-f = TTFont(sys.argv[1], fontNumber=0)
-freq = json.load(open(sys.argv[2], encoding='utf8'))
+try:
+    import uharfbuzz as hb
+except ImportError:
+    hb = None
+
+path, corpus_file, var_json = sys.argv[1], sys.argv[2], sys.argv[3]
+text = open(corpus_file, encoding='utf8').read()
+variations = json.loads(var_json)
+
+f = TTFont(path, fontNumber=0)
 upem = f['head'].unitsPerEm
 cmap = f.getBestCmap()
-hmtx = f['hmtx']
-num = den = 0.0
-missing = []
-for ch, w in freq.items():
-    cp = ord(ch)
-    g = cmap.get(cp)
-    if g is None:
-        if w: missing.append(hex(cp))
-        continue
-    if w:
-        num += hmtx[g][0] * w
-        den += w
 hhea = f['hhea']
+missing = sorted({hex(ord(c)) for c in text if cmap.get(ord(c)) is None})
+
+if hb is not None:
+    face = hb.Face(hb.Blob.from_file_path(path))
+    font = hb.Font(face)
+    if variations:
+        font.set_variations(variations)
+    total = 0
+    for i in range(0, len(text), 2000):
+        buf = hb.Buffer()
+        buf.add_str(text[i:i + 2000])
+        buf.guess_segment_properties()
+        hb.shape(font, buf, {'kern': True, 'liga': True, 'calt': True})
+        total += sum(p.x_advance for p in buf.glyph_positions)
+    avg = total / face.upem / len(text)
+    shaped = True
+else:
+    hmtx = f['hmtx']
+    total = n = 0
+    for ch in text:
+        g = cmap.get(ord(ch))
+        if g is None:
+            continue
+        total += hmtx[g][0]
+        n += 1
+    avg = total / n / upem
+    shaped = False
+
 print(json.dumps({
     'upem': upem,
-    'avgAdvance': (num / den / upem) if den else 0,
+    'avgAdvance': avg,
+    'shaped': shaped,
     'ascent': hhea.ascent / upem,
     'descent': abs(hhea.descent) / upem,
     'lineGap': hhea.lineGap / upem,
@@ -205,8 +282,7 @@ print(json.dumps({
     'missing': missing[:20],
 }))
 `;
-  const freqFile = join(TMP, 'freq.json');
-  return JSON.parse(py(['-c', script, fontPath, freqFile]));
+  return JSON.parse(py(['-c', script, fontPath, corpusFile, JSON.stringify(variations ?? {})]));
 }
 
 // ── build ────────────────────────────────────────────────────────────────────
@@ -216,20 +292,21 @@ async function main() {
   mkdirSync(CACHE, { recursive: true });
   mkdirSync(TMP, { recursive: true });
 
-  const freq = codepointFrequencies();
-  const keep = [...freq.keys()].filter((ch) => LATIN_ONLY(ch.codePointAt(0)));
-  const dropped = [...freq.keys()].filter((ch) => !LATIN_ONLY(ch.codePointAt(0)));
+  const all = codepointsInData();
+  const keep = new Set([...all].filter((ch) => LATIN_ONLY(ch.codePointAt(0))));
+  const dropped = [...all].filter((ch) => !LATIN_ONLY(ch.codePointAt(0)));
 
-  // Weighting set = the kept characters only; a Greek glyph we do not ship must not move the mean.
-  const weights = Object.fromEntries(keep.map((ch) => [ch, freq.get(ch)]));
-  writeFileSync(join(TMP, 'freq.json'), JSON.stringify(weights));
   writeFileSync(
     join(TMP, 'unicodes.txt'),
-    keep.map((ch) => 'U+' + ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')).join('\n')
+    [...keep].map((ch) => 'U+' + ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')).join('\n')
   );
+  const corpusFile = join(TMP, 'corpus.txt');
+  const corpus = proseCorpus(keep);
+  writeFileSync(corpusFile, corpus);
 
-  console.log(`codepoints: ${keep.length} kept · ${dropped.length} dropped to the system stack`);
-  console.log(`  dropped: ${dropped.join('')}\n`);
+  console.log(`codepoints: ${keep.size} kept · ${dropped.length} dropped to the system stack`);
+  console.log(`  dropped: ${dropped.join('')}`);
+  console.log(`metric corpus: ${corpus.length} characters of the app's own prose\n`);
 
   const report = { built: new Date().toISOString().slice(0, 10), faces: {}, fallbacks: {}, overrides: {} };
 
@@ -249,7 +326,7 @@ async function main() {
       console.warn(`  ! fallback ${fb.id} not available on this box — skipped`);
       continue;
     }
-    report.fallbacks[fb.id] = { label: fb.label, ...measure(src, weights) };
+    report.fallbacks[fb.id] = { label: fb.label, ...measure(src, corpusFile, fb.instance) };
   }
 
   for (const face of FACES) {
@@ -276,7 +353,9 @@ async function main() {
 
     const upstreamBytes = statSync(raw).size;
     const bytes = statSync(woff2).size;
-    const m = measure(woff2, weights);
+    // The clipped TTF, not the woff2: HarfBuzz cannot read woff2, and woff2 is lossless.
+    const m = measure(clipped, corpusFile, face.instance);
+    m.glyphs = glyphCount(woff2);
     report.faces[face.id] = {
       family: face.family,
       style: face.style,
@@ -307,15 +386,18 @@ async function main() {
   //  fallback has to grow. The browser measurement in FOUNDATION.md is the arbiter.)
   const pct = (x) => `${(x * 100).toFixed(1)}%`;
   for (const [id, f] of Object.entries(report.faces)) {
-    const ref = f.role === 'mono' ? report.fallbacks.mono : report.fallbacks.roboto;
-    const alt = f.role === 'mono' ? report.fallbacks.mono : report.fallbacks.arial;
+    // The canvas is a laptop, so the fallback that will actually paint is Arial or Helvetica,
+    // not Roboto. Arial is the reference the shipped table is computed against; the Roboto
+    // number is reported beside it as the Android case, and the two differ by ~1%.
+    const ref = f.role === 'mono' ? report.fallbacks.mono : report.fallbacks.arial;
+    const alt = f.role === 'mono' ? report.fallbacks.mono : report.fallbacks.roboto;
     if (!ref) continue;
     const sizeAdjust = f.avgAdvance / ref.avgAdvance;
     const sizeAdjustAlt = alt ? f.avgAdvance / alt.avgAdvance : sizeAdjust;
     report.overrides[id] = {
       against: ref.label,
       sizeAdjust: pct(sizeAdjust),
-      sizeAdjustVsAlt: pct(sizeAdjustAlt),
+      sizeAdjustOnAndroid: pct(sizeAdjustAlt),
       ascentOverride: pct(f.ascent / sizeAdjust),
       descentOverride: pct(f.descent / sizeAdjust),
       lineGapOverride: pct(f.lineGap / sizeAdjust),
@@ -331,7 +413,7 @@ async function main() {
   for (const [id, o] of Object.entries(report.overrides)) {
     console.log(
       `  ${id.padEnd(16)} size-adjust ${o.sizeAdjust.padStart(7)}  ascent ${o.ascentOverride.padStart(7)}` +
-        `  descent ${o.descentOverride.padStart(6)}  [vs ${o.against}; Arial-side ${o.sizeAdjustVsAlt}]`
+        `  descent ${o.descentOverride.padStart(6)}  [vs ${o.against}; Roboto/Android side ${o.sizeAdjustOnAndroid}]`
     );
   }
 

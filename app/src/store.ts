@@ -24,7 +24,8 @@ import {
   type ProgrammeIndex,
   type Status,
 } from './types';
-import { loadDetail, loadFirst } from './data/load';
+import { loadDetail, loadFirst, loadFunding } from './data/load';
+import { loadCalendar, type Calendar } from './data/calendar';
 import {
   allFacetCounts,
   emptyFilters,
@@ -172,11 +173,25 @@ export interface Store {
   detail: DetailMap | null;
   /** 'idle' until the prose file has been requested; full-text search waits on 'ready'. */
   detailStatus: DataStatus;
+  /** Empty until something asks. `funding.json` is 74.6 KB and no screen but the record page
+   *  and the money filter reads it; `meta.funding` carries the count everywhere else. */
   funding: FundingScheme[];
+  fundingStatus: DataStatus;
+  /** The hand-confirmed dates. The only origin of a displayed date in the product. */
+  calendar: Calendar | null;
+  calendarStatus: DataStatus;
+  /** Why the dates are missing. Shown on the week screen rather than swallowed. */
+  calendarError: string | null;
   meta: Meta | null;
   corpus: Corpus | null;
   /** Distinct programmes in the whole corpus — the denominator for every headline. */
   totalDistinct: number;
+  /**
+   * The morning this session is being read on, taken once, here, and passed down as an argument.
+   * No component calls `new Date()`: every time answer in the app is therefore reproducible, and
+   * a test can sit at 3 January 2027 and get what he would have got that morning.
+   */
+  now: Date;
 
   // filters
   filters: FilterState;
@@ -192,6 +207,8 @@ export interface Store {
 
   // actions
   load: () => Promise<void>;
+  /** Fetch the 120 schemes if they are not here yet. Safe to call on every render. */
+  ensureFunding: () => void;
   setFilters: (patch: Partial<FilterState>) => void;
   setFacet: (key: FacetKey, values: string[]) => void;
   toggleFacet: (key: FacetKey, value: string) => void;
@@ -239,9 +256,14 @@ export const useStore = create<Store>((set, get) => ({
   detail: null,
   detailStatus: 'idle',
   funding: [],
+  fundingStatus: 'idle',
+  calendar: null,
+  calendarStatus: 'idle',
+  calendarError: null,
   meta: null,
   corpus: null,
   totalDistinct: 0,
+  now: new Date(),
 
   filters: emptyFilters(),
   results: EMPTY_RESULTS,
@@ -254,7 +276,17 @@ export const useStore = create<Store>((set, get) => ({
 
   async load() {
     if (get().status === 'loading' || get().status === 'ready') return;
-    set({ status: 'loading', error: null });
+    set({ status: 'loading', error: null, calendarStatus: 'loading' });
+
+    // The dates and the records are fetched together — the home screen is the calendar, so
+    // waiting for one and then the other would show an empty week for a whole round trip.
+    // A calendar failure is not a data failure: the corpus still works without it, and the
+    // week screen says out loud that it cannot see the dates.
+    const cal = loadCalendar().then(
+      (calendar) => set({ calendar, calendarStatus: 'ready' }),
+      (err) => set({ calendarStatus: 'error', calendarError: String(err) }),
+    );
+
     try {
       const first = await loadFirst();
       const corpus = buildCorpus(first.index, first.detail);
@@ -262,10 +294,13 @@ export const useStore = create<Store>((set, get) => ({
       set({
         status: 'ready',
         index: first.index,
-        funding: first.funding,
         meta: first.meta,
         detail: first.detail,
         detailStatus: first.detail ? 'ready' : 'idle',
+        // The single-file build has the schemes inlined already; the hosted build does not,
+        // and does not fetch them until something needs one.
+        funding: first.funding ?? [],
+        fundingStatus: first.funding ? 'ready' : 'idle',
         corpus,
         totalDistinct: distinctCount(first.index),
         results,
@@ -289,6 +324,17 @@ export const useStore = create<Store>((set, get) => ({
         set({ detailStatus: 'error', error: String(err) });
       }
     }
+
+    await cal;
+  },
+
+  ensureFunding() {
+    if (get().fundingStatus !== 'idle') return;
+    set({ fundingStatus: 'loading' });
+    void loadFunding().then(
+      (funding) => set({ funding, fundingStatus: 'ready' }),
+      (err) => set({ fundingStatus: 'error', error: String(err) }),
+    );
   },
 
   setFilters(patch) {

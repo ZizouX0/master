@@ -10,15 +10,16 @@
         "wght=400:400:700"
       ],
       "upstreamBytes": 955132,
-      "bytes": 31484,
+      "bytes": 31348,
       "upem": 1000,
-      "avgAdvance": 0.4943921419331112,
+      "avgAdvance": 0.48231595,
+      "shaped": true,
       "ascent": 1.177,
       "descent": 0.308,
       "lineGap": 0,
       "xHeight": 0.507,
       "capHeight": 0.701,
-      "glyphs": 268,
+      "glyphs": 267,
       "missing": []
     },
     "literata-italic": {
@@ -30,15 +31,16 @@
         "wght=400"
       ],
       "upstreamBytes": 902728,
-      "bytes": 18112,
+      "bytes": 18000,
       "upem": 1000,
-      "avgAdvance": 0.466148403489766,
+      "avgAdvance": 0.453675975,
+      "shaped": true,
       "ascent": 1.177,
       "descent": 0.308,
       "lineGap": 0,
       "xHeight": 0.507,
       "capHeight": 0.701,
-      "glyphs": 270,
+      "glyphs": 269,
       "missing": []
     },
     "archivo-legend": {
@@ -50,15 +52,16 @@
         "wdth=100:100:125"
       ],
       "upstreamBytes": 658596,
-      "bytes": 47972,
+      "bytes": 47944,
       "upem": 1000,
-      "avgAdvance": 0.45444873873723274,
+      "avgAdvance": 0.44830745,
+      "shaped": true,
       "ascent": 0.878,
       "descent": 0.21,
       "lineGap": 0,
       "xHeight": 0.526,
       "capHeight": 0.686,
-      "glyphs": 236,
+      "glyphs": 235,
       "missing": []
     },
     "spline-mono": {
@@ -72,95 +75,90 @@
       "bytes": 16040,
       "upem": 2000,
       "avgAdvance": 0.6,
+      "shaped": true,
       "ascent": 0.9635,
       "descent": 0.2365,
       "lineGap": 0,
       "xHeight": 0.5455,
       "capHeight": 0.727,
-      "glyphs": 247,
-      "missing": [
-        "0x2192",
-        "0x20ba"
-      ]
+      "glyphs": 246,
+      "missing": []
     }
   },
   "fallbacks": {
     "roboto": {
       "label": "Roboto (Android)",
       "upem": 2048,
-      "avgAdvance": 0.4556690098406258,
+      "avgAdvance": 0.45010968017578123,
+      "shaped": true,
       "ascent": 0.927734375,
       "descent": 0.244140625,
       "lineGap": 0,
       "xHeight": 0.5283203125,
       "capHeight": 0.7109375,
       "glyphs": 1326,
-      "missing": [
-        "0x2192"
-      ]
+      "missing": []
     },
     "arial": {
       "label": "Arial metrics (Liberation Sans)",
       "upem": 2048,
-      "avgAdvance": 0.45790370201163744,
+      "avgAdvance": 0.45418636474609375,
+      "shaped": true,
       "ascent": 0.9052734375,
       "descent": 0.2119140625,
       "lineGap": 0.03271484375,
       "xHeight": 0.5283203125,
       "capHeight": 0.68798828125,
       "glyphs": 2620,
-      "missing": [
-        "0x20ba"
-      ]
+      "missing": []
     },
     "mono": {
       "label": "ui-monospace (Liberation Mono)",
       "upem": 2048,
       "avgAdvance": 0.60009765625,
+      "shaped": true,
       "ascent": 0.83251953125,
       "descent": 0.30029296875,
       "lineGap": 0,
       "xHeight": 0.5283203125,
       "capHeight": 0.65869140625,
       "glyphs": 2423,
-      "missing": [
-        "0x20ba"
-      ]
+      "missing": []
     }
   },
   "overrides": {
     "literata-body": {
-      "against": "Roboto (Android)",
-      "sizeAdjust": "108.5%",
-      "sizeAdjustVsAlt": "108.0%",
-      "ascentOverride": "108.5%",
-      "descentOverride": "28.4%",
+      "against": "Arial metrics (Liberation Sans)",
+      "sizeAdjust": "106.2%",
+      "sizeAdjustOnAndroid": "107.2%",
+      "ascentOverride": "110.8%",
+      "descentOverride": "29.0%",
       "lineGapOverride": "0.0%"
     },
     "literata-italic": {
-      "against": "Roboto (Android)",
-      "sizeAdjust": "102.3%",
-      "sizeAdjustVsAlt": "101.8%",
-      "ascentOverride": "115.1%",
-      "descentOverride": "30.1%",
+      "against": "Arial metrics (Liberation Sans)",
+      "sizeAdjust": "99.9%",
+      "sizeAdjustOnAndroid": "100.8%",
+      "ascentOverride": "117.8%",
+      "descentOverride": "30.8%",
       "lineGapOverride": "0.0%"
     },
     "archivo-legend": {
-      "against": "Roboto (Android)",
-      "sizeAdjust": "99.7%",
-      "sizeAdjustVsAlt": "99.2%",
-      "ascentOverride": "88.0%",
-      "descentOverride": "21.1%",
+      "against": "Arial metrics (Liberation Sans)",
+      "sizeAdjust": "98.7%",
+      "sizeAdjustOnAndroid": "99.6%",
+      "ascentOverride": "89.0%",
+      "descentOverride": "21.3%",
       "lineGapOverride": "0.0%"
     },
     "spline-mono": {
       "against": "ui-monospace (Liberation Mono)",
       "sizeAdjust": "100.0%",
-      "sizeAdjustVsAlt": "100.0%",
+      "sizeAdjustOnAndroid": "100.0%",
       "ascentOverride": "96.4%",
       "descentOverride": "23.7%",
       "lineGapOverride": "0.0%"
     }
   },
-  "totalBytes": 113608
+  "totalBytes": 113332
 }

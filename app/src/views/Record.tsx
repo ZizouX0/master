@@ -1,176 +1,95 @@
 /**
- * The record page — the most important screen in the app.
+ * THE RECORD — the best thing in the app, rebuilt on the desk.
  *
- * Field order is BUILD-SPEC §Record page, and the order is not cosmetic: it is
- * "what disqualifies fastest, and what was actually checked, before anything a
- * machine guessed".
+ * Field order is "what disqualifies fastest, and what a human actually checked, before anything a
+ * machine guessed". Five things this file exists to get right:
  *
- * The four things this file exists to get right:
+ *  1. **`correction` — workbook column G — appears in full.** Not truncated, not clamped, not
+ *     behind a disclosure, and above the money, because a correction usually invalidates the
+ *     money. Its absence is the single defect that killed the first attempt at this app.
+ *  2. **The dates come from `calendar.json` and nowhere else.** The record's own `deadline` field
+ *     is shown as a quotation of what was recorded, never as a date: 188 of these strings carry
+ *     the PRIOR CYCLE marker and most of them contain a perfectly parseable 2026 date that would
+ *     be a lie about 2027. And every calendar date arrives with what stands in front of it.
+ *  3. **Money is joined here, once.** `totalCostPicture` puts corrections ahead of any figure and
+ *     returns `total: null` by design — a total made partly of unknowns is a number he would
+ *     remember as a fact. The scheme list keeps `unknown` and `excluded` visible and never lets
+ *     either read as a yes.
+ *  4. **`isDegree === false` is a banner at title weight**, above the title, because 57 of those
+ *     records have "Master", "Máster" or "Mastère" in the name and the title itself misleads. The
+ *     pattern behind it — título propio, RNCP Mastère, the UK validation chain — is stated here,
+ *     which is where the screen that used to hold it has gone.
+ *  5. **"DUPLICATE of index N" is printed and never followed.** All 65 of those pointers cross a
+ *     country boundary; they are stale ids from the source workbook's id space.
  *
- *  1. `correction` (workbook column G) is rendered IN FULL, inside the verdict block,
- *     above the money. Omitting that column is the defect that killed the previous
- *     attempt at this app.
- *  2. The three disputes are each shown with the phrase that triggered them and labelled
- *     confirmed or suspected. `costDisputed` and `existenceDisputed` only ever fire from
- *     verified `correction` prose; `auditionDisputed` fires from either, and its
- *     provenance is in `auditionSource`. A suspicion must never wear the authority of a
- *     confirmation.
- *  3. "DUPLICATE of index N" inside a correction is printed and never dereferenced. All
- *     65 of those pointers cross a country boundary — they are stale ids from the source
- *     workbook's id space.
- *  4. The recorded `chance` / `whyChance` render last and visibly subordinate. A verdict
- *     is a human reading the official page; `chance` is a heuristic over a search blurb,
- *     and it is wrong on 28 of the records where both exist.
- *
- * Everything textual goes through `Field`, which renders through `renderField()`, so a
- * value, an explicit `UNVERIFIED` and an uncollected field never look alike. Deadlines go
- * through `deadlineDisplay()`, which refuses to emit a bare date for a `PRIOR CYCLE`
- * string.
- *
- * This file also carries the small shared furniture the other three views import — the
- * scoped `rec-` stylesheet, the section/strip/block primitives and the personal-state
- * controls. It lives here rather than in `src/components/` because that directory belongs
- * to the shell agent; the `rec-` prefix guarantees no collision with `styles.css`.
+ * The document renders in two frames. On a laptop it is the right-hand pane of `Find`, beside the
+ * list it came from, because comparing is the job. On a narrow window it is its own page. Same
+ * route either way — `#/record/:key`.
  */
 
-import type { ComponentChildren } from 'preact';
-import { useMemo } from 'preact/hooks';
+import type { ComponentChildren, JSX } from 'preact';
+import { useEffect, useMemo } from 'preact/hooks';
 import { useStore } from '../store';
 import { STATUSES, type ProgrammeDetail, type ProgrammeIndex, type Status } from '../types';
 import { auditionCertainty } from '../data/filters';
+import { entriesForProgramme, isoDay, statusOf } from '../data/calendar';
+import { schemesForProgramme, splitByFit, totalCostPicture, type SchemeMatch } from '../data/money';
+import { patternFor } from '../data/patterns';
 import {
-  deadlineDisplay,
   formatTimestamp,
   hasValue,
   mentionsStaleDuplicatePointer,
   pluralise,
   renderField,
   splitUrls,
+  deadlineDisplay,
 } from '../lib/format';
-import { CostChip, GateChip, LangChip, LevelChip, VerdictChip } from '../components/chips';
+import { ChannelStrip } from '../components/ChannelStrip';
+import { LevelChip, Meta, VerdictWord, bandLabel } from '../components/chips';
 import { Field, FieldGroup } from '../components/Field';
-import { Empty, Page } from '../components/Layout';
+import { Band, Blocking, CalendarWhen, Invite, Screen, type Tab } from './kit';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Shared furniture. `styles.css` belongs to the shell agent; everything here is
-// `rec-`-prefixed and reads the shell's custom properties with a fallback, so the two
-// stylesheets compose instead of fighting.
+// Routing
 // ─────────────────────────────────────────────────────────────────────────────
 
-const REC_CSS = `
-/* The shell's .page owns the measure and the 20px gutters; this only adds the clearance the
-   fixed 56px tab bar needs, so the last line of a record is never under it. */
-.rec-wrap { max-width: 100%; padding: 0 0 4.5rem; }
-.rec-back { display: inline-block; font-size: 0.8125rem; margin: 0 0 1rem; color: var(--accent, #1f6f6b); }
-.rec-h1 { font: 600 1.375rem/1.25 var(--serif, Iowan Old Style, Charter, Georgia, serif); margin: 0 0 0.25rem; }
-.rec-inst { font-size: 0.9375rem; margin: 0 0 0.25rem; }
-.rec-where { font-size: 0.8125rem; color: var(--muted, #6a6a6a); margin: 0; }
-.rec-section { margin: 2rem 0 0; }
-.rec-h2 { font: 600 0.6875rem/1.4 var(--sans, system-ui, sans-serif); letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--muted, #6a6a6a); margin: 0 0 0.75rem;
-  padding-bottom: 0.375rem; border-bottom: 1px solid var(--rule, rgba(0,0,0,0.12)); }
-.rec-h3 { font: 600 0.875rem/1.3 var(--sans, system-ui, sans-serif); margin: 1rem 0 0.375rem; }
-.rec-block { border-left: 3px solid var(--rule, rgba(0,0,0,0.2)); padding: 0.625rem 0 0.625rem 0.75rem;
-  margin: 0 0 1rem; }
-.rec-block-red { border-left-color: var(--red, #b3261e); }
-.rec-block-amber { border-left-color: var(--amber, #8a5a00); }
-.rec-block-green { border-left-color: var(--green, #1f7a44); }
-.rec-block-grey { border-left-color: var(--rule, rgba(0,0,0,0.25)); }
-.rec-tone-red { border-left-color: var(--red, #b3261e); }
-.rec-tone-amber { border-left-color: var(--amber, #8a5a00); }
-.rec-tone-blue { border-left-color: var(--accent, #1f6f6b); }
-.rec-tone-grey, .rec-tone-none { border-left-color: var(--rule, rgba(0,0,0,0.25)); }
-.rec-banner { display: block; font: 600 0.9375rem/1.3 var(--sans, system-ui, sans-serif);
-  color: var(--red, #b3261e); border: 1px solid var(--red, #b3261e); border-radius: 2px;
-  padding: 0.5rem 0.625rem; margin: 0 0 0.75rem; }
-.rec-label { font: 600 0.6875rem/1.4 var(--sans, system-ui, sans-serif); letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--muted, #6a6a6a); margin: 0 0 0.25rem; }
-.rec-note { font-size: 0.8125rem; line-height: 1.5; color: var(--muted, #6a6a6a); margin: 0.25rem 0; }
-.rec-say { font-size: 0.9375rem; line-height: 1.55; margin: 0.25rem 0; }
-.rec-quote { font: 0.9375rem/1.55 var(--serif, Iowan Old Style, Charter, Georgia, serif);
-  margin: 0.25rem 0; white-space: pre-wrap; overflow-wrap: anywhere; }
-.rec-mono { font: 0.8125rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
-  overflow-wrap: anywhere; }
-.rec-sub { font-size: 0.8125rem; color: var(--muted, #6a6a6a); }
-.rec-tag { display: inline-block; font: 600 0.6875rem/1 var(--sans, system-ui, sans-serif);
-  letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid currentColor;
-  border-radius: 2px; padding: 0.25rem 0.375rem; margin: 0 0.375rem 0.25rem 0; }
-.rec-tag-confirmed { color: var(--red, #b3261e); }
-.rec-tag-suspected { color: var(--amber, #8a5a00); }
-.rec-tag-neutral { color: var(--muted, #6a6a6a); }
-.rec-chips { display: flex; flex-wrap: wrap; gap: 0.375rem; margin: 0.5rem 0; }
-.rec-controls { border: 1px solid var(--rule, rgba(0,0,0,0.12)); border-radius: 3px;
-  padding: 0.75rem; margin: 1rem 0 0; }
-.rec-controls-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: 0 0 0.5rem; }
-.rec-btn { min-height: 44px; font: 0.875rem/1 var(--sans, system-ui, sans-serif);
-  padding: 0 0.75rem; border: 1px solid var(--rule, rgba(0,0,0,0.3)); border-radius: 3px;
-  background: transparent; color: inherit; cursor: pointer; }
-.rec-btn-on { border-color: var(--accent, #1f6f6b); color: var(--accent, #1f6f6b); font-weight: 600; }
-.rec-select, .rec-input { min-height: 44px; width: 100%; font: 0.875rem/1.3 var(--sans, system-ui, sans-serif);
-  padding: 0.5rem; border: 1px solid var(--rule, rgba(0,0,0,0.3)); border-radius: 3px;
-  background: transparent; color: inherit; box-sizing: border-box; }
-.rec-textarea { width: 100%; min-height: 5.5rem; font: 0.875rem/1.45 var(--sans, system-ui, sans-serif);
-  padding: 0.5rem; border: 1px solid var(--rule, rgba(0,0,0,0.3)); border-radius: 3px;
-  background: transparent; color: inherit; box-sizing: border-box; resize: vertical; }
-.rec-export { width: 100%; min-height: 12rem; font: 0.75rem/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
-  padding: 0.5rem; border: 1px solid var(--rule, rgba(0,0,0,0.3)); border-radius: 3px;
-  background: transparent; color: inherit; box-sizing: border-box; white-space: pre; }
-.rec-item { border-top: 1px solid var(--rule, rgba(0,0,0,0.12)); padding: 0.875rem 0; }
-.rec-item:first-child { border-top: 0; }
-.rec-link { color: var(--accent, #1f6f6b); overflow-wrap: anywhere; }
-.rec-demote { opacity: 0.8; border-top: 1px solid var(--rule, rgba(0,0,0,0.12)); margin-top: 2rem;
-  padding-top: 0.75rem; }
-.rec-warn { border: 1px dashed var(--amber, #8a5a00); color: var(--amber, #8a5a00);
-  padding: 0.5rem 0.625rem; font-size: 0.8125rem; line-height: 1.45; margin: 0.75rem 0; }
-.rec-count { font-variant-numeric: tabular-nums; }
-.rec-scroll { overflow-x: auto; }
-@media (max-width: 420px) { .rec-h1 { font-size: 1.25rem; } }
-`;
+/** The durable link. `key` is hash(institution + programme + url) and survives a re-export. */
+export function recordHref(row: Pick<ProgrammeIndex, 'key'>): string {
+  return `#/record/${row.key}`;
+}
 
-const STYLE_ID = 'rec-styles';
+const RECORD_PATH = /^\/(record|g)\/(.+)$/;
+const LEGACY_ID = /^\/p\/(\d+)$/;
+
+export function isRecordPath(path: string): boolean {
+  return RECORD_PATH.test(path) || LEGACY_ID.test(path);
+}
 
 /**
- * The stylesheet goes into `<head>` imperatively rather than into the view tree, because a
- * `<style>` rendered by a view dies with that view: switching from the record page to Money
- * would unmount it and leave the next view unstyled. In `<head>` it is written once, when
- * this chunk loads, and it stays.
+ * `#/record/:key` is canonical. `#/p/:id` still resolves because links were shared with row
+ * numbers in them, and it is exactly the address that goes stale: `id` is positional and every
+ * record after an inserted one shifts by one on the next export. Nothing is ever persisted
+ * against it.
  */
-function ensureRecStyles(): void {
-  if (typeof document === 'undefined') return;
-  if (document.getElementById(STYLE_ID)) return;
-  const el = document.createElement('style');
-  el.id = STYLE_ID;
-  el.textContent = REC_CSS;
-  document.head.appendChild(el);
-}
-
-ensureRecStyles();
-
-/** Kept as a component so every view declares its dependency on these rules at its top. */
-export function RecStyles() {
-  ensureRecStyles();
-  return null;
-}
-
-export function Section({ label, children }: { label: string; children: ComponentChildren }) {
-  return (
-    <section class="rec-section">
-      <h2 class="rec-h2">{label}</h2>
-      {children}
-    </section>
-  );
-}
-
-export function BackLink({ href, children }: { href: string; children: ComponentChildren }) {
-  return (
-    <a class="rec-back" href={href}>
-      ← {children}
-    </a>
-  );
+export function resolveRecord(
+  path: string,
+  index: readonly ProgrammeIndex[],
+): ProgrammeIndex | undefined {
+  const byKey = RECORD_PATH.exec(path);
+  if (byKey) {
+    const key = decodeURIComponent(byKey[2]!);
+    return index.find((r) => r.key === key);
+  }
+  const byId = LEGACY_ID.exec(path);
+  if (byId) {
+    const id = Number(byId[1]);
+    return index.find((r) => r.id === id);
+  }
+  return undefined;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Personal state controls — status, note, next action. Shared with My list.
+// Personal state. Keyed on `key`, never on `id`.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const STATUS_LABEL: Record<Status, string> = {
@@ -183,37 +102,28 @@ export const STATUS_LABEL: Record<Status, string> = {
   'ruled-out': 'Ruled out',
 };
 
-/**
- * Writes straight to the store, which keys on `row.key` — hash(institution + programme +
- * url). Never on `id`: `id` is positional and every record after an inserted one shifts by
- * one on the next export, so an id-keyed note silently reattaches to another programme.
- */
-export function PersonalControls({ recordKey }: { recordKey: string }) {
+export function PersonalControls({ recordKey }: { recordKey: string }): JSX.Element {
   const entry = useStore((s) => s.personal.entries[recordKey]);
   const setStatus = useStore((s) => s.setStatus);
   const setNote = useStore((s) => s.setNote);
   const setNextAction = useStore((s) => s.setNextAction);
   const status: Status = entry?.status ?? 'none';
-  const starred = status !== 'none';
+  const tracked = status !== 'none';
 
   return (
-    <div class="rec-controls">
-      <div class="rec-controls-row">
+    <div>
+      <div class="v-row">
         <button
           type="button"
-          class={starred ? 'rec-btn rec-btn-on' : 'rec-btn'}
-          aria-pressed={starred}
-          onClick={() => setStatus(recordKey, starred ? 'none' : 'shortlist')}
+          class={tracked ? 'btn btn--accent' : 'btn'}
+          aria-pressed={tracked}
+          onClick={() => setStatus(recordKey, tracked ? 'none' : 'shortlist')}
         >
-          {starred ? '★ On my list' : '☆ Add to my list'}
+          {tracked ? 'On your shortlist' : 'Add to your shortlist'}
         </button>
-        <label class="rec-sub" for={`st-${recordKey}`}>
-          Status
-        </label>
         <select
-          id={`st-${recordKey}`}
-          class="rec-select"
-          style="max-width: 12rem"
+          class="v-select"
+          aria-label="Status"
           value={status}
           onChange={(e) => setStatus(recordKey, (e.currentTarget as HTMLSelectElement).value as Status)}
         >
@@ -224,431 +134,477 @@ export function PersonalControls({ recordKey }: { recordKey: string }) {
           ))}
         </select>
       </div>
-      <label class="rec-label" for={`na-${recordKey}`}>
+
+      <label class="v-label" for={`na-${recordKey}`}>
         Next action
       </label>
       <input
         id={`na-${recordKey}`}
-        class="rec-input"
+        class="v-input"
         type="text"
-        placeholder="e.g. email them about the affine-subject rule"
+        placeholder="the one thing that moves this forward"
         value={entry?.nextAction ?? ''}
         onInput={(e) => setNextAction(recordKey, (e.currentTarget as HTMLInputElement).value)}
       />
-      <label class="rec-label" for={`nt-${recordKey}`} style="margin-top:0.75rem">
-        My note
+
+      <label class="v-label" for={`nt-${recordKey}`}>
+        Your note
       </label>
       <textarea
         id={`nt-${recordKey}`}
-        class="rec-textarea"
-        placeholder="Your words. The facts on this page are not editable; this is."
+        class="v-input v-textarea"
+        placeholder="Your words. Nothing else on this page is editable; this is."
         value={entry?.note ?? ''}
         onInput={(e) => setNote(recordKey, (e.currentTarget as HTMLTextAreaElement).value)}
       />
-      {entry ? <p class="rec-note">Last edited {formatTimestamp(entry.updated)}. Stored in this browser only.</p> : null}
+      {entry ? (
+        <p class="v-src">Last edited {formatTimestamp(entry.updated)}. Stored in this browser only.</p>
+      ) : null}
     </div>
   );
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Route helpers
-// ─────────────────────────────────────────────────────────────────────────────
-
-export function recordHref(row: Pick<ProgrammeIndex, 'id'>): string {
-  return `#/p/${row.id}`;
-}
-
-/** `#/p/:id` (positional, what the list links) and `#/g/:key` (durable across re-export). */
-export function resolveRecord(
-  path: string,
-  index: readonly ProgrammeIndex[],
-): ProgrammeIndex | undefined {
-  const byId = /^\/p\/(\d+)$/.exec(path);
-  if (byId) {
-    const id = Number(byId[1]);
-    return index.find((r) => r.id === id);
-  }
-  const byKey = /^\/g\/(.+)$/.exec(path);
-  if (byKey) {
-    const key = decodeURIComponent(byKey[1]!);
-    return index.find((r) => r.key === key);
-  }
-  return undefined;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Blocks
 // ─────────────────────────────────────────────────────────────────────────────
 
-/**
- * The deadline, always through `deadlineDisplay()`. 186 records say `PRIOR CYCLE`, and
- * most of those strings also contain a perfectly parseable date that belongs to the 2026
- * intake. `deadlineDisplay` never puts a date in its label unless it parsed one at or
- * after the target year, so nothing here can surface a bare stale date as a 2027 deadline.
- */
-export function DeadlineBlock({ raw, label = 'Deadline' }: { raw: string; label?: string }) {
-  const d = deadlineDisplay(raw);
-  const caveat =
-    d.kind === 'prior-cycle'
-      ? 'This is a previous cycle. The 2027 date has not been published — confirm it with them.'
-      : d.kind === 'unverified' || d.kind === 'none'
-        ? 'Nobody confirmed a date. Treat the text below as a lead, not a deadline.'
-        : d.kind === 'rolling'
-          ? 'No fixed date published.'
-          : d.kind === 'no-intake'
-            ? 'The source says there is no intake to apply for.'
-            : '';
-  return (
-    <div class={`rec-block rec-tone-${d.tone}`}>
-      <p class="rec-label">
-        {label} — {d.label}
-      </p>
-      {caveat ? <p class="rec-note">{caveat}</p> : null}
-      <Field label="As recorded, verbatim" value={raw} wide />
-    </div>
-  );
+function Say(p: { children: ComponentChildren }): JSX.Element {
+  return <p class="t-prose-2" style="margin-bottom:12px">{p.children}</p>;
 }
 
 /**
- * One dispute. `confirmed` means the phrase came out of verified `correction` prose;
- * `suspected` means it came out of the raw `audition` field, which nobody re-read. The two
- * are never given the same weight, and the phrase that fired is always shown, because a
- * suspicion he can disprove by reading two sentences is worth more than a hidden one.
+ * One dispute, with the phrase that fired it and its provenance. `confirmed` means it came from
+ * verified `correction` prose; `suspected` means it came from the raw `audition` field, which
+ * nobody re-read. A suspicion must never wear the authority of a confirmation, and it is never
+ * hidden either — one he can disprove in two sentences is worth more to him than one removed.
  */
-function Dispute({
-  title,
-  phrase,
-  certainty,
-  meaning,
-}: {
+function Dispute(p: {
   title: string;
   phrase: string;
   certainty: 'confirmed' | 'suspected';
   meaning: string;
-}) {
+}): JSX.Element {
   return (
-    <div class={certainty === 'confirmed' ? 'rec-block rec-block-red' : 'rec-block rec-block-amber'}>
-      <p class="rec-label">
-        <span class={certainty === 'confirmed' ? 'rec-tag rec-tag-confirmed' : 'rec-tag rec-tag-suspected'}>
-          {certainty}
-        </span>
-        {title}
+    <div class="v-correction" style={p.certainty === 'suspected' ? 'border-left-color: var(--meter-over)' : ''}>
+      <p class="v-correction__name" style={p.certainty === 'suspected' ? 'color: var(--meter-over)' : ''}>
+        {p.certainty} · {p.title}
       </p>
-      <p class="rec-note">{meaning}</p>
-      <Field label="The phrase that triggered it" value={phrase} wide />
+      <Say>{p.meaning}</Say>
+      <p class="v-correction__text">{p.phrase}</p>
     </div>
   );
 }
 
 /**
- * The audition rung, as the record page states it.
- *
- * `auditionCertainty` already promotes `gate: "AUDITION — hardest for you"` to confirmed,
- * which covers the 13 records whose `auditionSource` is empty or suspected. `needsAudition`
- * is folded in as well so that the five records the kill test names — 253, 254 (FAMU) and
- * 258, 259, 260 (Babelsberg), all of them `gate: "Exam/interview only"` or `"Portfolio
- * only"` and all of them free — can never render as reachable because their gate string
- * missed the live piano test that a verified correction found.
+ * `auditionCertainty` already promotes `gate: "AUDITION — hardest for you"` to confirmed.
+ * `needsAudition` is folded in on top so records 253, 254, 258, 259 and 260 — all of them free,
+ * all of them `Exam/interview only` or `Portfolio only`, all of them carrying a live piano test a
+ * verified correction found — can never render as reachable.
  */
 export function auditionRung(row: ProgrammeIndex): 'confirmed' | 'suspected' | 'none-found' {
   if (row.needsAudition) return 'confirmed';
   return auditionCertainty(row);
 }
 
-function Disputes({ row }: { row: ProgrammeIndex }) {
-  const certainty = auditionRung(row);
-  const any = row.costDisputed !== '' || row.auditionDisputed !== '' || row.existenceDisputed !== '';
-  if (!any) {
-    return (
-      <p class="rec-note">
-        No contradiction was recorded between this record's structured fields and the prose.
-      </p>
-    );
-  }
+// ─────────────────────────────────────────────────────────────────────────────
+// Money
+// ─────────────────────────────────────────────────────────────────────────────
+
+const FIT_WORD = {
+  eligible: 'Could apply on the published rules',
+  unknown: 'Nobody said',
+  excluded: 'Ruled out',
+} as const;
+
+function Scheme(p: { match: SchemeMatch }): JSX.Element {
+  const m = p.match;
   return (
-    <>
-      {row.costDisputed !== '' ? (
-        <Dispute
-          title="The recorded cost is contradicted"
-          phrase={row.costDisputed}
-          certainty="confirmed"
-          meaning={`The band still reads "${row.costBand}". A human re-read the official page and found that wrong, so this record is excluded from every cheap and free selection in the app — the correction below is the figure to trust.`}
-        />
-      ) : null}
-      {row.auditionDisputed !== '' ? (
-        <Dispute
-          title="A live audition or ear test may be part of the entrance exam"
-          phrase={row.auditionDisputed}
-          certainty={certainty === 'confirmed' ? 'confirmed' : 'suspected'}
-          meaning={
-            certainty === 'confirmed'
-              ? 'This came from verified prose or from the gate itself. Treat it as real: a performance audition is the one gate a twelve-month portfolio build cannot open.'
-              : 'This phrase was matched in the raw `audition` field, which nobody re-checked against the official page. It is a lead, not a fact — two sentences of their page will settle it. Read the full audition text below before you act on it.'
-          }
-        />
-      ) : null}
-      {row.existenceDisputed !== '' ? (
-        <Dispute
-          title="Whether the programme still runs is contradicted"
-          phrase={row.existenceDisputed}
-          certainty="confirmed"
-          meaning="Verified prose says this may be discontinued, suspended, or without an intake. Confirm it exists before spending a day on it."
-        />
-      ) : null}
-    </>
+    <div class="v-scheme">
+      <p class="v-scheme__name">{m.scheme.name}</p>
+      <p class="meta">
+        <span class="meta__seg">
+          <span class="meta__t">{m.scheme.provider || 'provider not recorded'}</span>
+        </span>
+        <span class="meta__seg">
+          <span class="meta__t">{m.tier}</span>
+        </span>
+      </p>
+      <p class="v-scheme__why">
+        “{m.because}” — {m.becauseField}
+      </p>
+      {m.gaps.map((g) => (
+        <p class="v-scheme__gap" key={g}>
+          unknown · {g}
+        </p>
+      ))}
+    </div>
   );
 }
 
-/**
- * The verdict block, with `correction` in full inside it — above the money, because a
- * correction usually invalidates the money.
- */
-function VerdictBlock({ row, detail }: { row: ProgrammeIndex; detail: ProgrammeDetail | undefined }) {
-  const verified = row.verdict !== '';
-  const correction = detail?.correction ?? '';
-  const stale = mentionsStaleDuplicatePointer(correction);
+function MoneySection(p: { row: ProgrammeIndex; detail: ProgrammeDetail | undefined }): JSX.Element {
+  const funding = useStore((s) => s.funding);
+  const fundingStatus = useStore((s) => s.fundingStatus);
+  const ensureFunding = useStore((s) => s.ensureFunding);
+  const disputed = p.row.costDisputed !== '';
+
+  // 74.6 KB, fetched by the first screen that actually needs a scheme — which is this one.
+  useEffect(() => ensureFunding(), [ensureFunding]);
+
+  const programme = { ...p.row, ...p.detail };
+  const picture = useMemo(
+    () => (funding.length > 0 ? totalCostPicture(programme, funding) : null),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [p.row.key, funding],
+  );
+  const matches: SchemeMatch[] = picture?.schemes ?? [];
+  const split = picture ? picture.split : splitByFit(matches);
+
+  const eligible = matches.filter((m) => m.fit === 'eligible');
+  const unknown = matches.filter((m) => m.fit === 'unknown');
+  const excluded = matches.filter((m) => m.fit === 'excluded');
 
   return (
-    <Section label="The verdict">
-      {verified ? (
-        <div class="rec-chips">
-          <VerdictChip verdict={row.verdict} />
+    <Band name="What it costs, and what could pay for it">
+      {/* The correction lands before any figure. A wrong number shown quietly is worse than none. */}
+      {disputed ? (
+        <div class="v-correction">
+          <p class="v-correction__name">The recorded band is wrong</p>
+          <Say>
+            The record still says <span class="t-struck">{bandLabel(p.row.costBand)}</span>. A human re-read the
+            official page and found that false, so this programme is excluded from every cheap and free
+            selection in the app. The sentence below is the figure to trust.
+          </Say>
+          <p class="v-correction__text">{p.row.costDisputed}</p>
         </div>
       ) : (
-        <div class="rec-block rec-block-grey">
-          <p class="rec-label">Not checked</p>
-          <p class="rec-say">
-            Nobody has opened this institution's official page and read it. Everything below came
-            from a search listing and may be out of date, wrong, or describe a different programme
-            with a similar name. Treat every line as a lead, not a fact.
-          </p>
-        </div>
+        <p class="meta" style="margin-bottom:12px">
+          <span class="meta__seg">
+            <span class="meta__t">{bandLabel(p.row.costBand)}</span>
+          </span>
+          <span class="meta__seg">
+            <span class="meta__t">funding recorded: {p.row.funding || 'not stated'}</span>
+          </span>
+        </p>
       )}
 
-      {verified ? <Field label="Why" value={detail?.verdictWhy ?? ''} wide /> : null}
+      <FieldGroup title="What somebody published">
+        <Field label="Tuition" value={p.detail?.tuition ?? ''} wide />
+        <Field label="Other fees" value={p.detail?.otherFees ?? ''} />
+        <Field label="Total cost as recorded" value={p.detail?.totalCost ?? ''} />
+        <Field label="Scholarship" value={p.detail?.scholarship ?? ''} />
+        <Field label="Scholarship detail" value={p.detail?.scholarshipDetail ?? ''} wide />
+      </FieldGroup>
 
-      {/*
-        Column G of the workbook. It is mandatory: leaving it out is the exact defect that
-        killed the previous console, and it is the field that most often overturns the cost
-        band, the funding level or the entry route recorded above it.
-      */}
-      <div class="rec-block rec-block-red" style="margin-top:1rem">
-        <p class="rec-label">Correction found — what was wrong in the earlier data</p>
-        {stale ? (
-          <p class="rec-note">
-            This correction names another record by index. Those pointers are stale — they come
-            from the source workbook's id space and every one of them crosses a country boundary,
-            so the app prints the sentence and follows nothing. Do not go looking for that index.
-          </p>
-        ) : null}
-        <Field label="Correction (workbook column G)" value={correction} wide />
-      </div>
-    </Section>
-  );
-}
-
-/** The dedup group, with any disagreement between its rows stated rather than hidden. */
-function GroupBlock({ row, index }: { row: ProgrammeIndex; index: readonly ProgrammeIndex[] }) {
-  const members = useMemo(() => index.filter((r) => r.g === row.g), [index, row.g]);
-  if (members.length < 2) return null;
-
-  const fields: Array<{ label: string; get: (r: ProgrammeIndex) => string }> = [
-    { label: 'Cost band', get: (r) => r.costBand },
-    { label: 'Verdict', get: (r) => (r.verdict === '' ? 'not checked' : r.verdict) },
-    { label: 'Gate', get: (r) => r.gate },
-    { label: 'Level', get: (r) => r.level },
-    { label: 'Language', get: (r) => r.language },
-  ];
-  const disagreements = fields
-    .map((f) => ({ label: f.label, values: [...new Set(members.map(f.get))] }))
-    .filter((d) => d.values.length > 1);
-
-  return (
-    <Section label="Other records for this programme">
-      <p class="rec-say">
-        {pluralise(members.length, 'source row')} describe this same programme. They came from
-        different discovery sweeps with different field coverage, so the app counts them once and
-        shows the fullest — but it does not quietly average them.
-      </p>
-      {disagreements.length > 0 ? (
-        <div class="rec-block rec-block-amber">
-          <p class="rec-label">These rows disagree with each other</p>
-          {disagreements.map((d) => (
-            <p class="rec-say" key={d.label}>
-              <strong>{d.label}:</strong> {d.values.map((v) => (v === '' ? 'not collected' : v)).join(' · ')}
+      {picture && picture.missing.length > 0 ? (
+        <>
+          <p class="v-label">What nobody published</p>
+          {picture.missing.map((m) => (
+            <p class="v-scheme__gap" key={m}>
+              {m}
             </p>
           ))}
-          <p class="rec-note">
-            Nothing here resolves that. Take the correction and the official page as the authority,
-            not the row with the friendliest number.
-          </p>
-        </div>
+        </>
+      ) : null}
+
+      <p class="v-src" style="margin-top:16px">
+        No total is shown. A figure made partly of unknowns is the thing he would remember as a fact, and
+        the living-cost line on most of these records is marked unverified by its own source.
+      </p>
+
+      <div class="v-band__head" style="margin-top:24px">
+        <h3 class="v-band__name">Money that could reach this programme</h3>
+        <span class="v-band__n">
+          {fundingStatus === 'ready' || funding.length > 0 ? matches.length : '…'}
+        </span>
+      </div>
+
+      {fundingStatus === 'error' ? (
+        <p class="v-warn">
+          The 120 funding schemes did not load, so this section is empty. Everything else on this page is
+          unaffected. Reload to try again.
+        </p>
+      ) : funding.length === 0 ? (
+        <p class="v-src">Reading the 120 schemes…</p>
+      ) : matches.length === 0 ? (
+        <p class="v-src">
+          No scheme in the 120 has a country scope that reaches {p.row.country}, and none names this
+          institution. That is an absence of matches, not a refusal.
+        </p>
       ) : (
-        <p class="rec-note">The rows agree on cost, verdict, gate, level and language.</p>
-      )}
-      <ul style="list-style:none;padding:0;margin:0.5rem 0 0">
-        {members.map((m) => (
-          <li class="rec-item" key={m.key}>
-            <a class="rec-link" href={recordHref(m)}>
-              {m.programme || '(no programme name)'}
-            </a>
-            <p class="rec-sub" style="margin:0.25rem 0 0">
-              row {m.id} · {m.costBand} · {m.verdict === '' ? 'not checked' : m.verdict}
-              {m.key === row.key ? ' · you are reading this one' : ''}
-              {m.primary ? ' · shown in the list' : ''}
+        <>
+          <p class="v-src" style="margin-bottom:8px">
+            {split.eligible} could apply on the published rules · {split.unknown} never say who may apply ·{' '}
+            {split.excluded} state a bar you fail. A silence is not a yes: most of these schemes simply do
+            not publish a nationality or a subject scope.
+          </p>
+
+          {eligible.length > 0 ? (
+            <>
+              <p class="v-label">{FIT_WORD.eligible}</p>
+              {eligible.map((m) => (
+                <Scheme key={m.scheme.id} match={m} />
+              ))}
+            </>
+          ) : (
+            <p class="v-src">
+              Not one of the {matches.length} says outright that you could apply. That is the honest state of
+              this dataset, and it is what an email to each of them would change.
             </p>
-          </li>
-        ))}
-      </ul>
-    </Section>
+          )}
+
+          {unknown.length > 0 ? (
+            <details class="v-filters" style="margin-top:16px">
+              <summary>
+                {unknown.length} never say who can apply — listed, never counted
+              </summary>
+              <div class="v-filters__body">
+                {unknown.map((m) => (
+                  <Scheme key={m.scheme.id} match={m} />
+                ))}
+              </div>
+            </details>
+          ) : null}
+
+          {excluded.length > 0 ? (
+            <details class="v-filters">
+              <summary>{excluded.length} state a bar you fail — kept, so you do not re-check them</summary>
+              <div class="v-filters__body">
+                {excluded.map((m) => (
+                  <Scheme key={m.scheme.id} match={m} />
+                ))}
+              </div>
+            </details>
+          ) : null}
+        </>
+      )}
+    </Band>
   );
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// The page
+// When
 // ─────────────────────────────────────────────────────────────────────────────
 
-export default function Record() {
-  const status = useStore((s) => s.status);
-  const index = useStore((s) => s.index);
-  const detailMap = useStore((s) => s.detail);
-  const detailStatus = useStore((s) => s.detailStatus);
-  const route = useStore((s) => s.route);
-
-  const row = useMemo(() => resolveRecord(route.path, index), [route.path, index]);
-
-  if (status !== 'ready') {
-    return (
-      <Page title="Record">
-        <RecStyles />
-        <div class="rec-wrap">
-          <p class="rec-note">{status === 'error' ? 'The data did not load.' : 'Loading the records…'}</p>
-        </div>
-      </Page>
-    );
-  }
-
-  if (!row) {
-    return (
-      <Page title="Record">
-        <RecStyles />
-        <div class="rec-wrap">
-          <BackLink href="#/list">All programmes</BackLink>
-          <Empty>
-            No record at this address. A record link is either its workbook row number or its
-            durable key — if you followed an old link, the row numbers moved when the data was
-            re-exported, which is exactly why nothing personal is keyed on them.
-          </Empty>
-        </div>
-      </Page>
-    );
-  }
-
-  const detail: ProgrammeDetail | undefined = detailMap?.[row.key];
-  const urls = splitUrls(detail?.url ?? '');
-  const certainty = auditionRung(row);
+function WhenSection(p: { row: ProgrammeIndex; detail: ProgrammeDetail | undefined }): JSX.Element {
+  const calendar = useStore((s) => s.calendar);
+  const now = useStore((s) => s.now);
+  const entries = calendar ? entriesForProgramme(calendar, p.row.key) : [];
+  const live = entries.filter((e) => statusOf(e, now) !== 'closed');
+  const closed = entries.filter((e) => statusOf(e, now) === 'closed');
+  const recorded = deadlineDisplay(p.detail?.deadline ?? '', now);
 
   return (
-    <Page title={row.programme || row.institution || 'Record'}>
-      <RecStyles />
-      <article class="rec-wrap">
-        <BackLink href="#/list">All programmes</BackLink>
+    <Band name="When">
+      {entries.length === 0 ? (
+        <p class="t-prose-2" style="margin-bottom:12px">
+          No date for this programme has been confirmed by a human, so this app shows none. Twelve to forty
+          hand-checked dates is the whole calendar; a record that is not in it has a date nobody has yet
+          asked for. Asking is one email.
+        </p>
+      ) : null}
 
-        {/* Rule 2: `isDegree: false` is visible without clicking, at the weight of the title. */}
-        {!row.isDegree ? (
-          <strong class="rec-banner">
-            This is not a master's degree. It is recorded as “{row.level || 'award unclear'}”.
-          </strong>
-        ) : null}
+      {[...live, ...closed].map((e) => {
+        const blockedBy = calendar ? calendar.prerequisites.filter((q) => q.blocks.includes(e.id)) : [];
+        const dueDay = e.window ? e.window.to : e.date!;
+        return (
+          <article class="v-item" key={e.id}>
+            <span class="v-item__title">{e.label}</span>
+            <CalendarWhen entry={e} now={now} />
+            {e.note ? <p class="v-src">{e.note}</p> : null}
+            <Blocking list={blockedBy} dueDay={dueDay} today={isoDay(now)} />
+            <p class="v-src">
+              “{e.quote}” — {e.source}
+            </p>
+          </article>
+        );
+      })}
 
-        <h1 class="rec-h1">{row.programme || '(no programme name recorded)'}</h1>
-        <p class="rec-inst">{row.institution || 'Institution not recorded'}</p>
-        <p class="rec-where">
-          {[row.city, row.country, row.region].filter(Boolean).join(' · ')} · row{' '}
-          <span class="rec-count">{row.id}</span> in the workbook
+      <div class="v-band__head" style="margin-top:24px">
+        <h3 class="v-band__name">What the record itself said</h3>
+      </div>
+      <p class="v-src" style="margin-bottom:8px">
+        Read as: {recorded.label}. This is shown as a quotation, not as a date — 188 records carry a PRIOR
+        CYCLE marker and most of those strings contain a real 2026 date that would be a lie about 2027.
+      </p>
+      <Field label="Deadline, as recorded" value={p.detail?.deadline ?? ''} wide />
+      <Field label="Applications open, as recorded" value={p.detail?.opens ?? ''} wide />
+    </Band>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// The document
+// ─────────────────────────────────────────────────────────────────────────────
+
+export function RecordDocument(p: { row: ProgrammeIndex }): JSX.Element {
+  const row = p.row;
+  const detailMap = useStore((s) => s.detail);
+  const detailStatus = useStore((s) => s.detailStatus);
+  const index = useStore((s) => s.index);
+  const detail: ProgrammeDetail | undefined = detailMap?.[row.key];
+
+  const correction = detail?.correction ?? '';
+  const stale = mentionsStaleDuplicatePointer(correction);
+  const certainty = auditionRung(row);
+  const pattern = patternFor(row, detailMap);
+  const urls = splitUrls(detail?.url ?? '');
+  const members = useMemo(() => index.filter((r) => r.g === row.g), [index, row.g]);
+
+  return (
+    <article class="channel v-doc">
+      <div class="channel__strip">
+        <ChannelStrip
+          verdict={row.verdict}
+          gate={row.gate}
+          needsAudition={row.needsAudition}
+          auditionSource={row.auditionSource}
+          hasVerifiedDispute={row.hasVerifiedDispute}
+          costDisputed={row.costDisputed}
+          isDegree={row.isDegree}
+          ladderBase={132}
+        />
+      </div>
+
+      <div class="channel__body">
+        {/* Rule 1 of the kill test: visible without clicking, at title weight, above the title. */}
+        {row.isDegree === false ? <LevelChip level={row.level} isDegree={false} /> : null}
+
+        <h1 class="t-title">{row.programme || 'No programme name was recorded'}</h1>
+        <p class="t-inst" style="margin-top:4px">
+          {row.institution || 'Institution not recorded'}
+          <br />
+          <span class="t-strip">{[row.city, row.country, row.region].filter(Boolean).join(' · ')}</span>
         </p>
 
-        <div class="rec-chips">
-          <VerdictChip verdict={row.verdict} />
-          <LevelChip level={row.level} isDegree={row.isDegree} />
-          <CostChip band={row.costBand} disputed={row.costDisputed !== ''} />
-          <GateChip gate={row.gate} needsAudition={row.needsAudition} auditionSource={row.auditionSource} />
-          <LangChip language={row.language} ok={row.languageOk} />
-        </div>
-
-        <PersonalControls recordKey={row.key} />
+        <p class="v-row" style="margin-top:12px">
+          <VerdictWord verdict={row.verdict} />
+        </p>
+        <Meta
+          costBand={row.costBand}
+          costDisputed={row.costDisputed}
+          language={row.language}
+          languageOk={row.languageOk}
+          gate={row.gate}
+          needsAudition={row.needsAudition}
+          auditionSource={row.auditionSource}
+        />
 
         {detailStatus !== 'ready' ? (
-          <p class="rec-warn">
+          <p class="v-warn">
             {detailStatus === 'error'
-              ? 'The prose file did not load, so the long fields — the correction, the entry route, the portfolio brief — are missing from this page. Everything below is only the card-level data. Reload before you decide anything.'
-              : 'The prose is still loading. The correction, entry route, portfolio brief and deadline appear as soon as it arrives.'}
+              ? 'The prose file did not load, so the correction, the entry route and the portfolio brief are missing from this page. What you see is card-level data only. Reload before you decide anything.'
+              : 'The prose is still loading. The correction, the entry route and the portfolio brief appear as soon as it arrives.'}
           </p>
         ) : null}
 
-        <VerdictBlock row={row} detail={detail} />
+        <Band name="Your state">
+          <PersonalControls recordKey={row.key} />
+        </Band>
 
-        <Section label="Contradictions found in this record">
-          <Disputes row={row} />
-        </Section>
+        {/* ── the verdict, and column G in full ─────────────────────────── */}
+        <Band name="What a human found">
+          {row.verdict === '' ? (
+            <Say>
+              Nobody has opened this institution’s official page. Everything below came from a search listing
+              and may be out of date, wrong, or about a different programme with a similar name. Treat every
+              line as a lead, not a fact — that is what the empty slot on the strip means.
+            </Say>
+          ) : (
+            <Field label="Why" value={detail?.verdictWhy ?? ''} wide />
+          )}
 
-        <GroupBlock row={row} index={index} />
-
-        <Section label="Can I get in?">
-          <div class="rec-chips">
-            <GateChip gate={row.gate} needsAudition={row.needsAudition} auditionSource={row.auditionSource} />
+          <div class="v-correction">
+            <p class="v-correction__name">Correction — workbook column G</p>
+            {stale ? (
+              <Say>
+                This correction names another record by index. Those pointers are stale: they come from the
+                source workbook’s id space and every one of them crosses a country boundary, so the sentence
+                is printed and the number is followed nowhere. Do not go looking for that index.
+              </Say>
+            ) : null}
+            {correction.trim() === '' ? (
+              <p class="v-scheme__gap">
+                {detailStatus === 'ready'
+                  ? 'No correction was recorded for this record.'
+                  : 'Loading the corrections…'}
+              </p>
+            ) : (
+              <p class="v-correction__text">{correction}</p>
+            )}
           </div>
-          <p class="rec-say">
+
+          {row.costDisputed !== '' ? (
+            <Dispute
+              title="The recorded cost is contradicted"
+              phrase={row.costDisputed}
+              certainty="confirmed"
+              meaning={`The band still reads "${row.costBand}". A human re-read the official page and found that wrong, so this record is out of every cheap and free selection in the app.`}
+            />
+          ) : null}
+          {row.auditionDisputed !== '' ? (
+            <Dispute
+              title="A live audition or ear test may be part of the entrance exam"
+              phrase={row.auditionDisputed}
+              certainty={certainty === 'confirmed' ? 'confirmed' : 'suspected'}
+              meaning={
+                certainty === 'confirmed'
+                  ? 'This came from verified prose or from the gate itself. Treat it as real: a performance audition is the one gate a twelve-month portfolio build cannot open.'
+                  : 'This phrase was matched in the raw audition field, which nobody re-checked against the official page. It is a lead, not a fact — two sentences of their page settle it. Read the full audition text below before you act on it.'
+              }
+            />
+          ) : null}
+          {row.existenceDisputed !== '' ? (
+            <Dispute
+              title="Whether the programme still runs is contradicted"
+              phrase={row.existenceDisputed}
+              certainty="confirmed"
+              meaning="Verified prose says this may be discontinued, suspended, or without an intake. Confirm it exists before spending a day on it."
+            />
+          ) : null}
+          {row.costDisputed === '' && row.auditionDisputed === '' && row.existenceDisputed === '' ? (
+            <p class="v-src">
+              No contradiction was recorded between this record’s structured fields and its prose.
+            </p>
+          ) : null}
+        </Band>
+
+        {/* ── the pattern, folded in from the screen that was cut ────────── */}
+        {pattern ? (
+          <Band name="What this actually awards">
+            <p class="t-cardtitle" style="margin-bottom:8px">
+              {pattern.title}
+            </p>
+            <Say>{pattern.says}</Say>
+            <Field label="Qualification awarded" value={detail?.qualification ?? ''} wide />
+            <Field label="Accreditation" value={detail?.accreditation ?? ''} wide />
+          </Band>
+        ) : null}
+
+        {/* ── when ───────────────────────────────────────────────────────── */}
+        <WhenSection row={row} detail={detail} />
+
+        {/* ── can you get in ─────────────────────────────────────────────── */}
+        <Band name="Can you get in">
+          <Say>
             {certainty === 'confirmed'
               ? 'A live performance or ear test is confirmed here. This is the one gate a twelve-month portfolio build does not open.'
               : certainty === 'suspected'
-                ? 'A phrase in the unchecked audition text looks like a live audition. Nobody confirmed it. Read the full text below before you rule this in or out.'
+                ? 'A phrase in the unchecked audition text looks like a live audition, and nobody confirmed it. Read the full text below before you rule this in or out.'
                 : 'No audition phrase fired for this record — which is not the same as somebody confirming there is no audition.'}
-          </p>
+          </Say>
           <FieldGroup title="Getting in">
             <Field label="Audition / entrance test, in full" value={detail?.audition ?? ''} wide />
             <Field label="What you must submit (portfolio)" value={detail?.portfolio ?? ''} wide />
-            <Field
-              label="Does it accept a non-music bachelor?"
-              value={detail?.acceptsNonMusic ?? ''}
-              wide
-            />
+            <Field label="Does it accept a non-music bachelor?" value={detail?.acceptsNonMusic ?? ''} wide />
             <Field label="Entry requirements" value={detail?.entry ?? ''} wide />
           </FieldGroup>
-        </Section>
+        </Band>
 
-        <Section label="What it costs">
-          <div class="rec-chips">
-            <CostChip band={row.costBand} disputed={row.costDisputed !== ''} />
-          </div>
-          {row.costDisputed !== '' ? (
-            <p class="rec-warn">
-              The band above is contradicted by the correction. It is shown because it is what the
-              record says, not because it is true, and this programme is excluded from every cheap
-              and free selection in the app.
-            </p>
-          ) : null}
-          <FieldGroup title="Money">
-            <Field label="Tuition" value={detail?.tuition ?? ''} wide />
-            <Field label="Other fees" value={detail?.otherFees ?? ''} />
-            <Field label="Total cost" value={detail?.totalCost ?? ''} />
-            <Field label="Funding attached" value={row.funding} />
-            <Field label="Scholarship" value={detail?.scholarship ?? ''} />
-            <Field label="Scholarship detail" value={detail?.scholarshipDetail ?? ''} wide />
-          </FieldGroup>
-          <p class="rec-note">
-            Money you bring with you is in <a class="rec-link" href="#/money">the 120 funding schemes</a>.
-          </p>
-        </Section>
+        {/* ── money ──────────────────────────────────────────────────────── */}
+        <MoneySection row={row} detail={detail} />
 
-        <Section label="When">
-          <DeadlineBlock raw={detail?.deadline ?? ''} />
-          <Field label="Applications open" value={detail?.opens ?? ''} />
-        </Section>
-
-        <Section label="What it is">
-          {/* Every column the workbook carries is reachable on this page — parity is a test,
-              not an aspiration, and a missing column is how the last attempt died. */}
+        {/* ── what it is ─────────────────────────────────────────────────── */}
+        <Band name="What it is">
           <FieldGroup title="The award">
             <Field label="Level" value={row.level} />
             <Field label="Subtype" value={row.subtype} />
@@ -663,58 +619,119 @@ export default function Record() {
             <Field label="Recommendation" value={detail?.recommendation ?? ''} wide />
           </FieldGroup>
           {!row.languageOk ? (
-            <p class="rec-warn">
-              Taught in {renderField(row.language).text}. That is not a language he reads — French
-              fluent, English working, no German.
+            <p class="v-warn">
+              Taught in {renderField(row.language).text}. That is not a language you read — French fluent,
+              English working, no German.
             </p>
           ) : null}
-        </Section>
+        </Band>
 
-        <Section label="Source">
+        {/* ── other rows for the same programme ──────────────────────────── */}
+        {members.length > 1 ? (
+          <Band name="Other rows for this programme" count={members.length}>
+            <Say>
+              {pluralise(members.length, 'source row')} describe this same programme, from different discovery
+              sweeps with different field coverage. The app counts them once and shows the fullest, and it does
+              not quietly average them.
+            </Say>
+            {members.map((m) => (
+              <p class="v-src" key={m.key}>
+                <a href={recordHref(m)}>{m.programme || '(no programme name)'}</a> · row {m.id} · {m.costBand} ·{' '}
+                {m.verdict === '' ? 'not checked' : m.verdict}
+                {m.key === row.key ? ' · you are reading this one' : ''}
+              </p>
+            ))}
+          </Band>
+        ) : null}
+
+        {/* ── source ─────────────────────────────────────────────────────── */}
+        <Band name="Source">
           {urls.length > 0 ? (
-            <ul style="list-style:none;padding:0;margin:0">
-              {urls.map((u) => (
-                <li class="rec-item" key={u}>
-                  <a class="rec-link rec-mono" href={u} rel="noreferrer noopener" target="_blank">
-                    {u}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            urls.map((u) => (
+              <p class="v-src" key={u}>
+                <a href={u} rel="noreferrer noopener" target="_blank">
+                  {u}
+                </a>
+              </p>
+            ))
           ) : (
             <Field label="Official page" value={detail?.url ?? ''} wide />
           )}
           <Field label="Found by" value={detail?.foundBy ?? ''} />
-          <p class="rec-note">
+          <p class="v-src">
             {row.verdict !== ''
               ? 'Checked against the official page.'
               : 'Never checked. Everything above came from a listing, not from them.'}
           </p>
-        </Section>
+        </Band>
 
-        {/*
-          Last, and deliberately quiet. `chance` is a heuristic over a scraped blurb; a verdict
-          is a human reading the source. Where the two disagree the verdict wins, and 28 records
-          rated Strong came back AVOID.
-        */}
-        <div class="rec-demote">
-          <p class="rec-label">Unverified guess from the listing text</p>
-          {hasValue(row.chance) ? (
-            <p class="rec-sub">Automatic rating: {renderField(row.chance).text}</p>
-          ) : (
-            <p class="rec-sub">No automatic rating was recorded.</p>
-          )}
-          <p class="rec-sub" style="white-space:pre-wrap">
+        {/* ── last, and deliberately quiet ───────────────────────────────── */}
+        <Band name="An automatic guess, kept only for completeness">
+          <p class="v-src">
+            {hasValue(row.chance)
+              ? `Rated ${renderField(row.chance).text} by a heuristic over a search-listing blurb. 28 records it rated Strong were judged AVOID once a human read the page, so a verdict outranks it everywhere.`
+              : 'No automatic rating was recorded.'}
+          </p>
+          <p class="t-sentence t-sentence--guess" style="margin-top:8px">
             {renderField(row.whyChance).text}
           </p>
-          {row.verdict !== '' && row.chance === 'Strong' && row.verdict === 'AVOID' ? (
-            <p class="rec-note">
-              An automatic rating said Strong. The page was then read by hand and judged AVOID.
-              Trust the second one.
-            </p>
-          ) : null}
+        </Band>
+      </div>
+    </article>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// The standalone page — the narrow frame. On a laptop `Find` renders the document
+// in its right-hand pane instead, on the same route.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export default function Record(p: { tabs: Tab[]; path: string }): JSX.Element {
+  const status = useStore((s) => s.status);
+  const index = useStore((s) => s.index);
+  const row = useMemo(() => resolveRecord(p.path, index), [p.path, index]);
+
+  if (status !== 'ready') {
+    return (
+      <Screen title="Record" tabs={p.tabs} path={p.path}>
+        <div class="v-col">
+          <p class="t-prose">{status === 'error' ? 'The records did not load.' : 'Reading the records…'}</p>
         </div>
-      </article>
-    </Page>
+      </Screen>
+    );
+  }
+
+  if (!row) {
+    return (
+      <Screen title="Record" tabs={p.tabs} path={p.path}>
+        <div class="v-col">
+          <Invite lead="No record at this address.">
+            <p>
+              A record link is its durable key — hash of institution, programme and source URL. If you
+              followed an old link built from a workbook row number, the rows moved when the data was
+              re-exported, which is exactly why nothing you write is keyed on them.
+            </p>
+            <p>
+              <a class="btn btn--sm" href="#/find">
+                Search all 398 records
+              </a>
+            </p>
+          </Invite>
+        </div>
+      </Screen>
+    );
+  }
+
+  return (
+    <Screen title={row.programme || row.institution || 'Record'} tabs={p.tabs} path={p.path}>
+      <div class="v-col">
+        <p style="margin-bottom:16px">
+          <a class="btn btn--sm" href="#/find">
+            ← Back to the search
+          </a>
+        </p>
+        <RecordDocument row={row} />
+      </div>
+    </Screen>
   );
 }
