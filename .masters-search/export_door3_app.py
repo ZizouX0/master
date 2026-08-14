@@ -16,6 +16,7 @@ sys.path.insert(0, ".masters-search")
 import build_master as M
 import build_artist_workbook as A
 import build_door3 as D
+import corrections as C
 
 OUT_DIR = "app/public/data"
 
@@ -32,6 +33,14 @@ def programmes():
     rows = []
     for i, r in enumerate(D.collect()):
         rec = r["_rec"]
+        disp = C.analyse({
+            "correction": r["_correction"], "verdictWhy": r["_verdictWhy"],
+            "audition": g(rec, "auditionSpec"),
+        })
+        # a verified correction beats the derived flag. Babelsberg and FAMU read
+        # "no audition, free" until you read the prose, and a filter would have
+        # handed him five programmes he cannot get into.
+        needs_audition = "AUDITION" in r["_gate"] or bool(disp["auditionDisputed"])
         rows.append({
             "id": i,
             "country": r["Country"], "region": r["_reg"], "city": r["City"],
@@ -40,7 +49,13 @@ def programmes():
             "level": r["Qualification level"],
             "isDegree": r["Qualification level"] == "Master's degree",
             "gate": r["_gate"],
-            "needsAudition": "AUDITION" in r["_gate"],
+            "needsAudition": needs_audition,
+            # what a verified correction contradicts, and the phrase that says so
+            "auditionDisputed": disp["auditionDisputed"],
+            "costDisputed": disp["costDisputed"],
+            "existenceDisputed": disp["existenceDisputed"],
+            "hasDispute": bool(disp["auditionDisputed"] or disp["costDisputed"]
+                               or disp["existenceDisputed"]),
             "chance": r["Chance for you"], "whyChance": r["Why that chance"],
             "costBand": r["Cost band (you)"],
             "language": r["Taught in"], "languageOk": bool(M.language_ok(r["Taught in"])),
