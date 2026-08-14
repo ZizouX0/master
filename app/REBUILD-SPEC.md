@@ -76,6 +76,32 @@ where it is free; never ship a library for it.
 
 ---
 
+## 2b. The canvas: a laptop, ~1280–1600px
+
+Corrected by the user mid-build. Everything above this line was originally specced phone-first,
+and the kill test named 390 × 844; that was wrong. He works on a laptop.
+
+The consequence is not "add breakpoints". A phone layout centred on a wide canvas — one narrow
+column of cards in a sea of margin — is one of the loudest *made by AI* tells there is, and
+avoiding it is the entire brief. So use the width:
+
+- **`Find` is master-detail.** The record opens in a right-hand pane beside the list, because he
+  is comparing options against each other and a laptop lets him keep the list in view while
+  reading one. That is the thing the spreadsheet cannot do — and the thing a phone could not
+  have done either.
+- `/record/:key` stays a real route. The pane is a layout, not a replacement for routing; at
+  narrow widths it collapses to the full-width page.
+- **Cap the reading measure.** `correction` and `verdictWhy` are long prose. On a 1400px canvas
+  they run to 150 characters a line unless a max-width holds them. The cap belongs to the prose
+  token, not to each view.
+- The type scale is re-tuned for this canvas. Sizes chosen to survive 390px read as a phone app
+  blown up.
+- The Desk metaphor gains from this: a console is a wide object, and channels sit side by side.
+
+Narrow must not break. It is simply no longer the design target.
+
+---
+
 ## 3. The shape: a campaign console, not a browser
 
 Today is **August 2026**. The first gate is **1 October**. This is a campaign run against a
@@ -161,7 +187,8 @@ Specifically:
 5. `correction` — column G — appears **in full** on the record page. Its absence is what killed
    the first attempt.
 6. No bare date for any `PRIOR CYCLE` deadline.
-7. `document.scrollWidth === 390` at 390px, every screen.
+7. No horizontal scroll at **1280px**, every screen, and still none at 390px when the
+   layout collapses.
 8. Personal state keys on the durable hash, never on `id`.
 
 ---

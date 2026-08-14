@@ -13,7 +13,8 @@ A decision tool over **Door 3 — music production and studio craft**: 398 progr
 
 **For one person**: Tunisian, software-engineering BSc, no music degree, no portfolio yet,
 French fluent / English working / no German, needs a visa, September 2027 intake, limited money.
-**Usually on a phone.**
+**On a laptop**, roughly 1280–1600px wide. See `REBUILD-SPEC.md` §2b — this was
+originally specced phone-first and the user corrected it mid-build.
 
 ## The critique's verdict, accepted
 
@@ -145,5 +146,5 @@ From `DESIGN-CRITIQUE.md §6`, all nine must pass. The load-bearing ones:
   columns E, F, **G**, H, K, S findable in the app.
 - The app must be able to state that **249 of 398 were never verified**.
 
-A verification agent runs this against the built app in headless Chromium at 390 × 844 before
-anything ships.
+A verification agent runs this against the built app in headless Chromium at 1440 × 900 — and
+again at 390 × 844 to confirm the collapsed layout does not break — before anything ships.
