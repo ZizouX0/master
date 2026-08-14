@@ -14,3 +14,12 @@ app/dist/
 app/dist-single/
 app/public/data/index.json
 app/public/data/detail.json
+
+# upstream variable fonts, downloaded so build-fonts.mjs can subset them. 3 MB of
+# source for 124 KB of shipped woff2 — the subsets in app/public/fonts/ are the
+# artefact and they ARE committed, so the site never depends on a refetch.
+app/scripts/.font-cache/
+
+# design-review screenshots. Regenerable, and 4.6 MB of intermediate states is not
+# worth carrying in a repo whose deliverable is the site itself.
+app/foundation-shots/

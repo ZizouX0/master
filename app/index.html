@@ -6,6 +6,13 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="robots" content="noindex" />
     <title>Door 3 — music production master's</title>
+    <!--
+      The body face only. The legend and the mono faces are metric-matched to the fallback (see
+      styles.css §1), so they cost nothing while they load; preloading all four would spend the
+      first 110 KB of a Tunisian mobile connection before the first sentence is readable.
+      `crossorigin` is required even same-origin, or the preload is discarded and fetched twice.
+    -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/master/fonts/literata-body.woff2" />
   </head>
   <body>
     <div id="app"></div>

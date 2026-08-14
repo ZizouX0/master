@@ -40,6 +40,13 @@ jobs:
       - run: npm test
       - run: npm run typecheck
 
+      # calendar.json is hand-written and is the only origin of a displayed date in the
+      # product. This checks every quote verbatim against the record or the report it
+      # cites, and refuses any entry sourced from a PRIOR CYCLE string. A fabricated
+      # date is indistinguishable from a curated one once it is in the file, so it
+      # fails the build rather than ships.
+      - run: npm run calendar
+
       - run: npm run build
 
       - uses: actions/configure-pages@v5

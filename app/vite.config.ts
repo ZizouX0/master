@@ -7,7 +7,7 @@ import { viteSingleFile } from 'vite-plugin-singlefile';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const DATA = join(ROOT, 'public', 'data');
-const PAYLOADS = ['index', 'detail', 'funding', 'meta'] as const;
+const PAYLOADS = ['index', 'detail', 'funding', 'meta', 'calendar'] as const;
 
 /**
  * The single-file build runs from a file:// URL, where `fetch` of a sibling JSON file is blocked

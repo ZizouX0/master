@@ -1,109 +1,248 @@
 /*
- * The whole visual system. One file, no framework, no webfonts, no CDN.
+ * THE DESK — the whole visual system. One hand-written file. No framework, no CDN, no library.
  *
- * Dark-first: the bare :root palette IS the dark palette, because he reads this in bed on a
- * phone. Light is a redefinition of the same tokens under `prefers-color-scheme: light` and
- * under [data-theme="light"], so the manual toggle wins in both directions.
+ * The brief was one sentence: "it is obvious that it's made by AI." What was here before was a
+ * near-black ground, one bright teal accent and a serif that resolved to Georgia or Iowan or
+ * DejaVu depending on the phone. Three defaults, and the third one meant the app's whole
+ * argument was set in a typeface nobody chose.
  *
- * Two rules govern every colour below:
+ * What replaces it: every programme is a channel on a mixing console. Borrowed as STRUCTURE AND
+ * NOMENCLATURE, never as texture — there is no brushed metal, no bevel, no rendered knob and no
+ * gradient anywhere in this file. A console is a column of identical channels each carrying a
+ * strip of small hard marks down its left edge, and that strip (see ChannelStrip.tsx) is the
+ * signature. Because the strip carries the state, the document carries none: no chips, no
+ * badges, no coloured boxes, just a reading face and a great deal of air.
  *
- *  1. ONE traffic light, and it belongs to `verdict`. Green / amber / red never mean anything
- *     else. The gate uses a separate visual language — square corners, mono type, geometric
- *     glyphs — so a gate chip can never be mistaken for a verdict.
- *  2. NOTHING relies on hue. Every state is also a difference in fill density, border style and
- *     glyph, so the four verdict states stay distinguishable in greyscale:
+ * Six named tokens, named for what they mean HERE and not for a rank in an abstract scale:
  *
- *       WORTH IT      solid fill, ✔        (a filled block)
- *       CONDITIONAL   tinted fill + bar, ! (a block with a rule down its left)
- *       AVOID         solid outline, ✕     (an empty box, dimmed)
- *       not verified  DASHED outline, ?    (an empty box with a broken edge)
+ *   --console          the frame — the page ground
+ *   --console-recess   what is set INTO the desk; the app's only elevation, and it is negative
+ *   --legend           the silkscreened text on a panel — all body copy, all titles
+ *   --strip            the channel strip itself and everything of its rank, including the
+ *                      never-checked state, which has no colour of its own and borrows this
+ *   --cap              the coloured plastic cap on a fader — ONLY things you can touch
+ *   --meter-*          the peak-meter scale: the verdict system, and nothing else, ever
+ *
+ * Two rules hold the whole thing together:
+ *
+ *   1. Hue is never the sole carrier. The three meter stops are tuned to within 0.0014 relative
+ *      luminance of one another (numbers in §2) — in greyscale they are the same grey, and the
+ *      geometry in ChannelStrip.tsx is doing all of the work.
+ *   2. Never-checked is not a fourth colour. It is the absence of the mark, on a broken rail.
+ *      249 of 398 records were never read; absence is the honest rendering of that.
+ */
+
+/* ══ 1 · FACES ═══════════════════════════════════════════════════════════════
+ *
+ * Three families, self-hosted, subset and axis-clipped by scripts/build-fonts.mjs against this
+ * app's own 235 codepoints. Total 110.9 KB against a 120 KB budget. Greek and Cyrillic
+ * institution names are deliberately not in the subset: they occur only inside quoted raw
+ * strings, which are set in the mono face, and the system stack renders them correctly.
+ *
+ * The three fallback faces below are what make `font-display: swap` cost nothing. Their
+ * size-adjust / ascent-override / descent-override values are COMPUTED, not guessed — the mean
+ * advance width of each real face weighted by this app's own character frequencies, divided by
+ * the mean advance of Roboto (Android's default) measured the same way. Run
+ * `node scripts/build-fonts.mjs --check` and it fails if this table has drifted from the fonts.
+ */
+
+@font-face {
+  font-family: 'Literata';
+  src: url('/master/fonts/literata-body.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Literata';
+  src: url('/master/fonts/literata-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('/master/fonts/archivo-legend.woff2') format('woff2');
+  font-weight: 400 700;
+  font-stretch: 100% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spline Sans Mono';
+  src: url('/master/fonts/spline-mono.woff2') format('woff2');
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Metric-matched fallbacks. Same line box, same mean advance — the swap moves nothing. */
+@font-face {
+  font-family: 'Literata Fallback';
+  src: local('Roboto'), local('Arial'), local('Helvetica Neue'), local('Liberation Sans');
+  size-adjust: 108.5%;
+  ascent-override: 108.5%;
+  descent-override: 28.4%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Literata Fallback';
+  src: local('Roboto Italic'), local('Arial Italic'), local('Liberation Sans Italic');
+  font-style: italic;
+  size-adjust: 102.3%;
+  ascent-override: 115.1%;
+  descent-override: 30.1%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Archivo Fallback';
+  src: local('Roboto'), local('Arial'), local('Helvetica Neue'), local('Liberation Sans');
+  size-adjust: 99.7%;
+  ascent-override: 88.0%;
+  descent-override: 21.1%;
+  line-gap-override: 0%;
+}
+
+/* The mono needs no fallback face: Spline Sans Mono's advance is exactly 0.600 em, which is
+   also SF Mono's, Roboto Mono's and DejaVu Sans Mono's. It is already a 1:1 metric match. */
+
+/* ══ 2 · TOKENS ══════════════════════════════════════════════════════════════
+ *
+ * Light is the bare :root — he reads on a bus as often as in bed, and a dark-only design is a
+ * design for screenshots. Dark redefines only the colour tokens, twice: once under the media
+ * query so the system preference wins by default, once under [data-theme] so the manual toggle
+ * wins in both directions.
+ *
+ * THE METER, MEASURED (WCAG relative luminance, and the reason the geometry can carry the
+ * meaning on its own):
+ *
+ *   light  nominal #3A672A L=0.1077 · over #7F5306 L=0.1071 · clip #A5352A L=0.1071
+ *          spread 0.0006 — contrast on --console: 4.94 / 4.95 / 4.95
+ *   dark   nominal #7EB469 L=0.3810 · over #CD9E4C L=0.3795 · clip #F1897A L=0.3800
+ *          spread 0.0014 — contrast on --console: 6.52 / 6.50 / 6.51
+ *
+ * Both spreads are far inside the 0.03 the direction demands. Desaturate the page and the three
+ * verdicts become one identical grey; what still distinguishes them is fill, hatch and strike.
+ * The hues are the ART-DIRECTION values pulled onto a common luminance by scaling in linear
+ * light, which moves lightness without touching hue: #3C6A2C→#3A672A, #7E5206→#7F5306,
+ * #A03328→#A5352A, #7FB56A→#7EB469, #D2A24E→#CD9E4C, #E58274→#F1897A.
  */
 
 :root {
-  /* dark — the default */
-  --ground: #0d1214;
-  --surface: #151c1e;
-  --surface-2: #1c2427;
-  --ink: #e8eff0;
-  --ink-2: #a9b7ba;
-  --ink-3: #7d8d90;
-  /* `--muted` is the shared alias for secondary ink; the detail views reference it by name. */
-  --muted: #a9b7ba;
-  --rule: rgba(232, 239, 240, 0.14);
-  --rule-strong: rgba(232, 239, 240, 0.3);
-  --accent: #4cc0b1;
-  --accent-ink: #07211f;
-  --green: #63c48b;
-  --green-bg: rgba(99, 196, 139, 0.14);
-  --amber: #d9a550;
-  --amber-bg: rgba(217, 165, 80, 0.14);
-  --red: #e77a72;
-  --red-bg: rgba(231, 122, 114, 0.14);
-  --cool: rgba(76, 192, 177, 0.16);
-  --cool-2: rgba(76, 192, 177, 0.08);
-  --focus: #7fd8cb;
+  /* ── the six ── */
+  --console: #dcdfd6;
+  --console-recess: #cbcfc5;
+  --legend: #161a17;
+  --strip: #566058;
+  --cap: #2c5b6b;
 
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    sans-serif;
-  --serif: "Iowan Old Style", Charter, Georgia, "Times New Roman", serif;
-  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  /* ── the meter: the verdict system and nothing else ── */
+  --meter-nominal: #3a672a;
+  --meter-over: #7f5306;
+  --meter-clip: #a5352a;
 
-  --gutter: 20px;
-  --tap: 44px;
-  --measure: 34rem;
+  /* ── derived: every rule in the app is of the strip's rank ── */
+  --rule: color-mix(in srgb, var(--strip) 42%, transparent);
+  --rule-strong: var(--strip);
 
-  color-scheme: dark;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --ground: #fbfbf9;
-    --surface: #ffffff;
-    --surface-2: #f1f2ef;
-    --ink: #14191a;
-    --ink-2: #4c5658;
-    --ink-3: #6d787a;
-    --muted: #4c5658;
-    --rule: rgba(20, 25, 26, 0.16);
-    --rule-strong: rgba(20, 25, 26, 0.36);
-    --accent: #0d6f66;
-    --accent-ink: #ffffff;
-    --green: #176b3f;
-    --green-bg: rgba(23, 107, 63, 0.1);
-    --amber: #8a5605;
-    --amber-bg: rgba(138, 86, 5, 0.1);
-    --red: #a92f26;
-    --red-bg: rgba(169, 47, 38, 0.1);
-    --cool: rgba(13, 111, 102, 0.12);
-    --cool-2: rgba(13, 111, 102, 0.06);
-    --focus: #0d6f66;
-    color-scheme: light;
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --console: #1d2327;
+    --console-recess: #151a1d;
+    --legend: #e3e7e3;
+    --strip: #8e9a93;
+    --cap: #84b4c6;
+    --meter-nominal: #7eb469;
+    --meter-over: #cd9e4c;
+    --meter-clip: #f1897a;
+    color-scheme: dark;
   }
 }
 
-:root[data-theme="light"] {
-  --ground: #fbfbf9;
-  --surface: #ffffff;
-  --surface-2: #f1f2ef;
-  --ink: #14191a;
-  --ink-2: #4c5658;
-  --ink-3: #6d787a;
-  --muted: #4c5658;
-  --rule: rgba(20, 25, 26, 0.16);
-  --rule-strong: rgba(20, 25, 26, 0.36);
-  --accent: #0d6f66;
-  --accent-ink: #ffffff;
-  --green: #176b3f;
-  --green-bg: rgba(23, 107, 63, 0.1);
-  --amber: #8a5605;
-  --amber-bg: rgba(138, 86, 5, 0.1);
-  --red: #a92f26;
-  --red-bg: rgba(169, 47, 38, 0.1);
-  --cool: rgba(13, 111, 102, 0.12);
-  --cool-2: rgba(13, 111, 102, 0.06);
-  --focus: #0d6f66;
-  color-scheme: light;
+:root[data-theme='dark'] {
+  --console: #1d2327;
+  --console-recess: #151a1d;
+  --legend: #e3e7e3;
+  --strip: #8e9a93;
+  --cap: #84b4c6;
+  --meter-nominal: #7eb469;
+  --meter-over: #cd9e4c;
+  --meter-clip: #f1897a;
+  color-scheme: dark;
 }
+
+:root {
+  /* ── faces ── */
+  --serif: 'Literata', 'Literata Fallback', Charter, Georgia, serif;
+  --sans: 'Archivo', 'Archivo Fallback', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Spline Sans Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ── the channel geometry (§Layout): 14 pad · 24 rail · 12 gap · 326 prose · 16 pad ── */
+  --rail: 24px;
+  --rail-gap: 12px;
+  --pad-l: 14px;
+  --pad-r: 16px;
+  --tap: 44px;
+  --measure: 36rem;
+
+  /* ── spacing scale. Only these values exist. ── */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+
+  /* Equipment has small chamfers. Not 0 (broadsheet), not 12 (pill soup). Nothing is a circle. */
+  --radius: 2px;
+
+  /* The single duration in the application. See §8. */
+  --mute: 120ms;
+
+  /* Never synthesise: a faux-bold serif is the most unconsidered thing a page can do, and the
+     variable range covers 400–700 for real. */
+  font-synthesis: none;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── compatibility aliases ────────────────────────────────────────────────────
+ * The five standing views still reference the old palette by name. These map the old names onto
+ * the new system so nothing renders unstyled during the migration; every one of them is DELETED
+ * as its view is rebuilt on the tokens above. Do not write new rules against these.
+ */
+:root {
+  --ground: var(--console);
+  --surface: var(--console-recess);
+  --surface-2: var(--console-recess);
+  --ink: var(--legend);
+  --ink-2: var(--strip);
+  --ink-3: var(--strip);
+  --muted: var(--strip);
+  --accent: var(--cap);
+  --accent-ink: var(--console);
+  --focus: var(--cap);
+  --green: var(--meter-nominal);
+  --amber: var(--meter-over);
+  --red: var(--meter-clip);
+  --green-bg: transparent;
+  --amber-bg: transparent;
+  --red-bg: transparent;
+  --cool: transparent;
+  --cool-2: transparent;
+  --gutter: var(--pad-l);
+}
+
+/* ══ 3 · GROUND ══════════════════════════════════════════════════════════════ */
 
 *,
 *::before,
@@ -117,37 +256,22 @@ html {
 
 body {
   margin: 0;
-  background: var(--ground);
-  color: var(--ink);
-  font: 16px/1.5 var(--sans);
+  /* Never transparent: the page ground is a decision, not an inheritance. */
+  background: var(--console);
+  color: var(--legend);
+  font: 400 16.5px/1.6 var(--serif);
+  /* Rule 7 of the kill test: document.scrollWidth stays 390 at a 390px viewport. */
   overflow-x: hidden;
-}
-
-/* No transition anywhere is allowed to feel like an animation. */
-* {
-  transition-duration: 100ms;
-}
-
-a {
-  color: var(--accent);
-}
-
-:focus-visible {
-  outline: 2px solid var(--focus);
-  outline-offset: 2px;
-}
-
-button {
-  font: inherit;
-  color: inherit;
 }
 
 h1,
 h2,
 h3,
+h4,
 p,
 dl,
 dd,
+figure,
 ul,
 ol {
   margin: 0;
@@ -159,12 +283,581 @@ ol {
   list-style: none;
 }
 
-/* ── shell ──────────────────────────────────────────────────────────────── */
-
-.app {
-  min-height: 100vh;
-  padding-bottom: calc(58px + env(safe-area-inset-bottom, 0px));
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
 }
+
+a {
+  color: var(--cap);
+  text-underline-offset: 3px;
+}
+
+/* Only things you can touch are ever --cap. Focus is visible on every one of them, always, and
+   is never removed — 2px at 2px offset, instant, no transition. */
+:focus-visible {
+  outline: 2px solid var(--cap);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--cap) 26%, transparent);
+}
+
+hr,
+.rule {
+  height: 0;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* ══ 4 · TYPE ════════════════════════════════════════════════════════════════
+ *
+ * Phone-first at 390px. Nothing below 11px anywhere. em-based tracking throughout.
+ *
+ * The rule that does the most work: programme titles are Literata, institution names are
+ * Archivo. One is the thing, the other is who runs it, and the two never blur.
+ */
+
+/* Literata — the reading voice. The app has no display face and no hero; the one large line on
+   the landing screen is set in the body face, so the app never stops looking like a document. */
+
+.t-statement {
+  font: 450 25px/1.28 var(--serif);
+  letter-spacing: -0.015em;
+  color: var(--legend);
+}
+
+.t-title {
+  font: 500 21px/1.25 var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--legend);
+}
+
+.t-cardtitle {
+  font: 500 17px/1.3 var(--serif);
+  letter-spacing: -0.005em;
+  color: var(--legend);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* The four load-bearing fields — verdictWhy, acceptsNonMusic, portfolio, recommendation, which
+   average 361, 302, 228 and 755 characters. This face exists for exactly these. Never clamped. */
+.t-prose {
+  font: 400 16.5px/1.6 var(--serif);
+  color: var(--legend);
+}
+
+.t-prose-2 {
+  font: 400 15px/1.55 var(--serif);
+  color: var(--legend);
+}
+
+/* Their voice, not ours. Set in the recess, behind a 2px rule of the strip's rank. */
+.t-quote {
+  font: italic 400 16.5px/1.55 var(--serif);
+  color: var(--legend);
+  margin: 0;
+  padding: var(--s2) var(--s3);
+  border-left: 2px solid var(--strip);
+  background: var(--console-recess);
+}
+
+.t-sentence {
+  font: italic 400 14.5px/1.5 var(--serif);
+  color: var(--legend);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* A guess is not a finding: it loses the italic and drops to the strip's rank. */
+.t-sentence--guess {
+  font-style: normal;
+  color: var(--strip);
+}
+
+/* Archivo — the silkscreen. Almost always small, uppercase and widely tracked, which is how a
+   faceplate is printed. The width axis is why this family: legends are set wide the way panel
+   legends are, and the chrome is set at normal width, in the same family. */
+
+.t-inst {
+  font: 400 14px/1.4 var(--sans);
+  font-stretch: 100%;
+  color: var(--legend);
+}
+
+.t-legend {
+  font: 600 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--strip);
+}
+
+/* The widest thing in the app. A panel legend, and it always sits beside its mark. */
+.t-verdict {
+  font: 700 15px/1 var(--sans);
+  font-stretch: 125%;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.t-verdict--sm {
+  font-size: 11px;
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
+}
+
+.t-verdict--nominal {
+  color: var(--meter-nominal);
+}
+.t-verdict--over {
+  color: var(--meter-over);
+}
+.t-verdict--clip {
+  color: var(--meter-clip);
+}
+/* Never checked has no hue at all. It cannot read as green because it has none to read. */
+.t-verdict--none {
+  color: var(--strip);
+}
+
+.t-ui {
+  font: 500 14px/1.2 var(--sans);
+  font-stretch: 100%;
+  letter-spacing: 0.01em;
+}
+
+.t-tab {
+  font: 600 10.5px/1 var(--sans);
+  font-stretch: 110%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.t-micro {
+  font: 400 12px/1.45 var(--sans);
+  font-stretch: 100%;
+  letter-spacing: 0.01em;
+  color: var(--strip);
+}
+
+/* Spline Sans Mono — every monospaced glyph in this app means one thing: THIS STRING IS RAW AND
+   I HAVE NOT TOUCHED IT. Deadlines, costs, counts, row numbers, the UNVERIFIED token. */
+
+.t-data {
+  font: 400 13px/1.45 var(--mono);
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.t-num {
+  font: 400 20px/1 var(--mono);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.t-unverified {
+  font: 500 0.78em/1 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--meter-over);
+  white-space: nowrap;
+}
+
+/* The china-marker strike: an engineer correcting a tape box. Same red as a clipped meter,
+   because both mean the identical thing — this reading is bad, do not trust it. */
+.t-struck {
+  text-decoration: line-through 2px var(--meter-clip);
+  text-decoration-skip-ink: none;
+}
+
+.t-strip {
+  color: var(--strip);
+}
+
+/* ══ 5 · LAYOUT ══════════════════════════════════════════════════════════════
+ *
+ * One column, always, at every width. On a phone it is 390px; on a desktop it is the same
+ * column at 36rem, LEFT-ALIGNED in the viewport — a document sits at the left of the desk, it
+ * does not float in the middle of it. There is no grid; the rail is what replaces one.
+ *
+ *   0      14        38   50                                376  390
+ *   │←pad→ │←─rail──→│←g→ │←──────── content 326px ─────────→│←p→│
+ */
+
+.desk {
+  max-width: var(--measure);
+  padding: 0 var(--pad-r) var(--s8) var(--pad-l);
+}
+
+/* Every record, every content block: a 24px channel on the left, the document on the right.
+   All 1px rules start at the rail's x-position, not at the page edge — the rules belong to the
+   channel, not to the page, and that single detail is what stops the hairlines reading as
+   broadsheet. Since .desk's left padding IS the rail's x, a full-width rule inside it starts
+   in the right place with no offset. */
+.channel {
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  column-gap: var(--rail-gap);
+  align-items: start;
+}
+
+/* The strip cell is the SVG's containing block. The SVG is absolutely positioned inside it (see
+   §6) so that it takes the row's full height without ever contributing to it — an inline SVG
+   with no viewBox otherwise reports the CSS default replaced height of 150px and inflates every
+   card in the list to match. */
+.channel__strip {
+  position: relative;
+  grid-column: 1;
+  align-self: stretch;
+  /* A channel is at least tall enough to carry a meter block and a three-rung ladder. */
+  min-height: 76px;
+}
+
+.channel__body {
+  grid-column: 2;
+  min-width: 0;
+}
+
+/*
+ * A card in the list is a channel and nothing else. There is NO rule between cards.
+ *
+ * A full-width hairline between records, at zero radius, under a serif, is the broadsheet — one
+ * of the three looks that read as generated. It also demotes the signature to decoration: if a
+ * rule is doing the separating, the strip is an ornament beside it. On a console, channels are
+ * divided by their own strips and by nothing else, so that is what divides them here. The break
+ * is real and it is structural: every card's rail begins BELOW its meter lane, so 24px of empty
+ * gutter opens at the top of each record, and what fills that gap is the meter block — or, for
+ * a record nobody ever checked, nothing at all.
+ *
+ * The air between cards is vertical rhythm, spent inside the body column, so that the strip
+ * cell stretches through it and two channels meet without a seam.
+ */
+.channel--card {
+  padding: 0;
+}
+
+.channel--card > .channel__body {
+  padding: var(--s5) 0;
+}
+
+/* Section-level separation is 32px and a rule; group 24; field 16; line 8. */
+.section {
+  padding-top: var(--s6);
+}
+
+.section + .section {
+  margin-top: var(--s6);
+  border-top: 1px solid var(--rule);
+}
+
+/*
+ * The continuing rail. ChannelStrip draws the marks in SVG at a known height; on a long record
+ * page the rail has to run the whole document, so it is painted here as a background instead —
+ * same 2px, same three line styles, any height, no measurement.
+ */
+.rail {
+  --rail-top: 0px;
+  background-repeat: no-repeat;
+  background-position: 6px var(--rail-top);
+  background-size: 2px calc(100% - var(--rail-top));
+  background-image: linear-gradient(var(--strip), var(--strip));
+}
+
+.rail--dashed {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--strip) 0 4px,
+    transparent 4px 7px
+  );
+}
+
+.rail--hatched {
+  background-position: 2px var(--rail-top);
+  background-size: 9px calc(100% - var(--rail-top));
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--strip) 0 1px,
+    transparent 1px 5px
+  );
+}
+
+/* ══ 6 · THE CHANNEL STRIP ═══════════════════════════════════════════════════
+ *
+ * The signature. Geometry lives in ChannelStrip.tsx — this is only its housing. It is 24px
+ * wide, it is inline SVG, and it carries an accessible name so a screen-reader user is read a
+ * sentence rather than three shapes.
+ */
+
+.strip {
+  display: block;
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--rail);
+  overflow: visible;
+  /* The rail starts below the meter's lane, so an outlined meter never has a line through it. */
+  --rail-top: 24px;
+}
+
+/* The 137 non-degrees have no meter slot: they were never given a verdict, they were judged on
+   their accreditation. The rail is hatched for its whole height and the space where the block
+   would sit is simply not drawn. */
+.strip--noslot {
+  --rail-top: 0px;
+}
+
+/* The one place a colour is allowed to be a fill. */
+.strip__meter--nominal {
+  fill: var(--meter-nominal);
+  stroke: var(--meter-nominal);
+}
+
+.strip__meter--over {
+  fill: none;
+  stroke: var(--meter-over);
+}
+
+.strip__hatch--over {
+  stroke: var(--meter-over);
+}
+
+.strip__meter--clip {
+  fill: none;
+  stroke: var(--meter-clip);
+}
+
+/* No block at all. A single em dash of the strip's rank sits where the block would be. */
+.strip__absent {
+  stroke: var(--strip);
+}
+
+.strip__rail {
+  stroke: var(--strip);
+}
+
+/* The ladder is only ever open strokes, never a fill — that is what keeps a gate mark from
+   ever being mistaken for a verdict. Verdict red is a bar; gate red is a stroke. */
+.strip__rung {
+  stroke: var(--strip);
+  fill: none;
+}
+
+.strip__rung--stop {
+  stroke: var(--meter-clip);
+}
+
+.strip__rung--suspect {
+  stroke: var(--strip);
+  stroke-dasharray: 2 2;
+}
+
+.strip__dot {
+  fill: var(--strip);
+  stroke: none;
+}
+
+.strip__hole {
+  fill: none;
+  stroke: var(--strip);
+}
+
+/* The prerequisite wall: barred across the whole channel, with the ladder above it intact.
+   Closed by a prerequisite, not by your ear — and a prerequisite is sometimes negotiable. */
+.strip__wall {
+  stroke: var(--meter-clip);
+}
+
+/* ══ 7 · THE FADER THROW ═════════════════════════════════════════════════════
+ *
+ * The signature's second and only other appearance: the landing funnel drawn as a fader travel.
+ * 355 at the top of the throw, 14 at the bottom, a --cap fader cap resting at the end of it.
+ *
+ * ONE rail, one cap, and the cap descends. The rail is a single element (`.throw::before`)
+ * running the full height of the list — not a segment per row, which reads as seven unrelated
+ * ticks instead of one fader falling. Each stop's tick sits at a height proportional to what has
+ * been lost by the time you reach it, because every row is as tall as the fall BELOW it:
+ * `--travel` is (this count − next count) ÷ the total collected. Row 355 → 0.34, because 122 of
+ * 355 fall away before the next stop, and that is a third of the throw. The eye reads the
+ * collapse as distance fallen; the printed number then confirms it, so nothing has to be
+ * decoded and position is never the only carrier.
+ *
+ *   <ol class="throw">
+ *     <li><a class="throw__row" style="--travel:.34">
+ *       <span class="throw__n">233</span>
+ *       <span class="throw__tick" aria-hidden="true"></span>
+ *       <span class="throw__main">
+ *         <span class="throw__label">award a real master's degree</span>
+ *         <span class="throw__drop">−122 certificates, título propio</span>
+ *       </span>
+ *       <span class="throw__go" aria-hidden="true">›</span>
+ *     </a></li>
+ *     … last row gets class="throw__row throw__row--cap" and no --travel: the fader has
+ *       bottomed out, so the cap rests at the very end of the rail.
+ *   </ol>
+ */
+
+.throw {
+  position: relative;
+  margin: 0;
+  /* Where the travel runs: number column + gap + half the tick cell. */
+  --track-x: calc(3.4em + 23px);
+  /* The full length of the fader's throw. Each row takes its share of it. */
+  --throw: 420px;
+}
+
+/* The rail: one element, top of travel to bottom of travel. */
+.throw::before {
+  content: '';
+  position: absolute;
+  left: var(--track-x);
+  top: 8px;
+  bottom: 0;
+  width: 2px;
+  background: var(--strip);
+}
+
+.throw__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.4em 24px minmax(0, 1fr) 16px;
+  align-items: start;
+  column-gap: var(--s3);
+  padding: var(--s2) 0;
+  /* Tall enough for its share of the throw, and never smaller than a tap target. Where the two
+     disagree — a stop that cut only 19 records — the floor wins and the printed number carries
+     the difference. */
+  min-height: max(var(--tap), calc(var(--travel, 0) * var(--throw)));
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.throw__n {
+  font: 400 20px/1 var(--mono);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--legend);
+  padding-top: 1px;
+}
+
+/* A tick where each stop lands: a mark on a scale, not a bullet. */
+.throw__tick {
+  position: relative;
+  align-self: stretch;
+}
+
+.throw__tick::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 14px;
+  height: 2px;
+  background: var(--strip);
+}
+
+/*
+ * The cap, at the end of the travel. The whole row bottom-aligns to it: the fader has bottomed
+ * out, and the number, the label and the cap all sit at the foot of the throw together. It is
+ * the only thing on the throw you are meant to touch, so it is the only thing that is --cap.
+ */
+.throw__row--cap {
+  align-items: end;
+  /* No padding under the cap: the rail ends exactly where the fader stops. */
+  padding-bottom: 0;
+}
+
+.throw__row--cap .throw__tick::after {
+  left: 2px;
+  top: auto;
+  bottom: 0;
+  width: 20px;
+  height: 12px;
+  background: var(--cap);
+  border-radius: 1px;
+}
+
+.throw__row--cap .throw__n,
+.throw__row--cap .throw__label {
+  color: var(--legend);
+}
+
+.throw__label {
+  display: block;
+  font: 400 15px/1.35 var(--serif);
+  color: var(--legend);
+}
+
+.throw__drop {
+  display: block;
+  margin-top: var(--s1);
+  font: 400 12px/1.4 var(--mono);
+  color: var(--strip);
+}
+
+.throw__go {
+  color: var(--strip);
+  font: 400 14px/1.4 var(--sans);
+  text-align: right;
+}
+
+.throw__row:hover .throw__label {
+  color: var(--cap);
+}
+
+/* ══ 8 · MOTION — one animation in the whole application ═════════════════════
+ *
+ * MUTE, NOT REMOVAL. When a record is ruled out, the row dims IN PLACE over 120ms and only then
+ * re-sorts. Nothing slides, nothing fades out, nothing collapses — that is what a mute button
+ * does: the channel is still on the desk, still patched, still visible, and pressing it again
+ * brings it back. It is also literally the argument about the 100 AVOID records: each is an
+ * application he no longer has to make. They are muted, not deleted.
+ *
+ * Everything else is 0ms. There is no blanket `* { transition-duration }` in this file, on
+ * purpose: a global transition is how an app acquires motion nobody designed.
+ */
+
+.is-muting {
+  transition: opacity var(--mute) linear;
+}
+
+.is-muted {
+  opacity: 0.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ══ 9 · CONTROLS ════════════════════════════════════════════════════════════
+ *
+ * Nothing floats. No shadow anywhere except the filter sheet's top edge, and that is a hairline
+ * rather than a blur. No card has a border, a background or a shadow: cards are separated by a
+ * rule, and the rule starts at the rail.
+ */
 
 .topbar {
   position: sticky;
@@ -172,19 +865,21 @@ ol {
   z-index: 30;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--s2);
   min-height: var(--tap);
-  padding: 4px var(--gutter);
-  background: var(--ground);
+  padding: 0 var(--pad-r) 0 var(--pad-l);
+  background: var(--console-recess);
   border-bottom: 1px solid var(--rule);
 }
 
 .topbar__title {
   flex: 1;
   min-width: 0;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font: 600 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--strip);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -197,37 +892,61 @@ ol {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 0 10px;
+  padding: 0 var(--s2);
   background: none;
   border: 0;
-  border-radius: 6px;
-  color: var(--ink-2);
-  font-size: 13px;
+  border-radius: var(--radius);
+  color: var(--cap);
+  font: 500 13px/1.2 var(--sans);
   cursor: pointer;
 }
 
 .iconbtn:hover {
-  color: var(--ink);
-  background: var(--surface-2);
+  color: var(--legend);
 }
 
-.page {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 20px var(--gutter) 40px;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: var(--tap);
+  padding: 0 var(--s3);
+  background: none;
+  border: 1px solid var(--strip);
+  border-radius: var(--radius);
+  color: var(--legend);
+  font: 500 14px/1.2 var(--sans);
+  font-stretch: 100%;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.page--wide {
-  max-width: 40rem;
+.btn:hover {
+  border-color: var(--cap);
+  color: var(--cap);
 }
 
-.footnote {
-  margin-top: 32px;
-  padding-top: 12px;
-  border-top: 1px solid var(--rule);
-  color: var(--ink-3);
-  font-size: 12px;
-  font-family: var(--mono);
+.btn--accent {
+  background: var(--cap);
+  border-color: var(--cap);
+  color: var(--console);
+  font-weight: 600;
+}
+
+.btn--accent:hover {
+  color: var(--console);
+}
+
+.btn--ghost {
+  border-color: var(--rule);
+}
+
+.btn--sm {
+  min-height: 34px;
+  padding: 0 var(--s2);
+  font-size: 13px;
 }
 
 .tabs {
@@ -237,7 +956,7 @@ ol {
   bottom: 0;
   z-index: 40;
   display: flex;
-  background: var(--ground);
+  background: var(--console-recess);
   border-top: 1px solid var(--rule);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
@@ -249,45 +968,66 @@ ol {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3px;
-  color: var(--ink-3);
-  font-size: 11px;
-  letter-spacing: 0.03em;
+  gap: 4px;
+  color: var(--strip);
+  font: 600 10.5px/1 var(--sans);
+  font-stretch: 110%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
-.tabs a[aria-current="page"] {
-  color: var(--accent);
-  box-shadow: inset 0 2px 0 var(--accent);
+.tabs a[aria-current='page'] {
+  color: var(--cap);
+  box-shadow: inset 0 2px 0 var(--cap);
 }
 
-.tabs .tabs__glyph {
-  font-size: 15px;
+.tabs__glyph {
+  font-size: 14px;
   line-height: 1;
 }
 
-/* ── typography helpers ─────────────────────────────────────────────────── */
+/* ══ 10 · THE STANDING VIEWS ═════════════════════════════════════════════════
+ *
+ * Everything below re-points the five existing views at the new tokens and the new type scale
+ * so the app is coherent while they are rebuilt one at a time. The class names are theirs, not
+ * mine; the values are the new system's. As each view moves onto .channel / .t-* / ChannelStrip,
+ * its block here is deleted.
+ *
+ * The one thing that is NOT provisional is `.notdegree` — kill-test rule 1, isDegree === false
+ * visible without clicking, at title weight. 57 of those 137 records have "Master", "Máster" or
+ * "Mastère" in the name, so the title itself misleads and a quiet line underneath it loses.
+ */
+
+.app {
+  min-height: 100vh;
+  padding-bottom: calc(58px + env(safe-area-inset-bottom, 0px));
+}
+
+.page {
+  max-width: var(--measure);
+  padding: var(--s5) var(--pad-r) var(--s8) var(--pad-l);
+}
+
+.page--wide {
+  max-width: 42rem;
+}
 
 .kicker {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.09em;
+  font: 600 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-3);
+  color: var(--strip);
 }
 
 .prose {
-  font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.55;
+  font: 400 16.5px/1.6 var(--serif);
 }
 
-.muted {
-  color: var(--ink-2);
-}
-
+.muted,
 .dim {
-  color: var(--ink-3);
+  color: var(--strip);
 }
 
 .num {
@@ -297,177 +1037,157 @@ ol {
 
 .hairline {
   height: 1px;
-  margin: 28px 0;
+  margin: var(--s6) 0;
   background: var(--rule);
   border: 0;
 }
 
-/* ── Start ──────────────────────────────────────────────────────────────── */
-
-.thesis {
-  font-family: var(--serif);
-  font-size: 23px;
-  line-height: 1.32;
-  letter-spacing: -0.01em;
-  margin: 4px 0 14px;
+.footnote {
+  margin-top: var(--s6);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--rule);
+  color: var(--strip);
+  font: 400 12px/1.45 var(--mono);
 }
 
+.thesis {
+  font: 450 25px/1.28 var(--serif);
+  letter-spacing: -0.015em;
+  margin: var(--s1) 0 var(--s4);
+}
+
+/* The landing statement never acquires a hero: no rule, no colour, no underline. */
 .thesis em {
   font-style: normal;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 0;
 }
 
 .standfirst {
-  font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.55;
-  color: var(--ink-2);
+  font: 400 16.5px/1.6 var(--serif);
+  color: var(--legend);
 }
 
+/* The seven-step funnel, until the fader throw replaces it. */
 .funnel {
-  margin: 12px 0 4px;
+  margin: var(--s3) 0 var(--s1);
   border-top: 1px solid var(--rule);
 }
 
 .funnel__row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--s3);
   width: 100%;
   min-height: var(--tap);
-  padding: 8px 2px;
+  padding: var(--s2) 0;
   background: none;
   border: 0;
   border-bottom: 1px solid var(--rule);
   text-align: left;
   cursor: pointer;
-  /* A funnel row is a link, but it must read as a row of a document, not as a link farm. */
   color: inherit;
   text-decoration: none;
 }
 
-.funnel__row:hover {
-  background: var(--surface);
-}
-
 .funnel__n {
-  flex: 0 0 3.6em;
-  font-family: var(--mono);
+  flex: 0 0 3.4em;
+  font: 400 20px/1 var(--mono);
   font-variant-numeric: tabular-nums;
-  font-size: 17px;
   text-align: right;
-  color: var(--ink);
+  color: var(--legend);
 }
 
 .funnel__label {
   flex: 1;
-  font-size: 14px;
-  color: var(--ink-2);
+  font: 400 15px/1.35 var(--serif);
+  color: var(--legend);
 }
 
 .funnel__row--last .funnel__n,
 .funnel__row--last .funnel__label {
-  color: var(--ink);
-  font-weight: 600;
+  color: var(--legend);
+  font-weight: 500;
 }
 
 .funnel__drop {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-3);
+  font: 400 12px/1.4 var(--mono);
+  color: var(--strip);
 }
 
 .funnel__go {
-  color: var(--ink-3);
+  color: var(--strip);
 }
 
 .split {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin: 16px 0 8px;
+  gap: var(--s3);
+  margin: var(--s4) 0 var(--s2);
 }
 
 .split__cell {
-  text-decoration: none;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: var(--s2);
   align-items: flex-start;
-  padding: 12px 10px;
-  min-height: 96px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
+  padding: var(--s3) 0 0;
+  min-height: 84px;
+  border: 0;
+  border-top: 2px solid var(--strip);
+  background: none;
   text-align: left;
+  text-decoration: none;
   cursor: pointer;
   color: inherit;
 }
 
-.split__cell:hover {
-  border-color: var(--rule-strong);
+.split__cell--worth {
+  border-top-color: var(--meter-nominal);
+}
+.split__cell--cond {
+  border-top-color: var(--meter-over);
+}
+/* Never checked is the empty slot: no fill, no hue, a broken edge. */
+.split__cell--unchecked {
+  border-top-style: dashed;
+  border-top-color: var(--strip);
 }
 
 .split__n {
   display: block;
-  font-family: var(--mono);
-  font-size: 26px;
-  line-height: 1;
+  font: 400 26px/1 var(--mono);
   font-variant-numeric: tabular-nums;
-}
-
-.split__cell--worth .split__n {
-  color: var(--green);
-}
-.split__cell--cond .split__n {
-  color: var(--amber);
-}
-.split__cell--unchecked .split__n {
-  color: var(--ink-2);
-}
-.split__cell--unchecked {
-  border-style: dashed;
+  color: var(--legend);
 }
 
 .split__label {
   display: block;
-  font-size: 11px;
-  letter-spacing: 0.06em;
+  font: 600 11px/1.35 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-3);
-  line-height: 1.35;
+  color: var(--strip);
 }
 
 .bigbtns {
   display: grid;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 0;
+  margin-top: var(--s5);
 }
 
 .bigbtn {
-  text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--s3);
   min-height: 60px;
-  padding: 12px 16px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 10px;
-  color: var(--ink);
+  padding: var(--s3) 0;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--rule);
+  color: var(--legend);
   text-decoration: none;
   cursor: pointer;
   text-align: left;
-}
-
-.bigbtn:hover {
-  border-color: var(--rule-strong);
-  background: var(--surface-2);
-}
-
-.bigbtn--primary {
-  background: var(--cool);
-  border-color: var(--accent);
 }
 
 .bigbtn__main {
@@ -477,352 +1197,226 @@ ol {
 
 .bigbtn__title {
   display: block;
-  font-size: 16px;
-  font-weight: 600;
+  font: 400 16.5px/1.4 var(--serif);
 }
 
 .bigbtn__sub {
   display: block;
-  font-size: 12px;
-  color: var(--ink-3);
-  margin-top: 2px;
+  margin-top: var(--s1);
+  font: 400 12px/1.45 var(--sans);
+  color: var(--strip);
 }
 
 .bigbtn__arrow {
-  color: var(--ink-3);
-  font-size: 18px;
+  color: var(--cap);
 }
 
-/* ── chips ──────────────────────────────────────────────────────────────── */
+/* ── what is left of the chips ──────────────────────────────────────────────
+ * The strip carries the state, so the pills are gone. What survives is a mono metadata line
+ * (raw strings, separated by ·) and the verdict word, which is a panel legend and always sits
+ * beside its mark. See components/chips.tsx.
+ */
 
-.chiprow {
+.chiprow,
+.meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
+  align-items: baseline;
+  gap: 0 var(--s2);
+  font: 400 13px/1.45 var(--mono);
+  letter-spacing: 0.01em;
+  color: var(--strip);
 }
 
-/* Verdict: rounded pill. The traffic light lives here and nowhere else. */
-.vchip {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 9px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  border: 1px solid transparent;
+.meta__seg + .meta__seg::before {
+  content: '· ';
+  color: var(--rule-strong);
+}
+
+.meta__t {
   white-space: nowrap;
 }
 
-.vchip__glyph {
-  font-size: 11px;
-  line-height: 1;
+/* The strike belongs to the value, never to the separator that precedes it. */
+.meta__seg--blocked .meta__t {
+  text-decoration: line-through;
+  text-decoration-color: var(--strip);
 }
 
-.vchip--worth {
-  background: var(--green);
-  color: var(--ground);
-  border-color: var(--green);
+.meta__seg--wrong {
+  color: var(--meter-clip);
 }
 
-.vchip--cond {
-  background: var(--amber-bg);
-  color: var(--amber);
-  border-color: var(--amber);
-  border-left-width: 4px;
-  border-radius: 3px 999px 999px 3px;
+.meta__struck {
+  text-decoration: line-through 2px var(--meter-clip);
+  text-decoration-skip-ink: none;
 }
 
-.vchip--avoid {
-  background: transparent;
-  color: var(--red);
-  border-color: var(--red);
-}
-
-/* Not verified. Dashed, unfilled, greyscale — structurally not a fourth colour. */
-.vchip--none {
-  background: transparent;
-  color: var(--ink-2);
-  border: 1px dashed var(--rule-strong);
-  font-weight: 600;
-}
-
-/* Gate: square corners, mono, geometric glyph. A different language entirely. */
-.gchip {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 7px;
-  border-radius: 2px;
-  border: 1px solid var(--rule-strong);
-  background: var(--surface-2);
-  color: var(--ink-2);
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.04em;
+.vword {
+  font: 700 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-/* The one borrowed use of red in the gate system: a confirmed live audition. */
-.gchip--audition {
-  color: var(--red);
-  border-color: var(--red);
-  border-left-width: 4px;
-  background: transparent;
+.vword--worth {
+  color: var(--meter-nominal);
+}
+.vword--cond {
+  color: var(--meter-over);
+}
+.vword--avoid {
+  color: var(--meter-clip);
+}
+.vword--none {
+  color: var(--strip);
 }
 
-.gchip--suspected {
-  border-style: dotted;
-  color: var(--ink-2);
-}
-
-.gchip--unknown {
-  border-style: dashed;
-}
-
-/* Cost: a cool ramp, never the traffic light. Money is a scale, not a verdict. */
-.cchip {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 7px;
-  border-radius: 2px;
-  border: 1px solid var(--rule);
-  font-family: var(--mono);
-  font-size: 11px;
-  font-variant-numeric: tabular-nums;
-  color: var(--ink-2);
-  white-space: nowrap;
-}
-
-.cchip--cheap {
-  background: var(--cool);
-  border-color: var(--accent);
-  color: var(--ink);
-}
-
-.cchip--mid {
-  background: var(--cool-2);
-}
-
-.cchip--dear {
-  background: transparent;
-  border-color: var(--rule-strong);
-}
-
-.cchip--unknown {
-  border-style: dashed;
-  color: var(--ink-3);
-}
-
-.cchip__struck {
-  text-decoration: line-through;
-  opacity: 0.65;
-}
-
-.cchip--disputed {
-  border-color: var(--red);
-  color: var(--red);
-  background: transparent;
-}
-
-.lchip {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 7px;
-  border-radius: 2px;
-  border: 1px solid var(--rule);
-  font-size: 11px;
-  color: var(--ink-2);
-  white-space: nowrap;
-}
-
-.lchip--blocked {
-  border-style: dashed;
-  color: var(--ink-3);
-  text-decoration-color: var(--ink-3);
-}
-
-.lchip--blocked .lchip__name {
-  text-decoration: line-through;
-}
-
-/* Level. When it is not a degree this is a banner, not a chip, and it carries a
-   hatched edge so it reads as disqualified in greyscale while scrolling. */
 .levelchip {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 7px;
-  border-radius: 2px;
-  border: 1px solid var(--rule);
-  font-size: 11px;
-  color: var(--ink-3);
-  white-space: nowrap;
+  font: 400 12px/1.45 var(--sans);
+  color: var(--strip);
 }
 
+/* Kill-test rule 1. Not a chip: a banner at title weight, hatched at the edge so it survives
+   greyscale and scroll speed. This is the one piece of state the strip cannot carry, because
+   it is a fact about the award rather than about the reading. */
 .notdegree {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--s2);
   width: 100%;
-  margin: 0 0 6px;
-  padding: 7px 10px 7px 0;
-  border: 1px solid var(--red);
-  border-radius: 3px;
-  background: var(--red-bg);
-  color: var(--red);
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 1.25;
+  margin: 0 0 var(--s2);
+  padding: var(--s1) 0;
+  border: 0;
+  border-top: 2px solid var(--meter-clip);
+  border-bottom: 1px solid var(--meter-clip);
+  background: none;
+  color: var(--meter-clip);
+  font: 500 17px/1.25 var(--serif);
+  letter-spacing: -0.005em;
 }
 
 .notdegree::before {
-  content: "";
-  flex: 0 0 12px;
+  content: '';
+  flex: 0 0 10px;
   align-self: stretch;
-  background: repeating-linear-gradient(
-    135deg,
-    currentColor 0 2px,
-    transparent 2px 5px
-  );
+  background: repeating-linear-gradient(135deg, currentColor 0 1.5px, transparent 1.5px 5px);
 }
 
 .notdegree__what {
-  font-weight: 500;
-  font-size: 12px;
-  opacity: 0.85;
+  font: 400 12px/1.45 var(--sans);
+  color: var(--strip);
 }
 
-/* ── Field ──────────────────────────────────────────────────────────────── */
+/* ── Field ── */
 
 .field {
-  margin: 0 0 16px;
+  margin: 0 0 var(--s4);
 }
 
 .field__label {
   display: block;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.09em;
+  margin-bottom: var(--s1);
+  font: 600 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-3);
-  margin-bottom: 4px;
+  color: var(--strip);
 }
 
 .field__value {
-  font-size: 15px;
-  line-height: 1.5;
+  font: 400 15px/1.55 var(--serif);
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 
 .field--wide .field__value {
-  font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 16.5px;
+  line-height: 1.6;
 }
 
-/* kind = unverified: they were asked, nobody published it. Amber, dotted, italic. */
+/* They were asked and nobody published it. Amber, dotted — never italic, because italic in this
+   app means "their words". */
 .field--unverified .field__value {
-  font-style: italic;
-  color: var(--amber);
-  text-decoration: underline dotted var(--amber);
+  color: var(--meter-over);
+  text-decoration: underline dotted var(--meter-over);
   text-underline-offset: 4px;
 }
 
 .field--unverified .field__label {
-  color: var(--amber);
+  color: var(--meter-over);
 }
 
-/* kind = empty: never collected. Weaker still — no colour, struck label, no value voice. */
 .field--empty {
-  margin-bottom: 10px;
+  margin-bottom: var(--s3);
 }
 
 .field--empty .field__label {
-  color: var(--ink-3);
-  opacity: 0.7;
-  margin-bottom: 0;
   display: inline;
+  margin-bottom: 0;
+  color: var(--strip);
 }
 
 .field--empty .field__value {
   display: inline;
-  font-size: 12px;
-  color: var(--ink-3);
-  opacity: 0.7;
-  font-family: var(--mono);
+  font: 400 12px/1.45 var(--mono);
+  color: var(--strip);
 }
 
 .field--empty .field__value::before {
-  content: " · ";
+  content: ' · ';
 }
 
 .inline-unverified {
-  display: inline-block;
-  padding: 0 4px;
-  border-radius: 2px;
-  background: var(--amber-bg);
-  color: var(--amber);
-  font-family: var(--mono);
-  font-size: 0.78em;
+  font: 500 0.78em/1 var(--mono);
   letter-spacing: 0.06em;
-  vertical-align: baseline;
+  text-transform: uppercase;
+  color: var(--meter-over);
+  white-space: nowrap;
 }
 
 .fieldgroup {
-  margin: 0 0 28px;
+  margin: 0 0 var(--s6);
 }
 
 .fieldgroup__title {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  padding-bottom: 6px;
-  margin-bottom: 14px;
+  margin-bottom: var(--s4);
+  padding-bottom: var(--s2);
   border-bottom: 1px solid var(--rule);
+  font: 600 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--strip);
 }
 
-/* ── Empty state ────────────────────────────────────────────────────────── */
-
 .empty {
-  padding: 28px 0;
+  padding: var(--s6) 0;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
-  color: var(--ink-2);
-  font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.55;
+  color: var(--strip);
+  font: 400 16.5px/1.6 var(--serif);
 }
 
 .placeholder {
-  padding: 20px var(--gutter);
-  color: var(--amber);
-  font-family: var(--mono);
-  font-size: 13px;
+  padding: var(--s5) var(--pad-l);
+  color: var(--meter-over);
+  font: 400 13px/1.45 var(--mono);
 }
 
-/* ── Programmes ─────────────────────────────────────────────────────────── */
+/* ── list ── */
 
 .listbar {
   position: sticky;
-  top: 48px;
+  top: 44px;
   z-index: 20;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--s2);
   min-height: var(--tap);
-  padding: 4px var(--gutter);
-  background: var(--ground);
+  padding: 0 var(--pad-r) 0 var(--pad-l);
+  background: var(--console-recess);
   border-bottom: 1px solid var(--rule);
 }
 
@@ -832,60 +1426,21 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--ink-2);
+  font: 400 13px/1.45 var(--mono);
   font-variant-numeric: tabular-nums;
+  color: var(--strip);
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  min-height: var(--tap);
-  padding: 0 14px;
-  background: var(--surface-2);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  color: var(--ink);
-  font-size: 14px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn:hover {
-  border-color: var(--rule-strong);
-}
-
-.btn--accent {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 600;
-}
-
-.btn--ghost {
-  background: none;
-}
-
-.btn--sm {
-  min-height: 34px;
-  padding: 0 8px;
-  font-size: 13px;
-}
-
-/* The sort control must never crowd the count — the count is the number he steers by. */
 .listbar select.btn {
   max-width: 7.5rem;
-  min-height: var(--tap);
 }
 
+/* The only overflow-x container in the app, and it is clipped to the viewport. */
 .activefilters {
   display: flex;
-  gap: 6px;
+  gap: var(--s2);
   overflow-x: auto;
-  padding: 6px var(--gutter);
+  padding: var(--s2) var(--pad-r) var(--s2) var(--pad-l);
   border-bottom: 1px solid var(--rule);
   scrollbar-width: none;
 }
@@ -900,85 +1455,82 @@ ol {
   gap: 6px;
   flex: 0 0 auto;
   min-height: 30px;
-  padding: 0 8px;
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  background: var(--cool);
-  color: var(--ink);
-  font-size: 12px;
+  padding: 0 var(--s2);
+  border: 1px solid var(--cap);
+  border-radius: var(--radius);
+  background: none;
+  color: var(--cap);
+  font: 500 12px/1.2 var(--sans);
   cursor: pointer;
   white-space: nowrap;
 }
 
 .searchrow {
-  padding: 8px var(--gutter) 0;
+  padding: var(--s2) var(--pad-r) 0 var(--pad-l);
 }
 
 .search {
   width: 100%;
   min-height: var(--tap);
-  padding: 8px 12px;
-  background: var(--surface);
+  padding: var(--s2) var(--s3);
+  background: var(--console-recess);
   border: 1px solid var(--rule);
-  border-radius: 8px;
-  color: var(--ink);
-  font: 15px var(--sans);
+  border-radius: var(--radius);
+  color: var(--legend);
+  font: 400 15px/1.4 var(--serif);
 }
 
 .cards {
   max-width: var(--measure);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
+  padding: 0 var(--pad-r) 0 var(--pad-l);
 }
 
 .card {
-  text-decoration: none;
   display: block;
   width: 100%;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--rule);
+  padding: var(--s4) 0;
   background: none;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
   color: inherit;
   text-align: left;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.card:hover {
-  background: var(--surface);
+/* The hairline is here only until the list carries strips. The moment a card contains one, the
+   rule goes: the strip is the separator, and two separators are one too many. */
+.card:has(.strip) {
+  border-bottom: 0;
+  padding: 0;
 }
 
+/* Muted, not removed. */
 .card--avoid {
-  opacity: 0.62;
+  opacity: 0.55;
 }
 
 .card__title {
-  font-family: var(--serif);
-  font-size: 17px;
-  line-height: 1.3;
-  margin: 0 0 4px;
+  margin: 0 0 var(--s1);
+  font: 500 17px/1.3 var(--serif);
+  letter-spacing: -0.005em;
 }
 
 .card__inst {
-  font-size: 13px;
-  color: var(--ink-2);
-  line-height: 1.4;
-  margin-bottom: 8px;
+  margin-bottom: var(--s2);
+  font: 400 14px/1.4 var(--sans);
+  font-stretch: 100%;
+  color: var(--legend);
 }
 
 .card__where {
-  color: var(--ink-3);
+  color: var(--strip);
 }
 
 .card__sentence {
-  font-family: var(--serif);
-  font-size: 14px;
-  font-style: italic;
-  line-height: 1.5;
-  color: var(--ink-2);
-  margin: 8px 0 0;
+  margin: var(--s2) 0 0;
+  font: italic 400 14.5px/1.5 var(--serif);
+  color: var(--legend);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
@@ -988,38 +1540,38 @@ ol {
 
 .card__sentence--guess {
   font-style: normal;
-  color: var(--ink-3);
-  font-size: 13px;
+  color: var(--strip);
 }
 
 .card__dupes {
-  margin-top: 8px;
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-3);
+  margin-top: var(--s2);
+  font: 400 12px/1.45 var(--mono);
+  color: var(--strip);
 }
 
 .more {
-  text-decoration: none;
   display: block;
   width: 100%;
   min-height: 52px;
-  margin: 16px 0 0;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  color: var(--ink);
-  font-size: 14px;
+  margin: var(--s4) 0 0;
+  background: none;
+  border: 1px solid var(--strip);
+  border-radius: var(--radius);
+  color: var(--legend);
+  font: 500 14px/1.2 var(--sans);
+  font-stretch: 100%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
-/* ── Filters sheet ──────────────────────────────────────────────────────── */
+/* ── the sheet ── */
 
 .sheet__scrim {
   position: fixed;
   inset: 0;
   z-index: 50;
-  background: rgba(0, 0, 0, 0.55);
+  background: color-mix(in srgb, var(--console) 72%, transparent);
   border: 0;
   padding: 0;
 }
@@ -1033,38 +1585,41 @@ ol {
   display: flex;
   flex-direction: column;
   max-height: 88vh;
-  background: var(--surface);
-  border-top: 1px solid var(--rule-strong);
-  border-radius: 14px 14px 0 0;
-  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+  background: var(--console-recess);
+  border: 0;
+  border-radius: 0;
+  /* The only shadow in the application, and it is a hairline rather than a blur. */
+  box-shadow: 0 -1px 0 var(--strip);
 }
 
 .sheet__head {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px 12px 6px var(--gutter);
+  gap: var(--s2);
+  padding: 0 var(--s3) 0 var(--pad-l);
   border-bottom: 1px solid var(--rule);
 }
 
 .sheet__title {
   flex: 1;
-  font-size: 15px;
-  font-weight: 600;
+  font: 600 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--strip);
 }
 
 .sheet__body {
   flex: 1;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 4px var(--gutter) 16px;
-  -webkit-overflow-scrolling: touch;
+  padding: var(--s1) var(--pad-r) var(--s4) var(--pad-l);
 }
 
 .sheet__foot {
   display: flex;
-  gap: 10px;
-  padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom, 0px));
+  gap: var(--s3);
+  padding: var(--s3) var(--pad-r) calc(var(--s3) + env(safe-area-inset-bottom, 0px)) var(--pad-l);
   border-top: 1px solid var(--rule);
 }
 
@@ -1074,49 +1629,48 @@ ol {
 
 .fsection {
   border-bottom: 1px solid var(--rule);
-  padding: 4px 0;
+  padding: var(--s1) 0;
 }
 
 .fsection__head {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--s2);
   width: 100%;
   min-height: var(--tap);
   padding: 0;
   background: none;
   border: 0;
-  color: var(--ink);
+  color: var(--legend);
   cursor: pointer;
   text-align: left;
 }
 
 .fsection__name {
   flex: 1;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.09em;
+  font: 600 11px/1 var(--sans);
+  font-stretch: 115%;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-2);
+  color: var(--strip);
 }
 
 .fsection__n {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--accent);
+  font: 400 12px/1 var(--mono);
+  color: var(--cap);
 }
 
 .fsection__body {
-  padding: 2px 0 14px;
+  padding: var(--s1) 0 var(--s3);
 }
 
 .switch {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--s3);
   width: 100%;
   min-height: var(--tap);
-  padding: 6px 0;
+  padding: var(--s1) 0;
   background: none;
   border: 0;
   color: inherit;
@@ -1125,22 +1679,22 @@ ol {
 }
 
 .switch__box {
-  flex: 0 0 22px;
-  height: 22px;
+  flex: 0 0 20px;
+  height: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--rule-strong);
-  border-radius: 4px;
-  font-size: 13px;
+  border: 1px solid var(--strip);
+  border-radius: var(--radius);
+  font-size: 12px;
   line-height: 1;
   color: transparent;
 }
 
-.switch[aria-pressed="true"] .switch__box {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
+.switch[aria-pressed='true'] .switch__box {
+  background: var(--cap);
+  border-color: var(--cap);
+  color: var(--console);
 }
 
 .switch__main {
@@ -1150,22 +1704,20 @@ ol {
 
 .switch__label {
   display: block;
-  font-size: 14px;
-  line-height: 1.35;
+  font: 400 15px/1.35 var(--serif);
 }
 
 .switch__hint {
   display: block;
-  font-size: 12px;
-  color: var(--ink-3);
-  line-height: 1.4;
   margin-top: 2px;
+  font: 400 12px/1.45 var(--sans);
+  color: var(--strip);
 }
 
 .opts {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: var(--s2);
 }
 
 .opt {
@@ -1173,27 +1725,25 @@ ol {
   align-items: center;
   gap: 6px;
   min-height: 36px;
-  padding: 0 10px;
-  background: var(--surface-2);
+  padding: 0 var(--s2);
+  background: none;
   border: 1px solid var(--rule);
-  border-radius: 999px;
-  color: var(--ink-2);
-  font-size: 13px;
+  border-radius: var(--radius);
+  color: var(--strip);
+  font: 500 13px/1.2 var(--sans);
   cursor: pointer;
 }
 
-.opt[aria-pressed="true"] {
-  background: var(--cool);
-  border-color: var(--accent);
-  color: var(--ink);
+.opt[aria-pressed='true'] {
+  border-color: var(--cap);
+  color: var(--cap);
   font-weight: 600;
 }
 
 .opt__n {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-3);
+  font: 400 11px/1 var(--mono);
   font-variant-numeric: tabular-nums;
+  color: var(--strip);
 }
 
 .opt--zero {
@@ -1203,14 +1753,18 @@ ol {
 .optfilter {
   width: 100%;
   min-height: 38px;
-  margin-bottom: 8px;
-  padding: 6px 10px;
-  background: var(--surface-2);
+  margin-bottom: var(--s2);
+  padding: 6px var(--s2);
+  background: var(--console);
   border: 1px solid var(--rule);
-  border-radius: 6px;
-  color: var(--ink);
-  font: 14px var(--sans);
+  border-radius: var(--radius);
+  color: var(--legend);
+  font: 400 14px/1.4 var(--sans);
 }
+
+/* ══ 11 · WIDE ═══════════════════════════════════════════════════════════════
+ * The same single column, still left-aligned. A document sits at the left of the desk.
+ */
 
 @media (min-width: 700px) {
   .app {
@@ -1226,11 +1780,11 @@ ol {
   }
 
   .topbar {
-    top: 57px;
+    top: 56px;
   }
 
   .listbar {
-    top: 105px;
+    top: 100px;
   }
 
   .sheet {
@@ -1240,13 +1794,6 @@ ol {
     bottom: 0;
     width: 24rem;
     max-height: none;
-    border-radius: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition-duration: 0ms !important;
-    animation: none !important;
+    box-shadow: -1px 0 0 var(--strip);
   }
 }

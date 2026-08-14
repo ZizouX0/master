@@ -1,222 +1,183 @@
 /**
- * The five chips. Every view — mine and the detail agent's — renders record state through
- * these and nothing else, so a rule can only be got wrong in one place.
+ * What is left of the chips.
  *
- * Two invariants the CSS and this file enforce together:
+ * The old build spent two full lines of every 390px card on five bordered pills — verdict, gate,
+ * cost, language, level. The ChannelStrip now carries three of those five as marks in the left
+ * gutter, at scroll speed and without a word, so the pills are gone. THAT TRADE IS THE WHOLE
+ * DESIGN: the console carries the state, the document carries the words.
  *
- *  1. ONE traffic light, owned by `verdict`. Green means "a human read the official page and
- *     judged it worth it" and never anything else. The gate, the cost band and the language
- *     each get their own visual language so none of them can borrow that meaning.
- *  2. NOTHING depends on hue. Each state also differs in fill, border style and glyph, so the
- *     card is still readable in greyscale or with any colour vision.
+ * Three things survive, because the strip cannot say them and the card still needs them:
+ *
+ *   1. `LevelChip` — kill-test rule 1. `isDegree === false` must be visible WITHOUT CLICKING and
+ *      at title weight. 57 of those 137 records have "Master", "Máster" or "Mastère" in the
+ *      programme name, so the title itself actively misleads; a quiet line underneath it loses.
+ *      This is a fact about the award, not about the reading, so it is not the strip's job.
+ *   2. `VerdictWord` — the mark always sits next to its word. Colour never travels alone, and a
+ *      screen reader gets a word rather than an SVG. It is a panel legend, not a pill: no box,
+ *      no fill, no border, Archivo caps at 0.14em.
+ *   3. `Meta` — the raw strings. Cost, language and the gate as a mono line separated by `·`,
+ *      because monospace in this app means one thing: THIS STRING IS RAW AND I HAVE NOT TOUCHED
+ *      IT. `€1.5–5k/yr · ENGLISH · PORTFOLIO ONLY`.
+ *
+ * The old `VerdictChip` / `GateChip` / `CostChip` / `LangChip` names are kept below as thin
+ * adapters onto the three above, so the five standing views keep compiling and keep looking like
+ * one app while they are rebuilt. They render no pill and no border. Delete each call site as
+ * its view moves onto `Meta` and the strip.
  */
 
 import type { JSX } from 'preact';
+import type { AuditionSource } from '../types';
+import { hasConfirmedAudition, hasSuspectedAudition } from '../data/filters';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Verdict — the traffic light
+// 1 · The verdict word — the legend beside the meter
 // ─────────────────────────────────────────────────────────────────────────────
+
+const VERDICT_WORD: Record<string, { word: string; variant: string; title: string }> = {
+  'WORTH IT': {
+    word: 'Worth it',
+    variant: 'worth',
+    title: 'Read on the official page and judged worth it.',
+  },
+  CONDITIONAL: {
+    word: 'Conditional',
+    variant: 'cond',
+    title: 'Read on the official page. Worth it only if something specific resolves.',
+  },
+  AVOID: {
+    word: 'Avoid',
+    variant: 'avoid',
+    title: 'Read on the official page and ruled out.',
+  },
+};
 
 /**
- * `verdict` is `''` on 249 of 398 records. That is a state, not a missing value, and it gets
- * the one treatment that can never be mistaken for a verdict: no fill, a dashed border, no
- * colour, and the words NOT VERIFIED first. BUILD-SPEC rule 1.
+ * `verdict` is `''` on 249 of 398 records. That is a state, not a missing value, and it gets the
+ * one treatment that can never be mistaken for a verdict: no colour at all. The meter block in
+ * the gutter is likewise absent, and the rail beside it is broken into dashes.
  */
-export function VerdictChip(p: { verdict: string }): JSX.Element {
-  switch (p.verdict) {
-    case 'WORTH IT':
-      return (
-        <span class="vchip vchip--worth" title="Read on the official page and judged worth it.">
-          <span class="vchip__glyph" aria-hidden="true">
-            ✔
-          </span>
-          Worth it
-        </span>
-      );
-    case 'CONDITIONAL':
-      return (
-        <span class="vchip vchip--cond" title="Read on the official page. Worth it only if something specific resolves.">
-          <span class="vchip__glyph" aria-hidden="true">
-            !
-          </span>
-          Conditional
-        </span>
-      );
-    case 'AVOID':
-      return (
-        <span class="vchip vchip--avoid" title="Read on the official page and ruled out.">
-          <span class="vchip__glyph" aria-hidden="true">
-            ✕
-          </span>
-          Avoid
-        </span>
-      );
-    default:
-      return (
-        <span
-          class="vchip vchip--none"
-          title="Nobody has opened this institution's official page. Everything here came from a listing."
-        >
-          <span class="vchip__glyph" aria-hidden="true">
-            ?
-          </span>
-          Not verified
-        </span>
-      );
-  }
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Gate — a separate language: square corners, mono type, geometric glyphs
-// ─────────────────────────────────────────────────────────────────────────────
-
-const AUDITION_IN_GATE = /AUDITION/i;
-
-/** Short labels, because a 390px card cannot carry "Portfolio + exam/interview" in full. */
-function gateLabel(gate: string): { text: string; glyph: string; variant: string } {
-  if (/portfolio \+ exam/i.test(gate)) return { text: 'Portfolio + exam', glyph: '⚙', variant: '' };
-  if (/portfolio only/i.test(gate)) return { text: 'Portfolio only', glyph: '◆', variant: '' };
-  if (/exam\/interview only/i.test(gate)) return { text: 'Exam / interview', glyph: '⚙', variant: '' };
-  if (/not published/i.test(gate)) return { text: 'Gate not published', glyph: '?', variant: 'gchip--unknown' };
-  if (/none found/i.test(gate)) return { text: 'No gate in the text', glyph: '◇', variant: 'gchip--unknown' };
-  return { text: gate || 'Gate unknown', glyph: '◇', variant: 'gchip--unknown' };
-}
-
-/**
- * The correctness-critical chip.
- *
- * Records 253, 254, 258, 259 and 260 carry `gate: "Exam/interview only"` or `"Portfolio only"`
- * while `needsAudition: true`, because a verified correction found a live piano test that the
- * original gate string missed. Reading `gate` alone renders those five as an ordinary exam and
- * puts a live-performance programme into a "no audition" list. So `needsAudition === true`
- * always wins.
- *
- * The second half of the rule matters just as much: `auditionSource` says where the finding
- * came from. `confirmed` means verified prose; `suspected` means a regex fired over the raw,
- * never-re-checked `audition` field. A suspicion is shown — he can disprove it in two
- * sentences — but it is drawn weaker (dotted, uncoloured, and with a question mark) so it
- * never wears the authority of a verified finding.
- */
-export function GateChip(p: {
-  gate: string;
-  needsAudition?: boolean;
-  auditionSource?: string;
-}): JSX.Element {
-  const confirmed = p.auditionSource === 'confirmed' || AUDITION_IN_GATE.test(p.gate ?? '');
-  const audition = p.needsAudition === true || confirmed;
-
-  if (audition && confirmed) {
-    return (
-      <span class="gchip gchip--audition" title="A live performance audition, confirmed against the official page.">
-        <span aria-hidden="true">▲</span>
-        Live audition
-      </span>
-    );
-  }
-  if (audition) {
+export function VerdictWord(p: { verdict: string; size?: 'sm' | 'lg' }): JSX.Element {
+  const v = VERDICT_WORD[p.verdict];
+  const big = p.size === 'lg' ? ' t-verdict' : '';
+  if (!v) {
     return (
       <span
-        class="gchip gchip--suspected"
-        title="An audition phrase was found in the unchecked text. Nobody has confirmed it — read the record before believing it."
+        class={'vword vword--none' + big}
+        title="Nobody has opened this institution’s official page. Everything here came from a listing."
       >
-        <span aria-hidden="true">▲</span>
-        Audition? unconfirmed
+        Not checked
       </span>
     );
   }
-
-  const { text, glyph, variant } = gateLabel(p.gate ?? '');
   return (
-    <span class={'gchip ' + variant} title={p.gate}>
-      <span aria-hidden="true">{glyph}</span>
-      {text}
+    <span class={'vword vword--' + v.variant + big} title={v.title}>
+      {v.word}
     </span>
   );
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Cost — a cool ramp, deliberately not the traffic light
+// 2 · The metadata line — raw strings, mono, separated by ·
 // ─────────────────────────────────────────────────────────────────────────────
 
-const CHEAP = new Set(['Free', 'Under EUR 1.5k/yr', 'EUR 1.5k-5k/yr']);
-
-/** "EUR 1.5k-5k/yr" → "€1.5k–5k/yr". Mono, so it reads as a raw figure. */
-function bandLabel(band: string): string {
+/** "EUR 1.5k-5k/yr" → "€1.5k–5k/yr". Mono, so it reads as a figure someone recorded. */
+export function bandLabel(band: string): string {
   if (!band) return 'no band recorded';
   if (band === 'Not published') return 'no price published';
   return band.replace(/EUR\s*/g, '€').replace(/-/g, '–');
 }
 
 /**
- * A green "Free" beside a green "WORTH IT" would imply a correlation the data flatly
- * contradicts — of the nine WORTH IT records exactly one is affordable. So money gets a cool
- * teal ramp and never a verdict colour.
- *
- * `disputed` is BUILD-SPEC rule 5. Where verified prose contradicts the recorded band —
- * Edinburgh still says "Under EUR 1.5k/yr" against a real ≈£29,900 — the band is struck
- * through and marked, and the record is excluded from every cheap selection upstream in
- * `isCheap()`. Showing the wrong number quietly is worse than showing no number.
+ * Short gate labels. The 390px column cannot carry "Portfolio + exam/interview" beside a cost
+ * and a language, and the ladder in the gutter is already carrying the height of the climb —
+ * this line only has to name it.
  */
-export function CostChip(p: { band: string; disputed?: boolean }): JSX.Element {
-  const band = p.band ?? '';
-  const label = bandLabel(band);
-
-  if (p.disputed) {
-    return (
-      <span
-        class="cchip cchip--disputed"
-        title="Verified prose contradicts this band. The recorded figure is wrong — read the correction on the record."
-      >
-        <span class="cchip__struck">{label}</span>
-        <span aria-hidden="true">·</span>
-        WRONG — see correction
-      </span>
-    );
+export function gateLabel(p: {
+  gate: string;
+  needsAudition?: boolean;
+  auditionSource?: AuditionSource;
+}): { text: string; weak: boolean } {
+  const rec = { gate: p.gate ?? '', auditionSource: (p.auditionSource ?? '') as AuditionSource };
+  // Records 253, 254, 258, 259 and 260 carry an ordinary gate string while a verified correction
+  // found a live piano test. `hasConfirmedAudition` is the rule from data/filters.ts, imported
+  // rather than restated, because a looser copy of it is exactly what puts a live-performance
+  // programme into a "no audition" list.
+  if (hasConfirmedAudition(rec)) return { text: 'Live audition', weak: false };
+  if (hasSuspectedAudition(rec) || p.needsAudition === true) {
+    return { text: 'Audition? unconfirmed', weak: true };
   }
+  const gate = rec.gate;
+  if (/portfolio \+ exam/i.test(gate)) return { text: 'Portfolio + test', weak: false };
+  if (/portfolio only/i.test(gate)) return { text: 'Portfolio only', weak: false };
+  if (/exam\/interview only/i.test(gate)) return { text: 'Test / interview', weak: false };
+  if (/not published/i.test(gate)) return { text: 'Gate not published', weak: true };
+  if (/none found/i.test(gate)) return { text: 'No gate in the text', weak: true };
+  return { text: gate || 'Gate unknown', weak: true };
+}
 
-  const variant = !band || band === 'Not published'
-    ? 'cchip--unknown'
-    : CHEAP.has(band)
-      ? 'cchip--cheap'
-      : band === 'EUR 5k-15k/yr'
-        ? 'cchip--mid'
-        : 'cchip--dear';
-
+/** One segment of the metadata line. Exported so a view can compose its own order. */
+export function MetaSeg(p: {
+  children: JSX.Element | string | (JSX.Element | string)[];
+  variant?: 'blocked' | 'wrong' | '';
+  title?: string;
+}): JSX.Element {
   return (
-    <span class={'cchip ' + variant} title={band || 'no cost band recorded'}>
-      {label}
+    <span class={'meta__seg' + (p.variant ? ' meta__seg--' + p.variant : '')} title={p.title}>
+      <span class="meta__t">{p.children}</span>
     </span>
   );
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Language
-// ─────────────────────────────────────────────────────────────────────────────
 
 /**
- * `ok` is `languageOk` — he has Arabic, French and working English, and no German. A language
- * he cannot follow is a hard stop, but it is not a verdict, so it is drawn as a struck-through
- * neutral chip rather than in red.
+ * The card's whole metadata line, in one place so the rules can only be got wrong once.
+ *
+ * `costDisputed` is kill-test rule 4. Where verified prose contradicts the recorded band —
+ * Edinburgh still says "Under EUR 1.5k/yr" against a real ≈£29,900 — the figure is struck in
+ * china-marker red and the line says so. A wrong number shown quietly is worse than no number.
  */
-export function LangChip(p: { language: string; ok?: boolean }): JSX.Element {
-  const language = p.language || 'language not stated';
-  if (p.ok === false) {
-    return (
-      <span class="lchip lchip--blocked" title={`Taught in ${language}. You do not have it.`}>
-        <span aria-hidden="true">✕</span>
-        <span class="lchip__name">{language}</span>
-      </span>
-    );
-  }
+export function Meta(p: {
+  costBand?: string;
+  costDisputed?: string;
+  language?: string;
+  languageOk?: boolean;
+  gate?: string;
+  needsAudition?: boolean;
+  auditionSource?: AuditionSource;
+}): JSX.Element {
+  const band = p.costBand ?? '';
+  const disputed = (p.costDisputed ?? '') !== '';
+  const gate = gateLabel({ gate: p.gate ?? '', needsAudition: p.needsAudition, auditionSource: p.auditionSource });
+
   return (
-    <span class="lchip" title={`Taught in ${language}.`}>
-      <span class="lchip__name">{language}</span>
+    <span class="meta">
+      {disputed ? (
+        <MetaSeg variant="wrong" title="Verified prose contradicts this band — read the correction on the record.">
+          <span class="meta__struck">{bandLabel(band)}</span> wrong — see correction
+        </MetaSeg>
+      ) : (
+        <MetaSeg title={band || 'no cost band recorded'}>{bandLabel(band)}</MetaSeg>
+      )}
+
+      {p.language !== undefined && (
+        <MetaSeg
+          variant={p.languageOk === false ? 'blocked' : ''}
+          title={
+            p.languageOk === false
+              ? `Taught in ${p.language}. You do not have it.`
+              : `Taught in ${p.language || 'a language nobody recorded'}.`
+          }
+        >
+          {p.language || 'language not stated'}
+        </MetaSeg>
+      )}
+
+      {p.gate !== undefined && <MetaSeg title={p.gate}>{gate.text}</MetaSeg>}
     </span>
   );
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Level
+// 3 · Level — the one piece of state that is not the strip's to carry
 // ─────────────────────────────────────────────────────────────────────────────
 
 const NOT_DEGREE_LINE: Record<string, string> = {
@@ -229,13 +190,9 @@ const NOT_DEGREE_LINE: Record<string, string> = {
 };
 
 /**
- * BUILD-SPEC rule 2: `isDegree === false` must be visible without clicking, at the same visual
- * weight as the title. 57 of the 130 have "Master", "Máster" or "Mastère" in their name, so the
- * title itself actively misleads and a quiet chip underneath it would lose.
- *
- * So this component changes shape rather than colour: a degree gets a small neutral chip, a
- * non-degree gets a full-width 15px banner with a hatched edge, which stays unmistakable in
- * greyscale and at scrolling speed.
+ * Kill-test rule 1. A degree gets a quiet line of micro type; a non-degree gets a banner at
+ * title weight with a hatched edge, which stays unmistakable in greyscale and at scrolling
+ * speed. It changes SHAPE, not colour — the colour is only confirming what the shape said.
  */
 export function LevelChip(p: { level: string; isDegree?: boolean }): JSX.Element {
   const level = p.level || 'level not recorded';
@@ -256,5 +213,67 @@ export function LevelChip(p: { level: string; isDegree?: boolean }): JSX.Element
       </strong>
     );
   }
-  return <span class="levelchip" title={`level: ${level}`}>{level}</span>;
+  return (
+    <span class="levelchip" title={`level: ${level}`}>
+      {level}
+    </span>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Adapters for the standing views. No pills, no borders — each renders into the
+// vocabulary above. Delete the call site, then delete the adapter.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** @deprecated The ChannelStrip carries the verdict; use `VerdictWord` beside its meter. */
+export function VerdictChip(p: { verdict: string }): JSX.Element {
+  return <VerdictWord verdict={p.verdict} />;
+}
+
+/** @deprecated The ladder carries the climb; the word belongs in `Meta`. */
+export function GateChip(p: {
+  gate: string;
+  needsAudition?: boolean;
+  auditionSource?: string;
+}): JSX.Element {
+  const g = gateLabel({
+    gate: p.gate,
+    needsAudition: p.needsAudition,
+    auditionSource: (p.auditionSource ?? '') as AuditionSource,
+  });
+  return (
+    <span class="meta">
+      <MetaSeg title={p.gate}>{g.text}</MetaSeg>
+    </span>
+  );
+}
+
+/** @deprecated Money is a raw string on the metadata line; use `Meta`. */
+export function CostChip(p: { band: string; disputed?: boolean }): JSX.Element {
+  return (
+    <span class="meta">
+      {p.disputed ? (
+        <MetaSeg variant="wrong" title="Verified prose contradicts this band — read the correction on the record.">
+          <span class="meta__struck">{bandLabel(p.band ?? '')}</span> wrong — see correction
+        </MetaSeg>
+      ) : (
+        <MetaSeg title={p.band || 'no cost band recorded'}>{bandLabel(p.band ?? '')}</MetaSeg>
+      )}
+    </span>
+  );
+}
+
+/** @deprecated Language is a raw string on the metadata line; use `Meta`. */
+export function LangChip(p: { language: string; ok?: boolean }): JSX.Element {
+  const language = p.language || 'language not stated';
+  return (
+    <span class="meta">
+      <MetaSeg
+        variant={p.ok === false ? 'blocked' : ''}
+        title={p.ok === false ? `Taught in ${language}. You do not have it.` : `Taught in ${language}.`}
+      >
+        {language}
+      </MetaSeg>
+    </span>
+  );
 }

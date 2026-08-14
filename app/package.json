@@ -6,9 +6,10 @@
   "description": "Door 3 decision tool — 398 music-production master's records and 120 funding schemes",
   "scripts": {
     "data": "node scripts/build-data.mjs",
+    "calendar": "node scripts/build-calendar.mjs",
     "dev": "npm run data && vite",
-    "build": "npm run data && tsc --noEmit && vite build",
-    "build:single": "npm run data && vite build --mode single",
+    "build": "npm run data && npm run calendar && tsc --noEmit && vite build",
+    "build:single": "npm run data && npm run calendar && vite build --mode single",
     "build:all": "npm run build && npm run build:single",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

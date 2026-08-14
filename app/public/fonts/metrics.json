@@ -1,0 +1,166 @@
+{
+  "built": "2026-08-14",
+  "faces": {
+    "literata-body": {
+      "family": "Literata",
+      "style": "normal",
+      "role": "body",
+      "axes": [
+        "opsz=14",
+        "wght=400:400:700"
+      ],
+      "upstreamBytes": 955132,
+      "bytes": 31484,
+      "upem": 1000,
+      "avgAdvance": 0.4943921419331112,
+      "ascent": 1.177,
+      "descent": 0.308,
+      "lineGap": 0,
+      "xHeight": 0.507,
+      "capHeight": 0.701,
+      "glyphs": 268,
+      "missing": []
+    },
+    "literata-italic": {
+      "family": "Literata",
+      "style": "italic",
+      "role": "body",
+      "axes": [
+        "opsz=14",
+        "wght=400"
+      ],
+      "upstreamBytes": 902728,
+      "bytes": 18112,
+      "upem": 1000,
+      "avgAdvance": 0.466148403489766,
+      "ascent": 1.177,
+      "descent": 0.308,
+      "lineGap": 0,
+      "xHeight": 0.507,
+      "capHeight": 0.701,
+      "glyphs": 270,
+      "missing": []
+    },
+    "archivo-legend": {
+      "family": "Archivo",
+      "style": "normal",
+      "role": "legend",
+      "axes": [
+        "wght=400:400:700",
+        "wdth=100:100:125"
+      ],
+      "upstreamBytes": 658596,
+      "bytes": 47972,
+      "upem": 1000,
+      "avgAdvance": 0.45444873873723274,
+      "ascent": 0.878,
+      "descent": 0.21,
+      "lineGap": 0,
+      "xHeight": 0.526,
+      "capHeight": 0.686,
+      "glyphs": 236,
+      "missing": []
+    },
+    "spline-mono": {
+      "family": "Spline Sans Mono",
+      "style": "normal",
+      "role": "mono",
+      "axes": [
+        "wght=400:400:500"
+      ],
+      "upstreamBytes": 118744,
+      "bytes": 16040,
+      "upem": 2000,
+      "avgAdvance": 0.6,
+      "ascent": 0.9635,
+      "descent": 0.2365,
+      "lineGap": 0,
+      "xHeight": 0.5455,
+      "capHeight": 0.727,
+      "glyphs": 247,
+      "missing": [
+        "0x2192",
+        "0x20ba"
+      ]
+    }
+  },
+  "fallbacks": {
+    "roboto": {
+      "label": "Roboto (Android)",
+      "upem": 2048,
+      "avgAdvance": 0.4556690098406258,
+      "ascent": 0.927734375,
+      "descent": 0.244140625,
+      "lineGap": 0,
+      "xHeight": 0.5283203125,
+      "capHeight": 0.7109375,
+      "glyphs": 1326,
+      "missing": [
+        "0x2192"
+      ]
+    },
+    "arial": {
+      "label": "Arial metrics (Liberation Sans)",
+      "upem": 2048,
+      "avgAdvance": 0.45790370201163744,
+      "ascent": 0.9052734375,
+      "descent": 0.2119140625,
+      "lineGap": 0.03271484375,
+      "xHeight": 0.5283203125,
+      "capHeight": 0.68798828125,
+      "glyphs": 2620,
+      "missing": [
+        "0x20ba"
+      ]
+    },
+    "mono": {
+      "label": "ui-monospace (Liberation Mono)",
+      "upem": 2048,
+      "avgAdvance": 0.60009765625,
+      "ascent": 0.83251953125,
+      "descent": 0.30029296875,
+      "lineGap": 0,
+      "xHeight": 0.5283203125,
+      "capHeight": 0.65869140625,
+      "glyphs": 2423,
+      "missing": [
+        "0x20ba"
+      ]
+    }
+  },
+  "overrides": {
+    "literata-body": {
+      "against": "Roboto (Android)",
+      "sizeAdjust": "108.5%",
+      "sizeAdjustVsAlt": "108.0%",
+      "ascentOverride": "108.5%",
+      "descentOverride": "28.4%",
+      "lineGapOverride": "0.0%"
+    },
+    "literata-italic": {
+      "against": "Roboto (Android)",
+      "sizeAdjust": "102.3%",
+      "sizeAdjustVsAlt": "101.8%",
+      "ascentOverride": "115.1%",
+      "descentOverride": "30.1%",
+      "lineGapOverride": "0.0%"
+    },
+    "archivo-legend": {
+      "against": "Roboto (Android)",
+      "sizeAdjust": "99.7%",
+      "sizeAdjustVsAlt": "99.2%",
+      "ascentOverride": "88.0%",
+      "descentOverride": "21.1%",
+      "lineGapOverride": "0.0%"
+    },
+    "spline-mono": {
+      "against": "ui-monospace (Liberation Mono)",
+      "sizeAdjust": "100.0%",
+      "sizeAdjustVsAlt": "100.0%",
+      "ascentOverride": "96.4%",
+      "descentOverride": "23.7%",
+      "lineGapOverride": "0.0%"
+    }
+  },
+  "totalBytes": 113608
+}
