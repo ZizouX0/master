@@ -33,7 +33,7 @@ import { useStore } from '../store';
 import { STATUSES, type ProgrammeDetail, type ProgrammeIndex, type Status } from '../types';
 import { auditionCertainty } from '../data/filters';
 import { entriesForProgramme, isoDay, statusOf } from '../data/calendar';
-import { schemesForProgramme, splitByFit, totalCostPicture, type SchemeMatch } from '../data/money';
+import { splitByFit, totalCostPicture, type SchemeMatch } from '../data/money';
 import { patternFor } from '../data/patterns';
 import {
   formatTimestamp,

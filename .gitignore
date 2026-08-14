@@ -23,3 +23,6 @@ app/scripts/.font-cache/
 # design-review screenshots. Regenerable, and 4.6 MB of intermediate states is not
 # worth carrying in a repo whose deliverable is the site itself.
 app/foundation-shots/
+
+# design-review screenshots from the verify scripts, regenerable
+app/design-shots/

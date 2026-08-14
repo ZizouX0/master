@@ -43,48 +43,30 @@ const ALL_AUDITION: AuditionCertainty[] = ['confirmed', 'suspected', 'none-found
 const PAGE = 30;
 
 // ─────────────────────────────────────────────────────────────────────────────
-// The card
+// One row of the list
 // ─────────────────────────────────────────────────────────────────────────────
 
-function firstSentence(text: string, max = 200): string {
-  const s = text.replace(/\s+/g, ' ').trim();
-  if (!s) return '';
-  const stop = s.search(/[.!?](\s|$)/);
-  const cut = stop > 30 ? s.slice(0, stop + 1) : s;
-  return cut.length > max ? cut.slice(0, max).replace(/\s\S*$/, '') + '…' : cut;
-}
-
 /**
- * Fixed precedence, so the one line on a card is always the most decision-relevant known thing.
- * The last rung is `whyChance` — an automatic guess over a listing blurb — and it says so and
- * loses the italic. A card with nothing at all is visibly thinner, and that thinness is the
- * information: nobody looked at this one.
+ * One channel in the list. Three lines and the strip — the four things he scans by.
+ *
+ * Everything the old card carried below this (the sentence of a human's reasoning, the duplicate
+ * note, the whole document) is in the pane on the right, once, rather than 398 times down a
+ * column. What could NOT move, and did not: the not-a-degree banner at title weight, the strip's
+ * three readings, and the struck-through cost band with "wrong — see correction" beside it.
  */
-function cardSentence(
-  row: ProgrammeIndex,
-  detail: Record<string, { verdictWhy?: string; acceptsNonMusic?: string }> | null,
-): { text: string; guess: boolean } {
-  const d = detail?.[row.key];
-  if (d?.verdictWhy) return { text: firstSentence(d.verdictWhy), guess: false };
-  const accepts = d?.acceptsNonMusic ?? '';
-  if (accepts.length > 60) return { text: firstSentence(accepts), guess: false };
-  if (row.whyChance) return { text: firstSentence(row.whyChance, 150), guess: true };
-  return { text: '', guess: false };
-}
-
-function Card(p: {
-  row: ProgrammeIndex;
-  sentence: { text: string; guess: boolean };
-  selected: boolean;
-}): JSX.Element {
+function Row(p: { row: ProgrammeIndex; selected: boolean }): JSX.Element {
   const r = p.row;
   return (
     <a
-      class={'card' + (r.verdict === 'AVOID' ? ' card--avoid' : '') + (p.selected ? ' v-sel' : '')}
+      class={
+        'card v-list__row' +
+        (r.verdict === 'AVOID' ? ' card--avoid' : '') +
+        (p.selected ? ' v-sel' : '')
+      }
       href={recordHref(r)}
       aria-current={p.selected ? 'true' : undefined}
     >
-      <div class="channel">
+      <div class="channel channel--card">
         <div class="channel__strip">
           <ChannelStrip
             verdict={r.verdict}
@@ -97,38 +79,30 @@ function Card(p: {
           />
         </div>
         <div class="channel__body">
-          {/* Rule 1: visible without clicking, at title weight, above the title. */}
+          {/* Rule 1: visible without clicking, at title weight, above the title. It costs this
+              row a line, and it should: it is the loudest true thing about the record. */}
           {r.isDegree === false ? <LevelChip level={r.level} isDegree={false} /> : null}
-          <h3 class="t-cardtitle">{r.programme || 'No programme name recorded'}</h3>
-          <p class="t-inst" style="margin:2px 0 6px">
-            {r.institution || 'Institution not recorded'}
-            <br />
-            <span class="t-strip">
-              {r.city ? r.city + ' · ' : ''}
-              {r.country}
-            </span>
+          <h3 class="t-cardtitle v-1line">{r.programme || 'No programme name recorded'}</h3>
+          <p class="v-list__where v-1line">
+            <b>{r.institution || 'Institution not recorded'}</b>
+            {r.city ? ' · ' + r.city : ''}
+            {r.country ? ' · ' + r.country : ''}
           </p>
-          <p style="margin-bottom:4px">
+          {/* The verdict word rides on the metadata line rather than above it. Colour never
+              travels alone — the word is always beside the meter — but on a scan row it does not
+              need a line of its own, and a line of its own is 20px times 331. */}
+          <span class="meta" style="margin-top:6px">
             <VerdictWord verdict={r.verdict} />
-          </p>
-          <Meta
-            costBand={r.costBand}
-            costDisputed={r.costDisputed}
-            language={r.language}
-            languageOk={r.languageOk}
-            gate={r.gate}
-            needsAudition={r.needsAudition}
-            auditionSource={r.auditionSource}
-          />
-          {p.sentence.text ? (
-            <p class={'t-sentence' + (p.sentence.guess ? ' t-sentence--guess' : '')} style="margin-top:8px">
-              {p.sentence.guess ? 'Unverified guess from the listing text: ' : ''}
-              {p.sentence.text}
-            </p>
-          ) : null}
-          {r.rows > 1 ? (
-            <p class="v-src">{r.rows} records for this programme, from different sweeps — the fullest is shown.</p>
-          ) : null}
+            <Meta
+              costBand={r.costBand}
+              costDisputed={r.costDisputed}
+              language={r.language}
+              languageOk={r.languageOk}
+              gate={r.gate}
+              needsAudition={r.needsAudition}
+              auditionSource={r.auditionSource}
+            />
+          </span>
         </div>
       </div>
     </a>
@@ -188,7 +162,6 @@ function Switch(p: { on: boolean; label: string; hint: string; onToggle: () => v
 export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): JSX.Element {
   const status = useStore((s) => s.status);
   const index = useStore((s) => s.index);
-  const detail = useStore((s) => s.detail);
   const detailStatus = useStore((s) => s.detailStatus);
   const results = useStore((s) => s.results);
   const filters = useStore((s) => s.filters);
@@ -214,8 +187,8 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
   const activeCount = predicatesFor(filters).length;
   const page = rows.slice(0, limit);
 
-  const list = (
-    <div class="v-col v-hold">
+  const console_ = (
+    <div class="v-col v-console">
       <label class="v-label" for="find-q" style="margin-top:0">
         Search every field, including the prose
       </label>
@@ -291,8 +264,12 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
       </details>
 
       <Throw onPick={go} />
+    </div>
+  );
 
-      <p class="v-label" aria-live="polite" style="margin-top:24px">
+  const list = (
+    <div class="v-col v-hold">
+      <p class="v-label" aria-live="polite" style="margin-top:0">
         {results.distinct} {results.distinct === 1 ? 'programme' : 'programmes'}
         {results.rows.length !== results.distinct ? ` · ${results.rows.length} rows` : ''}
       </p>
@@ -313,9 +290,7 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
           )}
         </Invite>
       ) : (
-        page.map((r) => (
-          <Card key={r.key} row={r} sentence={cardSentence(r, detail)} selected={selected?.key === r.key} />
-        ))
+        page.map((r) => <Row key={r.key} row={r} selected={selected?.key === r.key} />)
       )}
 
       {rows.length > limit ? (
@@ -380,7 +355,7 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
       title={selected ? selected.programme || 'Record' : 'Find'}
       tabs={p.tabs}
       path={p.path}
-      layout="panes"
+      layout="find"
       footer={
         <p>
           Search reads institution, programme, city, country and the twelve prose fields including
@@ -388,6 +363,7 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
         </p>
       }
     >
+      {console_}
       {list}
       {pane}
     </Screen>

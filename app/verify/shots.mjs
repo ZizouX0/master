@@ -12,15 +12,14 @@ const GRAY = process.argv.includes('--gray');
 const WIDE = process.argv.includes('--wide');
 const BASE = 'http://localhost:5173/master/';
 
+// Five screens became three; the record is the fourth thing worth shooting.
 const SCREENS = [
-  ['start', '#/'],
-  ['list', '#/list'],
+  ['week', '#/'],
+  ['find', '#/find'],
   ['record-105', '#/p/105'],
   ['record-120', '#/p/120'],
   ['record-44', '#/p/44'],
-  ['money', '#/money'],
-  ['rejects', '#/rejects'],
-  ['mylist', '#/me'],
+  ['shortlist', '#/shortlist'],
 ];
 
 async function shotTo(page, name, w, h, fullPage) {

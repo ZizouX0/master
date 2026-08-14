@@ -11,17 +11,18 @@
  *  1. **One chrome bar, left-aligned, at the top.** Not a bottom tab strip: a bottom bar with
  *     three enormous tabs on a laptop is a phone screenshot stretched to fit, and looking like
  *     a stretched phone app is the exact failure this rebuild exists to undo.
- *  2. **The width is spent on a second column, never on longer lines.** Prose caps at 40–42rem
- *     wherever it lands. `correction` runs to 900 characters; at 1440px unconstrained that is a
- *     150-character measure and nobody reads it. So the canvas gets a document column and a
- *     console column, and the console column is where the numbers, the dates and the controls go.
+ *  2. **The width is spent on more columns, never on longer lines.** The reading measure is a
+ *     property of the type — styles.css caps everything prose at `--measure-prose`, 38rem — so
+ *     nothing here restates it. `correction` runs to 900 characters; at 1440px uncapped that sets
+ *     at 150 characters a line and nobody reads it. The extra width buys a console column and a
+ *     record pane instead.
  *  3. **A console is a wide object.** Channels sit side by side. On `Find` that means the record
  *     opens BESIDE the list rather than on top of it — he is comparing, and keeping the list in
  *     view while reading one record is the thing neither a spreadsheet nor a phone can do.
  *
- * Below 1080px every grid collapses to the single column, and the record pane stops being a pane
- * and becomes its own page. The route is the same either way (`#/record/:key`); only the frame
- * around it changes.
+ * Below 1240px every grid collapses to one column and the record pane stops being a pane and
+ * becomes its own page. The route is the same either way (`#/record/:key`); only the frame around
+ * it changes.
  */
 
 import type { ComponentChildren, JSX } from 'preact';
@@ -49,19 +50,22 @@ const DESK_CSS = `
 .v-top { position: sticky; top: 0; z-index: 30; display: flex; align-items: center;
   gap: var(--s3); min-height: 52px; padding: 0 var(--s4) 0 var(--pad-l);
   background: var(--console-recess); border-bottom: 1px solid var(--rule); }
-.v-mark { font: 600 11px/1 var(--sans); font-stretch: 115%; letter-spacing: 0.14em;
+.v-mark { font: 600 var(--t-legend) / 1 var(--sans); font-stretch: 115%; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--strip); white-space: nowrap; }
+/* On a phone the three destinations matter and the wordmark does not: dropping it is what stops
+   FIND being clipped off the end of the bar. */
+@media (max-width: 720px) { .v-mark { display: none; } }
 .v-nav { display: flex; gap: 2px; flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
 .v-nav::-webkit-scrollbar { display: none; }
 .v-nav a { display: inline-flex; align-items: center; min-height: var(--tap); padding: 0 var(--s3);
   color: var(--strip); text-decoration: none; white-space: nowrap;
-  font: 600 11px/1 var(--sans); font-stretch: 115%; letter-spacing: 0.12em; text-transform: uppercase; }
+  font: 600 var(--t-legend) / 1 var(--sans); font-stretch: 115%; letter-spacing: 0.12em; text-transform: uppercase; }
 .v-nav a:hover { color: var(--legend); }
 .v-nav a[aria-current='page'] { color: var(--legend); box-shadow: inset 0 -2px 0 var(--cap); }
 /* The date lives in the bar only where there is room for it. Below 900px it moves into the page,
    as .v-today, because the one thing the home screen must always say is what day it is. */
-.v-clock { display: none; font: 400 12px/1.4 var(--mono); color: var(--strip); white-space: nowrap; }
-.v-today { margin-bottom: var(--s4); font: 400 13px/1.45 var(--mono); color: var(--strip); }
+.v-clock { display: none; font: 400 var(--t-micro) / 1.4 var(--mono); color: var(--strip); white-space: nowrap; }
+.v-today { margin-bottom: var(--s4); font: 400 var(--t-data) / 1.45 var(--mono); color: var(--strip); }
 @media (min-width: 900px) {
   .v-clock { display: inline; }
   .v-today { display: none; }
@@ -69,52 +73,74 @@ const DESK_CSS = `
 
 .v-main { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s6);
   align-items: start; width: 100%; max-width: 1600px;
-  padding: var(--s5) var(--s4) var(--s7) var(--pad-l); }
+  padding: var(--s5) var(--pad-r) var(--s7) var(--pad-l); }
 .v-col { min-width: 0; }
-/* The reading measure. Wherever prose lands, it stops here. */
-.v-doc { max-width: 42rem; }
-.v-measure { max-width: 40rem; }
-.v-doc .field__value, .v-measure .field__value { overflow-wrap: anywhere; }
+/* No max-width lives here. The reading measure is a property of the TYPE — styles.css caps
+   .t-prose, .t-sentence and .field__value at --measure-prose — so a column that carries prose is
+   already capped by what is in it, and a column that carries a list is free to be as wide as the
+   desk. Restating the cap on a container would fight the type token and win, which is exactly
+   the wrong outcome. */
+.v-doc .field__value { overflow-wrap: anywhere; }
 
 .v-foot { width: 100%; max-width: 1600px; margin-top: auto;
-  padding: var(--s4) var(--s4) var(--s6) var(--pad-l);
-  border-top: 1px solid var(--rule); color: var(--strip); font: 400 12px/1.5 var(--mono); }
-.v-foot p { max-width: 46rem; }
+  padding: var(--s4) var(--pad-r) var(--s6) var(--pad-l);
+  border-top: 1px solid var(--rule); color: var(--strip);
+  font: 400 var(--t-micro) / 1.5 var(--mono); }
+.v-foot p { max-width: var(--measure-body); }
 .v-foot p + p { margin-top: var(--s2); }
 
 @media (min-width: 1080px) {
-  .v-main--aside { grid-template-columns: minmax(0, 46rem) minmax(17rem, 24rem); column-gap: var(--s7); }
-  .v-main--panes { grid-template-columns: minmax(19rem, 27rem) minmax(0, 1fr); column-gap: var(--s7); }
-  /* The list keeps its own travel so the record beside it can be read without losing your place. */
-  .v-hold { position: sticky; top: 68px; max-height: calc(100vh - 84px);
-    overflow-y: auto; overflow-x: hidden; padding-right: var(--s3); overscroll-behavior: contain; }
+  .v-main--aside { grid-template-columns: minmax(0, var(--measure-body)) minmax(17rem, 24rem);
+    column-gap: var(--s7); }
   .v-aside { position: sticky; top: 68px; }
 }
 
+/*
+ * FIND, at desk width: three regions, left to right in the order he uses them — the master
+ * section, the channels, the one channel he has pulled up.
+ *
+ *   console 17rem   the search, the six switches and the fader throw. It does not scroll with
+ *                   the list, because it is what he steers the list WITH.
+ *   list    26rem   compact channels, its own travel, so reading a record never loses his place.
+ *   record  1fr     everything left. This is what the width is for: at 1440 the record gets
+ *                   ~640px and its prose still stops at --measure-prose, which is the point.
+ */
+@media (min-width: 1240px) {
+  .v-main--find { grid-template-columns: minmax(15rem, 17rem) minmax(21rem, 26rem) minmax(0, 1fr);
+    column-gap: var(--s6); }
+  /* The console gets its own travel too: the fader throw alone is 480px, and a sticky column
+     taller than the viewport hides its own foot. */
+  .v-console { position: sticky; top: 68px; max-height: calc(100vh - 84px);
+    overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; }
+  .v-hold { position: sticky; top: 68px; max-height: calc(100vh - 84px);
+    overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; }
+}
+
 /* ── bands ─────────────────────────────────────────────────────────────── */
-.v-band + .v-band { margin-top: var(--s6); }
+.v-band { margin-top: var(--s5); }
+.v-band + .v-band { margin-top: var(--s7); }
 .v-band__head { display: flex; align-items: baseline; gap: var(--s3);
   padding-bottom: var(--s2); border-bottom: 1px solid var(--rule); }
-.v-band__name { flex: 1; min-width: 0; font: 600 11px/1.3 var(--sans); font-stretch: 115%;
+.v-band__name { flex: 1; min-width: 0; font: 600 var(--t-legend) / 1.3 var(--sans); font-stretch: 115%;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--strip); }
-.v-band__n { font: 400 15px/1 var(--mono); color: var(--legend); }
-.v-band__says { margin: var(--s2) 0 0; max-width: 40rem;
-  font: 400 14px/1.5 var(--serif); color: var(--strip); }
+.v-band__n { font: 400 var(--t-verdict) / 1 var(--mono); color: var(--legend); }
+.v-band__says { margin: var(--s2) 0 0; max-width: var(--measure-prose);
+  font: 400 var(--t-sentence) / 1.5 var(--serif); color: var(--strip); }
 
 .v-item { padding: var(--s4) 0; border-top: 1px solid var(--rule); }
 .v-item:first-of-type { border-top: 0; }
 .v-item__title { display: block; margin-bottom: 2px; color: var(--legend);
-  font: 500 17px/1.3 var(--serif); letter-spacing: -0.005em; text-decoration: none; }
+  font: 500 var(--t-card) / 1.3 var(--serif); letter-spacing: -0.005em; text-decoration: none; }
 a.v-item__title:hover { color: var(--cap); }
-.v-item__inst { font: 400 14px/1.4 var(--sans); font-stretch: 100%; color: var(--strip); }
+.v-item__inst { font: 400 var(--t-inst) / 1.4 var(--sans); font-stretch: 100%; color: var(--strip); }
 
 /* ── time. A confirmed date and a published rule never share a channel. ── */
 .v-when { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s3);
   margin: var(--s3) 0 0; padding: var(--s1) 0 var(--s1) var(--s3);
   border-left: 2px solid var(--legend); }
-.v-when__days { font: 400 20px/1.1 var(--mono); color: var(--legend); }
-.v-when__date { font: 400 13px/1.45 var(--mono); color: var(--legend); }
-.v-when__role { font: 600 11px/1.3 var(--sans); font-stretch: 115%; letter-spacing: 0.14em;
+.v-when__days { font: 400 var(--t-num) / 1.1 var(--mono); color: var(--legend); }
+.v-when__date { font: 400 var(--t-data) / 1.45 var(--mono); color: var(--legend); }
+.v-when__role { font: 600 var(--t-legend) / 1.3 var(--sans); font-stretch: 115%; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--strip); }
 .v-when--soon { border-left-color: var(--meter-clip); }
 .v-when--soon .v-when__days { color: var(--meter-clip); }
@@ -125,79 +151,110 @@ a.v-item__title:hover { color: var(--cap); }
 .v-rule { margin: var(--s3) 0 0; padding: var(--s1) 0 var(--s1) calc(9px + var(--s3));
   background: repeating-linear-gradient(45deg, var(--strip) 0 1px, transparent 1px 5px)
     left top / 9px 100% no-repeat; }
-.v-rule__flag { display: block; margin-bottom: var(--s1); font: 600 11px/1.3 var(--sans);
+.v-rule__flag { display: block; margin-bottom: var(--s1); font: 600 var(--t-legend) / 1.3 var(--sans);
   font-stretch: 115%; letter-spacing: 0.14em; text-transform: uppercase; color: var(--meter-over); }
-.v-rule__what { font: 400 13px/1.5 var(--mono); color: var(--legend); }
+.v-rule__what { font: 400 var(--t-data) / 1.5 var(--mono); color: var(--legend); }
 
-.v-src { margin-top: var(--s2); font: 400 12px/1.5 var(--mono); color: var(--strip);
-  max-width: 40rem; overflow-wrap: anywhere; }
+.v-src { margin-top: var(--s2); font: 400 var(--t-micro) / 1.5 var(--mono); color: var(--strip);
+  max-width: var(--measure-prose); overflow-wrap: anywhere; }
 
 /* ── what stands in front of a date ────────────────────────────────────── */
 .v-blockers { margin: var(--s3) 0 0; }
 .v-blocker { display: grid; grid-template-columns: 12px minmax(0, 1fr); gap: var(--s2);
-  padding: var(--s1) 0; max-width: 40rem; }
+  padding: var(--s1) 0; max-width: var(--measure-prose); }
 .v-blocker__box { margin-top: 6px; width: 10px; height: 10px; border: 1px solid var(--strip);
   border-radius: 1px; }
 .v-blocker--late .v-blocker__box { border-color: var(--meter-clip);
   background: repeating-linear-gradient(135deg, var(--meter-clip) 0 1.5px, transparent 1.5px 5px); }
-.v-blocker__label { font: 400 15px/1.4 var(--serif); color: var(--legend); }
-.v-blocker__note { font: 400 12px/1.5 var(--mono); color: var(--strip); }
+.v-blocker__label { font: 400 var(--t-prose-2) / 1.4 var(--serif); color: var(--legend); }
+.v-blocker__note { font: 400 var(--t-micro) / 1.5 var(--mono); color: var(--strip); }
 .v-blocker--late .v-blocker__note { color: var(--meter-clip); }
 
 /* ── the console column ────────────────────────────────────────────────── */
 .v-panel { padding-top: var(--s4); border-top: 2px solid var(--strip); }
 .v-panel + .v-panel { margin-top: var(--s5); }
-.v-panel__name { margin-bottom: var(--s2); font: 600 11px/1.3 var(--sans); font-stretch: 115%;
+.v-panel__name { margin-bottom: var(--s2); font: 600 var(--t-legend) / 1.3 var(--sans); font-stretch: 115%;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--strip); }
-.v-panel__says { font: 400 13px/1.5 var(--serif); color: var(--strip); }
+.v-panel__says { font: 400 var(--t-data) / 1.5 var(--serif); color: var(--strip); }
 .v-stat { display: flex; align-items: baseline; gap: var(--s3); padding: var(--s2) 0;
   border-bottom: 1px solid var(--rule); background: none; border-left: 0; border-right: 0;
   border-top: 0; width: 100%; text-align: left; color: inherit; text-decoration: none; }
 a.v-stat:hover .v-stat__t, button.v-stat:hover .v-stat__t { color: var(--cap); }
-.v-stat__n { flex: 0 0 4.2em; text-align: right; font: 400 19px/1.15 var(--mono);
+.v-stat__n { flex: 0 0 4.2em; text-align: right; font: 400 var(--t-num) / 1.15 var(--mono);
   font-variant-numeric: tabular-nums; color: var(--legend); }
-.v-stat__t { flex: 1; min-width: 0; font: 400 13px/1.45 var(--sans); color: var(--strip); }
+.v-stat__t { flex: 1; min-width: 0; font: 400 var(--t-data) / 1.45 var(--sans); color: var(--strip); }
 
 /* ── the invitation. An empty screen asks for something; it does not shrug. ── */
-.v-invite { max-width: 40rem; padding: var(--s5) 0; border-top: 1px solid var(--rule);
+.v-invite { max-width: var(--measure-prose); padding: var(--s5) 0; border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule); }
-.v-invite__lead { margin-bottom: var(--s2); font: 450 21px/1.3 var(--serif); color: var(--legend); }
-.v-invite p { font: 400 15px/1.55 var(--serif); color: var(--strip); }
+.v-invite__lead { margin-bottom: var(--s2); font: 450 var(--t-title) / 1.25 var(--serif); color: var(--legend); }
+.v-invite p { font: 400 var(--t-prose-2) / 1.55 var(--serif); color: var(--strip); }
 .v-invite p + p { margin-top: var(--s2); }
 
 /* ── correction and money ──────────────────────────────────────────────── */
 .v-correction { margin: var(--s3) 0; padding: var(--s3);
   border-left: 2px solid var(--meter-clip); background: var(--console-recess); }
-.v-correction__name { margin-bottom: var(--s2); font: 600 11px/1.3 var(--sans); font-stretch: 115%;
+.v-correction__name { margin-bottom: var(--s2); font: 600 var(--t-legend) / 1.3 var(--sans); font-stretch: 115%;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--meter-clip); }
-.v-correction__text { font: 400 15px/1.6 var(--serif); color: var(--legend);
-  white-space: pre-wrap; overflow-wrap: anywhere; }
+.v-correction__text { font: 400 var(--t-prose-2) / 1.6 var(--serif); color: var(--legend);
+  max-width: var(--measure-prose); white-space: pre-wrap; overflow-wrap: anywhere; }
 .v-warn { margin: var(--s3) 0; padding: var(--s2) var(--s3); border: 1px dashed var(--meter-over);
-  color: var(--meter-over); font: 400 13px/1.5 var(--sans); max-width: 40rem; }
-.v-scheme { padding: var(--s3) 0; border-top: 1px solid var(--rule); max-width: 40rem; }
-.v-scheme__name { font: 400 15px/1.4 var(--serif); color: var(--legend); }
-.v-scheme__why { margin-top: var(--s1); font: italic 400 14px/1.5 var(--serif); color: var(--legend); }
-.v-scheme__gap { margin-top: var(--s1); font: 400 12px/1.5 var(--mono); color: var(--strip); }
+  color: var(--meter-over); font: 400 var(--t-data) / 1.5 var(--sans); max-width: var(--measure-prose); }
+.v-scheme { padding: var(--s3) 0; border-top: 1px solid var(--rule); max-width: var(--measure-prose); }
+.v-scheme__name { font: 400 var(--t-prose-2) / 1.4 var(--serif); color: var(--legend); }
+.v-scheme__why { margin-top: var(--s1); font: italic 400 var(--t-sentence) / 1.5 var(--serif); color: var(--legend); }
+.v-scheme__gap { margin-top: var(--s1); font: 400 var(--t-micro) / 1.5 var(--mono); color: var(--strip); }
+
+/*
+ * THE COMPACT CHANNEL — what the list is made of.
+ *
+ * A console's whole argument is that you see many channels at once. The expanded record is 350px
+ * tall and at that size a 900px laptop shows two and a half of them: fewer rows than the
+ * spreadsheet this is meant to replace, which would leave the browsing half of the app with no
+ * reason to exist. So the list row carries exactly what he scans by — the strip, the title, who
+ * runs it and where, and the metadata line — and everything else waits in the pane.
+ *
+ * Nothing correctness-bearing is dropped to get there. isDegree === false is still the banner
+ * at title weight (it simply gives that row a third line, which is right: it is the loudest thing
+ * about that record). The strip still carries read / verdict / climb. Edinburgh's band is still
+ * struck through with "wrong — see correction" beside it, because that lives in the meta line.
+ */
+.v-list__row { display: block; }
+/* The one place this stylesheet tightens the foundation's rhythm, and it is deliberate.
+   .channel--card spends 32px above and below each body, which is right for a page of records
+   and wrong for a scan list: it is 43% of the row's height, and at 164px a row a 900px laptop
+   shows five options out of 331. Half that padding gives a 118px row and seven visible, without
+   touching the 104px floor under .channel__strip or removing anything from the row. */
+.v-list__row > .channel--card > .channel__body { padding: var(--s4) 0; }
+/* Nothing else here overrides .channel--card's rhythm or the 104px floor under .channel__strip:
+   the frame: the row is short because its CONTENT is three lines. One line each, not two: at
+   26rem a two-line title clamp alone adds 26px to every row in the list. */
+.v-1line { display: -webkit-box; -webkit-line-clamp: 1; line-clamp: 1;
+  -webkit-box-orient: vertical; overflow: hidden; }
+.v-list__where { margin-top: 2px; font: 400 var(--t-inst) / 1.35 var(--sans); font-stretch: 100%;
+  color: var(--strip); }
+.v-list__where b { font-weight: 400; color: var(--legend); }
 
 /* The record open in the pane beside the list. Set into the desk, not lifted off it. */
 .v-sel { background: var(--console-recess); }
+.v-list__row:hover .t-cardtitle { color: var(--cap); }
 
 /* ── controls ──────────────────────────────────────────────────────────── */
 .v-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); }
-.v-input, .v-textarea { width: 100%; max-width: 40rem; min-height: var(--tap);
+.v-input, .v-textarea { width: 100%; max-width: var(--measure-prose); min-height: var(--tap);
   padding: var(--s2) var(--s3); background: var(--console-recess); border: 1px solid var(--rule);
-  border-radius: var(--radius); color: var(--legend); font: 400 15px/1.5 var(--serif); }
+  border-radius: var(--radius); color: var(--legend); font: 400 var(--t-prose-2) / 1.5 var(--serif); }
 .v-textarea { min-height: 6rem; resize: vertical; }
-.v-code { max-width: 46rem; min-height: 11rem; font: 400 12px/1.5 var(--mono); white-space: pre; }
-.v-label { display: block; margin: var(--s3) 0 var(--s1); font: 600 11px/1.3 var(--sans);
+.v-code { max-width: var(--measure-body); min-height: 11rem; font: 400 var(--t-micro) / 1.5 var(--mono); white-space: pre; }
+.v-label { display: block; margin: var(--s3) 0 var(--s1); font: 600 var(--t-legend) / 1.3 var(--sans);
   font-stretch: 115%; letter-spacing: 0.14em; text-transform: uppercase; color: var(--strip); }
 .v-select { min-height: var(--tap); padding: 0 var(--s2); background: none;
   border: 1px solid var(--strip); border-radius: var(--radius); color: var(--legend);
-  font: 500 14px/1.2 var(--sans); }
+  font: 500 var(--t-ui) / 1.2 var(--sans); }
 .v-filters { margin: var(--s3) 0; border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule); }
 .v-filters > summary { display: flex; align-items: center; gap: var(--s2); min-height: var(--tap);
-  cursor: pointer; font: 600 11px/1.3 var(--sans); font-stretch: 115%; letter-spacing: 0.14em;
+  cursor: pointer; font: 600 var(--t-legend) / 1.3 var(--sans); font-stretch: 115%; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--strip); }
 .v-filters > summary::marker { color: var(--strip); }
 .v-filters[open] > summary { border-bottom: 1px solid var(--rule); }
@@ -222,7 +279,7 @@ ensureDeskStyles();
 // ─────────────────────────────────────────────────────────────────────────────
 
 /** True once the canvas is wide enough to hold the list and a record side by side. */
-export function useWide(minWidth = 1080): boolean {
+export function useWide(minWidth = 1240): boolean {
   const [wide, setWide] = useState(
     typeof window === 'undefined' ? false : window.matchMedia(`(min-width: ${minWidth}px)`).matches,
   );
@@ -300,7 +357,7 @@ export function Screen(p: {
   path: string;
   /** Right of the nav: the date, the countdown. Never a decoration. */
   clock?: string;
-  layout?: 'single' | 'aside' | 'panes';
+  layout?: 'single' | 'aside' | 'find';
   footer?: ComponentChildren;
   children: ComponentChildren;
 }): JSX.Element {

@@ -85,14 +85,20 @@ export function Throw(p: { onPick?: (f: FilterState) => void }): JSX.Element {
     <section aria-label="How the corpus narrows">
       <ol class="throw">
         {rows.map((r, i) => {
-          const cut = i === 0 ? 0 : (rows[i - 1]!.count - r.count);
-          const travel = top > 0 ? cut / top : 0;
+          // Two different falls meet on one row, and they are not the same number.
+          // `cut` is what was removed to REACH this stop — that is the printed −N.
+          // `--travel` is what falls away BELOW it, which is the distance to the next tick.
+          const cut = i === 0 ? 0 : rows[i - 1]!.count - r.count;
+          const next = rows[i + 1];
+          const travel = next && top > 0 ? (r.count - next.count) / top : 0;
           const last = i === rows.length - 1;
           return (
             <li key={r.label}>
               <a
                 class={'throw__row' + (last ? ' throw__row--cap' : '')}
-                style={`--travel:${travel.toFixed(3)}`}
+                /* The cap row carries no --travel: the fader has bottomed out and rests at the
+                   end of the rail. Giving it a fall would draw travel below the last stop. */
+                style={last ? undefined : `--travel:${travel.toFixed(3)}`}
                 href={href(r.filters)}
                 onClick={p.onPick ? () => p.onPick!(r.filters) : undefined}
               >
