@@ -11,3 +11,6 @@ __pycache__/
 # app build output and dependencies
 app/node_modules/
 app/dist/
+app/dist-single/
+app/public/data/index.json
+app/public/data/detail.json
