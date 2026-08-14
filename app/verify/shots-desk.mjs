@@ -6,6 +6,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 const OUT = '/home/user/master/app/design-shots';
 mkdirSync(OUT, { recursive: true });
 const tag = process.argv[2] || 'desk';
+const BASE_DEFAULT = 'http://localhost:5173/master/';
 const BASE = process.env.BASE || 'http://localhost:5173/master/';
 
 const { proc, port, wsUrl } = await launch('/tmp/cdp-shots-' + tag);
@@ -41,6 +42,7 @@ const key = await (async () => {
 
 await capture(1440, 900, false, 'week', '#/');
 await capture(1440, 900, false, 'find', '#/find');
+await capture(1440, 900, false, 'find-open', '#/p/15');
 await capture(1440, 900, false, 'record-pane', '#/p/105');
 await capture(1440, 900, false, 'record-120', '#/p/120');
 await capture(1440, 900, false, 'shortlist', '#/shortlist');

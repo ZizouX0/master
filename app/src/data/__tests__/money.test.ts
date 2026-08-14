@@ -100,20 +100,26 @@ describe('the normalisers, on schemes whose correct reading is known', () => {
     }
   });
 
-  it('ESKAS\'s age cap is read off the wrong sentence — pinned, not endorsed', () => {
+  it('reads ESKAS\'s cap off the rule, not off the applicant', () => {
     // Its `ageLimit` says «"The maximum age is 35" for the arts scholarship. At 24–26 he CLEARS
-    // it.» — and `ageCap` returns 26, because the band pattern matches "24–26", the applicant's
-    // own age, before the explicit "maximum age is 35" is considered. The published cap is 35.
-    //
-    // Nothing user-visible is wrong today: 26 > his age at entry, so the verdict is `no` under
-    // either reading and the join is unaffected. But the margin is one year instead of ten, and
-    // a record phrased "at 24–25" would flip the same scheme to `conditional` for no reason.
-    // Fixing it is a one-line precedence change in `ageCap` — prefer the explicit upper bound
-    // over the band — and this test is here so the fix is visible when it lands.
+    // it.» The band "24–26" is HIS age; 35 is the rule. Taking the band first returned a cap of
+    // 26 — a one-year margin where the scheme publishes ten. The verdict was `no` either way, so
+    // nothing visible was wrong, but a record phrased "at 24–25" would have flipped this scheme
+    // to `conditional` for no reason.
     const age = money.ageCap(eskas.ageLimit);
     expect(eskas.ageLimit).toMatch(/maximum age is 35/i);
     expect(age.kind).toBe('no');
-    expect(age.cap).toBe(26); // should be 35
+    expect(age.cap).toBe(35);
+  });
+
+  it('keeps a band when the only explicit number is not an age', () => {
+    // The precedence change must not swing the other way. "maximum 12 months" is a duration, and
+    // preferring it blindly would yield 12, fail the plausibility floor, and discard a band that
+    // was the real rule.
+    expect(money.ageCap('Funding runs for a maximum 12 months. Open to applicants aged 20–30.').cap).toBe(30);
+    // A band alone still works, and an explicit bound alone still works.
+    expect(money.ageCap('Applicants must be aged 18–35 at the closing date.').cap).toBe(35);
+    expect(money.ageCap('The maximum age is 35.').cap).toBe(35);
   });
 });
 

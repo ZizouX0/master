@@ -156,7 +156,23 @@ export function ageCap(raw: string): AgeCap {
   const band = /\b(\d{2})\s*[-–—]\s*(\d{2})\b/.exec(s);
   const upper =
     /\b(?:under|max(?:imum)?|up to|below|not (?:be )?(?:over|older than)|age cap|age limit)\D{0,12}(\d{2})\b/i.exec(s);
-  const cap = band ? Number(band[2]) : upper ? Number(upper[1]) : null;
+
+  // An explicitly named upper bound outranks a band, because a band in this corpus is usually
+  // the APPLICANT's age, not the rule's. ESKAS reads "At 24-26 he CLEARS it ... The maximum age
+  // is 35": taking the band first gave a cap of 26 and a one-year margin where the scheme
+  // publishes ten. Nothing visible was wrong — 26 is still above his age at entry, so the
+  // verdict came out the same — but a record phrased "at 24-25" would have flipped the same
+  // scheme to conditional for no reason at all.
+  //
+  // The explicit bound only wins when it reads as an age. "maximum 12 months, ages 20-30" would
+  // otherwise yield 12, fail the plausibility floor, and throw away a band that was correct.
+  const plausible = (n: number) => n >= 18 && n <= 70;
+  const explicit = upper ? Number(upper[1]) : null;
+  const banded = band ? Number(band[2]) : null;
+  const cap =
+    explicit !== null && plausible(explicit) ? explicit
+    : banded !== null && plausible(banded) ? banded
+    : explicit ?? banded;
   if (cap === null || cap < 18 || cap > 70) {
     if (/^\W*\d{2}\s*or over/i.test(s)) return { kind: 'no', cap: null, label: 'a minimum age only — no cap' };
     return { kind: 'unknown', cap: null, label: 'an age rule is described but no cap could be read' };
