@@ -647,8 +647,12 @@ export default function Record() {
         </Section>
 
         <Section label="What it is">
+          {/* Every column the workbook carries is reachable on this page — parity is a test,
+              not an aspiration, and a missing column is how the last attempt died. */}
           <FieldGroup title="The award">
             <Field label="Level" value={row.level} />
+            <Field label="Subtype" value={row.subtype} />
+            <Field label="Public or private" value={row.publicPrivate} />
             <Field label="Qualification awarded" value={detail?.qualification ?? ''} wide />
             <Field label="Accreditation" value={detail?.accreditation ?? ''} wide />
             <Field label="Duration" value={detail?.duration ?? ''} />
