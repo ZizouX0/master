@@ -41,11 +41,23 @@ RX_AUDITION = re.compile(
 
 # "no audition", "there is no live admission exam", "None. Portfolio-based selection…"
 RX_NO = re.compile(
-    r"(?:no|none|without|not?)\s+(?:live\s+)?(?:instrumental\s+|performance\s+|music(?:al)?\s+)?"
+    # The article is not optional decoration. Without it "NOT AN AUDITION" and
+    # "NOT AN EAR-TRAINING EXAM" both slip past, and three records that say in capitals
+    # that they have neither were flagged as having both — including HfMT Köln, whose
+    # field opens "YES, but NOT an instrumental audition", and FHNW Basel, whose field
+    # opens "THE DECISIVE PART IS A PORTFOLIO HEARING, NOT AN AUDITION".
+    r"(?:no|none|without|not?)\s+(?:an?\s+|the\s+)?(?:live\s+)?"
+    r"(?:instrumental\s+|performance\s+|music(?:al)?\s+)?"
     r"(?:admission\s+)?(?:audition|exam|ear[- ]training|aural)|"
     r"there is no live|no live admission|audition:\s*none|"
     r"selection is (?:entirely )?(?:document|portfolio)",
     re.I)
+
+# An emphatic denial in the opening of a field governs the whole field. "Vorspiel" appearing
+# 300 characters later is the schedule of the round he does not have to sit, not a finding.
+RX_DENIES_UP_FRONT = re.compile(
+    r"^.{0,240}?(?:NOT AN? (?:AUDITION|EAR[- ]TRAINING)|NOT AN? INSTRUMENTAL|"
+    r"IS NOT AN AUDITION|NO AUDITION|NONE\.|THERE IS NO LIVE)", re.I | re.S)
 
 # a correction that says the recorded cost is wrong
 RX_COST = re.compile(
@@ -93,6 +105,8 @@ def analyse(rec):
     # wear the authority of the 36 verified ones. Confirmed wins; suspected is still shown,
     # but labelled as what it is.
     for field, src in ((corr, "confirmed"), (why, "confirmed"), (aud, "suspected")):
+        if RX_DENIES_UP_FRONT.search(field):
+            continue
         h = _hit(RX_AUDITION, field)
         if h:
             out["auditionDisputed"] = h

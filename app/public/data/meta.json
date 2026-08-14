@@ -11,8 +11,8 @@
   "worthIt": 9,
   "conditional": 40,
   "avoid": 100,
-  "noAudition": 227,
-  "needsAudition": 34,
+  "noAudition": 233,
+  "needsAudition": 28,
   "countries": 41,
   "withUrl": 397
  },
@@ -157,12 +157,12 @@
    "Full": 23
   },
   "gate": {
-   "Portfolio + exam/interview": 124,
-   "None found in the text": 119,
-   "Portfolio only": 53,
-   "Exam/interview only": 47,
+   "None found in the text": 128,
+   "Portfolio + exam/interview": 106,
+   "Portfolio only": 65,
+   "Exam/interview only": 45,
    "Not published — ask them": 39,
-   "AUDITION — hardest for you": 16
+   "AUDITION — hardest for you": 15
   },
   "verdict": {
    "AVOID": 100,

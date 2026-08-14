@@ -114,6 +114,13 @@ RX_PF = re.compile(r"portfolio|works? must be submitted|representative works|"
 def gate(r):
     p = str(r["_rec"].get("portfolioSpec") or r["_rec"].get("portfolioReq") or "")
     a = str(r["_rec"].get("auditionSpec") or "")
+    # A field that opens by denying an audition is denying it for its whole length.
+    # FHNW Basel's begins "THE DECISIVE PART IS A PORTFOLIO HEARING, NOT AN AUDITION"
+    # and then names the Vorspiel he does not have to sit; matching that word alone
+    # painted the strongest single target in the file red.
+    import corrections as _C
+    if _C.RX_DENIES_UP_FRONT.search(a):
+        a = ""
     e = str(r["_rec"].get("entryRequirements") or "")
     both = f"{p} {a} {e}"
     has_pf = bool(RX_PF.search(both)) or p.strip().upper().startswith("Y")
