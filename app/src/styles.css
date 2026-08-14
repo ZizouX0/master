@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'Literata';
-  src: url('/master/fonts/literata-body.woff2') format('woff2');
+  src: url('./fonts/literata-body.woff2') format('woff2');
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -58,7 +58,7 @@
 
 @font-face {
   font-family: 'Literata';
-  src: url('/master/fonts/literata-italic.woff2') format('woff2');
+  src: url('./fonts/literata-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -66,7 +66,7 @@
 
 @font-face {
   font-family: 'Archivo';
-  src: url('/master/fonts/archivo-legend.woff2') format('woff2');
+  src: url('./fonts/archivo-legend.woff2') format('woff2');
   font-weight: 400 700;
   font-stretch: 100% 125%;
   font-style: normal;
@@ -75,7 +75,7 @@
 
 @font-face {
   font-family: 'Spline Sans Mono';
-  src: url('/master/fonts/spline-mono.woff2') format('woff2');
+  src: url('./fonts/spline-mono.woff2') format('woff2');
   font-weight: 400 500;
   font-style: normal;
   font-display: swap;
@@ -86,7 +86,7 @@
  *
  * Computed against Arial's metrics, because the canvas is a laptop and Arial or Helvetica is
  * what will actually paint the first frame. The Android numbers differ by about 1% and are
- * recorded in public/fonts/metrics.json.
+ * recorded in src/fonts/metrics.json.
  */
 @font-face {
   font-family: 'Literata Fallback';

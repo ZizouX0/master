@@ -35,9 +35,9 @@ import {
 import { encodeFilters } from '../components/Filters';
 import { ChannelStrip } from '../components/ChannelStrip';
 import { LevelChip, Meta, VerdictWord } from '../components/chips';
-import { Invite, Screen, type Tab } from './kit';
+import { Invite, Screen, useWide, type Tab } from './kit';
 import { RecordDocument, recordHref, resolveRecord } from './Record';
-import { Throw } from './Throw';
+import { Throw, ThrowScale } from './Throw';
 
 const ALL_AUDITION: AuditionCertainty[] = ['confirmed', 'suspected', 'none-found'];
 const PAGE = 30;
@@ -82,7 +82,7 @@ function Row(p: { row: ProgrammeIndex; selected: boolean }): JSX.Element {
           {/* Rule 1: visible without clicking, at title weight, above the title. It costs this
               row a line, and it should: it is the loudest true thing about the record. */}
           {r.isDegree === false ? <LevelChip level={r.level} isDegree={false} /> : null}
-          <h3 class="t-cardtitle v-1line">{r.programme || 'No programme name recorded'}</h3>
+          <h3 class="t-cardtitle v-2line">{r.programme || 'No programme name recorded'}</h3>
           <p class="v-list__where v-1line">
             <b>{r.institution || 'Institution not recorded'}</b>
             {r.city ? ' · ' + r.city : ''}
@@ -167,6 +167,7 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
   const filters = useStore((s) => s.filters);
   const setFilters = useStore((s) => s.setFilters);
   const navigate = useStore((s) => s.navigate);
+  const wide = useWide();
 
   const selected = useMemo(() => resolveRecord(p.path, index), [p.path, index]);
   const limit = p.shown ?? PAGE;
@@ -263,7 +264,24 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
         </div>
       </details>
 
-      <Throw onPick={go} />
+      {/* Wide: the counts as a scale here, the fall itself in the pane where it fits.
+          Narrow: there is no pane, so the throw runs here at the size styles.css sizes it for
+          a 390px column (--throw-length drops to 380px below 720px). */}
+      {wide ? (
+        <>
+          <p class="v-label">How 355 becomes 14</p>
+          <ThrowScale onPick={go} />
+          <p class="v-src">
+            {selected ? (
+              <a href="#/find">See the whole fall, with its reasons →</a>
+            ) : (
+              'The fall, and what each stop costs you, is on the right.'
+            )}
+          </p>
+        </>
+      ) : (
+        <Throw onPick={go} />
+      )}
     </div>
   );
 
@@ -326,16 +344,18 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
       {selected ? (
         <RecordDocument row={selected} />
       ) : (
-        <Invite lead="Pick one on the left and it opens here, beside the list.">
-          <p>
-            The list stays where it is while you read, so you can put Basel against Köln against İTÜ without
-            losing your place. That is the one thing neither the spreadsheet nor a phone can do.
+        <>
+          <Invite lead="Pick one on the left and it opens here, beside the list.">
+            <p>
+              The list stays where it is while you read, so you can put Basel against Köln against İTÜ
+              without losing your place. That is the one thing neither the spreadsheet nor a phone can do.
+            </p>
+          </Invite>
+          <p class="v-label" style="margin-top:24px">
+            Until then: how 355 becomes 14
           </p>
-          <p>
-            Every record carries the correction in full — the field that says what the earlier data got wrong —
-            and the money that could reach it.
-          </p>
-        </Invite>
+          <Throw onPick={go} />
+        </>
       )}
     </div>
   );
@@ -365,7 +385,7 @@ export default function Find(p: { tabs: Tab[]; path: string; shown?: number }): 
     >
       {console_}
       {list}
-      {pane}
+      {wide ? pane : null}
     </Screen>
   );
 }

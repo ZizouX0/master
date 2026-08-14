@@ -1,68 +1,103 @@
-import { launch, newBrowser, newPage, goto, evalJs, text, shot, overflow, report, sleep } from './cdp.mjs';
+// The offline artefact, opened the way he would open it: a file on a stick, no server.
+//   node verify/t-offline.mjs
+//
+// The load-bearing assertion is the typography one. The four faces used to be fetched from an
+// absolute /master/fonts/… URL, which resolves to nothing under file://, so door3.html rendered
+// in whatever the system had and nobody noticed — a "self-contained" artefact silently dropping
+// the thing the rebuild spent its budget on. They are inlined as data: URIs now, and this test
+// is here so that cannot come back.
+
+import { launch, newBrowser, newPage, goto, evalJs, text, sleep } from './cdp.mjs';
+
 const FILE = 'file:///home/user/master/app/dist-single/door3.html';
-const { port, wsUrl } = await launch('/tmp/cdp-profile-offline');
-const b = await newBrowser(port, wsUrl);
-const p = await newPage(b);
+const results = [];
+const ok = (name, pass, detail = '') => {
+  results.push({ name, pass, detail });
+  console.log(`${pass ? 'PASS' : 'FAIL'}  ${name}${detail ? ' — ' + detail : ''}`);
+};
 
-console.log('###### STATUS CONTROL (http build) ######');
-await goto(p, 'http://127.0.0.1:8099/master/#/p/30', 2200);
-const kinds = await evalJs(p, `JSON.stringify([...document.querySelectorAll('button,label,input')].filter(e=>/emailed|applying|shortlist|not tracked/i.test(e.innerText||e.value||'')).map(e=>e.tagName+'|'+(e.type||'')+'|'+(e.innerText||e.value||'').trim().slice(0,20)))`);
-console.log('status controls:', kinds);
-const res = await evalJs(p, `(() => { const el=[...document.querySelectorAll('button,label')].find(e=>/^emailed them$/i.test((e.innerText||'').trim())); if(!el) return 'not found'; el.click(); return 'clicked ' + el.tagName; })()`);
-console.log('click result:', res);
-await sleep(1000);
-console.log('localStorage now:', await evalJs(p, `localStorage.getItem('door3.personal.v1')`));
-await goto(p, 'http://127.0.0.1:8099/master/#/p/30', 2200);
-console.log('after reload status persists:', await evalJs(p, `localStorage.getItem('door3.personal.v1')`));
+const { proc, port, wsUrl } = await launch('/tmp/cdp-offline');
+const browser = await newBrowser(port, wsUrl);
+const p = await newPage(browser, { width: 1440, height: 900 });
+await p.send('Emulation.setDeviceMetricsOverride', {
+  width: 1440, height: 900, deviceScaleFactor: 1, mobile: false, screenWidth: 1440, screenHeight: 900,
+});
 
-console.log('\n\n###### OFFLINE SINGLE FILE — file:// ######');
-await goto(p, FILE, 3500);
-console.log('url:', await evalJs(p, 'location.href'));
-console.log('viewport:', await evalJs(p, 'JSON.stringify({w:innerWidth,h:innerHeight})'));
-const t0 = await text(p);
-console.log('rendered chars:', t0.length);
-console.log('HEAD:', JSON.stringify(t0.slice(0, 1100)));
-console.log('OVERFLOW:', JSON.stringify(await overflow(p)));
-await shot(p, 'off-01-start', true);
+await goto(p, FILE + '#/', 3000);
 
-console.log('\n--- navigate: open a record (258, an audition record) ---');
-await goto(p, FILE + '#/p/258', 2200);
-const t1 = await text(p);
-console.log('len', t1.length, '| LIVE AUDITION chip:', /LIVE AUDITION/.test(t1), '| correction block:', /CORRECTION \(WORKBOOK COLUMN G\)/i.test(t1));
-console.log(JSON.stringify(t1.slice(0, 700)));
-await shot(p, 'off-02-record-258', true);
+// ── the four faces, actually loaded, from a file:// origin ───────────────────
+const FACES = ['Literata', 'Archivo', 'Spline Sans Mono'];
+{
+  // document.fonts only reports a face as loaded once something has asked for it, so ask.
+  const loaded = await evalJs(p, `(async () => {
+    const want = ${JSON.stringify(FACES)};
+    await Promise.all(want.map(f => document.fonts.load('400 16px "' + f + '"')));
+    await document.fonts.ready;
+    const have = new Set();
+    document.fonts.forEach(f => { if (f.status === 'loaded') have.add(f.family); });
+    return want.map(f => [f, have.has(f)]);
+  })()`);
+  for (const [family, isLoaded] of loaded) {
+    ok(`offline · ${family} loads from file://`, isLoaded === true);
+  }
+  const sources = await evalJs(p, `(() => {
+    const out = [];
+    for (const sheet of document.styleSheets) {
+      let rules; try { rules = sheet.cssRules; } catch { continue; }
+      for (const r of rules) {
+        if (r.constructor.name === 'CSSFontFaceRule') out.push((r.style.src || '').slice(0, 24));
+      }
+    }
+    return out;
+  })()`);
+  const real = sources.filter((s) => s.startsWith('url("data:'));
+  ok('offline · every @font-face src is a data: URI, not a path', real.length >= 4,
+    `${real.length} of ${sources.length} @font-face rules are inlined`);
+  const rendered = await evalJs(p, `getComputedStyle(document.body).fontFamily.split(',')[0]`);
+  ok('offline · the body is actually set in the body face', /Literata/.test(rendered), rendered);
+}
 
-console.log('\n--- navigate: Edinburgh correction offline ---');
-await goto(p, FILE + '#/p/120', 2200);
-const t2 = await text(p);
-console.log('29,900 present:', /29,?900/.test(t2), '| WRONG-see-correction chip:', /WRONG — see correction/.test(t2));
-await shot(p, 'off-03-record-120', true);
+// ── and the app itself still works with no server ───────────────────────────
+{
+  const t = await text(p);
+  ok('offline · This week renders', /ALREADY LATE|CLOSING|OPEN NOW|THE MAKING/i.test(t));
+  ok('offline · a published rule is still held apart from a date', /NOT A 2027 DATE/i.test(t));
+}
 
-console.log('\n--- use a filter offline ---');
-await goto(p, FILE + '#/list?cheap=1', 2500);
-const t3 = await text(p);
-console.log('cheap list count:', (t3.match(/(\d+)\s+programmes?/) || [])[0]);
-const ids = JSON.parse(await evalJs(p, `JSON.stringify([...document.querySelectorAll('a[href*="#/p/"]')].map(a=>Number(a.getAttribute('href').split('#/p/')[1].split(/[?&]/)[0])))`));
-console.log('has Edinburgh(120):', ids.includes(120), '| has KASK(5):', ids.includes(5), '| rendered', ids.length);
-await shot(p, 'off-04-cheap-filter', true);
+await goto(p, FILE + '#/p/105', 2500);
+{
+  const t = await text(p);
+  ok('offline · the correction is on the record', /CORRECTION — WORKBOOK COLUMN G/i.test(t));
+  ok('offline · the money join ran with no network',
+    /could apply on the published rules|never say who can apply|No scheme in the 120/i.test(t));
+}
 
-console.log('\n--- search offline ---');
-await goto(p, FILE + '#/list', 2200);
-await evalJs(p, `(() => { const e=document.querySelector('input[type=search]'); const s=Object.getOwnPropertyDescriptor(Object.getPrototypeOf(e),'value').set; s.call(e,'Detmold'); e.dispatchEvent(new Event('input',{bubbles:true})); return true; })()`);
-await sleep(1200);
-const t4 = await text(p);
-console.log('search Detmold offline ->', (t4.match(/(\d+)\s+programmes?/) || [])[0]);
-await shot(p, 'off-05-search', true);
+await goto(p, FILE + '#/p/120', 2500);
+{
+  const t = await text(p);
+  ok('offline · Edinburgh still reads ≈£29,900 as a correction', /29,?900/.test(t));
+}
 
-console.log('\n--- tracker offline ---');
-await goto(p, FILE + '#/p/30', 2200);
-await evalJs(p, `(() => { const el=[...document.querySelectorAll('button')].find(e=>/add to my list/i.test(e.innerText)); if(el) el.click(); return !!el; })()`);
-await sleep(900);
-console.log('localStorage (file://):', await evalJs(p, `localStorage.getItem('door3.personal.v1')`));
-await goto(p, FILE + '#/me', 2500);
-const t5 = await text(p);
-console.log('My list offline:', JSON.stringify(t5.slice(0, 500)));
-await shot(p, 'off-06-my-list', true);
+// ── the tracker writes and survives a reload, from file:// ──────────────────
+await goto(p, FILE + '#/find?q=Basel', 2500);
+{
+  const key = await evalJs(p, `(document.querySelector('a.card')?.getAttribute('href')||'').replace('#/record/','')`);
+  await goto(p, FILE + '#/record/' + key, 2200);
+  await evalJs(p, `(() => { const b=[...document.querySelectorAll('button')].find(b=>/shortlist/i.test(b.textContent)); b && b.click(); return true; })()`);
+  await sleep(900);
+  const raw = await evalJs(p, `localStorage.getItem('door3.personal.v1')`);
+  const keys = raw ? Object.keys(JSON.parse(raw).entries || {}) : [];
+  ok('offline · the tracker writes to localStorage under file://',
+    keys.length > 0 && keys.every((k) => /^[0-9a-f]{12}$/.test(k)), JSON.stringify(keys));
+  await goto(p, FILE + '#/shortlist', 2500);
+  ok('offline · and it is still there after a reload', /1\b|shortlist/i.test(await text(p)));
+}
 
-console.log('\nCONSOLE (offline session):', JSON.stringify(report(p), null, 1));
-process.exit(0);
+const errs = [...p.consoleErrors, ...p.pageErrors].filter((e) => !/favicon/i.test(e));
+ok('offline · no console or page errors', errs.length === 0, errs.slice(0, 3).join(' || '));
+
+console.log('\n' + results.filter((r) => r.pass).length + ' / ' + results.length + ' passed');
+const failed = results.filter((r) => !r.pass);
+if (failed.length) console.log('FAILED:\n' + failed.map((f) => ' - ' + f.name + (f.detail ? ' — ' + f.detail : '')).join('\n'));
+proc.kill();
+process.exit(failed.length ? 1 : 0);

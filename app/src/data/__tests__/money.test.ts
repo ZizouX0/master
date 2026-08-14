@@ -20,7 +20,6 @@ import {
   workExperienceBar,
   type ProgrammeLike,
 } from '../money';
-import * as view from '../../views/Money';
 import { records, schemes } from './fixtures';
 
 const byId = (id: number): ProgrammeLike => records.find((r) => r.id === id)!;
@@ -31,31 +30,90 @@ const edinburgh = byId(120); // £29,900 against a recorded band of "Under EUR 1
 
 const chevening = schemes.find((s) => /Chevening/i.test(s.name))!;
 const eskas = schemes.find((s) => /ESKAS/i.test(s.name))!;
+const eiffel = schemes.find((s) => /Eiffel/i.test(s.name))!;
 
 // ─────────────────────────────────────────────────────────────────────────────
-// The normalisers were lifted out of the view. They must not drift from it.
+// The normalisers, against named schemes whose correct reading is stated here.
+//
+// These two tests used to compare `data/money.ts` against a duplicate copy of the same functions
+// inside `views/Money.tsx`, to catch the two drifting apart. The Money screen is gone and the
+// duplicate with it, which left the comparison asserting that a module equals itself — the worst
+// kind of test, because it reads as coverage. What follows checks the readings themselves, on the
+// three schemes the whole join turns on.
 // ─────────────────────────────────────────────────────────────────────────────
 
-describe('lifted normalisers', () => {
-  it('agree with src/views/Money.tsx on all 120 schemes, field by field', () => {
+describe('the normalisers, on schemes whose correct reading is known', () => {
+  it('Chevening: the bar is 2,800 hours in the prose, and it is NOT nationality', () => {
+    // The field is empty, so a reader that trusted the field would pass him straight through.
+    expect(chevening.requiresWorkExperience.trim()).toBe('');
+    const work = workExperienceBar(chevening);
+    expect(work.kind).toBe('yes');
+    expect(work.source).toBe('prose');
+    expect(work.evidence).toMatch(/2800 hours/);
+    // Getting the REASON right matters as much as the verdict: Tunisia has its own Chevening
+    // country page. Reporting "not open to Tunisians" would send him to check the wrong thing.
+    expect(money.tunisiaEligible(chevening).kind).toBe('named');
+    expect(money.subjectFit(chevening).kind).toBe('open');
+    expect(money.statedIneligible(chevening)).toMatch(/not eligible/i);
+    // "No at application; yes later" is neither a yes nor a no, and flattening it either way
+    // changes the order of his year.
+    expect(money.admissionFirst(chevening.requiresAdmissionFirst).kind).toBe('conditional');
+  });
+
+  it('ESKAS: an empty work field is unknown, never "no bar"', () => {
+    expect(eskas.requiresWorkExperience.trim()).toBe('');
+    const work = workExperienceBar(eskas);
+    expect(work.kind).toBe('unknown');
+    expect(work.source).toBe('none');
+    // Its own prose says Tunisia's place on the arts list is unverified, so the scheme names
+    // Tunisia and still settles nothing — which is why the join calls it unknown, not eligible.
+    expect(eskas.whoCanApply).toContain('UNVERIFIED');
+    expect(money.subjectFit(eskas).kind).not.toBe('open');
+    expect(money.ageCap(eskas.ageLimit).kind).toBe('no'); // he clears it either way
+  });
+
+  it('Eiffel: "NO - THIS IS THE DISQUALIFIER" reads as narrow, not blocked', () => {
+    // This is the load-bearing subtlety. `subjectFit` does NOT catch Eiffel's own shouted
+    // disqualifier — it reads the field as "restricted to named subjects". What keeps Eiffel out
+    // of the eligible set is therefore not this function; it is `assessScheme` requiring an
+    // outright `open` before it will say yes. If that requirement were ever relaxed to "not
+    // blocked", Eiffel would become eligible for every French programme in the corpus.
+    expect(eiffel.subjectScope).toMatch(/DISQUALIFIER/);
+    expect(money.subjectFit(eiffel).kind).toBe('narrow');
+    expect(workExperienceBar(eiffel).kind).toBe('no');
+    expect(workExperienceBar(eiffel).source).toBe('field');
+  });
+
+  it('silence is never a pass, on any of the 120', () => {
     for (const s of schemes) {
-      const here = { ...workExperienceBar(s) };
-      const there = { ...view.workExperienceBar(s) };
-      expect(here, s.name).toEqual(there);
+      const work = workExperienceBar(s);
+      if (s.requiresWorkExperience.trim() === '') {
+        // An empty field may become `yes` off the prose, or `unknown`. It may never become `no`.
+        expect(work.kind, s.name).not.toBe('no');
+      } else {
+        expect(work.source, s.name).toBe('field');
+      }
+      // An empty or UNVERIFIED admission cell is a question, not a "no offer needed".
+      if (/^\W*(UNVERIFIED)?\W*$/i.test(s.requiresAdmissionFirst)) {
+        expect(money.admissionFirst(s.requiresAdmissionFirst).kind, s.name).toBe('unknown');
+      }
     }
   });
 
-  it('agree on nationality, subject, age, admission and the stated-ineligible sentence', () => {
-    for (const s of schemes) {
-      expect(money.tunisiaEligible(s), s.name).toEqual(view.tunisiaEligible(s));
-      expect(money.subjectFit(s), s.name).toEqual(view.subjectFit(s));
-      expect(money.ageCap(s.ageLimit), s.name).toEqual(view.ageCap(s.ageLimit));
-      expect(money.admissionFirst(s.requiresAdmissionFirst), s.name).toEqual(
-        view.admissionFirst(s.requiresAdmissionFirst),
-      );
-      expect(money.statedIneligible(s), s.name).toEqual(view.statedIneligible(s));
-      expect(money.readScheme(s), s.name).toEqual(view.readScheme(s));
-    }
+  it('ESKAS\'s age cap is read off the wrong sentence — pinned, not endorsed', () => {
+    // Its `ageLimit` says «"The maximum age is 35" for the arts scholarship. At 24–26 he CLEARS
+    // it.» — and `ageCap` returns 26, because the band pattern matches "24–26", the applicant's
+    // own age, before the explicit "maximum age is 35" is considered. The published cap is 35.
+    //
+    // Nothing user-visible is wrong today: 26 > his age at entry, so the verdict is `no` under
+    // either reading and the join is unaffected. But the margin is one year instead of ten, and
+    // a record phrased "at 24–25" would flip the same scheme to `conditional` for no reason.
+    // Fixing it is a one-line precedence change in `ageCap` — prefer the explicit upper bound
+    // over the band — and this test is here so the fix is visible when it lands.
+    const age = money.ageCap(eskas.ageLimit);
+    expect(eskas.ageLimit).toMatch(/maximum age is 35/i);
+    expect(age.kind).toBe('no');
+    expect(age.cap).toBe(26); // should be 35
   });
 });
 

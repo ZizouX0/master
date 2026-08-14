@@ -32,6 +32,8 @@ const NOT_AVOID = ['WORTH IT', 'CONDITIONAL', ''];
 
 interface Stop {
   label: string;
+  /** The same stop in three or four words, for the console's scale. */
+  short: string;
   /** What this stop removed, in his terms. Named by the thing he controls wherever possible. */
   drop: string;
   filters: FilterState;
@@ -40,31 +42,37 @@ interface Stop {
 const STOPS: Stop[] = [
   {
     label: 'collected in this door',
+    short: 'everything collected',
     drop: 'production and studio craft, everything found',
     filters: step({ audition: ALL_AUDITION }),
   },
   {
     label: 'award a real master’s degree',
+    short: 'a real master’s',
     drop: 'certificates, título propio, RNCP Mastère',
     filters: step({ audition: ALL_AUDITION, degreeOnly: true }),
   },
   {
     label: 'no confirmed live audition',
+    short: 'no live audition',
     drop: 'a production test is the job, not a barrier',
     filters: step({ degreeOnly: true }),
   },
   {
     label: 'taught in English or French',
+    short: 'English or French',
     drop: 'you have no German',
     filters: step({ degreeOnly: true, languageOnly: true }),
   },
   {
     label: 'not ruled out on their own page',
+    short: 'not ruled out',
     drop: 'read, and judged AVOID',
     filters: step({ degreeOnly: true, languageOnly: true }, { verdict: NOT_AVOID }),
   },
   {
     label: '€5k a year or less',
+    short: '€5k a year or less',
     drop: 'cost-disputed records dropped whatever their band says',
     filters: step({ degreeOnly: true, languageOnly: true, cheapOnly: true }, { verdict: NOT_AVOID }),
   },
@@ -75,10 +83,41 @@ function href(f: FilterState): string {
   return '#/find' + (qs ? '?' + qs : '');
 }
 
-export function Throw(p: { onPick?: (f: FilterState) => void }): JSX.Element {
+function useStops(): Array<Stop & { count: number }> {
   const index = useStore((s) => s.index);
+  return STOPS.map((s) => ({ ...s, count: runPipeline(index, s.filters).distinct }));
+}
 
-  const rows = STOPS.map((s) => ({ ...s, count: runPipeline(index, s.filters).distinct }));
+/**
+ * THE SCALE — the same six stops as an index, for the console column.
+ *
+ * Not a smaller throw: a different instrument. It carries the counts and a short name for each,
+ * every one still a live filter, in 240px of height. The fall itself — the reasons, the
+ * proportional travel, the cap coming to rest — is the throw, and the throw runs in the pane
+ * where there is room for it.
+ */
+export function ThrowScale(p: { onPick?: (f: FilterState) => void }): JSX.Element {
+  const rows = useStops();
+  return (
+    <nav aria-label="How the corpus narrows">
+      {rows.map((r, i) => (
+        <a
+          key={r.label}
+          class={'v-scale__row' + (i === rows.length - 1 ? ' v-scale__row--cap' : '')}
+          href={href(r.filters)}
+          onClick={p.onPick ? () => p.onPick!(r.filters) : undefined}
+        >
+          <span class="v-scale__n">{r.count}</span>
+          <span class="v-scale__tick" aria-hidden="true" />
+          <span class="v-scale__label">{r.short}</span>
+        </a>
+      ))}
+    </nav>
+  );
+}
+
+export function Throw(p: { onPick?: (f: FilterState) => void }): JSX.Element {
+  const rows = useStops();
   const top = rows[0]?.count ?? 0;
 
   return (

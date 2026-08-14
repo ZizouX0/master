@@ -106,7 +106,17 @@ const DESK_CSS = `
  *                   ~640px and its prose still stops at --measure-prose, which is the point.
  */
 @media (min-width: 1240px) {
-  .v-main--find { grid-template-columns: minmax(15rem, 17rem) minmax(21rem, 26rem) minmax(0, 1fr);
+  /*
+   * The list is the widest thing on this screen, and that is not a taste call.
+   *
+   * The first cut of this gave the pane 608px and the list 416px, and at 416px the row that
+   * identifies TU Ilmenau's degree truncated to "M.Sc.…" — a label that names nothing, in the
+   * one column he is choosing FROM. Meanwhile every line of prose in the pane stops at
+   * --measure-prose (38rem / 608px), so any width past that measure was doing nothing at all.
+   * So the list and the pane share what is left of the console in a 1.05 : 1 ratio, and both
+   * grow together past 1440. Measured at 1440: console 240, list 541, pane 515.
+   */
+  .v-main--find { grid-template-columns: minmax(12rem, 15rem) minmax(0, 1.05fr) minmax(0, 1fr);
     column-gap: var(--s6); }
   /* The console gets its own travel too: the fader throw alone is 480px, and a sticky column
      taller than the viewport hides its own foot. */
@@ -229,8 +239,39 @@ a.v-stat:hover .v-stat__t, button.v-stat:hover .v-stat__t { color: var(--cap); }
 /* Nothing else here overrides .channel--card's rhythm or the 104px floor under .channel__strip:
    the frame: the row is short because its CONTENT is three lines. One line each, not two: at
    26rem a two-line title clamp alone adds 26px to every row in the list. */
+/*
+ * Truncation is the last resort, not the default. A programme title gets two lines before it is
+ * cut, because a two-line title that identifies the programme beats a one-line title that does
+ * not — "M.Sc. in Media Technology and Broadcasting" is worth 26px; "M.Sc.…" is worth nothing.
+ * The locator line under it keeps one line: it is where the thing is, not what it is, and the
+ * full institution name is in the pane a click away.
+ */
+.v-2line { display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2;
+  -webkit-box-orient: vertical; overflow: hidden; }
 .v-1line { display: -webkit-box; -webkit-line-clamp: 1; line-clamp: 1;
   -webkit-box-orient: vertical; overflow: hidden; }
+
+/*
+ * THE SCALE — the throw, reduced to an index.
+ *
+ * The fader throw needs about 400px of width for its reasons to set on one line and 480px of
+ * height to fall through. It does not have that in a 240px console column: squeezed there it
+ * wraps to three lines a stop and pushes the list below the fold, which loses the one thing it
+ * was for. So the console carries the counts and short labels only — a scale, readable at a
+ * glance, every stop still a live filter — and the throw itself runs at full size in the pane,
+ * which is empty until he opens a record and is exactly the shape the throw wants.
+ */
+.v-scale { margin: 0; }
+.v-scale__row { display: grid; grid-template-columns: 3.2em 16px minmax(0, 1fr);
+  column-gap: var(--s2); align-items: center; min-height: 40px;
+  color: inherit; text-decoration: none; }
+.v-scale__n { text-align: right; font: 400 var(--t-data) / 1 var(--mono); color: var(--legend);
+  font-variant-numeric: tabular-nums; }
+.v-scale__tick { height: 2px; background: var(--strip); }
+.v-scale__label { font: 400 var(--t-micro) / 1.3 var(--sans); color: var(--strip); }
+.v-scale__row:hover .v-scale__label { color: var(--cap); }
+.v-scale__row--cap .v-scale__tick { height: 9px; background: var(--cap); border-radius: 1px; }
+.v-scale__row--cap .v-scale__label { color: var(--legend); }
 .v-list__where { margin-top: 2px; font: 400 var(--t-inst) / 1.35 var(--sans); font-stretch: 100%;
   color: var(--strip); }
 .v-list__where b { font-weight: 400; color: var(--legend); }

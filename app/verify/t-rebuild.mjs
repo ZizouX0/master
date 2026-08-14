@@ -9,6 +9,17 @@ const ok = (name, pass, detail = '') => {
   console.log(`${pass ? 'PASS' : 'FAIL'}  ${name}${detail ? ' — ' + detail : ''}`);
 };
 
+/** Poll a boolean expression until it is true. Replaces every arbitrary wait in this file. */
+async function until(pg, expr, tries = 40, gap = 150) {
+  for (let i = 0; i < tries; i++) {
+    try {
+      if ((await evalJs(pg, expr)) === true) return true;
+    } catch { /* mid-render; try again */ }
+    await sleep(gap);
+  }
+  return false;
+}
+
 const { proc, port, wsUrl } = await launch('/tmp/cdp-rebuild');
 const browser = await newBrowser(port, wsUrl);
 
@@ -195,8 +206,12 @@ await go(wide, '#/p/105', 1800);
 // ── 8. personal state keys on the durable hash ──────────────────────────────
 await go(wide, `#/record/${key}`, 1600);
 {
-  await evalJs(wide, `(() => { const b=[...document.querySelectorAll('button')].find(b=>/shortlist/i.test(b.textContent)); b && b.click(); return true; })()`);
-  await sleep(900);
+  // Poll rather than sleep: the pane re-renders when the route changes and the store's write is
+  // debounced by 400ms, so a fixed wait is a race that fails about half the time on a cold run.
+  const clicked = await until(wide,
+    `(() => { const b=[...document.querySelectorAll('button')].find(b=>/add to your shortlist/i.test(b.textContent)); if(!b) return false; b.click(); return true; })()`);
+  ok('8 · the record page offers to track it', clicked === true);
+  await until(wide, `!!localStorage.getItem('door3.personal.v1')`);
   const raw = await evalJs(wide, `localStorage.getItem('door3.personal.v1')`);
   const parsed = raw ? JSON.parse(raw) : { entries: {} };
   const keys = Object.keys(parsed.entries || {});

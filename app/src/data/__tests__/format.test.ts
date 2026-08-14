@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { deadlineDisplay, parseDeadline, renderField } from '../../lib/format';
+import { deadlineDisplay, mentionsStaleDuplicatePointer, parseDeadline, renderField } from '../../lib/format';
 import { records, schemes } from './fixtures';
 
 const MONTH_NAME = /\b(january|february|march|april|may|june|july|august|september|october|november|december)\b/i;
@@ -100,5 +100,44 @@ describe('renderField', () => {
     expect(f.kind).toBe('value');
     expect(f.caveated).toBe(true);
     expect(renderField('EUR 0').caveated).toBe(false);
+  });
+});
+
+// ─────────────────────────────────────────────────────────────────────────────
+// The stale duplicate pointers — BUILD-SPEC §3
+//
+// A `correction` may say "DUPLICATE of index 8". Every one of those 20 pointers crosses a country
+// boundary: they are ids from the source workbook's id space, and the export renumbers. The
+// sentence is shown verbatim and the number is followed nowhere. This flag is what puts the
+// warning beside it, so it has to fire on every record that carries a pointer — an earlier
+// pattern here matched only the stem "indi", which caught "indices" (8 records) and missed
+// "index" (12), i.e. it was silent on the majority and on the exact phrasing the spec quotes.
+// ─────────────────────────────────────────────────────────────────────────────
+
+describe('mentionsStaleDuplicatePointer', () => {
+  const carriers = records.filter((r) => /DUPLICATE of ind/i.test(r.correction));
+
+  it('fires on both spellings', () => {
+    expect(mentionsStaleDuplicatePointer('DUPLICATE of index 8 — same programme, same URL')).toBe(true);
+    expect(mentionsStaleDuplicatePointer('DUPLICATE of indices 7 and 22 — same MA')).toBe(true);
+  });
+
+  it('fires on every one of the records that carries a pointer, both spellings present', () => {
+    const singular = carriers.filter((r) => /DUPLICATE of index\b/i.test(r.correction));
+    const plural = carriers.filter((r) => /DUPLICATE of indices/i.test(r.correction));
+    // If the corpus is ever re-exported without one of the two spellings, this test should be
+    // read again rather than relaxed — the point is that both forms exist and both must fire.
+    expect(singular.length).toBeGreaterThan(0);
+    expect(plural.length).toBeGreaterThan(0);
+    expect(singular.length + plural.length).toBe(carriers.length);
+    for (const r of carriers) {
+      expect(mentionsStaleDuplicatePointer(r.correction), `record ${r.id}`).toBe(true);
+    }
+  });
+
+  it('does not fire on prose that merely mentions a duplicate', () => {
+    expect(mentionsStaleDuplicatePointer('')).toBe(false);
+    expect(mentionsStaleDuplicatePointer('This looks like a duplicate listing of the same course.')).toBe(false);
+    expect(mentionsStaleDuplicatePointer('DUPLICATE of the Berlin entry')).toBe(false);
   });
 });

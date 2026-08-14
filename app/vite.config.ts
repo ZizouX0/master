@@ -57,6 +57,23 @@ function prunePublicSource(outDir: string): Plugin {
   };
 }
 
+/**
+ * The single-file build inlines the four faces as data: URIs, which means the preload link in
+ * index.html is rewritten to point at a data: URI too — a second copy of the 31 KB body face,
+ * base64'd, preloading something that is already in the document. Strip it. In the hosted build
+ * the same link is a real preload of a real file and stays exactly as it is.
+ */
+function dropInlinedPreload(): Plugin {
+  return {
+    name: 'door3-drop-inlined-preload',
+    apply: 'build',
+    enforce: 'post',
+    transformIndexHtml(html) {
+      return html.replace(/<link rel="preload"[^>]*href="data:[^"]*"[^>]*>/g, '');
+    },
+  };
+}
+
 /** vite-plugin-singlefile emits index.html; the offline artefact is named door3.html. */
 function renameSingleOutput(outDir: string): Plugin {
   return {
@@ -76,7 +93,7 @@ export default defineConfig(({ mode }) => {
     // a USB stick. Routing is hash-based in both, so neither needs a server rewrite.
     base: single ? './' : '/master/',
     plugins: single
-      ? [preact(), inlineData(), viteSingleFile(), renameSingleOutput('dist-single')]
+      ? [preact(), inlineData(), viteSingleFile(), dropInlinedPreload(), renameSingleOutput('dist-single')]
       : [preact(), prunePublicSource('dist')],
     // In single mode the payloads are inlined, so copying public/data/ next to the file would
     // ship 2 MB of JSON nobody reads.

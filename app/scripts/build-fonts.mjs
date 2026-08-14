@@ -2,7 +2,7 @@
 /**
  * build-fonts.mjs — the three faces of The Desk, subset from upstream, reproducibly.
  *
- *   node scripts/build-fonts.mjs            build public/fonts/*.woff2 + metrics.json
+ *   node scripts/build-fonts.mjs            build src/fonts/*.woff2 + metrics.json
  *   node scripts/build-fonts.mjs --check    rebuild nothing; verify styles.css still agrees
  *                                           with the computed metric-override table
  *
@@ -23,7 +23,7 @@
  *     numbers out of a document. `size-adjust` is the ratio of the webfont's mean advance to
  *     the fallback's mean advance — and the mean is weighted by *this app's own character
  *     frequencies*, not measured over one sample sentence, so the number is right for the text
- *     that will actually be set in it. The table is written to public/fonts/metrics.json and
+ *     that will actually be set in it. The table is written to src/fonts/metrics.json and
  *     `--check` fails if src/styles.css has drifted from it.
  *
  *  3. **It leaves Greek and Cyrillic out on purpose.** The data carries 113 of them
@@ -42,7 +42,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const DATA = join(ROOT, 'public', 'data');
-const OUT = join(ROOT, 'public', 'fonts');
+const OUT = join(ROOT, 'src', 'fonts');
 const CACHE = join(ROOT, 'scripts', '.font-cache');
 const TMP = join(CACHE, 'tmp');
 const CHECK = process.argv.includes('--check');
@@ -449,7 +449,7 @@ function verifyStyles(report) {
 if (CHECK) {
   const file = join(OUT, 'metrics.json');
   if (!existsSync(file)) {
-    console.error('no public/fonts/metrics.json — run without --check first');
+    console.error('no src/fonts/metrics.json — run without --check first');
     process.exit(1);
   }
   verifyStyles(JSON.parse(readFileSync(file, 'utf8')));
