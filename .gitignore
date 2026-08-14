@@ -7,3 +7,7 @@ __pycache__/
 
 # scratch helpers written by sweep agents inside the results directory
 .masters-search/results/artist-sweep/_*.py
+
+# app build output and dependencies
+app/node_modules/
+app/dist/
