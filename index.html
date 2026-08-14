@@ -6,7 +6,21 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="robots" content="noindex" />
     <title>Door 3 — music production master's</title>
-    <script type="module" crossorigin src="/master/assets/index-DNar3ECY.js"></script>
+    <!--
+      The body face only. The legend and the mono faces are metric-matched to the fallback (see
+      styles.css §1), so they cost nothing while they load; preloading all four would spend the
+      first 110 KB of a Tunisian mobile connection before the first sentence is readable.
+      `crossorigin` is required even same-origin, or the preload is discarded and fetched twice.
+
+      The path goes through Vite's asset pipeline rather than pointing at a public/ file, and
+      that is what makes the offline build work: the four faces used to be fetched from an
+      absolute /master/fonts/… URL, which resolves to nothing when door3.html is opened from a
+      USB stick, so the single-file artefact silently lost its entire typography. Routed through
+      the pipeline, the hosted build gets hashed, immutably-cacheable files and the single-file
+      build gets the same bytes inlined as data: URIs.
+    -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/master/assets/literata-body-DMZEVmUg.woff2" />
+    <script type="module" crossorigin src="/master/assets/index-WV5Lq_fk.js"></script>
   </head>
   <body>
     <div id="app"></div>
