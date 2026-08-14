@@ -7,12 +7,12 @@
   "degrees": 261,
   "notDegrees": 130,
   "unclear": 7,
-  "verified": 127,
+  "verified": 131,
   "worthIt": 8,
-  "conditional": 33,
-  "avoid": 86,
-  "noAudition": 186,
-  "needsAudition": 75,
+  "conditional": 35,
+  "avoid": 88,
+  "noAudition": 227,
+  "needsAudition": 34,
   "countries": 41,
   "withUrl": 397
  },
@@ -165,8 +165,8 @@
    "AUDITION — hardest for you": 16
   },
   "verdict": {
-   "AVOID": 86,
-   "CONDITIONAL": 33,
+   "AVOID": 88,
+   "CONDITIONAL": 35,
    "WORTH IT": 8
   }
  }

@@ -84,13 +84,19 @@ def analyse(rec):
     why = str(rec.get("verdictWhy") or "")
     aud = str(rec.get("audition") or "")
 
-    out = {"auditionDisputed": "", "costDisputed": "", "existenceDisputed": ""}
+    out = {"auditionDisputed": "", "auditionSource": "",
+           "costDisputed": "", "existenceDisputed": ""}
 
-    # an audition named anywhere in the verified prose beats a structured "no audition"
-    for field in (corr, why, aud):
+    # An audition named in the VERIFIED prose is a confirmed finding. The same words in
+    # the raw auditionSpec field are only a suspicion — that field was written by a search
+    # agent and never re-checked, so treating the two alike would let 46 unverified records
+    # wear the authority of the 36 verified ones. Confirmed wins; suspected is still shown,
+    # but labelled as what it is.
+    for field, src in ((corr, "confirmed"), (why, "confirmed"), (aud, "suspected")):
         h = _hit(RX_AUDITION, field)
         if h:
             out["auditionDisputed"] = h
+            out["auditionSource"] = src
             break
     if corr:
         h = _hit(RX_COST, corr)

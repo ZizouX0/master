@@ -40,7 +40,10 @@ def programmes():
         # a verified correction beats the derived flag. Babelsberg and FAMU read
         # "no audition, free" until you read the prose, and a filter would have
         # handed him five programmes he cannot get into.
-        needs_audition = "AUDITION" in r["_gate"] or bool(disp["auditionDisputed"])
+        # only a CONFIRMED audition (named in verified prose) overrides the gate.
+        # A suspicion from the unverified auditionSpec field is surfaced, not enforced.
+        needs_audition = ("AUDITION" in r["_gate"]
+                          or disp["auditionSource"] == "confirmed")
         rows.append({
             "id": i,
             "country": r["Country"], "region": r["_reg"], "city": r["City"],
@@ -52,10 +55,13 @@ def programmes():
             "needsAudition": needs_audition,
             # what a verified correction contradicts, and the phrase that says so
             "auditionDisputed": disp["auditionDisputed"],
+            "auditionSource": disp["auditionSource"],
+            "auditionSuspected": disp["auditionSource"] == "suspected",
             "costDisputed": disp["costDisputed"],
             "existenceDisputed": disp["existenceDisputed"],
-            "hasDispute": bool(disp["auditionDisputed"] or disp["costDisputed"]
-                               or disp["existenceDisputed"]),
+            # a dispute is only "verified" when it came from verified prose
+            "hasVerifiedDispute": bool(disp["costDisputed"] or disp["existenceDisputed"]
+                                       or disp["auditionSource"] == "confirmed"),
             "chance": r["Chance for you"], "whyChance": r["Why that chance"],
             "costBand": r["Cost band (you)"],
             "language": r["Taught in"], "languageOk": bool(M.language_ok(r["Taught in"])),
