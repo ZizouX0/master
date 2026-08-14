@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildCorpus, normalise, search } from '../search';
+import { buildCorpus, normalise, search, searchScores } from '../search';
 import type { ProgrammeIndex } from '../../types';
 import { recordKey } from '../dedup';
 import { records } from './fixtures';
@@ -69,6 +69,28 @@ describe('search', () => {
     const card = idsFor('portfolio', cardCorpus);
     const full = idsFor('portfolio', fullCorpus);
     expect(full.length).toBeGreaterThan(card.length);
+  });
+
+  it('caches the last scan without ever answering for the wrong corpus or query', () => {
+    // The facet counter asks eleven times per keystroke. The cache must be invisible: the same
+    // question gets the same answer, a different question gets a fresh scan, and the corpus
+    // swapping under it when detail.json lands must not serve stale card-only scores.
+    const a = searchScores(fullCorpus, 'mastering')!;
+    expect(searchScores(fullCorpus, 'mastering')).toBe(a); // hit — same object, no rescan
+    expect([...a.keys()].sort()).toEqual(idsFor('mastering').sort());
+
+    const b = searchScores(fullCorpus, 'sound')!;
+    expect(b).not.toBe(a);
+    expect([...b.keys()].sort()).toEqual(idsFor('sound').sort());
+
+    // Same query, different corpus: the prose fields are gone, so the answer must change.
+    const card = searchScores(cardCorpus, 'portfolio')!;
+    const full = searchScores(fullCorpus, 'portfolio')!;
+    expect(full.size).toBeGreaterThan(card.size);
+
+    // An empty query is "no search active", and that null must survive caching as a null.
+    expect(searchScores(fullCorpus, '   ')).toBeNull();
+    expect(searchScores(fullCorpus, '   ')).toBeNull();
   });
 
   it('scans the whole corpus in a few milliseconds', () => {

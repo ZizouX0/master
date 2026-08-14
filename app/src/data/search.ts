@@ -159,9 +159,30 @@ export function search(corpus: Corpus, query: string): SearchHit[] | null {
   return hits;
 }
 
-/** Convenience for the filter pipeline: id → score, or null when no search is active. */
+/**
+ * Convenience for the filter pipeline: id → score, or null when no search is active.
+ *
+ * Memoised on the last (corpus, query) pair, because one keystroke does not run one scan. The
+ * facet counter runs the pipeline eleven times — once per facet, leave-one-out — and each of
+ * those ran the full text scan again over the same query. Measured: 8.22 ms with a query against
+ * 1.16 ms without, which on a phone is about 45 ms of every keystroke spent re-deriving an
+ * identical Map. A single entry is enough; the query changes on every keystroke and nothing
+ * benefits from remembering the one before it.
+ *
+ * Corpus identity is compared by reference, which is exactly right: the corpus object is replaced
+ * when detail.json arrives, and that rebuild must invalidate the cache.
+ *
+ * The Map is shared between callers, so treat it as read-only.
+ */
+let lastCorpus: Corpus | null = null;
+let lastQuery = '';
+let lastScores: Map<number, number> | null = null;
+
 export function searchScores(corpus: Corpus, query: string): Map<number, number> | null {
+  if (corpus === lastCorpus && query === lastQuery) return lastScores;
   const hits = search(corpus, query);
-  if (!hits) return null;
-  return new Map(hits.map((h) => [h.id, h.score]));
+  lastCorpus = corpus;
+  lastQuery = query;
+  lastScores = hits ? new Map(hits.map((h) => [h.id, h.score])) : null;
+  return lastScores;
 }
