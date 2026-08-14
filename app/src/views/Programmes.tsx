@@ -24,7 +24,10 @@ import {
   listHref,
   type ActiveFilter,
 } from '../components/Filters';
-import { emptyFilters, isDefaultFilters, predicatesFor, runPipeline, type FilterState } from '../data/filters';
+import { emptyFilters, isDefaultFilters, predicatesFor, runPipeline, type AuditionCertainty, type FilterState } from '../data/filters';
+
+/** Every certainty, i.e. no audition constraint at all. */
+const ALL_AUDITION: AuditionCertainty[] = ['confirmed', 'suspected', 'none-found'];
 import type { ProgrammeIndex } from '../types';
 
 const PAGE_SIZE = 40;
@@ -198,6 +201,13 @@ export default function Programmes(): JSX.Element {
   );
 
   const active: ActiveFilter[] = activeFilters(filters);
+  // The default hides confirmed live auditions. Saying "that is all N" while
+  // a match sits behind that filter is a completeness claim the app has not earned.
+  const hiddenByAudition =
+    filters.audition.length < ALL_AUDITION.length
+      ? Math.max(0, runPipeline(index, { ...filters, audition: ALL_AUDITION }).rows.length - ordered.length)
+      : 0;
+
   const page = ordered.slice(0, shown);
 
   return (
@@ -277,7 +287,16 @@ export default function Programmes(): JSX.Element {
             </button>
           ) : (
             <p class="dim" style="font-size:12px;margin-top:16px">
-              That is all {ordered.length}.
+              {hiddenByAudition > 0 ? (
+                <>
+                  {ordered.length} shown. <strong>{hiddenByAudition} more match</strong> and{' '}
+                  {hiddenByAudition === 1 ? 'is' : 'are'} hidden because{' '}
+                  {hiddenByAudition === 1 ? 'it needs' : 'they need'} a live audition.{' '}
+                  <a href={'#' + listHref({ ...filters, audition: ALL_AUDITION })}>Show {hiddenByAudition === 1 ? 'it' : 'them'} →</a>
+                </>
+              ) : (
+                <>That is all {ordered.length}.</>
+              )}
             </p>
           )}
         </>
