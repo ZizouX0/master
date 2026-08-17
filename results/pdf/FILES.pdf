@@ -21,8 +21,10 @@ tr:nth-child(even) td { background: #f6f8fa; }
 tr { page-break-inside: avoid; }
 hr { border: none; border-top: 1px solid #d0d7de; margin: 14pt 0; }
 </style></head><body><h1>Every file, and what it is</h1>
-<p>Everything produced across the whole search, from the first sweep to the live site.
-Written 16 August 2026.</p>
+<p>The complete inventory — every document, workbook, dataset, script and source file
+produced across the whole search, from the first sweep in July 2026 to the live site.
+Nothing summarised away.</p>
+<p><strong>Totals across everything:</strong> 1,839 opportunities · 88 countries · 1,433 real master's degrees · 530 verified by a second agent.</p>
 <p><strong>If you only open four things:</strong></p>
 <table>
 <thead>
@@ -34,148 +36,193 @@ Written 16 August 2026.</p>
 <tbody>
 <tr>
 <td><strong>https://zizoux0.github.io/master/</strong></td>
-<td>The app. Door 3, all 398 records, with your deadlines and your own notes.</td>
-</tr>
-<tr>
-<td><code>results/DOOR3.xlsx</code></td>
-<td>The same data as a filterable workbook, 19 tabs.</td>
-</tr>
-<tr>
-<td><code>results/DOOR3.md</code></td>
-<td>The written version — read this if you want the argument, not the table.</td>
+<td>The app — Door 3, all 398 records, your deadlines, your notes</td>
 </tr>
 <tr>
 <td><code>results/MASTER-all-opportunities.xlsx</code></td>
-<td>Everything ever collected: 1,839 rows, 88 countries, all three doors.</td>
+<td><strong>Everything ever found</strong> — 1,839 rows, 88 countries, 20 tabs</td>
+</tr>
+<tr>
+<td><code>results/THE-COMPLETE-GUIDE.md</code></td>
+<td>The whole search written out — 551 lines</td>
+</tr>
+<tr>
+<td><code>results/DOOR3.xlsx</code></td>
+<td>The door you chose, 19 tabs</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2>1. The live app</h2>
-<p>Built from <code>app/</code>. Deployed from the <code>gh-pages</code> branch.</p>
+<h1>1 · Written documents</h1>
+<p>All in <code>results/</code>. Every one also exists as a PDF in <code>results/pdf/</code>.</p>
 <table>
 <thead>
 <tr>
 <th>File</th>
+<th style="text-align: right;">Lines</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>THE-COMPLETE-GUIDE.md</code></strong></td>
+<td style="text-align: right;">551</td>
+<td><strong>Everything gathered across five separate searches, in one document.</strong> Sound design, music production, audio engineering, music technology, music business. The single most complete written thing here.</td>
+</tr>
+<tr>
+<td><strong><code>PRIVATE-SCHOOLS.md</code></strong></td>
+<td style="text-align: right;">461</td>
+<td><strong>114 private institutions</strong> in Spain, Portugal, Netherlands and Italy, searched in English <em>and</em> Spanish, Portuguese, Dutch and Italian. This is where most of the fake-master's traps were caught.</td>
+</tr>
+<tr>
+<td><strong><code>DEGREE-CHECK.md</code></strong></td>
+<td style="text-align: right;">388</td>
+<td><strong>The certificate audit.</strong> All 1,091 records re-checked against what they actually award. This is what <em>"I want masters not a certificate"</em> produced — <em>título propio</em>, RNCP level-5 <em>Mastère</em>, <em>pós-graduação</em>, UK validation chains.</td>
+</tr>
+<tr>
+<td><strong><code>PATHS-DEEP-DIVE.md</code></strong></td>
+<td style="text-align: right;">336</td>
+<td><strong>The three doors explained in depth</strong>, written when you were deciding between them, plus the section explaining what a "portfolio" actually means in practice.</td>
+</tr>
+<tr>
+<td><strong><code>EUROPE-GAPFILL.md</code></strong></td>
+<td style="text-align: right;">329</td>
+<td><strong>85 institutions across 26 countries that no earlier sweep had touched.</strong> The pass that existed to make sure nothing in Europe was missed.</td>
+</tr>
+<tr>
+<td><strong><code>DOOR3.md</code></strong></td>
+<td style="text-align: right;">260</td>
+<td><strong>Door 3 complete</strong> — production, studio practice, mixing, mastering, Tonmeister, sound direction, popular-music production, beat-making, DJ and electronic production, every European option.</td>
+</tr>
+<tr>
+<td><strong><code>ARTIST-ROUTE.md</code></strong></td>
+<td style="text-align: right;">153</td>
+<td><strong>Doors 1 and 3 together</strong>, built when you asked to focus on the two closest to being an artist. Door 1 = electronic/computer music, sound art, electroacoustic composition.</td>
+</tr>
+<tr>
+<td><strong><code>SHORTLIST.md</code></strong></td>
+<td style="text-align: right;">130</td>
+<td><strong>Top 15 for your profile</strong>, ranked: fully funded first accepts a software-engineering background builds real producer skills realistic odds. Each with its location.</td>
+</tr>
+<tr>
+<td><strong><code>SOUND-DESIGN-EUROPE.md</code></strong></td>
+<td style="text-align: right;">125</td>
+<td><strong>319 programmes</strong> across every European country, searched in the local language too — <code>Sounddesign</code>, <code>conception sonore</code>, <code>reżyseria dźwięku</code>, <code>zvuková skladba</code>.</td>
+</tr>
+<tr>
+<td><strong><code>FILE-INDEX.md</code></strong></td>
+<td style="text-align: right;">88</td>
+<td>The earlier index. <strong>This file replaces it.</strong></td>
+</tr>
+<tr>
+<td><strong><code>ACTION-TIMELINE.md</code></strong></td>
+<td style="text-align: right;">76</td>
+<td>What to do when, month by month, to September 2027. <strong>The app's <code>This week</code> screen supersedes this</strong> — it has real dates.</td>
+</tr>
+<tr>
+<td><strong><code>COULD-NOT-VERIFY.md</code></strong></td>
+<td style="text-align: right;">31</td>
+<td><strong>Honest gaps.</strong> Of 546 opportunities: 272 fully verified, 269 partial, 5 unverified — and exactly which fields are missing so you can check them yourself.</td>
+</tr>
+<tr>
+<td><strong><code>README.md</code></strong></td>
+<td style="text-align: right;">25</td>
+<td>Front page of the <code>results/</code> folder.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>2 · Workbooks</h1>
+<p>All filterable — real Excel Tables with sticky filter buttons, a search box in every dropdown, frozen identity columns.</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th style="text-align: right;">Tabs</th>
+<th style="text-align: right;">Rows</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>MASTER-all-opportunities.xlsx</code></strong></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7,471</td>
+<td><strong>The complete dataset.</strong> Tabs: START HERE · BEST BETS · Master's degrees only · NOT a degree — avoid · Strong + English or French · Fully funded · Has a scholarship · Free or cheap · Everything · Scholarship index, then by region — Western/Southern/Central Europe, Nordics &amp; Baltics, Balkans &amp; Türkiye, Asia-Pacific, North America, Middle East &amp; North Africa, Eastern Europe &amp; Caucasus.</td>
+</tr>
+<tr>
+<td><strong><code>ARTIST-ROUTE.xlsx</code></strong></td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">4,764</td>
+<td><strong>Doors 1 and 3.</strong> Verified worth it / conditional / avoid as separate tabs, best bets, no audition, free or cheap, fully funded, has a scholarship, not-a-degree, then one tab per country — UK, France, Italy, Germany, Belgium, Netherlands, Switzerland, Sweden and more.</td>
+</tr>
+<tr>
+<td><strong><code>SOUND-and-SCHOLARSHIPS.xlsx</code></strong></td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">4,074</td>
+<td><strong>Sound programmes joined to the money that could fund them.</strong> Sound design &amp; production · audio engineering · music tech · no portfolio needed · fully funded · <em>sound + a scholarship</em> · all scholarships · scholarship index, then by country.</td>
+</tr>
+<tr>
+<td><strong><code>DOOR3.xlsx</code></strong></td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1,773</td>
+<td><strong>The door you chose.</strong> START HERE · verified worth it · conditional · best bets · no audition · free or cheap · fully funded · has a scholarship · all degrees · NOT a degree · award unclear — ask · verified avoid · everything, then by region: France &amp; Benelux, Central &amp; Eastern, German-speaking, Southern Europe, UK &amp; Ireland, Nordics &amp; Baltics.</td>
+</tr>
+<tr>
+<td><strong><code>opportunities.xlsx</code></strong></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1,911</td>
+<td>The phase-1 workbook. All opportunities · fully funded · best bets · sound &amp; music tech · sound design &amp; prod · music business · by country · full detail.</td>
+</tr>
+<tr>
+<td><strong><code>sound-design-europe.xlsx</code></strong></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1,079</td>
+<td>The first deep Europe sound sweep. A-LIST · all programmes · no audition · <strong>accepts non-music</strong> · fully funded · by country.</td>
+</tr>
+<tr>
+<td><strong><code>private-schools-es-pt-nl-it.xlsx</code></strong></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">580</td>
+<td>Private institutions, four countries. <strong>Official Only</strong> · Worth It · AVOID · then one tab each for Italy, Netherlands, Portugal, Spain.</td>
+</tr>
+<tr>
+<td><strong><code>europe-gapfill.xlsx</code></strong></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">384</td>
+<td>The gap sweep. No portfolio needed · English-taught · free or cheap, then <strong>one tab per country</strong> across 26 countries — Austria through Poland, Bulgaria, Georgia, Lithuania and the rest.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>3 · PDFs</h1>
+<p><code>results/pdf/</code> — printable versions of every document above, plus this index.</p>
+<p><code>ACTION-TIMELINE</code> · <code>ARTIST-ROUTE</code> · <code>COULD-NOT-VERIFY</code> · <code>DEGREE-CHECK</code> · <code>DOOR3</code> · <code>EUROPE-GAPFILL</code> · <code>FILE-INDEX</code> · <code>FILES</code> · <code>PATHS-DEEP-DIVE</code> · <code>PRIVATE-SCHOOLS</code> · <code>README</code> · <code>SHORTLIST</code> · <code>SOUND-DESIGN-EUROPE</code> · <code>THE-COMPLETE-GUIDE</code></p>
+<hr />
+<h1>4 · The live app</h1>
+<table>
+<thead>
+<tr>
+<th>Where</th>
 <th>What it is</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>https://zizoux0.github.io/master/</strong></td>
-<td>The site. Three screens: <strong>This week</strong> (what you owe and by when), <strong>Find</strong> (search, with the record opening beside the list), <strong>Shortlist</strong> (your tracker — starred, status, next action, notes, exportable).</td>
+<td>The site. <strong>This week</strong> — what you owe, to whom, by when. <strong>Find</strong> — search with the record opening beside the list. <strong>Shortlist</strong> — your tracker: status, next action, notes, export.</td>
 </tr>
 <tr>
-<td><strong>https://zizoux0.github.io/master/door3.html</strong></td>
-<td>The same app as one 2.4 MB file. Save it and it works with no internet and no server — fonts included.</td>
+<td><strong>/master/door3.html</strong></td>
+<td>The same app as <strong>one 2.4 MB file</strong>. Save it; it works with no internet and no server, fonts included.</td>
 </tr>
 <tr>
 <td><code>app/dist/</code></td>
-<td>The built site as deployed. Regenerate with <code>npm run build</code>.</td>
+<td>The built site as deployed.</td>
 </tr>
 <tr>
 <td><code>app/dist-single/door3.html</code></td>
-<td>The offline copy, before upload.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2>2. Door 3 — the final research (music production &amp; studio craft, Europe)</h2>
-<p>This is the door you chose: making records, producing, mixing, studio craft.
-<strong>398 records · 261 real master's degrees · 130 not degrees · 41 countries · 149 verified by a second agent · 30 best bets.</strong></p>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>What it is</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>results/DOOR3.md</code></td>
-<td>The combined Door-3 document. Everything collected plus everything the deep sweep added, in one argument.</td>
-</tr>
-<tr>
-<td><code>results/DOOR3.xlsx</code></td>
-<td>19 tabs, all filterable: by country, cost band, language, gate, verdict, degree-or-not, audition-or-not.</td>
-</tr>
-<tr>
-<td><code>results/pdf/DOOR3.pdf</code></td>
-<td>The same document, printable.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>The decisive finding is in there:</strong> filtering by your own hard constraints — real degree, no live audition, English or French, affordable — left 24 programmes, 21 of which had never been verified. Verifying exactly those 21 returned <strong>1 worth it, 7 conditional, 13 avoid</strong>. The one is <strong>Politecnico di Milano</strong> (computer engineering named first in the entry requirements, no portfolio, no entrance exam, English, €3,883/yr, with DSU Lombardia paying €5,800–6,700 in cash).</p>
-<hr />
-<h2>3. The earlier research — still valid, wider scope</h2>
-<p>These came before you narrowed to Door 3. Nothing in them is wrong; they simply cover more ground than you ended up wanting.</p>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>What it is</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>results/MASTER-all-opportunities.xlsx</code></td>
-<td><strong>The complete dataset</strong> — 1,839 opportunities, 88 countries, 1,433 real degrees, 530 verified. Every sweep merged.</td>
-</tr>
-<tr>
-<td><code>results/THE-COMPLETE-GUIDE.md</code></td>
-<td>The long written guide to the whole search — how to read a fit score, what a portfolio means, what the cost columns mean.</td>
-</tr>
-<tr>
-<td><code>results/PATHS-DEEP-DIVE.md</code></td>
-<td>The three doors explained in depth: <strong>1</strong> sound/music/tech, <strong>2</strong> music business, <strong>3</strong> sound design &amp; production. Written when you were deciding.</td>
-</tr>
-<tr>
-<td><code>results/ARTIST-ROUTE.md</code> + <code>.xlsx</code></td>
-<td>Doors 1 and 3 together, built when you asked to focus on those two as an artist.</td>
-</tr>
-<tr>
-<td><code>results/DEGREE-CHECK.md</code></td>
-<td><strong>The certificate audit.</strong> Which "Master" titles are not master's degrees — <em>título propio</em>, RNCP-5 <em>Mastère</em>, <em>pós-graduação</em>, UK validation chains. This is what "I want masters not a certificate" produced.</td>
-</tr>
-<tr>
-<td><code>results/SHORTLIST.md</code></td>
-<td>The early shortlist, with each entry's location.</td>
-</tr>
-<tr>
-<td><code>results/SOUND-DESIGN-EUROPE.md</code> + <code>sound-design-europe.xlsx</code></td>
-<td>The first deep Europe sweep of sound design &amp; production.</td>
-</tr>
-<tr>
-<td><code>results/SOUND-and-SCHOLARSHIPS.xlsx</code></td>
-<td>Sound design/production programmes joined with the scholarships that could fund them.</td>
-</tr>
-<tr>
-<td><code>results/PRIVATE-SCHOOLS.md</code> + <code>private-schools-es-pt-nl-it.xlsx</code></td>
-<td>Private institutions in Spain, Portugal, Netherlands, Italy.</td>
-</tr>
-<tr>
-<td><code>results/EUROPE-GAPFILL.md</code> + <code>europe-gapfill.xlsx</code></td>
-<td>The pass that covered European universities the earlier sweeps had missed.</td>
-</tr>
-<tr>
-<td><code>results/opportunities.xlsx</code></td>
-<td>Phase-1 raw opportunities workbook.</td>
-</tr>
-<tr>
-<td><code>results/ACTION-TIMELINE.md</code></td>
-<td>What to do when — written before the app's calendar existed. <strong>The app's <code>This week</code> supersedes this.</strong></td>
-</tr>
-<tr>
-<td><code>results/COULD-NOT-VERIFY.md</code></td>
-<td>Honest list of what could not be confirmed from any published source.</td>
-</tr>
-<tr>
-<td><code>results/README.md</code>, <code>results/FILE-INDEX.md</code></td>
-<td>Earlier index files. <strong>This file supersedes them.</strong></td>
-</tr>
-<tr>
-<td><code>results/pdf/*.pdf</code></td>
-<td>Printable versions of all the markdown documents above.</td>
+<td>The offline copy before upload.</td>
 </tr>
 </tbody>
 </table>
@@ -190,18 +237,18 @@ Written 16 August 2026.</p>
 <tbody>
 <tr>
 <td><code>results/console.html</code></td>
-<td>The first artifact. You said you didn't like it and went back to documents.</td>
+<td>The first artifact. You didn't like it and went back to documents.</td>
 </tr>
 <tr>
 <td><code>results/door3-app.html</code></td>
-<td>The single-file HTML app. You said you wanted a real website, not HTML. Replaced by the live site and <code>door3.html</code>.</td>
+<td>The single-file HTML app. You asked for a real website instead. Replaced by the live site.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2>4. The app's source</h2>
-<p><code>app/</code> — Preact 10 + Vite 7 + zustand + TypeScript. No CSS framework, no component library, no search library, no backend, no analytics.</p>
-<h3>Screens and components</h3>
+<h1>5 · The app's source</h1>
+<p><code>app/</code> — Preact 10 + Vite 7 + zustand + TypeScript 5.9. No CSS framework, no component library, no search library, no backend, no analytics, no fonts from a CDN.</p>
+<h3>Screens</h3>
 <table>
 <thead>
 <tr>
@@ -216,7 +263,7 @@ Written 16 August 2026.</p>
 </tr>
 <tr>
 <td><code>src/views/Find.tsx</code></td>
-<td>Search + filters + the list, with the record in a pane beside it.</td>
+<td>Search, filters, the list, and the record in a pane beside it.</td>
 </tr>
 <tr>
 <td><code>src/views/Record.tsx</code></td>
@@ -224,27 +271,58 @@ Written 16 August 2026.</p>
 </tr>
 <tr>
 <td><code>src/views/Shortlist.tsx</code></td>
-<td>Your tracker. Status, next action, notes, export/import.</td>
+<td>Your tracker, with export and import.</td>
 </tr>
 <tr>
 <td><code>src/views/Throw.tsx</code></td>
-<td>The funnel drawn as a fader: how 355 becomes 14, and what each stop costs you.</td>
+<td>The funnel drawn as a fader — how 355 becomes 14, and what each stop costs you.</td>
 </tr>
 <tr>
-<td><code>src/components/ChannelStrip.tsx</code></td>
-<td><strong>The signature.</strong> Rail texture = was this ever read by a human; meter block = what came back (<strong>absent when nobody checked</strong>); ladder = how tall the climb is.</td>
+<td><code>src/views/App.tsx</code></td>
+<td>Routing and shell.</td>
+</tr>
+<tr>
+<td><code>src/views/kit.tsx</code></td>
+<td>Shared page furniture.</td>
+</tr>
+</tbody>
+</table>
+<h3>Components</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>src/components/ChannelStrip.tsx</code></strong></td>
+<td><strong>The signature.</strong> Rail texture = was this ever read by a human. Meter block = what came back, <strong>absent when nobody checked</strong>. Ladder = how tall the climb is, with a broken top rung for an audition.</td>
 </tr>
 <tr>
 <td><code>src/components/chips.tsx</code></td>
 <td>Verdict word, level, gate, cost band, language — the small honest labels.</td>
 </tr>
 <tr>
-<td><code>src/styles.css</code></td>
-<td>The whole design system in one file: six semantic tokens, the channel geometry, the type scale, one animation.</td>
+<td><code>src/components/Field.tsx</code></td>
+<td>One labelled field, distinguishing <em>a value</em> from <em>UNVERIFIED</em> from <em>empty</em>.</td>
 </tr>
 <tr>
-<td><code>src/views/kit.tsx</code>, <code>App.tsx</code>, <code>Layout.tsx</code>, <code>Field.tsx</code>, <code>Filters.tsx</code></td>
-<td>Shared shell and form pieces.</td>
+<td><code>src/components/Layout.tsx</code>, <code>Filters.tsx</code></td>
+<td>Page frame and filter controls.</td>
+</tr>
+<tr>
+<td><code>src/styles.css</code></td>
+<td><strong>The whole design system in one file</strong> — six semantic tokens, the channel geometry, the type scale, one animation.</td>
+</tr>
+<tr>
+<td><code>src/fonts/*.woff2</code></td>
+<td>Literata, Literata Italic, Archivo, Spline Sans Mono — subset to the 235 characters the data actually uses. 113 KB for all four.</td>
+</tr>
+<tr>
+<td><code>src/fonts/metrics.json</code></td>
+<td>The computed <code>size-adjust</code> table that makes font loading cost <strong>zero layout shift</strong>.</td>
 </tr>
 </tbody>
 </table>
@@ -259,39 +337,78 @@ Written 16 August 2026.</p>
 <tbody>
 <tr>
 <td><code>src/data/calendar.ts</code></td>
-<td>The time layer. Never reads the clock itself — <code>now</code> is always passed in, so dates are testable.</td>
+<td>The time layer. <strong>Never reads the clock itself</strong> — <code>now</code> is always passed in, so every date is testable.</td>
 </tr>
 <tr>
 <td><code>src/data/money.ts</code></td>
-<td>Scholarship eligibility. <strong>Silence never counts as yes.</strong></td>
+<td>Scholarship eligibility and cost. <strong>Silence never counts as yes.</strong></td>
 </tr>
 <tr>
-<td><code>src/data/filters.ts</code>, <code>search.ts</code>, <code>dedup.ts</code></td>
-<td>The pipeline: facets, the hand-written weighted search, and duplicate grouping.</td>
+<td><code>src/data/search.ts</code></td>
+<td>Hand-written weighted search. No library — a 195 KB index bought nothing over a scan of 398 records.</td>
+</tr>
+<tr>
+<td><code>src/data/filters.ts</code></td>
+<td>The facet pipeline.</td>
+</tr>
+<tr>
+<td><code>src/data/dedup.ts</code></td>
+<td>Duplicate grouping, deliberately <strong>without transitivity</strong> — union-find once merged 27 unrelated schools through a shared fees page.</td>
 </tr>
 <tr>
 <td><code>src/data/patterns.ts</code></td>
-<td>Recognises the not-a-degree patterns (<em>título propio</em>, RNCP-5, <em>pós-graduação</em>, validation chains).</td>
+<td>Recognises the not-a-degree patterns.</td>
 </tr>
 <tr>
-<td><code>src/data/load.ts</code>, <code>store.ts</code></td>
-<td>Loading and your saved state.</td>
+<td><code>src/data/load.ts</code>, <code>src/store.ts</code></td>
+<td>Loading, and your saved state.</td>
 </tr>
 <tr>
 <td><code>src/lib/format.ts</code></td>
 <td>Rendering rules — including never printing a bare date for a <code>PRIOR CYCLE</code> deadline.</td>
 </tr>
 <tr>
-<td><code>public/data/programmes.json</code>, <code>index.json</code>, <code>detail.json</code>, <code>funding.json</code>, <code>meta.json</code></td>
-<td>The data the app ships.</td>
-</tr>
-<tr>
-<td><strong><code>public/data/calendar.json</code></strong></td>
-<td><strong>36 hand-curated dates</strong> — 14 a human confirmed, 22 published annual rules, held apart. The only place a date may come from. Every entry carries a quote and a source.</td>
+<td><code>src/types.ts</code></td>
+<td>The shape of a record.</td>
 </tr>
 </tbody>
 </table>
-<h3>Tests and checks — 106 unit + 44 browser + 13 offline</h3>
+<h3>Data the app ships</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public/data/programmes.json</code></td>
+<td>All 398 Door-3 records, complete.</td>
+</tr>
+<tr>
+<td><code>public/data/index.json</code></td>
+<td>Card fields only — the part that blocks first paint.</td>
+</tr>
+<tr>
+<td><code>public/data/detail.json</code></td>
+<td>The nine long prose fields, fetched after.</td>
+</tr>
+<tr>
+<td><code>public/data/funding.json</code></td>
+<td>120 funding schemes. Loaded only when needed.</td>
+</tr>
+<tr>
+<td><strong><code>public/data/calendar.json</code></strong></td>
+<td><strong>36 hand-curated dates</strong> — 14 a human confirmed, 22 published annual rules, held apart and never shown alike. The only place in the app a date may come from. Plus 9 dateless prerequisites that block them.</td>
+</tr>
+<tr>
+<td><code>public/data/meta.json</code></td>
+<td>Counts and scope.</td>
+</tr>
+</tbody>
+</table>
+<h3>Tests and checks — 106 unit · 44 browser · 13 offline</h3>
 <table>
 <thead>
 <tr>
@@ -302,31 +419,50 @@ Written 16 August 2026.</p>
 <tbody>
 <tr>
 <td><code>src/data/__tests__/*.test.ts</code></td>
-<td>106 tests over the real data, not fixtures.</td>
+<td>106 tests, run against <strong>the real data</strong>, not fixtures. calendar · dedup · filters · format · money · personal · search.</td>
 </tr>
 <tr>
 <td><code>verify/t-rebuild.mjs</code></td>
-<td>The 44-assertion kill test in a real browser against the built site.</td>
+<td>The <strong>44-assertion kill test</strong> in a real browser against the built site.</td>
 </tr>
 <tr>
 <td><code>verify/t-offline.mjs</code></td>
-<td>13 assertions run from <code>file://</code> — including that the fonts actually load.</td>
+<td>13 assertions from <code>file://</code>, including that the fonts genuinely load.</td>
 </tr>
 <tr>
 <td><code>verify/t-widths.mjs</code></td>
 <td>No horizontal scroll at nine widths.</td>
 </tr>
 <tr>
-<td><code>scripts/build-calendar.mjs</code></td>
-<td><strong>Re-checks every calendar quote verbatim against its source and exits 1 if one doesn't match.</strong> Runs before every build.</td>
+<td><code>verify/t4-audition.mjs</code>, <code>t56-cost-dedup.mjs</code>, <code>t9-parity.mjs</code>, <code>t12378.mjs</code>, <code>t-tracker.mjs</code>, <code>t-extras.mjs</code>, <code>t6-detmold.mjs</code>, <code>t8-chevening.mjs</code>, <code>t4b-lists.mjs</code>, <code>t56b-probe.mjs</code></td>
+<td>Targeted checks on individual correctness rules.</td>
+</tr>
+<tr>
+<td><code>verify/shots-desk.mjs</code>, <code>shots.mjs</code>, <code>cdp.mjs</code></td>
+<td>Screenshot harness.</td>
+</tr>
+</tbody>
+</table>
+<h3>Build scripts</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>scripts/build-calendar.mjs</code></strong></td>
+<td><strong>Re-checks every calendar quote verbatim against its source and exits 1 if one doesn't match.</strong> Runs before every build, so a fabricated date cannot reach the site.</td>
 </tr>
 <tr>
 <td><code>scripts/build-fonts.mjs</code></td>
-<td>Subsets the four fonts and computes the metric overrides. <code>--check</code> fails on drift.</td>
+<td>Subsets the fonts and computes the metric overrides. <code>--check</code> fails on drift.</td>
 </tr>
 <tr>
 <td><code>scripts/build-data.mjs</code></td>
-<td>Splits the exported data into the files the app loads.</td>
+<td>Splits the exported data into what the app loads.</td>
 </tr>
 </tbody>
 </table>
@@ -340,42 +476,51 @@ Written 16 August 2026.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>app/REBUILD-SPEC.md</code></td>
-<td><strong>The governing document</strong> for the rebuild — merges the art direction, the tech decision and the workflow.</td>
+<td><strong><code>REBUILD-SPEC.md</code></strong></td>
+<td><strong>The governing document</strong> for the rebuild — merges the art direction, tech decision and workflow, and decides where they disagree.</td>
 </tr>
 <tr>
-<td><code>app/ART-DIRECTION.md</code></td>
-<td>"The Desk" — every programme as a channel on a mixing console.</td>
+<td><code>ART-DIRECTION.md</code></td>
+<td>"The Desk" — every programme as a channel on a mixing console, borrowed as structure and never as texture.</td>
 </tr>
 <tr>
-<td><code>app/WORKFLOW.md</code></td>
+<td><code>WORKFLOW.md</code></td>
 <td>What you actually do with this for fifteen months. Argues the tracker is the product and browsing is decoration.</td>
 </tr>
 <tr>
-<td><code>app/TECH-DECISION.md</code></td>
-<td>What stack, and what to refuse. Rejects Tailwind, React, animation libraries.</td>
+<td><code>TECH-DECISION.md</code></td>
+<td>What stack, and what to refuse. Rejects Tailwind, React, animation libraries, virtualisation — each with a measurement.</td>
 </tr>
 <tr>
-<td><code>app/DESIGN-CRITIQUE.md</code></td>
-<td>The critique that set the correctness rules — the nine-item kill test lives here.</td>
+<td><code>DESIGN-CRITIQUE.md</code></td>
+<td>The critique that set the correctness rules. The nine-item kill test lives here.</td>
 </tr>
 <tr>
-<td><code>app/DESIGN-UX.md</code>, <code>DESIGN-ARCHITECTURE.md</code></td>
-<td>The first UX and data-model designs.</td>
+<td><code>DESIGN-UX.md</code></td>
+<td>The first UX design.</td>
 </tr>
 <tr>
-<td><code>app/FOUNDATION.md</code></td>
+<td><code>DESIGN-ARCHITECTURE.md</code></td>
+<td>The data model and application logic.</td>
+</tr>
+<tr>
+<td><code>FOUNDATION.md</code></td>
 <td>The type, tokens and channel strip as built, with the measurements.</td>
 </tr>
 <tr>
-<td><code>app/BUILD-SPEC.md</code>, <code>VERIFICATION.md</code></td>
-<td>The build brief and the verification record.</td>
+<td><code>BUILD-SPEC.md</code></td>
+<td>The build brief the coding agents worked from.</td>
+</tr>
+<tr>
+<td><code>VERIFICATION.md</code></td>
+<td>The verification record.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2>5. How the research was actually made</h2>
-<p><code>.masters-search/</code> — the toolchain. You don't need to open these unless you want to re-run or extend the search.</p>
+<h1>6 · How the research was made</h1>
+<p><code>.masters-search/</code> — the toolchain. Open these only to re-run or extend the search.</p>
+<h3>The two files that do the real thinking</h3>
 <table>
 <thead>
 <tr>
@@ -385,53 +530,246 @@ Written 16 August 2026.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>workflow.mjs</code> … <code>workflow5-europe-gapfill.mjs</code></td>
-<td>The five agent sweeps, in order. Each wrote results incrementally so nothing was lost when a session hit its limit.</td>
-</tr>
-<tr>
 <td><strong><code>qual_level.py</code></strong></td>
-<td><strong>Separates real master's degrees from certificates.</strong> Handles negation, so "a genuine second-cycle degree, <em>not</em> a Lehrgang" is read correctly.</td>
+<td><strong>Separates real master's degrees from certificates.</strong> Handles negation, so <em>"a genuine second-cycle degree, </em><em>not</em><em> a Lehrgang"</em> reads correctly instead of backwards. Knows <em>máster propio</em>, <em>título propio</em>, <em>Diploma Accademico di II livello</em> vs <em>Master di I livello</em>, RNCP levels, <em>Universitätslehrgang</em>.</td>
 </tr>
 <tr>
 <td><strong><code>corrections.py</code></strong></td>
-<td><strong>Lets a verifier's correction override a stale field.</strong> 75 of 127 verified records say a machine field is wrong; this finds them. Catches the Babelsberg and FAMU piano auditions hiding behind "Exam/interview only".</td>
+<td><strong>Lets a verifier's correction override a stale field.</strong> 75 of 127 verified Door-3 records say a machine field is wrong. This catches the dangerous ones — the Babelsberg and FAMU <strong>live piano auditions</strong> hiding behind "Exam/interview only", Edinburgh's <em>under €1.5k</em> that is really <strong>£29,900</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3>The sweeps</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>workflow.mjs</code></td>
+<td>Sweep 1 — the first broad search.</td>
 </tr>
 <tr>
-<td><code>cost_model.py</code></td>
-<td>What you would actually pay, per country.</td>
+<td><code>workflow2-europe-deep.mjs</code></td>
+<td>Sweep 2 — deep Europe.</td>
 </tr>
+<tr>
+<td><code>workflow3-sounddesign-europe.mjs</code></td>
+<td>Sweep 3 — sound design and production across Europe.</td>
+</tr>
+<tr>
+<td><code>workflow4-private-es-pt-nl-it.mjs</code></td>
+<td>Sweep 4 — private institutions, four countries, in their own languages.</td>
+</tr>
+<tr>
+<td><code>workflow5-europe-gapfill.mjs</code></td>
+<td>Sweep 5 — the universities the first four missed.</td>
+</tr>
+</tbody>
+</table>
+<p>Each wrote results incrementally, so nothing was lost when a session hit its usage limit.</p>
+<h3>Builders and exporters</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><code>build_door3.py</code></td>
 <td>Builds <code>DOOR3.xlsx</code>.</td>
 </tr>
 <tr>
-<td><code>build_master.py</code>, <code>build_artist_workbook.py</code>, and the other <code>build_*.py</code></td>
-<td>Build the other workbooks.</td>
+<td><code>build_master.py</code></td>
+<td>Builds <code>MASTER-all-opportunities.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>build_artist_workbook.py</code></td>
+<td>Builds <code>ARTIST-ROUTE.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>build_sound_scholarships.py</code></td>
+<td>Builds <code>SOUND-and-SCHOLARSHIPS.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>build_sounddesign_workbook.py</code></td>
+<td>Builds <code>sound-design-europe.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>build_private_workbook.py</code></td>
+<td>Builds <code>private-schools-es-pt-nl-it.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>build_gapfill_workbook.py</code></td>
+<td>Builds <code>europe-gapfill.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>build_workbook.py</code></td>
+<td>Builds <code>opportunities.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>write_master_workbook.py</code>, <code>write_degree_check.py</code></td>
+<td>Write the master workbook and the degree audit.</td>
+</tr>
+<tr>
+<td><code>cost_model.py</code></td>
+<td>What you would actually pay, per country — tuition plus the fees nobody advertises.</td>
 </tr>
 <tr>
 <td><code>export_door3_app.py</code></td>
 <td>Exports the app's data from the research files.</td>
 </tr>
 <tr>
-<td><code>md2html.py</code>, <code>polish_workbooks.py</code></td>
-<td>Markdown PDF, and workbook formatting/filters.</td>
+<td><code>export_app_data.py</code>, <code>export_console_data.py</code></td>
+<td>Exporters for the two earlier apps.</td>
 </tr>
 <tr>
-<td><code>results/*.json</code></td>
-<td><strong>The raw agent output</strong> — every record as the search agents wrote it, before any processing. <code>artist-sweep/</code> holds 51 files from the Door-1 and Door-3 sweeps.</td>
+<td><code>md2html.py</code></td>
+<td>Markdown PDF.</td>
 </tr>
 <tr>
-<td><code>covered_institutions.json</code></td>
-<td>The skip list, so relaunched agents never re-searched what was already covered.</td>
+<td><code>polish_workbooks.py</code></td>
+<td>Turns raw sheets into filterable Excel Tables.</td>
 </tr>
 <tr>
-<td><code>STATE.md</code>, <code>checkpoints/</code></td>
-<td>Where each sweep stopped, so work resumed in the right place after every usage limit.</td>
+<td><code>console-shell.html</code></td>
+<td>Shell for the earlier console.</td>
+</tr>
+<tr>
+<td><code>checkpoint.sh</code></td>
+<td>Saves progress mid-sweep.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2>6. Repository</h2>
+<h1>7 · The raw data</h1>
+<p><code>.masters-search/results/</code> — every record exactly as the search agents wrote it, before any processing. This is the evidence behind every workbook.</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th style="text-align: right;">Records</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>master-all.json</code></td>
+<td style="text-align: right;"><strong>1,839</strong></td>
+<td>Everything merged — the source of <code>MASTER-all-opportunities.xlsx</code>.</td>
+</tr>
+<tr>
+<td><code>console-data.json</code></td>
+<td style="text-align: right;">1,091</td>
+<td>The dataset behind the degree audit.</td>
+</tr>
+<tr>
+<td><code>phase1-opportunities.json</code></td>
+<td style="text-align: right;">539</td>
+<td>Sweep 1 raw.</td>
+</tr>
+<tr>
+<td><code>phase1-opportunities-export.json</code></td>
+<td style="text-align: right;">546</td>
+<td>Sweep 1 processed.</td>
+</tr>
+<tr>
+<td><code>sounddesign-europe.json</code></td>
+<td style="text-align: right;">319</td>
+<td>Sweep 3 — sound design across Europe.</td>
+</tr>
+<tr>
+<td><code>private-es-pt-nl-it.json</code></td>
+<td style="text-align: right;">198</td>
+<td>Sweep 4 — private institutions.</td>
+</tr>
+<tr>
+<td><code>europe-gapfill.json</code></td>
+<td style="text-align: right;">104</td>
+<td>Sweep 5 — the gap pass.</td>
+</tr>
+<tr>
+<td><code>deep-europe-final.json</code></td>
+<td style="text-align: right;">102</td>
+<td>Sweep 2 — deep Europe.</td>
+</tr>
+<tr>
+<td><code>covered_institutions.json</code></td>
+<td style="text-align: right;">—</td>
+<td>The skip list, so relaunched agents never re-searched what was already done.</td>
+</tr>
+</tbody>
+</table>
+<h3><code>results/artist-sweep/</code> — 51 files, 1,409 records</h3>
+<p>The Door-1 and Door-3 sweeps, run in waves so that a session limit never cost more than one wave.</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Door 3 by region</strong></td>
+<td><code>door3-fr-benelux</code> (47) · <code>door3-cee</code> (36) · <code>door3-south-2</code> (35) · <code>door3-nordbalt</code> (23) · <code>door3-dach-2</code> (21) · <code>door3-south</code> (4) · <code>door3-dach</code> (3)</td>
+</tr>
+<tr>
+<td><strong>Door 3 money</strong></td>
+<td><code>door3-scholarships-2</code> (41) · <code>door3-scholarships</code> (8)</td>
+</tr>
+<tr>
+<td><strong>Door 1</strong></td>
+<td><code>d1-non-europe-2</code> (52) · <code>d1-centres-2</code> (32) · <code>d1-centres</code> (25) · <code>d1-cs-friendly</code> (18) · <code>d1-non-europe</code> (16) · <code>d1-joint-funded</code> (15)</td>
+</tr>
+<tr>
+<td><strong>Regional</strong></td>
+<td><code>fr-be</code> (48) · <code>it-es-pt-gr</code> (47) · <code>de-at-ch</code> (43) · <code>nordics-baltics</code> (42) · <code>central-eastern-2</code> (42) · <code>nl-uk-ie-2</code> (39) · <code>nl-uk-ie</code> (32) · <code>central-eastern</code> (27) · <code>fr-be-gapfill</code> (19)</td>
+</tr>
+<tr>
+<td><strong>Money and home</strong></td>
+<td><code>scholarships</code> (71) · <code>tunisia-and-lists</code> (16)</td>
+</tr>
+<tr>
+<td><strong>Verification passes</strong></td>
+<td><code>verify-door3-000-047</code> (48) · <code>verify-door3-048-095</code> (48) · <code>verify-new-000-037</code> (41) · <code>verify-new-038-075</code> (38) · <code>verify-000-025</code> (26) · <code>verify-052-077</code> (26) · <code>verify-078-102</code> (25) · <code>verify-missing</code> (23) · <code>verify-thegap</code> (21) · <code>verify-026-051</code> (15)</td>
+</tr>
+<tr>
+<td><strong>Verification targets</strong></td>
+<td><code>verify-targets</code> (103) · <code>verify-targets-door3</code> (96) · <code>verify-targets-new</code> (76) · <code>verify-targets-thegap</code> (21)</td>
+</tr>
+<tr>
+<td><strong>Bookkeeping</strong></td>
+<td><code>_door3_covered.json</code> — the Door-3 skip list</td>
+</tr>
+</tbody>
+</table>
+<h3>Progress files</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>STATE.md</code></td>
+<td>Where each sweep stopped.</td>
+</tr>
+<tr>
+<td><code>checkpoints/*.jsonl</code></td>
+<td>Five workflow journals, so work resumed in the right place after every usage limit.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>8 · Repository</h1>
 <table>
 <thead>
 <tr>
@@ -445,16 +783,20 @@ Written 16 August 2026.</p>
 <td>Repo front page with the totals.</td>
 </tr>
 <tr>
+<td><code>FILES.md</code></td>
+<td>This file.</td>
+</tr>
+<tr>
 <td><code>SKILLS.md</code>, <code>skills-lock.json</code></td>
 <td>The skills installed at the start of this project.</td>
 </tr>
 <tr>
 <td><code>.github/workflows/deploy-app.yml</code></td>
-<td>CI: tests typecheck build deploy. Needs Pages source set to "GitHub Actions" in repo settings to run the deploy step.</td>
+<td>CI — tests typecheck build deploy. Needs the repo's Pages source set to "GitHub Actions" for the deploy step to run.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2>Two things worth knowing about the data</h2>
+<h1>Two things worth knowing about all of this</h1>
 <p><strong>"Never checked" is not "fine".</strong> 249 of the 398 Door-3 records were never read by a second agent. In the app that state has no colour of its own — it is an empty meter slot — precisely so it can never be mistaken for good news.</p>
-<p><strong>A correction outranks a field.</strong> Where a verifier's prose contradicts a structured value, the prose wins and the app shows you the sentence. Edinburgh's recorded band says <em>under €1.5k/yr</em>; the real figure is <strong>≈£29,900</strong>. KASK's says the same; it is <strong>≈€8,800</strong>. Both render struck through, marked wrong, and neither can reach a "cheap" filter.</p></body></html>
+<p><strong>A correction outranks a field.</strong> Where a verifier's prose contradicts a structured value, the prose wins and you get shown the sentence. Edinburgh's recorded band says <em>under €1.5k/yr</em>; the real figure is <strong>≈£29,900</strong>. KASK's says the same; it is <strong>≈€8,800</strong>. Both render struck through and marked wrong, and neither can reach a "cheap" filter.</p></body></html>
