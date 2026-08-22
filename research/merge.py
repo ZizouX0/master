@@ -10,6 +10,8 @@ program serving two paths at once.
 """
 import csv, glob, os, re, sys, unicodedata
 from collections import defaultdict
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from canon import inst_key, same_programme
 
 SCHEMA = ["id","path_letter","program_name","degree_awarded","institution","institution_type",
 "city","country","mobility","language_of_instruction","english_level_required",
@@ -23,12 +25,11 @@ SCHEMA = ["id","path_letter","program_name","degree_awarded","institution","inst
 
 EMPTY = {"", "tbc", "TBC", "n/a", "na", "none", "-", "—", "unknown"}
 
-def norm(s):
-    s = unicodedata.normalize("NFKD", (s or "")).encode("ascii", "ignore").decode()
-    s = s.lower()
-    s = re.sub(r"\b(msc|ma|msc\.|m\.sc\.|m\.a\.|master(?:s)?(?: of| in| en| de)?|maestria|máster|mestrado|programme|program|degree|official|universitario)\b", " ", s)
-    s = re.sub(r"[^a-z0-9]+", " ", s)
-    return " ".join(s.split())
+def canon_url(x):
+    x = (x or "").strip().lower().rstrip("/")
+    x = re.sub(r"^https?://(www\.)?", "", x)
+    x = x.split("?")[0].split("#")[0]
+    return x if "." in x and len(x) > 6 else ""
 
 def filled(row):
     return sum(1 for k, v in row.items() if k in SCHEMA and str(v).strip() not in EMPTY)
@@ -53,25 +54,74 @@ def load(pattern):
     return rows, problems
 
 def merge(rows):
-    buckets = defaultdict(list)
-    for r in rows:
-        buckets[(norm(r["institution"]), norm(r["program_name"]))].append(r)
+    """Group rows that describe the same programme, then fold each group into one.
+
+    Two signals, both requiring the same institution. A shared programme URL is
+    decisive — it is the same page, so it is the same degree, however differently
+    two agents spelled the name (UPF's SMC master appears in Catalan, Spanish and
+    English across five path files and all five point at upf.edu/web/smc). Failing
+    that, a close name match, guarded so that sibling degrees at one school —
+    Catalyst's Creative Production in Music and in Film, Tilburg's Marketing
+    Management and Marketing Analytics — stay the separate programmes they are.
+    """
+    parent = list(range(len(rows)))
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]; i = parent[i]
+        return i
+    def union(i, j):
+        a, b = find(i), find(j)
+        if a != b: parent[max(a,b)] = min(a,b)
+
+    by_inst = defaultdict(list)
+    for i, r in enumerate(rows):
+        by_inst[inst_key(r["institution"])].append(i)
+    for _, idxs in by_inst.items():
+        for x in range(len(idxs)):
+            for y in range(x+1, len(idxs)):
+                i, j = idxs[x], idxs[y]
+                ui, uj = canon_url(rows[i]["program_url"]), canon_url(rows[j]["program_url"])
+                if (ui and ui == uj) or same_programme(rows[i]["program_name"], rows[j]["program_name"]):
+                    union(i, j)
+
+    groups = defaultdict(list)
+    for i, r in enumerate(rows):
+        groups[find(i)].append(r)
+
     out = []
-    for key, group in buckets.items():
+    for _, group in groups.items():
         group.sort(key=filled, reverse=True)
         best = dict(group[0])
         letters, srcs = [], []
         for r in group:
             for L in re.split(r"[,\s|]+", r["path_letter"]):
                 if L and L not in letters: letters.append(L)
-            for u in re.split(r"\s*\|\s*", r["source_urls"]):
-                if u and u not in srcs: srcs.append(u)
-            # a merged row should be as complete as the union of its parts
+            for u_ in re.split(r"\s*\|\s*", r["source_urls"]):
+                if u_ and u_ not in srcs: srcs.append(u_)
             for c in SCHEMA:
                 if str(best.get(c, "")).strip() in EMPTY and str(r.get(c, "")).strip() not in EMPTY:
                     best[c] = r[c]
         best["path_letter"] = ",".join(sorted(letters, key=lambda x: (len(x), x)))
         best["source_urls"] = "|".join(srcs)
+        # A warning must survive the merge. The fullest row wins on the facts, but
+        # if any agent flagged this programme the flag carries over, and a CONFLICT
+        # or DEAD_LINK anywhere in the group outranks another agent's confidence —
+        # Wave 3 needs to see the disagreement, not the tidier of the two rows.
+        flags = []
+        for r in group:
+            f = (r.get("red_flags") or "").strip()
+            if f and f not in EMPTY and f not in flags:
+                flags.append(f)
+        best["red_flags"] = " || ".join(flags)
+        statuses = {r.get("verification_status", "").strip() for r in group}
+        for worst in ("CONFLICT", "DEAD_LINK"):
+            if worst in statuses:
+                best["verification_status"] = worst
+                break
+        if len(statuses - {""}) > 1:
+            best["red_flags"] = (best["red_flags"] + " || " if best["red_flags"] else "") + \
+                "MERGE: path agents disagreed on verification status (" + \
+                ", ".join(sorted(s for s in statuses if s)) + ") - Wave 3 to adjudicate"
         best["_dupes"] = len(group)
         out.append(best)
     return out
