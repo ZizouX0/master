@@ -194,10 +194,10 @@ def sources_block(r):
     lis = "".join(f'<li><b>{k}</b> <span class="mono brk">{esc(v)}</span></li>'
                   for k, v in extra if v and not v.upper().startswith("TBC"))
     lis += "".join(f'<li><span class="mono brk">{esc(u)}</span></li>' for u in urls)
-    return (f'<h3>Sources &amp; verification</h3><p class="tiny" style="margin-bottom:1mm">'
+    return (f'<div class="sources"><h3>Sources &amp; verification</h3><p class="tiny" style="margin-bottom:1mm">'
             f'Verified by <b>{esc(field(r,"verifier_agent"))}</b> on <b>{esc(field(r,"verified_date"))}</b> · '
             f'status <b>{esc(field(r,"verification_status"))}</b></p>'
-            f'<ul class="tiny">{lis}</ul>')
+            f'<ul class="tiny srcs">{lis}</ul></div>')
 
 def contact_block(r):
     adm = field(r, "admissions_url")
@@ -267,6 +267,13 @@ td:first-child{width:34mm;color:#5C5C68}
 .kv td{padding:.85mm 2mm;vertical-align:top}
 .warnbox,.okbox,.card{break-inside:avoid}
 .brk{word-break:break-all;overflow-wrap:anywhere}
+/* a single trailing URL was being pushed onto a page of its own */
+/* the sources block is short; keeping it whole stops a lone trailing URL
+   being pushed onto a page of its own */
+.sources{break-inside:avoid}
+.srcs{columns:2;column-gap:6mm;font-size:6.2pt}
+ul{orphans:3;widows:3}li{break-inside:avoid}
+h3+p,h3+ul{break-before:avoid}
 ul{margin:.15em 0 .3em}li{margin-bottom:.12em}
 """
 from render import stamp_footers

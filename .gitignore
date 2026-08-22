@@ -26,3 +26,4 @@ app/foundation-shots/
 
 # design-review screenshots from the verify scripts, regenerable
 app/design-shots/
+node_modules/

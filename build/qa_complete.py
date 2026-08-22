@@ -11,6 +11,12 @@ def norm(s):
     s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode()
     return re.sub(r"\s+", " ", s).strip().lower()
 
+def flat(s):
+    """Whitespace-, quote- and backslash-free. dashboard.html embeds the data as
+    JSON, so an interior quote arrives as \\" and a plain substring test reports
+    the value missing when it is verbatim in the file."""
+    return re.sub(r'[\\"\'\u2018\u2019\u201c\u201d]', "", squash(s))
+
 def squash(s):
     """Whitespace-free form. PDF extraction and CSS word-break both insert line
     breaks inside long values — especially URLs — so a space-sensitive compare
@@ -23,7 +29,7 @@ def check_pdf(pdf, ids, rows):
     import pymupdf
     doc = pymupdf.open(pdf)
     text = norm(" ".join(p.get_text() for p in doc))
-    tight = squash(text)
+    tight = squash(text); flatt = flat(text)
     missing = []
     for r in rows:
         if r["id"] not in ids: continue
@@ -36,14 +42,15 @@ def check_pdf(pdf, ids, rows):
             # not the delimiter — every datum must appear, the separator need not
             parts = [x.strip() for x in v.split("|") if len(x.strip()) > 2] if "|" in v else [v]
             gone = [x for x in parts
-                    if norm(x)[:110] not in text and squash(x)[:110] not in tight]
+                    if norm(x)[:110] not in text and squash(x)[:110] not in tight
+                    and flat(x)[:110] not in flatt]
             if gone:
                 missing.append((r["id"], k, gone[0][:70]))
     return missing, doc.page_count
 
 def check_html(path, rows):
     raw = norm(Path(path).read_text(encoding="utf-8"))
-    tight = squash(raw)
+    tight = squash(raw); flatt = flat(raw)
     missing = []
     for r in rows:
         if not r["usable"]: continue
@@ -53,7 +60,8 @@ def check_html(path, rows):
             if len(nv) < 3: continue
             parts = [x.strip() for x in v.split("|") if len(x.strip()) > 2] if "|" in v else [v]
             gone = [x for x in parts
-                    if norm(x)[:110] not in raw and squash(x)[:110] not in tight]
+                    if norm(x)[:110] not in raw and squash(x)[:110] not in tight
+                    and flat(x)[:110] not in flatt]
             if gone:
                 missing.append((r["id"], k, gone[0][:70]))
     return missing

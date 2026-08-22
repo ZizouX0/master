@@ -1,0 +1,85 @@
+QA REPORT — Master's 2027 tooling
+============================================================
+Run 2026-08-22 against deliverables/tools/
+
+1. PDFs — every page rasterised and inspected
+---------------------------------------------
+  Decision_Brief.pdf — 3 pages, all rasterised at 110 dpi
+  PASS  Decision_Brief.pdf: no content clipped past the page margin
+  PASS  Decision_Brief.pdf: no orphan pages
+  PASS  Decision_Brief.pdf: page numbers on every page
+  PASS  Decision_Brief.pdf: font families used = ['DejaVuSansMono', 'LiberationSerif']
+  Program_Dossiers.pdf — 38 pages, all rasterised at 110 dpi
+  PASS  Program_Dossiers.pdf: no content clipped past the page margin
+  PASS  Program_Dossiers.pdf: no orphan pages
+  PASS  Program_Dossiers.pdf: page numbers on every page
+  PASS  Program_Dossiers.pdf: font families used = ['DejaVuSansMono', 'Helvetica', 'LiberationSerif']
+  Portfolio_Brief.pdf — 7 pages, all rasterised at 110 dpi
+  PASS  Portfolio_Brief.pdf: no content clipped past the page margin
+  PASS  Portfolio_Brief.pdf: no orphan pages
+  PASS  Portfolio_Brief.pdf: page numbers on every page
+  PASS  Portfolio_Brief.pdf: font families used = ['DejaVuSansMono', 'Helvetica', 'LiberationSerif']
+
+2. Workbook — reopened and inspected
+------------------------------------
+  PASS  zip integrity clean (no repair warning)
+  PASS  tabs = ['START HERE', 'Tracker', 'Funding Matrix', 'Documents', 'All Programs']
+  PASS  START HERE: freeze panes = A5
+  PASS  Tracker: freeze panes = A2
+  PASS  Funding Matrix: freeze panes = A2
+  PASS  Documents: freeze panes = A2
+  PASS  All Programs: freeze panes = A2
+  PASS  Tracker: autofilter = A1:P1
+  PASS  Funding Matrix: autofilter = A1:N1
+  PASS  Documents: autofilter = A1:G1
+  PASS  All Programs: autofilter = A1:AI1
+  PASS  Tracker: 1 data-validation dropdown(s)
+  PASS  Documents: 1 data-validation dropdown(s)
+  PASS  Tracker: 3 conditional-formatting range(s) attached
+  PASS  Documents: 2 conditional-formatting range(s) attached
+  PASS  666 hyperlinks, 0 malformed
+  PASS  no column wider than 60 chars (found 0)
+
+5. dashboard.html — rendered at 1280px and 390px
+------------------------------------------------
+  PASS  1280px: sortable table shown, cards hidden
+  PASS  1280px: no horizontal scroll (1280<=1280)
+  PASS  1280px: row click opens the detail panel
+  PASS  1280px: detail panel shows 35 fields
+  PASS  1280px: column sort reorders, unknowns sink
+  PASS  1280px: filters reduce the live count
+  PASS  390px: stacked cards, table hidden
+  PASS  390px: filters collapse into a tap-to-open drawer
+  PASS  390px: drawer filters apply and mirror to the main controls
+  PASS  390px: no horizontal scroll (390<=390)
+  PASS  390px: 0 touch targets under 44px
+  PASS  390px: card tap opens the full-detail view
+  PASS  no JS errors (desk [], phone [])
+  PASS  self-contained: 0 external requests
+
+3. Completeness — rendered artefacts vs master_programs.csv
+-----------------------------------------------------------
+  PASS  Program_Dossiers.pdf: 0 missing fields across 15 programmes
+  PASS  dashboard.html: 0 missing fields across 179 programmes
+
+4. deadlines.ics — syntax and content
+-------------------------------------
+  PASS  calendar wrapper well formed
+  PASS  74 VEVENT blocks balanced
+  PASS  exactly 2 alarms per event (148/148)
+  PASS  all lines folded under 75 octets (0 over)
+  PASS  every event has date, title, description and 30/7-day triggers (0 gaps)
+  PASS  every event prefixed: {'DOC': 14, 'FUND': 14, 'APP': 46}
+  PASS  no 2026-cycle comparator promoted into the calendar (58 excluded, 0 leaked)
+  PASS  no UNVERIFIED programme in the calendar (0 leaked)
+
+VERDICT
+-------
+  All checks pass.
+
+Checks deliberately NOT claimed:
+  - One page per dossier. Not achieved and not achievable honestly: rows carry
+    4,500-11,000 characters of verified notes and completeness outranks page count,
+    so dense programmes run to a second page. Stated in the dossier index.
+  - Application fees are mostly blank in the Tracker because most institutions
+    publish none; that is absence of a fee, not absence of research.

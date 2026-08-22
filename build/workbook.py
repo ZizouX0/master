@@ -104,7 +104,7 @@ ws.sheet_view.showGridLines = False
 ws.freeze_panes = "A5"
 ws.column_dimensions["A"].width = 3
 ws.column_dimensions["B"].width = 30
-ws.column_dimensions["C"].width = 96
+ws.column_dimensions["C"].width = 58
 ws["B2"] = "APPLICATION COMMAND CENTER"
 ws["B2"].font = Font(name="Calibri", size=20, bold=True, color=INK)
 ws["B3"] = f"Master's, September 2027 intake · built {TODAY.isoformat()} · Zizz (Tunisia, 300-ECTS software-engineering diploma)"
@@ -114,6 +114,7 @@ ws["C5"] = ("The working layer over a sweep of 197 verified master's programmes 
             "across Spain, the Netherlands and Berlin. Each tab answers exactly one question. Nothing here "
             "is a recommendation — read Decision_Brief.pdf for that — and nothing here is unverified.")
 ws["C5"].alignment = WRAP
+ws.row_dimensions[5].height = 60
 r = 7
 ws.cell(row=r, column=2, value="The tabs").font = Font(size=12, bold=True, color=ACCENT)
 r += 1
@@ -132,13 +133,14 @@ for name, desc in TABS:
     c.font = Font(size=10, bold=True, color=ACCENT, underline="single")
     c.hyperlink = f"#'{name}'!A1"
     d = ws.cell(row=r, column=3, value=desc); d.alignment = WRAP
-    ws.row_dimensions[r].height = 30
+    ws.row_dimensions[r].height = 62
     r += 1
 r += 1
 ws.cell(row=r, column=2, value="How the dropdowns work").font = Font(size=12, bold=True, color=ACCENT)
 ws.cell(row=r, column=3, value=(f"Tracker → Status: {STATUSES.replace(',', ' · ')}.   "
         f"Documents → Status: {DOC_STATUSES.replace(',', ' · ')}.   "
         "Type nothing else in those cells; the dropdown is the only valid input.")).alignment = WRAP
+ws.row_dimensions[r].height = 56
 r += 2
 ws.cell(row=r, column=2, value="Colour legend").font = Font(size=12, bold=True, color=ACCENT)
 r += 1
