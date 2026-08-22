@@ -1,0 +1,14 @@
+# Path N — Music-Tech Product & Innovation — Wave-1 summary (W1-N, 2026-08-22)
+
+**Rows logged: 31** (Spain 9, Netherlands 12, Berlin/Germany 9, rotating/EIT 1) — 14 VERIFIED, 12 PARTIALLY_VERIFIED, 4 UNVERIFIED, 1 DEAD_LINK.
+
+**Coverage confidence.** Netherlands: HIGH — Twente, TU Delft (3 IDE masters), TU/e, Leiden, HKU, AUAS, BUas, Utrecht all opened on their own domains; 2026-27 non-EU fees confirmed everywhere except HKU/AUAS/BUas (institutional rates hidden behind calculators). Berlin: MEDIUM-HIGH — TU Berlin (IMES, Medieninformatik), HTW and CODE fully verified; UdK Design & Computation partly (language + semester fee unconfirmed); SRH/hdpk and UE Creative Computing blocked by 503/missing pages. Spain: MEDIUM — Elisava (4 programmes) and IED verified in full; UPF (the flagship SMC master) could not be opened at all — **upf.edu returns 403 to every automated fetch**; UPC, Mondragon and La Salle only partially reachable.
+
+**Strongest three finds.**
+1. **N-022 UdK Berlin + TU Berlin, M.A. Design & Computation** — joint art-school/technical-university master, **zero tuition** (semester contribution only), engineering graduates named explicitly as eligible, application window 1 Apr – 15 May. Best funding-first row on the path.
+2. **N-016 HKU Utrecht, Master of Music – Music Design** — 2027-28 applications confirmed to open 1 Oct 2026; **NL Scholarship €5,000 confirmed open to non-EEA nationals** and Music Design is on the eligible list; HKU admits candidates without a Bachelor of Music for exceptional talent.
+3. **N-010 UT Twente, MSc Interaction Technology** — English, €21,700 (2026-27), UTS/NL/Kipaji scholarship window 15 Oct 2026 – 1 Apr 2027, and it doubles as an **EIT Digital HCID entry point**.
+
+**Two findings that change decisions.** (a) **EIT Digital scholarships are EU/EEA-nationals only** — a Tunisian applicant to HCID/XR (entry points Twente and UPM Madrid) gets the programme but not the money. (b) **ArtEZ "The Sound of Innovation" is gone** — absent from ArtEZ's 93-programme listing, no new intake since 2025-26; it appears in the prior lead file and must be struck.
+
+**Gaps for Wave 2.** UPF Sound and Music Computing needs a manual browser check (fees, 2027 rounds) — highest-value unverified row. SRH Berlin "Computing and the Arts" (audio-software career track, English, Berlin) is the best-matched Berlin programme on paper and is entirely unverified. Also open: TU Delft/TU/e admission rules for a non-design engineering degree, HKU/AUAS/BUas institutional non-EEA fees, UPC MBDesign fees and deadlines, La Salle-URL's real UX/interactive-products master, and whether UE's "Creative Computing" survives under the name Generative Design & AI. WebSearch budget for the session was exhausted mid-sweep, so IE, ESADE, Deusto, Navarra, BAU, Fontys, Hanze, Avans, Willem de Kooning, Design Academy Eindhoven and Macromedia were not reached.
