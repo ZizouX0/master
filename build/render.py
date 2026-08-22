@@ -94,3 +94,29 @@ def to_pdf(html_text, out_name):
     if not dst.exists():
         raise RuntimeError(f"chromium produced no pdf: {r.stderr[-800:]}")
     return dst
+
+
+def stamp_footers(pdf_path, left_text):
+    """Draw a footer on EVERY page after rendering.
+
+    An HTML footer positioned inside a .page div renders once, wherever that div
+    ends — so a dossier that spans two printed pages leaves the first without a
+    page number. Stamping post-hoc is the only way to guarantee every page
+    carries one, and it keeps the house style.
+    """
+    import pymupdf
+    doc = pymupdf.open(pdf_path)
+    n = doc.page_count
+    ink = (0.086, 0.086, 0.118)
+    rule = (0.847, 0.831, 0.808)
+    for i, page in enumerate(doc, start=1):
+        w, h = page.rect.width, page.rect.height
+        y = h - 30
+        page.draw_line(pymupdf.Point(42, y), pymupdf.Point(w - 42, y), color=rule, width=0.6)
+        page.insert_text((42, y + 11), left_text, fontname="helv", fontsize=7, color=ink)
+        label = f"page {i} of {n}"
+        tw = pymupdf.get_text_length(label, fontname="helv", fontsize=7)
+        page.insert_text((w - 42 - tw, y + 11), label, fontname="helv", fontsize=7, color=ink)
+    doc.saveIncr()
+    doc.close()
+    return n
