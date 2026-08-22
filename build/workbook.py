@@ -13,6 +13,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.formatting.rule import CellIsRule, FormulaRule
 from data import load, funding_rows, TODAY, PATH_COLOR, PATH_NAME, money
+from subjects import subject_line, paths_full, PATH_FULL, PATH_STUDY as PATH_STUDY_TEXT
 import importlib.util
 spec = importlib.util.spec_from_file_location("rank", "research/rank.py")
 
@@ -152,13 +153,21 @@ for label, fill in LEG:
     ws.cell(row=r, column=3, value=label).font = BODY
     r += 1
 r += 1
-ws.cell(row=r, column=2, value="Path colours").font = Font(size=12, bold=True, color=ACCENT)
+ws.cell(row=r, column=2, value="The ten paths").font = Font(size=12, bold=True, color=ACCENT)
+ws.cell(row=r, column=3, value=("Paths are written out in full everywhere in this workbook. The one-letter "
+    "code survives only in the row id (A-017, AC-059) and in the narrow 'path code' column on All Programs. "
+    "The 'What you'd study' column is a plain-language summary derived from the programme's own title and "
+    "its path — it is not a syllabus, and it never claims a module that was not read off an official page.")
+).alignment = WRAP
+ws.row_dimensions[r].height = 62
 r += 1
-for L, name in PATH_NAME.items():
-    c = ws.cell(row=r, column=2, value=L)
-    c.fill = PatternFill("solid", fgColor=path_fill([L])); c.font = Font(bold=True, color=INK)
-    c.alignment = Alignment(horizontal="center")
-    ws.cell(row=r, column=3, value=name).font = BODY
+for L, name in PATH_FULL.items():
+    c = ws.cell(row=r, column=2, value=name)
+    c.fill = PatternFill("solid", fgColor=path_fill([L])); c.font = Font(bold=True, size=9, color=INK)
+    c.alignment = WRAP
+    ws.cell(row=r, column=3, value=PATH_STUDY_TEXT[L]).font = BODY
+    ws.cell(row=r, column=3).alignment = WRAP
+    ws.row_dimensions[r].height = 30
     r += 1
 r += 1
 ws.cell(row=r, column=2, value="The one rule").font = Font(size=12, bold=True, color=ACCENT)
@@ -172,10 +181,10 @@ ws.row_dimensions[r].height = 46
 
 # ============================ 2. TRACKER ===================================
 ws = wb.create_sheet("Tracker")
-H = ["Programme","Institution","City","Path","Programme deadline","Deadline confidence",
-     "Scholarship deadline","Scholarship","English test required","Application fee (EUR)",
-     "Portfolio?","Status","Priority","Next action","Act by","Link"]
-W = [40,30,14,7,15,17,15,30,22,12,11,13,9,38,12,7]
+H = ["Programme","What you'd study","Institution","City","Path","Programme deadline",
+     "Deadline confidence","Scholarship deadline","Scholarship","English test required",
+     "Application fee (EUR)","Portfolio?","Status","Priority","Next action","Act by","Link"]
+W = [34,50,26,13,26,15,16,15,26,20,12,10,13,9,32,12,7]
 header(ws, H, W)
 
 fund = funding_rows()
@@ -204,30 +213,32 @@ for i, r in enumerate(tracker_rows):
     sname, sdate, sconf = scholarship_for(r)
     fill = path_fill(r["paths"])
     put(ws, row, 1, r["program_name"][:110], wrap=True)
-    put(ws, row, 2, r["institution"][:70], wrap=True)
-    put(ws, row, 3, r["city"][:28])
-    c = put(ws, row, 4, ",".join(r["paths"])); c.fill = PatternFill("solid", fgColor=fill or WASH)
-    put(ws, row, 5, r["deadline_date"], num="yyyy-mm-dd") if r["deadline_date"] else put(ws, row, 5, "TBC", font=SMALL)
-    put(ws, row, 6, r["deadline_conf"].replace("_", " "), font=SMALL)
-    put(ws, row, 7, sdate, num="yyyy-mm-dd") if sdate else put(ws, row, 7, "—", font=SMALL)
-    put(ws, row, 8, sname or "none found", wrap=True, font=BODY if sname else SMALL)
-    put(ws, row, 9, (r["english_level_required"] or "TBC")[:60], wrap=True)
+    put(ws, row, 2, subject_line(r["program_name"], r["paths"]), wrap=True, font=SMALL)
+    put(ws, row, 3, r["institution"][:70], wrap=True)
+    put(ws, row, 4, r["city"][:28])
+    c = put(ws, row, 5, paths_full(r["paths"]), wrap=True)
+    c.fill = PatternFill("solid", fgColor=fill or WASH)
+    put(ws, row, 6, r["deadline_date"], num="yyyy-mm-dd") if r["deadline_date"] else put(ws, row, 6, "TBC", font=SMALL)
+    put(ws, row, 7, r["deadline_conf"].replace("_", " "), font=SMALL)
+    put(ws, row, 8, sdate, num="yyyy-mm-dd") if sdate else put(ws, row, 8, "—", font=SMALL)
+    put(ws, row, 9, sname or "none found", wrap=True, font=BODY if sname else SMALL)
+    put(ws, row, 10, (r["english_level_required"] or "TBC")[:60], wrap=True)
     fee = money(r.get("tuition_notes", "")) if "application fee" in (r.get("tuition_notes") or "").lower() else None
-    put(ws, row, 10, fee if fee else "—", font=BODY if fee else SMALL)
-    put(ws, row, 11, "yes" if (r["portfolio_or_audition_required"] or "").lower().startswith("yes") else "no")
-    put(ws, row, 12, "todo")
-    put(ws, row, 13, r["_priority"])
-    put(ws, row, 14, act, wrap=True)
-    put(ws, row, 15, act_date, num="yyyy-mm-dd") if act_date else put(ws, row, 15, "—", font=SMALL)
-    link(ws, row, 16, r["program_url"])
-    ws.row_dimensions[row].height = 30
+    put(ws, row, 11, fee if fee else "—", font=BODY if fee else SMALL)
+    put(ws, row, 12, "yes" if (r["portfolio_or_audition_required"] or "").lower().startswith("yes") else "no")
+    put(ws, row, 13, "todo")
+    put(ws, row, 14, r["_priority"])
+    put(ws, row, 15, act, wrap=True)
+    put(ws, row, 16, act_date, num="yyyy-mm-dd") if act_date else put(ws, row, 16, "—", font=SMALL)
+    link(ws, row, 17, r["program_url"])
+    ws.row_dimensions[row].height = 46
     row += 1
 
 dv = DataValidation(type="list", formula1=f'"{STATUSES}"', allow_blank=False)
 dv.error = "Pick a status from the dropdown."; dv.errorTitle = "Not a valid status"
-ws.add_data_validation(dv); dv.add(f"L2:L{row-1}")
+ws.add_data_validation(dv); dv.add(f"M2:M{row-1}")
 last = row - 1
-for col in ("E", "O"):
+for col in ("F", "P"):
     rng = f"{col}2:{col}{last}"
     ws.conditional_formatting.add(rng, FormulaRule(
         formula=[f'AND(ISNUMBER({col}2),{col}2<TODAY())'],
@@ -239,8 +250,8 @@ for col in ("E", "O"):
     ws.conditional_formatting.add(rng, FormulaRule(
         formula=[f'AND(ISNUMBER({col}2),{col}2-TODAY()<=30)'],
         fill=PatternFill("solid", fgColor=ORANGE)))
-ws.conditional_formatting.add(f"F2:F{last}", FormulaRule(
-    formula=['EXACT($F2,"confirmed 2027")'], fill=PatternFill("solid", fgColor=GREEN)))
+ws.conditional_formatting.add(f"G2:G{last}", FormulaRule(
+    formula=['EXACT($G2,"confirmed 2027")'], fill=PatternFill("solid", fgColor=GREEN)))
 
 # ============================ 3. FUNDING MATRIX ============================
 ws = wb.create_sheet("Funding Matrix")
@@ -347,19 +358,36 @@ ws.add_data_validation(dv2); dv2.add(f"F2:F{row-1}")
 ws = wb.create_sheet("All Programs")
 cols = [c for c in rows[0].keys() if not c.startswith("_") and c not in
         ("paths","fee_num","deadline_date","deadline_conf","deadline_label","usable")]
-W = [min(max(14, len(c) + 4), 46) for c in cols]
-header(ws, [c.replace("_", " ") for c in cols], W)
+# path_letter is replaced in place by the readable name; the code is kept in its
+# own narrow column because the row ids (A-017, AC-059) are built from it
+HEAD, WID = [], []
+for c in cols:
+    if c == "path_letter":
+        HEAD += ["paths", "path code"]; WID += [26, 10]
+    else:
+        HEAD.append(c.replace("_", " ")); WID.append(min(max(14, len(c) + 4), 46))
+HEAD.insert(HEAD.index("program name") + 1, "what you'd study"); WID.insert(HEAD.index("what you'd study"), 50)
+header(ws, HEAD, WID)
 row = 2
 for r in sorted(usable, key=lambda x: (x["path_letter"], x["country"], x["institution"])):
-    for i, c in enumerate(cols, 1):
+    i = 0
+    for c in cols:
+        if c == "path_letter":
+            i += 1
+            cell = put(ws, row, i, paths_full(r["paths"]), wrap=True)
+            cell.fill = PatternFill("solid", fgColor=path_fill(r["paths"]) or WASH)
+            i += 1; put(ws, row, i, r["path_letter"], font=SMALL)
+            continue
+        i += 1
         v = r[c]
         if c in ("program_url", "admissions_url", "funding_url"):
             link(ws, row, i, v)
         else:
-            cell = put(ws, row, i, v[:300], wrap=len(v) > 40)
-            if c == "path_letter":
-                cell.fill = PatternFill("solid", fgColor=path_fill(r["paths"]) or WASH)
-    ws.row_dimensions[row].height = 30
+            put(ws, row, i, v[:300], wrap=len(v) > 40)
+        if c == "program_name":
+            i += 1
+            put(ws, row, i, subject_line(r["program_name"], r["paths"]), wrap=True, font=SMALL)
+    ws.row_dimensions[row].height = 46
     row += 1
 
 out = Path("deliverables/tools/Application_Command_Center.xlsx")

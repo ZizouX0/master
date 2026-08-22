@@ -29,10 +29,10 @@ Run 2026-08-22 against deliverables/tools/
   PASS  Funding Matrix: freeze panes = A2
   PASS  Documents: freeze panes = A2
   PASS  All Programs: freeze panes = A2
-  PASS  Tracker: autofilter = A1:P1
+  PASS  Tracker: autofilter = A1:Q1
   PASS  Funding Matrix: autofilter = A1:N1
   PASS  Documents: autofilter = A1:G1
-  PASS  All Programs: autofilter = A1:AI1
+  PASS  All Programs: autofilter = A1:AK1
   PASS  Tracker: 1 data-validation dropdown(s)
   PASS  Documents: 1 data-validation dropdown(s)
   PASS  Tracker: 3 conditional-formatting range(s) attached
