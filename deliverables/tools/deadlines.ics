@@ -1,0 +1,2158 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Masters 2027 sweep//deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Master's 2027 — deadlines
+X-WR-TIMEZONE:Africa/Tunis
+BEGIN:VEVENT
+UID:doc-8@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:[DOC] START: Portfolio — 3 finished pieces
+DESCRIPTION:Lead time 16 weeks\, worked backward from 2027-01-12 — the 
+ earliest calendar-eligible deadline in the dataset.\n\nLead times are EST
+ IMATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Portfolio — 3 finished pieces — 30 days to g
+ o
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Portfolio — 3 finished pieces — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-13@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:[DOC] START: Visa appointment slot
+DESCRIPTION:Lead time 12 weeks\, worked backward from 2027-01-12 — the 
+ earliest calendar-eligible deadline in the dataset.\n\nLead times are EST
+ IMATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Visa appointment slot — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Visa appointment slot — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-2@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[DOC] START: IELTS Academic — book now (booking to reported sco
+ re)
+DESCRIPTION:Lead time 9 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: IELTS Academic — book now (booking to reported
+  score) — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: IELTS Academic — book now (booking to reported
+  score) — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-0@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[DOC] START: Degree certificate — sworn translation + apostille
+DESCRIPTION:Lead time 8 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Degree certificate — sworn translation + apost
+ ille — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Degree certificate — sworn translation + apost
+ ille — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-3@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[DOC] START: Passport — check validity through end of studies
+DESCRIPTION:Lead time 8 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Passport — check validity through end of studi
+ es — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Passport — check validity through end of studi
+ es — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-4@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[DOC] START: Recommendation letters (2) — ask now
+DESCRIPTION:Lead time 6 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Recommendation letters (2) — ask now — 30 da
+ ys to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Recommendation letters (2) — ask now — 7 day
+ s to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-10@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[DOC] START: Register the venture — unlocks ESMT Panzer (EUR 35
+ \,000)
+DESCRIPTION:Lead time 6 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Register the venture — unlocks ESMT Panzer (EU
+ R 35\,000) — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Register the venture — unlocks ESMT Panzer (EU
+ R 35\,000) — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-11@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:[DOC] START: DUA Anexo II certification — Andalusian publics
+DESCRIPTION:Lead time 5 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: DUA Anexo II certification — Andalusian public
+ s — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: DUA Anexo II certification — Andalusian public
+ s — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-12@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:[DOC] START: Blocked account (Sperrkonto) EUR 11\,904 — if unfu
+ nded
+DESCRIPTION:Lead time 5 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Blocked account (Sperrkonto) EUR 11\,904 — if 
+ unfunded — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Blocked account (Sperrkonto) EUR 11\,904 — if 
+ unfunded — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-1@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:[DOC] START: Official transcripts (sealed copies)
+DESCRIPTION:Lead time 4 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Official transcripts (sealed copies) — 30 days
+  to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Official transcripts (sealed copies) — 7 days 
+ to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-6@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:[DOC] START: Statement of purpose — technical fork
+DESCRIPTION:Lead time 4 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Statement of purpose — technical fork — 30 d
+ ays to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Statement of purpose — technical fork — 7 da
+ ys to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-7@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:[DOC] START: Statement of purpose — business fork
+DESCRIPTION:Lead time 3 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Statement of purpose — business fork — 30 da
+ ys to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Statement of purpose — business fork — 7 day
+ s to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-5@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[DOC] START: CV — academic format
+DESCRIPTION:Lead time 2 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: CV — academic format — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: CV — academic format — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:doc-9@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[DOC] START: Business-idea video (1 minute) — Berklee
+DESCRIPTION:Lead time 2 weeks\, worked backward from 2027-01-12 — the e
+ arliest calendar-eligible deadline in the dataset.\n\nLead times are ESTI
+ MATES for a Tunisian applicant\, not verified figures.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Business-idea video (1 minute) — Berklee — 3
+ 0 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[DOC] START: Business-idea video (1 minute) — Berklee — 7
+  days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FEM-013@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:[FUND] EDISS - Engineering of Data-intensive Intelligent Software
+  Systems (EM
+DESCRIPTION:EDISS consortium coordinated by Abo Akademi University\, fund
+ ed by EACEA\nRegion: erasmus_mundus\nCoverage: full+stipend  |  Amount: 1
+ 6800\nTunisian eligible: yes\nApplies to: Abo Akademi University\nRequire
+ s an admission offer first: no\nEvidence: "All applicants are welcome to 
+ apply regardless of nationality"\n\nDATE CONFIDENCE: confirmed 2027\, rea
+ d off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.master-ediss.eu/admission/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] EDISS - Engineering of Data-intensive Intelligent Soft
+ ware Systems (EM — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] EDISS - Engineering of Data-intensive Intelligent Soft
+ ware Systems (EM — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-G-105@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:[APP] Master of Film | Artistic Research in and through Cinema
+DESCRIPTION:Netherlands Film Academy / Nederlandse Filmacademie (Amsterda
+ m University of the Arts - AHK)\nAmsterdam\, Netherlands\nPaths: G  |  En
+ glish\nTuition (non-EU): 8250\nEnglish required: No TOEFL or IELTS is req
+ uired. Applicants must have English at CEFR C1\nAccepts a 300-ECTS engine
+ ering diploma: yes_explicit\nVerification: VERIFIED\nSource deadline text
+ : 12 January 2027\, 12:00 CET for the 2027-2029 cohort. First-selection r
+ esults mid February \n\nDATE CONFIDENCE: confirmed 2027\, read off an off
+ icial page.
+TRANSP:TRANSPARENT
+URL:https://www.filmacademie.ahk.nl/en/master-programmes/master-of-film-a
+ rtistic-research-in-and-through-cinema/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Film | Artistic Research in and through Cinem
+ a — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Film | Artistic Research in and through Cinem
+ a — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-C-080@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[APP] Computer Science (MSc) - themes include Machine Learning Ap
+ plications 
+DESCRIPTION:Delft University of Technology (TU Delft) - Faculty EEMCS\, I
+ ntelligent Systems / Multimedia Computing Group\nDelft\, Netherlands\nPat
+ hs: C  |  English\nTuition (non-EU): 25633\nEnglish required: IELTS Acade
+ mic overall 7.0 with a minimum of 6.5 in each section\; OR T\nAccepts a 3
+ 00-ECTS engineering diploma: yes_explicit\nVerification: VERIFIED\nSource
+  deadline text: 15 January 2027 (23:59 CEST) for non-EU/EFTA applicants w
+ ith an international bachelor deg\n\nDATE CONFIDENCE: confirmed 2027\, re
+ ad off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.tudelft.nl/en/education/programmes/masters/cs/msc-compute
+ r-science
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Computer Science (MSc) - themes include Machine Learnin
+ g Applications  — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Computer Science (MSc) - themes include Machine Learnin
+ g Applications  — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-L-150@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[APP] Master Crossover Creativity (deeltijd) [Crossover Creativit
+ y Master\, p  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:HKU University of the Arts Utrecht (Hogeschool voor de Kunste
+ n Utrecht)\nUtrecht\, Netherlands\nPaths: L  |  Dutch (programme states '
+ This programme is in Dutch only')\nTuition (non-EU): TBC\nEnglish require
+ d: not applicable - Dutch proficiency required instead\nAccepts a 300-ECT
+ S engineering diploma: likely\nVerification: PARTIALLY_VERIFIED\nSource d
+ eadline text: Applications received after 15 JANUARY can only be placed s
+ ubject to availability. There i\n\nDATE CONFIDENCE: recurring annual dead
+ line projected to 2027. The institution had not published its 2027 date w
+ hen this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.hku.nl/en/study-at-hku/creative-transformation/master-cro
+ ssover-creativity-(part-time)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Crossover Creativity (deeltijd) [Crossover Creat
+ ivity Master\, p  [recurring annual date — CONFIRM the 2027 date] — 3
+ 0 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Crossover Creativity (deeltijd) [Crossover Creat
+ ivity Master\, p  [recurring annual date — CONFIRM the 2027 date] — 7
+  days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-N-173@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[APP] MSc Design for Interaction  [recurring annual date — CONF
+ IRM the 2027 date]
+DESCRIPTION:Delft University of Technology (Faculty of Industrial Design 
+ Engineering)\nDelft\, Netherlands\nPaths: N  |  English\nTuition (non-EU)
+ : 25633\nEnglish required: IELTS Academic 7.0 overall with minimum 6.5 in
+  every section\; or TOEFL\nAccepts a 300-ECTS engineering diploma: no\nVe
+ rification: VERIFIED\nSource deadline text: 15 January - non-EU/EFTA dead
+ line stated on the programme's own Non-Dutch BSc admission pa\n\nDATE CON
+ FIDENCE: recurring annual deadline projected to 2027. The institution had
+  not published its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.tudelft.nl/en/education/programmes/masters/dfi/msc-design
+ -for-interaction
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Design for Interaction  [recurring annual date — 
+ CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Design for Interaction  [recurring annual date — 
+ CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-N-174@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[APP] MSc Integrated Product Design  [recurring annual date — C
+ ONFIRM the 2027 date]
+DESCRIPTION:Delft University of Technology (Faculty of Industrial Design 
+ Engineering)\nDelft\, Netherlands\nPaths: N  |  English\nTuition (non-EU)
+ : 25633\nEnglish required: IELTS Academic 7.0 overall with minimum 6.5 in
+  each section\; or TOEFL \nAccepts a 300-ECTS engineering diploma: yes_ex
+ plicit\nVerification: VERIFIED\nSource deadline text: 15 January for non-
+ EU/EFTA applicants\; outcome communicated by mid-March\n\nDATE CONFIDENCE
+ : recurring annual deadline projected to 2027. The institution had not pu
+ blished its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.tudelft.nl/en/education/programmes/masters/ipd/msc-integr
+ ated-product-design
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Integrated Product Design  [recurring annual date 
+ — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Integrated Product Design  [recurring annual date 
+ — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-N-175@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[APP] MSc Strategic Product Design  [recurring annual date — CO
+ NFIRM the 2027 date]
+DESCRIPTION:Delft University of Technology (Faculty of Industrial Design 
+ Engineering)\nDelft\, Netherlands\nPaths: N  |  English\nTuition (non-EU)
+ : 25633\nEnglish required: TU Delft general international requirement (IE
+ LTS/TOEFL minima on the \nAccepts a 300-ECTS engineering diploma: unclear
+ \nVerification: VERIFIED\nSource deadline text: 15 January (non-EU/EFTA a
+ pplicants)\; 1 April (EU/EFTA\, rolling admission). Non-EU decision\n\nDA
+ TE CONFIDENCE: recurring annual deadline projected to 2027. The instituti
+ on had not published its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.tudelft.nl/en/education/programmes/masters/spd/msc-strate
+ gic-product-design
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Strategic Product Design  [recurring annual date 
+ — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Strategic Product Design  [recurring annual date 
+ — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AC-042@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:[APP] MSc International Business - specialisation Marketing-Finan
+ ce
+DESCRIPTION:Maastricht University\, School of Business and Economics\nMaa
+ stricht\, Netherlands\nPaths: AC  |  English\nTuition (non-EU): 21500\nEn
+ glish required: Required for all applicants with a non-EU/EEA nationality
+  ("Students w\nAccepts a 300-ECTS engineering diploma: yes_explicit\nVeri
+ fication: PARTIALLY_VERIFIED\nSource deadline text: 2026-2027 academic ye
+ ar\, official dates: FOR A SEPTEMBER 2026 START - applications open as\n\
+ nDATE CONFIDENCE: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.maastrichtuniversity.nl/education/master/programmes/inter
+ national-business-marketing-finance
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc International Business - specialisation Marketing-F
+ inance — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc International Business - specialisation Marketing-F
+ inance — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-C-081@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:[APP] Artificial Intelligence (MSc)  [recurring annual date — C
+ ONFIRM the 2027 date]
+DESCRIPTION:University of Amsterdam (UvA) - Faculty of Science / Institut
+ e for Logic\, Language and Computation (ILLC)\nAmsterdam\, Netherlands\nP
+ aths: C  |  English\nTuition (non-EU): 26000\nEnglish required: IELTS Aca
+ demic 7.0 overall with all subscores >=6.5 (AI is in the high\nAccepts a 
+ 300-ECTS engineering diploma: yes_explicit\nVerification: VERIFIED\nSourc
+ e deadline text: 31 January 23:59 CET (non-EU/EEA)\; 30 April (EU/EEA and
+  students already at a Dutch HE ins\n\nDATE CONFIDENCE: recurring annual 
+ deadline projected to 2027. The institution had not published its 2027 da
+ te when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uva.nl/en/programmes/masters/artificial-intelligence/arti
+ ficial-intelligence.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Artificial Intelligence (MSc)  [recurring annual date 
+ — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Artificial Intelligence (MSc)  [recurring annual date 
+ — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AC-049@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[APP] MSc Marketing - Marketing Analytics and Data Science
+DESCRIPTION:University of Groningen (Rijksuniversiteit Groningen)\nGronin
+ gen\, Netherlands\nPaths: AC  |  English\nTuition (non-EU): 22200\nEnglis
+ h required: IELTS Academic overall 6.5 (Speaking 6\, Writing 6.5)\; TOEFL
+  iBT overal\nAccepts a 300-ECTS engineering diploma: no\nVerification: VE
+ RIFIED\nSource deadline text: 15 October 2026 (non-EU/EEA). The page ties
+  this deadline to intakes of 01 February 2027 a\n\nDATE CONFIDENCE: confi
+ rmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data
+ -science/?lang=en
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Marketing - Marketing Analytics and Data Science 
+ — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Marketing - Marketing Analytics and Data Science 
+ — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AD-071@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[APP] MA Media Studies - New Media & Digital Culture  [recurring 
+ annual date — CONFIRM the 2027 date]
+DESCRIPTION:Utrecht University\nUtrecht\, Netherlands\nPaths: AD  |  Engl
+ ish\nTuition (non-EU): 21342\nEnglish required: Utrecht University EMI sy
+ stem - this programme requires EMI-EXPERIENCE\nAccepts a 300-ECTS enginee
+ ring diploma: no\nVerification: VERIFIED\nSource deadline text: 1 FEBRUAR
+ Y for scholarship candidates\; 1 APRIL for non-EU passport holders (and 1
+  April fo\n\nDATE CONFIDENCE: recurring annual deadline projected to 2027
+ . The institution had not published its 2027 date when this was built —
+  confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uu.nl/en/masters/new-media-digital-culture
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Media Studies - New Media & Digital Culture  [recurr
+ ing annual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Media Studies - New Media & Digital Culture  [recurr
+ ing annual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-L-152@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[APP] Master Arts and Society  [recurring annual date — CONFIRM
+  the 2027 date]
+DESCRIPTION:Utrecht University\nUtrecht\, Netherlands\nPaths: L  |  Engli
+ sh\nTuition (non-EU): 21342\nEnglish required: Utrecht University EMI sys
+ tem - this programme requires EMI-EXPERIENCE\nAccepts a 300-ECTS engineer
+ ing diploma: no\nVerification: VERIFIED\nSource deadline text: 1 FEBRUARY
+  for scholarship candidates\; 1 APRIL for non-EU passport holders. Decisi
+ ons are \n\nDATE CONFIDENCE: recurring annual deadline projected to 2027.
+  The institution had not published its 2027 date when this was built — 
+ confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uu.nl/en/masters/arts-and-society
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Arts and Society  [recurring annual date — CON
+ FIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Arts and Society  [recurring annual date — CON
+ FIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-N-164@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[APP] Innovation Design\, M.A.
+DESCRIPTION:CODE University of Applied Sciences Berlin\nBerlin\, Germany\
+ nPaths: N  |  English\nTuition (non-EU): 15000\nEnglish required: B2 mini
+ mum\nAccepts a 300-ECTS engineering diploma: yes_explicit\nVerification: 
+ VERIFIED\nSource deadline text: 20 August 2026 for the Fall 2026 semester
+  (starts 25 August 2026)\; 31 December 2026 for th\n\nDATE CONFIDENCE: co
+ nfirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://code.berlin/en/study/master/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Innovation Design\, M.A. — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Innovation Design\, M.A. — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-N-177@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[APP] MSc Human-Computer Interaction  [recurring annual date — 
+ CONFIRM the 2027 date]
+DESCRIPTION:Utrecht University\nUtrecht\, Netherlands\nPaths: N  |  Engli
+ sh\nTuition (non-EU): 25306\nEnglish required: Utrecht "EMI-experienced" 
+ level: IELTS Academic 6.5 overall with 6.0 i\nAccepts a 300-ECTS engineer
+ ing diploma: yes_explicit\nVerification: VERIFIED\nSource deadline text: 
+ September intake: 1 February for scholarship applicants\; 1 APRIL for non
+ -EU passport holde\n\nDATE CONFIDENCE: recurring annual deadline projecte
+ d to 2027. The institution had not published its 2027 date when this was 
+ built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uu.nl/en/masters/human-computer-interaction
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Human-Computer Interaction  [recurring annual date 
+ — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Human-Computer Interaction  [recurring annual date 
+ — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FNL-019@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[FUND] Eric Bleumink Fellowship (Talent Grant)
+DESCRIPTION:University of Groningen (Eric Bleumink Fund)\nRegion: netherl
+ ands\nCoverage: full+stipend  |  Amount: TBC\nTunisian eligible: yes\nApp
+ lies to: University of Groningen\nRequires an admission offer first: yes 
+ - (provisional) admission offer required before February\nEvidence: Crite
+ rion: "Hold the nationality of a country appearing in Appendix 1." The pu
+ blished Appendix 1 list includes "...Sri Lanka\, Sudan\, Tajikistan\, Tok
+ elau\, Tunisia\, Zimbabwe..."\n\nDATE CONFIDENCE: confirmed 2027\, read o
+ ff an official page.
+TRANSP:TRANSPARENT
+URL:https://www.rug.nl/education/scholarships/eric-bleumink-fellowship?la
+ ng=en
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Eric Bleumink Fellowship (Talent Grant) — 30 days to
+  go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Eric Bleumink Fellowship (Talent Grant) — 7 days to 
+ go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FNL-021@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[FUND] Maastricht University NL-High Potential Scholarship
+DESCRIPTION:Maastricht University Scholarship Fund + Dutch Ministry of Ed
+ ucation (NL Scholarship component)\nRegion: netherlands\nCoverage: full+s
+ tipend  |  Amount: 20150\nTunisian eligible: yes\nApplies to: Maastricht 
+ University\nRequires an admission offer first: yes - the FULL master's ap
+ plication must be submitted and complete by 10 December 2026\nEvidence: "
+ You hold a nationality in a country outside the EU/EEA\, Switzerland or S
+ urinam and meet the requirements for obtaining an entry visa and residenc
+ e permit for the Netherlands."\n\nDATE CONFIDENCE: confirmed 2027\, read 
+ off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.maastrichtuniversity.nl/studeren/toelating-inschrijving/f
+ inancing-your-studies/scholarships/maastricht-university-nl-high
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Maastricht University NL-High Potential Scholarship 
+ — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Maastricht University NL-High Potential Scholarship 
+ — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FES-024@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[FUND] Berklee Valencia Diversity Scholarship  [recurring annual 
+ date — CONFIRM the 2027 date]
+DESCRIPTION:Berklee College of Music - Valencia campus\nRegion: spain\nCo
+ verage: partial  |  Amount: TBC\nTunisian eligible: likely\nApplies to: B
+ erklee College of Music\, Valencia campus\nRequires an admission offer fi
+ rst: yes (acceptance to a graduate programme is a stated condition)\nEvid
+ ence: "Demonstrated leadership or support for historically underrepresent
+ ed or culturally diverse communities\, including first-generation college
+  students" plus "Acceptance to one of the graduate programs"\n\nDATE CONF
+ IDENCE: recurring annual deadline projected to 2027. The institution had 
+ not published its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://valencia.berklee.edu/scholarships-financial-aid/scholarships-
+ for-graduate-programs
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Valencia Diversity Scholarship  [recurring ann
+ ual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Valencia Diversity Scholarship  [recurring ann
+ ual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-G-110@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:[APP] Master propi en Composicio de Bandes Sonores i Musica per a
+  Mitjans Au  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:ESMUC - Escola Superior de Musica de Catalunya\nBarcelona\, S
+ pain\nPaths: G  |  Spanish and English\nTuition (non-EU): 6667\nEnglish r
+ equired: None published - no English or Spanish test is required on the p
+ rogram\nAccepts a 300-ECTS engineering diploma: no\nVerification: VERIFIE
+ D\nSource deadline text: THREE ROUNDS for academic year 2026-2027: 1st ro
+ und 2 February - 25 March (acceptance 15 A\n\nDATE CONFIDENCE: recurring 
+ annual deadline projected to 2027. The institution had not published its 
+ 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.esmuc.cat/en/master-propi-de-composicio-de-bandes-sonores
+ -i-musica-per-a-mitjans-audiovisuals/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master propi en Composicio de Bandes Sonores i Musica p
+ er a Mitjans Au  [recurring annual date — CONFIRM the 2027 date] — 30
+  days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master propi en Composicio de Bandes Sonores i Musica p
+ er a Mitjans Au  [recurring annual date — CONFIRM the 2027 date] — 7 
+ days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FEM-016@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:[FUND] EIT Digital Master School scholarships (NOT an Erasmus Mun
+ dus Joint Ma
+DESCRIPTION:EIT Digital Education Foundation (European Institute of Innov
+ ation and Technology\, an EU body)\nRegion: erasmus_mundus\nCoverage: ful
+ l_tuition  |  Amount: up to 18000 (tuition waiver only for non-EU nationa
+ ls)\nTunisian eligible: yes\nApplies to: EIT Digital Master School (doubl
+ e degree across two of ~20 partner universities incl. Universidad Politec
+ nica de Madrid and University of Twente)\nRequires an admission offer fir
+ st: no\nEvidence: Fee waivers: "Available to : All students". BUT for the
+  allowance-bearing awards: "Available to : Citizens of EU/EEA countries" 
+ - a Tunisian is excluded from the living-allowance tier.\n\nDATE CONFIDEN
+ CE: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://masterschool.eitdigital.eu/admissions/fees
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] EIT Digital Master School scholarships (NOT an Erasmus
+  Mundus Joint Ma — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] EIT Digital Master School scholarships (NOT an Erasmus
+  Mundus Joint Ma — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-A-015@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:[APP] Audio Communication and Sonology (double-degree master spec
+ ialisation)  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Technische Universitat Berlin (Audio Communication Group) wit
+ h the Institute of Sonology\, Royal Conservatoire The Hague\nBerlin (year
+  1) and The Hague (year 2)\, Germany and Netherlands\nPaths: A\,C\,G\,H  
+ |  German (year 1 at TU Berlin) and English (year 2 in The Hagu\nTuition 
+ (non-EU): 0 at TU Berlin (semester fee only\, amount TBC) + 11488 at the 
+ Royal Conservatoire in year 2\nEnglish required: IELTS 6.0 or TOEFL iBT 8
+ 3 (stated on the TU Berlin double-degree page)\nAccepts a 300-ECTS engine
+ ering diploma: yes_explicit\nVerification: PARTIALLY_VERIFIED\nSource dea
+ dline text: 15 February (stated as 'for the current year')\; notification
+  of exchange students by 15 Ap\n\nDATE CONFIDENCE: recurring annual deadl
+ ine projected to 2027. The institution had not published its 2027 date wh
+ en this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.tu.berlin/en/ak/study-and-teaching/degree-programs/audio-
+ communication-and-sonology
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Audio Communication and Sonology (double-degree master 
+ specialisation)  [recurring annual date — CONFIRM the 2027 date] — 30
+  days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Audio Communication and Sonology (double-degree master 
+ specialisation)  [recurring annual date — CONFIRM the 2027 date] — 7 
+ days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AD-069@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:[APP] MSc Communication Science - Entertainment Communication
+DESCRIPTION:University of Amsterdam (Graduate School of Communication\, F
+ aculty of Social and Behavioural Sciences)\nAmsterdam\, Netherlands\nPath
+ s: AD  |  English\nTuition (non-EU): 23455\nEnglish required: IELTS Acade
+ mic 7.0 with a minimum of 6.5 per section\; TOEFL iBT 100 ov\nAccepts a 3
+ 00-ECTS engineering diploma: no\nVerification: VERIFIED\nSource deadline 
+ text: 2027 DATES ARE PUBLISHED AND EXACT. For the SEPTEMBER 2027 intake: 
+ Studielink by "February\n\nDATE CONFIDENCE: confirmed 2027\, read off an 
+ official page.
+TRANSP:TRANSPARENT
+URL:https://www.uva.nl/shared-content/programmas/en/masters/communication
+ -science-entertainment-communication/application-and-admission/overview.h
+ tml
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Communication Science - Entertainment Communication
+  — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Communication Science - Entertainment Communication
+  — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-L-155@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:[APP] Master online en Gestion Cultural Internacional e Innovacio
+ n Social (O
+DESCRIPTION:Universidad Complutense de Madrid (UCM)\, Escuela de Gobierno
+ \nMadrid (fully online)\, Spain\nPaths: L  |  Spanish\nTuition (non-EU): 
+ TBC\nEnglish required: not required\nAccepts a 300-ECTS engineering diplo
+ ma: unclear\nVerification: PARTIALLY_VERIFIED\nSource deadline text: 28 F
+ ebruary 2027 (general application window for the 2026/2027 edition\, per 
+ the UCM pre-en\n\nDATE CONFIDENCE: confirmed 2027\, read off an official 
+ page.
+TRANSP:TRANSPARENT
+URL:https://mastergestionculturalucm.com/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master online en Gestion Cultural Internacional e Innov
+ acion Social (O — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master online en Gestion Cultural Internacional e Innov
+ acion Social (O — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-N-171@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[APP] Master Digital Design - track Interaction Design
+DESCRIPTION:Amsterdam University of Applied Sciences (AUAS/HvA)\nAmsterda
+ m\, Netherlands\nPaths: N  |  English\nTuition (non-EU): 10648\nEnglish r
+ equired: CEFR C1. AUAS accepts TOEFL\, IELTS (academic) or Cambridge CPE/
+ CAE gra\nAccepts a 300-ECTS engineering diploma: yes_explicit\nVerificati
+ on: VERIFIED\nSource deadline text: 1 March for non-EU/non-EEA applicants
+  (1 May for EU) - stated on both the programme page a\n\nDATE CONFIDENCE:
+  confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.amsterdamuas.com/programmes/master-digital-design-interac
+ tion-design
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Digital Design - track Interaction Design — 30
+  days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Digital Design - track Interaction Design — 7 
+ days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-A-018@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] Creative Intelligence & Technology (MSc) - formerly Media T
+ echnology  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Leiden University - Leiden Institute of Advanced Computer Sci
+ ence (LIACS)\nLeiden\, Netherlands\nPaths: A\,C\,N  |  English\nTuition (
+ non-EU): 22500\nEnglish required: IELTS Academic 6.5 overall with min 6.0
+  per component\; TOEFL iBT 2026-\nAccepts a 300-ECTS engineering diploma:
+  yes_explicit\nVerification: PARTIALLY_VERIFIED\nSource deadline text: 1 
+ April (September start) for applicants needing a visa/residence permit - 
+ applies to the \n\nDATE CONFIDENCE: recurring annual deadline projected t
+ o 2027. The institution had not published its 2027 date when this was bui
+ lt — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.universiteitleiden.nl/en/education/study-programmes/maste
+ r/creative-intelligence--technology
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Creative Intelligence & Technology (MSc) - formerly Med
+ ia Technology  [recurring annual date — CONFIRM the 2027 date] — 30 d
+ ays to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Creative Intelligence & Technology (MSc) - formerly Med
+ ia Technology  [recurring annual date — CONFIRM the 2027 date] — 7 da
+ ys to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-A-019@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] MSc Interaction Technology
+DESCRIPTION:University of Twente\nEnschede\, Netherlands\nPaths: A\,C\,N 
+  |  English\nTuition (non-EU): 21700\nEnglish required: IELTS Academic 6.
+ 5 overall with at least 6.0 in each section\; or TOEFL\nAccepts a 300-ECT
+ S engineering diploma: likely\nVerification: VERIFIED\nSource deadline te
+ xt: 1 April 2027 (scholarship deadline\; programme admission deadline TBC
+ )\n\nDATE CONFIDENCE: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.utwente.nl/en/education/master/programmes/interaction-tec
+ hnology/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Interaction Technology — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Interaction Technology — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-A-027@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] Master of Music - pathway Music Design (strand: Sound Desig
+ n)
+DESCRIPTION:HKU University of the Arts Utrecht (Hogeschool voor de Kunste
+ n Utrecht)\nUtrecht\, Netherlands\nPaths: A\,G\,H\,N  |  English (the pag
+ e's own language field reads 'English|Dutch'\nTuition (non-EU): 12258\nEn
+ glish required: IELTS Academic 6.0\; OR TOEFL iBT 80\; OR Cambridge C1 Ad
+ vanced (CAE) 16\nAccepts a 300-ECTS engineering diploma: likely\nVerifica
+ tion: VERIFIED\nSource deadline text: 1 April 2027 is the HARD cut-off fo
+ r non-EU/EEA candidates - 'We cannot accept application\n\nDATE CONFIDENC
+ E: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.hku.nl/en/study-at-hku/music-and-technology/master-of-mus
+ ic-pathway-music-design
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Music - pathway Music Design (strand: Sound D
+ esign) — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Music - pathway Music Design (strand: Sound D
+ esign) — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AC-051@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] MSc Marketing
+DESCRIPTION:Vrije Universiteit Amsterdam (VU)\, School of Business and Ec
+ onomics\nAmsterdam\, Netherlands\nPaths: AC  |  English\nTuition (non-EU)
+ : 24830\nEnglish required: TBC - the admissions page still routes to a se
+ parate 'language require\nAccepts a 300-ECTS engineering diploma: no\nVer
+ ification: VERIFIED\nSource deadline text: STALE ON THE OFFICIAL PAGE: th
+ e live admissions page reads 'The application deadline for E\n\nDATE CONF
+ IDENCE: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://vu.nl/en/education/master/marketing
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Marketing — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Marketing — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AC-054@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] Master Universitario en Marketing (MUM) (Master's Degree in
+  Marketing)  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Universidad Autonoma de Madrid (UAM)\nMadrid\, Spain\nPaths: 
+ AC  |  Spanish\nTuition (non-EU): 5044\nEnglish required: TBC\nAccepts a 
+ 300-ECTS engineering diploma: unclear\nVerification: PARTIALLY_VERIFIED\n
+ Source deadline text: 1 April (reference year unclear). Selection runs Ap
+ ril-May\; admitted students receive a fo\n\nDATE CONFIDENCE: recurring an
+ nual deadline projected to 2027. The institution had not published its 20
+ 27 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uam.es/economicas/en/facultad/departamentos/marketing/mas
+ ter-universitario-en-marketing
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Universitario en Marketing (MUM) (Master's Degre
+ e in Marketing)  [recurring annual date — CONFIRM the 2027 date] — 30
+  days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Universitario en Marketing (MUM) (Master's Degre
+ e in Marketing)  [recurring annual date — CONFIRM the 2027 date] — 7 
+ days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AD-068@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] MA Creative Industries and Cultural Management (specialisat
+ ion of MA A
+DESCRIPTION:Radboud University Nijmegen\nNijmegen\, Netherlands\nPaths: A
+ D  |  English\nTuition (non-EU): TBC\nEnglish required: TOEFL iBT >=90\; 
+ IELTS Academic >=6.5 (writing >=6.5)\; Cambridge C1 Adv\nAccepts a 300-EC
+ TS engineering diploma: no\nVerification: PARTIALLY_VERIFIED\nSource dead
+ line text: 1 April 2027 (non-EU/EEA applicants). A separate 31 January de
+ adline applies to scholarshi\n\nDATE CONFIDENCE: confirmed 2027\, read of
+ f an official page.
+TRANSP:TRANSPARENT
+URL:https://www.ru.nl/en/education/masters/creative-industries
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Creative Industries and Cultural Management (special
+ isation of MA A — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Creative Industries and Cultural Management (special
+ isation of MA A — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-C-083@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] Artificial Intelligence (MSc)  [recurring annual date — C
+ ONFIRM the 2027 date]
+DESCRIPTION:Utrecht University - Department of Information and Computing 
+ Sciences\nUtrecht\, Netherlands\nPaths: C  |  English\nTuition (non-EU): 
+ 25306\nEnglish required: UU 'EMI-experienced' level. Accepted tests and m
+ inimum scores: IELTS A\nAccepts a 300-ECTS engineering diploma: likely\nV
+ erification: VERIFIED\nSource deadline text: 1 April for NON-EU passport 
+ holders (September start)\, 23:59 CET/CEST - the full applicati\n\nDATE C
+ ONFIDENCE: recurring annual deadline projected to 2027. The institution h
+ ad not published its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uu.nl/en/masters/artificial-intelligence
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Artificial Intelligence (MSc)  [recurring annual date 
+ — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Artificial Intelligence (MSc)  [recurring annual date 
+ — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-J-127@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] Master Music Management (M.A.) - degree programme: Media an
+ d Communica
+DESCRIPTION:Hochschule Macromedia / Macromedia University of Applied Scie
+ nces - Berlin campus\nBerlin\, Germany\nPaths: J  |  English (listed in M
+ acromedia's English-language master's ca\nTuition (non-EU): 13680\nEnglis
+ h required: TBC - no CEFR level or test score is published on the program
+ me or adm\nAccepts a 300-ECTS engineering diploma: yes_explicit\nVerifica
+ tion: VERIFIED\nSource deadline text: Summer semester 1 April\; winter se
+ mester 1 October - identical to the start dates. For a 2\n\nDATE CONFIDEN
+ CE: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.macromedia-fachhochschule.de/en/master/music-management/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Music Management (M.A.) - degree programme: Medi
+ a and Communica — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Music Management (M.A.) - degree programme: Medi
+ a and Communica — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-J-131@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] MA Applied Musicology  [recurring annual date — CONFIRM t
+ he 2027 date]
+DESCRIPTION:Utrecht University\nUtrecht\, Netherlands\nPaths: J  |  Engli
+ sh\nTuition (non-EU): 21342\nEnglish required: UU 'EMI-experienced' level
+ : IELTS Academic overall 6.5 with 6.0 in eac\nAccepts a 300-ECTS engineer
+ ing diploma: no\nVerification: VERIFIED\nSource deadline text: 1 April fo
+ r non-EU passport holders\, 23:59 CET/CEST (1 June for EU). CRITICAL EARL
+ IER DATE\n\nDATE CONFIDENCE: recurring annual deadline projected to 2027.
+  The institution had not published its 2027 date when this was built — 
+ confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uu.nl/en/masters/applied-musicology
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Applied Musicology  [recurring annual date — CONFI
+ RM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Applied Musicology  [recurring annual date — CONFI
+ RM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-L-160@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[APP] M.A. International Management - Creative Leadership  [recur
+ ring annual date — CONFIRM the 2027 date]
+DESCRIPTION:SRH Berlin University of Applied Sciences (Berlin School of P
+ opular Arts / School of Management)\nBerlin\, Germany\nPaths: L\,AD  |  E
+ nglish\nTuition (non-EU): 13900\nEnglish required: Proof of English langu
+ age proficiency required\; no score published on \nAccepts a 300-ECTS eng
+ ineering diploma: likely\nVerification: VERIFIED\nSource deadline text: N
+ o fixed deadline\; rolling admission against the 1 April and 1 October st
+ arts. Process: su\n\nDATE CONFIDENCE: recurring annual deadline projected
+  to 2027. The institution had not published its 2027 date when this was b
+ uilt — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.srh-university.de/en/master/international-management-crea
+ tive-leadership/b/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] M.A. International Management - Creative Leadership  [r
+ ecurring annual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] M.A. International Management - Creative Leadership  [r
+ ecurring annual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FNL-010@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FUND] University of Twente Scholarship (UTS)
+DESCRIPTION:University of Twente\nRegion: netherlands\nCoverage: partial 
+  |  Amount: 3000-22000\nTunisian eligible: yes\nApplies to: University of
+  Twente\nRequires an admission offer first: yes - (provisional) admission
+  needed before applying for funding\nEvidence: "The University Twente Sch
+ olarship (UTS) is a scholarship for excellent students from non-EU/EER co
+ untries\, applying for a graduate programme (MSc) at the University of Tw
+ ente." Tunisia appears on the\n\nDATE CONFIDENCE: confirmed 2027\, read o
+ ff an official page.
+TRANSP:TRANSPARENT
+URL:https://www.utwente.nl/en/education/scholarship-finder/university-of-
+ twente-scholarship/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] University of Twente Scholarship (UTS) — 30 days to 
+ go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] University of Twente Scholarship (UTS) — 7 days to g
+ o
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FNL-024@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:[FUND] Wageningen University Excellence Scholarship
+DESCRIPTION:Wageningen University & Research\nRegion: netherlands\nCovera
+ ge: full_tuition  |  Amount: TBC\nTunisian eligible: yes\nApplies to: Wag
+ eningen University & Research\nRequires an admission offer first: yes - u
+ nconditional admission required\nEvidence: "You are a citizen of a countr
+ y outside the EU and outsite EFTA." [sic - WUR's own text]\n\nDATE CONFID
+ ENCE: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.wur.nl/en/education/master/study-expenses-masters/scholar
+ ships
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Wageningen University Excellence Scholarship — 30 da
+ ys to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Wageningen University Excellence Scholarship — 7 day
+ s to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FNL-025@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:[FUND] Wageningen Africa Scholarship Programme (ASP)
+DESCRIPTION:Wageningen University & Research\nRegion: netherlands\nCovera
+ ge: full+stipend  |  Amount: TBC\nTunisian eligible: yes\nApplies to: Wag
+ eningen University & Research\nRequires an admission offer first: yes - u
+ nconditional admission required\nEvidence: "You are a citizen of an Afric
+ an country." - Tunisia is an African country\; no sub-Saharan or DAC-list
+  narrowing is stated on the page\n\nDATE CONFIDENCE: confirmed 2027\, rea
+ d off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.wur.nl/en/education/master/study-expenses-masters/scholar
+ ships
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Wageningen Africa Scholarship Programme (ASP) — 30 d
+ ays to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Wageningen Africa Scholarship Programme (ASP) — 7 da
+ ys to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-J-141@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:[APP] MA Media Studies - Media & Creative Industries  [recurring 
+ annual date — CONFIRM the 2027 date]
+DESCRIPTION:Erasmus University Rotterdam (Erasmus School of History\, Cul
+ ture and Communication - ESHCC)\nRotterdam\, Netherlands\nPaths: J\,AD  |
+   English\nTuition (non-EU): 21000\nEnglish required: IELTS Academic 7.0 
+ overall (6.5 subscores) or TOEFL iBT 100 (23 subsco\nAccepts a 300-ECTS e
+ ngineering diploma: no\nVerification: PARTIALLY_VERIFIED\nSource deadline
+  text: 15 April for non-EEA students\; 15 May for EEA students. EUR expla
+ ins: "Considering the tim\n\nDATE CONFIDENCE: recurring annual deadline p
+ rojected to 2027. The institution had not published its 2027 date when th
+ is was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.eur.nl/en/master/media-creative-industries
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Media Studies - Media & Creative Industries  [recurr
+ ing annual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Media Studies - Media & Creative Industries  [recurr
+ ing annual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-J-144@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:[APP] MA Arts and Culture - Cultural Economics and Entrepreneursh
+ ip  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Erasmus University Rotterdam (ESHCC)\nRotterdam\, Netherlands
+ \nPaths: J\,L\,AD  |  English\nTuition (non-EU): 21000\nEnglish required:
+  IELTS Academic overall 7.0 with minimum subscores of 6.5\; OR TOEFL iBT\
+ nAccepts a 300-ECTS engineering diploma: unclear\nVerification: VERIFIED\
+ nSource deadline text: 15 APRIL for non-EEA students (15 May for EEA). Pr
+ oof of English proficiency must be submi\n\nDATE CONFIDENCE: recurring an
+ nual deadline projected to 2027. The institution had not published its 20
+ 27 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.eur.nl/en/master/cultural-economics-and-entrepreneurship
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Arts and Culture - Cultural Economics and Entreprene
+ urship  [recurring annual date — CONFIRM the 2027 date] — 30 days to 
+ go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Arts and Culture - Cultural Economics and Entreprene
+ urship  [recurring annual date — CONFIRM the 2027 date] — 7 days to g
+ o
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FBE-015@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:[FUND] Friedrich-Naumann-Stiftung fuer die Freiheit - scholarship
+  for non-EU 
+DESCRIPTION:Friedrich-Naumann-Stiftung fuer die Freiheit (FDP-affiliated 
+ political foundation)\nRegion: germany_other\nCoverage: full+stipend  |  
+ Amount: 11904\nTunisian eligible: yes\nApplies to: any state or state-rec
+ ognised German university (universities\, Fachhochschulen\, Kunsthochschu
+ len)\nRequires an admission offer first: unclear\nEvidence: "Auslaendisch
+ e Bewerberinnen und Bewerber koennen sich um eine Foerderung bewerben\, w
+ enn sie einen Master beziehungsweise eine Promotion in Vollzeit in Deutsc
+ hland absolvieren."\n\nDATE CONFIDENCE: confirmed 2027\, read off an offi
+ cial page.
+TRANSP:TRANSPARENT
+URL:https://www.freiheit.org/de/stipendien
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Friedrich-Naumann-Stiftung fuer die Freiheit - scholar
+ ship for non-EU  — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Friedrich-Naumann-Stiftung fuer die Freiheit - scholar
+ ship for non-EU  — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AC-048@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[APP] MSc Marketing - Marketing Management
+DESCRIPTION:University of Groningen (Rijksuniversiteit Groningen)\nGronin
+ gen\, Netherlands\nPaths: AC  |  English\nTuition (non-EU): 22200\nEnglis
+ h required: IELTS Academic overall 6.5 (Speaking 6\, Writing 6.5)\; TOEFL
+  iBT overal\nAccepts a 300-ECTS engineering diploma: no\nVerification: VE
+ RIFIED\nSource deadline text: 1 May 2027 for a 1 SEPTEMBER 2027 start (th
+ e same date for Dutch\, EU/EEA and non-EU/EEA ap\n\nDATE CONFIDENCE: conf
+ irmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.rug.nl/masters/msc-marketing-marketing-management/?lang=e
+ n
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Marketing - Marketing Management — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Marketing - Marketing Management — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AD-070@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[APP] MA Media Studies - Media\, Cultural Industries and Innovati
+ on
+DESCRIPTION:University of Groningen (Rijksuniversiteit Groningen)\nGronin
+ gen\, Netherlands\nPaths: AD  |  English\nTuition (non-EU): 19900\nEnglis
+ h required: IELTS Academic overall 7.0 with min 6.5 in all categories\; T
+ OEFL iBT 1\nAccepts a 300-ECTS engineering diploma: no\nVerification: VER
+ IFIED\nSource deadline text: 1 MAY 2027 for non-EU/EEA students (and for 
+ EU/EEA students) for a 1 September 2027 start\;\n\nDATE CONFIDENCE: confi
+ rmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.rug.nl/masters/media-cultural-industries-and-innovation/?
+ lang=en
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Media Studies - Media\, Cultural Industries and Inno
+ vation — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Media Studies - Media\, Cultural Industries and Inno
+ vation — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-C-082@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[APP] MSc Speech Technology (formerly Voice Technology)
+DESCRIPTION:University of Groningen - Campus Fryslan\nLeeuwarden\, Nether
+ lands\nPaths: C  |  English\nTuition (non-EU): 22200\nEnglish required: I
+ ELTS Academic 6.5 overall with minimum 6.0 in all categories\; or TOEF\nA
+ ccepts a 300-ECTS engineering diploma: likely\nVerification: VERIFIED\nSo
+ urce deadline text: 1 May 2027 for non-EU/EEA diplomas\, for a 1 Septembe
+ r 2027 start (EU/EEA also 1 May 2027\; \n\nDATE CONFIDENCE: confirmed 202
+ 7\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.rug.nl/masters/voice-technology/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Speech Technology (formerly Voice Technology) — 3
+ 0 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc Speech Technology (formerly Voice Technology) — 7
+  days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-J-130@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[APP] MA Arts and Culture (Kunst- en cultuurwetenschappen) - trac
+ k Popular M
+DESCRIPTION:University of Groningen (RUG) - Faculty of Arts\nGroningen\, 
+ Netherlands\nPaths: J  |  English (the RUG facts block lists Voertaal: Ne
+ derlands\, Eng\nTuition (non-EU): 19900\nEnglish required: IELTS Academic
+  overall 6.5 with min 6.0 in all categories\; TOEFL iBT 9\nAccepts a 300-
+ ECTS engineering diploma: unclear\nVerification: PARTIALLY_VERIFIED\nSour
+ ce deadline text: 1 MAY 2027 for non-EU/EEA students (and for EU/EEA stud
+ ents) for a 1 September 2027 start\;\n\nDATE CONFIDENCE: confirmed 2027\,
+  read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.rug.nl/masters/arts-and-culture/popular-music-and-sonic-c
+ ultures/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Arts and Culture (Kunst- en cultuurwetenschappen) - 
+ track Popular M — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Arts and Culture (Kunst- en cultuurwetenschappen) - 
+ track Popular M — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-L-149@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[APP] Master Arts\, Culture and Society  [recurring annual date 
+ — CONFIRM the 2027 date]
+DESCRIPTION:Erasmus University Rotterdam (Erasmus School of History\, Cul
+ ture and Communication)\nRotterdam\, Netherlands\nPaths: L  |  English\nT
+ uition (non-EU): 21000\nEnglish required: IELTS Academic 7.0 (min 6.5 per
+  section) / TOEFL iBT 100 (min 23)\; Cam\nAccepts a 300-ECTS engineering 
+ diploma: no\nVerification: PARTIALLY_VERIFIED\nSource deadline text: 1 Ma
+ y for non-EEA students (the EUR admission page gives "Non-EEA students: 1
+  May")\; 1 Aug\n\nDATE CONFIDENCE: recurring annual deadline projected to
+  2027. The institution had not published its 2027 date when this was buil
+ t — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.eur.nl/en/master/arts-culture-and-society
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Arts\, Culture and Society  [recurring annual da
+ te — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master Arts\, Culture and Society  [recurring annual da
+ te — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-L-151@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[APP] MA Arts and Culture (Research) - track Cultural Leadership
+DESCRIPTION:University of Groningen (Rijksuniversiteit Groningen)\, Facul
+ ty of Arts\nGroningen\, Netherlands\nPaths: L  |  English\nTuition (non-E
+ U): 19900\nEnglish required: IELTS Academic 7.0 / TOEFL iBT 100 / Cambrid
+ ge C1 Advanced 185\nAccepts a 300-ECTS engineering diploma: no\nVerificat
+ ion: VERIFIED\nSource deadline text: 1 May 2027 (non-EU/EEA applicants\, 
+ for the 1 September 2027 start)\n\nDATE CONFIDENCE: confirmed 2027\, read
+  off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.rug.nl/masters/cultural-leadership/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Arts and Culture (Research) - track Cultural Leaders
+ hip — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MA Arts and Culture (Research) - track Cultural Leaders
+ hip — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-R-191@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[APP] Allround Podium- en Evenemententechnicus (Allround Stage an
+ d Event Tec  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Herman Brood Academie (part of MBO Utrecht)\nUtrecht\, Nether
+ lands\nPaths: R  |  Dutch\nTuition (non-EU): TBC\nEnglish required: not a
+ pplicable - Dutch-taught\nAccepts a 300-ECTS engineering diploma: yes_exp
+ licit\nVerification: PARTIALLY_VERIFIED\nSource deadline text: 1 May\n\nD
+ ATE CONFIDENCE: recurring annual deadline projected to 2027. The institut
+ ion had not published its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://hermanbroodacademie.nl/opleiding/allround-podium-en-evenement
+ entechnicus/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Allround Podium- en Evenemententechnicus (Allround Stag
+ e and Event Tec  [recurring annual date — CONFIRM the 2027 date] — 30
+  days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Allround Podium- en Evenemententechnicus (Allround Stag
+ e and Event Tec  [recurring annual date — CONFIRM the 2027 date] — 7 
+ days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AC-039@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:[APP] International Marketing Management (M.A.)  [recurring annua
+ l date — CONFIRM the 2027 date]
+DESCRIPTION:Hochschule fur Wirtschaft und Recht Berlin (HWR Berlin / Berl
+ in School of Economics and Law)\nBerlin\, Germany\nPaths: AC  |  English\
+ nTuition (non-EU): 0\nEnglish required: Upper B2 (CEFR)\, evidenced by ON
+ E of: TOEFL iBT minimum 4.5 on the new\nAccepts a 300-ECTS engineering di
+ ploma: no\nVerification: VERIFIED\nSource deadline text: 15 MAY for appli
+ cants with a foreign higher-education degree\, applying through UniAssist
+  (\n\nDATE CONFIDENCE: recurring annual deadline projected to 2027. The i
+ nstitution had not published its 2027 date when this was built — confir
+ m it.
+TRANSP:TRANSPARENT
+URL:https://www.hwr-berlin.de/studium/studiengang/detail/26-international
+ -marketing-management
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] International Marketing Management (M.A.)  [recurring a
+ nnual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] International Marketing Management (M.A.)  [recurring a
+ nnual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-G-102@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+SUMMARY:[APP] Tonmeister*in fur audiovisuelle Medien (Sound Design for Au
+ diovisual M
+DESCRIPTION:Filmuniversitat Babelsberg KONRAD WOLF\nPotsdam-Babelsberg\, 
+ Germany\nPaths: G  |  German\nTuition (non-EU): 0\nEnglish required: n/a 
+ - German required at DSH-1 or CEFR equivalent\; applicants holding \nAcce
+ pts a 300-ECTS engineering diploma: no\nVerification: VERIFIED\nSource de
+ adline text: 18 May 2027 (receipt/cut-off deadline)\n\nDATE CONFIDENCE: c
+ onfirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.filmuniversitaet.de/en/studies/study-programs/master-prog
+ rams/sound-design-for-audiovisual-media
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Tonmeister*in fur audiovisuelle Medien (Sound Design fo
+ r Audiovisual M — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Tonmeister*in fur audiovisuelle Medien (Sound Design fo
+ r Audiovisual M — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-AC-052@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:[APP] MSc in Marketing Management
+DESCRIPTION:Esade Business School (Universitat Ramon Llull)\nBarcelona\, 
+ Spain\nPaths: AC  |  English\nTuition (non-EU): 39000\nEnglish required: 
+ For non-native speakers: TOEFL iBT 100\; IELTS Academic 7.0\; Cambridge \
+ nAccepts a 300-ECTS engineering diploma: yes_explicit\nVerification: VERI
+ FIED\nSource deadline text: NINE ROLLING DEADLINES\, the first on 1 Octob
+ er 2026 and the last on 1 July 2027. Scholarsh\n\nDATE CONFIDENCE: confir
+ med 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.esade.edu/master-of-science/en/program/masters-in-marketi
+ ng-management
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc in Marketing Management — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] MSc in Marketing Management — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FBE-021@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:[FUND] Deutschlandstipendium (national scholarship programme)
+DESCRIPTION:Bundesministerium fuer Forschung\, Technologie und Raumfahrt 
+ (BMFTR) with private donors\, administered by each university\nRegion: ge
+ rmany_other\nCoverage: partial  |  Amount: 3600\nTunisian eligible: yes\n
+ Applies to: every participating German higher education institution (in B
+ erlin: TU Berlin\, FU Berlin\, HU Berlin\, UdK Berlin\, HTW Berlin\, HWR 
+ Berlin\, BHT Berlin and others)\nRequires an admission offer first: no\nE
+ vidence: TU Berlin: "Leistungsstarke\, gesellschaftlich und sozial engagi
+ erte Studierende unterschiedlicher Fachrichtungen und aller Nationalitaet
+ en sollen auf ihrem Bildungsweg unterstuetzt werden." UdK Berlin\n\nDATE 
+ CONFIDENCE: confirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.tu.berlin/careerservice/d-stipendium
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Deutschlandstipendium (national scholarship programme)
+  — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Deutschlandstipendium (national scholarship programme)
+  — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-L-154@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+SUMMARY:[APP] Master de Formacion Permanente en Gestion Cultural (Continu
+ ing-educati  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Universidad Carlos III de Madrid (UC3M)\, Instituto de Cultur
+ a y Tecnologia\nMadrid (Puerta de Toledo campus)\, Spain\nPaths: L  |  Sp
+ anish\nTuition (non-EU): 9500\nEnglish required: not required\nAccepts a 
+ 300-ECTS engineering diploma: likely\nVerification: VERIFIED\nSource dead
+ line text: 4 September (course starts 16 September)\; the page does not p
+ rint a year\n\nDATE CONFIDENCE: recurring annual deadline projected to 20
+ 27. The institution had not published its 2027 date when this was built 
+ — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.uc3m.es/formacion-permanente/gestion-cultural
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master de Formacion Permanente en Gestion Cultural (Con
+ tinuing-educati  [recurring annual date — CONFIRM the 2027 date] — 30
+  days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master de Formacion Permanente en Gestion Cultural (Con
+ tinuing-educati  [recurring annual date — CONFIRM the 2027 date] — 7 
+ days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-J-139@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:[APP] Master de Formacion Permanente en Industria Musical y Estud
+ ios Sonoros
+DESCRIPTION:Universidad Carlos III de Madrid (UC3M)\nMadrid (Puerta de To
+ ledo campus)\, Spain\nPaths: J  |  Spanish\nTuition (non-EU): 5900\nEngli
+ sh required: B1-B2 CEFR. The page states an English certificate is 'Opcio
+ nal' among\nAccepts a 300-ECTS engineering diploma: likely\nVerification:
+  VERIFIED\nSource deadline text: CERRADO (closed) for 2026/27. Course dat
+ es 2026/27: teaching starts 15 September 2026\; mas\n\nDATE CONFIDENCE: c
+ onfirmed 2027\, read off an official page.
+TRANSP:TRANSPARENT
+URL:https://www.uc3m.es/formacion-permanente/industria-musical-estudios-s
+ onoros
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master de Formacion Permanente en Industria Musical y E
+ studios Sonoros — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master de Formacion Permanente en Industria Musical y E
+ studios Sonoros — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-N-165@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:[APP] Internationaler Studiengang Medieninformatik (International
+  Media Info  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:HTW Berlin (Hochschule fuer Technik und Wirtschaft Berlin)\nB
+ erlin\, Germany\nPaths: N  |  German\, partly English. Official programme
+  fact box\, verbati\nTuition (non-EU): 0\nEnglish required: Not the opera
+ tive requirement. HTW Berlin requires an ENGLISH certific\nAccepts a 300-
+ ECTS engineering diploma: likely\nVerification: PARTIALLY_VERIFIED\nSourc
+ e deadline text: 30 September (winter semester) / 31 March (summer semest
+ er) - published without a year. Ve\n\nDATE CONFIDENCE: recurring annual d
+ eadline projected to 2027. The institution had not published its 2027 dat
+ e when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://imi-master.htw-berlin.de/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Internationaler Studiengang Medieninformatik (Internati
+ onal Media Info  [recurring annual date — CONFIRM the 2027 date] — 30
+  days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Internationaler Studiengang Medieninformatik (Internati
+ onal Media Info  [recurring annual date — CONFIRM the 2027 date] — 7 
+ days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-A-004@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271102
+SUMMARY:[APP] Master of Music in Music Production\, Technology\, and Inno
+ vation (MPTI)  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Berklee College of Music - Valencia Campus\nValencia\, Spain\
+ nPaths: A  |  English (not stated in words on the programme page\, but th
+ e \nTuition (non-EU): USD 52830 all-in for the one-year degree (billed in
+  USD\, not EUR)\nEnglish required: IELTS Academic 7.5 / TOEFL iBT 100 (te
+ sts taken before 21 Jan 2026) or\nAccepts a 300-ECTS engineering diploma:
+  yes_explicit\nVerification: VERIFIED\nSource deadline text: Three rounds
+  (dates published without a year - for a Sept 2027 start read them as 202
+ 6/202\n\nDATE CONFIDENCE: recurring annual deadline projected to 2027. Th
+ e institution had not published its 2027 date when this was built — con
+ firm it.
+TRANSP:TRANSPARENT
+URL:https://valencia.berklee.edu/graduate-programs/mpti/music-production-
+ technology-and-innovation
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Music in Music Production\, Technology\, and 
+ Innovation (MPTI)  [recurring annual date — CONFIRM the 2027 date] — 
+ 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Music in Music Production\, Technology\, and 
+ Innovation (MPTI)  [recurring annual date — CONFIRM the 2027 date] — 
+ 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-J-132@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271102
+SUMMARY:[APP] Master of Arts in Global Entertainment and Music Business (
+ GEMB)  [recurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Berklee College of Music - Valencia Campus\nValencia\, Spain\
+ nPaths: J  |  English\nTuition (non-EU): TBC\nEnglish required: TOEFL iBT
+  100 (exams before 21 Jan 2026)\; IELTS Academic 7.5\; Duolingo\nAccepts 
+ a 300-ECTS engineering diploma: likely\nVerification: VERIFIED\nSource de
+ adline text: Early Action: application 1 November\, SCHOLARSHIP 15 Novemb
+ er. Regular Action: application\n\nDATE CONFIDENCE: recurring annual dead
+ line projected to 2027. The institution had not published its 2027 date w
+ hen this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://valencia.berklee.edu/graduate-programs/gemb/global-entertainm
+ ent-and-music-business
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Arts in Global Entertainment and Music Busine
+ ss (GEMB)  [recurring annual date — CONFIRM the 2027 date] — 30 days 
+ to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Master of Arts in Global Entertainment and Music Busine
+ ss (GEMB)  [recurring annual date — CONFIRM the 2027 date] — 7 days t
+ o go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:app-A-002@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:[APP] Tonmeister*in\, Master of Arts (Sound Engineering)  [recurr
+ ing annual date — CONFIRM the 2027 date]
+DESCRIPTION:Universität der Künste Berlin (UdK)\, technical-scientific 
+ part taught at TU Berlin\nBerlin\, Germany\nPaths: A  |  German (C1\; B2 
+ also accepted)\nTuition (non-EU): 0\nEnglish required: not applicable - G
+ erman is the language gate: C1 CEFR required\, applic\nAccepts a 300-ECTS
+  engineering diploma: no\nVerification: PARTIALLY_VERIFIED\nSource deadli
+ ne text: 15 November (summer semester)\; 15 April (winter semester). The 
+ portfolio upload window on \n\nDATE CONFIDENCE: recurring annual deadline
+  projected to 2027. The institution had not published its 2027 date when 
+ this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://www.udk-berlin.de/en/courses/sound-engineering/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Tonmeister*in\, Master of Arts (Sound Engineering)  [re
+ curring annual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[APP] Tonmeister*in\, Master of Arts (Sound Engineering)  [re
+ curring annual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FES-022@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:[FUND] Berklee General Scholarship (graduate)  [recurring annual 
+ date — CONFIRM the 2027 date]
+DESCRIPTION:Berklee College of Music - Valencia campus\nRegion: spain\nCo
+ verage: partial  |  Amount: TBC\nTunisian eligible: likely\nApplies to: B
+ erklee College of Music\, Valencia campus\nRequires an admission offer fi
+ rst: no (submitted alongside the admission application)\nEvidence: Eligib
+ ility is stated as "All master's degree applicants"\; no nationality rest
+ riction appears on the graduate scholarships page\n\nDATE CONFIDENCE: rec
+ urring annual deadline projected to 2027. The institution had not publish
+ ed its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://valencia.berklee.edu/scholarships-financial-aid/scholarships-
+ for-graduate-programs
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee General Scholarship (graduate)  [recurring ann
+ ual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee General Scholarship (graduate)  [recurring ann
+ ual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FES-023@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:[FUND] Berklee Groove Scholarship  [recurring annual date — CON
+ FIRM the 2027 date]
+DESCRIPTION:Berklee College of Music - Valencia campus\nRegion: spain\nCo
+ verage: partial  |  Amount: TBC\nTunisian eligible: likely\nApplies to: B
+ erklee College of Music\, Valencia campus\nRequires an admission offer fi
+ rst: no\nEvidence: Eligibility is defined by principal instrument\, not n
+ ationality: "applicants whose principal instruments are drums\, bass\, ge
+ neral rhythm section\, traditional/folk/non-traditional"\n\nDATE CONFIDEN
+ CE: recurring annual deadline projected to 2027. The institution had not 
+ published its 2027 date when this was built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://valencia.berklee.edu/scholarships-financial-aid/scholarships-
+ for-graduate-programs
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Groove Scholarship  [recurring annual date —
+  CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Groove Scholarship  [recurring annual date —
+  CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FES-025@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:[FUND] Berklee Global Partners Scholarship  [recurring annual dat
+ e — CONFIRM the 2027 date]
+DESCRIPTION:Berklee College of Music - Valencia campus\nRegion: spain\nCo
+ verage: partial  |  Amount: TBC\nTunisian eligible: unclear\nApplies to: 
+ Berklee College of Music\, Valencia campus\nRequires an admission offer f
+ irst: no\nEvidence: "Student\, alumnus/a\, or faculty from a Berklee Glob
+ al Partner school" - nationality-neutral but gated on affiliation with a 
+ partner school\n\nDATE CONFIDENCE: recurring annual deadline projected to
+  2027. The institution had not published its 2027 date when this was buil
+ t — confirm it.
+TRANSP:TRANSPARENT
+URL:https://valencia.berklee.edu/scholarships-financial-aid/scholarships-
+ for-graduate-programs
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Global Partners Scholarship  [recurring annual
+  date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Global Partners Scholarship  [recurring annual
+  date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-FES-026@masters2027
+DTSTAMP:20260822T090000Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:[FUND] Berklee Outstanding Women Scholarships with Mentorship  [r
+ ecurring annual date — CONFIRM the 2027 date]
+DESCRIPTION:Berklee College of Music - Valencia campus\nRegion: spain\nCo
+ verage: partial  |  Amount: TBC\nTunisian eligible: likely\nApplies to: B
+ erklee College of Music\, Valencia campus\nRequires an admission offer fi
+ rst: no\nEvidence: Criterion is stated as merit that "supports the musici
+ anship and leadership of women in the music industry" - gender-scoped\, n
+ ot nationality-scoped\n\nDATE CONFIDENCE: recurring annual deadline proje
+ cted to 2027. The institution had not published its 2027 date when this w
+ as built — confirm it.
+TRANSP:TRANSPARENT
+URL:https://valencia.berklee.edu/scholarships-financial-aid/scholarships-
+ for-graduate-programs
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Outstanding Women Scholarships with Mentorship
+   [recurring annual date — CONFIRM the 2027 date] — 30 days to go
+TRIGGER:-P30D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[FUND] Berklee Outstanding Women Scholarships with Mentorship
+   [recurring annual date — CONFIRM the 2027 date] — 7 days to go
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
