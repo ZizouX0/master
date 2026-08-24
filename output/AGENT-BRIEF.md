@@ -133,3 +133,21 @@ page itself must be recorded with `"source_access": "search index — page retur
 not directly fetched"` alongside the URL, and the programme must be listed in `gaps.md` as
 **needing a human to open it in a normal browser**. Do NOT present indexed content as if you
 had read the primary page, and do NOT let a blocked domain become an invented fact.
+
+---
+
+## Budget your searches — several wave-1 agents ran out
+
+WebSearch is capped per agent (~200 calls) and multiple discovery agents hit the ceiling
+**mid-slice**, losing their last planned sweeps. Spend the budget deliberately:
+
+1. **Check `output/ruct-backbone.jsonl` FIRST.** It already holds every RUCT-registered
+   Spanish master across all nine fields (1,056 titles, 561 currently active) with code,
+   title, university and `estado`. Grepping it costs nothing and answers most
+   official-status questions outright — do not spend a search or a RUCT query on something
+   already sitting in that file.
+2. Search to **locate** a page; fetch to **read** it. Do not search for facts a page you
+   already have will tell you.
+3. Never fetch the same URL twice — note what you learned the first time.
+4. If you are running low, **write what you have to your JSONL before continuing**. A file
+   with 20 solid records beats an agent that dies holding 40 in its head.
