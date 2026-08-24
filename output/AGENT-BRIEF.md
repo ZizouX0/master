@@ -70,3 +70,41 @@ Two consequences you must internalise:
 An incomplete dataset that is honest about its gaps is a SUCCESS.
 A complete-looking dataset containing one invented fee, deadline, or eligibility ruling is a
 FAILURE, because it will be acted on.
+
+---
+
+## RUCT IS MACHINE-QUERYABLE — use the script, do not guess
+
+`.masters-search/spain/ruct.py` drives the RUCT form directly. Use it instead of guessing
+official status or trying to fetch the form by URL.
+
+```bash
+python3 .masters-search/spain/ruct.py "inteligencia artificial" "ciencia de datos"
+python3 .masters-search/spain/ruct.py --universidad "Pompeu Fabra"
+python3 .masters-search/spain/ruct.py --json "sonido"      # machine-readable
+```
+Columns: RUCT code · title · university · estado (BOE state).
+
+**Three traps this script already handles, which will silently corrupt your results if you
+write your own query instead:**
+1. **An accented term returns ZERO ROWS, not an error.** `musica` finds 41 titles; `música`
+   finds none. That looks exactly like "no such programme is registered" — the most
+   dangerous wrong answer available here. The script strips accents for you.
+2. **The form keeps the previous query in server-side session state.** Reusing one HTTP
+   session makes every term after the first return the FIRST term's results, which looks
+   like a successful query. The script opens a fresh session per term.
+3. **RUCT matches substrings, so SHORT terms win.** `tecnologias del sonido` → 2 rows;
+   `sonido` → 3; `musica` → 41. Query short and broad, then filter yourself.
+
+**Reading `estado` matters as much as presence.** `TITULACIÓN A EXTINGUIR` / `EXTINGUIDA`
+means the title is being wound down and **may not accept a September 2027 intake at all** —
+record that, because a programme's mere presence in the register is not the same as it being
+open to you. `Publicado en B.O.E.` is the healthy state.
+
+**Citable source for a fee/status claim:** RUCT has no deep links, so cite the programme
+page's own stated `código RUCT` / BOE reference as the primary source, and use this script
+as the cross-check. Put the RUCT code in `ruct_code` either way.
+
+**A pre-built backbone of every registered master in the nine fields is at
+`output/ruct-backbone.jsonl`** (fields: ruct_code, title, university, estado, active,
+path_codes, query_terms). Check it before running your own query — it may already answer you.
