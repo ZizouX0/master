@@ -7,3 +7,46 @@
 [7/52] 'audio': 52 rows, 97 unique
 [8/52] 'big data': 23 rows, 116 unique
 [9/52] 'business analytics': 9 rows, 119 unique
+[10/52] 'business intelligence': 3 rows, 120 unique
+[11/52] 'ciberseguridad': 33 rows, 152 unique
+[12/52] 'ciencia de datos': 27 rows, 175 unique
+[13/52] 'ciencia e ingenieria de datos': 0 rows, 175 unique
+[14/52] 'cloud': 4 rows, 179 unique
+[15/52] 'data science': 13 rows, 182 unique
+[16/52] 'datos': 79 rows, 207 unique
+[17/52] 'direccion de empresas': 114 rows, 321 unique
+[18/52] 'distribuidos': 2 rows, 323 unique
+[19/52] 'electronica': 46 rows, 369 unique
+[20/52] 'empresarial': 71 rows, 434 unique
+[21/52] 'entretenimiento': 5 rows, 438 unique
+[22/52] 'espectaculos': 0 rows, 438 unique
+[23/52] 'estadistica': 19 rows, 455 unique
+[24/52] 'eventos': 17 rows, 472 unique
+[25/52] 'festivales': 0 rows, 472 unique
+[26/52] 'gestion cultural': 15 rows, 487 unique
+[27/52] 'gestion musical': 0 rows, 487 unique
+[28/52] 'industria musical': 1 rows, 487 unique
+[29/52] 'industrias culturales': 1 rows, 488 unique
+[30/52] 'informatica': 130 rows, 615 unique
+[31/52] 'ingenieria de software': 5 rows, 620 unique
+[32/52] 'ingenieria informatica': 59 rows, 620 unique
+[33/52] 'inteligencia artificial': 49 rows, 658 unique
+[34/52] 'lenguaje natural': 2 rows, 660 unique
+[35/52] 'machine learning': 3 rows, 661 unique
+[36/52] 'musica': 41 rows, 701 unique
+[37/52] 'musical': 23 rows, 701 unique
+[38/52] 'musicologia': 5 rows, 703 unique
+[39/52] 'negocio': 85 rows, 768 unique
+[40/52] 'nube': 7 rows, 770 unique
+[41/52] 'ocio': 209 rows, 893 unique
+[42/52] 'procesado': 6 rows, 899 unique
+[43/52] 'propiedad intelectual': 7 rows, 905 unique
+[44/52] 'senal': 0 rows, 905 unique
+[45/52] 'sistemas inteligentes': 23 rows, 926 unique
+[46/52] 'sonido': 3 rows, 926 unique
+[47/52] 'sonora': 0 rows, 926 unique
+[48/52] 'sonoro': 0 rows, 926 unique
+[49/52] 'telecomunicacion': 66 rows, 988 unique
+[50/52] 'turismo': 74 rows, 1050 unique
+[51/52] 'vibraciones': 4 rows, 1050 unique
+[52/52] 'vision por computador': 8 rows, 1056 unique

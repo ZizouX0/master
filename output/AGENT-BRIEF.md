@@ -108,3 +108,28 @@ as the cross-check. Put the RUCT code in `ruct_code` either way.
 **A pre-built backbone of every registered master in the nine fields is at
 `output/ruct-backbone.jsonl`** (fields: ruct_code, title, university, estado, active,
 path_codes, query_terms). Check it before running your own query — it may already answer you.
+
+---
+
+## Domains that block automated fetching — what to do
+
+Some institution sites sit behind a Cloudflare JS challenge and return **HTTP 403 to every
+automated fetch** (WebFetch, curl, and a real headless browser alike). Confirmed blocked:
+**upf.edu**, **unir.net**, **il3.ub.edu**, **pointblankmusicschool.com**, **imep.es**.
+`guiadocent.upf.edu` and `estudiospropios.unizar.es` are additionally refused by the network
+gateway. Chromium/Playwright does NOT get through — do not spend time on it. The Wayback
+Machine is rate-limited here and is not a reliable fallback either.
+
+**UPF is the single most important institution in this sweep, so this matters.** The route
+that does work:
+1. **WebSearch still surfaces the page content** from the search index even when the page
+   cannot be fetched. Use it, and quote what it gives you.
+2. **RUCT gives you official status and the RUCT code** regardless of the site being blocked.
+3. **Public fees do not come from the university page anyway** — they come from the
+   autonomous community's annual `decreto de precios públicos`, which is fetchable. Use it.
+
+**Then be honest about provenance.** Any fact obtained from a search index rather than the
+page itself must be recorded with `"source_access": "search index — page returns 403,
+not directly fetched"` alongside the URL, and the programme must be listed in `gaps.md` as
+**needing a human to open it in a normal browser**. Do NOT present indexed content as if you
+had read the primary page, and do NOT let a blocked domain become an invented fact.
