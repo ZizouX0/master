@@ -187,3 +187,35 @@ legal name for a `título propio`.** It reads official. It is not.
 
 Because of all this, `output/ruct-backbone.jsonl` covers the university register only and
 **does not list conservatory-sector masters** — absence from the backbone is not a verdict.
+
+---
+
+## RUCT detail pages ARE deep-linkable — this fixes rule 2 for official status
+
+The RUCT *search* has no deep links, but the *detail* page does, and it is citable:
+
+```
+https://www.educacion.gob.es/ruct/estudio.action?codigoCiclo=SC&codigoTipo=M&CodigoEstudio=<CODE>&actual=estudios
+```
+
+So **every official-status claim can and must carry a real URL** — use this one, with the
+programme's RUCT code. Put it in `ruct_url`.
+
+That page also answers several ★ schema fields authoritatively, straight from the register:
+
+| RUCT detail field | Schema field it answers |
+|---|---|
+| `Nº Créditos Complementos Formativos` | **`complementary_credits_required`** — the 300-ECTS question. `0` means no bridging credits are built into the title. |
+| `Créditos Totales` + the obligatorios/optativos/prácticas/TFM breakdown | `ects` |
+| `Nivel MECES`, `Nivel académico` (RD 822/2021 etc.) | `official_status` |
+| `Fecha de verificación`, BOE publication dates, accreditation renewals | official-status evidence with a citable date |
+| `Centros en los que se imparte` | which campus actually teaches it |
+
+**`output/ruct-detail.jsonl` already holds all of this** for every active registered title in
+the nine fields. Read it before fetching anything — it is the cheapest source of truth you have.
+
+⚠️ **`complementos formativos = 0` in RUCT is not the whole answer.** It means the *title*
+carries no compulsory bridging credits; a university can still impose `complementos` on an
+individual applicant at admission based on their background. Record the RUCT figure as
+evidence, then check the programme's own `acceso y admisión` page for applicant-level rules,
+and say which of the two you are quoting.
