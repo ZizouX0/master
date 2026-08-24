@@ -19,6 +19,11 @@ Run 2026-08-22 against deliverables/tools/
   PASS  Portfolio_Brief.pdf: no orphan pages
   PASS  Portfolio_Brief.pdf: page numbers on every page
   PASS  Portfolio_Brief.pdf: font families used = ['DejaVuSansMono', 'Helvetica', 'LiberationSerif']
+  Career_Paths.pdf — 12 pages, all rasterised at 110 dpi
+  PASS  Career_Paths.pdf: no content clipped past the page margin
+  PASS  Career_Paths.pdf: no orphan pages
+  PASS  Career_Paths.pdf: page numbers on every page
+  PASS  Career_Paths.pdf: font families used = ['DejaVuSansMono', 'Helvetica', 'LiberationSerif']
 
 2. Workbook — reopened and inspected
 ------------------------------------

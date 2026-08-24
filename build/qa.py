@@ -29,7 +29,7 @@ report.append(f"Run 2026-08-22 against deliverables/tools/")
 # ---------------------------------------------------------------- 1. PDFs
 sec("1. PDFs — every page rasterised and inspected")
 MARGIN_PT = 20          # ink closer than this to an edge means clipped content
-for name in ["Decision_Brief.pdf", "Program_Dossiers.pdf", "Portfolio_Brief.pdf"]:
+for name in ["Decision_Brief.pdf", "Program_Dossiers.pdf", "Portfolio_Brief.pdf", "Career_Paths.pdf"]:
     path = TOOLS / name
     if not path.exists(): bad(f"{name}: missing"); continue
     doc = pymupdf.open(path)
