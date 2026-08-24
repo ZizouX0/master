@@ -151,3 +151,39 @@ WebSearch is capped per agent (~200 calls) and multiple discovery agents hit the
 3. Never fetch the same URL twice — note what you learned the first time.
 4. If you are running low, **write what you have to your JSONL before continuing**. A file
    with 20 solid records beats an agent that dies holding 40 in its head.
+
+---
+
+## CORRECTION TO RULE 6 — "not in RUCT" does NOT always mean "not official"
+
+Rule 6 says: *if it is not in RUCT it is not official.* That is true for **university** titles
+and false for one whole category, and applying it naively misclassifies real official
+programmes as `título propio`.
+
+**`Máster en Enseñanzas Artísticas` is a separate official register that RUCT does not
+contain.** This was confirmed empirically during wave 1: querying RUCT for the conservatory
+sector returns zero master records, while those same programmes are ANECA-evaluated and
+homologated by BOE order (e.g. Orden EFP/673/2023 for the Valencia *Sonología Aplicada y
+Creación Sonora*). Conservatories — **ESMUC, Musikene, Conservatori del Liceu**, and the
+superior conservatories of music generally — award in this register.
+
+So there are **three** categories, not two:
+| Category | In RUCT? | PhD access | Public funding |
+|---|---|---|---|
+| `Máster Universitario` | yes | yes | yes |
+| `Máster en Enseñanzas Artísticas` | **no — and still official** | check per case | check per case |
+| `Título propio` / `Máster de Formación Permanente` | no | **no** | usually no |
+
+For an Enseñanzas Artísticas programme, evidence of officiality is **the BOE homologation
+order**, not a RUCT row. Record the BOE reference in `ruct_code` prefixed `BOE:` and say in
+`notes` that RUCT absence is expected here and is not evidence against it.
+
+⚠️ **The real filter on these for this candidate is entry requirements, not status.** They
+typically require a `Título Superior de Música` — which a Software Engineering degree does
+**not** satisfy. Check `entry_requirements` carefully before ranking one highly.
+
+Note also: **`Máster de Formación Permanente` / `Formación Continua` is the post-RD 822/2021
+legal name for a `título propio`.** It reads official. It is not.
+
+Because of all this, `output/ruct-backbone.jsonl` covers the university register only and
+**does not list conservatory-sector masters** — absence from the backbone is not a verdict.
