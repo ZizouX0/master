@@ -59,6 +59,25 @@ Two consequences you must internalise:
 8. **Record contradictions, do not resolve them silently.** Two pages disagree -> log both
    values with both URLs and flag `CONFLICT`.
 
+## ⛔ WRITE AS YOU GO — THE SINGLE MOST IMPORTANT RULE IN THIS FILE
+
+**Append each record to your output file the moment you finish it. Never batch your writes
+to the end of the task.**
+
+This is not style advice. Session limits have twice killed a dozen agents at once, and the
+ones that died on the line *"now I'll write the records"* produced **nothing at all** —
+hours of correct, sourced research lost, because it existed only in their heads. The agents
+that had been appending as they went lost only their current record.
+
+Concretely:
+- finish programme 1 → append line 1 → finish programme 2 → append line 2 → …
+- never hold more than ONE finished record unwritten;
+- if you are cut off, everything already appended survives and the orchestrator can see
+  exactly where you stopped.
+
+An agent that returns a beautiful summary and an empty file has failed the task completely.
+An agent that writes 9 of 15 records and dies has done 60% of a job. Be the second one.
+
 ## Output discipline
 - Write your results **to the JSONL file named in your prompt**, one JSON object per line.
 - Return to the orchestrator only a SHORT summary: counts, the file you wrote, and anything
