@@ -129,6 +129,9 @@ for r in progs.values():
 RISK = [
     (["not to open the recruitment", "suspended recruitment", "not open the recruitment campaign",
       "decided not to open"],                                  "consortium has suspended recruitment"),
+    (["has finished the current funding", "finished the current funding from the european commission",
+      "funding has ended", "successor programme holds the eu funding"],
+                                                               "Erasmus Mundus EU funding has ended for this consortium"),
     (["a extinguir", "extinguida", "en extincion", "plan en extincion", "titulacion a extinguir"],
                                                                "title winding down (A EXTINGUIR)"),
     (["pendiente de verificacion", "pendiente de resolucion de verificacion",
