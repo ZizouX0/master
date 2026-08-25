@@ -219,3 +219,83 @@ carries no compulsory bridging credits; a university can still impose `complemen
 individual applicant at admission based on their background. Record the RUCT figure as
 evidence, then check the programme's own `acceso y admisión` page for applicant-level rules,
 and say which of the two you are quoting.
+
+---
+
+## The full record schema (wave 2 fills this)
+
+## 6. Data schema
+
+Every programme record. Fields marked ★ are the ones that decide the outcome — never leave them unsourced.
+
+```jsonc
+{
+  "id": "slug",
+  "path_codes": ["A"],              // may match multiple fields
+  "programme_name_es": "",
+  "programme_name_en": "",
+  "institution": "",
+  "institution_type": "",           // public | private | specialist school | conservatory
+  "city": "",
+  "autonomous_community": "",
+
+  "official_status": "",            // ★ máster universitario | título propio | UNKNOWN
+  "ruct_code": "",                  // ★ empty means NOT official
+  "ruct_url": "",
+
+  "ects": 0,                        // 60 | 90 | 120
+  "duration_years": 0,
+  "modality": "",                   // presencial | semipresencial | online
+  "language_of_instruction": "",    // ★ verbatim from official plan
+  "language_source_url": "",
+  "language_requirement": "",       // e.g. B2 English certificate required?
+
+  "tuition_total_eur": 0,           // ★ full programme, not per credit
+  "tuition_per_ects_eur": 0,
+  "tuition_year_of_rates": "",      // ★ e.g. "2026-27"
+  "non_eu_surcharge": "",           // ★ yes/no + detail
+  "additional_fees_eur": 0,         // enrolment, insurance, admin
+  "tuition_source_url": "",
+
+  "entry_requirements": "",
+  "accepts_engineering_background": "",     // ★ explicit or inferred? say which
+  "complementary_credits_required": "",     // ★ complementos de formación
+  "credit_recognition_available": "",       // ★ the 300 ECTS question
+  "credit_recognition_source_url": "",
+
+  "application_window_2027": "",     // ★ open and close dates
+  "application_rounds": [],
+  "non_eu_early_round_advised": "",
+  "admissions_contact_email": "",
+  "deadline_source_url": "",
+
+  "curriculum_summary": "",
+  "notable_faculty_or_lab": "",
+  "industry_links": "",
+  "thesis_or_internship": "",
+
+  "scholarships_internal": [],       // university's own, with URLs
+  "scholarship_ids_external": [],    // FK into funding.jsonl
+
+  "verification_status": "",         // VERIFIED | CONFLICT | UNCONFIRMED
+  "conflicts": [],
+  "sources": [ {"field": "", "url": "", "accessed": "YYYY-MM-DD"} ]
+}
+```
+
+---
+
+
+### Notes on filling it
+- `complementary_credits_required`: RUCT publishes this per title. **`null` in
+  `output/ruct-detail.jsonl` means the register does not publish the row at all — that is
+  NOT the same as `0`.** Write `NOT PUBLISHED IN RUCT` for null, `0 (RUCT)` for zero, and
+  add whatever the programme's own admission page says on top, labelled as such.
+- `tuition_total_eur`: the FULL programme, not per credit. If the page gives €/ECTS,
+  multiply and show your arithmetic in `notes` (e.g. "82 EUR/ECTS x 60 = 4,920").
+- `non_eu_surcharge`: check explicitly. Confirmed real at UAM, UPC, UC3M, UB, UVic, UAH.
+  If the page is silent, that is `NOT FOUND`, not `no`.
+- `application_window_2027`: the Sept-2027 intake. If only the 2026-27 calendar is
+  published, record THAT with its year clearly marked and say the 2027-28 dates are not
+  yet out — do not shift dates forward by a year yourself.
+- `verification_status`: leave as `PENDING`; wave 4 sets it.

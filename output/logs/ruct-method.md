@@ -215,3 +215,140 @@ work in a private subdirectory.
 - `agencia` tells you which regional agency verified the title — useful context, but ANECA is
   not the only valid verifier; AQU (Catalonia), Unibasq (Basque Country), ACSUCYL (Castilla y
   León), ACSUG (Galicia) etc. are equally official.
+## Enseñanzas Artísticas register
+
+_Written by the wave-1 registry agent for the MUSIC & BUSINESS slice (paths A, B, P, S, X), 2026-08-24.
+Appended section — do not overwrite other agents' sections above/below._
+
+### Headline finding
+
+**There is no queryable national register of `Máster en Enseñanzas Artísticas` today.**
+The register exists in law but is not yet operational, and conservatory-sector masters are
+**not in RUCT** — RUCT covers universities only. Anyone who checks RUCT, finds nothing, and
+concludes an ESMUC/Musikene/conservatorio master is unofficial will be **wrong**.
+
+### The register: REEAS
+
+Source: <https://www.infoartisticas.gob.es/comunes/registro-superiores.html> (accessed 2026-08-24).
+`infoartisticas.gob.es` is the Ministry's dedicated portal for enseñanzas artísticas; the general
+ministry URL `educacionfpydeportes.gob.es/contenidos/estudiantes/ensenanzas-artisticas.html`
+redirects to it.
+
+Verbatim, from that page:
+
+> "La Ley 1/2024, de 7 de junio, por la que se regulan las enseñanzas artísticas superiores y se
+> establece la organización y equivalencias de las enseñanzas artísticas profesionales, ha previsto
+> **por primera vez** la creación de este registro."
+
+> "El Registro Estatal de Enseñanzas Artísticas Superiores (REEAS) tendrá carácter público y en él,
+> a instancias de las administraciones autonómicas competentes, se inscribirán los centros que
+> impartan las enseñanzas artísticas superiores, así como los títulos oficiales de dichas enseñanzas
+> con validez en todo el Estado. Este registro tendrá **interoperabilidad con el Registro de
+> Universidades, Centros y Títulos (RUCT)**."
+
+> "En el calendario de implantación de la Ley 1/2024, se establece la fecha en la que se establecerá
+> el régimen, la organización y el funcionamiento del Registro Estatal de Enseñanzas Artísticas
+> Superiores, **previsto para antes del 30 de septiembre de 2026**."
+
+So: created by **Ley 1/2024, de 7 de junio (LEA)**; public; will be interoperable with RUCT; but its
+operating rules were still pending as of this check, with a statutory deadline of 30 Sept 2026.
+**No public query interface was found.** For a September 2027 intake it may well be live by the time
+this dossier is acted on — re-check that URL.
+
+### How to enumerate EAS masters in the meantime (the working route)
+
+The legal chain, per the same page, is: plan de estudios **verificado** → **autorizado** by the
+competent autonomous administration → carácter oficial established → **inscribed in REEAS and
+published in the BOE**. Centres are registered first in a **register run by the autonomous education
+administration**, which then transmits the entries to the Ministry.
+
+That makes the practical enumeration route **per autonomous community**, not national:
+
+1. Ministry index of the 19 competent administrations, each with its EAS page:
+   <https://www.infoartisticas.gob.es/administraciones/ensenanzas-superiores-comunidades-autonomas.html>
+   (verified: lists Andalucía, Aragón, Asturias, Illes Balears, Canarias, Cantabria, Castilla-La Mancha,
+   Castilla y León, Cataluña, Extremadura, Galicia, Madrid, Murcia, Navarra, País Vasco, La Rioja,
+   C. Valenciana, Ceuta, Melilla, each with its own URL.)
+2. The regional body's own master list. The two that matter for music technology and music
+   management were both driven successfully this way:
+   - **C. Valenciana — ISEACV**: <https://iseacv.gva.es/es/musica-masters> — a clean, complete list of
+     the six official `Máster en Enseñanzas Artísticas` in music.
+   - **País Vasco — Musikene**: <https://musikene.eus/informate-sobre-nuestros-masteres/>.
+   - **Cataluña — ESMUC**: <https://www.esmuc.cat/es/masteres-musicales-en-la-esmuc/> — note ESMUC's
+     index is itself the cleanest official/propio discriminator found anywhere in this sweep (below).
+3. The **quality agency** that verified the plan: ANECA or the regional agency
+   (<https://www.infoartisticas.gob.es/comunes/agencias-ccaa.html>). A verification report is strong
+   evidence of officiality.
+4. **BOE**, for the plan-de-estudios publication. NOTE: I could not drive the BOE advanced search
+   form programmatically — `https://www.boe.es/buscar/boe.php` rejected every parameter shape I tried
+   (`dato[0]`, `dato[0][T]`) with "Los valores de búsqueda enviados son incorrectos", i.e. it needs a
+   full form-derived parameter set. A later agent wanting BOE enumeration of
+   `"Máster en Enseñanzas Artísticas"` should scrape the search form's own hidden fields first.
+
+### What the register covers, and what it means for the candidate
+
+`Máster en Enseñanzas Artísticas` is an **official Spanish qualification** (MECES 3 equivalent), but
+it is **not** a `máster universitario`. Consequences worth carrying into the ranking:
+
+- It will **never** have a RUCT code. Absence from RUCT is not evidence against it.
+- PhD access is **not automatic** the way it is from a máster universitario — ISEACV's own page says
+  doctoral study happens "a través de convenios con universidades"
+  (<https://iseacv.gva.es/es/informacio-sobre-masters-oficials>). **Verify per programme**; do not
+  assume. That page cites no Real Decreto, no BOE, no RUCT/REEAS — the legal framing must be taken
+  from the LEA itself, not from ISEACV.
+- Public master's scholarship eligibility for EAS titles was **NOT verified** in this sweep. Flag it.
+
+### Enumerated: EAS masters in music technology / music management
+
+Only three EAS masters in the whole sweep touch this slice:
+
+| Programme | Centre | Region | Path |
+|---|---|---|---|
+| Máster en Enseñanzas Artísticas en **Sonología Aplicada y Creación Sonora** | CSM "Joaquín Rodrigo", València | C. Valenciana (ISEACV) | A |
+| Máster en Enseñanzas Artísticas en **Composición Multimedia** | CSM "Salvador Seguí", Castelló | C. Valenciana (ISEACV) | A |
+| Máster en Enseñanzas Artísticas en **Mediación, Gestión y Difusión Musical** | Musikene | País Vasco | P |
+
+The other EAS music masters found are performance/research: ISEACV's Interpretación e Investigación
+de la Música (Alicante), Interpretación Musical e Investigación Aplicada (Castelló), Interpretación
+de Música Antigua e Investigación de Patrimonio Musical (Castelló), Interpretación Operística
+(València); Musikene's Estudios Orquestales, Interpretación Musical, Interpretación Jazz, Creación de
+la Música Contemporánea; ESMUC's six (Barcelona Jazz Máster, Recerca Musical, Lied "Victoria de los
+Ángeles", Interpretació de la Música Clàssica i Contemporània, Flamencologia, Interpretació del
+Flamenc).
+
+ECTS, language of instruction and fees for all of these are **NOT FOUND** at the regional-index level
+and need the conservatory's own programme page.
+
+### The ESMUC three-way split — reusable as a discriminator
+
+ESMUC's own masters index (<https://www.esmuc.cat/es/masteres-musicales-en-la-esmuc/>) sorts its
+programmes into three explicitly named buckets, which is exactly the distinction the brief cares
+about, stated by the institution itself:
+
+- **Másteres oficiales** → `Máster en Enseñanzas Artísticas` (official, EAS sector, not in RUCT)
+- **Másteres universitarios** → official university masters run with a university partner
+  (Interpretació de la Música Antiga; Música com a Art Interdisciplinari — the latter is RUCT 4314740,
+  UB + URV)
+- **Másteres propios** → **títulos propios**. This bucket contains ESMUC's two most-marketed
+  programmes: **Management i Producció Musical** and **Composició amb Tecnologies**.
+
+When a conservatory does not label its buckets this clearly, the fallback test is the same as for
+universities: a genuine EAS master cites a regional authorisation (decreto/orden of the CCAA) and a
+BOE plan-de-estudios publication. A `máster propio` cites neither.
+
+### Registry-adjacent notes on the university side (RUCT), same slice
+
+- The Ministry's **"¿Qué estudiar y dónde?"** finder was **unreachable** during this session — every
+  host/path tried (`educacion.gob.es/notasdecorte/`, `universidades.gob.es/que-estudiar-y-donde/`,
+  and the `educacionfpydeportes.gob.es` catálogo paths) returned connection failure or 404. RUCT
+  itself was fully available, so nothing was lost; but do not record that finder as "checked".
+- **RUCT encoding gotcha, costly if missed**: the app decodes the two transports differently.
+  A **POST** to `/ruct/consultaestudios.action` needs the body **latin-1 (ISO-8859-1)** percent-encoded;
+  a **GET** to `/ruct/listaestudios` needs the query string **UTF-8** percent-encoded. Get it backwards
+  and accented terms silently return "Ningún registro encontrado" — a false negative, not an error.
+  `Música` returns **41** records when encoded correctly and **0** when not.
+- **RUCT requires a non-empty `descripcionEstudio`.** Filtering by `ambito` or `codigoRama` alone
+  returns zero. To browse an ámbito exhaustively, pass a near-universal substring (`a`, then union
+  with `e`/`o`/`i`/`u`) together with the `ambito` code. Matching is a case- and accent-sensitive
+  substring on the title, so `Ocio` also matches *negocio* and *socio* — occasionally useful, mostly
+  a trap.

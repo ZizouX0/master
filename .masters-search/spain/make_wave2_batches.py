@@ -62,6 +62,35 @@ def main():
             c["ruct_match_confidence"] = round(score, 2)
             matched += 1
 
+    # PRIORITISE. 970 candidates cannot all be enriched at four pages each in one round,
+    # so round 1 takes the ones where enrichment changes the answer most: an active
+    # official title, in a field close to the candidate's core, corroborated by more than
+    # one discovery axis, with a real URL to open.
+    def priority(c):
+        p = 0
+        est = (c.get("ruct_candidate_estado") or "").upper()
+        if c.get("ruct_code") or c.get("ruct_candidate_code"):
+            p += 3
+            if "EXTINGU" in est:
+                p -= 5          # winding down: may not admit for Sept 2027 at all
+        codes = set(c.get("path_codes") or [])
+        if codes & {"A", "B"}:            p += 3
+        elif codes & {"AA", "AB", "C"}:   p += 2
+        elif codes & {"AC", "X"}:         p += 1
+        if len(c.get("found_by_slices") or []) > 1:      p += 1
+        if "universitario" in (c.get("apparent_status") or "").lower(): p += 1
+        if (c.get("url") or "").startswith("http"):      p += 1
+        if (c.get("confidence") or "") == "high":        p += 1
+        return -p
+    cands.sort(key=priority)
+    top = int(sys.argv[2]) if len(sys.argv) > 2 else len(cands)
+    cands, deferred = cands[:top], cands[top:]
+    if deferred:
+        with (OUT/"deferred_candidates.jsonl").open("w", encoding="utf-8") as fh:
+            for c in deferred:
+                fh.write(json.dumps(c, ensure_ascii=False)+"\n")
+        print(f"deferred to a later round: {len(deferred)} -> output/deferred_candidates.jsonl")
+
     # group by institution so an agent stays on one domain where possible
     by_inst = defaultdict(list)
     for c in cands:
