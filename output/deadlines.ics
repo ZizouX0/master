@@ -173,6 +173,74 @@ SUMMARY:45 days to deadline: Master Universitario en Ingenieria de Software y Si
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-uc3m-mu-estadistica-ciencia-datos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Statistics for Data Science — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Application deadline. Source: https://www.uc3m.es/postgrado/admision/proceso
+URL:https://www.uc3m.es/postgrado/admision/proceso
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-mu-estadistica-ciencia-datos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Statistics for Data Science — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-mu-metodos-analiticos-datos-masivos-big-data@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Application deadline. Source: https://www.uc3m.es/postgrado/admision/proceso
+URL:https://www.uc3m.es/postgrado/admision/proceso
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-mu-metodos-analiticos-datos-masivos-big-data-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-doble-master-ingenieria-telecomunicacion-big-data@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: UC3M - Doble Máster en Ingeniería de Telecomunicación y Métodos Analíticos para Datos Masivos: Big Data — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Application deadline. Source: https://www.uc3m.es/postgrado/admision/proceso
+URL:https://www.uc3m.es/postgrado/admision/proceso
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-doble-master-ingenieria-telecomunicacion-big-data-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: UC3M - Doble Máster en Ingeniería de Telecomunicación y Métodos Analíticos para Datos Masivos: Big Data — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-mu-aprendizaje-automatico-salud@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Machine Learning for Health — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Application deadline. Source: https://www.uc3m.es/postgrado/admision/proceso
+URL:https://www.uc3m.es/postgrado/admision/proceso
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-mu-aprendizaje-automatico-salud-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Machine Learning for Health — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-upm-mu-ciencia-de-datos@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
@@ -392,27 +460,10 @@ SUMMARY:45 days to deadline: Master's degree in Artificial Intelligence for Conn
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-uniovi-analisis-datos-inteligencia-negocios@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260904
-DTEND;VALUE=DATE:20260905
-SUMMARY:DEADLINE: Máster Universitario en Análisis de Datos para la Inteligencia de Negocios — Universidad de Oviedo — Facultad de Ciencias
-DESCRIPTION:Application deadline. Source: https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
-URL:https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
-END:VEVENT
-BEGIN:VEVENT
-UID:prog-uniovi-analisis-datos-inteligencia-negocios-r45@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260721
-DTEND;VALUE=DATE:20260722
-SUMMARY:45 days to deadline: Máster Universitario en Análisis de Datos para la Inteligencia de Negocios — Universidad de Oviedo — Facultad de Ciencias
-DESCRIPTION:Reminder set 45 days before the application deadline.
-END:VEVENT
-BEGIN:VEVENT
 UID:prog-uniovi-supercomputacion-aprendizaje-automatico@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260904
-DTEND;VALUE=DATE:20260905
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
 SUMMARY:DEADLINE: Máster Universitario en Aplicaciones de Supercomputación y Aprendizaje Automático en Ciencia y Tecnología — Universidad de Oviedo
 DESCRIPTION:Application deadline. Source: https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
 URL:https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
@@ -420,8 +471,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-uniovi-supercomputacion-aprendizaje-automatico-r45@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260721
-DTEND;VALUE=DATE:20260722
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
 SUMMARY:45 days to deadline: Máster Universitario en Aplicaciones de Supercomputación y Aprendizaje Automático en Ciencia y Tecnología — Universidad de Oviedo
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT

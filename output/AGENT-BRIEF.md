@@ -138,6 +138,20 @@ automated fetch** (WebFetch, curl, and a real headless browser alike). Confirmed
 **ucjc.edu** (returns HTTP 202 with a 221-byte shell for HTML *and* PDFs — looks like a
 response, carries nothing), **www.uclm.es**, **fundacionsgae.org**.
 
+⚠️ **`www.unir.net` is blocked but `static.unir.net` is NOT** — UNIR's official programme
+brochures are served there and fetch fine, which makes ECTS, modality, plan de estudios and
+access rules primary-sourced rather than index-sourced. Try it before giving up on UNIR.
+
+**UNIR publishes no price for any master, anywhere.** Its own brochure states the fee
+*"se calcula en función del total de créditos ECTS matriculados, la forma de pago y las
+características específicas de cada alumno"*, disclosed only by an adviser after
+preinscripción. So `NOT FOUND` is the correct and final answer for UNIR tuition — **any UNIR
+fee figure that appears without a non-UNIR primary source is unsupported and must not be
+recorded.** Aggregators quote numbers for these; they are not sourceable.
+
+**UNIR also runs no September intake** — its convocatorias are staggered through the year.
+For a September-2027 target that is a structural mismatch, not a missing date.
+
 ⚠️ **Two UPF specifics, verified — do not over- or under-apply the block.**
 `mtg.upf.edu` looks like a way round it but **302-redirects into `www.upf.edu`** and hits
 the same wall, so the Music Technology Group's own pages are genuinely unreachable.
