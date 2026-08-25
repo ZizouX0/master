@@ -308,8 +308,17 @@ Every programme record. Fields marked ★ are the ones that decide the outcome �
   add whatever the programme's own admission page says on top, labelled as such.
 - `tuition_total_eur`: the FULL programme, not per credit. If the page gives €/ECTS,
   multiply and show your arithmetic in `notes` (e.g. "82 EUR/ECTS x 60 = 4,920").
-- `non_eu_surcharge`: check explicitly. Confirmed real at UAM, UPC, UC3M, UB, UVic, UAH.
-  If the page is silent, that is `NOT FOUND`, not `no`.
+- `non_eu_surcharge`: check explicitly. **Confirmed real at UAM, UPC, UC3M, UB, UVic, UAH
+  and URJC** (URJC publishes a distinct `Estudiantes extracomunitarios, no residentes` row
+  at 84.07 EUR/credit vs 45.02 first enrolment). If the page is silent, that is `NOT FOUND`,
+  not `no`.
+  **The decisive legal point, confirmed from Catalonia's Decret 96/2026 art. 1.5:** a Spanish
+  long-stay study authorisation does **not** confer resident status —
+  *"l'autoritzacio d'estada de llarga durada per estudis ... no equival a la condicio de
+  residents"*. So this candidate is legally non-resident for fee purposes and cannot escape
+  the surcharge by enrolling and living there. Several decrees (Catalonia, Asturias) do not
+  fix the non-EU price at all — they authorise each university to set it up to 100% of cost,
+  so the real figure must be read off **that university's own tariff**, never the decree.
 - `application_window_2027`: the Sept-2027 intake. If only the 2026-27 calendar is
   published, record THAT with its year clearly marked and say the 2027-28 dates are not
   yet out — do not shift dates forward by a year yourself.
