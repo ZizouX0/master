@@ -224,6 +224,23 @@ SUMMARY:45 days to deadline: Master's degree in Artificial Intelligence for Conn
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-uniovi-analisis-datos-inteligencia-negocios@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:DEADLINE: Máster Universitario en Análisis de Datos para la Inteligencia de Negocios — Universidad de Oviedo — Facultad de Ciencias
+DESCRIPTION:Application deadline. Source: https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
+URL:https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uniovi-analisis-datos-inteligencia-negocios-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20260722
+SUMMARY:45 days to deadline: Máster Universitario en Análisis de Datos para la Inteligencia de Negocios — Universidad de Oviedo — Facultad de Ciencias
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-uniovi-supercomputacion-aprendizaje-automatico@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260904
@@ -410,37 +427,37 @@ SUMMARY:45 days to deadline: Máster Universitario en Analítica de Negocio y Bi
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-upm-software-sistemas-distribuidos-empotrados-mssde@spain-sweep
+UID:prog-ua-ciencia-de-datos@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
-SUMMARY:DEADLINE: Máster Universitario en Software de Sistemas Distribuidos y Empotrados — Universidad Politécnica de Madrid (UPM) - ETSISI
-DESCRIPTION:Application deadline. Source: https://www.upm.es/Estudiantes/Estudios_Titulaciones/Estudios_Master/Calendario
-URL:https://www.upm.es/Estudiantes/Estudios_Titulaciones/Estudios_Master/Calendario
+SUMMARY:DEADLINE: Master's Degree in Data Science — Universidad de Alicante (UA)
+DESCRIPTION:Application deadline. Source: https://web.ua.es/es/masteres/ciencia-de-datos/
+URL:https://web.ua.es/es/masteres/ciencia-de-datos/
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-upm-software-sistemas-distribuidos-empotrados-mssde-r45@spain-sweep
+UID:prog-ua-ciencia-de-datos-r45@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260712
-SUMMARY:45 days to deadline: Máster Universitario en Software de Sistemas Distribuidos y Empotrados — Universidad Politécnica de Madrid (UPM) - ETSISI
+SUMMARY:45 days to deadline: Master's Degree in Data Science — Universidad de Alicante (UA)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-ua-economics-with-data-science@spain-sweep
+UID:prog-ua-economia-con-ciencia-de-datos@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260316
-DTEND;VALUE=DATE:20260317
-SUMMARY:DEADLINE: Master in Economics with Data Science — Universidad de Alicante (UA)
-DESCRIPTION:Application deadline. Source: https://web.ua.es/en/masteres/eco-dat-sci/master-in-economics-with-data-science.html
-URL:https://web.ua.es/en/masteres/eco-dat-sci/master-in-economics-with-data-science.html
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree in Economics with Data Science — Universidad de Alicante (UA)
+DESCRIPTION:Application deadline. Source: https://web.ua.es/es/masteres/eco-dat-sci/master-universitario-en-economia-con-ciencia-de-datos.html
+URL:https://web.ua.es/es/masteres/eco-dat-sci/master-universitario-en-economia-con-ciencia-de-datos.html
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-ua-economics-with-data-science-r45@spain-sweep
+UID:prog-ua-economia-con-ciencia-de-datos-r45@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260130
-DTEND;VALUE=DATE:20260131
-SUMMARY:45 days to deadline: Master in Economics with Data Science — Universidad de Alicante (UA)
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree in Economics with Data Science — Universidad de Alicante (UA)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT

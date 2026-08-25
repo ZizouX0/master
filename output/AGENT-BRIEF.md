@@ -274,6 +274,20 @@ and say which of the two you are quoting.
 
 ---
 
+## `ruct_candidate_code` is a HINT, not a fact — challenge it
+
+Batch inputs carry a `ruct_candidate_code` attached by a fuzzy title-and-university matcher.
+It has already been wrong in a way that would have corrupted a record: it attached
+Universidad Europea de **Madrid**'s Big Data master to RUCT 3500344, which is Universidad
+Europea de **Valencia**'s separate title of the same Spanish name. The real code, printed on
+UEM's own page, is 4315398.
+
+Spanish universities run near-identical titles at sibling campuses and under bilingual
+double names, so title overlap alone cannot identify a title. **Confirm the code from the
+programme's own page (`Código RUCT:`) or from the RUCT detail page, and say in `notes` how
+you confirmed it.** If it does not match the hint, record the correct one and flag the
+mismatch — do not quietly accept the hint.
+
 ## The full record schema (wave 2 fills this)
 
 ## 6. Data schema
