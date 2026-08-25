@@ -833,40 +833,6 @@ SUMMARY:45 days to deadline: University Master's Degree in Engineering and Data 
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-ufv-bioinformatica-datos-biomedicos@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260826
-SUMMARY:DEADLINE: Master's Degree in Bioinformatics and Biomedical Data Analysis — Universidad Francisco de Vitoria (UFV)
-DESCRIPTION:Application deadline. Source: https://www.ufv.es/master-universitario-bioinformatica-analisis-datos-biomedicos/
-URL:https://www.ufv.es/master-universitario-bioinformatica-analisis-datos-biomedicos/
-END:VEVENT
-BEGIN:VEVENT
-UID:prog-ufv-bioinformatica-datos-biomedicos-r45@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260712
-SUMMARY:45 days to deadline: Master's Degree in Bioinformatics and Biomedical Data Analysis — Universidad Francisco de Vitoria (UFV)
-DESCRIPTION:Reminder set 45 days before the application deadline.
-END:VEVENT
-BEGIN:VEVENT
-UID:prog-tai-produccion-musical@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260826
-SUMMARY:DEADLINE: Master in Music Production — Escuela Universitaria de Artes TAI
-DESCRIPTION:Application deadline. Source: https://taiarts.com/estudios/master-produccion-musical/
-URL:https://taiarts.com/estudios/master-produccion-musical/
-END:VEVENT
-BEGIN:VEVENT
-UID:prog-tai-produccion-musical-r45@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260712
-SUMMARY:45 days to deadline: Master in Music Production — Escuela Universitaria de Artes TAI
-DESCRIPTION:Reminder set 45 days before the application deadline.
-END:VEVENT
-BEGIN:VEVENT
 UID:prog-upna-machine-learning@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
@@ -986,7 +952,23 @@ SUMMARY:45 days to deadline: Computational Statistics and Data Science for Decis
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-escuela-superior-de-musica-r-master-en-ensenanzas-artisticas-en-com@spain-sweep
+UID:prog-udit-ia-aplicada-ambito-educativo@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:DEADLINE: Máster Universitario en Inteligencia Artificial Aplicada al Ámbito Educativo — Universidad de Diseño, Innovación y Tecnología (UDIT)
+DESCRIPTION:Application deadline. Source: 
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-udit-ia-aplicada-ambito-educativo-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:45 days to deadline: Máster Universitario en Inteligencia Artificial Aplicada al Ámbito Educativo — Universidad de Diseño, Innovación y Tecnología (UDIT)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-escuela-superior-de-musica-reina-s-master-en-ensenanzas-artisticas-en-composicion-drama-b6d574@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
@@ -995,7 +977,7 @@ DESCRIPTION:Application deadline. Source:
 URL:https://www.escuelasuperiordemusicareinasofia.es/plan-estudio/master-en-composicion/
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-escuela-superior-de-musica-r-master-en-ensenanzas-artisticas-en-com-r45@spain-sweep
+UID:prog-escuela-superior-de-musica-reina-s-master-en-ensenanzas-artisticas-en-composicion-drama-b6d574-r45@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260712
@@ -1004,7 +986,7 @@ DESCRIPTION:Reminder set 45 days before the application deadline.
 URL:https://www.escuelasuperiordemusicareinasofia.es/plan-estudio/master-en-composicion/
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-escola-superior-de-musica-de-master-oficial-de-recerca-musical-mast@spain-sweep
+UID:prog-escola-superior-de-musica-de-catal-master-oficial-de-recerca-musical-master-en-ensenanz-9e259e@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
@@ -1013,7 +995,7 @@ DESCRIPTION:Application deadline. Source:
 URL:https://www.esmuc.cat/en/studies/masters-i-postgraus/master-oficial-de-recerca-musical/
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-escola-superior-de-musica-de-master-oficial-de-recerca-musical-mast-r45@spain-sweep
+UID:prog-escola-superior-de-musica-de-catal-master-oficial-de-recerca-musical-master-en-ensenanz-9e259e-r45@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260712
@@ -1022,7 +1004,7 @@ DESCRIPTION:Reminder set 45 days before the application deadline.
 URL:https://www.esmuc.cat/en/studies/masters-i-postgraus/master-oficial-de-recerca-musical/
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-conservatorio-superior-de-mu-master-en-ensenanzas-artisticas-en-cre@spain-sweep
+UID:prog-conservatorio-superior-de-musica-d-master-en-ensenanzas-artisticas-en-creacion-interpre-058c8a@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
@@ -1031,7 +1013,7 @@ DESCRIPTION:Application deadline. Source:
 URL:https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-14860
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-conservatorio-superior-de-mu-master-en-ensenanzas-artisticas-en-cre-r45@spain-sweep
+UID:prog-conservatorio-superior-de-musica-d-master-en-ensenanzas-artisticas-en-creacion-interpre-058c8a-r45@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260712

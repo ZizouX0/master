@@ -25,10 +25,10 @@ checked, and must not be treated as absent or as rejected.**
 
 | status | count | meaning |
 |---|---:|---|
-| VERIFIED | 73 | a second agent, given only the name and institution, reached the same answers |
+| VERIFIED | 85 | a second agent, given only the name and institution, reached the same answers |
 | CONFLICT | 29 | the two passes disagree on at least one field; both values kept |
 | UNCONFIRMED | 0 | the verifier could not source the fields at all |
-| NOT VERIFIED | 33 | no independent pass ran — **single-sourced, treat with more caution** |
+| NOT VERIFIED | 21 | no independent pass ran — **single-sourced, treat with more caution** |
 
 **12 programmes carry a conflict on a decisive field** (cost, deadline, official
 status or language) and the brief escalates those to a third agent for a tie-break.
@@ -36,10 +36,10 @@ That tie-break has not run. Until it does, treat these figures as contested:
 
 - **Máster Universitario en Composición Musical para Cine, Televisión y Vi** — Berklee College of Music, Valencia Campus (Berklee V · disputed: currency, official_status, official_status / UPV-side listing, places_offered
 - **Máster Universitario en Innovación en Tecnología Musical (Music Techno** — Universitat Politècnica de València (UPV) — teaching · disputed: application_window_2027, currency, official_status, programme_identity
-- **Máster Universitario en Aprendizaje Profundo para el Tratamiento de Se** — Universidad Autónoma de Madrid (UAM) — Escuela Polit · disputed: non_eu_surcharge, tuition_total_eur
+- **Máster Universitario en Aprendizaje Profundo para el Tratamiento de Se** — Universidad Autónoma de Madrid (UAM) — Escuela Polit · disputed: tuition_total_eur
 - **Máster Universitario en Ciencia de Datos** — Universidad Autónoma de Madrid (UAM) — Escuela Polit · disputed: tuition_total_eur
 - **Máster Universitario en Sistemas Interactivos Inteligentes** — Universidad Autónoma de Madrid (UAM) — Escuela Polit · disputed: tuition_total_eur
-- **Máster Universitario en Ciencia de Datos e Inteligencia de Negocios** — Universidad Complutense de Madrid (UCM) — Facultad d · disputed: non_eu_surcharge, tuition_per_ects_eur, tuition_total_eur
+- **Máster Universitario en Ciencia de Datos e Inteligencia de Negocios** — Universidad Complutense de Madrid (UCM) — Facultad d · disputed: tuition_per_ects_eur, tuition_total_eur
 - **Máster Universitario en Nuevas Tecnologías Electrónicas y Fotónicas** — Universidad Complutense de Madrid (UCM) — Facultad d · disputed: tuition_total_eur
 - **Máster de Formación Permanente en Big Data, Data Science e Inteligenci** — Universidad Complutense de Madrid (UCM) — Centro de  · disputed: modality, tuition_total_eur
 - **Máster Universitario en Economía con Ciencia de Datos** — Universidad de Alicante (UA) · disputed: non_eu_surcharge, tuition_per_ects_eur, tuition_total_eur
@@ -55,14 +55,14 @@ could source it — never that the answer is zero or no.
 | field | missing | of |
 |---|---:|---:|
 | `official_status` | 0 | 135 |
-| `ruct_code` | 8 | 135 |
-| `tuition_total_eur` | 36 | 135 |
-| `tuition_year_of_rates` | 35 | 135 |
-| `non_eu_surcharge` | 59 | 135 |
-| `language_of_instruction` | 20 | 135 |
-| `complementary_credits_required` | 2 | 135 |
+| `ruct_code` | 6 | 135 |
+| `tuition_total_eur` | 34 | 135 |
+| `tuition_year_of_rates` | 31 | 135 |
+| `non_eu_surcharge` | 57 | 135 |
+| `language_of_instruction` | 18 | 135 |
+| `complementary_credits_required` | 0 | 135 |
 | `credit_recognition_available` | 97 | 135 |
-| `application_window_2027` | 43 | 135 |
+| `application_window_2027` | 37 | 135 |
 
 ## 4. Programmes whose September-2027 intake is in doubt
 
@@ -154,7 +154,7 @@ decision-changing, not because they are merely unfinished.
   the candidate even if the residency rule were met?* Recorded as a reasoned flag, not a ruling.
 - **CSIC JAE Intro** publishes no eligibility page (404s); **universidades.gob.es** 503s.
 
-## 7. Recorded contradictions (75)
+## 7. Recorded contradictions (44)
 
 Rule 8 says record contradictions rather than resolving them silently. Both values and
 both sources are kept in `programmes.csv`. The pattern worth knowing: **the commonest
@@ -171,35 +171,35 @@ the same programme** — which is exactly the confusion this candidate must not 
 | Universidad Internacional de L | `modality` | online ('Online interactivo' per the programme | Online — UNIR page: 'en formato online, para q |
 | Universidad Internacional de L | `modality` | online ('Online interactivo' per the programme | Online — UNIR is a 100%-online university; pro |
 | Universidad Internacional de L | `modality` | online ('Online interactivo' per the programme | Online, one academic year ('obtendrás en un añ |
-| Universidad Internacional de L | `complementary_credits_required` | 0 (RUCT, for the TITLE). No applicant-level co | 0 (RUCT) — RUCT 3500975 publishes 'Nº Créditos |
 | Universidad Internacional de L | `modality` | online ('Online interactivo' per the programme | Online, one academic year. 'Exámenes online y/ |
 | Universidad Internacional de L | `modality` | online ('Online interactivo' per the programme | Online — brochure verbatim: 'METODOLOGÍA Educa |
-| Universidad Carlos III de Madr | `non_eu_surcharge` | YES - explicit. Verbatim from the master's MAT | YES, CONFIRMED AND LARGE — €80 per ECTS for EU |
-| Universidad Carlos III de Madr | `non_eu_surcharge` | YES — explicit, and at the Madrid statutory ra | YES — CONFIRMED AND QUANTIFIED ON THE PROGRAMM |
-| Universidad Politécnica de Mad | `non_eu_surcharge` | YES — explicit, published by UPM itself as a n | YES - EXPLICIT. UPM publishes both rows for má |
-| Universidad Politécnica de Mad | `complementary_credits_required` | 0 (RUCT) AND 0 AT APPLICANT LEVEL FOR THIS DEG | 0 (RUCT) at title level. AT APPLICANT LEVEL th |
-| Universidad Politécnica de Mad | `non_eu_surcharge` | YES — explicit, published by UPM itself as a n | YES - EXPLICIT. UPM publishes 45,02 EUR/crédit |
 | Berklee College of Music, Vale | `official_status` | máster universitario (OFFICIAL) — and the prog | máster universitario (OFFICIAL) — CONFLICT FRO |
 | Berklee College of Music, Vale | `official_status` | máster universitario (OFFICIAL) — and the prog | máster universitario (OFFICIAL) — RUCT estado  |
 | Universitat Politècnica de Val | `official_status` | ⛔ REGISTERED BUT DEAD — DO NOT TREAT AS AN OPT | WAS an official máster universitario, NOW EXTI |
 | Universitat Politècnica de Val | `application_window_2027` | NOT APPLICABLE for the extinct Spanish title — | NONE — this programme does not admit students. |
-| Universitat Pompeu Fabra — UPF | `complementary_credits_required` | 0 (RUCT) — the register publishes Nº Créditos  | 0 (RUCT). |
 | Universitat Pompeu Fabra — UPF | `modality` | presencial (on campus, afternoons, 10 months) | TWO DELIVERIES UNDER THE SAME OFFICIAL TITLE — |
-| Universitat Politècnica de Cat | `non_eu_surcharge` | YES — and it is structural, not a Catalan decr | YES — a Partner Country tier, and it is exactl |
-| Universitat Politècnica de Cat | `non_eu_surcharge` | YES — explicit and quantified. UPC's catalogue | YES — EXPLICIT AND LARGE. UPC publishes a sepa |
-| Universitat Politècnica de Cat | `non_eu_surcharge` | YES — explicit and quantified. UPC's catalogue | YES — EXPLICIT. UPC publishes a dedicated tari |
-| Universidad Autónoma de Madrid | `non_eu_surcharge` | YES — explicit, quantified, and published on t | YES — CONFIRMED AND QUANTIFIED ON THE PROGRAMM |
 | Universidad Autónoma de Madrid | `tuition_total_eur` | 5079 | EUR 2,701.20 for 60 ECTS (60 x 45.02 EUR/ECTS, |
 | Universidad Autónoma de Madrid | `tuition_total_eur` | 5079 | EUR 2,701.20 for 60 ECTS (60 x 45.02 EUR/ECTS, |
 | Universidad Autónoma de Madrid | `tuition_total_eur` | 5079 | EUR 2,701.20 for 60 ECTS (60 x 45.02 EUR/ECTS, |
 | Universidad Complutense de Mad | `tuition_total_eur` | 5044.2 | 5100 |
 | Universidad Complutense de Mad | `tuition_per_ects_eur` | 84.07 | 85.0 |
-| Universidad Complutense de Mad | `non_eu_surcharge` | YES — explicit, quantified and legally sourced | YES — the programme page publishes two distinc |
 | Universidad Complutense de Mad | `tuition_total_eur` | 5044.2 | 5100 |
 | Universidad Complutense de Mad | `tuition_per_ects_eur` | 84.07 | 85 |
-| Universidad Complutense de Mad | `non_eu_surcharge` | YES — explicit, quantified and legally sourced | YES, CONFIRMED — UCM publishes two figures: ap |
 | Universidad Complutense de Mad | `tuition_total_eur` | 5044.2 | CONFLICT. (a) Faculty page verbatim: "Precio d |
 | Universidad Complutense de Mad | `tuition_total_eur` | 5044.2 | EUR 2,701.20 for 60 ECTS (60 x 45.02 EUR/crédi |
 | Universidad Complutense de Mad | `modality` | online — UCM's catalogue records «Modalidad: O | semipresencial — UCM CFP ficha verbatim label: |
 | Universidad Complutense de Mad | `tuition_total_eur` | 4805 | EUR 5,830 for the full programme — UCM CFP fic |
-| Universidad de Oviedo — Facult | `non_eu_surcharge` | YES — explicit and quantified on the universit | YES — AND IT APPLIES TO THIS CANDIDATE. Two-st |
+| Universidad de Alicante (UA) | `tuition_total_eur` | 4240.8 | 2120.4 |
+| Universidad de Alicante (UA) | `tuition_per_ects_eur` | 70.68 | 35.34 |
+| Universidad de Alicante (UA) | `non_eu_surcharge` | YES - EXPLICIT AND DOUBLE. Universidad de Alic | YES — UA precios públicos page: non-resident f |
+| CONSORTIUM (Erasmus Mundus Joi | `tuition_year_of_rates` | Rate quoted on the consortium's Costs and Fund | 2027-2029 cohort (i.e. the Sept 2027 intake it |
+| Universidad del País Vasco / E | `tuition_total_eur` | 1947.0 | EUR 2,000 approximately for the full 60-ECTS p |
+| Universidad de La Rioja | `tuition_total_eur` | 2876.4 | 1476.6 |
+| Universidad de La Rioja | `tuition_per_ects_eur` | 47.94 | 24.61 |
+| Universidad Europea Miguel de  | `modality` | online — the page states 'Virtual' | online — UEMC's own fact sheet states verbatim |
+| Universitat Oberta de Cataluny | `official_status` | NOT APPLICABLE — negative finding, no programm | NEGATIVE FINDING CONFIRMED — no such official  |
+| Universitat Oberta de Cataluny | `tuition_year_of_rates` | NOT APPLICABLE | N/A |
+| Universitat Oberta de Cataluny | `application_window_2027` | NOT APPLICABLE | N/A |
+| Universitat Rovira i Virgili ( | `tuition_total_eur` | 2913.0 | 2766.6 |
+| Universitat Rovira i Virgili ( | `tuition_per_ects_eur` | 48.55 | 46.11 |
+| CEV — Escuela Superior de Comu | `official_status` | título propio de escuela — NOT OFFICIAL, and N | NOT a máster universitario — título propio / p |

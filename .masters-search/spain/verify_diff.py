@@ -14,6 +14,16 @@ from pathlib import Path
 sys.path.insert(0, ".masters-search/spain")
 from consolidate import same_meaning, fold          # noqa: E402
 
+def ident(r):
+    """Match on identity, not only on id.
+
+    Verification records were written against the previous id scheme; fixing an id
+    collision changed those ids, and an id-only join would have silently dropped every
+    verification instead of reporting them. Institution+name is stable across both.
+    """
+    return (fold(r.get("institution"))[:44], fold(r.get("programme_name")
+            or r.get("programme_name_es") or r.get("programme_name_en"))[:60])
+
 OUT = Path("output")
 FIELDS = ["official_status","ruct_code","ects","modality","language_of_instruction",
           "tuition_total_eur","tuition_year_of_rates","non_eu_surcharge",
@@ -37,11 +47,12 @@ def main():
         if "input" in f.name: continue
         for r in load(f):
             if r.get("id"): ver.setdefault(r["id"], r)
+            ver.setdefault(ident(r), r)
     print(f"wave-2 programmes: {len(progs)} · wave-4 verifications: {len(ver)}")
 
     tally={"VERIFIED":0,"CONFLICT":0,"UNCONFIRMED":0,"NOT VERIFIED":0}
     for p in progs:
-        v=ver.get(p.get("id"))
+        v=ver.get(p.get("id")) or ver.get(ident(p))
         if not v:
             p["verification_status"]="NOT VERIFIED"
             tally["NOT VERIFIED"]+=1

@@ -5,7 +5,7 @@ Deliberately runs against whatever is on disk. Two session limits have killed ag
 mid-flight, so the dataset must be buildable at any moment rather than only when every
 slice is in -- a partial dataset that is honest about being partial is the deliverable.
 """
-import json, re, unicodedata
+import json, re, unicodedata, hashlib
 from pathlib import Path
 from collections import defaultdict
 
@@ -141,8 +141,19 @@ def same_meaning(field, a, b):
     return fa[:60] == fb[:60]
 
 def slug(r):
-    base=fold(r.get("institution"))[:28]+"-"+fold(r.get("programme_name_es") or r.get("programme_name_en") or r.get("programme_name"))[:38]
-    return re.sub(r"\s+","-",base).strip("-")
+    """Stable id for a programme.
+
+    Truncating institution and title to 28/38 chars collided two different conservatory
+    masters onto one id ("Composicion Multimedia" at Castello and "Composicion Musical
+    Aplicada" at the Liceu), so an id-keyed join silently overwrote one with the other.
+    Longer fields plus a hash of the FULL names makes a collision effectively impossible
+    while keeping the id human-readable.
+    """
+    inst = fold(r.get("institution"))
+    name = fold(r.get("programme_name_es") or r.get("programme_name_en") or r.get("programme_name"))
+    h = hashlib.sha1((inst + "|" + name).encode("utf-8")).hexdigest()[:6]
+    base = f"{inst[:34]}-{name[:52]}-{h}"
+    return re.sub(r"\s+", "-", base).strip("-")
 
 def main():
     # ---- programmes
