@@ -1,0 +1,799 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spain masters sweep//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:prog-unir-mu-composicion-musical-nuevas-tecnologias@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Composicion Musical con Nuevas Tecnologias — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/musica/master-produccion-musical/
+URL:https://www.unir.net/musica/master-produccion-musical/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-composicion-musical-nuevas-tecnologias-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Composicion Musical con Nuevas Tecnologias — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-produccion-musical@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Produccion Musical — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/musica/master-produccion-musical-online/
+URL:https://www.unir.net/musica/master-produccion-musical-online/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-produccion-musical-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Produccion Musical — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-analisis-visualizacion-datos-masivos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Visual Analytics and Big Data (this English title IS part of the registered RUCT title; it is NOT evidence of English instruction) — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/ingenieria/master-visual-analytics-big-data/
+URL:https://www.unir.net/ingenieria/master-visual-analytics-big-data/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-analisis-visualizacion-datos-masivos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Visual Analytics and Big Data (this English title IS part of the registered RUCT title; it is NOT evidence of English instruction) — Universidad Internacional de La Rioj
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-investigacion-musical@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Investigacion Musical — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/musica/master-oficial-investigacion-musical/
+URL:https://www.unir.net/musica/master-oficial-investigacion-musical/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-investigacion-musical-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Investigacion Musical — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-gestion-empresarial-industria-musical@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Gestion Empresarial en la Industria Musical — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/musica/master-gestion-industria-musical/
+URL:https://www.unir.net/musica/master-gestion-industria-musical/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-gestion-empresarial-industria-musical-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Gestion Empresarial en la Industria Musical — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-aplicaciones-educativas-inteligencia-artificial@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Aplicaciones Educativas de la Inteligencia Artificial — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/educacion/master-aplicaciones-educativas-inteligencia-artificial/
+URL:https://www.unir.net/educacion/master-aplicaciones-educativas-inteligencia-artificial/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-aplicaciones-educativas-inteligencia-artificial-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Aplicaciones Educativas de la Inteligencia Artificial — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-innovacion-transformacion-empresarial-ia@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Innovacion y Transformacion Empresarial con Inteligencia Artificial — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/ingenieria/master-innovacion-transformacion-empresarial/
+URL:https://www.unir.net/ingenieria/master-innovacion-transformacion-empresarial/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-innovacion-transformacion-empresarial-ia-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Innovacion y Transformacion Empresarial con Inteligencia Artificial — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-inteligencia-de-negocio@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Inteligencia de Negocio — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/empresa/master-business-intelligence/
+URL:https://www.unir.net/empresa/master-business-intelligence/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-inteligencia-de-negocio-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Inteligencia de Negocio — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-transformacion-deporte-inteligencia-artificial@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Transformacion del Deporte con Inteligencia Artificial — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/ingenieria/master-transformacion-deporte-inteligencia-artificial/
+URL:https://www.unir.net/ingenieria/master-transformacion-deporte-inteligencia-artificial/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-transformacion-deporte-inteligencia-artificial-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Transformacion del Deporte con Inteligencia Artificial — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-ingenieria-software-sistemas-informaticos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master Universitario en Ingenieria de Software y Sistemas Informaticos — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Application deadline. Source: https://www.unir.net/ingenieria/master-ingenieria-software/
+URL:https://www.unir.net/ingenieria/master-ingenieria-software/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unir-mu-ingenieria-software-sistemas-informaticos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master Universitario en Ingenieria de Software y Sistemas Informaticos — Universidad Internacional de La Rioja (UNIR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uniovi-supercomputacion-aprendizaje-automatico@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:DEADLINE: Máster Universitario en Aplicaciones de Supercomputación y Aprendizaje Automático en Ciencia y Tecnología — Universidad de Oviedo
+DESCRIPTION:Application deadline. Source: https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
+URL:https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uniovi-supercomputacion-aprendizaje-automatico-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20260722
+SUMMARY:45 days to deadline: Máster Universitario en Aplicaciones de Supercomputación y Aprendizaje Automático en Ciencia y Tecnología — Universidad de Oviedo
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uniovi-automatizacion-informatica-industrial@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:DEADLINE: Máster Universitario en Ingeniería de Automatización e Informática Industrial — Universidad de Oviedo
+DESCRIPTION:Application deadline. Source: https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
+URL:https://cei.uniovi.es/postgrado/masteres/preinscripcionymatricula
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uniovi-automatizacion-informatica-industrial-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:45 days to deadline: Máster Universitario en Ingeniería de Automatización e Informática Industrial — Universidad de Oviedo
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-urjc-analisis-datos-deportivos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:DEADLINE: Master's Degree in Sports Data Analysis — Universidad Rey Juan Carlos (URJC)
+DESCRIPTION:Application deadline. Source: https://www.urjc.es/estudiar-en-la-urjc/admision/274-master
+URL:https://www.urjc.es/estudiar-en-la-urjc/admision/274-master
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-urjc-analisis-datos-deportivos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:45 days to deadline: Master's Degree in Sports Data Analysis — Universidad Rey Juan Carlos (URJC)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-urjc-protocolo-comunicacion-eventos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:DEADLINE: Máster Universitario en Protocolo, Comunicación y Organización Integral de Eventos — Universidad Rey Juan Carlos (URJC)
+DESCRIPTION:Application deadline. Source: https://www.urjc.es/estudiar-en-la-urjc/admision/274-master
+URL:https://www.urjc.es/estudiar-en-la-urjc/admision/274-master
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-urjc-protocolo-comunicacion-eventos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260719
+SUMMARY:45 days to deadline: Máster Universitario en Protocolo, Comunicación y Organización Integral de Eventos — Universidad Rey Juan Carlos (URJC)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-mondragon-analisis-datos-inteligencia-negocio@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20251103
+DTEND;VALUE=DATE:20251104
+SUMMARY:DEADLINE: Master in Business Analytics — Mondragon Unibertsitatea
+DESCRIPTION:Application deadline. Source: https://www.mondragon.edu/es/master-universitario-analisis-datos-inteligencia-negocio/inscripcion-matricula
+URL:https://www.mondragon.edu/es/master-universitario-analisis-datos-inteligencia-negocio/inscripcion-matricula
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-mondragon-analisis-datos-inteligencia-negocio-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20250919
+DTEND;VALUE=DATE:20250920
+SUMMARY:45 days to deadline: Master in Business Analytics — Mondragon Unibertsitatea
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-mondragon-analisis-datos-ciberseguridad-computacion-nube@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260224
+DTEND;VALUE=DATE:20260225
+SUMMARY:DEADLINE:  — Mondragon Unibertsitatea
+DESCRIPTION:Application deadline. Source: 
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-mondragon-analisis-datos-ciberseguridad-computacion-nube-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260110
+DTEND;VALUE=DATE:20260111
+SUMMARY:45 days to deadline:  — Mondragon Unibertsitatea
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-ua-economics-with-data-science@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+SUMMARY:DEADLINE: Master in Economics with Data Science — Universidad de Alicante (UA)
+DESCRIPTION:Application deadline. Source: https://web.ua.es/en/masteres/eco-dat-sci/master-in-economics-with-data-science.html
+URL:https://web.ua.es/en/masteres/eco-dat-sci/master-in-economics-with-data-science.html
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-ua-economics-with-data-science-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260130
+DTEND;VALUE=DATE:20260131
+SUMMARY:45 days to deadline: Master in Economics with Data Science — Universidad de Alicante (UA)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-deusto-analisis-de-negocio-business-analytics@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Business Analytics (MUBA) — Universidad de Deusto (Deusto Business School) — INTERUNIVERSITY with Universidad Pontificia Comillas
+DESCRIPTION:Application deadline. Source: https://www.deusto.es/es/inicio/estudia/admision/admision-posgrado
+URL:https://www.deusto.es/es/inicio/estudia/admision/admision-posgrado
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-deusto-analisis-de-negocio-business-analytics-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Business Analytics (MUBA) — Universidad de Deusto (Deusto Business School) — INTERUNIVERSITY with Universidad Pontificia Comillas
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-deusto-computacion-sistemas-inteligentes@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree in Computation and Intelligent Systems — Universidad de Deusto (Facultad de Ingeniería)
+DESCRIPTION:Application deadline. Source: https://www.deusto.es/es/inicio/estudia/admision/admision-posgrado
+URL:https://www.deusto.es/es/inicio/estudia/admision/admision-posgrado
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-deusto-computacion-sistemas-inteligentes-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree in Computation and Intelligent Systems — Universidad de Deusto (Facultad de Ingeniería)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unizar-erasmus-mundus-linguistic-data-science-emlds@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Erasmus Mundus Master in Linguistic Data Science (EMLDS / CLiDS) — CONSORTIUM (Erasmus Mundus Joint Master). Spanish partner and RUCT registrant: Universidad de Zaragoza (Escuela de Ingenier
+DESCRIPTION:Application deadline. Source: https://emlds.fcsh.unl.pt/whentoapply/
+URL:https://emlds.fcsh.unl.pt/whentoapply/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unizar-erasmus-mundus-linguistic-data-science-emlds-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Erasmus Mundus Master in Linguistic Data Science (EMLDS / CLiDS) — CONSORTIUM (Erasmus Mundus Joint Master). Spanish partner and RUCT registrant: Universidad de Zaragoza (Escuela 
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uclm-big-data-computacion-en-la-nube@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260324
+DTEND;VALUE=DATE:20260325
+SUMMARY:DEADLINE: Máster Universitario en Big Data y Computación en la Nube — Universidad de Castilla-La Mancha (UCLM) — Escuela Superior de Informática (Ciudad Real) and Escuela Superior de Ingeniería Inform
+DESCRIPTION:Application deadline. Source: https://esi.uclm.es/mubdcn/
+URL:https://esi.uclm.es/mubdcn/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uclm-big-data-computacion-en-la-nube-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260207
+DTEND;VALUE=DATE:20260208
+SUMMARY:45 days to deadline: Máster Universitario en Big Data y Computación en la Nube — Universidad de Castilla-La Mancha (UCLM) — Escuela Superior de Informática (Ciudad Real) and Escuela Superior de Ingeni
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unirioja-ciencia-de-datos-y-aprendizaje-automatico@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260520
+DTEND;VALUE=DATE:20260521
+SUMMARY:DEADLINE: Máster Universitario en Ciencia de Datos y Aprendizaje Automático — Universidad de La Rioja
+DESCRIPTION:Application deadline. Source: https://www.unirioja.es/estudiantes/master/admision/procedimiento.shtml
+URL:https://www.unirioja.es/estudiantes/master/admision/procedimiento.shtml
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unirioja-ciencia-de-datos-y-aprendizaje-automatico-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:45 days to deadline: Máster Universitario en Ciencia de Datos y Aprendizaje Automático — Universidad de La Rioja
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unirioja-procesamiento-lenguaje-ia-linguistica@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260520
+DTEND;VALUE=DATE:20260521
+SUMMARY:DEADLINE: Máster Universitario en Procesamiento del Lenguaje y Aplicaciones de la Inteligencia Artificial a la Lingüística — Universidad de La Rioja
+DESCRIPTION:Application deadline. Source: https://www.unirioja.es/estudiantes/master/admision/procedimiento.shtml
+URL:https://www.unirioja.es/estudiantes/master/admision/procedimiento.shtml
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-unirioja-procesamiento-lenguaje-ia-linguistica-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:45 days to deadline: Máster Universitario en Procesamiento del Lenguaje y Aplicaciones de la Inteligencia Artificial a la Lingüística — Universidad de La Rioja
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upv-emjm-waves@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20251117
+DTEND;VALUE=DATE:20251118
+SUMMARY:DEADLINE: Erasmus Mundus Master Degree in Waves, Acoustics, Vibrations, Engineering and Sound (WAVES) — Conjunto Internacional — Universitat Politècnica de València (ES, Campus de Gandia); Universidad
+DESCRIPTION:Application deadline. Source: https://master-waves.eu/ ; https://www.upv.es/estudios/master/muemwaves/en/home/
+URL:https://master-waves.eu/ ; https://www.upv.es/estudios/master/muemwaves/en/home/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upv-emjm-waves-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20251003
+DTEND;VALUE=DATE:20251004
+SUMMARY:45 days to deadline: Erasmus Mundus Master Degree in Waves, Acoustics, Vibrations, Engineering and Sound (WAVES) — Conjunto Internacional — Universitat Politècnica de València (ES, Campus de Gandia); 
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upna-machine-learning@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree in Machine Learning — Universidad Pública de Navarra (UPNA / NUP)
+DESCRIPTION:Application deadline. Source: https://www.unavarra.es/sites/estudios/preinscripcion-de-masteres/calendario.html
+URL:https://www.unavarra.es/sites/estudios/preinscripcion-de-masteres/calendario.html
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upna-machine-learning-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree in Machine Learning — Universidad Pública de Navarra (UPNA / NUP)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc-uimp-ciencia-de-datos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Data Science — CONJUNTO: Universidad Internacional Menéndez Pelayo (UIMP) + Universidad de Cantabria (UC); taught with CSIC / Instituto de Física de Cantabria involvement
+DESCRIPTION:Application deadline. Source: https://www.uimp.es/postgrado/estudios/fichaestudio.php?plan=P04A&any=2026-27&verasi=N&lan=es
+URL:https://www.uimp.es/postgrado/estudios/fichaestudio.php?plan=P04A&any=2026-27&verasi=N&lan=es
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc-uimp-ciencia-de-datos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Data Science — CONJUNTO: Universidad Internacional Menéndez Pelayo (UIMP) + Universidad de Cantabria (UC); taught with CSIC / Instituto de Física de Cantabria involvemen
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uja-ingenieria-telecomunicacion-linares@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree of Science in Telecommunication Engineering — Universidad de Jaén (UJA) — Escuela Politécnica Superior de Linares
+DESCRIPTION:Application deadline. Source: https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
+URL:https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uja-ingenieria-telecomunicacion-linares-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree of Science in Telecommunication Engineering — Universidad de Jaén (UJA) — Escuela Politécnica Superior de Linares
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uca-ugr-ingenieria-acustica@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree in Acoustic Engineering — CONJUNTO: Universidad de Cádiz (UCA) + Universidad de Granada (UGR)
+DESCRIPTION:Application deadline. Source: https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
+URL:https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uca-ugr-ingenieria-acustica-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree in Acoustic Engineering — CONJUNTO: Universidad de Cádiz (UCA) + Universidad de Granada (UGR)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-nebrija-analisis-de-negocios@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:DEADLINE: Business Analytics — Universidad Antonio de Nebrija
+DESCRIPTION:Application deadline. Source: https://www.nebrija.com/admision/postgrado.php
+URL:https://www.nebrija.com/admision/postgrado.php
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-nebrija-analisis-de-negocios-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:45 days to deadline: Business Analytics — Universidad Antonio de Nebrija
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-mu-metodos-analiticos-datos-masivos-big-data@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Application deadline. Source: https://www.uc3m.es/master/big-data
+URL:https://www.uc3m.es/master/big-data
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uc3m-mu-metodos-analiticos-datos-masivos-big-data-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uev-analisis-datos-masivos-big-data@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:DEADLINE: Máster Universitario en Análisis de Datos Masivos (Big Data) — Universidad Europea de Valencia
+DESCRIPTION:Application deadline. Source: https://universidadeuropea.com/master-big-data-valencia/
+URL:https://universidadeuropea.com/master-big-data-valencia/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uev-analisis-datos-masivos-big-data-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:45 days to deadline: Máster Universitario en Análisis de Datos Masivos (Big Data) — Universidad Europea de Valencia
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-umh-estadistica-computacional-ciencia-datos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+SUMMARY:DEADLINE: Computational Statistics and Data Science for Decision Making — Universidad Miguel Hernández de Elche (UMH)
+DESCRIPTION:Application deadline. Source: https://estudios.umh.es/acceso/masters/instrucciones-de-preinscripcion-master-universitario/
+URL:https://estudios.umh.es/acceso/masters/instrucciones-de-preinscripcion-master-universitario/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-umh-estadistica-computacional-ciencia-datos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260130
+DTEND;VALUE=DATE:20260131
+SUMMARY:45 days to deadline: Computational Statistics and Data Science for Decision Making — Universidad Miguel Hernández de Elche (UMH)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uah-analitica-negocio-big-data@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+SUMMARY:DEADLINE: Máster Universitario en Analítica de Negocio y Big Data — Universidad de Alcalá (UAH)
+DESCRIPTION:Application deadline. Source: https://posgrado.uah.es/es/masteres-universitarios/tramites-administrativos/admision/
+URL:https://posgrado.uah.es/es/masteres-universitarios/tramites-administrativos/admision/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uah-analitica-negocio-big-data-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260116
+DTEND;VALUE=DATE:20260117
+SUMMARY:45 days to deadline: Máster Universitario en Analítica de Negocio y Big Data — Universidad de Alcalá (UAH)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-emjm-emai-upf@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20251115
+DTEND;VALUE=DATE:20251116
+SUMMARY:FUNDING DEADLINE: EMAI — Erasmus Mundus Joint Master in Artificial Intelligence
+DESCRIPTION:European Commission / EACEA (Erasmus+ EMJM); coordinated by Universitat Pompeu Fabra · Tunisian eligible: YES
+URL:https://www.upf.edu/web/emai/access-admission
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-emjm-emai-upf-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20251001
+DTEND;VALUE=DATE:20251002
+SUMMARY:45 days to funding deadline: EMAI — Erasmus Mundus Joint Master in Artificial Intelligence
+DESCRIPTION:Reminder.
+URL:https://www.upf.edu/web/emai/access-admission
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-aecid-africa-med-master@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260703
+SUMMARY:FUNDING DEADLINE: Becas MAEC-AECID — Programa África-Med Máster: Becas para la ciudadanía de países de África y Oriente Medio
+DESCRIPTION:AECID / Cooperación Española (Ministerio de Asuntos Exteriores, Unión Europea y Cooperación, Spain) · Tunisian eligible: CONDITIONAL — TÚNEZ IS EXPLICITLY LISTED AS AN ELIGIBLE NATIONALITY, BUT ONLY FOR PERMANENT PUBLIC EMPLOYEES
+URL:https://www.aecid.es/becas-para-ciudadanos-de-paises-de-america-latina-africa-y-asia (full convocatoria via AECID sede electrónica, https://www.aecid.gob.es/)
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-aecid-africa-med-master-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260518
+DTEND;VALUE=DATE:20260519
+SUMMARY:45 days to funding deadline: Becas MAEC-AECID — Programa África-Med Máster: Becas para la ciudadanía de países de África y Oriente Medio
+DESCRIPTION:Reminder.
+URL:https://www.aecid.es/becas-para-ciudadanos-de-paises-de-america-latina-africa-y-asia (full convocatoria via AECID sede electrónica, https://www.aecid.gob.es/)
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-aecid-programa-master@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Becas MAEC-AECID — Programa MÁSTER (América Latina y Filipinas)
+DESCRIPTION:MAEUEC / AECID · Tunisian eligible: NO
+URL:https://www.aecid.es/becas-para-ciudadanos-de-paises-de-america-latina-africa-y-asia
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-aecid-programa-master-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Becas MAEC-AECID — Programa MÁSTER (América Latina y Filipinas)
+DESCRIPTION:Reminder.
+URL:https://www.aecid.es/becas-para-ciudadanos-de-paises-de-america-latina-africa-y-asia
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-aecid-escuela-diplomatica@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Becas MAEC-AECID — Programa Escuela Diplomática (Máster de Formación Permanente en Diplomacia y Relaciones Internacionales)
+DESCRIPTION:MAEUEC / AECID — Escuela Diplomática · Tunisian eligible: NO
+URL:https://www.aecid.es/becas-para-ciudadanos-de-paises-de-america-latina-africa-y-asia
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-aecid-escuela-diplomatica-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Becas MAEC-AECID — Programa Escuela Diplomática (Máster de Formación Permanente en Diplomacia y Relaciones Internacionales)
+DESCRIPTION:Reminder.
+URL:https://www.aecid.es/becas-para-ciudadanos-de-paises-de-america-latina-africa-y-asia
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-lacaixa-posgrado-extranjero@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Becas de posgrado en el extranjero / Postgraduate Fellowships Abroad (EEES–Europe, North America, Asia-Pacific lines)
+DESCRIPTION:Fundación "la Caixa" · Tunisian eligible: NO
+URL:https://fundacionlacaixa.org/es/becas-posgrado-extranjero-convocatoria
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-lacaixa-posgrado-extranjero-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Becas de posgrado en el extranjero / Postgraduate Fellowships Abroad (EEES–Europe, North America, Asia-Pacific lines)
+DESCRIPTION:Reminder.
+URL:https://fundacionlacaixa.org/es/becas-posgrado-extranjero-convocatoria
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-lacaixa-inphinit-incoming@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Doctoral INPhINIT Fellowships — Incoming call ("la Caixa" Foundation)
+DESCRIPTION:Fundación Bancaria "la Caixa" (co-funded historically by the EU H2020 Marie Skłodowska-Curie COFUND grant agreement No 713673) · Tunisian eligible: CONDITIONAL
+URL:https://fellowships.lacaixafoundation.org/s_Login.jsp?&lang=1
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-lacaixa-inphinit-incoming-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Doctoral INPhINIT Fellowships — Incoming call ("la Caixa" Foundation)
+DESCRIPTION:Reminder.
+URL:https://fellowships.lacaixafoundation.org/s_Login.jsp?&lang=1
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-areces-postgrado-extranjero@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Becas Fundación Ramón Areces para Estudios de Postgrado — Ampliación de Estudios en el Extranjero (Ciencias Sociales / Humanidades / Ciencias de la Vida y de la Materia)
+DESCRIPTION:Fundación Ramón Areces · Tunisian eligible: NO
+URL:https://www.fundacionareces.es/fundacionareces/es/convocatorias/becas-fundacion-ramon-areces-para-estudios-de-postgrado-xl-convocatoria-para-ampliacion-de-estudios-en-el-extranjero-en-ciencias-sociales.html
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-areces-postgrado-extranjero-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Becas Fundación Ramón Areces para Estudios de Postgrado — Ampliación de Estudios en el Extranjero (Ciencias Sociales / Humanidades / Ciencias de la Vida y de la Materia)
+DESCRIPTION:Reminder.
+URL:https://www.fundacionareces.es/fundacionareces/es/convocatorias/becas-fundacion-ramon-areces-para-estudios-de-postgrado-xl-convocatoria-para-ampliacion-de-estudios-en-el-extranjero-en-ciencias-sociales.html
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-fbbva-becas-leonardo@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Becas Leonardo a Investigadores y Creadores Culturales (Fundación BBVA) — and the Fundación BBVA calls catalogue generally
+DESCRIPTION:Fundación BBVA · Tunisian eligible: NO
+URL:https://www.fbbva.es/convocatorias/
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-fbbva-becas-leonardo-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Becas Leonardo a Investigadores y Creadores Culturales (Fundación BBVA) — and the Fundación BBVA calls catalogue generally
+DESCRIPTION:Reminder.
+URL:https://www.fbbva.es/convocatorias/
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-fundacion-telefonica-becas-posgrado@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Becas Fundación Telefónica (programa de becas de posgrado tecnológico, 1ª edición 2026)
+DESCRIPTION:Fundación Telefónica · Tunisian eligible: NO
+URL:https://becas.fundaciontelefonica.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-fundacion-telefonica-becas-posgrado-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Becas Fundación Telefónica (programa de becas de posgrado tecnológico, 1ª edición 2026)
+DESCRIPTION:Reminder.
+URL:https://becas.fundaciontelefonica.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-mutua-madrilena-becas-excelencia@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Becas Excelencia para la ampliación de estudios de posgrado en el extranjero (XXI Convocatoria)
+DESCRIPTION:Fundación Mutua Madrileña · Tunisian eligible: NO
+URL:https://www.fundacionmutua.es/accion-social/jovenes/becas-posgrado/bases/
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-mutua-madrilena-becas-excelencia-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Becas Excelencia para la ampliación de estudios de posgrado en el extranjero (XXI Convocatoria)
+DESCRIPTION:Reminder.
+URL:https://www.fundacionmutua.es/accion-social/jovenes/becas-posgrado/bases/
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-fundacion-once-oportunidad-al-talento@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Oportunidad al Talento — Becas de Máster y Posgrado (and the wider Fundación ONCE becas portfolio)
+DESCRIPTION:Fundación ONCE · Tunisian eligible: NO
+URL:https://ayudasybecas.fundaciononce.es/s/oportunidadaltalento?recordId=a0tQF00000VvuTTYAZ
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-fundacion-once-oportunidad-al-talento-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Oportunidad al Talento — Becas de Máster y Posgrado (and the wider Fundación ONCE becas portfolio)
+DESCRIPTION:Reminder.
+URL:https://ayudasybecas.fundaciononce.es/s/oportunidadaltalento?recordId=a0tQF00000VvuTTYAZ
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-es-work-rights-student-visa-30h@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20250520
+DTEND;VALUE=DATE:20250521
+SUMMARY:FUNDING DEADLINE: Student stay (estancia de larga duración por estudios) — right to paid work, 30 h/week, no separate work permit
+DESCRIPTION:Gobierno de España — Reglamento de la LO 4/2000, aprobado por Real Decreto 1155/2024 (in force 20 May 2025) · Tunisian eligible: YES
+URL:https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-es-work-rights-student-visa-30h-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20250405
+DTEND;VALUE=DATE:20250406
+SUMMARY:45 days to funding deadline: Student stay (estancia de larga duración por estudios) — right to paid work, 30 h/week, no separate work permit
+DESCRIPTION:Reminder.
+URL:https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-lacaixa-inphinit-retaining@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:FUNDING DEADLINE: Doctoral INPhINIT Fellowships — Retaining call ("la Caixa" Foundation) — the route AFTER a master's in Spain
+DESCRIPTION:Fundación Bancaria "la Caixa" · Tunisian eligible: CONDITIONAL
+URL:https://lacaixafoundation.org/en/doctoral-inphinit-fellowships-retaining-call
+END:VEVENT
+BEGIN:VEVENT
+UID:fund-lacaixa-inphinit-retaining-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to funding deadline: Doctoral INPhINIT Fellowships — Retaining call ("la Caixa" Foundation) — the route AFTER a master's in Spain
+DESCRIPTION:Reminder.
+URL:https://lacaixafoundation.org/en/doctoral-inphinit-fellowships-retaining-call
+END:VEVENT
+END:VCALENDAR
