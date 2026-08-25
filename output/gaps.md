@@ -25,10 +25,10 @@ checked, and must not be treated as absent or as rejected.**
 
 | status | count | meaning |
 |---|---:|---|
-| VERIFIED | 99 | a second agent, given only the name and institution, reached the same answers |
-| CONFLICT | 32 | the two passes disagree on at least one field; both values kept |
+| VERIFIED | 100 | a second agent, given only the name and institution, reached the same answers |
+| CONFLICT | 33 | the two passes disagree on at least one field; both values kept |
 | UNCONFIRMED | 0 | the verifier could not source the fields at all |
-| NOT VERIFIED | 4 | no independent pass ran — **single-sourced, treat with more caution** |
+| NOT VERIFIED | 2 | no independent pass ran — **single-sourced, treat with more caution** |
 
 **15 programmes carry a conflict on a decisive field** (cost, deadline, official
 status or language) and the brief escalates those to a third agent for a tie-break.
@@ -61,11 +61,11 @@ could source it — never that the answer is zero or no.
 | `ruct_code` | 6 | 135 |
 | `tuition_total_eur` | 31 | 135 |
 | `tuition_year_of_rates` | 28 | 135 |
-| `non_eu_surcharge` | 54 | 135 |
+| `non_eu_surcharge` | 53 | 135 |
 | `language_of_instruction` | 16 | 135 |
 | `complementary_credits_required` | 0 | 135 |
 | `credit_recognition_available` | 97 | 135 |
-| `application_window_2027` | 31 | 135 |
+| `application_window_2027` | 29 | 135 |
 
 ## 4. Programmes whose September-2027 intake is in doubt
 
@@ -157,7 +157,7 @@ decision-changing, not because they are merely unfinished.
   the candidate even if the residency rule were met?* Recorded as a reasoned flag, not a ruling.
 - **CSIC JAE Intro** publishes no eligibility page (404s); **universidades.gob.es** 503s.
 
-## 7. Recorded contradictions (47)
+## 7. Recorded contradictions (48)
 
 Rule 8 says record contradictions rather than resolving them silently. Both values and
 both sources are kept in `programmes.csv`. The pattern worth knowing: **the commonest

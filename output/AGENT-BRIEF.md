@@ -124,6 +124,13 @@ open to you. `Publicado en B.O.E.` is the healthy state.
 page's own stated `código RUCT` / BOE reference as the primary source, and use this script
 as the cross-check. Put the RUCT code in `ruct_code` either way.
 
+⚠️ **The backbone is a keyword sweep, so absence from it is NOT a verdict.** It was built
+from 52 term families; a title whose name uses none of them is simply missing. A real case:
+UCJC's *People Analytics* master (RUCT 3500166) is genuinely official but absent, because no
+query term matched "people analytics" or "talento". **If a programme is not in the backbone,
+query RUCT directly with `ruct.py` before concluding anything** — and if that also returns
+nothing, say "not found in RUCT by these terms", not "not official".
+
 **A pre-built backbone of every registered master in the nine fields is at
 `output/ruct-backbone.jsonl`** (fields: ruct_code, title, university, estado, active,
 path_codes, query_terms). Check it before running your own query — it may already answer you.
@@ -135,8 +142,14 @@ path_codes, query_terms). Check it before running your own query — it may alre
 Some institution sites sit behind a Cloudflare JS challenge and return **HTTP 403 to every
 automated fetch** (WebFetch, curl, and a real headless browser alike). Confirmed blocked:
 **www.upf.edu**, **unir.net**, **il3.ub.edu**, **pointblankmusicschool.com**, **imep.es**,
-**ucjc.edu** (returns HTTP 202 with a 221-byte shell for HTML *and* PDFs — looks like a
-response, carries nothing), **www.uclm.es**, **fundacionsgae.org**.
+**www.uclm.es**, **fundacionsgae.org**.
+
+⚠️ **CORRECTION — `ucjc.edu` and `urjc.es` are NOT blocked.** An earlier version of this
+brief listed ucjc.edu as blocked on the strength of an HTTP 202 shell. That is wrong and it
+cost real coverage. Both show a **202-then-200 pattern**: the first request returns a small
+shell, and a **retry with a browser User-Agent returns 200 with the full body**. WebFetch
+returns empty for them; `curl` with a UA works. **Retry before you record a block** —
+a 202 shell is a challenge, not a wall.
 
 ⚠️ **`www.unir.net` is blocked but `static.unir.net` is NOT** — UNIR's official programme
 brochures are served there and fetch fine, which makes ECTS, modality, plan de estudios and
