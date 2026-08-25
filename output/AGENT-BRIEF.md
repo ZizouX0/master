@@ -115,7 +115,21 @@ path_codes, query_terms). Check it before running your own query — it may alre
 
 Some institution sites sit behind a Cloudflare JS challenge and return **HTTP 403 to every
 automated fetch** (WebFetch, curl, and a real headless browser alike). Confirmed blocked:
-**upf.edu**, **unir.net**, **il3.ub.edu**, **pointblankmusicschool.com**, **imep.es**.
+**www.upf.edu**, **unir.net**, **il3.ub.edu**, **pointblankmusicschool.com**, **imep.es**,
+**ucjc.edu** (returns HTTP 202 with a 221-byte shell for HTML *and* PDFs — looks like a
+response, carries nothing), **www.uclm.es**, **fundacionsgae.org**.
+
+⚠️ **Two UPF specifics, verified — do not over- or under-apply the block.**
+`mtg.upf.edu` looks like a way round it but **302-redirects into `www.upf.edu`** and hits
+the same wall, so the Music Technology Group's own pages are genuinely unreachable.
+But **`bsm.upf.edu` is NOT blocked** — UPF Barcelona School of Management is a separate
+site serving both WebFetch and curl normally. Do not skip it because of the upf.edu
+warning: its Data Analytics for Business master is official (RUCT 4318274) and its next
+intake is **27 September 2027**, this candidate's exact target intake.
+
+⚠️ **`fundacionindra.org` and `fundacionaccenture.org` fail with a 502 at the network
+gateway** — that is an environment block, NOT evidence that no scheme exists. Never write
+those up as a negative finding.
 `guiadocent.upf.edu` and `estudiospropios.unizar.es` are additionally refused by the network
 gateway. Chromium/Playwright does NOT get through — do not spend time on it. The Wayback
 Machine is rate-limited here and is not a reliable fallback either.
