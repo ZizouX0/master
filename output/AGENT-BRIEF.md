@@ -138,8 +138,12 @@ had read the primary page, and do NOT let a blocked domain become an invented fa
 
 ## Budget your searches — several wave-1 agents ran out
 
-WebSearch is capped per agent (~200 calls) and multiple discovery agents hit the ceiling
-**mid-slice**, losing their last planned sweeps. Spend the budget deliberately:
+WebSearch is capped **per agent** (~200 calls) and multiple agents hit the ceiling
+**mid-slice**, losing their last planned sweeps. The exhaustion message reads as though the
+limit were session-wide and already drained by others — it is not, and it has been verified
+that search keeps working elsewhere after an agent reports this. **Do not treat it as a
+reason to stop early or to skip searching at the start of your slice.** It is your own
+budget; spend it deliberately:
 
 1. **Check `output/ruct-backbone.jsonl` FIRST.** It already holds every RUCT-registered
    Spanish master across all nine fields (1,056 titles, 561 currently active) with code,
