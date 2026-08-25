@@ -98,6 +98,15 @@ def score(p, funding_by_id):
     b["credit"] = (c, 10)
 
     total = sum(r*w for r, w in b.values())
+
+    # A programme whose Sept-2027 intake is in doubt cannot outrank one that will
+    # certainly run, however good it looks on the other five axes. Applied as a
+    # multiplier so the component breakdown above stays readable and the reason shows.
+    risk = flat(p.get("intake_2027_risk")).strip()
+    if risk:
+        factor = 0.45 if "suspended recruitment" in risk or "winding down" in risk else 0.7
+        total *= factor
+        b["intake risk"] = (factor, 0)
     return total, b
 
 def main():
@@ -139,11 +148,17 @@ def main():
               f"{p.get('official_status','?')} · {p.get('language_of_instruction','?')}", "",
               "| Component | Raw | Weight | Contribution |", "|---|---:|---:|---:|"]
         for name, (r, wt) in b.items():
-            L.append(f"| {name} | {r:.2f} | {wt} | **{r*wt:.1f}** |")
+            if name == "intake risk":
+                L.append(f"| **{name}** | x{r:.2f} | — | **penalty applied** |")
+            else:
+                L.append(f"| {name} | {r:.2f} | {wt} | **{r*wt:.1f}** |")
         L += ["", f"- Tuition: {p.get('tuition_total_eur','NOT FOUND')} ({p.get('tuition_year_of_rates','?')} rates) · non-EU surcharge: {p.get('non_eu_surcharge','NOT FOUND')}",
               f"- 300-ECTS recognition: {p.get('credit_recognition_available','NOT FOUND')}",
               f"- Application window 2027: {p.get('application_window_2027','NOT FOUND')}",
-              f"- Verification: {p.get('verification_status','?')}", ""]
+              f"- Verification: {p.get('verification_status','?')}"]
+        if flat(p.get("intake_2027_risk")).strip():
+            L.append(f"- ⚠️ **Sept-2027 intake at risk:** {flat(p.get('intake_2027_risk'))}")
+        L.append("")
     (OUT/"shortlist.md").write_text("\n".join(L), encoding="utf-8")
 
     # deadlines.ics — every deadline plus a 45-day-prior reminder

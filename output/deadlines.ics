@@ -410,6 +410,23 @@ SUMMARY:45 days to deadline: Máster Universitario en Analítica de Negocio y Bi
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-upm-software-sistemas-distribuidos-empotrados-mssde@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Software de Sistemas Distribuidos y Empotrados — Universidad Politécnica de Madrid (UPM) - ETSISI
+DESCRIPTION:Application deadline. Source: https://www.upm.es/Estudiantes/Estudios_Titulaciones/Estudios_Master/Calendario
+URL:https://www.upm.es/Estudiantes/Estudios_Titulaciones/Estudios_Master/Calendario
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-software-sistemas-distribuidos-empotrados-mssde-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Software de Sistemas Distribuidos y Empotrados — Universidad Politécnica de Madrid (UPM) - ETSISI
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-ua-economics-with-data-science@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260316
@@ -580,20 +597,37 @@ SUMMARY:45 days to deadline: University Master's Degree in Engineering and Data 
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-ucm-ciencia-datos-inteligencia-negocios@spain-sweep
+UID:prog-ufv-bioinformatica-datos-biomedicos@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
-SUMMARY:DEADLINE: Master's Degree in Data Science and Business Intelligence — Universidad Complutense de Madrid (UCM) — Facultad de Estudios Estadísticos
-DESCRIPTION:Application deadline. Source: https://www.ucm.es/plazos-generales
-URL:https://www.ucm.es/plazos-generales
+SUMMARY:DEADLINE: Master's Degree in Bioinformatics and Biomedical Data Analysis — Universidad Francisco de Vitoria (UFV)
+DESCRIPTION:Application deadline. Source: https://www.ufv.es/master-universitario-bioinformatica-analisis-datos-biomedicos/
+URL:https://www.ufv.es/master-universitario-bioinformatica-analisis-datos-biomedicos/
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-ucm-ciencia-datos-inteligencia-negocios-r45@spain-sweep
+UID:prog-ufv-bioinformatica-datos-biomedicos-r45@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260712
-SUMMARY:45 days to deadline: Master's Degree in Data Science and Business Intelligence — Universidad Complutense de Madrid (UCM) — Facultad de Estudios Estadísticos
+SUMMARY:45 days to deadline: Master's Degree in Bioinformatics and Biomedical Data Analysis — Universidad Francisco de Vitoria (UFV)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-tai-produccion-musical@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Music Production — Escuela Universitaria de Artes TAI
+DESCRIPTION:Application deadline. Source: https://taiarts.com/estudios/master-produccion-musical/
+URL:https://taiarts.com/estudios/master-produccion-musical/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-tai-produccion-musical-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Music Production — Escuela Universitaria de Artes TAI
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT

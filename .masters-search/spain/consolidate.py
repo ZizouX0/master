@@ -119,6 +119,32 @@ for r in progs.values():
         r["programme_name_es"]=str(r.get("ruct_title") or r.get("ruct_candidate_title")
                                    or r.get("programme_name") or "").strip()[:140]
 
+# ---- flag programmes whose September-2027 intake is in doubt
+# A programme that may not run cannot sit at the top of a shortlist. WAVES ranked #1
+# until its consortium turned out to have suspended recruitment; several other titles
+# are A EXTINGUIR or pending verification. This is a ranking input, not a footnote.
+# fold() strips punctuation and accents, so these are plain lowercase word sequences,
+# NOT regexes -- passing a regex through fold() destroys its metacharacters, which is
+# how the first version of this silently matched nothing at all.
+RISK = [
+    (["not to open the recruitment", "suspended recruitment", "not open the recruitment campaign",
+      "decided not to open"],                                  "consortium has suspended recruitment"),
+    (["a extinguir", "extinguida", "en extincion", "plan en extincion", "titulacion a extinguir"],
+                                                               "title winding down (A EXTINGUIR)"),
+    (["pendiente de verificacion", "pendiente de resolucion de verificacion",
+      "pendiente de aprobacion", "en proces de verificacio", "en proceso de verificacion"],
+                                                               "not yet verified / not yet official"),
+    (["appears to have been withdrawn", "soft 404", "no programme page exists",
+      "serves the cev barcelona homepage"],                    "no live programme page - may be withdrawn"),
+]
+for r in progs.values():
+    blob = fold(json.dumps(r, ensure_ascii=False))
+    hits = [label for needles, label in RISK if any(n in blob for n in needles)]
+    est = fold(str(r.get("ruct_candidate_estado") or r.get("estado") or ""))
+    if "extingu" in est and "title winding down (A EXTINGUIR)" not in hits:
+        hits.append("title winding down (A EXTINGUIR)")
+    r["intake_2027_risk"] = "; ".join(dict.fromkeys(hits)) if hits else ""
+
 # ---- write, only now that linking and name-cleaning have run
 with (OUT/"programmes.jsonl").open("w",encoding="utf-8") as fh:
     for r in progs.values(): fh.write(json.dumps(r,ensure_ascii=False)+"\n")
