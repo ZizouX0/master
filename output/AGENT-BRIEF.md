@@ -178,9 +178,24 @@ For an Enseñanzas Artísticas programme, evidence of officiality is **the BOE h
 order**, not a RUCT row. Record the BOE reference in `ruct_code` prefixed `BOE:` and say in
 `notes` that RUCT absence is expected here and is not evidence against it.
 
-⚠️ **The real filter on these for this candidate is entry requirements, not status.** They
-typically require a `Título Superior de Música` — which a Software Engineering degree does
-**not** satisfy. Check `entry_requirements` carefully before ranking one highly.
+⚠️ **The real filter is the admission test, not the degree bar — and the degree bar is
+GENEROUS.** An earlier version of this brief said these programmes typically require a
+`Título Superior de Música`. That was too pessimistic and is now corrected from source:
+**art. 15 RD 1614/2009 admits the holder of ANY official Grado**, not only a music title.
+The real gate is **art. 16, the centre-set `prueba de acceso`** — an audition or portfolio
+that each centre defines for itself.
+
+So never ask "does it demand a Título Superior de Música?" Ask **"what is the prueba de
+acceso, and can a producer's portfolio satisfy it?"** The distinction decides real cases:
+one register programme (Musikene's *Mediación, Gestión y Difusión Musical*) selects on
+merit with **no audition at all** and states it is aimed at graduates from other
+disciplines; others ask for recent work samples with **no scores required**, which a
+producer can plausibly meet; only some demand `partitura + audio` or a live audition,
+which genuinely closes them.
+
+Note also the evaluation chain: the community proposes, **ANECA *or* a regional agency**
+evaluates (Aragón's went through ACPUA), the Ministry homologates by BOE order. So
+"no ANECA report" is **not** evidence against officiality here either.
 
 Note also: **`Máster de Formación Permanente` / `Formación Continua` is the post-RD 822/2021
 legal name for a `título propio`.** It reads official. It is not.
