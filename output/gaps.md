@@ -25,12 +25,12 @@ checked, and must not be treated as absent or as rejected.**
 
 | status | count | meaning |
 |---|---:|---|
-| VERIFIED | 85 | a second agent, given only the name and institution, reached the same answers |
-| CONFLICT | 29 | the two passes disagree on at least one field; both values kept |
+| VERIFIED | 94 | a second agent, given only the name and institution, reached the same answers |
+| CONFLICT | 31 | the two passes disagree on at least one field; both values kept |
 | UNCONFIRMED | 0 | the verifier could not source the fields at all |
-| NOT VERIFIED | 21 | no independent pass ran — **single-sourced, treat with more caution** |
+| NOT VERIFIED | 10 | no independent pass ran — **single-sourced, treat with more caution** |
 
-**12 programmes carry a conflict on a decisive field** (cost, deadline, official
+**14 programmes carry a conflict on a decisive field** (cost, deadline, official
 status or language) and the brief escalates those to a third agent for a tie-break.
 That tie-break has not run. Until it does, treat these figures as contested:
 
@@ -42,10 +42,12 @@ That tie-break has not run. Until it does, treat these figures as contested:
 - **Máster Universitario en Ciencia de Datos e Inteligencia de Negocios** — Universidad Complutense de Madrid (UCM) — Facultad d · disputed: tuition_per_ects_eur, tuition_total_eur
 - **Máster Universitario en Nuevas Tecnologías Electrónicas y Fotónicas** — Universidad Complutense de Madrid (UCM) — Facultad d · disputed: tuition_total_eur
 - **Máster de Formación Permanente en Big Data, Data Science e Inteligenci** — Universidad Complutense de Madrid (UCM) — Centro de  · disputed: modality, tuition_total_eur
+- **Máster Universitario en Análisis de Datos Deportivos** — Universidad Rey Juan Carlos (URJC) · disputed: tuition_total_eur
 - **Máster Universitario en Economía con Ciencia de Datos** — Universidad de Alicante (UA) · disputed: non_eu_surcharge, tuition_per_ects_eur, tuition_total_eur
 - **Máster Universitario en Inteligencia Artificial Aplicada a la Industri** — Universidad del País Vasco / Euskal Herriko Uniberts · disputed: programme name, tuition_total_eur
 - **NEGATIVE FINDING — la Universitat Oberta de Catalunya no ofrece un más** — Universitat Oberta de Catalunya (UOC) · disputed: application_window_2027, official_status, tuition_year_of_rates
 - **Máster en Producción Musical** — CEV — Escuela Superior de Comunicación, Imagen y Son · disputed: official_status
+- **Máster Universitario en Electrónica y Tecnología Digital Aplicada (MET** — Universidad de Las Palmas de Gran Canaria (ULPGC) · disputed: language_of_instruction
 
 ## 3. Starred fields that are NOT FOUND
 
@@ -56,13 +58,13 @@ could source it — never that the answer is zero or no.
 |---|---:|---:|
 | `official_status` | 0 | 135 |
 | `ruct_code` | 6 | 135 |
-| `tuition_total_eur` | 34 | 135 |
-| `tuition_year_of_rates` | 31 | 135 |
-| `non_eu_surcharge` | 57 | 135 |
-| `language_of_instruction` | 18 | 135 |
+| `tuition_total_eur` | 31 | 135 |
+| `tuition_year_of_rates` | 28 | 135 |
+| `non_eu_surcharge` | 55 | 135 |
+| `language_of_instruction` | 16 | 135 |
 | `complementary_credits_required` | 0 | 135 |
 | `credit_recognition_available` | 97 | 135 |
-| `application_window_2027` | 37 | 135 |
+| `application_window_2027` | 33 | 135 |
 
 ## 4. Programmes whose September-2027 intake is in doubt
 
@@ -154,7 +156,7 @@ decision-changing, not because they are merely unfinished.
   the candidate even if the residency rule were met?* Recorded as a reasoned flag, not a ruling.
 - **CSIC JAE Intro** publishes no eligibility page (404s); **universidades.gob.es** 503s.
 
-## 7. Recorded contradictions (44)
+## 7. Recorded contradictions (46)
 
 Rule 8 says record contradictions rather than resolving them silently. Both values and
 both sources are kept in `programmes.csv`. The pattern worth knowing: **the commonest
@@ -189,6 +191,7 @@ the same programme** — which is exactly the confusion this candidate must not 
 | Universidad Complutense de Mad | `tuition_total_eur` | 5044.2 | EUR 2,701.20 for 60 ECTS (60 x 45.02 EUR/crédi |
 | Universidad Complutense de Mad | `modality` | online — UCM's catalogue records «Modalidad: O | semipresencial — UCM CFP ficha verbatim label: |
 | Universidad Complutense de Mad | `tuition_total_eur` | 4805 | EUR 5,830 for the full programme — UCM CFP fic |
+| Universidad Rey Juan Carlos (U | `tuition_total_eur` | 2701.2 | EUR 5,044.20 for the non-EU non-resident popul |
 | Universidad de Alicante (UA) | `tuition_total_eur` | 4240.8 | 2120.4 |
 | Universidad de Alicante (UA) | `tuition_per_ects_eur` | 70.68 | 35.34 |
 | Universidad de Alicante (UA) | `non_eu_surcharge` | YES - EXPLICIT AND DOUBLE. Universidad de Alic | YES — UA precios públicos page: non-resident f |
@@ -202,4 +205,3 @@ the same programme** — which is exactly the confusion this candidate must not 
 | Universitat Oberta de Cataluny | `application_window_2027` | NOT APPLICABLE | N/A |
 | Universitat Rovira i Virgili ( | `tuition_total_eur` | 2913.0 | 2766.6 |
 | Universitat Rovira i Virgili ( | `tuition_per_ects_eur` | 48.55 | 46.11 |
-| CEV — Escuela Superior de Comu | `official_status` | título propio de escuela — NOT OFFICIAL, and N | NOT a máster universitario — título propio / p |

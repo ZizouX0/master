@@ -835,8 +835,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-upna-machine-learning@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260826
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
 SUMMARY:DEADLINE: Master's Degree in Machine Learning — Universidad Pública de Navarra (UPNA / NUP)
 DESCRIPTION:Application deadline. Source: https://www.unavarra.es/sites/estudios/preinscripcion-de-masteres/calendario.html
 URL:https://www.unavarra.es/sites/estudios/preinscripcion-de-masteres/calendario.html
@@ -844,16 +844,16 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-upna-machine-learning-r45@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260712
+DTSTART;VALUE=DATE:20260130
+DTEND;VALUE=DATE:20260131
 SUMMARY:45 days to deadline: Master's Degree in Machine Learning — Universidad Pública de Navarra (UPNA / NUP)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
 UID:prog-uc-uimp-ciencia-de-datos@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260826
+DTSTART;VALUE=DATE:20260309
+DTEND;VALUE=DATE:20260310
 SUMMARY:DEADLINE: Master in Data Science — CONJUNTO: Universidad Internacional Menéndez Pelayo (UIMP) + Universidad de Cantabria (UC); taught with CSIC / Instituto de Física de Cantabria involvement
 DESCRIPTION:Application deadline. Source: https://www.uimp.es/postgrado/estudios/fichaestudio.php?plan=P04A&any=2026-27&verasi=N&lan=es
 URL:https://www.uimp.es/postgrado/estudios/fichaestudio.php?plan=P04A&any=2026-27&verasi=N&lan=es
@@ -861,8 +861,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-uc-uimp-ciencia-de-datos-r45@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260712
+DTSTART;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
 SUMMARY:45 days to deadline: Master in Data Science — CONJUNTO: Universidad Internacional Menéndez Pelayo (UIMP) + Universidad de Cantabria (UC); taught with CSIC / Instituto de Física de Cantabria involvemen
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
