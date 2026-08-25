@@ -173,6 +173,23 @@ SUMMARY:45 days to deadline: Master Universitario en Ingenieria de Software y Si
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-upv-mu-ingenieria-acustica@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Ingeniería Acústica (MUIA) — Universitat Politècnica de València (UPV)
+DESCRIPTION:Application deadline. Source: https://www.upv.es/estudios/master/muia/
+URL:https://www.upv.es/estudios/master/muia/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upv-mu-ingenieria-acustica-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Ingeniería Acústica (MUIA) — Universitat Politècnica de València (UPV)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-upc-masteam-aplicaciones-gestion-ingenieria-telecomunicacion@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
