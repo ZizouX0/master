@@ -25,10 +25,10 @@ checked, and must not be treated as absent or as rejected.**
 
 | status | count | meaning |
 |---|---:|---|
-| VERIFIED | 100 | a second agent, given only the name and institution, reached the same answers |
+| VERIFIED | 101 | a second agent, given only the name and institution, reached the same answers |
 | CONFLICT | 33 | the two passes disagree on at least one field; both values kept |
 | UNCONFIRMED | 0 | the verifier could not source the fields at all |
-| NOT VERIFIED | 2 | no independent pass ran — **single-sourced, treat with more caution** |
+| NOT VERIFIED | 1 | no independent pass ran — **single-sourced, treat with more caution** |
 
 **15 programmes carry a conflict on a decisive field** (cost, deadline, official
 status or language) and the brief escalates those to a third agent for a tie-break.

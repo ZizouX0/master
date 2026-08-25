@@ -144,6 +144,16 @@ automated fetch** (WebFetch, curl, and a real headless browser alike). Confirmed
 **www.upf.edu**, **unir.net**, **il3.ub.edu**, **pointblankmusicschool.com**, **imep.es**,
 **www.uclm.es**, **fundacionsgae.org**.
 
+⚠️ **A blocked main domain does not mean a blocked institution — check subdomains first.**
+Two verified cases: `www.uclm.es` genuinely 403s, but **`esi.uclm.es`** (which hosts the Big
+Data master's own microsite) and **`preinscripcionmu.apps.uclm.es`** (the official
+preinscription portal, with the full calendar and per-title credits and modality) both serve
+normally. Likewise `www.unir.net` is blocked while `static.unir.net` serves the official
+brochures, and `www.upf.edu` is blocked while `bsm.upf.edu` is not. Before writing off a
+domain, try the faculty, school, campus and application subdomains.
+`unirioja.es` additionally rate-limits curl to 429 while WebFetch gets through — if one
+client fails, try the other before recording a block.
+
 ⚠️ **CORRECTION — `ucjc.edu` and `urjc.es` are NOT blocked.** An earlier version of this
 brief listed ucjc.edu as blocked on the strength of an HTTP 202 shell. That is wrong and it
 cost real coverage. Both show a **202-then-200 pattern**: the first request returns a small
