@@ -27,6 +27,67 @@ def fold(s):
     s="".join(c for c in s if not unicodedata.combining(c))
     return re.sub(r"[^a-z0-9]+"," ",s).strip()
 
+def _nums(x):
+    """Money/credit figures in a blob, normalised: '5.079,00' and '5079' compare equal."""
+    out=set()
+    for m in re.finditer(r"\d[\d.,]*", str(x or "")):
+        t=m.group(0)
+        if "," in t and "." in t: t=t.replace(".","").replace(",",".")
+        elif "," in t:            t=t.replace(",",".")
+        try:
+            v=float(t)
+            if v>=1: out.add(round(v,2))
+        except ValueError: pass
+    return out
+
+_LANGS=("ingles","english","castellano","espanol","spanish","catala","catalan","galego",
+        "gallego","euskera","frances","french")
+def same_meaning(field, a, b):
+    """Do two agents actually disagree, or just phrase it differently?
+
+    Comparing raw prose flagged 225 'conflicts' that were almost all wording variance
+    ('Ingles (English)' vs 'English -- UC3M runs this master in...'). Compare the thing
+    the field is actually asserting instead.
+    """
+    fa, fb = fold(a), fold(b)
+    if fa == fb: return True
+    def miss(t):
+        # "not yet published" does NOT contain "not published" -- that near-miss was
+        # flagging two agents who both said the 2027-28 calendar is unpublished as a
+        # conflict with each other.
+        return (not t.strip() or any(m in t for m in (
+            "not found","not published","not yet published","no publicad","sin publicar",
+            "not yet out","no esta publicad","aun no","pendiente de publicaci",
+            "see canonical record")))   # dedup stub, not a value
+    # One agent finding a figure the other could not is COVERAGE, not contradiction.
+    # Only two present-and-different values are a conflict worth a human's time.
+    if miss(fa) or miss(fb): return True
+    if field == "language_of_instruction":
+        # Compare the FIRST language named, not every language mentioned: enrichment
+        # prose routinely says things like "a public Spanish university teaching in
+        # English", and set-comparison read that as disagreeing with plain "English".
+        norm={"ingles":"en","english":"en","castellano":"es","espanol":"es","spanish":"es",
+              "catala":"ca","catalan":"ca","galego":"gl","gallego":"gl","euskera":"eu",
+              "frances":"fr","french":"fr"}
+        first=lambda t: next((norm[l] for l in sorted(
+            (x for x in _LANGS if x in t), key=lambda x: t.index(x))), None)
+        return first(fa) == first(fb)
+    if field == "official_status":
+        cat=lambda t: ("ea" if "artistic" in t else "of" if "universitario" in t
+                       else "tp" if ("propio" in t or "permanente" in t) else "?")
+        return cat(fa) == cat(fb)
+    if field == "non_eu_surcharge":
+        yes=lambda t: t.strip().startswith(("yes","si","s ")) or "surcharge" in t or "doubl" in t
+        return yes(fa) == yes(fb) and (_nums(a) == _nums(b) or not (_nums(a) and _nums(b)))
+    na, nb = _nums(a), _nums(b)
+    if na and nb:
+        # Agree if they share a figure, or if their closest figures are within 1% --
+        # agents variously write 266.67 and 267, 171.5 and 172, 231.83 and 232 for the
+        # same derived per-credit price, and rounding is not a contradiction.
+        if na & nb: return True
+        return any(abs(x - y) <= 0.01 * max(x, y) for x in na for y in nb)
+    return fa[:60] == fb[:60]
+
 def slug(r):
     base=fold(r.get("institution"))[:28]+"-"+fold(r.get("programme_name_es") or r.get("programme_name_en") or r.get("programme_name"))[:38]
     return re.sub(r"\s+","-",base).strip("-")
@@ -40,11 +101,30 @@ for f in sorted((OUT/"wave2").glob("batch-*.jsonl")):
         # RUCT code is the strongest identity; fall back to the slug
         k = (r.get("ruct_code") or "").strip() or r["id"]
         if k in progs:
-            # keep the record carrying more sourced content
+            # Two agents enriching the same programme independently is a verification
+            # signal, not noise. Keeping the richer record and dropping the other threw
+            # away genuinely conflicting sourced figures -- UPC came back as 45.00
+            # EUR/credit from one agent and 102.52 from another, and the second vanished.
+            # Rule 8 says record contradictions, never resolve them silently.
             score=lambda x: sum(1 for v in x.values() if isinstance(v,str) and v.strip() and v.strip().upper() not in {"NOT FOUND","UNKNOWN",""})
-            if score(r) <= score(progs[k]):
-                progs[k].setdefault("duplicate_of", []).append(r.get("id"))
-                continue
+            keep, drop = (progs[k], r) if score(r) <= score(progs[k]) else (r, progs[k])
+            DECISIVE = ("tuition_total_eur","tuition_per_ects_eur","non_eu_surcharge",
+                        "language_of_instruction","official_status","ects",
+                        "application_window_2027","complementary_credits_required")
+            conflicts = list(keep.get("conflicts") or [])
+            for fld in DECISIVE:
+                a, b_ = str(keep.get(fld) or "").strip(), str(drop.get(fld) or "").strip()
+                if a and b_ and not same_meaning(fld, a, b_):
+                    conflicts.append({
+                        "field": fld, "value_kept": a[:400], "value_other": b_[:400],
+                        "kept_from": keep.get("_batch"), "other_from": drop.get("_batch"),
+                        "note": "two enrichment agents disagreed; both values retained per rule 8",
+                    })
+            keep["conflicts"] = conflicts
+            keep.setdefault("duplicate_of", []).append(drop.get("id"))
+            keep["_batch"] = keep.get("_batch") or f.stem
+            progs[k] = keep
+            continue
         r["_batch"]=f.stem
         progs[k]=r
 
