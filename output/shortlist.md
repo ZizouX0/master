@@ -4,7 +4,24 @@ Formula, as specified in the brief: **funding availability 40% · field fit 25% 
 
 A component scores 0 when the underlying fact is `NOT FOUND` — so a low score here can mean *unknown*, not *bad*. Check `gaps.md` before discarding anything.
 
-## 1. Erasmus Mundus Master Degree in Waves, Acoustics, Vibrations, Engineering and Sound (WAVES) — Conjunto Internacional — Universitat Politècnica de València (ES, Campus de Gandia); Universidade de Coimbra (PT); Aix-Marseille Université (FR); École Centrale de Marseille / Centrale Méditerranée (FR)
+## 1. Master in Machine Learning for Health — Universidad Carlos III de Madrid (UC3M)
+
+**Score 100.0/100** · Leganés, Madrid (Campus Leganés) · AA | B · máster universitario (OFFICIAL). RUCT 4316958. Estado: 'Publicado en B.O.E. (TITULACIÓN RENOVADA)'. Nivel académico: Máster - RD 822/2021 (3) — the newest legal framework, unlike the other three UC3M programmes here which sit under RD 1393/2007. Nivel MECES 3; Rama: Ingeniería y Arquitectura; Campo: Ingeniería eléctrica, electrónica y de la telecomunicación. Fecha de verificación 05/06/2019; BOE 17/12/2019, 04/05/2020, 28/11/2023, 14/02/2026; Resolución Favorable para la Renov. de la Acreditación 21/10/2024. Not a título propio. · Inglés (English)
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 1.00 | 40 | **40.0** |
+| field_fit | 1.00 | 25 | **25.0** |
+| official | 1.00 | 15 | **15.0** |
+| language | 1.00 | 10 | **10.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: 5044.2 (2025-26 (curso 25/26, explicitly provisional for 2026-27; 2027-28 NOT PUBLISHED) rates) · non-EU surcharge: YES — explicit, and at the Madrid statutory rate rather than the higher UC3M 'own' band. Verbatim: 'ESTUDIANTES NACIONALES Y COMUNITARIOS (45,02€/ECTS) — Primer curso - 60 ECTS — 2.701,20€' and 'ESTUDIANTES EXTRACOMUNITARIOS (84,07€/ECTS) — Primer curso - 60 ECTS — 5.044,20€'. That is +86.7% (+39,05 EUR/ECTS, +2,343 EUR over the programme). Footnote verbatim: '* Precios vigentes para el curso 25/26, pendientes de aprobación por la Comunidad de Madrid para el curso 26/27'. NOTE 84,07 EUR/credit is the same non-EU figure the shared brief records for URJC ('Estudiantes extracomunitarios, no residentes at 84.07 EUR/credit vs 45.02 first enrolment') — i.e. these are the Comunidad de Madrid statutory precios públicos, not a UC3M-specific tariff, which is why this master is roughly 30% cheaper than the UC3M Big Data / Statistics masters despite the same university and credit count. A Tunisian citizen on a study authorisation is non-resident and pays 84,07.
+- 300-ECTS recognition: NOT FOUND for a 300-ECTS entrant. No advanced-standing or reconocimiento-de-créditos scheme keyed to an over-length prior degree is published on this page. What IS published is the reverse: extra credits (complementos) can be ADDED for a mismatched profile. The only discretionary relief published is the comisión's power of 'eximiendo la realización de alguno de ellos' — i.e. exemption from complementos, not recognition against the 60 ECTS. UC3M's general 'Normativa de reconocimiento de créditos' is linked from the MATRÍCULA tab but is not programme-specific. This must be raised directly with the comisión académica.
+- Application window 2027: NOT FOUND for 2027-28 — header reads 'Plazo de admisión CERRADO'. Published calendar is 2026-27 only, verbatim: PRIMER PERIODO 1 DICIEMBRE 2025 - 31 ENERO 2026 (RESOLUCIONES A PARTIR DEL 27 FEBRERO 2026); SEGUNDO PERIODO 1 FEBRERO 2026 - 31 MARZO 2026 (RESOLUCIONES A PARTIR DEL 30 ABRIL 2026); TERCER PERIODO 1 ABRIL 2026 - 31 MAYO 2026 (RESOLUCIONES A PARTIR DEL 23 JUNIO 2026), plus a FASE EXTRAORDINARIA kept open for masters with vacancies. THESE ARE 2026-27 DATES, recorded as such and NOT shifted forward. ONE 2026-27 DATE IS PUBLISHED THAT MATTERS STRUCTURALLY: the complementos formativos run 28/08 (online) and 31/08-04/09 (presencial), so the effective 'be in Spain by' date is late August, roughly two weeks before teaching starts. UC3M also states it will announce any master cancellation 'antes del 30 de junio de 2026'.
+- Verification: PENDING
+
+## 2. Erasmus Mundus Master Degree in Waves, Acoustics, Vibrations, Engineering and Sound (WAVES) — Conjunto Internacional — Universitat Politècnica de València (ES, Campus de Gandia); Universidade de Coimbra (PT); Aix-Marseille Université (FR); École Centrale de Marseille / Centrale Méditerranée (FR)
 
 **Score 100.0/100** · Gandia (Valencia) for the Spanish semester; Coimbra (PT), Marseille (FR) for the others · C | A · máster universitario (official, Conjunto Internacional). RUCT estado: 'Publicado en B.O.E.'; nivel académico Máster - RD 1393/2007, MECES 3; fecha de verificación 11/03/2021; BOE 15/01/2022. The UPV programme page additionally states 'Title in the process of renewal'. · English. Consortium FAQ verbatim: 'All courses are taught in English so that English proficiency is required.' UPV programme page states language: 'English'.
 
@@ -21,7 +38,7 @@ A component scores 0 when the underlying fact is `NOT FOUND` — so a low score 
 - Application window 2027: NOT FOUND for the September 2027 intake — and there is a serious prior question about whether the programme will recruit at all. THE DECISIVE FACT: the consortium site master-waves.eu states that as of 1 October 2025 'it has been decided not to open the recruitment campaign for a 2026-2028 cohort', and the application platform (application.master-waves.eu) is unavailable. No statement was found either way about a 2027-2029 cohort. Separately, UPV publishes its OWN pre-registration calendar for the Spanish title; the most recent published calendar is for the 2026-27 intake, NOT 2027-28: 'Phase 0 (international students outside EU): November 17, 2025 - February 13, 2026; Phase 1 (all students): March 2 - April 30, 2026; Phase 2: June 15-26, 2026; Phase 3: July 31-August 7 and August 24-September 4, 2026.' These are 2026-27 dates recorded as such; the 2027-28 equivalents are not yet published and MUST NOT be assumed to be the same dates shifted by one year. ACTION FOR A HUMAN: contact the consortium before planning on this programme.
 - Verification: PENDING
 
-## 2. Master's Degree of Science in Telecommunication Engineering — Universidad de Jaén (UJA) — Escuela Politécnica Superior de Linares
+## 3. Master's Degree of Science in Telecommunication Engineering — Universidad de Jaén (UJA) — Escuela Politécnica Superior de Linares
 
 **Score 98.0/100** · Linares (Jaén) · B | C · máster universitario · English (the entire programme is conducted in English; B1 English required)
 
@@ -38,7 +55,109 @@ A component scores 0 when the underlying fact is `NOT FOUND` — so a low score 
 - Application window 2027: NOT PUBLISHED for the Sept-2027 intake as of 2026-08-25. Allocation is centralised in the Comisión del Distrito Único Andaluz; the 2026-27 DUA master calendar is Fase 1 (international only) 13–29 January 2026, Fase 2 17–26 June 2026, Fase 3 8–15 September 2026.
 - Verification: PENDING
 
-## 3. Master in Robotics, Graphics and Computer Vision (RGCV) — Universidad de Zaragoza — Escuela de Ingeniería y Arquitectura (EINA)
+## 4. Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
+
+**Score 97.5/100** · Madrid (Campus Madrid - Puerta de Toledo) · AB | X | AA · máster universitario (OFFICIAL). RUCT 4315583. Estado: 'Publicado en B.O.E. (TITULACIÓN RENOVADA)'. Nivel académico: Máster - RD 1393/2007 (1); Nivel MECES 3; Rama: Ingeniería y Arquitectura. Fecha de verificación 03/08/2015; BOE 24/12/2015, 22/02/2016, 31/03/2017; Resolución Favorable para la Renov. de la Acreditación 12/12/2024 and 19/07/2019. The UC3M page's CALIDAD block states verbatim '☛ Año de implantación: 2015' and links 'Información sobre el carácter oficial del título' + 'Memoria de Verificación'. Not a título propio. · Inglés (English)
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 1.00 | 40 | **40.0** |
+| field_fit | 0.90 | 25 | **22.5** |
+| official | 1.00 | 15 | **15.0** |
+| language | 1.00 | 10 | **10.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: 7200 (2025-26 (explicitly provisional for 2026-27; 2027-28 NOT PUBLISHED) rates) · non-EU surcharge: YES - explicit. Verbatim from the master's MATRÍCULA tab: 'ESTUDIANTES NACIONALES Y COMUNITARIOS (80€/ECTS) — Primer curso - 60 ECTS — 4.800€' and 'ESTUDIANTES EXTRACOMUNITARIOS (120€/ECTS) — Primer curso - 60 ECTS — 7.200€'. +50% (+40 EUR/ECTS, +2,400 EUR over the programme). Footnote verbatim: '* Precios vigentes para el curso 25/26, pendientes de aprobación por la Comunidad de Madrid para el curso 26/27'. The optional MBA complemento carries its own surcharged pair, verbatim: 'Máster en Administración de Empresas (MBA) — 225 €/ECTS [nacional/comunitario] — 330 €/ECTS [extracomunitario]'. A Tunisian citizen on a Spanish long-stay study authorisation counts as non-resident, so the extracomunitario row applies.
+- 300-ECTS recognition: NOT FOUND for an over-length foreign degree. UC3M publishes NO advanced-standing rule for a 300-ECTS entrant on this page. What IS published is credit recognition inside the DOUBLE-master routes, verbatim from the same page: 'Doble Máster en Ingeniería de Telecomunicación y Métodos Analíticos para Datos Masivos: Big Data — 🎓 24 ECTS reconocidos — CERRADO' and 'Doble Máster en Ingeniería Informática y Métodos Analíticos para Datos Masivos: Big Data — 🎓 30 ECTS reconocidos — CERRADO', with 'En función del doble máster cursado, se te reconocerán los créditos ECTS correspondientes para que puedas obtener en dos años académicos, dos titulaciones de Máster Oficial.' A general 'Normativa de reconocimiento de créditos' is linked from the MATRÍCULA tab. The 300-ECTS question itself is unanswered by the primary source and must go to the Comisión Académica.
+- Application window 2027: NOT FOUND for 2027-28. The UC3M postgrado calendar published at access date is the 2026-27 one and it is already closed ('Plazo de admisión CERRADO' on the programme header). Verbatim 2026-27 ordinary phase for 'MASTERES UNIVERSITARIOS ACADEMICO/PROFESIONALES Y DE INVESTIGACION': PRIMER PERIODO 1 DICIEMBRE 2025 - 31 ENERO 2026 (RESOLUCIONES A PARTIR DEL 27 FEBRERO 2026); SEGUNDO PERIODO 1 FEBRERO 2026 - 31 MARZO 2026 (RESOLUCIONES A PARTIR DEL 30 ABRIL 2026); TERCER PERIODO 1 ABRIL 2026 - 31 MAYO 2026 (RESOLUCIONES A PARTIR DEL 23 JUNIO 2026); plus a FASE EXTRAORDINARIA that 'permanecera abierto para masteres con plazas vacantes'. THESE ARE 2026-27 DATES, NOT 2027-28 — the 2027-28 dates are not yet published and have deliberately not been shifted forward here.
+- Verification: PENDING
+
+## 5. MSc in Data Science (the programme's own site uses 'Master's Degree in Data Science' / 'European MSc in Data Science') — Universidad Politécnica de Madrid (UPM)
+
+**Score 97.5/100** · Madrid — E.T.S. de Ingenieros Informáticos (ETSIINF), Campus de Montegancedo, Boadilla del Monte · AB | AA | AC · máster universitario (OFFICIAL). RUCT 4316972. Estado: 'Publicado en B.O.E. (TITULACIÓN RENOVADA POR ACREDITACIÓN INSTITUCIONAL)'. Nivel académico: Máster - RD 1393/2007 (1); Nivel MECES 3; Rama: Ingeniería y Arquitectura; Campo: Ingeniería informática y de sistemas. Fecha de verificación 05/06/2019; BOE 17/12/2019 and 20/12/2022; Resolución Favorable Acreditacion Institucional 18/06/2026 (i.e. re-accredited two months before access date). UPM's own catalogue page labels it 'Título Oficial'. The programme site states verbatim: 'El máster oficial se encuentra inscrito en el RUCT y aquí puedes encontrar el informe final de verificación. El máster se implantó en el curso académico 19/20 y se viene impartiendo de forma ininterrumpida en la Escuela Técnica Superior de Ingenieros Informáticos, en el Campus de Montegancedo.' Additionally holds the international EURO-INF quality label. Not a título propio. · Inglés (English) — 100%
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 1.00 | 40 | **40.0** |
+| field_fit | 0.90 | 25 | **22.5** |
+| official | 1.00 | 15 | **15.0** |
+| language | 1.00 | 10 | **10.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: 5044.2 (Rates in force at access date 2026-08-25 under DECRETO 43/2022 de la Comunidad de Madrid; UPM's price page does not stamp a curso on the table itself, and the linked UPM 'NORMATIVA DE MATRICULACIÓN CURSO 2026-2027' was approved 25 June 2026, so these are the 2026-27 figures. 2027-28 rates NOT PUBLISHED. rates) · non-EU surcharge: YES — explicit, published by UPM itself as a named column, and legally grounded. UPM's 'Precios públicos para Másteres Oficiales' page prints a two-column table headed verbatim 'Máster Universitario | Estudiantes españoles y de la Unión Europea | Estudiantes Extracomunitarios (*)', where (*) is defined verbatim as 'ESTUDIANTES EXTRANJEROS, mayores de dieciocho años que no tengan la condición de residentes, excluidos los nacionales de Estados miembros de la Unión Europea, y aquellos a quienes sea de aplicación el régimen comunitario'. THE MECHANISM (from UPM's own PDF, https://www.upm.es/gsfs/SFS04229), verbatim: 'El DECRETO 43/2022 también establece el importe de los precios públicos por crédito para ESTUDIANTES EXTRANJEROS ... a) En el caso de másteres del ANEXO I: los precios de cuarta matrícula, b) y para el resto de estudios de máster oficial (ANEXO II), lo previsto para la tercera y sucesivas matrículas.' — i.e. a non-EU non-resident is charged the RESALE/repeat-enrolment rate from day one. THE RATES (Decreto 43/2022, Comunidad de Madrid, in force at access date): ANEXO I / habilitantes and Ingeniería Informática — 19,43 €/crédito EU vs 154,80 €/crédito extracomunitario (60 ECTS: 1.165,80 € vs 9.288 €). RESTO DE MÁSTERES (ANEXO II) — 45,02 €/crédito EU vs 84,07 €/crédito extracomunitario (60 ECTS: 2.701,20 € vs 5.044,20 €). Dobles másteres containing an Anexo I programme — 32,23 € vs 119,44 €. THIS MASTER IS ANEXO II ('resto de másteres'): it is NOT named in the Anexo I list, so the rate is 84,07 €/crédito, +86.7% over the EU rate. THE RESIDENCY TRAP IS CLOSED EXPLICITLY: 'A estos efectos, la autorización de estancia concedida a los estudiantes extranjeros de acuerdo con el Real Decreto 557/2011 ... no equivaldrá a la condición de residentes' (SFS04229 PDF); the current web version cites the successor 'Real Decreto 1155/2024, de 19 de noviembre'. A Tunisian citizen on a Spanish study authorisation therefore CANNOT escape the surcharge by living in Madrid.
+- 300-ECTS recognition: Mechanism EXISTS and is documented, but no 300-ECTS-specific entitlement is published. Verbatim: 'All information regarding the recognition and transfer of credits is available here. The Academic Committee of the Master's Degree in Data Science (CAMCD) will assess the requests and draw up the corresponding reports, which will be sent to the Academic Organization Committee of the School of Computer Engineering, which in turn will issue a report and send it to the Vice-Rector's Office for Students. The resolution granting or denying the recognition of credits will be adopted by the President of the Credit Recognition and Transfer Committee in accordance with the provisions of art. 5 d) of the regulations.' So there IS a named, multi-stage route (CAMCD -> ETSIINF Academic Organization Committee -> Vice-Rectorate -> Credit Recognition and Transfer Committee) into which a 300-ECTS applicant can put a request, and UPM maintains a university-wide 'Reconocimiento de Créditos' section. What is NOT published anywhere is any automatic advanced standing, exemption or shortened path for an over-length (300 ECTS, 5-year) prior degree. THE 300-ECTS QUESTION IS THEREFORE: mechanism yes, entitlement NOT FOUND. Note the counter-pressure: the master is only 60 ECTS with 36 compulsory and a 12-ECTS TFM, leaving little that could plausibly be recognised.
+- Application window 2027: NOT FOUND for 2027-28 — UPM publishes only the 2026-27 calendar at access date, headed verbatim 'Curso 2026/2027 — PRIMER PERIODO DE PREINSCRIPCIÓN (Las clases comienzan en septiembre 2026)'. THE 2026-27 DATES ARE RECORDED AS 2026-27 AND HAVE NOT BEEN SHIFTED FORWARD A YEAR. Verbatim: Primera convocatoria 26 de enero al 12 de marzo de 2026 (admitidos 20 de marzo, reserva 23 marzo-8 abril); Segunda convocatoria 13 de marzo al 12 de mayo de 2026 (admitidos 22 de mayo, reserva 25 mayo-8 junio); Tercera convocatoria 13 de mayo al 1 de julio de 2026 (admitidos 17 de julio, reserva 'No procede'); Convocatoria extraordinaria para programas con plazas disponibles 31 de agosto al 4 de septiembre de 2026 (admitidos 9 de septiembre). Matriculación 22-30 de julio de 2026, extraordinaria 3-11 de septiembre de 2026. Documentación adicional límite 30 de septiembre de 2026. STRUCTURAL NOTE, verbatim: 'Existen dos periodos de preinscripción diferentes, el primero (que se abre en enero 2026) para toda la oferta formativa, y el segundo (a partir de octubre 2026) para aquellos programas que dispongan de plazas vacantes y su estructura académica les permita comenzar su impartición en el segundo cuatrimestre.' For a September 2027 start the equivalent first period would, by this pattern, open in January 2027 — but that is an inference from the 2026-27 calendar, NOT a published 2027-28 date.
+- Verification: PENDING
+
+## 6. Erasmus Mundus Master in Big Data Management and Analytics (BDMA) — Universitat Politècnica de Catalunya (UPC) — joint international degree with Université Libre de Bruxelles (coordinator), CentraleSupélec, TU Eindhoven and Università degli Studi di Padova
+
+**Score 97.5/100** · Barcelona (UPC leg); mobility across Brussels, Barcelona, Eindhoven, Paris-Saclay, Padova · AB | X · máster universitario · English — INFERRED, not quoted from an explicit 'language of instruction' statement. The consortium admission page requires "proficiency in English by means of an internationally recognised test equivalent to level B2" (CEFR) and the whole programme is delivered as an Erasmus Mundus Joint Master, but no page reachable here carried a verbatim 'language of instruction: English' line. The UPC catalogue page for BDMA returned a charset/rendering error and could not be read.
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 1.00 | 40 | **40.0** |
+| field_fit | 0.90 | 25 | **22.5** |
+| official | 1.00 | 15 | **15.0** |
+| language | 1.00 | 10 | **10.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: 18000 (The consortium's published participation-cost schedule as at 2026-08-25; it is NOT dated to a specific academic year on the page and applies to the last published (2024-2026) grant cycle. NOT PUBLISHED for a September 2027 intake. rates) · non-EU surcharge: YES — and it is structural, not a Catalan decree matter. The consortium charges Partner Country students (which includes Tunisia) €9,000 per year versus €4,500 per year for Programme Country students: exactly 2x. Total €18,000 vs €9,000 over two years. Catalonia's Decret 96/2026 art. 1.5 (the usual Catalan non-EU mechanism) is NOT the operative rule here; Decret 96/2026 art. 1.6 expressly states the decree does not apply to international joint programmes under the European Universities Programme framework, and an EMJM consortium sets its own participation costs. NOTE: the Erasmus Mundus scholarship, when awarded, covers participation costs in full — so the €18,000 is the SELF-FUNDED price.
+- 300-ECTS recognition: NOT FOUND — no advanced-standing or reconocimiento de créditos provision is published. An EMJM's 120 ECTS across five universities with fixed mobility is in practice not shortened; do not expect advanced standing here.
+- Application window 2027: ⚠️ THE PROGRAMME'S EU FUNDING HAS ENDED AND A SEPTEMBER 2027 BDMA INTAKE MAY NOT EXIST. The consortium's own news page states verbatim: "The BDMA Programs has finished the current funding from the European Commission" (item dated 17 September 2024), that there were no admissions for September-October 2024, and that the programme was seeking alternative funding. A successor programme, DEAI (Data Engineering and Artificial Intelligence), "has been selected for funding by the European Commission under the Erasmus+ Programme" (item dated 24 September 2025) with applications for the 2026-2028 intake opening in October. The last published BDMA calendar (2024-2026 cohort) ran: grant round open 25 September 2023, close 22 December 2023 noon GMT (strict); self-funded round open 1 March 2024, close 30 April 2024 for non-EU applicants (strict) and 30 June 2024 for EU applicants (strict). NO 2027-intake dates are published. RUCT still shows 4317908 as Publicado en B.O.E. and active, so the Spanish title has not been wound down — but register presence is not the same as an open intake. NEEDS A HUMAN.
+- Verification: PENDING
+
+## 7. Master in Sound and Music Computing (SMC) — Universitat Pompeu Fabra (UPF)
+
+**Score 97.0/100** · Barcelona · A | B · máster universitario · English. The Generalitat de Catalunya's official Canal Universitats programme entry is titled verbatim "M.Sc. in Sound and Music Computing (taught in English)" and its language field reads "English". This is a government register page, directly fetched, NOT the university's own (blocked) page and NOT a translated version of a Spanish page.
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 1.00 | 40 | **40.0** |
+| field_fit | 1.00 | 25 | **25.0** |
+| official | 1.00 | 15 | **15.0** |
+| language | 0.70 | 10 | **7.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: 5610.0 (2025-26 (the last year for which UPF's own non-EU credit price is confirmed). The 2026-27 and 2027-28 non-EU credit prices are NOT PUBLISHED / not confirmable — see notes. rates) · non-EU surcharge: YES — large, and it is the decisive cost fact for this programme. Catalonia's Decret 96/2026 (DOGC 9689, 18.6.2026) art. 1.5 does NOT fix a non-EU price; it authorises each university's consell social to set it: «Els consells socials de les universitats públiques ... poden establir el preu dels crèdits en qualsevol nivell d'estudis per als i les estudiants estrangers no residents que no siguin nacionals d'estats membres de la Unió Europea ni dels estats en els quals sigui aplicable el règim comunitari, sense que el preu corresponent pugui excedir el 100% del seu cost». The same article states that a Spanish long-stay study authorisation does not confer residence: «l'autorització d'estada de llarga durada per estudis, mobilitat d'estudiants, serveis de voluntariat o activitats formatives concedida als i les estudiants estrangers no equival a la condició de residents» — so this candidate cannot escape the surcharge by moving to Barcelona. UPF's own tariff page (www.upf.edu/web/masters/preus) states that for students from outside the EU the Consell Social approves the credit price annually and that for 2025-2026 it is 93,5 EUR per credit, versus the decree's 19,37 EUR/credit for EU/resident students in a non-habilitante master — a multiplier of roughly 4.8x. 93,50 x 60 = 5,610 EUR for the 60-ECTS master alone.
+- 300-ECTS recognition: NOT ESTABLISHED, and this is the single most important open question for this programme. The candidate's 300-ECTS 5-year Software Engineering degree is precisely the profile that ought to make complementos unnecessary — 300 ECTS exceeds the 240-ECTS bar by a full year — but no UPF page could be read that says a longer prior degree exempts the applicant, and no reconocimiento-de-créditos rule for this master could be confirmed. UPF does operate a general master's credit-recognition procedure ("Credit recognition — Master's Academic Secretary", https://www.upf.edu/en/web/secretaria-master/reconeixement-de-credits-academics), also 403-blocked. Financially the stakes are: 60 ECTS x 93,50 = 5,610 EUR if no complementos are imposed, versus up to 110 credits over two years if the maximum 50 are imposed. Whether complementary credits are charged at the same non-EU 93,50 EUR/credit rate is NOT stated anywhere reachable; if they are, the maximum case is 110 x 93,50 = 10,285 EUR plus a second year of living costs. A HUMAN MUST ASK THE SMC ADMISSIONS OFFICE DIRECTLY, in writing, before this programme can be costed.
+- Application window 2027: NOT PUBLISHED for the September 2027 (curso 2027-28) intake. For the 2026-27 cycle UPF opened applications on 14 November and ran FOUR rounds with deadlines 14 January / 4 March / 27 April / 5 June 2026. These are 2026-27 dates and are recorded as such; they are NOT shifted forward a year here. If the pattern holds, a 2027-28 cycle would open in November 2026 with a first deadline in mid-January 2027, but that is an expectation, not a published fact.
+- Verification: PENDING
+
+## 8. Master of Music in Scoring for Film, Television, and Video Games (SFTV) — Universitat Politècnica de València (UPV) — awarded through its adscribed centre 'Berklee College of Music, Vlc Campus' (Berklee Valencia)
+
+**Score 97.0/100** · València (Palau de les Arts Reina Sofía, Ciutat de les Arts i les Ciències) · A | B · máster universitario (OFFICIAL) — CONFLICT FROM DISCOVERY NOW RESOLVED, both ways. (a) Berklee's own programme page states the DUAL award verbatim: "Master of Music in scoring for film, television, and video games" AND "Máster Universitario en Composición Musical para Cine, Televisión y Videojuegos" "(in affiliation with Universidad Politécnica de Valencia)". (b) UPV's own governing document proves the official title is live for the target cycle: 'OFERTA DE PLAZAS CURSO 2026/2027. TITULACIONES DE MÁSTER UNIVERSITARIO DE LA UNIVERSITAT POLITÈCNICA DE VALÈNCIA' (Núm. 2026/0034, 12/02/2026) lists row: centre "Berklee College of Music, Vlc Campus", campus VERA, Código Titulación Ministerio 4313419, Código UPV 2297, "Máster Universitario en Composición Musical para Cine, Televisión y Videojuegos (Scoring for Film, Television and Video Games)", Oferta de plazas curso 2026/27 = 40. RUCT estado: "Publicado en B.O.E. (TITULACIÓN RENOVADA)", nivel "Máster - RD 1393/2007", MECES 3, verificación 19/09/2012, BOE 15/11/2013 / 22/07/2014 / 23/04/2019, "Resolución Favorable para la Renov. de la Acreditación (24/05/2021)" and (10/05/2017). ACTIVE, not extinguishing. · English. VERBATIM from the delivering centre's own page: "All classes are taught in English". CAVEAT ON PROVENANCE, per brief rule 7: this is Berklee Valencia's statement, not a Spanish-language 'idioma de impartición' line from a UPV plan de estudios — NO UPV-hosted programme page for this title could be found (www.upv.es/titulaciones/ has no entry, and the UPV master-offer service returns an empty shell), so the UPV-side wording could not be cross-checked. The whole institution operates in English and the UPV places table routes admission away from UPV, so English is not in serious doubt, but it is single-sourced.
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 1.00 | 40 | **40.0** |
+| field_fit | 1.00 | 25 | **25.0** |
+| official | 1.00 | 15 | **15.0** |
+| language | 0.70 | 10 | **7.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: None (2026/2027 rates, published in US DOLLARS, covering "three semesters (fall, spring, summer)". Verbatim from Berklee Valencia's cost page: "Tuition $50,430"; "Comprehensive Fee $1,600"; "Nonrefundable Tuition Deposit: To be credited towards first tuition payment $2,500"; "Application Fee: Waived for Berklee alumni $150"; per-credit tuition "$1,615". SCORING-SPECIFIC: "Professional Recording Services (Scoring program only): $2,990" plus "Required Software Bundles: $700–$850 depending on program". NO EUR figure is published anywhere and NO conversion has been performed here — tuition_total_eur is deliberately null rather than an invented euro number. 2027/28 rates are NOT PUBLISHED. rates) · non-EU surcharge: NO DIFFERENTIATED PRICE IS PUBLISHED — and here that silence is close to dispositive rather than ambiguous, because the fee schedule states ONE tuition line for all graduate students with no nationality or residence distinction anywhere on it, unlike Spanish public tariffs which print an explicit non-resident row. The Valencian public price decree that fixes €/ECTS for UPV's own centres does not produce this figure: $50,430 for 60 ECTS is roughly 25x a Comunitat Valenciana public master price, i.e. this adscribed centre prices privately. PRACTICAL CONSEQUENCE: a non-EU student pays no surcharge here because everyone already pays private-school tuition. Recorded as NOT FOUND in the strict sense required by the brief (no explicit 'no' statement was located), but do not read that as a hidden extra cost.
+- 300-ECTS recognition: NOT FOUND. Neither the Berklee programme page, the how-to-apply page, the cost page nor UPV's places document mentions reconocimiento de créditos, advanced standing, or any exemption for a 300-ECTS entrant. The programme is a fixed 60-ECTS one-year block with only one elective slot, so there is little structural room for recognition even if it were offered. The 300 ECTS buys nothing identifiable here.
+- Application window 2027: Berklee publishes THREE STANDING ROUNDS BUT STATES NO YEAR on the deadlines page. Verbatim: "Early Action — Application deadline: November 1; Scholarship deadline: November 15; Admissions decisions issued by December 15"; "Regular Action — Application deadline: January 15; Scholarship deadline: February 1; Admissions decisions issued by March 15"; "Extended Action — Application deadline: March 10; Scholarship deadline: March 10; Admissions decisions issued by April 20". Also verbatim: "Scholarship application deadlines are different from the Program Application deadlines for Early and Regular action." INFERRED, NOT PUBLISHED: if the recurring pattern holds, a September 2027 start means 1 Nov 2026 / 15 Jan 2027 / 10 Mar 2027 — the Early Action deadline would be roughly two months after this record's access date. The year is not stated on the page and must be confirmed with admissionsvalencia@berklee.edu before being relied on. NOTE the UPV route is closed: UPV's 2026/27 places table marks both Berklee titles "No aplica" for 'Nº PLAZAS ADMISIBLES Fases 1 y 2' and 'Fase 3', i.e. these masters are NOT filled through UPV's ordinary preinscripción phases — you apply to Berklee.
+- Verification: PENDING
+
+## 9. Master in Statistics for Data Science — Universidad Carlos III de Madrid (UC3M)
+
+**Score 96.2/100** · Madrid (Campus Madrid - Puerta de Toledo) · AB · máster universitario (OFFICIAL). RUCT 4316664. Estado: 'Publicado en B.O.E. (TITULACIÓN RENOVADA)'. Nivel académico: Máster - RD 1393/2007 (1); Nivel MECES 3; Rama: Ciencias; Campo: Matemáticas y estadística. Fecha de verificación 06/06/2018; BOE 21/12/2018 and 26/07/2019; Resolución Favorable para la Renov. de la Acreditación 17/01/2024. The UC3M page itself carries a 'CALIDAD / Información sobre el carácter oficial del título' block with the Memoria de Verificación. Not a título propio. · Inglés (English)
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 1.00 | 40 | **40.0** |
+| field_fit | 0.85 | 25 | **21.2** |
+| official | 1.00 | 15 | **15.0** |
+| language | 1.00 | 10 | **10.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: 7200 (2025-26 (explicitly provisional for 2026-27; 2027-28 NOT PUBLISHED) rates) · non-EU surcharge: YES - explicit and large. UC3M publishes two named rows on the master's own MATRÍCULA tab, verbatim: 'ESTUDIANTES NACIONALES Y COMUNITARIOS (80€/ECTS) — Primer curso - 60 ECTS — 4.800€' and 'ESTUDIANTES EXTRACOMUNITARIOS (120€/ECTS) — Primer curso - 60 ECTS — 7.200€'. That is a +50% non-EU surcharge (+40 EUR/ECTS, +2,400 EUR over the programme). Footnote verbatim: '* Precios vigentes para el curso 25/26, pendientes de aprobación por la Comunidad de Madrid para el curso 26/27'. A Tunisian citizen with a Spanish long-stay study authorisation is NOT a resident for fee purposes, so the 120 EUR/ECTS row applies.
+- 300-ECTS recognition: NOT FOUND at programme level. The programme page publishes no advanced-standing or exemption scheme for a 300-ECTS entrant. UC3M does operate a general 'Normativa de reconocimiento de créditos' linked from the master's MATRÍCULA tab (✎│Reconocimiento de créditos), and it demonstrably recognises credits in the DOUBLE-master route (24 ECTS reconocidos when Big Data is combined with Telecomunicación, 30 with Ingeniería Informática), but NOTHING is published granting recognition for an over-length foreign first degree. The 300-ECTS question is therefore UNANSWERED by the primary source: it must be put to the master's comisión académica.
+- Application window 2027: NOT FOUND for 2027-28. The UC3M postgrado admission calendar published at access date covers the 2026-27 intake ONLY, and every 2026-27 period is already marked 'PLAZO CERRADO' / 'CERRADO'. Verbatim 2026-27 (curso 26/27) ordinary phase, 'MASTERES UNIVERSITARIOS ACADEMICO/PROFESIONALES Y DE INVESTIGACION': PRIMER PERIODO 1 DICIEMBRE 2025 - 31 ENERO 2026 (RESOLUCIONES A PARTIR DEL 27 FEBRERO 2026); SEGUNDO PERIODO 1 FEBRERO 2026 - 31 MARZO 2026 (RESOLUCIONES A PARTIR DEL 30 ABRIL 2026); TERCER PERIODO 1 ABRIL 2026 - 31 MAYO 2026 (RESOLUCIONES A PARTIR DEL 23 JUNIO 2026). Also published: 'FASE EXTRAORDINARIA * El periodo permanecera abierto para masteres con plazas vacantes'. THE 2027-28 DATES ARE NOT YET PUBLISHED - by the 2026-27 pattern the first period for a September 2027 intake would be expected to open around December 2026, but that is an inference and is NOT recorded as fact.
+- Verification: PENDING
+
+## 10. Master in Robotics, Graphics and Computer Vision (RGCV) — Universidad de Zaragoza — Escuela de Ingeniería y Arquitectura (EINA)
 
 **Score 96.2/100** · Zaragoza · AA · máster universitario · ENGLISH. Verbatim from the official Unizar programme page: "El objetivo del máster es proporcionar una formación de investigación, innovación y desarrollo en los ámbitos de Robótica, Gráficos y Visión por Computador. La lengua de impartición es el inglés." Corroborated by the plan de estudios, whose subject titles are all in English, and by the TFM rule: "El resultado se plasma en una memoria en forma de artículo o informe, escrito en inglés".
 
@@ -55,7 +174,24 @@ A component scores 0 when the underlying fact is `NOT FOUND` — so a low score 
 - Application window 2027: 2027-28 dates NOT PUBLISHED. Unizar's published 2026-2027 master admission phases (verbatim): Fase 1 (except Máster en Profesorado) 'Presentación solicitudes: 2 al 23 de marzo de 2026', definitive lists 17 April 2026, payment 20-27 April 2026; Fase 2 'Presentación solicitudes: Del 11 al 26 de junio de 2026', definitive lists 17 July 2026; Fase 3 'Presentación solicitudes: del 24 al 31 de agosto de 2026', definitive lists 14 September 2026. Enrolment windows 22-24 July 2026 and 16-17 September 2026.
 - Verification: PENDING
 
-## 4. Master in Data Science — CONJUNTO: Universidad Internacional Menéndez Pelayo (UIMP) + Universidad de Cantabria (UC); taught with CSIC / Instituto de Física de Cantabria involvement
+## 11. Master's degree in Machine Learning and Cybersecurity for Internet-Connected Systems — Universitat Politècnica de Catalunya (UPC) — Escola Politècnica Superior d'Enginyeria de Manresa (EPSEM)
+
+**Score 95.5/100** · Manresa (Barcelona province) · AA | AC · máster universitario · English — stated verbatim as the language on UPC's own catalogue page for the programme, fetched directly from upc.edu (not a translation of a Catalan page).
+
+| Component | Raw | Weight | Contribution |
+|---|---:|---:|---:|
+| funding | 0.95 | 40 | **38.0** |
+| field_fit | 0.90 | 25 | **22.5** |
+| official | 1.00 | 15 | **15.0** |
+| language | 1.00 | 10 | **10.0** |
+| credit | 1.00 | 10 | **10.0** |
+
+- Tuition: 4050 (2026-27 — inferred arithmetically: the EU figure of €1,743 is 19,37 × 90 = 1,743,30, and 19,37 EUR/credit is Decret 96/2026's price for a non-habilitante master in curso 2026-2027. The page prints no year, so this is an inference, flagged. rates) · non-EU surcharge: YES — explicit and quantified. UPC's catalogue page publishes "EU residents: €1,743 (approximately)" and "Non-EU residents: €4,050 (approximately)" for the same 90-ECTS master: 19,37 vs 45,00 EUR per credit, a surcharge of about 2.3x. Legal basis: Decret 96/2026 art. 1.5 authorises the consell social to set the non-EU non-resident price up to 100% of cost, and confirms a long-stay study authorisation «no equival a la condició de residents». The 90-ECTS length makes the surcharge bite harder here than on a 60-ECTS master.
+- 300-ECTS recognition: NOT FOUND — no advanced-standing or reconocimiento de créditos provision for a 300-ECTS prior degree. What the admission structure does give the candidate is exemption from bridging courses, which is the practical equivalent of not being penalised for background — but it is not credit recognition and does not shorten the 90 ECTS.
+- Application window 2027: NOT FOUND for the September 2027 intake. The UPC catalogue page records pre-enrolment as "Currently closed" as at 2026-08-25 and directs prospective students to an information-request form for upcoming dates. UPC's central pre-enrolment page describes the process (register in UPC Admissions, upload documents, pay a non-refundable €30.21 fee per master's application, receive admission notification "on the date specified") but publishes NO dates. NEEDS A HUMAN.
+- Verification: PENDING
+
+## 12. Master in Data Science — CONJUNTO: Universidad Internacional Menéndez Pelayo (UIMP) + Universidad de Cantabria (UC); taught with CSIC / Instituto de Física de Cantabria involvement
 
 **Score 95.5/100** · Santander · AB | AA · máster universitario · Castellano (algún seminario podría darse en inglés)
 
@@ -72,189 +208,53 @@ A component scores 0 when the underlying fact is `NOT FOUND` — so a low score 
 - Application window 2027: NOT PUBLISHED for the Sept-2027 intake as of 2026-08-25. Published 2026-27 calendar: ordinary period 9 March – 29 May 2026; extraordinary period 14 July – 11 September 2026. Course runs 1 October 2026 – 30 September 2027.
 - Verification: PENDING
 
-## 5. Erasmus Mundus Master in Linguistic Data Science (EMLDS / CLiDS) — CONSORTIUM (Erasmus Mundus Joint Master). Spanish partner and RUCT registrant: Universidad de Zaragoza (Escuela de Ingeniería y Arquitectura). Full consortium as registered in RUCT: Universidad de Zaragoza; National University of Ireland, Galway / Ollscoil na hÉireann, Gaillimh (Ireland); Universidade Nova de Lisboa (Portugal); Università Cattolica del Sacro Cuore - Milano (Italy).
+## 13. Master in Deep Learning for Audio and Visual Artificial Intelligence — Universidad Autónoma de Madrid (UAM) — Escuela Politécnica Superior
 
-**Score 94.5/100** · Mobility across Lisbon or Milan (S1), Zaragoza (S2 and S3), student's choice (S4) · AB | AA · máster universitario (Erasmus Mundus Joint Master — joint degree) · ENGLISH. Verbatim from the consortium site: "120 ECTS, English-taught master's programme leading to a Joint Degree".
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 1.00 | 40 | **40.0** |
-| field_fit | 0.90 | 25 | **22.5** |
-| official | 1.00 | 15 | **15.0** |
-| language | 1.00 | 10 | **10.0** |
-| credit | 0.70 | 10 | **7.0** |
-
-- Tuition: 18000 (Rate quoted on the consortium's Costs and Funding page as at 2026-08-25, for the full four-semester study period; the page does not label it by cohort year, and the currently advertised cohort is 2027-2029. rates) · non-EU surcharge: NOT FOUND — and apparently none. The consortium publishes a single figure, verbatim: "The tuition fee for the full four-semester study period is €18,000.00 (can be paid in instalments)." It does NOT distinguish Programme Country from Partner Country students, unlike most EMJMs. Because this is a consortium fee, the Aragón non-EU credit-price doubling that applies to ordinary Unizar masters does NOT apply here (the EMLDS title does not appear in Unizar's 2026-27 public price table for másteres universitarios).
-- 300-ECTS recognition: NOT FOUND. Joint-degree EMJM curricula are fixed by the consortium agreement and mobility scheme; no advanced-standing or credit-recognition provision is published, and none should be assumed.
-- Application window 2027: A 2027-2029 COHORT IS ANNOUNCED, DATES NOT YET RELEASED. The consortium's Applications Timeline page lists, for the 2027-2029 cohort: "Call Opening: Date to be announced", "Call Closure: Date to be announced", "Interviews: If and when requested by the Joint Admissions Committee", "Final Results: Date to be announced", "Final Acceptance by Students: Date to be announced". The timeline is stated for "EMJM Scholarship and Non-Scholarship Holders" together, i.e. a single unified deadline rather than separate scholarship and self-funded tracks. THIS PAGE MUST BE RE-CHECKED — EMJM calls typically open in the autumn preceding the intake (i.e. late 2026) and close in the winter/early spring.
-- Verification: PENDING
-
-## 6. Master's Degree in Data Science — Universitat Oberta de Catalunya (UOC)
-
-**Score 94.5/100** · Online (registered in Barcelona) · AB | AA · máster universitario · SPANISH or CATALAN — NOT ENGLISH. Verbatim from the programme page header: "Idiomas: Español, Catalán" and "El mismo programa se ofrece en las dos lenguas en aulas diferentes". The two languages are separate virtual classrooms of the same programme; the applicant picks one at the access request ("En qué idioma prefieres realizar tus estudios? Español / Catalán"). There is no English-taught option.
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 1.00 | 40 | **40.0** |
-| field_fit | 0.90 | 25 | **22.5** |
-| official | 1.00 | 15 | **15.0** |
-| language | 0.70 | 10 | **7.0** |
-| credit | 1.00 | 10 | **10.0** |
-
-- Tuition: 4330 (Rates displayed as at 2026-08-25 for the 23 September 2026 intake, with UOC's own caveat: "Precios vigentes en el momento de formalizar la matrícula. Sujetos a revisión anual." 2027-28 rates NOT PUBLISHED. rates) · non-EU surcharge: YES — EXPLICIT AND SUBSTANTIAL. UOC publishes two separate price blocks. "Precios para estudiantes de la Unión Europea": "Precio por crédito 25,82 €/cr", "Precio por crédito herramientas y recursos para el aprendizaje 18,30 €/cr", "Precio por crédito de asignaturas convalidadas 5,16 €/cr", "Precio orientativo a tiempo completo (1 año): 2.900,00 €". "Precios para estudiantes de fuera de la Unión Europea": A tiempo completo (1 año) 4.330 € (hasta 9 cuotas); A tiempo parcial (2 años) 4.840 € (hasta 17 cuotas). So a non-EU student pays 4.330 EUR against 2.900 EUR — roughly +49% (+1.430 EUR) full-time, or +1.940 EUR part-time. Caveat printed by UOC: "Precios vigentes en el momento de formalizar la matrícula. Sujetos a revisión anual" and "El precio orientativo indicado en la tabla está calculado basándose en un máster universitario de 60 créditos. El precio final de la matrícula será el resultante de su formalización efectiva."
-- 300-ECTS recognition: YES — TWO NAMED MECHANISMS, and the most explicit credit-recognition route in this batch. Verbatim: "No debéis cursar en vuestro programa de estudios las asignaturas reconocidas mediante la evaluación de estudios previos (EEP) o del reconocimiento académico de la experiencia profesional (RAEP). Una vez se han incorporado a la matrícula, los créditos reconocidos se descuentan del total de créditos que hay que cursar para obtener el título." Recognised subjects are also charged at a reduced rate: "Precio por crédito de asignaturas convalidadas: 5,16 €/cr" (against 25,82 €/cr). THIS IS THE 300-ECTS LEVER: a 300-ECTS Software Engineering degree is the natural case for EEP against the 12 ECTS of complementos and possibly against core subjects. NOT FOUND: any published cap or guarantee — the outcome is decided case by case after requesting access.
-- Application window 2027: 2027-28 dates NOT PUBLISHED. UOC does not run fixed admission rounds — it runs semester intakes with rolling enrolment. The published next intake is "Inicio: 23 sept 2026". Access request is free and open continuously; the practical deadline is the enrolment window before each semester start. EXPECT (but do not assume) an equivalent late-September 2027 start.
-- Verification: PENDING
-
-## 7. Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
-
-**Score 94.5/100** · Madrid (campus Puerta de Toledo) · X | AB · máster universitario · English — UC3M runs this master in English (stated on the programme page). Note this is a public Spanish university teaching in English, so it does NOT carry the Spanish-language barrier of most of this batch.
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 1.00 | 40 | **40.0** |
-| field_fit | 0.90 | 25 | **22.5** |
-| official | 1.00 | 15 | **15.0** |
-| language | 0.70 | 10 | **7.0** |
-| credit | 1.00 | 10 | **10.0** |
-
-- Tuition: 7200 (2025-26 — page states verbatim 'Precios vigentes para el curso 25/26, pendientes de aprobación por la Comunidad de Madrid para el curso 26/27'. 2026-27 and 2027-28 rates are NOT yet set; Madrid sets them annually by decreto de precios públicos. rates) · non-EU surcharge: YES, CONFIRMED AND LARGE — €80 per ECTS for EU/national students versus €120 per ECTS for non-EU students, i.e. a 50% surcharge. Full programme: €4,800 (EU) versus €7,200 (non-EU) at 2025-26 rates. The optional 12-ECTS MBA complement is likewise €225/ECTS national versus €330/ECTS non-EU. tuition_total_eur here records the NON-EU figure because that is the one that applies to this candidate.
-- 300-ECTS recognition: PARTIAL — UC3M publishes a 'Normativa de reconocimiento de créditos' and a part-time pathway guidance document. The normativa exists as a general rule; nothing programme-specific about 300-ECTS entrants was found on the programme page. NEEDS THE NORMATIVA ITSELF READ.
-- Application window 2027: NOT FOUND — the programme page showed the admission period as 'CERRADO' on 2026-08-25 and publishes no 2027-28 dates. UC3M normally opens master's admission in successive plazos from around November; those dates are NOT published yet and have NOT been extrapolated here.
-- Verification: PENDING
-
-## 8. Máster Universitario en Ingeniería de Datos Masivos (Big Data) — Universitat Ramon Llull — La Salle Campus Barcelona
-
-**Score 93.2/100** · Barcelona · AB · máster universitario · Spanish — programme page's own 'Language' field states Spanish. NOTE: read on the English version of the page; the Spanish page (/es/estudios/master-en-big-data/plan-estudios) returns HTTP 403 to automated fetching, so no castellano-language 'idioma de impartición' line was read verbatim.
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 1.00 | 40 | **40.0** |
-| field_fit | 0.85 | 25 | **21.2** |
-| official | 1.00 | 15 | **15.0** |
-| language | 0.70 | 10 | **7.0** |
-| credit | 1.00 | 10 | **10.0** |
-
-- Tuition: NOT FOUND (NOT FOUND — La Salle publishes only an institution-wide range for 2026-2027: master's programmes EUR 6,000–17,940; no per-programme price on the Big Data pages rates) · non-EU surcharge: NOT FOUND — no differentiated non-EU price stated on the programme, requirements or admission-process pages. The admission-process page does address international applicants only to say a visa refusal refunds the place reservation 'except for € 300 for administrative expenses'.
-- 300-ECTS recognition: NOT FOUND — neither the programme page nor the requirements page addresses reconocimiento de créditos or advanced standing for a 300-ECTS first degree
-- Application window 2027: NOT FOUND for the Sept-2027 intake. For 2026-27 the page states a start date of 19 October 2026 and rolling admission (decision within a maximum of 8 days after documents are submitted; place to be reserved within 15 days of acceptance). The 2027-28 calendar is not published.
-- Verification: PENDING
-
-## 9. Master's Degree in Big Data Analysis Technologies — Universidad de Murcia (UMU) — INTERUNIVERSITY with Universidad de Santiago de Compostela (USC)
-
-**Score 92.5/100** · Murcia (Facultad de Informática) — joint title also taught at USC, Santiago de Compostela · AB | AC · máster universitario · "Idioma: Español" — verbatim from the UM programme page header (Centro: Facultad de Informática / Tipo de enseñanza: Presencial / Idioma: Español / Duración: 40 semanas / Créditos ECTS: 60 / Plazas de nuevo ingreso: 12 / Interuniversitario: Universidad de Murcia (UMU) y Universidad de Santiago de Compostela (USC)). SPANISH-ONLY. No English strand is offered.
+**Score 95.0/100** · Madrid · A | B | AA · máster universitario · "Inglés" (English) — stated as the idioma de impartición on UAM's own programme page, alongside a requirement for "knowledge of the English language at the minimum level of the B2 certificate". The Spanish-language field value «Inglés» is what settles it, not the fact that an English version of the page exists.
 
 | Component | Raw | Weight | Contribution |
 |---|---:|---:|---:|
 | funding | 0.95 | 40 | **38.0** |
-| field_fit | 0.90 | 25 | **22.5** |
-| official | 1.00 | 15 | **15.0** |
-| language | 0.70 | 10 | **7.0** |
-| credit | 1.00 | 10 | **10.0** |
-
-- Tuition: 2114.4 (2023-24 rates (Decreto n.º 8/2024, de 1 de febrero, BORM 10/02/2024) — this is the price order UM's own matrícula page still links as at 2026-08-25; no newer decree is published there. Rates for 2026-27 / 2027-28 are NOT PUBLISHED. rates) · non-EU surcharge: NOT FOUND as an applied rate. The governing decree PERMITS it but does not impose it. Verbatim (Orden/Decreto n.º 8/2024 de la Región de Murcia, art. 6.5, linked from UM's own matrícula page): "Las universidades podrán diferenciar el precio del crédito hasta cubrir el 100 por 100 de los costes de las enseñanzas universitarias de grado y máster cuando se trate de estudiantes extranjeros mayores de dieciocho años que no tengan la condición de residentes, excluidos los nacionales de Estados miembros de la Unión Europea y aquéllos a quienes sea de aplicación el régimen comunitario, sin perjuicio del principio de reciprocidad." UM publishes no differentiated non-EU credit price, so whether it exercises this power is NOT FOUND — a human must confirm with postgrado@um.es before budgeting.
-- 300-ECTS recognition: NOT FOUND at programme level. UM runs a general 'Reconocimiento de créditos' service (https://www.um.es/web/estudios/utilidades/reconocimiento-creditos) and the price decree charges 25% of fees for recognised/convalidated credits, but no advanced-standing rule for a 300-ECTS 5-year foreign degree is published. NOTE the plan has no optional credits at all (42 obligatorias + 18 TFM), which leaves little room for recognition in practice.
-- Application window 2027: 2027-28 dates NOT PUBLISHED. UM's published 2026-2027 master admission calendar (verbatim headings): Fase I - presentación de solicitudes 'Del 10 de marzo al 22 de abril'; Fase II 'Del 1 al 30 de junio'; Fase Extraordinaria 'Del 30 de julio al 3 de septiembre'. Provisional lists 30 April / 13 July / 8 September; definitive lists 12 May / 17 July / 11 September; matrícula 12-14 May / 17-20 July / 11-14 September.
-- Verification: PENDING
-
-## 10. Máster Universitario en Análisis de Datos para la Gestión Empresarial — Universidad a Distancia de Madrid (UDIMA)
-
-**Score 91.0/100** · Collado Villalba (Madrid) — distance university · AB | X · máster universitario · Castellano — stated on the programme page.
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 1.00 | 40 | **40.0** |
-| field_fit | 0.90 | 25 | **22.5** |
-| official | 1.00 | 15 | **15.0** |
-| language | 0.35 | 10 | **3.5** |
-| credit | 1.00 | 10 | **10.0** |
-
-- Tuition: NOT FOUND (NOT FOUND. Do NOT mistake the figure UDIMA does publish for a price: its 'Precios públicos por crédito ECTS a efectos de concesión de la beca del Ministerio' (2025-2026) lists this master at 28,00 EUR/ECTS, and the same document states that ministry grant cover is capped 'con el límite del precio oficial por crédito ECTS, que nunca va a cubrir el coste total de los estudios en la UDIMA'. It is a notional grant-reference price, not tuition. rates) · non-EU surcharge: NOT FOUND — nothing on the programme page, the fees/scholarships page or the public-price document addresses non-EU pricing
-- 300-ECTS recognition: A general 'Reconocimiento de Créditos' route exists on the UDIMA site but no programme-specific rule and no advanced-standing provision for a 300-ECTS first degree was found — NOT FOUND at programme level.
-- Application window 2027: NOT FOUND — the page gives a September 2026 start but publishes no application or enrolment window; nothing for 2027-28.
-- Verification: PENDING
-
-## 11. Master's Degree in Music Research — Universidad de Murcia (Facultad de Educación) with the Conservatorio Superior de Música de Murcia
-
-**Score 90.5/100** · Murcia · B | A · máster universitario · "Idioma: Español" — verbatim from the UM programme page header. SPANISH-ONLY. Competence CET 1 even specifies research "utilizando el idioma español".
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 1.00 | 40 | **40.0** |
 | field_fit | 1.00 | 25 | **25.0** |
 | official | 1.00 | 15 | **15.0** |
-| language | 0.35 | 10 | **3.5** |
-| credit | 0.70 | 10 | **7.0** |
+| language | 0.70 | 10 | **7.0** |
+| credit | 1.00 | 10 | **10.0** |
 
-- Tuition: 2226.6 (2023-24 rates (Decreto n.º 8/2024, de 1 de febrero, BORM 10/02/2024), the order UM's matrícula page still links as at 2026-08-25. 2026-27 / 2027-28 rates NOT PUBLISHED. rates) · non-EU surcharge: NOT FOUND as an applied rate. The governing decree PERMITS it but does not impose it. Verbatim (Orden/Decreto n.º 8/2024 de la Región de Murcia, art. 6.5, linked from UM's own matrícula page): "Las universidades podrán diferenciar el precio del crédito hasta cubrir el 100 por 100 de los costes de las enseñanzas universitarias de grado y máster cuando se trate de estudiantes extranjeros mayores de dieciocho años que no tengan la condición de residentes, excluidos los nacionales de Estados miembros de la Unión Europea y aquéllos a quienes sea de aplicación el régimen comunitario, sin perjuicio del principio de reciprocidad." UM publishes no differentiated non-EU credit price, so whether it exercises this power is NOT FOUND — a human must confirm with postgrado@um.es before budgeting.
-- 300-ECTS recognition: NOT FOUND. No programme-level rule published; the plan is 42 ECTS obligatorias + 18 TFM with zero optional credits (RUCT), leaving essentially no room.
-- Application window 2027: 2027-28 dates NOT PUBLISHED. UM's published 2026-2027 master admission calendar (verbatim headings): Fase I - presentación de solicitudes 'Del 10 de marzo al 22 de abril'; Fase II 'Del 1 al 30 de junio'; Fase Extraordinaria 'Del 30 de julio al 3 de septiembre'. Provisional lists 30 April / 13 July / 8 September; definitive lists 12 May / 17 July / 11 September; matrícula 12-14 May / 17-20 July / 11-14 September.
+- Tuition: 5079 (As displayed on the UAM programme page on 2026-08-25. The page prints the two figures without an academic year; UAM's tasas-y-precios page is headed 2025-2026 and cites Decreto 43/2022 (BOCM 01/07/2022) as the standing legal basis. Treat as current-as-displayed and re-check for 2027-28. FLAGGED. rates) · non-EU surcharge: YES — explicit, quantified, and published on the programme page itself: "Standard enrollment: €2,736" versus "Non-EU residents: €5,079" for the same 60-ECTS master, i.e. a surcharge of €2,343 (1.86x). Mechanism, from UAM's own tasas page: students from non-EU countries without official residency in Spain pay at the "tercera matrícula" (third-enrolment) rate, or the "cuarta" rate for másteres habilitantes, as established in the Comunidad de Madrid public-prices decree (Decreto 43/2022, BOCM 01/07/2022). This is a repricing to a penalty tier, not a flat uplift. Note it is charged on non-RESIDENCE, so the candidate cannot avoid it by relocating.
+- 300-ECTS recognition: YES — A REAL, INSTITUTION-WIDE MECHANISM, and the best-documented one in this batch. UAM's official 2026-27 admission process document states that the Comisión Académica «determinará si debe cursar complementos de formación y si existe posibilidad de solicitar reconocimiento de créditos por los estudios previos realizados», and that «Se podrá señalar el número de créditos de los que el estudiante pueda solicitar reconocimiento (si tiene formación previa reconocible). Posteriormente a su matrícula el estudiante solicitará formalmente el reconocimiento en la Administración del Centro ... pero esta indicación le servirá para saber de cuántos créditos debe matricularse y cuantos no serán necesarios, porque puedan reconocerse.» So recognition is assessed AT ADMISSION and reduces the credits actually enrolled and paid for. IMPORTANT COUNTERWEIGHT from the same document: «La titulación de acceso al Máster que se considerará es siempre la de grado o equivalente. Cualquier otra titulación académica que posea el solicitante podrá incorporarse a la solicitud de forma complementaria y, en su caso, ser valorada por la coordinación del Máster como otros méritos» — extra qualifications count as merit, not as automatic advanced standing. Whether a 300-ECTS single degree yields recognised credits is a coordinator's decision. No figure is promised.
+- Application window 2027: NOT PUBLISHED for the September 2027 (curso 2027-28) intake. For curso 2026-2027 UAM published, verbatim: PRIMERO «De 4 de febrero a 8 de abril de 2026 (Para todos los estudiantes, aunque no hayan finalizado estudios de acceso)»; SEGUNDO «De 18 de junio a 1 de septiembre de 2026 (Solo si hay vacantes del primer plazo en Másteres sin Listas de Espera)», with the second round possibly brought forward to 4 June for masters that have not filled. Resolution deadlines: 1º plazo 27 May 2026, 2º plazo 8 September 2026; all applications validated by the CEP by 14 May 2026. These are 2026-27 dates and are NOT shifted forward a year.
 - Verification: PENDING
 
-## 12. Máster Universitario en Ciencia de Datos e Inteligencia de Negocios — Universidad Complutense de Madrid — Facultad de Estudios Estadísticos
+## 14. Máster Universitario en Sistemas Interactivos Inteligentes — Universidad Autónoma de Madrid (UAM) — Escuela Politécnica Superior
 
-**Score 88.5/100** · Madrid · X | AB · máster universitario · 'Español' — with some materials available in English (programme page). A Spanish-A1 candidate cannot follow this programme without reaching working Spanish first.
+**Score 95.0/100** · Madrid · AA | B · máster universitario · "Español" — the idioma de impartición on UAM's own programme page, shown as Español even on the English version of the page. HARD LANGUAGE FILTER for this candidate (Spanish A0/A1 now).
 
 | Component | Raw | Weight | Contribution |
 |---|---:|---:|---:|
-| funding | 0.85 | 40 | **34.0** |
-| field_fit | 0.90 | 25 | **22.5** |
+| funding | 0.95 | 40 | **38.0** |
+| field_fit | 1.00 | 25 | **25.0** |
 | official | 1.00 | 15 | **15.0** |
 | language | 0.70 | 10 | **7.0** |
 | credit | 1.00 | 10 | **10.0** |
 
-- Tuition: 5100 (2024-25 — the page's stated figures are for curso 2024-25 and are approximate ('aproximadamente'). Madrid resets precios públicos annually, so the 2027-28 figure WILL differ. rates) · non-EU surcharge: YES, CONFIRMED — UCM publishes two figures: approximately €3,200 for 'estudiantes comunitarios y extranjeros residentes' and approximately €5,100 for 'estudiantes extranjeros no comunitarios no residentes'. That is roughly a 59% surcharge. tuition_total_eur records the non-EU non-resident figure because that is the one that applies to this candidate. Note the surcharge is keyed on RESIDENCY as well as nationality — a non-EU student with Spanish residency pays the lower rate.
-- 300-ECTS recognition: UCM publishes a general credit-recognition rule at https://www.ucm.es/reconocimiento-de-creditos-optativos (linked from the programme page). Programme-specific advanced standing for a 300-ECTS entrant is NOT stated; the linked page was not opened on this pass.
-- Application window 2027: PUBLISHED FOR 2026-2027, NOT 2027-28 — preinscripción 'Del 28 de Enero al 20 de Febrero' for curso 2026-2027. UCM runs a centralised master's admission calendar at https://www.ucm.es/proceso-de-admision-masteres and https://www.ucm.es/plazos-generales. The 2027-28 window is not yet published; a late-January-to-February first plazo is the pattern but has NOT been carried forward as a fact.
+- Tuition: 5079 (As displayed on the UAM programme page on 2026-08-25; no academic year printed. UAM's tasas-y-precios page is headed 2025-2026 and cites Decreto 43/2022 (BOCM 01/07/2022). FLAGGED — re-check for 2027-28. rates) · non-EU surcharge: YES — explicit and quantified: "€2,736 (standard)" versus "€5,079 (non-EU residents)" for first enrolment on the same 60-ECTS master, a surcharge of €2,343 (1.86x). Mechanism per UAM's tasas page: non-EU students without official Spanish residency pay at the tercera-matrícula rate under Decreto 43/2022 (BOCM 01/07/2022). Charged on non-RESIDENCE.
+- 300-ECTS recognition: YES — the UAM institution-wide mechanism applies: the Comisión Académica «determinará si debe cursar complementos de formación y si existe posibilidad de solicitar reconocimiento de créditos por los estudios previos realizados», and may indicate the number of credits the student can have recognised so they know «de cuántos créditos debe matricularse y cuantos no serán necesarios». Assessed at admission, reduces credits enrolled and paid. Counterweight from the same document: the access qualification considered «es siempre la de grado o equivalente»; any further qualification counts as merit only. No quantity promised.
+- Application window 2027: NOT PUBLISHED for the September 2027 (curso 2027-28) intake. UAM's published curso 2026-2027 calendar: PRIMER PLAZO 4 February – 8 April 2026 (resolution by 27 May 2026); SEGUNDO PLAZO 18 June – 1 September 2026, possibly opening early on 4 June (resolution by 8 September 2026). Recorded as 2026-27 dates, NOT shifted forward.
 - Verification: PENDING
 
-## 13. Master's Degree in Corporate Communication, Protocol and Events — Universitat Oberta de Catalunya (UOC)
+## 15. UC3M - Doble Máster en Ingeniería de Telecomunicación y Métodos Analíticos para Datos Masivos: Big Data — Universidad Carlos III de Madrid (UC3M)
 
-**Score 85.8/100** · Online (registered in Barcelona) · S · máster universitario · SPANISH or CATALAN — NOT ENGLISH. Verbatim header: "Idiomas: Español, Catalán" with "El mismo programa se ofrece en las dos lenguas en aulas diferentes". WAVE-1 ASSUMPTION CONFIRMED: the wave-1 record said 'Language of instruction NOT VERIFIED - assume Spanish-only unless the plan de estudios says otherwise'. Verified: Spanish/Catalan, no English. One elective carries an English title ('Lobbyism and public affairs', 'Business & entrepreneurship') but the page gives no per-subject language codes, so English delivery of those must NOT be inferred.
+**Score 94.5/100** · Madrid — TWO campuses: 'Campus Madrid - Puerta de Toledo , Leganés' · AB | C | AC · máster universitario (OFFICIAL) — but as a STACK OF TWO official titles, not as a title of its own. This double is NOT a separate RUCT entry. It combines: (a) Máster Universitario en Métodos Analíticos para Datos Masivos: Big Data, RUCT 4315583, 'Publicado en B.O.E. (TITULACIÓN RENOVADA)'; and (b) Máster Universitario en Ingeniería de Telecomunicación (UC3M), a regulated-profession master whose own RUCT code was NOT verified in this pass — recorded as NOT FOUND rather than guessed. The page states the outcome verbatim: 'La superación de los créditos de ambos planes de estudio junto con el reconocimiento de 24 ECTS te permitirán obtener, en poco más de año y medio, dos titulaciones de máster oficial' and 'al finalizar obtendrás dos títulos de Máster Oficial'. So both awards are official; the combination itself is an administrative route. · Español, inglés (Spanish AND English) — BILINGUAL, and this is a hard filter for this candidate
 
 | Component | Raw | Weight | Contribution |
 |---|---:|---:|---:|
 | funding | 1.00 | 40 | **40.0** |
-| field_fit | 0.55 | 25 | **13.8** |
+| field_fit | 0.90 | 25 | **22.5** |
 | official | 1.00 | 15 | **15.0** |
 | language | 0.70 | 10 | **7.0** |
 | credit | 1.00 | 10 | **10.0** |
 
-- Tuition: 4330 (Rates displayed as at 2026-08-25 for the 14 October 2026 intake, with UOC's caveat "Precios vigentes en el momento de formalizar la matrícula. Sujetos a revisión anual." 2027-28 rates NOT PUBLISHED. rates) · non-EU surcharge: YES — EXPLICIT AND SUBSTANTIAL. UOC publishes two separate price blocks. "Precios para estudiantes de la Unión Europea": "Precio por crédito 25,82 €/cr", "Precio por crédito herramientas y recursos para el aprendizaje 18,30 €/cr", "Precio por crédito de asignaturas convalidadas 5,16 €/cr", "Precio orientativo a tiempo completo (1 año): 2.900,00 €". "Precios para estudiantes de fuera de la Unión Europea": A tiempo completo (1 año) 4.330 € (hasta 9 cuotas); A tiempo parcial (2 años) 4.840 € (hasta 17 cuotas). So a non-EU student pays 4.330 EUR against 2.900 EUR — roughly +49% (+1.430 EUR) full-time, or +1.940 EUR part-time. Caveat printed by UOC: "Precios vigentes en el momento de formalizar la matrícula. Sujetos a revisión anual" and "El precio orientativo indicado en la tabla está calculado basándose en un máster universitario de 60 créditos. El precio final de la matrícula será el resultante de su formalización efectiva."
-- 300-ECTS recognition: YES in principle — UOC's standard evaluación de estudios previos (EEP) and reconocimiento académico de la experiencia profesional (RAEP) apply, with convalidated credits charged at 5,16 EUR/cr. RAEP is notable here: documented professional experience as a working music producer/DJ and event organiser is exactly the kind of evidence RAEP is designed for. NOT FOUND: any published cap, and no programme-specific statement on this page.
-- Application window 2027: 2027-28 dates NOT PUBLISHED. Rolling semester enrolment, no fixed rounds. Published next intake: "Inicio: 14 oct 2026". EXPECT (but do not assume) an equivalent autumn-2027 start.
-- Verification: PENDING
-
-## 14. Master of Science in Data Science (site branding) — Universitat Ramon Llull — La Salle Campus Barcelona
-
-**Score 85.5/100** · Barcelona · AB | AA · máster universitario · Spanish — programme page's own 'Language' field states Spanish. Read on the English version of the page; no castellano 'idioma de impartición' line read verbatim.
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 0.85 | 40 | **34.0** |
-| field_fit | 0.90 | 25 | **22.5** |
-| official | 1.00 | 15 | **15.0** |
-| language | 0.70 | 10 | **7.0** |
-| credit | 0.70 | 10 | **7.0** |
-
-- Tuition: NOT FOUND (NOT FOUND — only the institution-wide 2026-2027 range (master's EUR 6,000–17,940; online EUR 2,430–12,660) is published rates) · non-EU surcharge: NOT FOUND — no differentiated non-EU price stated on any page read
-- 300-ECTS recognition: NOT FOUND
-- Application window 2027: NOT FOUND for Sept 2027. 2026-27 intake starts 19 October 2026; admission is rolling (8-day decision, 15-day place reservation). 2027-28 calendar not published.
-- Verification: PENDING
-
-## 15. Master's Degree in Big Data Analytics — Universidad Europea de Madrid (UEM)
-
-**Score 85.5/100** · Alcobendas, Madrid (also offered presencial in Málaga and Valencia, and online) · AB | X · máster universitario · 'Español' — stated as the idioma de impartición on the Spanish programme page. Universidad Europea also serves an English-language marketing mirror at /en/master-big-data-analytics-madrid/, which under brief rule 7 is NOT evidence of English instruction.
-
-| Component | Raw | Weight | Contribution |
-|---|---:|---:|---:|
-| funding | 0.85 | 40 | **34.0** |
-| field_fit | 0.90 | 25 | **22.5** |
-| official | 1.00 | 15 | **15.0** |
-| language | 0.70 | 10 | **7.0** |
-| credit | 0.70 | 10 | **7.0** |
-
-- Tuition: 0 (NOT FOUND rates) · non-EU surcharge: NOT FOUND — no price of any kind is published, so no differential can be checked.
-- 300-ECTS recognition: NOT FOUND programme-specific. Universidad Europea publishes a general 'Convalidaciones y traslados' section under Admisión y financiación; nothing addresses a 300-ECTS entrant.
-- Application window 2027: NOT FOUND as dates. 'Proceso de admisión: Abierto durante todo el año mientras haya plazas disponibles' (rolling), and 'El proceso de admisión no supone ningún coste para el candidato ni compromiso alguno hasta la formalización de la reserva'. Published 2026-27 intake starts: Madrid October 2026; Málaga 16 October 2026; Valencia 13 November 2026; Online October 2026. Nothing published for 2027-28.
+- Tuition: 17312.4 (2025-26 (curso 25/26, explicitly provisional for 2026-27; 2027-28 NOT PUBLISHED) rates) · non-EU surcharge: YES — the largest surcharge in this batch, and it is a DIFFERENT rate pair from either constituent master. Verbatim from the MATRÍCULA tab: 'DOBLE MÁSTER EN INGENIERÍA de Telecomunicación Y Métodos Analíticos para Datos Masivos: Big Data — Reserva de plaza 900 € — Precio Estudiantes UE 49,71 € / ECTS — Precio Estudiantes no UE 137,40 € / ECTS — Créditos que se matriculan 126 ECTS — Créditos que se reconocen (sin coste) Ingeniería de Telecomunicación 18 ECTS — Créditos que se reconocen (sin coste) Big Data 6 ECTS'. That is a 2.76x multiplier (+87,69 EUR/ECTS, +11,048.94 EUR over the programme), far above the +50% on the standalone Big Data master. Footnote verbatim: '* Precios vigentes para el curso 25/26, pendientes de aprobación por la Comunidad de Madrid para el curso 26/27'. A Tunisian citizen holding only a Spanish long-stay study authorisation is 'no UE' for this row.
+- 300-ECTS recognition: YES, but only the built-in double-degree recognition, NOT recognition for a 300-ECTS entrant. Verbatim: 'Se te reconocerán 24 créditos ECTS, y al finalizar obtendrás dos títulos de Máster Oficial' and the fee table breaks it down: 'Créditos que se reconocen (sin coste) Ingeniería de Telecomunicación 18 ECTS' + 'Big Data 6 ECTS' = 24 ECTS, free of charge, reducing 150 nominal ECTS to 126 enrolled. Also: 'La admisión y matriculación en el Doble Máster, permitirá la exención de los créditos ECTS que se reconozcan según la planificación de los estudios.' NOTHING is published about advanced standing for an over-length prior degree — the 300-ECTS question is NOT FOUND here.
+- Application window 2027: NOT FOUND for 2027-28. Programme header at access date reads 'Plazo de admisión CERRADO'. The published calendar is the 2026-27 one: PRIMER PERIODO 1 DICIEMBRE 2025 - 31 ENERO 2026; SEGUNDO PERIODO 1 FEBRERO 2026 - 31 MARZO 2026; TERCER PERIODO 1 ABRIL 2026 - 31 MAYO 2026, plus a FASE EXTRAORDINARIA for masters with vacancies. THESE ARE 2026-27 DATES. 2027-28 not published; not shifted forward here. EXTRA CONSTRAINT specific to this double: 'El proceso de admisión lo lleva a cabo la comisión de cada máster de manera independiente y por lo tanto, para acceder al doble título, es necesario haber sido admitido previamente en AMBOS másteres' — i.e. two separate admissions must both succeed inside the same window.
 - Verification: PENDING

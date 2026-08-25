@@ -173,6 +173,57 @@ SUMMARY:45 days to deadline: Master Universitario en Ingenieria de Software y Si
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-upc-masteam-aplicaciones-gestion-ingenieria-telecomunicacion@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's degree in Applied Telecommunications and Engineering Management (MASTEAM) — Universitat Politècnica de Catalunya (UPC) — Escola d'Enginyeria de Telecomunicació i Aeroespacial de Cas
+DESCRIPTION:Application deadline. Source: https://masteam.masters.upc.edu/en/admission/information
+URL:https://masteam.masters.upc.edu/en/admission/information
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upc-masteam-aplicaciones-gestion-ingenieria-telecomunicacion-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's degree in Applied Telecommunications and Engineering Management (MASTEAM) — Universitat Politècnica de Catalunya (UPC) — Escola d'Enginyeria de Telecomunicació i Aeroespa
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upc-machine-learning-cybersecurity-internet-connected-systems@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's degree in Machine Learning and Cybersecurity for Internet-Connected Systems — Universitat Politècnica de Catalunya (UPC) — Escola Politècnica Superior d'Enginyeria de Manresa (EPSEM
+DESCRIPTION:Application deadline. Source: https://www.upc.edu/en/masters/access-admission-enrolment/pre-enrolment
+URL:https://www.upc.edu/en/masters/access-admission-enrolment/pre-enrolment
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upc-machine-learning-cybersecurity-internet-connected-systems-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's degree in Machine Learning and Cybersecurity for Internet-Connected Systems — Universitat Politècnica de Catalunya (UPC) — Escola Politècnica Superior d'Enginyeria de Man
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upc-ai4ci-inteligencia-artificial-industrias-conectadas@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's degree in Artificial Intelligence for Connected Industries (AI4CI) — Universitat Politècnica de Catalunya (UPC) — Escola d'Enginyeria de Telecomunicació i Aeroespacial de Castelldef
+DESCRIPTION:Application deadline. Source: https://www.upc.edu/en/masters/access-admission-enrolment/pre-enrolment
+URL:https://www.upc.edu/en/masters/access-admission-enrolment/pre-enrolment
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upc-ai4ci-inteligencia-artificial-industrias-conectadas-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's degree in Artificial Intelligence for Connected Industries (AI4CI) — Universitat Politècnica de Catalunya (UPC) — Escola d'Enginyeria de Telecomunicació i Aeroespacial de
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-uniovi-supercomputacion-aprendizaje-automatico@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260904
@@ -271,6 +322,91 @@ DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260110
 DTEND;VALUE=DATE:20260111
 SUMMARY:45 days to deadline:  — Mondragon Unibertsitatea
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-us-logica-computacion-inteligencia-artificial@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Lógica, Computación e Inteligencia Artificial — Universidad de Sevilla
+DESCRIPTION:Application deadline. Source: https://www.us.es/estudiar/admision/master
+URL:https://www.us.es/estudiar/admision/master
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-us-logica-computacion-inteligencia-artificial-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Lógica, Computación e Inteligencia Artificial — Universidad de Sevilla
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-us-ingenieria-software-cloud-datos-gestion-ti@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información — Universidad de Sevilla
+DESCRIPTION:Application deadline. Source: https://www.us.es/estudiar/admision/master
+URL:https://www.us.es/estudiar/admision/master
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-us-ingenieria-software-cloud-datos-gestion-ti-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información — Universidad de Sevilla
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uv-ciencia-de-datos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree in Data Science — Universitat de València (Estudi General)
+DESCRIPTION:Application deadline. Source: https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/pre-enrolment-/-admission/instructions-1285846650865.html
+URL:https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/pre-enrolment-/-admission/instructions-1285846650865.html
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uv-ciencia-de-datos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree in Data Science — Universitat de València (Estudi General)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uv-tecnologias-web-computacion-nube-aplicaciones-moviles@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree in Web Technology, Cloud Computing and Mobile Applications — Universitat de València (Estudi General)
+DESCRIPTION:Application deadline. Source: https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/pre-enrolment-/-admission/instructions-1285846650865.html
+URL:https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/pre-enrolment-/-admission/instructions-1285846650865.html
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uv-tecnologias-web-computacion-nube-aplicaciones-moviles-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree in Web Technology, Cloud Computing and Mobile Applications — Universitat de València (Estudi General)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uah-analitica-de-negocio-y-big-data@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Analítica de Negocio y Big Data — Universidad de Alcalá (UAH)
+DESCRIPTION:Application deadline. Source: https://posgrado.uah.es/es/masteres-universitarios/tramites-administrativos/admision/
+URL:https://posgrado.uah.es/es/masteres-universitarios/tramites-administrativos/admision/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uah-analitica-de-negocio-y-big-data-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Analítica de Negocio y Big Data — Universidad de Alcalá (UAH)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
@@ -410,6 +546,57 @@ SUMMARY:45 days to deadline: Erasmus Mundus Master Degree in Waves, Acoustics, V
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-ie-business-analytics-data-science@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Business Analytics (RUCT title) — marketed by IE as 'Master in Business Analytics and Data Science' (MBADS) — IE Universidad — IE School of Science & Technology (programme previous
+DESCRIPTION:Application deadline. Source: https://www.ie.edu/school-science-technology/programs/master-business-analytics-data-science/admissions-fees/
+URL:https://www.ie.edu/school-science-technology/programs/master-business-analytics-data-science/admissions-fees/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-ie-business-analytics-data-science-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Business Analytics (RUCT title) — marketed by IE as 'Master in Business Analytics and Data Science' (MBADS) — IE Universidad — IE School of Science & Technology (program
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uned-ingenieria-ciencia-datos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: University Master's Degree in Engineering and Data Science — Universidad Nacional de Educación a Distancia (UNED)
+DESCRIPTION:Application deadline. Source: https://www.uned.es/universidad/inicio/en/estudios/masteres/informacion-general/admision-matricula.html
+URL:https://www.uned.es/universidad/inicio/en/estudios/masteres/informacion-general/admision-matricula.html
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uned-ingenieria-ciencia-datos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: University Master's Degree in Engineering and Data Science — Universidad Nacional de Educación a Distancia (UNED)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-ucm-ciencia-datos-inteligencia-negocios@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master's Degree in Data Science and Business Intelligence — Universidad Complutense de Madrid (UCM) — Facultad de Estudios Estadísticos
+DESCRIPTION:Application deadline. Source: https://www.ucm.es/plazos-generales
+URL:https://www.ucm.es/plazos-generales
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-ucm-ciencia-datos-inteligencia-negocios-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master's Degree in Data Science and Business Intelligence — Universidad Complutense de Madrid (UCM) — Facultad de Estudios Estadísticos
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-upna-machine-learning@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
@@ -495,23 +682,6 @@ SUMMARY:45 days to deadline: Business Analytics — Universidad Antonio de Nebri
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
-UID:prog-uc3m-mu-metodos-analiticos-datos-masivos-big-data@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260826
-SUMMARY:DEADLINE: Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
-DESCRIPTION:Application deadline. Source: https://www.uc3m.es/master/big-data
-URL:https://www.uc3m.es/master/big-data
-END:VEVENT
-BEGIN:VEVENT
-UID:prog-uc3m-mu-metodos-analiticos-datos-masivos-big-data-r45@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260712
-SUMMARY:45 days to deadline: Master in Big Data Analytics — Universidad Carlos III de Madrid (UC3M)
-DESCRIPTION:Reminder set 45 days before the application deadline.
-END:VEVENT
-BEGIN:VEVENT
 UID:prog-uev-analisis-datos-masivos-big-data@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20261113
@@ -543,23 +713,6 @@ DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260130
 DTEND;VALUE=DATE:20260131
 SUMMARY:45 days to deadline: Computational Statistics and Data Science for Decision Making — Universidad Miguel Hernández de Elche (UMH)
-DESCRIPTION:Reminder set 45 days before the application deadline.
-END:VEVENT
-BEGIN:VEVENT
-UID:prog-uah-analitica-negocio-big-data@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260302
-DTEND;VALUE=DATE:20260303
-SUMMARY:DEADLINE: Máster Universitario en Analítica de Negocio y Big Data — Universidad de Alcalá (UAH)
-DESCRIPTION:Application deadline. Source: https://posgrado.uah.es/es/masteres-universitarios/tramites-administrativos/admision/
-URL:https://posgrado.uah.es/es/masteres-universitarios/tramites-administrativos/admision/
-END:VEVENT
-BEGIN:VEVENT
-UID:prog-uah-analitica-negocio-big-data-r45@spain-sweep
-DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260116
-DTEND;VALUE=DATE:20260117
-SUMMARY:45 days to deadline: Máster Universitario en Analítica de Negocio y Big Data — Universidad de Alcalá (UAH)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
