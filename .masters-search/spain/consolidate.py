@@ -282,7 +282,11 @@ def main():
           "pendiente de aprobacion", "en proces de verificacio", "en proceso de verificacion"],
                                                                    "not yet verified / not yet official"),
         (["appears to have been withdrawn", "soft 404", "no programme page exists",
-          "serves the cev barcelona homepage"],                    "no live programme page - may be withdrawn"),
+          "serves the cev barcelona homepage", "no longer offers", "no longer offered",
+          "302s to a different", "redirects to a different title", "appears not to run",
+          "may not run", "transition to deai", "no ruct registration at all",
+          "absent from viu", "no such official title exists"],
+                                        "register says active, institution does not appear to offer it"),
     ]
     for r in progs.values():
         blob = fold(json.dumps(r, ensure_ascii=False))

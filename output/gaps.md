@@ -79,7 +79,7 @@ that a programme will admit you.
 | Máster Universitario Erasmus Mundus en Gestión y Análisi | Universitat Politècnica de Catalunya | Erasmus Mundus EU funding has ended for this consortium; tit |
 | Máster Universitario en Derecho y Ética de la Inteligenc | Universidad de Granada + Universidad | title winding down (A EXTINGUIR); not yet verified / not yet |
 | Máster Universitario Erasmus Mundus en Ondas, Acústica,  | Conjunto Internacional — Universitat | consortium has suspended recruitment |
-| Máster en Producción Musical | CEV — Escuela Superior de Comunicaci | no live programme page - may be withdrawn |
+| Máster en Producción Musical | CEV — Escuela Superior de Comunicaci | register says active, institution does not appear to offer i |
 | Máster Universitario en Análisis de Negocios | Universidad Antonio de Nebrija | title winding down (A EXTINGUIR); not yet verified / not yet |
 | Máster Universitario en Análisis de Datos Masivos (Big D | Universidad Europea de Valencia | title winding down (A EXTINGUIR); not yet verified / not yet |
 | Máster Universitario en Tecnología e Inteligencia de Dat | Universidad Intercontinental de la E | title winding down (A EXTINGUIR); not yet verified / not yet |
