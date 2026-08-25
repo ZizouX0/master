@@ -511,6 +511,23 @@ SUMMARY:45 days to deadline: Master's Degree in Sports Data Analysis — Univers
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-urjc-mfp-ciencia-ingenieria-datos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster de Formación Permanente en Ciencia e Ingeniería de Datos — Universidad Rey Juan Carlos (URJC)
+DESCRIPTION:Application deadline. Source: NOT FOUND
+URL:NOT FOUND
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-urjc-mfp-ciencia-ingenieria-datos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster de Formación Permanente en Ciencia e Ingeniería de Datos — Universidad Rey Juan Carlos (URJC)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-urjc-protocolo-comunicacion-eventos@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260824
@@ -748,6 +765,23 @@ SUMMARY:45 days to deadline: Máster Universitario en Big Data y Computación en
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-uclm-modelizacion-analisis-datos-economicos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Modelización y Análisis de Datos Económicos — Universidad de Castilla-La Mancha (UCLM)
+DESCRIPTION:Application deadline. Source: NOT FOUND
+URL:NOT FOUND
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-uclm-modelizacion-analisis-datos-economicos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Modelización y Análisis de Datos Económicos — Universidad de Castilla-La Mancha (UCLM)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-unirioja-ciencia-de-datos-y-aprendizaje-automatico@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260520
@@ -869,8 +903,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-uja-ingenieria-telecomunicacion-linares@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260826
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
 SUMMARY:DEADLINE: Master's Degree of Science in Telecommunication Engineering — Universidad de Jaén (UJA) — Escuela Politécnica Superior de Linares
 DESCRIPTION:Application deadline. Source: https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
 URL:https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
@@ -878,8 +912,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-uja-ingenieria-telecomunicacion-linares-r45@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260712
+DTSTART;VALUE=DATE:20251129
+DTEND;VALUE=DATE:20251130
 SUMMARY:45 days to deadline: Master's Degree of Science in Telecommunication Engineering — Universidad de Jaén (UJA) — Escuela Politécnica Superior de Linares
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
