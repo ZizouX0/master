@@ -173,6 +173,108 @@ SUMMARY:45 days to deadline: Master Universitario en Ingenieria de Software y Si
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
+UID:prog-upm-mu-ciencia-de-datos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: MSc in Data Science (the programme's own site uses 'Master's Degree in Data Science' / 'European MSc in Data Science') — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Application deadline. Source: https://www.upm.es/estudiantes/estudios_titulaciones/estudios_master/calendario
+URL:https://www.upm.es/estudiantes/estudios_titulaciones/estudios_master/calendario
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-mu-ciencia-de-datos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: MSc in Data Science (the programme's own site uses 'Master's Degree in Data Science' / 'European MSc in Data Science') — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-mu-aprendizaje-automatico-datos-masivos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Aprendizaje Automático y Datos Masivos — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Application deadline. Source: https://www.upm.es/estudiantes/estudios_titulaciones/estudios_master/calendario
+URL:https://www.upm.es/estudiantes/estudios_titulaciones/estudios_master/calendario
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-mu-aprendizaje-automatico-datos-masivos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Aprendizaje Automático y Datos Masivos — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-mu-ingenieria-acustica@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Ingeniería Acústica — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Application deadline. Source: https://www.upm.es/masters/acustica/?page_id=169
+URL:https://www.upm.es/masters/acustica/?page_id=169
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-mu-ingenieria-acustica-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Ingeniería Acústica — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-mu-software-sistemas-distribuidos-empotrados@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Software de Sistemas Distribuidos y Empotrados — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Application deadline. Source: https://www.upm.es/estudiantes/estudios_titulaciones/estudios_master/calendario
+URL:https://www.upm.es/estudiantes/estudios_titulaciones/estudios_master/calendario
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upm-mu-software-sistemas-distribuidos-empotrados-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Software de Sistemas Distribuidos y Empotrados — Universidad Politécnica de Madrid (UPM)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upv-mu-computacion-nube-altas-prestaciones@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Computación en la Nube y de Altas Prestaciones (MUCNAP) — Universitat Politècnica de València (UPV)
+DESCRIPTION:Application deadline. Source: https://www.upv.es/estudios/master/mucnap/
+URL:https://www.upv.es/estudios/master/mucnap/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upv-mu-computacion-nube-altas-prestaciones-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Computación en la Nube y de Altas Prestaciones (MUCNAP) — Universitat Politècnica de València (UPV)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upv-mu-ingenieria-analisis-datos-mejora-procesos-toma-decisiones@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster Universitario en Ingeniería de Análisis de Datos, Mejora de Procesos y Toma de Decisiones (MUIADMPTD) — Universitat Politècnica de València (UPV)
+DESCRIPTION:Application deadline. Source: https://www.upv.es/estudios/master/muiadmptd/
+URL:https://www.upv.es/estudios/master/muiadmptd/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upv-mu-ingenieria-analisis-datos-mejora-procesos-toma-decisiones-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster Universitario en Ingeniería de Análisis de Datos, Mejora de Procesos y Toma de Decisiones (MUIADMPTD) — Universitat Politècnica de València (UPV)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
 UID:prog-upv-mu-ingenieria-acustica@spain-sweep
 DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260825
@@ -187,6 +289,55 @@ DTSTAMP:20260824T000000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260712
 SUMMARY:45 days to deadline: Máster Universitario en Ingeniería Acústica (MUIA) — Universitat Politècnica de València (UPV)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upf-tecnologias-sonido-musica-smc@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Sound and Music Computing (SMC) — Universitat Pompeu Fabra (UPF)
+DESCRIPTION:Application deadline. Source: https://www.upf.edu/web/mtg/news/-/asset_publisher/WM181VyAQipW/content/application-open-for-the-master-in-sound-and-music-computing-2026-2027/maximized
+URL:https://www.upf.edu/web/mtg/news/-/asset_publisher/WM181VyAQipW/content/application-open-for-the-master-in-sound-and-music-computing-2026-2027/maximized
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upf-tecnologias-sonido-musica-smc-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Sound and Music Computing (SMC) — Universitat Pompeu Fabra (UPF)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upf-sistemas-cognitivos-media-interactivos-csim@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Cognitive Systems and Interactive Media (CSIM) — Universitat Pompeu Fabra (UPF)
+DESCRIPTION:Application deadline. Source: 
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upf-sistemas-cognitivos-media-interactivos-csim-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Cognitive Systems and Interactive Media (CSIM) — Universitat Pompeu Fabra (UPF)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upf-sistemas-inteligentes-interactivos@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Master in Intelligent Interactive Systems — Universitat Pompeu Fabra (UPF)
+DESCRIPTION:Application deadline. Source: 
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-upf-sistemas-inteligentes-interactivos-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Master in Intelligent Interactive Systems — Universitat Pompeu Fabra (UPF)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
 BEGIN:VEVENT
@@ -311,8 +462,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-urjc-protocolo-comunicacion-eventos@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260901
-DTEND;VALUE=DATE:20260902
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
 SUMMARY:DEADLINE: Máster Universitario en Protocolo, Comunicación y Organización Integral de Eventos — Universidad Rey Juan Carlos (URJC)
 DESCRIPTION:Application deadline. Source: https://www.urjc.es/estudiar-en-la-urjc/admision/274-master
 URL:https://www.urjc.es/estudiar-en-la-urjc/admision/274-master
@@ -320,8 +471,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-urjc-protocolo-comunicacion-eventos-r45@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260718
-DTEND;VALUE=DATE:20260719
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
 SUMMARY:45 days to deadline: Máster Universitario en Protocolo, Comunicación y Organización Integral de Eventos — Universidad Rey Juan Carlos (URJC)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
@@ -718,8 +869,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-uca-ugr-ingenieria-acustica@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260825
-DTEND;VALUE=DATE:20260826
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
 SUMMARY:DEADLINE: Master's Degree in Acoustic Engineering — CONJUNTO: Universidad de Cádiz (UCA) + Universidad de Granada (UGR)
 DESCRIPTION:Application deadline. Source: https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
 URL:https://www.juntadeandalucia.es/economiaconocimientoempresasyuniversidad/sguit/?q=masteres&d=mo_calendario.php
@@ -727,8 +878,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:prog-uca-ugr-ingenieria-acustica-r45@spain-sweep
 DTSTAMP:20260824T000000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260712
+DTSTART;VALUE=DATE:20251129
+DTEND;VALUE=DATE:20251130
 SUMMARY:45 days to deadline: Master's Degree in Acoustic Engineering — CONJUNTO: Universidad de Cádiz (UCA) + Universidad de Granada (UGR)
 DESCRIPTION:Reminder set 45 days before the application deadline.
 END:VEVENT
@@ -782,6 +933,60 @@ DTSTART;VALUE=DATE:20260130
 DTEND;VALUE=DATE:20260131
 SUMMARY:45 days to deadline: Computational Statistics and Data Science for Decision Making — Universidad Miguel Hernández de Elche (UMH)
 DESCRIPTION:Reminder set 45 days before the application deadline.
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-escuela-superior-de-musica-r-master-en-ensenanzas-artisticas-en-com@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster en Enseñanzas Artísticas en Composición Dramática y para Ensemble Instrumental — Escuela Superior de Música Reina Sofía (centro privado autorizado), Madrid
+DESCRIPTION:Application deadline. Source: 
+URL:https://www.escuelasuperiordemusicareinasofia.es/plan-estudio/master-en-composicion/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-escuela-superior-de-musica-r-master-en-ensenanzas-artisticas-en-com-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster en Enseñanzas Artísticas en Composición Dramática y para Ensemble Instrumental — Escuela Superior de Música Reina Sofía (centro privado autorizado), Madrid
+DESCRIPTION:Reminder set 45 days before the application deadline.
+URL:https://www.escuelasuperiordemusicareinasofia.es/plan-estudio/master-en-composicion/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-escola-superior-de-musica-de-master-oficial-de-recerca-musical-mast@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Màster oficial de Recerca Musical / Máster en Enseñanzas Artísticas en Investigación Musical — Escola Superior de Música de Catalunya (ESMUC), Barcelona
+DESCRIPTION:Application deadline. Source: 
+URL:https://www.esmuc.cat/en/studies/masters-i-postgraus/master-oficial-de-recerca-musical/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-escola-superior-de-musica-de-master-oficial-de-recerca-musical-mast-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Màster oficial de Recerca Musical / Máster en Enseñanzas Artísticas en Investigación Musical — Escola Superior de Música de Catalunya (ESMUC), Barcelona
+DESCRIPTION:Reminder set 45 days before the application deadline.
+URL:https://www.esmuc.cat/en/studies/masters-i-postgraus/master-oficial-de-recerca-musical/
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-conservatorio-superior-de-mu-master-en-ensenanzas-artisticas-en-cre@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:DEADLINE: Máster en Enseñanzas Artísticas en Creación, Interpretación e Investigación Musical — Conservatorio Superior de Música de Vigo (Galicia)
+DESCRIPTION:Application deadline. Source: 
+URL:https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-14860
+END:VEVENT
+BEGIN:VEVENT
+UID:prog-conservatorio-superior-de-mu-master-en-ensenanzas-artisticas-en-cre-r45@spain-sweep
+DTSTAMP:20260824T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:45 days to deadline: Máster en Enseñanzas Artísticas en Creación, Interpretación e Investigación Musical — Conservatorio Superior de Música de Vigo (Galicia)
+DESCRIPTION:Reminder set 45 days before the application deadline.
+URL:https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-14860
 END:VEVENT
 BEGIN:VEVENT
 UID:fund-emjm-emai-upf@spain-sweep
