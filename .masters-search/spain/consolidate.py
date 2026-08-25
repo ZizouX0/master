@@ -32,12 +32,32 @@ def _nums(x):
     out=set()
     for m in re.finditer(r"\d[\d.,]*", str(x or "")):
         t=m.group(0)
-        if "," in t and "." in t: t=t.replace(".","").replace(",",".")
-        elif "," in t:            t=t.replace(",",".")
+        # Decide the format from the LAST separator, do not assume European. "5,044.20"
+        # is English (comma thousands, dot decimal) and blind European parsing turned it
+        # into 5.04 -- which made two agents quoting the identical figure look like they
+        # disagreed by three orders of magnitude.
+        if "," in t and "." in t:
+            if t.rfind(",") > t.rfind("."):      # 5.044,20 -> European
+                t = t.replace(".", "").replace(",", ".")
+            else:                                 # 5,044.20 -> English
+                t = t.replace(",", "")
+        elif "," in t:
+            frac = t.split(",")[-1]
+            t = t.replace(",", ".") if len(frac) <= 2 else t.replace(",", "")
+        elif "." in t:
+            frac = t.split(".")[-1]
+            if len(frac) == 3 and t.count(".") >= 1 and len(t.split(".")[0]) <= 3:
+                t = t.replace(".", "")            # 1.884 -> 1884 (European thousands)
         try:
             v=float(t)
-            if v>=1: out.add(round(v,2))
-        except ValueError: pass
+        except ValueError:
+            continue
+        # Drop identifiers and dates: RUCT codes (7-8 digits) and years were being
+        # compared as if they were money, so two agents quoting the same zero-credit
+        # fact against different RUCT codes read as disagreeing.
+        if v < 1 or v > 100000: continue
+        if float(v).is_integer() and 1990 <= v <= 2100: continue
+        out.add(round(v,2))
     return out
 
 _LANGS=("ingles","english","castellano","espanol","spanish","catala","catalan","galego",
@@ -72,13 +92,45 @@ def same_meaning(field, a, b):
         first=lambda t: next((norm[l] for l in sorted(
             (x for x in _LANGS if x in t), key=lambda x: t.index(x))), None)
         return first(fa) == first(fb)
+    if field == "modality":
+        # Prose around the same answer differs wildly ("online (Online interactivo per
+        # the status bar...)" vs "Online. Programme page ficha: ..."). Compare the mode.
+        mode=lambda t: ({"semi"} if ("semipresencial" in t or "semipres" in t or "blended" in t or "hibrid" in t)
+                        else {"online"} if "online" in t or "distancia" in t or "virtual" in t
+                        else {"presencial"} if "presencial" in t or "face to face" in t or "on campus" in t
+                        else set())
+        ma, mb = mode(fa), mode(fb)
+        return (ma == mb) or not (ma and mb)
+    if field == "complementary_credits_required":
+        # What matters is whether bridging credits are asserted at all, and how many --
+        # not the wording, and definitely not the RUCT code quoted alongside.
+        na_, nb_ = {n for n in _nums(a) if n <= 120}, {n for n in _nums(b) if n <= 120}
+        zero=lambda t, n: (not n) or n == {0.0} or " 0 " in f" {t} " or "no complementos" in t \
+                          or "sin complementos" in t or "ninguno" in t
+        za, zb = zero(fa, na_), zero(fb, nb_)
+        if za and zb: return True
+        if za != zb:  return False
+        return bool(na_ & nb_)
     if field == "official_status":
         cat=lambda t: ("ea" if "artistic" in t else "of" if "universitario" in t
                        else "tp" if ("propio" in t or "permanente" in t) else "?")
         return cat(fa) == cat(fb)
     if field == "non_eu_surcharge":
-        yes=lambda t: t.strip().startswith(("yes","si","s ")) or "surcharge" in t or "doubl" in t
-        return yes(fa) == yes(fb) and (_nums(a) == _nums(b) or not (_nums(a) and _nums(b)))
+        # Compare the VERDICT only. Both agents write long justifications quoting several
+        # different figures (per-credit, total, the decree's article number), so comparing
+        # the numbers scattered through that prose flagged agreement as conflict. The
+        # amounts themselves are compared separately under the tuition fields.
+        def verdict(t):
+            t=t.strip()
+            if t.startswith(("no ","no.","no,","no-")) or t=="no" or "no surcharge" in t \
+               or "no differentiated" in t or "not applied" in t:
+                return "no"
+            if t.startswith(("yes","si ","si.")) or "surcharge" in t or "doubl" in t \
+               or "extracomunitario" in t or "no residentes" in t:
+                return "yes"
+            return "?"
+        va, vb = verdict(fa), verdict(fb)
+        return va == vb or "?" in (va, vb)
     na, nb = _nums(a), _nums(b)
     if na and nb:
         # Agree if they share a figure, or if their closest figures are within 1% --
