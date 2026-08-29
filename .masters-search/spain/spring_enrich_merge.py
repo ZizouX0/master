@@ -32,13 +32,15 @@ NEW_COLS = ["city", "autonomous_community", "campus", "university_awarding",
 # earned their place in the sweep -- they are how the February windows were
 # found -- but there is no single degree to locate or price, so they are
 # reported apart instead of being silently dropped.
-CALENDAR = ("institution-wide", "preinscripci")
+CALENDAR = ("institution-wide", "preinscripci", "pre-enrolment", "qp (quadrimestre",
+            "evidence that the")
 
 # A news item or an administrative-procedures page is not a programme page, even
 # when the row names a degree: UPC's February window was evidenced from
 # 'etseib.upc.edu/ca/curs-actual/tramits/preinscripcio-masters-febrer' and a FIB
 # news post. The degrees themselves are in the dataset under their own pages.
 NON_PROGRAMME_PATH = ("/tramits/", "/noticies/", "/noticias/", "/news/",
+                      "/access-admission-enrolment/",
                       "preinscripcio-masters", "preinscripcion-master")
 
 
@@ -268,9 +270,16 @@ def main():
                 src = {"enriched_official_status": "official_status",
                        "enrichment_sources": "sources"}.get(c, c)
                 rec[c] = next((flat(r.get(src)) for r in recs if flat(r.get(src)).strip()), "")
-            if not (base.get("ruct_code") or "").strip():
-                rec["ruct_code"] = next(
-                    (flat(r.get("ruct_code")) for r in recs if flat(r.get("ruct_code")).strip()), "")
+            # The spring sweep left placeholders ('NOT LOOKED UP', 'NOT
+            # CONFIRMED IN THIS PASS') where it did not chase a code; the
+            # enrichment pass then went and found many of them. Treat a
+            # placeholder as empty, or the deliverable hides what was learned.
+            have = (base.get("ruct_code") or "").strip()
+            if not have or re.match(r"(?i)^(not |none|n/?a|unknown|tbd)", have):
+                found = next((flat(r.get("ruct_code")) for r in recs
+                              if re.search(r"\d{6,}", flat(r.get("ruct_code")))), "")
+                if found:
+                    rec["ruct_code"] = found
         else:
             for c in NEW_COLS:
                 rec[c] = ""

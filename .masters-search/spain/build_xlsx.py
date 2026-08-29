@@ -24,6 +24,9 @@ SOURCES = [
     ("programmes.csv",     "Programmes",   "Every enriched + verified programme, full schema"),
     ("funding.csv",        "Funding",      "Funding sources with the Tunisian-eligibility verdict"),
     ("spring-intakes.csv", "Spring intakes","Every programme checked for a Jan-Jun cohort start"),
+    ("spring-intakes-enriched.csv", "Spring enriched",
+     "Confirmed spring-intake programmes with place, awarding university, "
+     "public/private, fees and European recognition"),
 ]
 EXTRA = [("wave3/regional-fee-policy.jsonl", "Regional fees", "Non-EU tuition treatment per autonomous community")]
 
