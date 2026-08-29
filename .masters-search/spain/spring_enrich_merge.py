@@ -90,7 +90,9 @@ def load_inputs():
 
 def load_enrichment():
     recs, dupes = [], []
-    for path in sorted(glob.glob(os.path.join(ENRICH, "batch-*.jsonl"))):
+    paths = (glob.glob(os.path.join(ENRICH, "batch-*.jsonl")) +
+             glob.glob(os.path.join(ENRICH, "gap-*.jsonl")))
+    for path in sorted(paths):
         if path.endswith("-input.jsonl"):
             continue
         for n, line in enumerate(open(path, encoding="utf-8"), 1):
