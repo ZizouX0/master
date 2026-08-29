@@ -106,6 +106,27 @@ def load_enrichment():
     return recs, dupes
 
 
+def head(name):
+    """The institution's name, before the description that follows it.
+
+    Both passes wrote 'EUDE Business School' and then went their own way --
+    '..., Madrid -- private business school' against '... (Escuela Europea de
+    Direccion y Empresa)'. Neither string is a prefix of the other and they
+    share too few trigrams to pass, so the name they agree on has to be cut out
+    before comparing."""
+    return fold(re.split(r"[,(\u2014\u2013|]", name or "")[0])
+
+
+def segments(name):
+    """A programme name, plus each side of any '/' it is written across."""
+    # Split on the separators agents actually used to join two names: a slash
+    # between languages, an em dash after an acronym ("MASTEAM -- Master's
+    # degree in ..."), a colon before a subtitle.
+    parts = [name] + [p for p in re.split(r"\s*[/\u2014:]\s*", name or "")
+                      if len(p.strip()) > 8]
+    return [fold(p) for p in parts if fold(p)]
+
+
 def resolve(bridge, inst, prog, floor=0.55):
     """Best batch key for a free-text (institution, programme) pair, or None.
 
@@ -117,14 +138,23 @@ def resolve(bridge, inst, prog, floor=0.55):
     two different keys, which is the quiet way to lose data."""
     inst, prog = fold(inst), fold(prog)
     best, score = None, 0.0
-    for (ci, cp), raws in bridge.items():
-        names = [ci] + [fold(r) for r in raws if r]
+    for key, val in bridge.items():
+        ci, cp = key
+        if isinstance(val, tuple):
+            names, progs = val
+        else:
+            names, progs = [ci] + [fold(r) for r in val if r], [cp]
         # Institution match is SCORED, never boolean, and the two scores are
         # multiplied. Three different universities each run a "Master
         # Universitario en Ciberseguridad": on programme name alone all three
         # score 1.0, so whichever key the dict happened to yield first won and
         # the other two universities' masters were silently absorbed into it.
         isc = 0.0
+        hi = head(inst)
+        for n in list(names) + [head(x) for x in names]:
+            if hi and n and (hi == n or hi.startswith(n) or n.startswith(hi)) \
+               and min(len(hi), len(n)) >= 8:
+                isc = max(isc, 0.9)
         for n in names:
             if inst == n:
                 isc = max(isc, 1.0)
@@ -139,10 +169,19 @@ def resolve(bridge, inst, prog, floor=0.55):
                     isc = max(isc, 0.45)
         if isc < 0.45:
             continue
-        if cp == prog or cp.startswith(prog) or prog.startswith(cp):
-            psc = 1.0
-        else:
-            psc = similar(cp, prog)
+        # Many UPC rows carry the degree under both names at once --
+        # "Master Universitari en Enginyeria Electronica / Master's degree in
+        # Electronic Engineering". Trigrams cannot bridge Catalan to English
+        # (they share almost no letters), but the slash already tells us these
+        # are the same degree, so score each side and keep the better.
+        psc = 0.0
+        cands = [x for pn in progs for x in segments(pn)]
+        for a in segments(prog):
+            for c in cands:
+                if a == c or c.startswith(a) or a.startswith(c):
+                    psc = 1.0
+                else:
+                    psc = max(psc, similar(c, a))
         if psc * isc > score:
             best, score = (ci, cp), psc * isc
     return best if score >= floor * 0.45 else None
@@ -162,9 +201,6 @@ def main():
             enr[key] = r
     print("batch inputs: %d  enrichment records: %d  duplicate keys: %d"
           % (len(bridge), len(enr), len(dupes)))
-    for r in orphan_enr:
-        print("  ! enrichment record matched no batch key: %s / %s"
-              % (r.get("institution", "")[:40], r.get("programme_name", "")[:55]))
 
     with open(SPRING, encoding="utf-8") as fh:
         rows = list(csv.DictReader(fh))
@@ -182,6 +218,35 @@ def main():
         by_key.setdefault(hit, []).append(row)
 
     unmatched = by_key.pop(None, [])
+
+    # Widen the bridge with the strings the spring sweep itself used, then run
+    # the enrichment records through again. The batch inputs were meant to be
+    # the bridge, but they carry only ONE spelling per programme; an agent that
+    # echoed the sweep's wording instead of the batch's had nothing to match on
+    # and its whole record -- fees, campus, recognition -- fell out silently.
+    wide = {}
+    for key, group in by_key.items():
+        raws = bridge.get(key, [])
+        # Store the head alongside the full string: fold() strips the commas and
+        # dashes head() cuts on, so a head computed later inside resolve() would
+        # be a no-op on an already-folded name.
+        insts = {key[0]} | {fold(r) for r in raws if r} | {head(r) for r in raws if r} \
+                | {fold(g["institution"]) for g in group} \
+                | {head(g["institution"]) for g in group}
+        progs = {key[1]} | {g["programme_name"] for g in group}
+        wide[key] = (sorted(i for i in insts if i), sorted(progs))
+    recovered = 0
+    for r in list(orphan_enr):
+        key = resolve(wide, r.get("institution"), r.get("programme_name"))
+        if key and key not in enr:
+            enr[key] = r
+            orphan_enr.remove(r)
+            recovered += 1
+    if recovered:
+        print("  recovered %d enrichment record(s) via spring-row aliases" % recovered)
+    for r in orphan_enr:
+        print("  ! STILL orphaned: %s / %s"
+              % (r.get("institution", "")[:40], r.get("programme_name", "")[:55]))
     print("institution-wide calendar rows held back: %d" % len(calendar))
     for r in calendar:
         print("      ~ %s / %s" % (r["institution"][:40], r["programme_name"][:60]))
