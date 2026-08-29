@@ -142,7 +142,14 @@ path_codes, query_terms). Check it before running your own query — it may alre
 Some institution sites sit behind a Cloudflare JS challenge and return **HTTP 403 to every
 automated fetch** (WebFetch, curl, and a real headless browser alike). Confirmed blocked:
 **www.upf.edu**, **unir.net**, **il3.ub.edu**, **pointblankmusicschool.com**, **imep.es**,
-**www.uclm.es**, **fundacionsgae.org**.
+**www.uclm.es**, **fundacionsgae.org**, **www.techtitute.com** (Cloudflare managed
+challenge, 403 to WebFetch and to curl with a browser UA).
+
+⚠️ **The 202-then-200 pattern is commoner than it looks, and it goes both ways.**
+`ucjc.edu` and `urjc.es` return a small shell first and the full body on retry. `nuclio.school`
+does the reverse — the FIRST curl with a browser UA returned 200 and 285KB, the RETRY a
+193-byte shell. **Always try twice before recording a block, and treat a small body as a
+challenge rather than an answer.** `iqs.edu` needs `curl --cacert /root/.ccr/ca-bundle.crt`.
 
 ⚠️ **A blocked main domain does not mean a blocked institution — check subdomains first.**
 Two verified cases: `www.uclm.es` genuinely 403s, but **`esi.uclm.es`** (which hosts the Big
