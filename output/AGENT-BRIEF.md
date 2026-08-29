@@ -168,7 +168,20 @@ shell, and a **retry with a browser User-Agent returns 200 with the full body**.
 returns empty for them; `curl` with a UA works. **Retry before you record a block** —
 a 202 shell is a challenge, not a wall.
 
-⚠️ **`www.unir.net` is blocked but `static.unir.net` is NOT** — UNIR's official programme
+⚠️ **CORRECTION — `www.unir.net` IS reachable.** Earlier passes recorded it as blocked on
+the strength of a 403 to WebFetch and to curl with a bare User-Agent. It returns **200 to
+curl with a COMPLETE browser header set** — the `Sec-Ch-Ua-*` and `Sec-Fetch-*` headers are
+what get through; a UA alone is not enough. Any UNIR fact tagged
+`source_access: search index` should be re-sourced directly.
+
+⚠️ **CORRECTION — UNIR DOES run a September intake.** This brief previously said it had
+none, and that was wrong: "Inicio 28 sep 2026" appears on its IA and Ciberseguridad pages,
+and four of its calendar PDFs are named "Septiembre 2026". UNIR names each cohort by month
+with a PER code and publishes a full-year calendar at
+`static.unir.net/CalendariosST/Nac/{Actual,Siguiente}/<slug>.pdf` — use those, they are
+definitive.
+
+**Still true: `static.unir.net` serves the brochures** — UNIR's official programme
 brochures are served there and fetch fine, which makes ECTS, modality, plan de estudios and
 access rules primary-sourced rather than index-sourced. Try it before giving up on UNIR.
 
