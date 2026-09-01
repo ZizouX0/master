@@ -90,3 +90,99 @@ exactly what a Spanish consulate file needs:
 > *"¿Podrían confirmarme el periodo previsto de preinscripción para el curso 2027/28, y si el
 > programa seguirá impartiéndose íntegramente de forma presencial, indicando las horas lectivas
 > semanales?"*
+
+---
+
+## 🇪🇸 Spanish-taught public — and the cheapest real degrees in Spain
+
+Andalusian tuition is **€12.62/credit** for a *máster habilitante* (verified, Decreto 98/2023
+extended to 2026/27). That is **≈ €1,136 for a whole 90-ECTS engineering master's** — an
+official Spanish degree for less than one month at Berklee.
+
+### ⏰ The date everything hinges on
+
+Seven of the nine programmes below are in Andalucía, where **the university does not handle
+admission** — it runs through the **Distrito Único Andaluz (DUA)**. And the DUA calendar has a
+phase built for exactly your situation:
+
+> **Fase 1 — reserved for foreign, non-homologated degrees.**
+> 2026/27 dates: **13–29 January 2026.** Adjudications 19 Feb / 12 Mar / 9 Apr.
+> (Fase 2, general, 17–26 June. Fase 3, 8–15 September.)
+
+For a 2027/28 start that means **applying in late January 2027, from Spain, in the middle of
+your language year.** Miss it and you compete in June against EU applicants — a much worse
+position, and it leaves almost no time for a visa appointment. **One application lists up to
+six masters by preference**, so a single January submission can cover your whole Andalusian
+shortlist.
+
+⚠️ **The cost trap:** winning a Fase 1 place requires **€400 prematrícula** to hold it, months
+before enrolment. It is deducted from tuition — but **no refund rule was found if the visa is
+refused.** Ask that in writing before you pay: *"¿Se reembolsa la prematrícula si se deniega el
+visado de estudios?"*
+
+### Programmes that pass the presencial test
+
+| University / city | Programme | Contact — verbatim | ECTS | Tuition |
+|---|---|---|---|---|
+| **U. de Málaga** | MU en Ingeniería Informática | **`mastermuii@uma.es`** (coord.)<br>`acceso_master@uma.es`<br>`secretariaetsii@uma.es` | 90 | ≈ **€1,136** |
+| **U. de Jaén** | MU en Ingeniería Informática | **`cogayar@ujaen.es`** (coord.)<br>`info@ujaen.es` | 90 | ≈ **€1,136** |
+| **U. de Almería** | MU en Ingeniería Informática | **`javi.criado@ual.es`** (coord.)<br>`rmayala@ual.es` | 90 | ≈ **€1,136** |
+| **U. de Granada** | MU en Ingeniería Informática | ⚠️ No coordinator email published — form only. Use **`epinternacional@ugr.es`** | 90 | ≈ **€1,136** |
+| **U. de Sevilla** | MU en Ingeniería del Software: Cloud, Datos y Gestión de las TI | ⚠️ None programme-specific. Use **`accesomaster@us.es`**, `master1@us.es` | 60 | ≈ **€821** |
+| **U. de Sevilla** | MU en Lógica, Computación e Inteligencia Artificial | Same — **`accesomaster@us.es`** | 60 | ≈ **€821** |
+| **U. de Córdoba** | MU en Inteligencia Computacional e Internet de las Cosas | ⚠️ Coordinator email JavaScript-gated. Phone **957 21 10 32** | 60 | ≈ **€821** |
+| **U. de Valladolid** | MU en Ingeniería Informática **(presencial)** | **`master.ing.informatica@uva.es`**<br>`seccion.posgrado@uva.es` | 90 | ≈ €1,470 ⚠️ unconfirmed |
+| **U. de Extremadura**, Cáceres | MU en Ingeniería Informática | ⚠️ `secretaria_epcc@unex.es` — **from a search index, not verified**; the site returned 503 every attempt. **Load the page before writing** | 90 | ≈ €24.94/ECTS ⚠️ |
+
+**In Andalucía, email two addresses:** the **coordinator** (academic fit, syllabus, Spanish
+level) *and* the **acceso/posgrado office** (`accesomaster@us.es`, `acceso_master@uma.es`, …).
+The coordinator cannot issue an admission — the DUA does. For a visa file you need both voices.
+
+### ❌ Do not email these — they fail the presencial test
+
+| University | Programme | Why |
+|---|---|---|
+| **U. de Sevilla** | MU Ingeniería Informática | Delivered **"a distancia"** — carries the non-presencial seal |
+| **U. de Alicante** | MU Ingeniería Informática | **"Semipresencial"** |
+| **U. de Salamanca** | MU Ingeniería Informática | **"Semipresencial"** — in person only Friday PM + Saturday AM |
+| **U. de Murcia** | Ing. del Software · Ciberseguridad · IA · Big Data | All four **"Virtual Síncrona"**. Murcia has no presencial computing master |
+| **U. de Zaragoza** | MU Ingeniería Informática | **"En extinción desde el curso 2026-27"** — will not admit for 2027/28 |
+| **U. Miguel Hernández** | — | No official computing master found |
+
+### Three things this tier tells you
+
+1. **Granada requires B2 Spanish (MCER) from applicants from non-Spanish-speaking countries.**
+   That is your plan, stated back to you as an entry requirement. It also means the language
+   year isn't a detour you have to justify — it is the documented prerequisite. Ask each
+   university which certificate it accepts (DELE vs SIELE), since sittings are infrequent.
+2. **In Andalucía there is no separate equivalence fee** — the level check is inside DUA Fase 1.
+   You will need: transcript with grades and credits, a certificate stating the minimum pass
+   mark and maximum possible mark, proof the degree allows postgraduate study **in Tunisia**,
+   all officially translated into Spanish. Valladolid instead runs a separate *comprobación de
+   nivel*, resolved within **3 months** by law, requiring **≥6 semesters** of study.
+3. **Zaragoza is the only university found that charges non-EU students a higher rate.** No
+   such surcharge appears anywhere in Andalucía, Castilla y León or Extremadura. Outside
+   Andalucía, ask.
+
+### Where to actually live
+
+| City | Cost | Verdict |
+|---|---|---|
+| **Jaén** | Room **€120–200/month** — cheapest in Spain | Smallest city and smallest programme, but it has a published coordinator email |
+| **Granada** | **€550–850/month** all-in; rooms €200–350 | **Best balance.** Cheap, huge student population, 50 places |
+| **Almería** | €450–500/month total | Least-verified of the Andalusian rows |
+| **Cáceres** | Among Spain's cheapest capitals | Thin services; and the university's site is unreliable |
+| **Málaga** | **≈€950/month** | Excellent programme, best-published contacts — but rents undercut the whole budget case |
+
+**Cost-adjusted winner: Granada, with Jaén as the cheaper alternative.** An official 90-ECTS
+Spanish engineering master's for ≈€1,136 in tuition and €550–850/month to live is a completely
+different proposition from anything in the music files.
+
+### ⚠️ Verify before writing
+
+- **UNEX (Cáceres)** returned HTTP 503 on every attempt. Its emails come from a search index,
+  not a page. **Load the page first.**
+- **UAL (Almería)** renders from JavaScript templates; sources disagreed on the coordinator and
+  place count. Least-verified Andalusian row.
+- **UGR, UCO and both Sevilla programmes deliberately publish no coordinator email.** That is
+  policy, not an oversight — the posgrado/acceso offices are the correct addressees.
