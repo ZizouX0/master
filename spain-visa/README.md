@@ -68,6 +68,7 @@ pre-admission correspondence you actually have, wherever it is from.
 | 2b | **Which universities to write to** — ranked by who replies and who says yes | — | [`06`](./06-donde-escribir-primero.md) |
 | 2c | **Are they your subject, and are they real degrees?** — the *título propio* question | — | [`07`](./07-son-masters-de-verdad.md) |
 | 2d | **⭐ A master's in software engineering instead** — official degree, no seam in the story, and your BSc is the entry requirement | — | [`08`](./08-master-en-tu-campo.md) |
+| 2e | **Send list, tracker and the final email** — the discipline that makes a correspondence file usable | — | [`09`](./09-lista-de-envio.md) |
 | 3 | **Carta de motivación y plan de estudios** — the itinerary in your own words | **You** | [`03`](./03-plan-de-estudios.md) |
 | 4 | Everything else — means, insurance, penales, médico | You / bank / clinic | [`04`](./04-checklist-visado.md) |
 
