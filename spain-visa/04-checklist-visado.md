@@ -12,7 +12,7 @@
 | ☐ | **Passport** — valid for the whole stay, 2 blank pages, issued within the last 10 years | Renew now if it expires within ~15 months |
 | ☐ | **Photo** — recent, white background, passport format | |
 | ☐ | **Carta de admisión** from the language school | Must state **≥20 h/week, presencial**, dates, fees paid → template [`02`](./02-email-escuela-idiomas.md) |
-| ☐ | **Master's pre-admission / correspondence** | Supporting, not required — but it is what makes the itinerary credible → template [`01`](./01-email-preadmision-master.md) |
+| ☐ | **Correspondence with a university about the master's** | Supporting, not required — but it is what makes the itinerary credible → template [`05`](./05-correspondencia-universidad.md) |
 | ☐ | **Carta de motivación y plan de estudios** | Signed, dated, Spanish → template [`03`](./03-plan-de-estudios.md) |
 | ☐ | **Medios económicos** — ~**€600/month** (IPREM 2026, frozen) × months of stay ≈ **€7,200/year** | Bank statements over **6+ months**, not a fresh balance. If a parent sponsors you: notarised undertaking + their bank statements + proof of relationship |
 | ☐ | **Seguro médico** — private, full cover, valid in Spain, **no co-payments, no waiting period, no cap** | Travel insurance is refused. Ask the insurer for a certificate that uses those exact words |

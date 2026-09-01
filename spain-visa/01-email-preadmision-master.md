@@ -11,6 +11,8 @@ strength:
 | ★★ | A signed reply from the **international office** confirming your profile is eligible and inviting you to apply for the 2027/28 intake | Email A |
 | ★ | A plain email thread with an admissions officer at an `@university.es` address | Any reply at all |
 
+> ⚡ **Only want the exchange, not an application?** Go to [`05`](./05-correspondencia-universidad.md) instead — a two-question email that gets replies, and how to file the replies as evidence. This file is the long form, for when you are really applying.
+
 Even the last one is worth having: it is a documented exchange with the institution, which is
 exactly what turns "I hope to do a master's" into "I am already in contact about one".
 
