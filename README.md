@@ -42,6 +42,7 @@ music business** (goal: international DJ and producer), **September 2027 intake*
 
 | File | What it is |
 |---|---|
+| 🇪🇸 **[spain-visa/](./spain-visa)** *(reads here)* | **The Spain study-visa folder.** How the "Spanish language year → master's" itinerary is evidenced: the emails that get a real pre-admission out of a university and a compliant *carta de admisión* out of a language school, the *carta de motivación y plan de estudios* you sign yourself, and the full dossier checklist for filing in Tunis. Includes the contact-hours trap that decides the second permission |
 | 🗓️ **[ACTION-TIMELINE.md](./results/ACTION-TIMELINE.md)** *(reads here)* · [PDF](./results/pdf/ACTION-TIMELINE.pdf) | Month-by-month plan from now to September 2027 |
 | ⭐ **[SHORTLIST.md](./results/SHORTLIST.md)** *(reads here)* · [PDF](./results/pdf/SHORTLIST.pdf) | The earlier ranked shortlist with study locations — short and opinionated rather than a database |
 | ❓ **[COULD-NOT-VERIFY.md](./results/COULD-NOT-VERIFY.md)** *(reads here)* · [PDF](./results/pdf/COULD-NOT-VERIFY.pdf) | Everything that could **not** be confirmed, listed openly. Read before relying on any single number |
