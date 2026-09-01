@@ -78,12 +78,12 @@ Granada and Salamanca are considerably cheaper to live in than Madrid or Barcelo
 
 ### 🏢 C. Private, rolling admission, easiest to reach
 
-Same "easy to contact and accept" logic as [`06`](./06-donde-escribir-primero.md), but now with
-**official** degrees: **U-tad** (Las Rozas, Madrid), **Universidad Europea**, **UAX**,
-**Nebrija**, **UCAM**. They reply fast and admit on rolling cycles.
-
-⚠️ **UFV** publishes an **€80 entrance exam** for computing admissions — fine, but know it
-before you start.
+> ⛔ **This list was wrong and is corrected in [`10`](./10-contactos-verificados.md).** Most
+> private universities have **no official presencial computing master at all** — UAX, UFV, UCAM,
+> UIC and UPSA are online or *formación permanente* throughout, and U-tad's two computing
+> officials are online. The ones that actually work are **UNIE**, **Mondragon**, **Comillas
+> ICAI** and **Deusto**. And the €80 UFV entrance exam I mentioned is a *grado* fee, not a
+> postgraduate one.
 
 ---
 

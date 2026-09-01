@@ -284,3 +284,83 @@ Ranked, worst to best, for a study-permit file:
 `coordinador.macustica@upm.es` (UPM renders the `@` as an image; the same address appears in
 plain text on upm.es, so it is confirmed twice) and `master.infgrafica@urjc.es` (split across
 nested HTML attributes that reassemble). Neither was guessed.
+
+---
+
+## 🏢 Private universities — and a list of traps
+
+I said earlier that the private tier was the easy one. For **computing**, most of it turns out
+to be unusable, and the reasons are not visible from the marketing. Read the traps first.
+
+### ✅ The ones that work
+
+| University | Programme | Contact — verified | Mode | Cost | Cycle |
+|---|---|---|---|---|---|
+| **UNIE** (Madrid, C/ Arapiles) | MU en **Ciberseguridad** (**RUCT 3500240**); also Ciencia de Datos e Inteligencia de Negocio | **`admisiones@universidadunie.com`**<br>**+34 919 032 201** | **Presencial** | Not published (3rd-party €6–7k) | **Rolling**, 75 places |
+| **Mondragon Unibertsitatea** (Bilbao) | MU en **Análisis de Datos, Ciberseguridad y Computación en la Nube** | **`masteruni.ing@mondragon.edu`**<br>+34 664 298 704 · `info@mondragon.edu` | **Presencial**, ES+EN | ≈€10,920/yr ⚠️ unverified | 30 places |
+| **Comillas ICAI** (Madrid) | MU en **Big Data** | **`futurosalumnos@comillas.edu`**<br>+34 91 540 61 32 | **Presencial** | **€15,301.80** *(published)* | Fixed calls, start 01/09 |
+| **Deusto** (Bilbao) | MU en **Ingeniería Informática**; MU en Computación y Sistemas Inteligentes | **`postgrado.ingenieria@deusto.es`**<br>+34 944 139 208 | **Presencial** | Not published | ⚠️ MUCSI showed *"proceso de ingreso cerrado"* |
+| **Universidad Europea** | MU en **Ciberseguridad** (**RUCT 4310691**) | ⚠️ No email on the programme page. `postgrado@universidadeuropea.es` · +34 91 825 75 03 | **Presencial**, Alcobendas | Not published | Rolling, Oct start |
+| **La Salle – URL** | MU en **Inteligencia Artificial** (English) | `susana.espinawebb@salle.url.edu` · +34 937 372 090 | ⚠️ *"Tardes entre semana con alguna sesión en línea"* | Not published | 19/10, 60 places |
+
+**Best curricular match to your degree: Mondragon.** **Fastest reply: UNIE.** **Best-documented
+fees: Comillas** — the only one publishing a real total.
+
+### 🚨 The traps
+
+**1. Universidad Europea's "Máster en Inteligencia Artificial" is a *título propio*** — its own
+page says so verbatim — while its **Ciberseguridad and Big Data masters on the same site are
+genuinely official.** Same university, same look, different legal status. This is the most
+dangerous item on your shortlist. Always check for the RUCT code.
+
+**2. Whole universities with nothing usable in computing:**
+
+| University | What's actually there |
+|---|---|
+| **UAX** | **Every** computing master is online — including the Málaga cybersecurity one, sold as *"online with mandatory in-person examinations"*. Exams do not make a programme presencial |
+| **UFV** | **No official computing master at all.** Its data/AI masters are *Formación Permanente*. Its only official one is Bioinformática, which needs a Science/Health degree |
+| **UCAM Murcia** | No official presencial computing master. Cyber/AI are *Formación Permanente* or online partner programmes |
+| **UIC Barcelona** | Everything data/AI/bioinformatics is *Formación Permanente* |
+| **UPSA** | Its computing official master is **100% online** |
+| **U-tad** | Both computing officials are **online**. Only Computación Gráfica/VR is presencial *(see the bridge section above)* |
+
+**3. Weekend and evening timetables that fail the full-time test:**
+
+- **UEM Big Data** — *"Horario en fin de semana que permite compatibilizar tu actividad laboral"*.
+  Weekend-only, explicitly built for people who work. High rejection risk.
+- **La Salle Cybersecurity (propio)** and **AI for Business Management** — Mon–Thu 19:00–22:00,
+  12 h/week.
+- **La Salle MU Ciberseguridad e Infraestructuras Críticas** — *"Online y algunos sábados
+  presenciales"*. Semipresencial.
+
+**4. Comillas' *Inteligencia Artificial Aplicada* is marked *"Pendiente de verificación por
+ANECA"*** — not yet an official degree. Its **Big Data** master is fine.
+
+**5. Mondragon's Applied AI master is DUAL** — a paid company placement (≈€761–1,125/month).
+Financially attractive, but the work component changes the permit analysis. Ask explicitly
+whether a non-EU student on an *estancia por estudios* can take the dual track.
+
+### ✏️ Two corrections to what I told you in [`08`](./08-master-en-tu-campo.md)
+
+1. **The €80 UFV entrance exam is a *grado* fee, not a postgraduate one.** The postgraduate
+   process lists documents only — application, CV, motivation letter, two references, ID, photo
+   — with no test fee. I overstated it.
+2. **UFV, UAX, UCAM and Nebrija should come off that "private, rolling, easiest to reach" list
+   for computing.** None has an official presencial computing master. Nebrija's only official
+   presencial one is *Análisis de la Inteligencia y Ciberinteligencia* (€11,900) — intelligence
+   analysis, not computing. **UNIE, Mondragon, Comillas and Deusto replace them.**
+
+### Ask every private university these four things
+
+Private marketing blurs exactly the distinctions your visa depends on, so make the questions
+explicit:
+
+> 1. *"¿Es el título un Máster Universitario oficial? ¿Pueden indicarme su código RUCT?"*
+> 2. *"¿Cuál es la modalidad, el horario y el número de horas lectivas semanales presenciales?"*
+> 3. *"¿Emiten carta de admisión válida para el visado de estudios?"*
+> 4. *"¿Qué requisitos aplican a un título de ingeniería tunecino: apostilla, traducción jurada,
+>    y homologación o únicamente equivalencia de nivel?"*
+
+**U-tad, Universidad Europea and Comillas each state on their own pages that they issue the
+admission letter needed for a visa.** Mondragon, Deusto, UNIE, La Salle and Nebrija say nothing
+about it — so ask them question 3 first.
