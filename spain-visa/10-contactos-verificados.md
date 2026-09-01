@@ -434,3 +434,81 @@ no non-EU surcharge. León ≈€1,572 with 30 places, La Rioja €1,476.60, UPN
 engineering among them. That would mean full ministerial homologation, which takes many months,
 rather than a simple equivalence check. Its **Machine Learning** master is not habilitante, so
 that one is clean. Only matters if you go beyond correspondence.
+
+---
+
+## 🏙️ Madrid and Catalonia — eighteen more
+
+| University | Programme | Contact — verbatim | Language |
+|---|---|---|---|
+| **UCM** Madrid | MU en Ingeniería Informática | **`emartinm@ucm.es`** (coordinador) | ES |
+| **UCM** | MU en Inteligencia Artificial | **`belend@ucm.es`** · cc `pedro@sip.ucm.es` | ES |
+| **UCM** | MU en Internet de las Cosas | `figual@ucm.es` | ES |
+| **UCM** | MU en Métodos Formales en Ingeniería Informática | `alberu04@ucm.es` | **English** |
+| **UCM** | MU en Ciencia de Datos e Inteligencia de Negocios | `jportela@estad.ucm.es` | ES |
+| **UAM** Madrid | MU en Ciencia de Datos | **`master.ciencia.datos@uam.es`** | ES |
+| **UAM** | MU en Inteligencia Artificial | `alicia.lozano@uam.es` | ES |
+| **UAM** | MU en **Deep Learning for Audio and Visual AI** | `coordinador.master.dl4avs@uam.es` | **English** |
+| **UAM** | MU en Sistemas Interactivos Inteligentes | `coordinador.master.sii@uam.es` | ES |
+| **UAM** | MU en Computación Cuántica | `coordinador.master.computacion.cuantica@uam.es` | ES |
+| **UAM** | Erasmus Mundus **IPCV** (image processing & computer vision) | `informacion.master.ipcv@uam.es` | **English** |
+| **UAH** Alcalá | MU en Ciberseguridad (M179) | `enrique.delahoz@uah.es` | ES |
+| **UAB** Barcelona | Màster en **Computer Vision** | **`m.computer.vision@uab.cat`** | **English** |
+| **UAB** | Research and Innovation in Computer based Science and Engineering | `coordinacio.master.ricse@uab.cat` | **English** |
+| **UAB** | Modelling for Science and Engineering | no programme address → `ga.ciencies@uab.cat` | **English** |
+| **UdG** Girona | Màster en Ciència de Dades | `coord.mcd@udg.edu` | CA/ES/EN |
+| **UdG** | Màster en **Medical Image Computing** | `coord.mic@udg.edu` | **English (100%)** |
+| **UdL** Lleida | Màster en Enginyeria Informàtica | `eps.coordmeinf@udl.cat` | **English** |
+
+**Office fallbacks, all published:** `admisionmasteres@ucm.es` · `nivelformacionmaster@ucm.es` ·
+`posgrado.oficial@uam.es` · `gestionmaster.eps@uam.es` · `master.universitario@uah.es` ·
+`ga.masters.enginyeria@uab.cat` · `masters@udg.edu`
+
+### ✅ A note on how these addresses were checked
+
+During this search a summarising step produced a **plausible-looking UAM address that does not
+exist on the page** (`informacion.master.ing.inf@uam.es`). It was caught by re-reading the raw
+HTML and excluded. Every address above was taken from the page source, not from a summary.
+
+**This is exactly why nothing here is ever guessed.** A constructed address looks completely
+normal and bounces silently — and a bounced email is worse than no email, because you think you
+are waiting for a reply that will never come.
+
+### ❌ Fails the presencial test
+
+**UAH** runs four semipresencial or distance masters — *Analítica de Negocio y Big Data*,
+*Desarrollo Ágil de Software para la Web*, *Dirección de Proyectos Informáticos* (~80% virtual)
+and *IA para el Sector de la Energía* (a distancia). **UdG's Sistemes Robòtics Intel·ligents is
+"Modalitat Mixta."** UAB's *Enginyeria Informàtica* is **suppressed**; MISTIC is UOC-led and
+online.
+
+⚠️ **UAM's Ingeniería Informática — the natural fit for your degree — is closed to new entrants
+in 2026/27.** Its own notice says so. Worth asking `gestionmaster.eps@uam.es` whether it reopens
+for 2027/28.
+
+### ⏰ One deadline that closes early
+
+**UdG closes non-EU applications three months before everyone else** — *"Tancament anticipat per
+a estudiants extracomunitaris: 14 de juny"*, against 15 September for the general pool. If Girona
+ever matters to you, that is the date.
+
+### 💰 The Madrid surcharge, and why a student visa doesn't help
+
+Only relevant if you ever enrol — but it is severe, and the reasoning is worth knowing.
+**Decreto 43/2022** makes Madrid's public universities charge non-EU non-resident students the
+**fourth-enrolment rate** for *másteres habilitantes*. And it says explicitly that
+
+> *"la autorización de estancia … no equivaldrá a la condición de residentes"* —
+> **a student visa does not make you a resident.**
+
+So UCM's Ingeniería Informática goes from €19.43 to **€154.80/ECTS ≈ €13,932**, and UAM prints
+€2,736 for EU students against **€5,079** for you. UdG's page carries the same wording.
+Catalonia sets its surcharge **per university and per programme** — three UAB masters charge
+€66, €75 and €82 per credit — so never quote one UAB figure for another.
+
+### Two universities nobody could read
+
+**UB** and **UPF** sit behind a bot challenge that blocks all automated access. Search results
+suggest UB runs a *Màster en Fonaments de la Ciència de Dades* and UPF the *Intelligent
+Interactive Systems* and *Sound and Music Computing* masters — but **no address, mode or fee for
+either is confirmed here**, and none is invented. Open them in a normal browser if you want them.
