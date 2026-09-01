@@ -63,7 +63,7 @@ pre-admission correspondence you actually have, wherever it is from.
 
 | # | Document | Who issues it | Template |
 |---|---|---|---|
-| 1 | **Carta de admisión** for the Spanish course — dates, ≥20 h/week, presencial, fees paid | The language school | [`02`](./02-email-escuela-idiomas.md) — asks for it **with the exact wording** |
+| 1 | **Carta de admisión** for the Spanish course — dates, ≥20 h/week, presencial, fees paid | The language school | **[`12`](./12-escuelas-de-idiomas.md) — verified schools, prices and the 45-minute-hour trap.** [`02`](./02-email-escuela-idiomas.md) has the letter wording |
 | 2 | **Documented correspondence with a university about the master's** — or pre-admission, if you can get it | The university | **[`05`](./05-correspondencia-universidad.md) — the short email that actually gets replies.** [`01`](./01-email-preadmision-master.md) is the thorough version |
 | 2b | **Which universities to write to** — ranked by who replies and who says yes | — | [`06`](./06-donde-escribir-primero.md) |
 | 2c | **Are they your subject, and are they real degrees?** — the *título propio* question | — | [`07`](./07-son-masters-de-verdad.md) |
