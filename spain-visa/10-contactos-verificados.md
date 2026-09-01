@@ -364,3 +364,73 @@ explicit:
 **U-tad, Universidad Europea and Comillas each state on their own pages that they issue the
 admission letter needed for a visa.** Mondragon, Deusto, UNIE, La Salle and Nebrija say nothing
 about it — so ask them question 3 first.
+
+---
+
+## 🧭 Northern Spain — twenty more, mostly with named academics
+
+The best tier for correspondence: many of these publish **the coordinator's own address**, so
+your reply comes from a named professor rather than an office. That is the strongest kind of
+thread to file.
+
+| University / city | Programme | Contact — verbatim | Language |
+|---|---|---|---|
+| **UPNA**, Pamplona | MU en **Machine Learning** | **`mikel.galar@unavarra.es`** | **English (B2)** |
+| **UPNA** | MU en Ciberseguridad | `mikel.izal@unavarra.es` | Castellano |
+| **UPNA** | MU en Ingeniería Informática | `unai.perez@unavarra.es` | Castellano |
+| **UPNA** | MU en Comunicaciones Avanzadas y Visión Artificial | `jcarlos.iriarte@unavarra.es` | Castellano |
+| **U. de Oviedo**, Gijón | MU en Ingeniería Informática (RUCT 4312884) | `cabal@uniovi.es` · `estudiantescgijon@uniovi.es` | Castellano |
+| **U. de Oviedo** | MU en Análisis de Datos para la Inteligencia de Negocios | `ameliab@uniovi.es` · `mmontenegro@uniovi.es` | Castellano |
+| **U. de Cantabria**, Santander | MU en Ingeniería Informática (RUCT 4314638) | `ciencias@unican.es` | Español |
+| **U. de Cantabria** + UIMP | MU en Ciencia de Datos | `ciencias@unican.es` · `gestion.academica@unican.es` | Español |
+| **UDC + UVigo** | MU Interuniversitario en **Ciberseguridade** (MUniCS) | `teleco.munics@uvigo.gal` · `secretaria.decanato.fic@udc.gal` | Castelán/Galego |
+| **UDC + USC + UVigo** | MU en **Inteligencia Artificial** (MIA) | `maria.taboada@usc.gal` · `alma@uvigo.gal` | **100% English** |
+| **USC**, Santiago | MU en Tecnologías de Análisis de Datos Masivos: Big Data | `manuel.mucientes@usc.es` | Castellano |
+| **USC + UDC** | MU en Computación de Altas Prestaciones **(Presencial)** | `oscar.garcia@usc.es` | ES/GL/EN · ⚠️ 8 places |
+| **USC + UDC + UVigo + Porto** | MU en **Visión por Computador** | `victor.brea@usc.es` | **English** · ⚠️ 8 places |
+| **UDC + USC + UVigo** | MU en Internet de las Cosas (IoT) | `manel.cotos@usc.es` · `teleco.miot@uvigo.gal` | ES + Galego |
+| **UVigo**, Ourense | MU en Enxeñaría Informática | `alma@uvigo.gal` | Galego/Castelán |
+| **UVigo**, Vigo | MU en Ciberseguridade | `teleco.munics@uvigo.gal` | Castelán/Galego |
+| **U. de León** | MU en Investigación en Ciberseguridad **(presencial)** | `posgrado@unileon.es` | ES + English · 30 places |
+| **U. de La Rioja**, Logroño | MU en Ciencia de Datos y Aprendizaje Automático | `emydur@unirioja.es` | Español |
+| **UDC**, A Coruña | MU en Enxeñaría Informática (MUEI) | `coordinacion.muei.fic@udc.es` · `negociado.fic@udc.es` | ⚠️ modality not published |
+| **UDC** | MU en Bioinformática para Ciencias da Saúde | `coordinacion.master.bioinformatica.fic@udc.es` | ⚠️ modality not published |
+
+> ✍️ **On the `[at]` you may see.** USC publishes addresses as `name [at] usc.es` and UDC as
+> `name[at]udc.es`. That is anti-spam display, not part of the address — the real ones are with
+> `@`, as written above. **MUniCS's own site (munics.es) publishes no address at all**, only a
+> form; use the UVigo or UDC ones instead.
+
+### The three fully English options with no co-official-language risk
+
+**UPNA Machine Learning**, **MIA (Inteligencia Artificial)** and **Visión por Computador**. Several
+Galician programmes are taught partly in *galego*, which is worth knowing before you name one in a
+study plan.
+
+### ❌ More that fail the presencial test
+
+**U. de Burgos has no presencial computing master at all** — both are virtual. **U. de León** and
+**USC (Computación de Altas Prestaciones)** each run an **online twin** of a presencial degree with
+almost the same name: apply to the right one. Oviedo's **MCIS cybersecurity master is online**.
+La Rioja's **656M** is online. Navarra's Big Data master is **weekend-only, in Madrid**. And
+UPV/EHU's **KISA** is described as *semipresencial* — though its site was unreachable, so treat
+that as strongly indicated rather than confirmed.
+
+### 💰 Two regional cost traps — only relevant if you ever enrol
+
+- **Asturias charges non-EU non-residents roughly double, and Tunisia is not exempt while
+  Morocco is.** The uniovi.es footnote lists Morocco among the exempted nationalities; Tunisia is
+  absent. Oviedo therefore costs ≈€4,488 rather than ≈€2,548.
+- **Galicia surcharges by *residence*, not nationality** — €835.80 with Spanish/EU residence
+  against €1,044.60 without. So holding a student TIE may move you to the lower band. Worth one
+  question if you get that far.
+
+For comparison, **Cantabria is the cheapest credible option found anywhere: ≈€1,309 total**, with
+no non-EU surcharge. León ≈€1,572 with 30 places, La Rioja €1,476.60, UPNA ≈€1,701.
+
+### ⚠️ One genuine risk, if you ever apply
+
+**UPNA states that *homologación* IS required for *másteres habilitantes*** — and it names
+engineering among them. That would mean full ministerial homologation, which takes many months,
+rather than a simple equivalence check. Its **Machine Learning** master is not habilitante, so
+that one is clean. Only matters if you go beyond correspondence.
