@@ -186,3 +186,101 @@ different proposition from anything in the music files.
   place count. Least-verified Andalusian row.
 - **UGR, UCO and both Sevilla programmes deliberately publish no coordinator email.** That is
   policy, not an oversight — the posgrado/acceso offices are the correct addressees.
+
+---
+
+## 🎮 The bridge: computing × games, graphics and audio engineering
+
+These are official master's degrees where a software-engineering BSc is the entry profile *and*
+the subject leads toward sound. This is the tier that keeps both halves of your plan alive.
+
+| Programme | Contact — verified | Mode & timetable | Cost (non-EU) | Takes your degree? |
+|---|---|---|---|---|
+| **URJC Móstoles (Madrid)** — MU en **Informática Gráfica, Juegos y Realidad Virtual** | **`master.infgrafica@urjc.es`**<br>Dir. Jorge López Moreno **+34 91 488 81 12** | **"Presencial"**, Móstoles campus | **€84.07/ECTS ≈ €5,044** | ✅✅ **Names it outright** |
+| **UPV Gandia (Valencia)** — MU en **Ingeniería Acústica (MUIA)** | **`masteracustica@posgrado.upv.es`**<br>**+34 962 849 333** | **"Presencial"**, Gandia | **€70.68/ECTS = €4,240.80** | ✅ No closed list; *"no existen pruebas de acceso específicas"* |
+| **UPF Barcelona** — Master in **Sound and Music Computing** | ⚠️ **No address findable** — site blocked. Open [upf.edu/web/smc/faq](https://www.upf.edu/web/smc/faq) yourself; PIE line **+34 93 542 22 28** | On campus, Poblenou | ⚠️ **Disputed: €5,750 vs ≈€2,700** | ✅✅ *"The ideal candidate has an undergraduate degree in Computer Science"* |
+| **UPC Barcelona** — MIRI, **Computer Graphics and VR** specialisation | `informacio@fib.upc.edu` | **~20 lecture hours/week, 08:00–15:00** | ≈ €5,400 / 120 ECTS | Canonical route from an informatics BSc |
+| **La Salle – URL** — MSc **Acoustics, Audio and Vibrations** | **`ionamarie.lafont@salle.url.edu`**<br>**`sardor.abdullaev@salle.url.edu`**<br>+34 937 372 082 | ⚠️ **"Weekday afternoons with some online sessions"** | Not published | ⚠️ See correction below |
+| **U-tad Madrid** — MU en Computación Gráfica, RV y Simulación | `sonia.castro@u-tad.com` · `info@u-tad.com` · +34 916 402 811 | Presencial but **Thu 17–22, Fri 16–22, Sat 09–15** ≈ 16 h/wk | Not published | ✅ *"titulados en ingeniería, informática, matemáticas…"* |
+| **Universidad Europea** — MU en Diseño de Videojuegos | ⚠️ **No email** — form only. +34 918 257 554 | ⚠️ **Mon–Thu 18:30–21:30** ≈ 12 h/wk | Not published | ✅ names *Ingeniería Informática* |
+| **UCM Madrid** — Máster de Diseño y Desarrollo de Videojuegos | `mastervj@fdi.ucm.es` · +34 699 418 254 | Presencial | Not published | ✅ programming track wants strong C++ |
+
+### 🥇 URJC is the strongest single fit in this entire search
+
+Official and RUCT-registered (código 6343, re-accredited 2025), unambiguously **presencial**,
+≈€5,044 — and it is the **only programme found anywhere whose published entry criteria name
+your degree outright**:
+
+> *"Las titulaciones específicas que facilitarán el acceso al Máster son las siguientes: Grado
+> en Ingeniería de Computadores; **Grado en Ingeniería Informática**; **Grado en Ingeniería del
+> Software**; Grado en Diseño y Desarrollo de Videojuegos"*
+
+Selection is 66% academic record, 33% CV fit. Real-time engines, VR and interaction are the
+technical substrate game audio sits on — and `master.infgrafica@urjc.es` is a working address.
+
+### 🥈 UPV Gandia — the audio-engineering route, with a phase built for you
+
+Acoustics, psychoacoustics and acoustic signal processing: the engineering half of sound design.
+Official, presencial, **€4,240.80**, no closed degree list, working coordinator address. And:
+
+> **Fase 0 — 17 November to 13 February — is reserved for non-EU international students.**
+
+That window exists for applicants in exactly your position. Diarise it.
+
+### 🥉 UPF Sound and Music Computing — the best content match, and the least verifiable
+
+Audio signal processing, machine learning for music, interactive systems, taught by the Music
+Technology Group, in English, and it explicitly wants computer-science graduates. It should stay
+first on your wish list — but three things are unresolved:
+
+1. **No contact address could be retrieved** — upf.edu blocks automated access. Open the FAQ
+   page in a normal browser and take the address from there yourself.
+2. **The non-EU fee is ambiguous by a factor of two** — €5,750/yr from one source against a
+   Catalan non-EU rate that would imply ≈€2,700. Your proof-of-means must match the acceptance
+   letter, so get the figure in writing.
+3. **The complementary-credits trap.** UPF's own text: 60 ECTS *"plus up to 50 credits of
+   complementary credits… extending the program to two years."* A software engineer with no
+   formal music training is precisely the profile that gets assigned them. **Ask what
+   complements your degree would trigger before applying** — it changes duration, cost and the
+   whole visa file.
+
+### ✏️ A correction on La Salle
+
+I told you earlier its accepted-degree list was closed. The verified wording is softer:
+*"Candidates must hold one of the following **(or similar)** graduate degrees."* Informática is
+still not on the list — but *"or similar"* is a real opening, and Telecommunications Systems
+Engineering and Audiovisual Systems sit adjacent to your degree. So the action changes from
+skip to **ask**, in writing, before spending anything. Two named advisers are published above.
+Also ask for its **RUCT registration number** — the programme is brand new for 2026/27, and a
+consulate will want proof the degree is official.
+
+### ⏱️ Timetable is the real visa risk here — not officiality
+
+Ranked, worst to best, for a study-permit file:
+
+| | Programme | Why |
+|---|---|---|
+| ❌ | **Universidad Europea** | Mon–Thu 18:30–21:30 ≈ **12 h/week, evenings only**. Fails |
+| ❌ | **UPM Ingeniería Acústica** | *"Horario de tarde"*, and the page says the schedule is built for **compatibility with employment**. A consulate reads that as not full-time |
+| ⚠️ | **U-tad** | Thu–Sat ≈ 16 h/week. Better, still an evening/weekend shape |
+| ⚠️ | **La Salle** | *"weekday afternoons with some online sessions"* — a written admission of non-presencial hours |
+| ✅ | **UPV MUIA** and **URJC** | Conventional daytime presencial |
+| ✅✅ | **UPC MIRI** | **~20 contact hours/week, 08:00–15:00** — the strongest full-time evidence anywhere in this search |
+
+### Also checked, and ruled out
+
+- **UCM's game master is explicitly not ANECA-accredited** — its own FAQ says so, deliberately,
+  so it can hire industry teachers. Excellent programme, weaker visa file. Same for **ESAT
+  Valencia** (`info@esat.es`).
+- **ESMUC Barcelona** — its music-technology masters are the school's own degrees, not official,
+  and admission requires a prior degree **in music**. Not a route for you.
+- **UPV's WAVES Erasmus Mundus** (acoustics, English, official) spans several countries —
+  mobility programmes complicate a single-country visa badly. Skip.
+- **UPM's acoustics microsite still advertises the 2024/25 admission window** and its timetable
+  page is broken. Confirm its calendar by email rather than trusting the site.
+
+### Two addresses recovered from anti-spam markup — safe to use
+
+`coordinador.macustica@upm.es` (UPM renders the `@` as an image; the same address appears in
+plain text on upm.es, so it is confirmed twice) and `master.infgrafica@urjc.es` (split across
+nested HTML attributes that reassemble). Neither was guessed.
