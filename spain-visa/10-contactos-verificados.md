@@ -512,3 +512,70 @@ Catalonia sets its surcharge **per university and per programme** — three UAB 
 suggest UB runs a *Màster en Fonaments de la Ciència de Dades* and UPF the *Intelligent
 Interactive Systems* and *Sound and Music Computing* masters — but **no address, mode or fee for
 either is confirmed here**, and none is invented. Open them in a normal browser if you want them.
+
+---
+
+## 🌴 Valencia, Castilla-La Mancha and the islands — the last tier
+
+| University / city | Programme | Contact — verbatim | Language | Cost (non-EU) |
+|---|---|---|---|---|
+| **UJI**, Castellón | Màster en **Sistemes Intel·ligents** (RUCT 4310159) | **`pobil@uji.es`** (coord.) · `study@uji.es` | **English** | ≈ €4,240 |
+| **ULPGC**, Las Palmas | MU en **Sistemas Inteligentes y Aplicaciones Numéricas** (SIANI) | **`master@siani.es`**<br>`jefa.estudios.siani@ulpgc.es`<br>`adm_pct@ulpgc.es` | ES + English | ⭐ **≈ €820** |
+| **UIB**, Palma | Màster en **Sistemes Intel·ligents** (MUSI) | `master@uib.es` | CA/ES + **English (B2)** | ≈ €2,219 |
+| **UV**, València | MU en Ciencia de Datos | `mcd@uv.es` · `etse@uv.es` | ⚠️ **not published — ask** | ≈ €6,361 |
+| **UV**, València | MU en Tecnologías Web, Computación en la Nube y Aplicaciones Móviles | `juan.gutierrez@uv.es` · `etse@uv.es` | ⚠️ **not published — ask** | ≈ €4,240 |
+| **UMH**, Elche | MU en Estadística Computacional y Ciencia de Datos | `landete@umh.es` · `master@umh.es` | Castellano | ≈ €4,240 |
+| **UJI**, Castellón | Màster en Matemàtica Computacional | `sanchis@mat.uji.es` | ⚠️ Catalan/Valencian | — |
+
+### ⭐ ULPGC SIANI — ≈ €820, the cheapest official master's found anywhere
+
+The Canary Islands appear to apply **no non-EU surcharge at all** — masters run at roughly
+€13–14 per credit. That is a fraction of everywhere else in Spain. **But the agent could not
+confirm the absence of a surcharge from the decree itself** (both the ULPGC page and the decree
+PDF returned 403), so treat it as unconfirmed and **make it the first question in that email.**
+
+### ✏️ A correction to [`11`](./11-correo-universal.md)
+
+I wrote a bolt-on line suggesting you ask any Valencian university about a "Fase 0 reserved for
+non-EU applicants." **That was wrong — Fase 0 appears to be unique to UPV.** Every other
+university checked opens one general phase for everybody:
+
+> UMH 16 Mar · UCLM 24 Mar · **UV 30 Mar** · **UJI 15 Apr** · ULPGC 20 Apr · UIB 4 May ·
+> ULL 9 June (a six-day window)
+
+So **UPV Gandia remains your single best lever for an early admission letter.** Everywhere else,
+letters land June–July for an October start — workable, but tight against a consulate
+appointment.
+
+### ❌ Two universities are dead ends — don't spend emails there
+
+**UCLM** runs *all three* of its computing masters **virtual** (Ingeniería Informática,
+Inteligencia Artificial, Big Data y Computación en la Nube — in-person only for the TFM
+defence), and its cybersecurity master is both online *and* a *título propio*. **ULL** has
+nothing but **semipresencial**: Ingeniería Informática, Ciberseguridad, and the double degree
+alike. Neither university has a single fully presencial official computing master.
+
+Also excluded: **UMH's Robótica** is semipresencial, and **UIB's MADM** is discontinued.
+
+### 💰 Three different regional rules, three different answers
+
+| Region | Rule | Effect |
+|---|---|---|
+| **Valencian Community** | **×2.** Decret 195/2025: *"a l'estudiantat estranger que no tinga la condició de resident… se'ls aplicarà 2 vegades els preus establerts"* | €35.34 → **€70.68/credit** at UV, UJI and UMH |
+| **Balearics** | **+30%** | €28.45 → ≈€36.99/credit |
+| **Canary Islands** | **None found** ⚠️ unconfirmed | ≈€13–14/credit |
+
+The Valencian decree is reissued annually, so the 2027/28 figure needs confirming in writing.
+
+### Other notes from this tier
+
+- **UV publishes no language of instruction** for either of its masters. Valencian content is
+  plausible. Make that question one.
+- **The Valencian equivalence study costs €155.22**, non-refundable, and covers up to four master
+  applications. **UIB is the clearest of any university checked**: *"Such students are not
+  required to have their degrees officially recognised by the Spanish education authorities."*
+- **Only UJI publishes RUCT codes** on its own pages. Everyone else, you would have to ask.
+- **UJI's Erasmus Mundus marine-robotics master** involves compulsory cross-border mobility —
+  bad for a single-country visa. Skip.
+- Cheapest bases here: **Castellón** (shared room ≈€250–300) and **Las Palmas**. **Palma has the
+  cheapest tuition but the most expensive housing.**

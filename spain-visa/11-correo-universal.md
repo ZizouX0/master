@@ -87,7 +87,7 @@ Add only what applies. One extra sentence, never a fifth paragraph.
 | If the university is… | Add this line |
 |---|---|
 | **In Andalucía** (Málaga, Granada, Sevilla, Jaén, Almería, Córdoba, Huelva, Cádiz) | *"Entiendo que la admisión se tramita por el Distrito Único Andaluz y que la Fase 1 está reservada a titulaciones extranjeras no homologadas: ¿podrían confirmarme sus fechas para 2027/28 y si la prematrícula de 400 € se reembolsa en caso de denegación del visado?"* |
-| **In the Valencian Community** | *"¿Existe una Fase 0 de preinscripción reservada al estudiantado internacional no comunitario, y cuáles serían sus fechas?"* |
+| **UPV (Valencia) — and only UPV** ⚠️ | *"¿Existe una Fase 0 de preinscripción reservada al estudiantado internacional no comunitario, y cuáles serían sus fechas?"* — **Fase 0 is unique to UPV.** Every other Valencian university opens one general phase for everyone (UV 30 Mar, UJI 15 Apr, UMH 16 Mar), so do not ask them about it. See [`10`](./10-contactos-verificados.md) |
 | **Offering the same degree online too** | *"¿Pueden confirmarme que la admisión sería a la modalidad presencial y que así constaría en la carta de admisión?"* |
 | **Private** | *"¿Se trata de un Máster Universitario oficial? ¿Podrían indicarme su código RUCT?"* |
 | **Evening or weekend timetable** | *"¿Cuántas horas lectivas semanales presenciales computa oficialmente el programa? Mi permiso de estancia por estudios exige un mínimo de 20."* |
