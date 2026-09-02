@@ -110,3 +110,68 @@ verifiable comes back.
 > **And keep it in proportion.** Even the best of these is still supporting evidence. The visa
 > rests on a paid, full-time language-course enrolment — see [`13`](./13-admision-condicional.md)
 > for the consulate's own wording on that.
+
+---
+
+## 🏙️ Madrid — and three that have no form at all
+
+| University | Form | Free? | What comes back |
+|---|---|---|---|
+| **UFV** — [Portal del Candidato](https://ufv.my.site.com/PortalCandidato/s/login/?language=es) | **Real self-service portal** | ✅ **Free** at postgraduate level | **Email decision from the admissions committee within 48/72 hours** |
+| **UAX** — [campus.uax.es/central/solicitud_admision](https://campus.uax.es/central/solicitud_admision) | **Real self-service form**, account created | ✅ Free | *"Los candidatos **preadmitidos recibirán por correo electrónico su carta de admisión**"* — **before any payment** |
+| **Nebrija** — [formulario-admisión-postgrado](https://www.nebrija.com/admision/formulario-admision-postgrado/) | **Real admission form**, lightest of all | ✅ *"free of charge and does not imply any commitment"* | Admissions committee decision, then a *carta de admisión* |
+| **Comillas ICAI** — [solicitar-admision](https://www.comillas.edu/en/applyforadmission/apply-now/) | Real per-programme portal | No fee published | Decision *"in writing, by SMS and email, within a maximum of 15 business days"* + carta de admisión |
+| **UCJC** | PDF form emailed to `admisiones@ucjc.edu` | ❌ **€40** | Committee reply |
+| **IE University** | [my.ie.edu/en/applyuni](https://my.ie.edu/en/applyuni/) | ❌ **€150 non-refundable** — not reviewed until paid | Email decision in ~2 weeks |
+
+### 🥇 UFV is the fastest free named document found anywhere
+
+**48 to 72 hours**, in the university's own words, and postgraduate application is explicitly free.
+Their international FAQ even mentions refunds on **visa denial** — they are used to applicants like
+you. Documents: application, CV, motivation letter, two references, passport, photo, degree and
+transcripts.
+
+### 🥈 UAX sends the letter before you pay — but the documents are the barrier
+
+The *carta de admisión* goes to *preadmitidos* by email **with the payment steps in it**, so the
+letter precedes the money. The obstacle isn't cost — it's that UAX wants a ***compulsada*** degree
+and transcript at application, which for a Tunisian degree means **apostilled and sworn-translated
+into Spanish**. Start those now if you want this route.
+
+### 🥉 Nebrija has the lightest form of all
+
+Name, date of birth, email, nationality, address, ID, current studies, institution — **no uploads,
+no account, no fee.** Ten minutes. ⚠️ One caveat: Nebrija's own international page says the
+acceptance letter it supplies for a visa *"confirms your **official enrollment**"* — so the
+visa-grade letter is tied to enrolling, not to applying.
+
+---
+
+## ✏️ Three corrections to what I told you earlier
+
+1. **UNIE, U-tad and Universidad Europea have no self-service admission form at all.** Everything
+   visible is *"Solicita información"*. UNIE explicitly communicates the result **by telephone**.
+   I listed all three earlier as form options — they aren't. They cost nothing and produce nothing
+   on paper until you are admitted and pay.
+2. **UFV's €80 charge is the undergraduate entrance test only** — postgraduate application is free.
+   That confirms the correction in [`10`](./10-contactos-verificados.md).
+3. **`uie.edu` is not UNIE Madrid.** It is UIE, a different university. Third-party pages conflate
+   them, and the €100 fee and carta-de-admisión wording you may find online belongs to **UIE**, not
+   to UNIE.
+
+---
+
+## ⚠️ The caveat that applies to all of this
+
+**An application acknowledgement is not a *carta de admisión*.** Spanish consulates expect a letter
+evidencing **acceptance**, and at several of these universities that letter is only issued after
+the *reserva de plaza* is paid — €500 at Universidad Europea, unpublished elsewhere.
+
+**Two are documented as issuing a free, named, pre-payment communication: UFV and UAX.** Outside
+Madrid, **UIC Barcelona** and **La Salle** do the same. Those four are where this actually works.
+
+**And no university would let a 2027/28 intake be selected.** UAX states outright that admission is
+valid *"solamente para el curso académico en el que se realiza el proceso."* So anything you obtain
+now refers to **2026/27** — which, as with the Andalusian Fase 3 in [`15`](./15-preinscripcion-publica.md),
+sits awkwardly beside a study plan built on a 2027/28 master's. Worth thinking about before you
+apply: a letter for the wrong year raises the question it was meant to answer.
