@@ -139,3 +139,105 @@ wanted in the first place.
 
 **And start the apostille and the sworn translation of your degree now.** Four to eight weeks, it
 blocks UFV and most public routes, and it is entirely within your control.
+
+---
+
+# The final answer: the CEU family, and one clear winner
+
+A last sweep of the church-affiliated universities and *centros adscritos* turned up a better
+option than anything above.
+
+## 🏆 CEU Cardenal Herrera (Valencia) — the best route found anywhere
+
+**Form:** [admision.uchceu.es](https://admision.uchceu.es/) · **free**
+
+It is the only institution whose own page states in plain words that **the named document precedes
+payment**:
+
+> *"you will receive an **admission letter including the instructions for the place reservation**"*
+> — and *"download your admission letter once you have been accepted."*
+
+And it has **the lightest document requirement of every institution checked in this whole
+project**: at submission, only
+
+> *"Fotocopia del DNI, pasaporte o equivalente"* + *"Fotocopia del documento académico de mayor
+> nivel."*
+
+**No apostille. No sworn translation. No reference letters. No motivation letter.** For someone who
+has not yet begun the Tunisian apostille, that removes the single biggest obstacle in this file.
+
+**Contacts:** `international@uchceu.es` · `admission@uchceu.es` · `admission.en@uchceu.es`
+
+⚠️ **One caveat:** that sequencing sentence is quoted from the international **undergraduate** page.
+The postgraduate page describes the same structure but doesn't repeat it. **Confirm by email
+first** — one line, and it settles it.
+
+---
+
+## ✅ The Abat Oliba question, settled
+
+The phrase that worried me — *"una vez realizados todos los trámites anteriores"* — **is on the
+undergraduate page**, attached to step 8 of 8, where step 6 is the €1,500 reserva. **And it
+attaches to the wrong document.** UAO CEU issues three:
+
+| Document | When | Free? |
+|---|---|---|
+| **Carta de admisión** — the Comisión's decision, ~7 days | ✅ **Before payment** | ✅ Free |
+| **Credencial de admisión** — a *matriculation* credential, not a visa letter | ❌ After the €500–1,500 reserva | ❌ |
+| **"Certificado de Admisión"** — the visa-grade one | ❓ Ambiguous — treat as post-payment | ❓ |
+
+The decisive evidence: UAO's own Early Enrolment scholarship requires applicants to submit a
+*"carta de admisión en la Universitat"* and **only then** commits them to *"realizar la reserva de
+plaza en un plazo no superior a tres semanas."* So the carta is in your hands before any money.
+
+**Master's admission at UAO is explicitly *"100 % online y gratuito"*, decided in seven days.**
+Ask `masters@uao.es` one question: *can the carta de admisión be used for the visa without paying
+the reserva?*
+
+---
+
+## The corrected, final shortlist
+
+| | Institution | Free | Named doc before payment | Apostille needed to apply? |
+|---|---|---|---|---|
+| **1** | **CEU Cardenal Herrera** — [admision.uchceu.es](https://admision.uchceu.es/) | ✅ | ✅ stated | ❌ **No — passport + one certificate** |
+| **2** | **UFV Madrid** — `postgrado@ufv.es` | ✅ | ✅ | ⚠️ **Yes** |
+| **3** | **Nebrija** — [form](https://www.nebrija.com/admision/formulario-admision-postgrado/) | ✅ | ✅ | ❌ No — deferrable 3 months |
+| **4** | **Abat Oliba CEU** — [admision.uaoceu.es](https://admision.uaoceu.es/) | ✅ | ✅ carta, 7 days | ❌ No |
+| **5** | **CEU San Pablo Madrid** — [admision.uspceu.es](https://admision.uspceu.es/) | ✅ | ❓ unresolved | ⚠️ "officially authenticated" |
+
+**CEU San Pablo is the only one that couriers the document:** *"si necesitas solicitar un visado de
+estudiante … te enviaremos por mensajero tu **Carta de Admisión**."*
+
+## ✏️ Corrections to earlier advice
+
+- **Comillas requires apostille + sworn translation at submission.** I listed it as an easy free
+  option — it is free, but that is weeks of work and real money before any document comes back.
+- **UVic-UCC issues a "Certificate of admission for foreign students" only after you pay 25% of a
+  full year's tuition.** Excluded.
+- **U-tad confirmed: no self-service admission form**, only an information request and an
+  interview. Earlier research was right.
+
+**Excluded on fees:** ESADE €150 · IQS €100 **plus a €1,000 prematrícula before the visa letter is
+released** · Blanquerna €100 · Deusto €30.
+**Excluded — online, and therefore harmful:** UOC, UNIR.
+
+---
+
+## 🎯 So: what to do
+
+**Email these four this week.** One line each: *"¿Puedo presentar solicitud de admisión para el
+curso 2027/28, y cuándo se abre ese proceso?"*
+
+1. `international@uchceu.es` — **start here**
+2. `masters@uao.es` — plus the carta-vs-reserva question
+3. `postgrado@ufv.es`
+4. `informa@nebrija.es`
+
+**Then apply when the 2027/28 cycle opens — realistically November 2026 to February 2027.** Every
+institution in this project publishes 2026/27 only, and a letter dated for the wrong year would
+hurt your file rather than help it.
+
+**Meanwhile, start the apostille and sworn translation.** CEU UCH and Nebrija don't need it to
+apply — but UFV, most public universities, and eventually your actual enrolment all do. Four to
+eight weeks, and nothing else is blocking it.
