@@ -13,6 +13,7 @@ where you filter and decide.**
 |---|---|
 | **THE-COMPLETE-GUIDE.md / pdf** | **The single document: 1,029 opportunities, 56 countries, how to read them, what to do next** |
 | **MASTER-all-opportunities.xlsx** | **Everything in one filterable workbook.** Tabs: ★ Best Bets · Strong + English/French · Fully funded · Has a scholarship · Scholarship index · Free or cheap · Everything · one per region |
+| **ROUTES-AND-TIMELINE.md** | **The four routes to a master's, with dates.** Spain has no official degree in music production or sound design; the one Spanish option that fits is taught in English; nothing funds a language year. What each route costs in money and in time, and which decisions are actually urgent |
 | **SPAIN-COST-OF-LIVING.md** | **Fifteen Spanish university cities ranked by what a student actually spends** — room, food, transport, utilities, going out. Plus the non-EU master's tuition surcharge by region: four regions charge you the same as a Spanish student, Madrid can charge €10,153/yr |
 | EUROPE-GAPFILL.md / pdf / xlsx | The 85 institutions the earlier searches missed — public/private, language, non-EU fee |
 | PRIVATE-SCHOOLS.md / pdf / xlsx | Private institutions in Spain, Portugal, Netherlands, Italy — accreditation first |
