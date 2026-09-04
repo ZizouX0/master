@@ -7,6 +7,10 @@ Researched September 2026 by five parallel agents against Idealista, HousingAnyw
 the Hostelería de España *menú del día* survey, and the official tariff and tuition decrees of
 each transport authority and autonomous community. Every figure below is sourced at the bottom.
 
+> 🌍 **Non-EU students:** the living-cost ranking applies to you unchanged, but tuition does not —
+> jump to [the non-EU section](#-if-you-are-a-non-eu-student--read-this-before-the-ranking-above).
+> Four regions charge you the same as a Spanish student; Madrid can charge **€10,153 a year**.
+
 ---
 
 ## The ranking
@@ -37,6 +41,97 @@ annual, and it varies by region far more than anything else here.
 *Food = groceries + 4 menús del día. Other = mobile + gym + going out. All EUR/month.*
 
 **The spread is €500/month — €6,000 a year — between Córdoba and Barcelona for the same degree.**
+
+---
+
+## 🌍 If you are a non-EU student — read this before the ranking above
+
+The table at the top prices **living costs**, which don't care about your passport. **Tuition
+does.** For an official master's at a public Spanish university, six of ten regions charge non-EU
+non-residents a surcharge — and four charge you **exactly the same as a Spanish student**.
+
+> **A student visa does not make you a *residente*.** The *autorización de estancia por estudios*
+> is explicitly not residency, so an incoming international student is "no residente" and pays the
+> surcharge wherever one exists. This is the single most expensive misunderstanding available here.
+
+### The four regions with no surcharge at all
+
+**Andalucía · País Vasco · Castilla y León · Asturias.** Their operative decrees contain no
+article on non-EU students. The Universidad de Sevilla says it outright: *"El sistema de precios
+es igualitario y regulado por decreto autonómico, sin distinción por nacionalidad."*
+
+### Master's tuition, non-EU non-resident, 60 ECTS, first enrolment
+
+| Region | Non-habilitante | Habilitante | vs EU price |
+|---|---:|---:|---|
+| **Galicia** (Santiago) | €739–1,045 | €739–1,045 | +25% |
+| **Andalucía** (Córdoba, Granada, Sevilla, Málaga) | **€821** | €757 | **same** ✅ |
+| **Asturias** (Oviedo) | €1,310–1,550 | €761 | **same** ✅ |
+| **País Vasco** (Bilbao) | €1,763–2,143 | €965 | **same** ✅ |
+| **Castilla y León** (Salamanca, Valladolid) | €1,572 | €980 | **same** ✅ |
+| **R. de Murcia** | ~€3,045 | ~€1,208 | +20% |
+| **Aragón** (Zaragoza) | €3,648 | €3,082 | **×2 / ×3** |
+| **C. Valenciana** (Valencia, Alicante) | ~€4,300 | €1,600–2,200 | **×2** |
+| **Cataluña** (Barcelona) | €2,700 UPC – €4,920 UB | €3,960 UAB | per-university |
+| **Comunidad de Madrid** | **€5,044** | **€7,560–10,153** ⚠️ | 3rd/4th-enrolment rate |
+
+⚠️ **Madrid inverts the usual logic.** Everywhere else a *habilitante* master (regulated
+profession) is the cheaper one. In Madrid non-EU students are billed at the **4th-enrolment rate**
+for habilitante masters, making them the most expensive tuition in Spain — Psicología General
+Sanitaria hits €169.21/ECTS, about **€10,153 a year**.
+
+**Catalonia is set per university, not per region** — the spread is enormous: UPC charges €45/ECTS
+where UB charges €82. UB also exempts nationals of the EEA, Switzerland, Andorra and China from
+the surcharge entirely. Choosing UPC over UB in the same city saves ~€2,200 a year.
+
+### 💰 All-in annual cost, non-EU master's student
+
+Living costs × 10 months (Sept–June) + non-habilitante master's tuition:
+
+| # | City | Living (10 mo) | Tuition | **Total/year** |
+|---:|---|---:|---:|---:|
+| 1 | **Córdoba** | 6,960 | 821 | **€7,781** |
+| 2 | **Granada** | 7,060 | 821 | **€7,881** |
+| 3 | **Santiago** | 7,400 | 739 | **€8,139** |
+| 4 | **Sevilla** | 7,910 | 821 | **€8,731** |
+| 5 | **Salamanca** | 7,310 | 1,572 | **€8,882** |
+| 6 | **Valladolid** | 7,680 | 1,572 | **€9,252** |
+| 7 | **Oviedo** | 7,970 | 1,430 | **€9,400** |
+| 8 | **Málaga** | 9,250 | 821 | **€10,071** |
+| 9 | **Murcia** | 7,490 | 3,045 | **€10,535** |
+| 10 | **Zaragoza** | 8,170 | 3,648 | **€11,818** |
+| 11 | **Bilbao** | 9,900 | 1,950 | **€11,850** |
+| 12 | **Valencia** | 8,340 | 4,300 | **€12,640** |
+| 13 | **Alicante** | 8,560 | 4,300 | **€12,860** |
+| 14 | **Madrid** | 10,930 | 5,044 | **€15,974** |
+| 15 | **Barcelona** | 11,940 | 4,920 | **€16,860** |
+
+*Barcelona at UPC instead of UB: **€14,640**. Santiago on the sciences/engineering scale: €8,445.*
+
+**Barcelona costs 2.2× Córdoba** — €9,000 a year, €18,000 over a two-year master's.
+
+**The ranking reorders once tuition is in.** Valencia and Alicante look mid-table on living costs
+(10th and 11th) but fall to 12th and 13th all-in, because the Comunitat Valenciana doubles the
+non-EU rate. Murcia and Zaragoza fall the same way. Meanwhile **Málaga climbs** — expensive to
+live in, but Andalucía charges you nothing extra.
+
+**If tuition is what you're optimising: Andalucía, Galicia, Asturias, Castilla y León and the
+Basque Country.** Four of those five also sit in the cheap half of the living-cost table.
+
+### Non-EU caveats
+
+- **Valencia's ×2 is new** (from 2025/26) and does *not* apply to students who started before
+  2024/25. Confirmed still in force for 2026/27.
+- **Galicia's 99% bonificación is *grado* only** — it does not touch master's fees. Galicia does
+  cap each university's foreign-student price at the prior year's level.
+- **UCM's auto-matrícula defaults everyone to non-resident prices** until you upload residency
+  proof, then rebills. Don't panic at the first invoice.
+- **Interuniversity and "precio diferenciado" masters break every pattern** — UPV/EHU's Periodismo
+  Multimedia is €96.77/ECTS for everyone; Madrid's Oncología Molecular is €187.50/ECTS for non-EU.
+  Always check the specific programme's page, not just the regional decree.
+- **2026/27 prices are essentially frozen** in Madrid, Cataluña, Galicia and Valencia. Aragón,
+  Murcia, Andalucía, CyL, Asturias and País Vasco had not all published 26/27 decrees at the time
+  of writing; Castilla y León is still running Decreto 8/2024 *prorrogado*.
 
 ---
 
@@ -212,7 +307,9 @@ close 10–15% below the city average; city-centre rooms above it.
 
 **Transport:** [Ministerio de Transportes — Abono Único y bonificaciones 2026](https://www.transportes.gob.es/transporte-terrestre/bonificaciones-transporte-publico) · [Comunidad de Madrid — tarifas 2026](https://www.comunidad.madrid/noticias/2025/12/29/comunidad-madrid-prorroga-bonificaciones-mantiene-precios-transporte-publico-2026) · [ATM Barcelona T-jove](https://t-mobilitat.cat/es/web/t-mobilitat/tarifas/t-jove) · [TUSSAM Sevilla](https://www.tussam.es/en/node/112) · [Metrovalencia](https://www.metrovalencia.es/es/mobilis30-suma-mensual-jove/) · [Consorcio Granada](https://ctagr.es/atencion-al-usuario/oficina-virtual/tarjeta-joven) · [CTB Bizkaia Barik](https://www.ctb.eus/en/barik-fares) · [Salamanca bonos](https://www.aytosalamanca.es/en/w/bonos-y-abonos-para-acceso-a-los-autobuses-urbanos) · [TUA Oviedo](https://www.tua.es/es/billetes-y-tarifas/) · [AUVASA Valladolid](https://www.auvasa.es/tarifas/) · [Aucorsa Córdoba](https://autobusescordoba.es/tarifas) · [TAM Alicante](https://alicante.vectalia.es/tarifas-tam-1-07-2025/) · [Bono Murcia Estudiante](https://tranviademurcia.es/bono-murcia-estudiante/) · [Tranvía Zaragoza](https://www.tranviasdezaragoza.es/actualizacion-de-tarifas-del-tranvia-y-el-bus-a-partir-del-1-de-julio-de-2025/)
 
-**Tuition:** [Junta de Andalucía — bonificación 99%](https://www.juntadeandalucia.es/organismos/universidadindustriaenergiaeinnovacion/areas/universidad/talento/paginas/bonificacion-creditos-matriculas.html) · [Xunta de Galicia — gratuidad de matrícula](https://www.xunta.gal/es/notas-de-prensa/-/nova/003368/publicada-diario-oficial-galicia-gratuidad-matricula-para-los-estudiantes-grado) · [Comunidad de Madrid — precios públicos](https://www.comunidad.madrid/educacion/precios-publicos-universitarios) · [Generalitat de Catalunya — preus](https://universitats.gencat.cat/ca/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/) · [UPV/EHU](https://www.ehu.eus/es/web/graduak/matricula/precios/precios-publicos) · [Unizar Decreto 64/2025](https://academico.unizar.es/sites/academico/files/archivos/gradoymaster/Matricula/decreto_precios_2025-26.pdf) · [USAL precios 2025-26](https://campus.usal.es/~gesacad/coordinacion/precios/preciosacademicosgrado.pdf) · [Uniovi](https://econo.uniovi.es/secretaria/precios) · [UA Alicante](https://web.ua.es/es/oia/acceso-preinscripcion-y-matricula/matricula/precios-publicos-universitarios.html) · [Castilla y León — free first enrolment from 26/27](https://www.elespanol.com/castilla-y-leon/region/20260709/oficial-ayudas-primera-matricula-universitaria-gratis-castilla-leon-curso/1003744315357_0.html) · [GVA — Primera Matrícula Gratuita](https://comunica.gva.es/es/detalle?id=410254788&site=373430869) · [Precio del crédito por CCAA](https://tesify.es/precio-credito-universitario-2026-comunidad-autonoma)
+**Non-EU master's tuition:** [Decreto 43/2022 Madrid](https://noticias.juridicas.com/base_datos/CCAA/732735-d-43-2022-de-29-jun-ca-madrid-precios-publicos-por-estudios-universitarios.html) · [UCM precios másteres](https://www.ucm.es/informacion/precios-masteres) · [URJC](https://www.urjc.es/estudios/grado/485-precios-publicos) · [UAM 25-26](https://www.uam.es/uam/media/doc/1606993385616/precios-publicos-masteres-oficiales-2025-2026.pdf) · [UB preus](https://www.ub.edu/acad/matricula/preus.html) · [UPC annex 25-26](https://www.upc.edu/sga/ca/matricula/preus/estimacion-precios-documentos/curs-2025-2026/2025-2026-annex-preus-master_copia_autentica_vd.pdf) · [UAB](https://www.uab.cat/web/estudis/masters-i-postgraus/masters-universitaris/preus-dels-estudis-1345663349772.html) · [Unizar precios máster 25-26](https://academico.unizar.es/sites/academico/files/archivos/gradoymaster/economica/precios_publicos_master_web_2025-26_v.1.pdf) · [UPV matrícula 26/27](https://www.upv.es/contenidos/SMAT/info/1192152normalc.html) · [Decreto 142/2025 Andalucía](https://www.juntadeandalucia.es/boja/2025/172/21) · [US — estudiante internacional paga lo mismo](https://cat.us.es/que-precios-debo-abonar-como-estudiante-internacional/que-precios-debo-abonar-como-estudiante) · [Orden precios UPV/EHU 25-26 (BOPV)](https://www.euskadi.eus/bopv2/datos/2025/06/2502857a.pdf) · [Decreto 8/2024 CyL](https://bocyl.jcyl.es/html/2024/06/03/html/BOCYL-D-03062024-2.do) · [Decreto 88/2025 Asturias](https://www.uniovi.es/documents/39158/11278575/Decreto+precios+p%C3%BAblicos+2025-2026.pdf/e9369b51-2b3a-3bfc-5063-c449fb63d004) · [Decreto 72/2026 Galicia](https://www.xunta.gal/dog/Publicados/2026/20260709/AnuncioG0761-010726-0001_es.html) · [Resolución reitoral USC 14-07-2025](https://minerva.usc.gal/entities/publication/ed97e8d4-d091-48a0-a05f-d3112b170362) · [UM precios públicos](https://www.um.es/web/estudios/matricula/normas/precios-publicos)
+
+**Tuition (EU / grado):** [Junta de Andalucía — bonificación 99%](https://www.juntadeandalucia.es/organismos/universidadindustriaenergiaeinnovacion/areas/universidad/talento/paginas/bonificacion-creditos-matriculas.html) · [Xunta de Galicia — gratuidad de matrícula](https://www.xunta.gal/es/notas-de-prensa/-/nova/003368/publicada-diario-oficial-galicia-gratuidad-matricula-para-los-estudiantes-grado) · [Comunidad de Madrid — precios públicos](https://www.comunidad.madrid/educacion/precios-publicos-universitarios) · [Generalitat de Catalunya — preus](https://universitats.gencat.cat/ca/acces-universitat/sobre-preus-beques/preus-estudis-universitaris/) · [UPV/EHU](https://www.ehu.eus/es/web/graduak/matricula/precios/precios-publicos) · [Unizar Decreto 64/2025](https://academico.unizar.es/sites/academico/files/archivos/gradoymaster/Matricula/decreto_precios_2025-26.pdf) · [USAL precios 2025-26](https://campus.usal.es/~gesacad/coordinacion/precios/preciosacademicosgrado.pdf) · [Uniovi](https://econo.uniovi.es/secretaria/precios) · [UA Alicante](https://web.ua.es/es/oia/acceso-preinscripcion-y-matricula/matricula/precios-publicos-universitarios.html) · [Castilla y León — free first enrolment from 26/27](https://www.elespanol.com/castilla-y-leon/region/20260709/oficial-ayudas-primera-matricula-universitaria-gratis-castilla-leon-curso/1003744315357_0.html) · [GVA — Primera Matrícula Gratuita](https://comunica.gva.es/es/detalle?id=410254788&site=373430869) · [Precio del crédito por CCAA](https://tesify.es/precio-credito-universitario-2026-comunidad-autonoma)
 
 **Residences:** [USC residences (means-tested)](https://www.usc.gal/en/service/area/residences) · [Uniovi San Gregorio](https://sangregorio.uniovi.es/en/solicitud-de-plaza) · [CM Pedro Cerbuna Zaragoza](https://residenciasuniversitarias.es/zaragoza/colegio-mayor-pedro-cerbuna/) · [UCO Colegio Mayor](http://www.uco.es/servicios/alojamiento/es/precios-colegio-mayor) · [Residencias Valencia/Alicante](https://valenciaplaza.com/valenciaplaza/educacion/las-residencias-universitarias-en-valencia-cuestan-entre-500-y-mil-euros-al-mes-y-en-alicante-entre-400-y-980) · [Residencias privadas Santiago](https://www.elcorreogallego.es/santiago/2025/06/16/residencias-privadas-santiago-alcance-estudiantes-precios-universidad-curso-colegio-mayor-centros-alojamiento-vivienda-pisos-habitaciones-dormitorios-118650083.html)
 
