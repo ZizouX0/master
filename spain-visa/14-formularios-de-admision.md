@@ -175,3 +175,62 @@ valid *"solamente para el curso académico en el que se realiza el proceso."* So
 now refers to **2026/27** — which, as with the Andalusian Fase 3 in [`15`](./15-preinscripcion-publica.md),
 sits awkwardly beside a study plan built on a 2027/28 master's. Worth thinking about before you
 apply: a letter for the wrong year raises the question it was meant to answer.
+
+---
+
+## 🏢 Business schools and the rest — and a hard fact about the year
+
+### ⛔ The finding that governs everything here
+
+**Not one institution checked — public or private — currently lets an applicant select the
+2027/28 intake.** Every published cycle, regulation, fee schedule and enrolment pack is
+**2026/27**. ESIC's admission *normativa* is titled for 2026‑2027; ESIC and EAE programme pages
+show October 2026 starts; UNEATLANTICO's 2027/2028 link exists in its page source but is
+**disabled**.
+
+**So any document obtainable today carries academic year 2026/27** — which does not match an
+intention to begin in September 2027. These portals realistically open for 2027/28 between **late
+2026 and early 2027**.
+
+### ✅ Free, on-campus, and returns a named document
+
+| | Institution | Why |
+|---|---|---|
+| **1** | **Universidad Europea** *(group)* | The only one stating in its own words **both** that the admission step is free — *"Esta entrevista **no tiene coste u obligación alguna**"* — **and** that the ***carta de admisión* is issued before** the €500 reserva: *"Una vez que hayas superado el proceso de admisión puedes proceder a formalizar tu reserva."* Downloadable from your personal portal |
+| **2** | **Universidad Loyola Andalucía** — [portales.uloyola.es/Admisiones](https://portales.uloyola.es/Admisiones/) | Free open platform with public self-registration, and the clearest visa wording found anywhere: it requires a *"Carta de aceptación con la finalidad de la estancia, fecha de inicio y fecha de finalización del curso"*, and issues a *"Certificado (carta de aceptación) … que confirme que has sido admitido"* |
+| **3** | **CUNEF Universidad** — [admission form](https://cunefcrm.my.site.com/formularioAdmision/s/?language=en_US&type=Postgrad) | **Best programme match:** *Máster en Ciencia de Datos e Inteligencia Artificial*, on-campus Madrid. Real public form, no application fee published |
+| **4** | **ESIC** — [admisiones.esic.edu](https://admisiones.esic.edu/) | Public self-serve portal, no fee published, genuinely presencial Big Data / AI master |
+
+**⚠️ Frictions worth knowing before you start:**
+
+- **Loyola** requires a ***Certificado de equivalencia de notas medias* from the Spanish Ministry** — a real, slow, paid procedure. Free to apply, not free to complete.
+- **CUNEF** official masters also require a **parallel UCM preinscripción**, and its €1,800 reserva falls due **within 10 working days** of admission.
+- **Universidad Europea's** admission is an **interview, not a form** — which corrects what I said earlier. There is no self-service form, but the process is free and the letter precedes payment, so it is better than I described.
+
+### ❌ Charge to apply — out of scope
+
+**EADA €50** · **ESADE €150** · **IQS ~$100 plus a €1,000 pre-enrolment before the visa letter is
+released** · **UCAM €150 + €280** · **Schiller $20** · **UNEATLANTICO €360** (and its preinscription
+is a downloadable PDF requiring a bank-transfer receipt, not an online form).
+
+### 🔴 Online universities — a document from these actively hurts
+
+**VIU** and **Universidad Isabel I** are **100% online**. VIU's own marketing says that studying
+there means not budgeting for *"alojamiento, transporte, manutención o **visado** en Valencia."*
+
+**That makes a document from either affirmatively bad evidence** — it demonstrates study that
+does not require your presence in Spain, which a consulate can read as contradicting the entire
+purpose of the trip. Do not include one.
+
+### Two scope traps
+
+- **Saint Louis University–Madrid** is genuinely free to apply, on-campus, with a verified address
+  (`graduate-admissions-madrid@slu.edu`) and an explicit non-EU visa paragraph. **But its only two
+  graduate programmes are MA Spanish and MA Political Science.** A named acceptance would be
+  credible as a document and **incoherent with a computer-engineering profile.**
+- **La Salle Campus Madrid is not La Salle Barcelona.** Madrid runs physiotherapy, occupational
+  therapy and illustration. **The Big Data and cybersecurity masters are at La Salle – Universitat
+  Ramon Llull, in Barcelona.**
+
+*(Also worth correcting: **UNEATLANTICO in Santander is genuinely on-campus**, not a distance
+university — its online sisters UNINI and FUNIBER are separate entities. It simply isn't free.)*
