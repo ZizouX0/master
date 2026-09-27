@@ -2,10 +2,11 @@
 
 **Checked 27 September 2026.** Covers starts from **January 2027 onward** (spring 2027 and autumn 2027).
 
-> **Short answer:** there is **no private university near Alicante with an English master's starting
-> in January–April 2027** that qualifies for the visa. If you want to live in your Alicante house, the
-> credible choice is **UCAM in Murcia, starting October/November 2027**: about 1 hour by train, and
-> the train is covered by a €60/month pass.
+> **Short answer (corrected later on 27 Sep 2026):** the credible choice from your Alicante house is
+> **UCAM in Murcia** — about 1 hour by train, covered by a €60/month pass. A later check found that
+> its **Master in International Relations** (English, on campus, €5,500) **starts in January**; the
+> last edition ran 7 January – December 2026. So a **January 2027** start may be possible — confirm
+> with UCAM now. UCAM's other English masters start October/November 2027.
 
 ---
 
@@ -43,7 +44,14 @@ announced. ([Renfe](https://www.renfe.com/es/es/viajar/prepara-tu-viaje/trenes-m
 
 ## 3. The options
 
-### Spring 2027 (January–April) — nothing credible from Alicante
+### Spring 2027 (January–April)
+
+**One option works:** **UCAM Murcia — Master in International Relations**, intake **January**,
+€5,500 + €489 fees, *título propio* (valid for the visa because UCAM is a university). Weekly hours
+and the reservation amount for internationals are not published — ask UCAM. See
+[CHEAPEST-PRIVATE-ENGLISH-SPAIN.md](./CHEAPEST-PRIVATE-ENGLISH-SPAIN.md).
+
+The rest don't work from your Alicante house:
 
 | Option | Why it doesn't work from your Alicante house |
 |---|---|
@@ -54,7 +62,8 @@ announced. ([Renfe](https://www.renfe.com/es/es/viajar/prepara-tu-viaje/trenes-m
 | UCJC, Madrid (February) | Campus outside Madrid (Villanueva de la Cañada) — over 3 h each way |
 | UPC, Barcelona (February) | ~5 h away |
 
-UCAM, Universidad Europea Valencia and UCV have **no** spring editions.
+Universidad Europea Valencia and UCV have **no** spring editions. At UCAM, only International
+Relations starts in January.
 
 ### Autumn 2027 (October–November) — the realistic choice
 

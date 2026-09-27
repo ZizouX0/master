@@ -43,8 +43,15 @@ to use the autumn round) · GASMA Castellón (Spanish with simultaneous translat
 (blended, ~8 h/week) · ESEI Barcelona (6–9 h/week) · Universidad Europea's Basketball master
 (price not published).
 
+**Added after a later check (27 Sep 2026):**
+
+| School (city) | Programme | Starts | Degree | Pay for the letter | If the visa is refused | Total |
+|---|---|---|---|---|---|---|
+| **UCAM (Murcia)** | **International Relations** (English, on campus) | **January** (last edition 7 Jan – Dec 2026) | *Título propio* | €150 + €280 + reservation (€1,200 on the Spanish fee page) | ✅ reservation refunded, €430 kept | **€5,989** |
+| UIC (Barcelona) | Biodigital Architecture (architecture background) | 7 January 2027 · 20 h/week | *Título propio* | 20 % ≈ €2,016 | ❌ | €10,589 |
+
 **No spring English intake:** almost every other private and public university — Universidad
-Europea, UCAM, Nebrija, CEU, ESIC, Comillas, EAE, ESCP, Tecnocampus, BAU, Blanquerna, UIC, TBS, IQS,
+Europea, UCAM (except International Relations), Nebrija, CEU, ESIC, Comillas, EAE, ESCP, Tecnocampus, BAU, Blanquerna, UIC, TBS, IQS,
 ESCI-UPF, Navarra, Mondragon, Alicante, UMH, UCM, UC3M, URJC, UPV, URV, UJI, UMU and others.
 
 ---
