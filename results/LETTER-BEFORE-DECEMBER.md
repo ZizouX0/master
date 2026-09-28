@@ -35,6 +35,32 @@ are valid for a student visa are listed (universities, or foreign centres author
 **Not valid for the visa / risky:** Harbour.Space, SBS Swiss Business School, Spain Business School,
 ESBS, IED "private qualifications", Geneva Business School, Les Roches.
 
+## 1b. How easy is it to get in? (official requirements, checked 28 Sep 2026)
+
+No programme publishes an acceptance rate or a minimum GPA.
+
+| Difficulty | Programme | Who they accept | English |
+|---|---|---|---|
+| 🟢 Easy | **UAB** short business course (not a master's) | Anyone "interested"; only a passport requested; 40 places | not stated |
+| 🟢 Easy | **La Salle** International MBA (1 Mar) | Any degree; rolling, answer within 8 days; 60 places | not stated |
+| 🟢 Easy | **UCAM** International Relations | Any university degree (profile: law, economics, media, politics); 25 places | not stated |
+| 🟢 Easy | **EU Business School** MSc | Any degree (2:2 or equivalent) | IELTS 6.5 |
+| 🟢 Easy | **Schiller** MBA / MS | Any bachelor's (degree evaluation by a US agency) | IELTS 6.0–6.5; waived if studied in English |
+| 🟢 Easy | **GBSB** MiM | Business degree, or another degree + business experience | IELTS 6.5; English-medium letter accepted |
+| 🟢 Easy | **MIUC** MSc Digital Marketing | Any recognised bachelor's | IELTS 6.5 (one page says 7.0) |
+| 🟢–🟡 | **Elisava** Business Design | Any degree ("design background not required") + portfolio | not stated |
+| 🟢–🟡 | **UIC** Architecture & Design Business | Preferably architecture/engineering/design + portfolio | B2 optional |
+| 🟢–🟡 | **La Salle** Digital Arts | Arts, design, audiovisual, architecture or technology | not stated |
+| 🟡 | **UPC** MASTEAM · AI4CI · MEE · MATT | Telecom / ICT / electronics / computing engineering (bridging courses for related fields) | B2 (IELTS 5.5, TOEFL 87); an English-taught semester also counts |
+| 🟡 | **UIC** Biodigital Architecture · **Elisava** Retail Design | Architecture / design fields + portfolio; UIC only 14 places | — |
+| 🟡 | **EADA** · **UPF-BSM** · **Basque Culinary Center** | EADA: any field, test or TOEFL 100; UPF-BSM: finance/business background; BCC: professional chefs | — |
+| 🟡–🔴 | **UPC** MAST · Structural & Construction · MET | Aerospace / civil / telecom; Structural ranks by grades (40 %) and study efficiency (30 %) | B2 |
+| 🔴 Hard | **UPC** MAMME | Maths-heavy degree (≥ 60 ECTS maths recommended); **only 3 February places** | — |
+| 🔴 Hard | **IE** MiM / International MBA | Test (ieGAT/GMAT/GRE), interview; MBA ≈ 6 years' experience | TOEFL 100 / IELTS 7 |
+
+⚠️ **UCAM check:** the International Relations page doesn't show the January on-campus start (only
+the brochure and last year's calendar do). Confirm with `admissions@ucam.edu` before relying on it.
+
 ## 2. What to do now
 
 1. **Get your degree and transcript apostilled and translated now** — UCAM will not issue the letter
