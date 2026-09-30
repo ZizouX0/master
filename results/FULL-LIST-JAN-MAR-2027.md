@@ -38,6 +38,14 @@
 | 26 | IE University (Madrid) | Master in Management · International MBA | rolling | no deadline | January 2027 (day —) | €150 + reservation (—) | 🟢 Plausible | ✅ | €50,000 / €89,900 |
 | 27 | Universidad Europea / Real Madrid | Basketball Coaching & Management | — | — | Feb 2027 (day —) | reservation + enrolment (—) | 🟡 Plausible | ❌ sport background | — |
 
+**UPC — which February 2027 intakes are actually confirmed (30 Sep 2026):** most UPC master's start
+**only in September**; the ones listed above say "Starting September and February" on their pages.
+- **Window published:** MAMME (16 Oct – 30 Nov), Structural & Construction (7–21 Oct), MEE / MATT /
+  MET / Engineering Physics at ETSETB (5 Oct – 9 Dec; Engineering Physics only if places remain).
+- **February listed, but 2027 window not published yet:** AI4CI, MASTEAM (10 Feb places), MAST.
+- **Uncertain:** MIRI (last February only 2 specialisations took new students) and Technology &
+  Engineering Management (no February places last year).
+
 **If the visa is refused:** UPC — €330 lost · UCAM — reservation refunded, €430 lost · La Salle —
 refunded minus €300 · UIC, EU Business School, GBSB — not refunded · Elisava — refunded · Schiller —
 refunded minus €100 · MIUC — refunded minus €1,200.
