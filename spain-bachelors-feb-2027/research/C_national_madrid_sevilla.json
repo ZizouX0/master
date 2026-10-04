@@ -1,0 +1,547 @@
+{
+  "group": "National rules + Madrid public universities + Universidad de Sevilla + other public universities",
+  "programs": [
+    {
+      "university": "Universitat de Barcelona (UB) - Escola Universitària d'Hoteleria i Turisme CETT-UB (affiliated centre)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat de Barcelona (public)",
+      "degree": "Grado en Turismo (Turisme 'CETT') - 100% English group (access code 11086)",
+      "field": "Business",
+      "language": "English (100% English group; a bilingual group, code 11011, also exists)",
+      "feb_start_confirmed": "UNCLEAR",
+      "feb_start_evidence": "Official Generalitat list 'Preinscripció universitària 2026 - Convocatòria febrer': code 11086 'Turisme \"CETT\" (docència en anglès)', UB, Barcelona, U. Públ. CA, 10 places, orientative Feb price 4.645 EUR (Feb-June). CETT admission page: 'Pre-enrollment dates: consult the calls for February, June and September in the Canal Universitats.' The Feb 2027 list is not yet published, so a Feb 2027 offer is not confirmed; the CETT degree page itself only shows 'Start date: September 2026'.",
+      "application_deadline": "NOT FOUND for 2027. Feb 2026 cycle: pre-enrolment 2-4 Feb 2026, allocation 6 Feb, enrolment 9 Feb (2025-26 cycle - POSSIBLY OUTDATED).",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Pre-enrolment fee via accesuniversitat.gencat.cat NOT FOUND. For the direct route (study of foreign academic record / credit recognition) CETT charges a 'non-refundable tax of 55 euro', deducted from the enrolment fee if the student enrols.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "CETT admission page (international/direct route): 'Seat Reservation: must be formalized within a maximum of one month from the date of the admission letter.' Amount NOT FOUND. Enrolment component listed as 925 EUR on degree page.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "No visa-refusal refund policy found on the CETT admission or degree pages checked.",
+      "annual_tuition_non_eu_eur": 8107,
+      "tuition_text": "CETT degree page 'Admission Requirements and Tuition Fees': Non-EU students - Enrollment 925 EUR + Price 7.182 EUR = Total 8.107 EUR (EU: 7.309 EUR). 'UB fees not included in the course price: 314,20 EUR (amount corresponding to the 2024/2025 academic year...)'. Academic year of the 8.107 EUR figure not stated on page. Feb-entry orientative price for the Feb-June quadrimester only: 4.645 EUR (Generalitat Feb 2026 list).",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "CETT page 'With bachelor's degree completed': homologate or obtain equivalence of the foreign diploma (Ministry) then university pre-enrolment (graduate quota); if homologation is denied (not for excluded reasons) or not sought, use the 'Foreign bachelor's degree' route = study of academic record / validated credit transfer (needs >=30 ECTS recognised, RD 534/2024 arts. 7.d and 45.3), 55 EUR non-refundable, then apply directly to the centre.",
+      "language_requirement": "CETT degree page: for the 100% English option 'a minimum level equivalent to B2 of the CEFR ... is recommended'. Certificate list for grado NOT FOUND (B2 Cambridge/IELTS/TOEFL listed for English-taught masters).",
+      "official_ruct": "Yes (per Generalitat official list of 'centres d'estudi oficials / Graus'; RUCT code not verified)",
+      "data_year": "2025-26 — POSSIBLY OUTDATED (Feb 2026 convocation); tuition year not stated",
+      "page_last_updated": "Generalitat 'Oferta de places' page: 15.09.2026; CETT pages: not shown",
+      "visa_timing_note": "Unlikely by early Dec 2026: the February convocation runs in early Feb. Only a direct (credit-recognition) admission by the centre in autumn could give a letter in time - ask CETT (secretaria academica) explicitly.",
+      "risks": "Catalan February convocation is a pre-enrolment held in early February (Feb 2026 cycle: apply 2-4 Feb, allocation 6 Feb, enrolment 9 Feb), so a place/admission letter obtained through it arrives AFTER the semester starts - incompatible with a visa that must be applied for at least 2 months before the start (RD 1155/2024 arts. 36.1 and 54.2). Only a direct admission by the centre outside pre-enrolment (e.g., foreign university studies with >=30 ECTS recognised, RD 534/2024 art. 45.3) could in theory produce an earlier letter - not confirmed by any official page. February entrants usually enrol only in 2nd-semester subjects (~30 ECTS): RD 1155/2024 art. 52.2 defines full-time as enrolment in at least 90% of the credits, so a Feb-only enrolment may not satisfy the visa full-time test (no official clarification found). Holder of a NON-homologated foreign bachelor's cannot use the graduate quota (needs homologation/equivalence first; RD 889/2022 allows up to 6 months). Lead primarily belongs to the Catalonia group - cross-check.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://www.cett.es/en/admission"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.cett.es/en/admission",
+          "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT"
+        ],
+        "refund": [
+          "https://www.cett.es/en/admission"
+        ],
+        "tuition": [
+          "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://www.cett.es/en/admission",
+          "https://www.boe.es/buscar/act.php?id=BOE-A-2024-11858"
+        ],
+        "language": [
+          "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT"
+        ],
+        "ruct": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ]
+      }
+    },
+    {
+      "university": "Universitat Rovira i Virgili (URV) - ESIC Barcelona (affiliated centre)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat Rovira i Virgili (public)",
+      "degree": "Grado en Marketing ('ESIC') - English-taught group (access code 71074)",
+      "field": "Business",
+      "language": "English",
+      "feb_start_confirmed": "UNCLEAR",
+      "feb_start_evidence": "Generalitat Feb 2026 pre-enrolment list: code 71074 'Màrqueting \"ESIC\" (docència en Anglès)', URV, Barcelona, U. Públ. CA, 16 places, orientative Feb price 4.815 EUR, observation 26: 'Per cursar aquest grau es requereix un nivell B2 d'anglès...'. ESIC's own Barcelona page shows only 'Inicio Septiembre 2027'. Feb 2027 offer not yet published.",
+      "application_deadline": "NOT FOUND for 2027. Feb 2026 cycle: pre-enrolment 2-4 Feb 2026, allocation 6 Feb, enrolment 9 Feb (POSSIBLY OUTDATED).",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Not stated on pages checked.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "ESIC page: after passing admission tests 'recibirás una carta de preinscripción. Para asegurar tu plaza, deberás realizar el pago de la reserva y la matrícula dentro del plazo que te indique tu asesor.' Amount NOT FOUND.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "Not found on the ESIC Barcelona grado page.",
+      "annual_tuition_non_eu_eur": "NOT FOUND",
+      "tuition_text": "ESIC grado page lists 'Condiciones económicas 9.216 EUR / 9.784 EUR / 10.144 EUR - Precio por curso. Sujeto a modificaciones' across campuses (which figure applies to Barcelona/English not stated). Feb-June orientative price 4.815 EUR (Generalitat Feb 2026 list).",
+      "foreign_graduate_eligible": "NOT FOUND",
+      "graduate_route": "Not stated by centre; national rules apply (graduate quota requires homologation/equivalence; otherwise >=30 ECTS recognition route, RD 534/2024 arts. 7.d, 43, 45).",
+      "language_requirement": "B2 English (Generalitat list obs. 26: if not accredited before enrolment the centre runs a level test); ESIC page: 'Si estudias un Grado Oficial en inglés (Bachelor's Degree) deberás tener un nivel mínimo B2'.",
+      "official_ruct": "Yes (per Generalitat official list of graus; RUCT code not verified)",
+      "data_year": "2025-26 — POSSIBLY OUTDATED (Feb 2026 convocation)",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Unlikely by early Dec 2026 via the February convocation; ask ESIC whether a direct admission letter can be issued in Nov/Dec for Feb 2027.",
+      "risks": "Catalan February convocation is a pre-enrolment held in early February (Feb 2026 cycle: apply 2-4 Feb, allocation 6 Feb, enrolment 9 Feb), so a place/admission letter obtained through it arrives AFTER the semester starts - incompatible with a visa that must be applied for at least 2 months before the start (RD 1155/2024 arts. 36.1 and 54.2). Only a direct admission by the centre outside pre-enrolment (e.g., foreign university studies with >=30 ECTS recognised, RD 534/2024 art. 45.3) could in theory produce an earlier letter - not confirmed by any official page. February entrants usually enrol only in 2nd-semester subjects (~30 ECTS): RD 1155/2024 art. 52.2 defines full-time as enrolment in at least 90% of the credits, so a Feb-only enrolment may not satisfy the visa full-time test (no official clarification found). Holder of a NON-homologated foreign bachelor's cannot use the graduate quota (needs homologation/equivalence first; RD 889/2022 allows up to 6 months). Lead primarily belongs to the Catalonia/private groups - cross-check.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.esic.edu/grados/grado-marketing-barcelona"
+        ],
+        "refund": [
+          "https://www.esic.edu/grados/grado-marketing-barcelona"
+        ],
+        "tuition": [
+          "https://www.esic.edu/grados/grado-marketing-barcelona",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://www.boe.es/buscar/act.php?id=BOE-A-2024-11858"
+        ],
+        "language": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://www.esic.edu/grados/grado-marketing-barcelona"
+        ],
+        "ruct": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ]
+      }
+    },
+    {
+      "university": "Universitat Autònoma de Barcelona (UAB) - affiliated tourism school (centre name not verified)",
+      "city": "Cerdanyola del Vallès (Barcelona)",
+      "type": "Affiliated centre of Universitat Autònoma de Barcelona (public)",
+      "degree": "Grado en Turismo - English-taught group (access code 21114)",
+      "field": "Business",
+      "language": "English",
+      "feb_start_confirmed": "UNCLEAR",
+      "feb_start_evidence": "Generalitat Feb 2026 pre-enrolment list: code 21114 'Turisme (docència en Anglès)', UAB, Cerdanyola del Vallès, U. Públ. CA, 5 places, orientative Feb price 2.760 EUR. Feb 2027 offer not yet published; centre website not checked.",
+      "application_deadline": "NOT FOUND for 2027. Feb 2026 cycle: 2-4 Feb 2026 (POSSIBLY OUTDATED).",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Centre site not checked.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "NOT FOUND (centre site not checked).",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "NOT FOUND.",
+      "annual_tuition_non_eu_eur": "NOT FOUND",
+      "tuition_text": "Only the Feb-June orientative price 2.760 EUR (Generalitat Feb 2026 list, obs. 17: may change under the Catalan price decree).",
+      "foreign_graduate_eligible": "NOT FOUND",
+      "graduate_route": "National rules (RD 534/2024 arts. 7.d, 43, 45).",
+      "language_requirement": "NOT FOUND",
+      "official_ruct": "Yes (per Generalitat official list of graus; RUCT code not verified)",
+      "data_year": "2025-26 — POSSIBLY OUTDATED",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Unlikely by early Dec 2026 (Feb convocation in early Feb).",
+      "risks": "Catalan February convocation is a pre-enrolment held in early February (Feb 2026 cycle: apply 2-4 Feb, allocation 6 Feb, enrolment 9 Feb), so a place/admission letter obtained through it arrives AFTER the semester starts - incompatible with a visa that must be applied for at least 2 months before the start (RD 1155/2024 arts. 36.1 and 54.2). Only a direct admission by the centre outside pre-enrolment (e.g., foreign university studies with >=30 ECTS recognised, RD 534/2024 art. 45.3) could in theory produce an earlier letter - not confirmed by any official page. February entrants usually enrol only in 2nd-semester subjects (~30 ECTS): RD 1155/2024 art. 52.2 defines full-time as enrolment in at least 90% of the credits, so a Feb-only enrolment may not satisfy the visa full-time test (no official clarification found). Holder of a NON-homologated foreign bachelor's cannot use the graduate quota (needs homologation/equivalence first; RD 889/2022 allows up to 6 months). Lead only - centre not identified; belongs to Catalonia group.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [],
+        "refund": [],
+        "tuition": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://www.boe.es/buscar/act.php?id=BOE-A-2024-11858"
+        ],
+        "language": [],
+        "ruct": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ]
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "university": "Universidad Carlos III de Madrid (UC3M)",
+      "city": "Getafe / Leganés / Colmenarejo / Madrid",
+      "type": "Public",
+      "degree": "All grados (most offered fully in English or bilingual)",
+      "reason": "September start only. Transfer from foreign universities for 2026/27: application 16 Jan-6 Mar 2026 (70 EUR, non-refundable except for causes attributable to the University), start September; matrícula for cambios de estudios 1-14 July 2026; credit recognition requests 'antes del 15 de septiembre'. Requirement: 30 passed credits recognised + B2 in the language of instruction (B2 English for English-taught grados). Early Admission (international, rolling) runs 5 Oct 2026-2 Apr 2027 - for the next September intake. No second-semester entry found. English-taught grados exist but only start in September.",
+      "source_urls": [
+        "https://www.uc3m.es/grado/admision/solicitud/traslado/internacional/solicitud",
+        "https://www.uc3m.es/grado/admision/solicitud/traslado/internacional",
+        "https://www.uc3m.es/grado/admision/solicitud/traslado/fechas",
+        "https://www.uc3m.es/grado/admision/solicitud/matricula/reconocimiento-creditos",
+        "https://www.uc3m.es/grado/admision/solicitud/estudiantes-internacionales/early-admission/plazos",
+        "https://www.uc3m.es/grado/uc3m-plus/estudiar-ingles"
+      ]
+    },
+    {
+      "university": "Universidad Autónoma de Madrid (UAM)",
+      "city": "Madrid",
+      "type": "Public",
+      "degree": "All grados (admission by continuation of foreign studies)",
+      "reason": "September start only. Admission by continuation of foreign studies (>=30 ECTS recognised; open to holders of non-homologated foreign degrees) 2026-27: applications 25 Jun-6 Jul 2026 (subsanación 7-13 Jul), resolution 27 Jul 2026, matrícula estimated September. No second-semester entry. English-taught groups not checked (irrelevant: no Feb intake).",
+      "source_urls": [
+        "https://www.uam.es/ssdlv/Satellite?c=Page&cid=1607040779768&pagename=FacdDerecho%2FPage%2FBASE_Modular",
+        "https://www.uam.es/derecho/media/doc/1607039788304/calendario-tramites-administrativos-grado-2026-2027-v2.pdf"
+      ]
+    },
+    {
+      "university": "Universidad de Alcalá (UAH)",
+      "city": "Alcalá de Henares / Guadalajara",
+      "type": "Public",
+      "degree": "All grados",
+      "reason": "September start only. Students with university studies begun abroad must apply through the general Madrid-district pre-enrolment (June) plus a parallel transfer request (70 EUR, no refunds except causes attributable to the administration). UAH page: foreign-system university graduates 'deben haber obtenido la homologación o declaración de equivalencia del nivel académico de Grado/Máster' to take part in Madrid-district admission. Taught in Spanish (B2 Spanish required for foreign systems per UAH page); English-taught provision not checked.",
+      "source_urls": [
+        "https://www.uah.es/es/admision-y-ayudas/grados/admision/procedimientos-preinscripcion/index.html",
+        "https://www.uah.es/es/admision-y-ayudas/grados/admision/"
+      ]
+    },
+    {
+      "university": "Universidad Politécnica de Madrid (UPM)",
+      "city": "Madrid",
+      "type": "Public",
+      "degree": "All grados (admission with foreign university studies)",
+      "reason": "September start only. 'Admisión a estudios oficiales de grado con estudios universitarios extranjeros - Curso 2026-2027': for partial or total foreign studies without homologation and >=30 credits recognised; application 26 Jan-10 Mar 2026; resolution 13 May 2026; B2 Spanish for non-Spanish-speaking nationals from non-Spanish systems. No second-semester entry.",
+      "source_urls": [
+        "https://admision.upm.es/gsfs/SFS42804"
+      ]
+    },
+    {
+      "university": "Universidad Complutense de Madrid (UCM)",
+      "city": "Madrid",
+      "type": "Public",
+      "degree": "All grados (partial convalidation of foreign studies)",
+      "reason": "September start only. Admission and convalidation for partial or total foreign university studies (>=30 credits convalidated): application 14 Apr-14 May 2026; 70 EUR (Decreto 43/2022 Annex V); B2 Spanish (DELE/SIELE) unless from Spanish-speaking system. No February/second-semester entry mentioned.",
+      "source_urls": [
+        "https://www.ucm.es/acceso-con-estudios-en-el-extranjero"
+      ]
+    },
+    {
+      "university": "Universidad Rey Juan Carlos (URJC)",
+      "city": "Madrid area (Móstoles, Alcorcón, Fuenlabrada, Vicálvaro, Aranjuez)",
+      "type": "Public",
+      "degree": "All grados (partial convalidation of foreign studies)",
+      "reason": "September start only. 'Ingreso - Convalidación parcial de estudios extranjeros' 2026/27: application 2 Mar-30 Apr 2026; places up to max. 1% of general offer; >=30 credits; matrícula 15-17 Sep 2026; available to completed foreign degree holders who did not seek (or were refused, on non-excluded grounds) homologation.",
+      "source_urls": [
+        "https://www.urjc.es/actualidad/445-ingreso-convalidacion-parcial-de-estudios-extranjeros",
+        "https://www.urjc.es/estudiar-en-la-urjc/admision/485-precios-publicos"
+      ]
+    },
+    {
+      "university": "Universidad de Sevilla (US)",
+      "city": "Sevilla",
+      "type": "Public",
+      "degree": "All grados",
+      "reason": "September start only; taught in Spanish (English provision not verified). Admission with partial/total foreign university studies not homologated (>=30 credits recognised): applications 'entre el 1 mayo y el 31 de julio de cada curso académico' to the Dean; Distrito Único Andaluz foreign-students phase 1 for 2026-27: 6-19 Mar 2026. The US 'estudiante visitante' modality (subjects only, max 90 credits, no degree, B1 Spanish) is NOT a degree admission. Second-semester enrolment windows in US rules are 'ampliación de matrícula' for already-enrolled students only.",
+      "source_urls": [
+        "https://derecho.us.es/sites/derecho/files/secretaria/admisi%C3%B3n%20traslado%20extranjeros_0.pdf",
+        "https://www.us.es/comunicaciones-oficiales/admision-en-grados-fase-extranjeros-curso-26-27",
+        "https://www.us.es/sites/default/files/inline-files/R.R.%20NORMAS%20DE%20MATRICULA%20ESTUDIOS%20OFICIALES%20DE%20GRADO%20Y%20MASTER%20UNIVERSITARIO%202026-2027.pdf"
+      ]
+    },
+    {
+      "university": "Centro Universitario EUSA (affiliated to Universidad de Sevilla)",
+      "city": "Sevilla",
+      "type": "Affiliated centre of Universidad de Sevilla",
+      "degree": "Grados en Periodismo, Comunicación Audiovisual, Publicidad y RRPP, Turismo (+ double degree)",
+      "reason": "September start only; Spanish-taught (Turismo page: 'Se ofrecen asignaturas en inglés' - only some subjects) — applicant needs English or French. Admission via Distrito Único Andaluz pre-enrolment (ordinary phase 11-22 Jun 2026; extraordinary 9-14 Jul 2026); students with foreign studies not homologated may enter without pre-enrolment if EUSA recognises >=30 credits. January period is only 'ampliación de matrícula' (11-29 Jan 2027) for existing students.",
+      "source_urls": [
+        "https://www.eusa.es/como-acceder-a-un-grado-universitario-oficial-en-sevilla/",
+        "https://www.eusa.es/grados-universitarios/turismo/"
+      ]
+    },
+    {
+      "university": "Universidad de León (ULE)",
+      "city": "León / Ponferrada",
+      "type": "Public",
+      "degree": "Grados with vacant places (list published only when the window opens)",
+      "reason": "Taught in Spanish only — applicant needs English or French (no English/French-taught grado identified; the vacancy list is 'no se publicarán hasta el comienzo del proceso de admisión', so language per degree cannot be confirmed - presumed Spanish, UNVERIFIED). NOTE: this IS a genuine public second-semester intake for NEW and transfer students ('iniciar o simultanear estudios ... asignaturas del segundo semestre'; 'alumnos que inicien estudios, tanto de nuevo ingreso como por traslado de expediente'): admission request 8-15 Jan 2027 (Unidad de Acceso, per matrícula page) / online 18-22 Jan 2027 (per preinscripción page - pages disagree); enrolment 22 Jan-2 Feb 2027; >=30 ECTS recognition resolved by the Dean. Also fails visa timing (admission in late January, after the early-December letter deadline) and matrícula may be 'tiempo completo o parcial'.",
+      "source_urls": [
+        "https://www.unileon.es/estudiantes/futuros-estudiantes/preinscripcion/admision-segundo-semestre",
+        "https://www.unileon.es/estudiantes/oferta-academica/grados/matricula/segundo-semestre"
+      ]
+    },
+    {
+      "university": "Universidad de Zaragoza (Unizar)",
+      "city": "Zaragoza / Huesca / Teruel",
+      "type": "Public",
+      "degree": "All grados",
+      "reason": "September start only (false lead): the February 'Fase 3' (2-6 Feb 2026) in Unizar's 2025-26 calendar is for DOCTORADO only; grado new-entry phases run June-September (Fase 3 grado/master: 25 Aug-5 Sep 2025); January is only 'ampliación de matrícula de asignaturas del 2º semestre' for continuing students. Taught in Spanish.",
+      "source_urls": [
+        "https://academico.unizar.es/sites/academico/files/archivos/ficheros/vgacad/fechas.admis_.matr_25-26.v4.pdf"
+      ]
+    },
+    {
+      "university": "Universidad Nacional de Educación a Distancia (UNED)",
+      "city": "Madrid (distance)",
+      "type": "Public",
+      "degree": "All grados",
+      "reason": "Online/distance degrees — excluded (and no student visa basis for in-person study). UNED has a second enrolment period in Feb-Mar (second-semester subjects) but it is distance learning.",
+      "source_urls": [
+        "https://www.uned.es/universidad/inicio/en/estudios/grados/admision-grados.html",
+        "https://descargas.uned.es/publico/pdf/INSTRUCCIONES_DE_MATRICULA_GRADO_FEBRERO_25_26.pdf"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-11858",
+      "title": "Real Decreto 534/2024 (requisitos de acceso a Grado y admisión) - texto consolidado",
+      "official": true,
+      "last_updated": "Última modificación: 02/07/2026 (consolidated PDF)",
+      "used_for": "Arts. 7.d, 43, 44, 45 - graduate quota 1-3%, foreign studies >=30 ECTS route, homologation"
+    },
+    {
+      "url": "https://www.boe.es/buscar/pdf/2024/BOE-A-2024-11858-consolidado.pdf",
+      "title": "RD 534/2024 consolidated PDF",
+      "official": true,
+      "last_updated": "02/07/2026",
+      "used_for": "Article quotes"
+    },
+    {
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-17045",
+      "title": "Real Decreto 889/2022 (homologación, equivalencia, convalidación)",
+      "official": true,
+      "last_updated": "sin modificaciones (consolidated PDF)",
+      "used_for": "Art. 5 effects; Art. 18.3 six-month maximum, negative silence"
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099",
+      "title": "Real Decreto 1155/2024 Reglamento de Extranjería - texto consolidado",
+      "official": true,
+      "last_updated": "Última modificación: 22/09/2026",
+      "used_for": "Arts. 34-36 (study visa), 52-55 (long-stay authorisation for studies)"
+    },
+    {
+      "url": "https://www.boe.es/buscar/pdf/2007/BOE-A-2007-20555-consolidado.pdf",
+      "title": "RDLeg 1/2007 TRLGDCU (consumer law) consolidated",
+      "official": true,
+      "last_updated": "28/02/2026",
+      "used_for": "Art. 87 abusive clauses; arts. 102-103 withdrawal right"
+    },
+    {
+      "url": "https://www.exteriores.gob.es/Consulados/chicago/en/ServiciosConsulares/Paginas/Consular/Visado-de-estudios.aspx",
+      "title": "Consulado General de España en Chicago - Student visa",
+      "official": true,
+      "last_updated": "30/06/2026",
+      "used_for": "Apply 6 months to 2 months before start; partial payment of fees sufficient; allow 4 weeks"
+    },
+    {
+      "url": "https://www.exteriores.gob.es/Consulados/bogota/es/ServiciosConsulares/Paginas/index.aspx?scca=Visados&scco=Colombia&scd=31&scs=Visados+Nacionales+-+Visado+de+estudios",
+      "title": "Consulado General de España en Bogotá - Visado de estudios",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Proof of admission and payment of matrícula; 2 months before; 1 month to issue"
+    },
+    {
+      "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Servicios-consulares.aspx?scco=M%C3%A9xico&scd=195&scca=Visados&scs=Visados+Nacionales+-+Visado+de+estudios",
+      "title": "Exteriores - Visado de estudios (México)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Admission + payment of matrícula; 2 months before; 1 month"
+    },
+    {
+      "url": "https://www.exteriores.gob.es/Consulados/nador/es/Comunicacion/Noticias/Documents/NOTA%20INFORMATIVA%20VISADOS%20DE%20ESTUDIOS-2.pdf",
+      "title": "Consulado General de España en Nador - Nota informativa visados de estudios",
+      "official": true,
+      "last_updated": "not shown (may predate RD 1155/2024)",
+      "used_for": "'admisión definitiva ... (no es válida la mera reserva de plaza)'; proof of matrícula payment; 38 days"
+    },
+    {
+      "url": "https://www.exteriores.gob.es/Consulados/casablanca/es/Consulado/PublishingImages/Paginas/Visados/REQUISITOS%20VISADO%20ESTUDIOS.pdf",
+      "title": "Consulado General de España en Casablanca - Requisitos visado estudios",
+      "official": true,
+      "last_updated": "Enero 2025 (pre-RD 1155/2024)",
+      "used_for": "'SIN EL PAGO DE LA MATRICULA NO SE RECOGERA EL VISADO'"
+    },
+    {
+      "url": "https://www.exteriores.gob.es/Consulados/SAOPAULO/es/ServiciosConsulares/Documents/Requisitos%20Visados%20estudios.pdf",
+      "title": "Consulado General de España en São Paulo - Requisitos visado estudios",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Admission/matrícula letter content; 20 h/week; 1-month resolution; visa-fee non-refundable"
+    },
+    {
+      "url": "https://unedasiss.uned.es/faqs",
+      "title": "UNEDasiss FAQs",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Acreditación needs bachillerato homologation for non-EU; requests Feb-Nov"
+    },
+    {
+      "url": "https://www.ciencia.gob.es/Universidades/validate/equivalencia.html",
+      "title": "Ministerio - Declaración de equivalencia",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Equivalence = academic/administrative effects; 'sirve para continuar estudios, si la universidad lo requiere'"
+    },
+    {
+      "url": "https://www.comunidad.madrid/servicios/educacion/acceso-universidad-estudios-extranjeros",
+      "title": "Comunidad de Madrid - Acceso a la universidad desde estudios extranjeros",
+      "official": true,
+      "last_updated": "03/06/2026",
+      "used_for": ">=30 ECTS route resolved by the Rector, apply at Faculty; UNEDasiss"
+    },
+    {
+      "url": "https://www.comunidad.madrid/educacion/precios-publicos-universitarios",
+      "title": "Comunidad de Madrid - Precios públicos universitarios",
+      "official": true,
+      "last_updated": "28/04/2026 (shows curso 2025-26)",
+      "used_for": "Decreto 43/2022; non-EU non-residents pay 4th-enrolment price; stay authorisation ≠ residence"
+    },
+    {
+      "url": "https://www.urjc.es/estudiar-en-la-urjc/admision/485-precios-publicos",
+      "title": "URJC - Precios públicos 2026/2027",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Grado per-credit prices 2026/27 incl. 4th enrolment"
+    },
+    {
+      "url": "https://www.uah.es/es/admision-y-ayudas/grados/admision/procedimientos-preinscripcion/index.html",
+      "title": "UAH - Procedimientos de preinscripción",
+      "official": true,
+      "last_updated": "not shown (mixes 2024 and 2026 dates)",
+      "used_for": "Madrid district: foreign graduates need homologation/equivalence; transfer procedure"
+    },
+    {
+      "url": "https://www.uc3m.es/grado/admision/solicitud/traslado/internacional/solicitud",
+      "title": "UC3M - Solicitud traslado desde universidades extranjeras",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "16 Jan-6 Mar 2026; 70 EUR; B2"
+    },
+    {
+      "url": "https://www.uc3m.es/grado/uc3m-plus/estudiar-ingles",
+      "title": "UC3M - Estudiar en inglés",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Most grados fully English or bilingual; B2 English"
+    },
+    {
+      "url": "https://admision.upm.es/gsfs/SFS42804",
+      "title": "UPM - Admisión con estudios universitarios extranjeros 2026-2027",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "26 Jan-10 Mar 2026; contacts"
+    },
+    {
+      "url": "https://www.ucm.es/acceso-con-estudios-en-el-extranjero",
+      "title": "UCM - Con estudios iniciados en el extranjero o con titulación universitaria extranjera",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "14 Apr-14 May 2026; 70 EUR; B2 Spanish"
+    },
+    {
+      "url": "https://www.urjc.es/actualidad/445-ingreso-convalidacion-parcial-de-estudios-extranjeros",
+      "title": "URJC - Convalidación parcial de estudios extranjeros",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "2 Mar-30 Apr 2026; 1% quota; Sept enrolment"
+    },
+    {
+      "url": "https://www.uam.es/ssdlv/Satellite?c=Page&cid=1607040779768&pagename=FacdDerecho%2FPage%2FBASE_Modular",
+      "title": "UAM Derecho - Admisión por continuación de estudios extranjeros",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "25 Jun-6 Jul 2026"
+    },
+    {
+      "url": "https://derecho.us.es/sites/derecho/files/secretaria/admisi%C3%B3n%20traslado%20extranjeros_0.pdf",
+      "title": "US - Solicitud de admisión con estudios universitarios extranjeros",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "1 May-31 Jul; >=30 credits; documents"
+    },
+    {
+      "url": "https://www.us.es/sites/default/files/inline-files/R.R.%20NORMAS%20DE%20MATRICULA%20ESTUDIOS%20OFICIALES%20DE%20GRADO%20Y%20MASTER%20UNIVERSITARIO%202026-2027.pdf",
+      "title": "US - Normas de matrícula 2026-2027",
+      "official": true,
+      "last_updated": "signed 29/06/2026",
+      "used_for": "Visiting students (non-degree); DA 3ª RD 534/2024 arts. 44-45"
+    },
+    {
+      "url": "https://www.us.es/comunicaciones-oficiales/admision-en-grados-fase-extranjeros-curso-26-27",
+      "title": "US - Admisión en Grados (fase extranjeros) 26-27",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "6-19 Mar 2026"
+    },
+    {
+      "url": "https://www.eusa.es/como-acceder-a-un-grado-universitario-oficial-en-sevilla/",
+      "title": "EUSA - Cómo acceder a un grado",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "DUA calendar 2026/27; >=30 credits direct access; Jan ampliación only"
+    },
+    {
+      "url": "https://www.unileon.es/estudiantes/futuros-estudiantes/preinscripcion/admision-segundo-semestre",
+      "title": "Universidad de León - Admisión segundo semestre 2026-2027",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Public second-semester intake (Spanish-taught)"
+    },
+    {
+      "url": "https://www.unileon.es/estudiantes/oferta-academica/grados/matricula/segundo-semestre",
+      "title": "Universidad de León - Matrícula del segundo semestre",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "New-entry and transfer students may start in 2nd semester; 8-15 Jan 2027"
+    },
+    {
+      "url": "https://academico.unizar.es/sites/academico/files/archivos/ficheros/vgacad/fechas.admis_.matr_25-26.v4.pdf",
+      "title": "Unizar - Fechas admisión y matrícula 2025-26",
+      "official": true,
+      "last_updated": "v4",
+      "used_for": "Feb phase = doctorate only"
+    },
+    {
+      "url": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+      "title": "Generalitat de Catalunya - Preinscripció universitària 2026, Convocatòria febrer (llista de centres)",
+      "official": true,
+      "last_updated": "Feb 2026 convocation",
+      "used_for": "English-taught grados at public-affiliated centres with Feb entry; dates 2-4 Feb"
+    },
+    {
+      "url": "https://universitats.gencat.cat/ca/preinscripcions/oferta-de-places/",
+      "title": "Canal Universitats - Oferta de places",
+      "official": true,
+      "last_updated": "15/09/2026",
+      "used_for": "February convocation exists each year"
+    },
+    {
+      "url": "https://www.cett.es/en/admission",
+      "title": "CETT-UB - Admission",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Feb/June/Sept calls; 55 EUR record study; seat reservation within 1 month; graduate routes"
+    },
+    {
+      "url": "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT",
+      "title": "CETT-UB - Bachelor's Degree in Tourism",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Codes 11011/11086; fees; B2 recommended"
+    },
+    {
+      "url": "https://www.esic.edu/grados/grado-marketing-barcelona",
+      "title": "ESIC - Grado en Marketing (Barcelona)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept 2027 start shown; price per course; reserva y matrícula; B2 English"
+    },
+    {
+      "url": "https://fernandezrozas.com/2020/02/27/no-ha-lugar-a-reclamar-3-000-euros-por-la-reserva-de-plaza-de-un-master-al-no-poder-la-interesada-cursar-sus-estudios-por-no-estar-en-regla-con-la-normativa-de-extranjeria-sap-malaga-18-noviembre-202/",
+      "title": "Blog commentary on SAP Málaga 2020 (reservation deposit not refundable - immigration status)",
+      "official": false,
+      "last_updated": "2020",
+      "used_for": "Lead only (court decision not read in CENDOJ)"
+    }
+  ],
+  "notes": "=== PART 2 - NATIONAL RULES (all verified on BOE consolidated texts unless stated) ===\n\n(a) ACCESS TO A SPANISH GRADO WITH A FOREIGN (non-EU) BACHELOR'S DEGREE\n1. RD 534/2024 (BOE 12/06/2024; consolidated text last modified 02/07/2026), Art. 7: may access grado directly: \"a) Quienes estén en posesión de un título universitario oficial de Grado, Máster o título equivalente.\" ... \"d) Quienes hayan cursado estudios universitarios parciales extranjeros o quienes, habiendo finalizado los estudios universitarios extranjeros, no hayan obtenido su homologación o declaración de equivalencia en España y deseen continuar estudios en una universidad española. En este supuesto, será requisito indispensable que la universidad en la que quieran continuar estudios les haya reconocido al menos 30 créditos ECTS.\"\n2. GRADUATE QUOTA - Art. 43: \"Para quienes ya estén en posesión de una titulación universitaria oficial o equivalente, se reservará un número de plazas no inferior al 1 por ciento, ni superior al 3 por ciento.\" Art. 38.1: the reserve percentages of arts. 39-43 apply to the places offered by PUBLIC universities; Art. 38.2: unfilled reserved places go to the general quota \"en cada una de las convocatorias de admisión\". Art. 45.2: foreign graduates WITH homologation/equivalence are treated like Spanish graduates (Art. 7 a/b), average grade via Ministry equivalence tables. => A foreign degree must be HOMOLOGATED or DECLARED EQUIVALENT before using the graduate quota. Confirmed for the Madrid district by UAH: foreign-system university graduates \"deben haber obtenido la homologación o declaración de equivalencia del nivel académico de Grado/Máster por parte del Ministerio\" (uah.es procedimientos-preinscripcion). CETT-UB says the same (homologate/equivalence, then pre-enrolment).\n3. >=30 ECTS ROUTE (outside the general procedure) - Art. 45.3: \"El Rector o la Rectora de la universidad resolverá las solicitudes de plaza de estudiantes con estudios universitarios extranjeros parciales o totales que no hayan obtenido la homologación o equivalencia ... a) ... a los que se reconozca un mínimo de 30 créditos ECTS serán resueltas de acuerdo con los criterios que establezca el Consejo de Gobierno que, en todo caso, tendrán en cuenta el expediente universitario.\" Art. 45.4: without 30 ECTS -> same conditions as students without university studies from the same system (i.e., secondary-school route: UNEDasiss/homologated bachillerato). This route is decided by each university (windows found: UPM 26 Jan-10 Mar 2026; URJC 2 Mar-30 Apr 2026, max 1% of places; UCM 14 Apr-14 May 2026; UAM 25 Jun-6 Jul 2026; UC3M 16 Jan-6 Mar 2026; US 1 May-31 Jul; all for SEPTEMBER start). Comunidad de Madrid page (upd. 03/06/2026): such requests \"serán resueltas por el Rector de la Universidad\", lodged at the \"secretaría de la Facultad o Escuela\". For a Business Computing graduate this is the realistic route into a CS/IT/Business grado (e.g., basic-training credits), but it requires the degree NOT to have been homologated (US form: declaration that homologation was not requested, or was denied on non-excluded grounds).\n4. HOMOLOGACIÓN / EQUIVALENCIA - RD 889/2022 (BOE-A-2022-17045, no modifications). Art. 5.2: equivalence has \"efectos académicos y administrativos correspondientes al nivel académico\" from issue of the certificate. Art. 18.3: \"La resolución se dictará y notificará en el plazo máximo de seis meses, desde la fecha en que la solicitud haya tenido entrada en el registro electrónico. Transcurrido dicho plazo sin haberse notificado la resolución, la solicitud se podrá entender desestimada por silencio administrativo.\" => Not obtainable in time for a December 2026 letter unless already in hand. Ministry page: equivalence \"sirve para continuar estudios, si la universidad lo requiere\" (actual average processing times NOT FOUND on official pages).\n5. UNEDasiss: the ACREDITACIÓN is the current digital certificate for applicants from foreign SECONDARY systems (includes access grade, PCE grades); the old \"credencial\" was the pre-2017 EU access credential (FAQ A.8: \"If you have an EU Access credential issued before 2017, request a UNEDasiss Accreditation\"). For non-EU systems the accreditation requires homologation of the secondary title to Spanish Bachillerato (FAQ A.4). Requests \"from the month of February through the month of November\". UNEDasiss does NOT handle university-level studies; graduates use homologation/equivalence (quota) or the 30-ECTS route at the university.\n\n(b) STUDENT VISA / STAY FOR STUDIES - RD 1155/2024 (in force 20 May 2025; consolidated text last modified 22/09/2026)\n- Art. 52.1.a: higher studies \"como actividad principal, en una institución o centro de enseñanza superior reconocido en España, en el marco de un programa a tiempo completo, que conduzca a la obtención de un título de educación superior reconocido\". Títulos propios are ALSO included; university studies may be \"presencial o híbrida\". No rule excludes a second bachelor's; an official grado listed in RUCT clearly qualifies (the centre may be checked in RUCT).\n- Art. 52.2 FULL-TIME: \"aquel en el que el estudiante se haya matriculado al menos en el noventa por ciento de los créditos en el caso de estudios universitarios\". RISK for February entrants who can only enrol in 2nd-semester subjects (~30 ECTS): no official clarification found on how 90% is computed for a mid-year start.\n- Art. 53.1.a REQUIREMENTS: \"1.º Haber sido admitido por una institución o un centro de enseñanza superior reconocido ... 2.º Haber abonado los derechos de inscripción, matrícula o documento equivalente exigidos por la institución\". => An admission letter WITHOUT any payment is not enough under the regulation. Consulates: Chicago (page 30/06/2026): \"documents that certify admission and payment of enrollment fees\" and \"Partial payment of enrollment or tuition fees is sufficient\"; Nador: \"admisión definitiva ... (no es válida la mera reserva de plaza)\" + \"Justificación de haber abonado la tasa o coste de la matrícula\"; Casablanca (Jan 2025, pre-RD 1155): \"SIN EL PAGO DE LA MATRICULA NO SE RECOGERA EL VISADO\"; Bogotá/México: \"admisión y el pago de la matrícula\".\n- TIMING: Art. 36.1 and 54.2: visa application \"con una antelación mínima de dos meses a la fecha del comienzo de la actividad o estudios\", unless justified. Chicago consulate: \"Applications must be submitted between 6 months and at least 2 months prior the start of the program\" (no 90-day rule found in official sources). For a start in early Feb 2027 the latest normal filing date is early Dec 2026 - consistent with the early-December letter target.\n- PROCESSING: Art. 36.3: the Oficina de Extranjería resolves the stay authorisation within 7 days (silence = refusal); Art. 36.4: consulate issues the visa \"en el plazo máximo de un mes\" after a favourable resolution. Chicago: allow at least 4 weeks; Nador: \"38 días\"; São Paulo form: national visas generally 1 month.\n- FROM INSIDE SPAIN: Art. 54.1: for higher studies the application \"también podrá presentarse en España por la persona extranjera siempre que se encuentre regularmente en territorio nacional\", adult, at least 2 months before the start; Art. 54.3: resolution within 2 months (silence = refusal); Art. 54.6: institutions in the Registro de Instituciones y Centros de Enseñanza Superior may file electronically, 15-day resolution. (Consular note, Nador: a Schengen visa will not be issued if the purpose is to avoid the consular study-visa route.)\n- MEANS & OTHER: Art. 35.h: 100% IPREM per month (unless accommodation prepaid) - study costs not counted; health insurance with an insurer authorised in Spain; criminal record (stays >6 months); medical certificate; passport valid >=1 year. Art. 55.1: authorisation lasts the official duration of the studies; annual proof of enrolment (Art. 55.2). TIE within 1 month of entry (Art. 34.3).\n- inclusion.gob.es 'Hoja informativa - estancia por estudios' returned HTTP 403 to automated fetches; the BOE text was used instead.\n\n(c) REFUNDS IF VISA REFUSED - no official Spanish rule specific to visa refusal was found. General consumer law (RDLeg 1/2007 TRLGDCU, consolidated 28/02/2026): Art. 87.2 abusive clause: \"La retención de cantidades abonadas por el consumidor y usuario por renuncia, sin contemplar la indemnización por una cantidad equivalente si renuncia el empresario\"; Art. 87.6 also covers \"la pérdida de las cantidades abonadas por adelantado\". Art. 102: 14-day withdrawal right for distance/off-premises contracts (exceptions Art. 103; does not apply to public prices). Public universities' fees are public prices: UC3M 70 EUR study fee non-refundable \"salvo causas imputables a la Universidad\"; UAH \"No se admiten devoluciones excepto por causas imputables a la administración\". Visa fee itself is not refunded on refusal (visa form: \"la denegación del visado no da lugar al reembolso de los gastos de tramitación del visado\"). Non-official lead: a 2020 Audiencia Provincial de Málaga ruling (blog commentary) refused a 3,000 EUR master reservation refund where the student could not attend for immigration reasons - so get the refund-on-visa-refusal clause IN WRITING before paying.\n\n=== MADRID PUBLIC PRICES (context) ===\nDecreto 43/2022 (Comunidad de Madrid) applies. Non-EU students over 18 without residence pay \"los precios de cuarta matrícula\" for grado; \"la autorización de estancia concedida a los estudiantes extranjeros ... no equivaldrá a la condición de residentes\" (comunidad.madrid page upd. 28/04/2026, showing curso 2025-26; URJC 2026/27 page). URJC 2026/27 grado per-credit: 1st enrolment 20,68 / 19,43 / 16,92 EUR (experimentality 1/2/3); 4th+ enrolment 136,44 / 128,57 / 113,71 EUR => non-EU non-resident approx. 60 x 113,71 = 6.822,60 EUR to 60 x 136,44 = 8.186,40 EUR per year (arithmetic from official per-credit prices; URJC page still cites RD 557/2011). Fees: study of recognition/convalidation from foreign centres 70 EUR; apertura de expediente 27,54 EUR.\n\n=== KEY CONCLUSION FOR THIS GROUP ===\nNo Madrid public university (UC3M, UAM, UAH, UPM, UCM, URJC) and not Universidad de Sevilla or EUSA offers a February/second-semester start for new or transfer grado students - all windows (Jan-July) lead to a SEPTEMBER start. UC3M has the largest English-taught grado offer but only for September. The only public-university second-semester intake found outside Catalonia is Universidad de León (Spanish-taught; admission window 8-22 Jan 2027 - too late for the visa). The Catalan \"preinscripció de febrer\" (Generalitat; Feb 2026 list) includes ENGLISH-taught official grados at public-affiliated centres (CETT-UB Tourism 100% English; ESIC-URV Marketing in English; UAB-affiliated Tourism in English) plus private UVic-UCC 'Estudis Globals / Global Studies (docència en Anglès)' and public UdL 'Estudis Anglesos' (5 places) - but the convocation takes place 2-4 Feb (2026 cycle), i.e., after the visa deadline; these are recorded as UNCLEAR programs/leads for the Catalonia group to verify for 2027. No French-taught or Franco-Spanish grado with February entry was found.\nFalse lead: Universidad de Zaragoza February 'Fase 3' = doctorate only. CEU Andalucía (Bormujos) now operates as Universidad CEU Fernando III (private) - not checked here (private-university group).\nWeb-search budget for the session ran out mid-task; remaining checks used direct fetches of official pages.\n\n=== CONTACTS ===\nUPM admissions: admisiongrado@upm.es; UPM credit recognition: convalidaciones@upm.es; UAH access section: seccion.acceso@uah.es; Universidad de León access unit: acceso@unileon.es; UC3M: contact form linked from traslado pages; US: application via https://reg.redsara.es/ to the Dean of the Faculty."
+}

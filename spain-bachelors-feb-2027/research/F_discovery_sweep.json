@@ -1,0 +1,707 @@
+{
+  "group": "Spain-wide discovery sweep — affiliated centres (centros adscritos) and anything the targeted agents might miss",
+  "programs": [
+    {
+      "university": "Universitat de Lleida (UdL) — Centre Universitari EAE (EAE Business School Barcelona)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat de Lleida (public)",
+      "degree": "Grado en Administración y Dirección de Empresas y Transformación de Negocios (marketed as 'BBA')",
+      "field": "Business",
+      "language": "Bilingual — Spanish with a 'bilingual Spanish/English study mode' (EAE FAQ: 'taught in Spanish, with a bilingual Spanish/English study mode'); Canal Universitats lists Catalan, English and Spanish. The English share is not stated (assume about half or less); there is no fully English stream.",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Catalan Generalitat February preinscription lists 61077 'Administració i Direcció d'Empreses i Transformació de Negocis \"Centre Universitari EAE\"' (UdL, Barcelona, U. Públ. CA) with 44 places in Feb 2026 (39 places in Feb 2025); places are for the Feb–June 2nd semester. The Feb 2027 list is not yet published (normally out in January).",
+      "application_deadline": "NOT FOUND for 2027. Pattern: Feb 2026 round — preinscription 2–4 Feb 2026, assignment 6 Feb, enrolment 9 Feb (Feb 2025 round: 3–5 Feb). Expect early Feb 2027.",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "No fee is mentioned in the Generalitat Feb list PDF or on the EAE BBA page. EAE's own process: request info → interview → admission assessment → enrolment.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "EAE General Terms (Oct 2024): 'Admission does not imply that the Student's place on the Program is reserved. The place will be deemed fully reserved ... when payment has been made'. The amount of the initial payment/reservation is not published.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "Yes",
+      "refund_text": "EAE General Terms (Oct 2024 English version): EAE refunds the amount paid ONLY if the Spanish consulate refuses the study visa after all documents were submitted AND after an 'administrative appeal for reconsideration' has been filed within the consulate's deadline. The student must submit the official visa-refusal notice (after the appeal). The student then chooses either (1) to use the money for an online programme of the same intake or (2) a bank-transfer refund minus bank and administrative costs. There is a 14-day no-reason withdrawal right after contracting. Otherwise payments are not refunded.",
+      "annual_tuition_non_eu_eur": 9900,
+      "tuition_text": "EAE FAQ: 'tuition fee ... is €9,900 for the October 2026 intake' (annual; an aggregator snippet gave €11,500 for the English/bilingual format, unverified). The Generalitat Feb 2026 list gives an indicative price of €5,750 for the Feb–June semester only, labelled 'preu orientatiu ... només a la matrícula del 1r quadrimestre (febrer-juny)'. No non-EU surcharge is stated (private affiliated-centre pricing). 2027 prices not published.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "Conditional. Two possible routes, neither confirmed for a February start: (a) Catalan February preinscription (accesuniversitat.gencat.cat) — a foreign graduate needs a recognised access credential (homologated degree for the 'titulats universitaris' reserve quota, or UNEDasiss/homologated secondary school); (b) direct admission as a holder of 'estudios universitarios extranjeros parciales o totales' not homologated in Spain — UdL lists this as an access route (RD 534/2024); in Spanish practice this route normally requires the university to recognise at least 30 ECTS of the previous degree (the 30-ECTS threshold was not quoted on the UdL page itself — verify with the centre).",
+      "language_requirement": "NOT FOUND (no formal English or Spanish certificate stated). Because most of the teaching is in Spanish or bilingual, the applicant would in practice need Spanish.",
+      "official_ruct": "Yes (RUCT code 1500095 — Graduado/a en ADE y Transformación de Negocios por la Universidad de Lleida, centre 08073430 Centro Universitario EAE; plan published in BOE 24/03/2025)",
+      "data_year": "2026 (Feb 2026 round, Oct 2026 price) — 2027 figures not yet published",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Poor fit. Places are assigned in the Catalan Feb preinscription in early Feb 2027, so an admission letter by early Dec 2026 is unlikely through that route. An earlier letter would only be possible if EAE/UdL admit him directly through recognition of foreign university credits, which is unconfirmed. He must ask EAE admissions whether they issue conditional letters for the Feb intake.",
+      "risks": "(1) LANGUAGE: Spanish/bilingual, with no fully English stream — conflicts with the English/French-only requirement. (2) The Feb entry runs through the public Feb preinscription, whose results come out in Feb, which is too late for a visa. (3) The Feb list for 2027 is not yet published, so the places could change. (4) The visa refund requires a consular appeal first, and admin/bank costs are kept.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+          "https://universitats.gencat.cat/ca/preinscripcions/oferta-de-places/"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf",
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba"
+        ],
+        "refund": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf"
+        ],
+        "tuition": [
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://www.udl.cat/export/sites/universitat-lleida/ca/serveis/qpd/.galleries/Documents-SEDE/3.1.a-Acceso_Grado.pdf",
+          "https://www.udl.cat/export/sites/universitat-lleida/ca/serveis/qpd/.galleries/Documents-SEDE/3.1.b-Admision_Grado.pdf",
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba"
+        ],
+        "language": [
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba",
+          "https://universitats.gencat.cat/en/detalls/oferta/5146-Administracio-i-Direccio-dEmpreses-i-Transformacio-de-Negocis-Centre-Universitari-EAE"
+        ],
+        "ruct": [
+          "https://www.educacion.gob.es/ruct/estudiocentro.action?codigoCiclo=SC&codigoEstudio=1500095&actual=estudios",
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba"
+        ]
+      }
+    },
+    {
+      "university": "Centre Universitari EAE (EAE Business School Barcelona) — degree listed under UdL in the Feb 2026 round",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat de Lleida (public) [RUCT entry still shows UPC]",
+      "degree": "Grado en Marketing y Comunicación Digital",
+      "field": "Business",
+      "language": "Spanish and bilingual Spanish/English ('Spanish & Bilingual'; 'taught in a bilingual format'). English share not stated.",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat Feb 2026 list: 61078 'Màrqueting i Comunicació Digital \"Centre Universitari EAE\"' (UdL, Barcelona) with 45 places (38 in Feb 2025).",
+      "application_deadline": "NOT FOUND for 2027; Feb 2026 pattern: preinscription 2–4 Feb, assignment 6 Feb, enrolment 9 Feb.",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Not stated on the EAE page or in the Generalitat PDF.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "Same EAE General Terms as for the ADE degree: the place is reserved only on payment; amount not published.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "Yes",
+      "refund_text": "Same EAE General Terms (Oct 2024): refund only after a visa refusal AND a reconsideration appeal, with the official refusal notice; refund minus bank/admin costs, or credit towards an online programme.",
+      "annual_tuition_non_eu_eur": "NOT FOUND",
+      "tuition_text": "Annual price not found on the EAE page. Generalitat Feb 2026 list: indicative €4,450 for the Feb–June semester only.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "Conditional. Two possible routes, neither confirmed for a February start: (a) Catalan February preinscription (accesuniversitat.gencat.cat) — a foreign graduate needs a recognised access credential (homologated degree for the 'titulats universitaris' reserve quota, or UNEDasiss/homologated secondary school); (b) direct admission as a holder of 'estudios universitarios extranjeros parciales o totales' not homologated in Spain — UdL lists this as an access route (RD 534/2024); in Spanish practice this route normally requires the university to recognise at least 30 ECTS of the previous degree (the 30-ECTS threshold was not quoted on the UdL page itself — verify with the centre).",
+      "language_requirement": "NOT FOUND (FAQ says only that the degree is taught in a bilingual format).",
+      "official_ruct": "Yes (RUCT 2503102 'Graduado/a en Marketing y Comunicación Digital' — RUCT lists it under UPC at Centro Universitario EAE 08070350; the Feb 2026 Catalan list shows it under UdL, so the affiliation is in transition — verify)",
+      "data_year": "2026 (Feb 2026 round)",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Same as the EAE ADE degree: Feb preinscription results come too late for an early-Dec letter unless EAE admits him directly.",
+      "risks": "Spanish/bilingual, with no fully English stream; the Feb preinscription timing does not fit a visa; the affiliation is changing from UPC to UdL.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf"
+        ],
+        "refund": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf"
+        ],
+        "tuition": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://www.udl.cat/export/sites/universitat-lleida/ca/serveis/qpd/.galleries/Documents-SEDE/3.1.a-Acceso_Grado.pdf"
+        ],
+        "language": [
+          "https://www.eaebarcelona.com/en/degree-marketing-communication-and-digital-business"
+        ],
+        "ruct": [
+          "https://www.educacion.gob.es/ruct/estudiocentro.action?codigoCiclo=SC&codigoEstudio=2503102&actual=estudios",
+          "https://www.eaebarcelona.com/en/degree-marketing-communication-and-digital-business"
+        ]
+      }
+    },
+    {
+      "university": "Universitat Rovira i Virgili (URV) — ESIC Business & Marketing School Barcelona",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat Rovira i Virgili (public)",
+      "degree": "Grado en Marketing (docencia en inglés) — 'Màrqueting \"ESIC\" (docència en Anglès)'",
+      "field": "Business",
+      "language": "English (Canal Universitats: 'Teaching languages: English')",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat Feb 2026 list: 71074 'Màrqueting \"ESIC\" (docència en Anglès)' URV, Barcelona, U. Públ. CA — 16 places, indicative €4,815 for Feb–June, observation 26: B2 English required (also 71062 Spanish-taught version, 13 places). Note: ESIC's own web page shows only 'Sept. 2027' starts.",
+      "application_deadline": "NOT FOUND for 2027; Feb 2026 pattern: preinscription 2–4 Feb 2026, assignment 6 Feb, enrolment 9 Feb (via accesuniversitat.gencat.cat). ESIC also runs its own admission tests.",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Not stated. ESIC process: counselling session → documents → admission tests (motivation letter, business case, English test unless certified) → pre-enrolment letter.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "ESIC page: 'Once you have passed the admission tests, you will receive a pre-enrollment letter. To secure your place, you must pay the reservation and enrollment fees within the period indicated by your advisor.' Amounts not published (the letter comes BEFORE the payment).",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "Not found on the Barcelona marketing page — cross-check with the ESIC agent's findings (ESIC general conditions).",
+      "annual_tuition_non_eu_eur": "NOT FOUND",
+      "tuition_text": "ESIC page (Sept 2027 intake) shows €10,143 / €10,555 'price per course' for the Bachelor + Specialization Diploma (4 yrs) / Bachelor + Degree (5 yrs) packages; price of the official degree alone not shown. Generalitat Feb 2026: indicative €4,815 for the Feb–June semester (preu orientatiu). No non-EU surcharge stated.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "Same Catalan rules as for EAE: Feb preinscription with a valid access credential (homologated degree / UNEDasiss), or credit-recognition route for foreign university studies. ESIC page: 'Credit recognition and file transfer — we will evaluate your application ... then you can apply for the admission test for the Official Degree'.",
+      "language_requirement": "B2 English (CEFR). Generalitat Feb 2026 obs. 26: 'Per cursar aquest grau es requereix un nivell B2 d'anglès ... En el cas de no acreditar-lo abans de la matrícula, el centre farà una prova de nivell.' Canal Universitats calls B2 'preferable'.",
+      "official_ruct": "Yes (per the Generalitat Canal Universitats official listing, URV degree at an affiliated centre; RUCT code not checked)",
+      "data_year": "2026 (Feb 2026 round); ESIC prices for Sept 2027",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Places are assigned in the Catalan Feb preinscription (early Feb), so an admission letter by early Dec 2026 is unlikely. Ask ESIC whether the pre-enrolment letter can be issued earlier for a Feb entry.",
+      "risks": "POSSIBLE DUPLICATE: ESIC is covered by the private-Madrid agent and URV by the Catalan-public agent — merge with their entries. ESIC's own site advertises only September starts, so the Feb entry exists only through the Catalan Feb round (16 places in 2026; 2027 places unknown). Feb preinscription timing does not fit a visa. This is the only fully English-taught Feb option I found outside the other agents' lists.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/ca/preinscripcions/oferta-de-places/"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona"
+        ],
+        "refund": [
+          "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona"
+        ],
+        "tuition": [
+          "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona"
+        ],
+        "language": [
+          "https://universitats.gencat.cat/en/detalls/oferta/4637-Marketing-ESIC-docencia-en-Ingles",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "ruct": [
+          "https://universitats.gencat.cat/en/detalls/oferta/4637-Marketing-ESIC-docencia-en-Ingles"
+        ]
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "university": "Universidad de León (ULE)",
+      "city": "León",
+      "type": "Public",
+      "degree": "Grados with vacant places — 'Admisión Segundo Semestre' 2026-27",
+      "reason": "Taught in Spanish only — applicant needs English or French. NOTE: a genuine Feb entry for NEW students exists — applications 18–22 Jan 2027, enrolment 22 Jan–2 Feb 2027, only for degrees with vacancies (list published when the process opens), second-semester subjects only. Spanish-taught; also too late for a Dec visa letter.",
+      "source_urls": [
+        "https://www.unileon.es/estudiantes/futuros-estudiantes/preinscripcion/admision-segundo-semestre"
+      ]
+    },
+    {
+      "university": "Florida Universitària (affiliated to Universitat de València)",
+      "city": "Catarroja (Valencia)",
+      "type": "Affiliated centre of Universitat de València",
+      "degree": "All grados (ADE, Videojuegos, Ingenierías, Magisterio...)",
+      "reason": "September start only (first-year classes start 14 Sept 2026 after pre-university campus)",
+      "source_urls": [
+        "https://www.floridauniversitaria.es/fechas-inicio-curso-2026-2027/"
+      ]
+    },
+    {
+      "university": "EDEM Escuela de Empresarios (affiliated to Universitat de València)",
+      "city": "Valencia",
+      "type": "Affiliated centre of Universitat de València",
+      "degree": "Grado en ADE para Emprendedores (BBA in Entrepreneurship)",
+      "reason": "September start only ('Dates: September – May'); also bilingual (classes 'progressively taught 50% in Spanish and 50% in English')",
+      "source_urls": [
+        "https://edem.eu/en/bba-in-business-administration/"
+      ]
+    },
+    {
+      "university": "Centro Universitario Cardenal Cisneros (UAH)",
+      "city": "Alcalá de Henares",
+      "type": "Affiliated centre of Universidad de Alcalá",
+      "degree": "Magisterio, Educación Social, Psicología",
+      "reason": "September start only (Distrito Único de Madrid preinscription June–July 2026; start Sept 2026); Spanish-taught",
+      "source_urls": [
+        "https://www.cardenalcisneros.es/admision/"
+      ]
+    },
+    {
+      "university": "TAI Escuela Universitaria de Artes (URJC)",
+      "city": "Madrid",
+      "type": "Affiliated centre of Universidad Rey Juan Carlos",
+      "degree": "Grados in Cinematografía, Artes Escénicas, Fotografía, Bellas Artes",
+      "reason": "September start only (official degrees start Sept 2026; URJC Distrito Único preinscription); Spanish-taught",
+      "source_urls": [
+        "https://taiarts.com/admision-y-matricula/grado-oficial/"
+      ]
+    },
+    {
+      "university": "CEDEU — Centro de Estudios Universitarios (URJC) — official grados",
+      "city": "Madrid",
+      "type": "Affiliated centre of Universidad Rey Juan Carlos",
+      "degree": "Grados en ADE, Derecho, Marketing, Protocolo",
+      "reason": "September start only (first-year presentations 21 Sept 2026); Spanish-taught",
+      "source_urls": [
+        "https://www.cedeu.es/cedeu-news/inicio-curso-cedeu-2026-2027"
+      ]
+    },
+    {
+      "university": "CEDEU — 'Bachelor in Business Administration (BBA)' / BTHM / Marketing & Digital Strategies (English)",
+      "city": "Madrid",
+      "type": "Private (non-official programme)",
+      "degree": "Bachelor in Business Administration (180 ECTS, 3 years, English, February and October starts)",
+      "reason": "Non-official: listed under 'Cursos y Posgrados' (not 'Grados'), 3 years/180 ECTS with an 'Academic Partner' — not a Spanish grado oficial (which is 240 ECTS). English + Feb start, but not official.",
+      "source_urls": [
+        "https://www.cedeu.es/cursos-y-postgrados/bachelor-in-business-administration/"
+      ]
+    },
+    {
+      "university": "IEB — Instituto de Estudios Bursátiles (UCM/URJC)",
+      "city": "Madrid",
+      "type": "Affiliated centre (UCM / URJC)",
+      "degree": "Grado en ADE / Grado en Derecho",
+      "reason": "September start only (Grado en ADE starts 07/09/2026); Spanish-taught",
+      "source_urls": [
+        "https://www.ieb.es/estudios-ieb/grados/grado-en-ade/"
+      ]
+    },
+    {
+      "university": "CESAG — Centro de Enseñanza Superior Alberta Giménez (Comillas)",
+      "city": "Palma de Mallorca",
+      "type": "Affiliated centre of Universidad Pontificia Comillas",
+      "degree": "Education, Communication, Nursing, CAFYD",
+      "reason": "September start only (courses begin 15 Sept 2026; admission May–Sept 2026); Spanish-taught",
+      "source_urls": [
+        "https://www.cesag.org/admision/"
+      ]
+    },
+    {
+      "university": "Centro Universitario San Isidoro (UPO)",
+      "city": "Sevilla",
+      "type": "Affiliated centre of Universidad Pablo de Olavide",
+      "degree": "9 grados/dobles grados",
+      "reason": "September start only (2026-27 preinscription/enrolment calendar ends mid-September); Spanish-taught",
+      "source_urls": [
+        "https://centrosanisidoro.es/wp-content/images/adminision/centro-universitario-san-isidoro-upo-sevilla-admisiones-fechas.pdf"
+      ]
+    },
+    {
+      "university": "ESERP Business & Law School (Barcelona, affiliated to UVic-UCC; Madrid)",
+      "city": "Barcelona / Madrid",
+      "type": "Affiliated centre of UVic-UCC (Barcelona); affiliated centre (Madrid)",
+      "degree": "Grado en Negocios Internacionales; Publicidad/Marketing; Derecho; Criminología; ADE (Madrid)",
+      "reason": "September start only: every programme page shows 'September 2026' intake. International Business and Marketing are bilingual (Spanish/English); Law, Criminology and Madrid ADE are Spanish only. The UVic normativa for ESERP lists enrolment windows for new students in 'Julio, septiembre, octubre, febrero', and 'Dret ESERP' had 10 places in the Catalan Feb 2025 round (Spanish-taught). No Feb 2026 places and no advertised Feb cohort. International Business costs €7,970/yr; registration €1,000 on enrolment + €400 before start.",
+      "source_urls": [
+        "https://eserp.com/en/program/bachelors-degree-international-business-barcelona/",
+        "https://www.uvic.cat/es/normativa/ESERP/grau",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "Universidad Europea del Atlántico (UNEATLANTICO)",
+      "city": "Santander",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "September start only: 'Admissions for new students: From January 7th until capacity is reached', regular registration 16 June–14 Sept. The only 'February' item is an early exam call for the final project (TFG). Mostly Spanish-taught.",
+      "source_urls": [
+        "https://www.uneatlantico.es/en/students/deadlines-for-admission-and-registration"
+      ]
+    },
+    {
+      "university": "UDIT — Universidad de Diseño, Innovación y Tecnología",
+      "city": "Madrid",
+      "type": "Private",
+      "degree": "Grado en Diseño Multimedia y Gráfico (Spanish or English stream) and other grados",
+      "reason": "September start only ('Fecha de inicio 01/09/2027')",
+      "source_urls": [
+        "https://www.udit.es/grado-en-diseno-multimedia-y-grafico/"
+      ]
+    },
+    {
+      "university": "EU Business School Barcelona",
+      "city": "Barcelona",
+      "type": "Private (non-official)",
+      "degree": "BBA — Bachelor of Business Administration",
+      "reason": "Non-official: awards a 'título propio' from UVic-UCC plus a private Swiss EU Business School degree and a UK University of Derby BA (Hons) — not a Spanish grado oficial. (English, starts Oct/Feb/Jun/Aug, €7,350/semester, €200 non-refundable application fee.)",
+      "source_urls": [
+        "https://www.euruni.edu/en/Programs/Bachelor-s/BBA-Bachelor-of-Business-Administration-Barcelona/Overview/Overview.html"
+      ]
+    },
+    {
+      "university": "GBSB Global Business School",
+      "city": "Barcelona / Madrid",
+      "type": "Foreign university centre (Malta MFHEA-licensed), authorised in Catalonia and Madrid",
+      "degree": "Bachelor in Business Administration and other bachelors",
+      "reason": "Foreign degree, not a Spanish grado oficial: GBSB is authorised 'as a foreign university centre' (Catalonia Resolution REU/3131/2025; RUCT centre code 08073661) and licensed by Malta's MFHEA; its degrees are Maltese/foreign. English; bachelor starts October, January (orientation 11–12 Jan 2027) and April; the enrolment deposit is non-refundable per its guidelines.",
+      "source_urls": [
+        "https://www.global-business-school.org/rankings-accreditations/",
+        "https://www.global-business-school.org/application-guidelines-bachelor/",
+        "https://www.global-business-school.org/academic-calendar/"
+      ]
+    },
+    {
+      "university": "Les Roches Marbella",
+      "city": "Marbella",
+      "type": "Private (foreign degree)",
+      "degree": "Bachelor of Science in Global Hospitality Management",
+      "reason": "Non-official in Spain: US-accredited (NECHE) Bachelor of Science; Spanish listings call the Marbella BBA a 'título propio'. Spring and Fall intakes; very expensive (€27,370 per semester academic total).",
+      "source_urls": [
+        "https://lesroches.edu/programs/bachelor-science-hospitality-management/",
+        "https://www.emagister.com/titulo-universitario-direccion-hotelera-internacional-bba-cursos-2971876.htm"
+      ]
+    },
+    {
+      "university": "Glion Institute of Higher Education",
+      "city": "—",
+      "type": "Private (Switzerland/UK)",
+      "degree": "Hospitality bachelors",
+      "reason": "Not in Spain (campuses in Switzerland and London only); not a Spanish grado",
+      "source_urls": [
+        "https://www.glion.edu/"
+      ]
+    },
+    {
+      "university": "Saint Louis University — Madrid Campus",
+      "city": "Madrid",
+      "type": "Foreign (US) university authorised by Comunidad de Madrid",
+      "degree": "US BA/BS degrees",
+      "reason": "Non-official: 'These degrees are not \"official\" degrees in Spain' (they need homologación). Spring 2027 classes start 11 Jan 2027, but the application deadline for students needing a Spanish visa was 1 Aug 2026 (passed).",
+      "source_urls": [
+        "https://www.slu.edu/madrid/about/accreditation.php",
+        "https://www.slu.edu/madrid/admissions/admissions-timeline.php"
+      ]
+    },
+    {
+      "university": "Schiller International University — Madrid",
+      "city": "Madrid",
+      "type": "Private (US-accredited)",
+      "degree": "BS in Computer Science, International Business, etc.",
+      "reason": "Non-official: US-accredited (ACCSC) American degrees, not Spanish grados oficiales (aggregators report Jan and Sept intakes)",
+      "source_urls": [
+        "https://www.schiller.edu/campuses/madrid/",
+        "https://www.schiller.edu/admissions/requirements/"
+      ]
+    },
+    {
+      "university": "CIS University (Endicott College)",
+      "city": "Madrid",
+      "type": "Private (US degree)",
+      "degree": "US bachelor's degrees",
+      "reason": "Non-official: degrees from Endicott College, accredited by NECHE (US) — American degree, not a Spanish grado",
+      "source_urls": [
+        "https://www.cis-spain.com/en/blog/h1-bachelors-degree-in-spain-study-an-american-university-degree-in-madrid/"
+      ]
+    },
+    {
+      "university": "Marbella International University Centre (MIUC)",
+      "city": "Marbella",
+      "type": "Private (UK degree)",
+      "degree": "Bachelor's degrees (Psychology, Politics & IR, Marketing, Int. Business, Law)",
+      "reason": "Non-official: degrees from the University of West London (UK); October intake advertised",
+      "source_urls": [
+        "https://miuc.org/"
+      ]
+    },
+    {
+      "university": "Harbour.Space Institute of Technology",
+      "city": "Barcelona",
+      "type": "Private (non-official)",
+      "degree": "Bachelor in Computer Science / Data Science / Cybersecurity etc.",
+      "reason": "Not a Spanish grado oficial: its own diploma is unaccredited; the UVic-UCC partnership awards only an 'accredited diploma' alongside (not stated to be an official grado). Intakes every 3 weeks.",
+      "source_urls": [
+        "https://harbour.space/about"
+      ]
+    },
+    {
+      "university": "TBS Education Barcelona (Toulouse Business School)",
+      "city": "Barcelona",
+      "type": "Foreign (French) business school",
+      "degree": "Bachelor in Management (English and French tracks)",
+      "reason": "Foreign (French) degree, not a Spanish grado oficial; the next intake shown is September 2026. Note: official site blocks automated access (HTTP 403); facts come from the official page's search snippet — verify manually.",
+      "source_urls": [
+        "https://tbs-education.es/en/bachelor-business-administration-barcelona/admission-and-enrolment"
+      ]
+    },
+    {
+      "university": "EAE Business School Barcelona — Oct 2026 standard intake",
+      "city": "Barcelona",
+      "type": "Affiliated centre of UdL",
+      "degree": "BBA (English page)",
+      "reason": "For information only: EAE's own page advertises only an October 2026 start — the Feb entry exists only through the Catalan Feb preinscription (see programs).",
+      "source_urls": [
+        "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+      "title": "Preinscripció universitària 2026 — Convocatòria febrer (llista de centres d'estudi)",
+      "official": true,
+      "last_updated": "not shown (Feb 2026 round)",
+      "used_for": "Feb 2026 places/prices: EAE (UdL) ADE 44 places €5,750; EAE Marketing 45 places €4,450; ESIC Marketing English 16 places €4,815 (B2); UAB Turisme English; CETT; UVic Global Studies; dates 2–4/6/9 Feb"
+    },
+    {
+      "url": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+      "title": "Preinscripció universitària 2025 — Convocatòria febrer",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Feb 2025 places (EAE, Mediterrani, Euroaula, Dret ESERP...)"
+    },
+    {
+      "url": "https://universitats.gencat.cat/ca/preinscripcions/oferta-de-places/",
+      "title": "Canal Universitats — Oferta de places",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Links to the Feb lists"
+    },
+    {
+      "url": "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba",
+      "title": "EAE Barcelona — Bachelor's Degree in Business Administration and Business Transformation (BBA)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Language, €9,900 Oct 2026 price, RUCT link, UdL affiliation"
+    },
+    {
+      "url": "https://www.eaebarcelona.com/en/degree-marketing-communication-and-digital-business",
+      "title": "EAE Barcelona — Bachelor's Degree in Marketing and Digital Communication",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Language (Spanish & bilingual), RUCT link"
+    },
+    {
+      "url": "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf",
+      "title": "EAE Barcelona General Terms and Conditions (Oct 2024, ENG)",
+      "official": true,
+      "last_updated": "Oct 2024",
+      "used_for": "Reservation-on-payment, visa-refusal refund conditions"
+    },
+    {
+      "url": "https://universitats.gencat.cat/en/detalls/oferta/5146-Administracio-i-Direccio-dEmpreses-i-Transformacio-de-Negocis-Centre-Universitari-EAE",
+      "title": "Canal Universitats — ADE i Transformació de Negocis 'Centre Universitari EAE'",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Languages Catalan/Spanish/English, 150 places, code 61077"
+    },
+    {
+      "url": "https://www.educacion.gob.es/ruct/estudiocentro.action?codigoCiclo=SC&codigoEstudio=1500095&actual=estudios",
+      "title": "RUCT — Graduado/a en ADE y Transformación de Negocios por la Universidad de Lleida (1500095)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Official status, centre 08073430"
+    },
+    {
+      "url": "https://www.educacion.gob.es/ruct/estudiocentro.action?codigoCiclo=SC&codigoEstudio=2503102&actual=estudios",
+      "title": "RUCT — Graduado/a en Marketing y Comunicación Digital (2503102)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Official status (listed under UPC, Centro Universitario EAE)"
+    },
+    {
+      "url": "https://www.udl.cat/export/sites/universitat-lleida/ca/serveis/qpd/.galleries/Documents-SEDE/3.1.a-Acceso_Grado.pdf",
+      "title": "UdL — Normativa y procedimiento general de acceso al Grado",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Access route for foreign university studies not homologated"
+    },
+    {
+      "url": "https://www.udl.cat/export/sites/universitat-lleida/ca/serveis/qpd/.galleries/Documents-SEDE/3.1.b-Admision_Grado.pdf",
+      "title": "UdL — Criterios y procedimientos de admisión al Grado",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Admission through preinscription and reserve quotas"
+    },
+    {
+      "url": "https://universitats.gencat.cat/en/detalls/oferta/4637-Marketing-ESIC-docencia-en-Ingles",
+      "title": "Canal Universitats — Màrqueting 'ESIC' (docència en Anglès)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "English teaching, B2 preferable, 35 places"
+    },
+    {
+      "url": "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona",
+      "title": "ESIC — Bachelor's Degree in Marketing (Barcelona)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept 2027 start on ESIC site, package prices, reservation process"
+    },
+    {
+      "url": "https://www.unileon.es/estudiantes/futuros-estudiantes/preinscripcion/admision-segundo-semestre",
+      "title": "Universidad de León — Admisión Segundo Semestre",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Second-semester entry for new students (Spanish-taught)"
+    },
+    {
+      "url": "https://www.uvic.cat/es/normativa/ESERP/grau",
+      "title": "UVic-UCC — Normativa académica de grado ESERP 2026/2027",
+      "official": true,
+      "last_updated": "approved 13-05-2026",
+      "used_for": "ESERP enrolment windows incl. 'febrero' for new students; 3% graduate quota"
+    },
+    {
+      "url": "https://eserp.com/en/program/bachelors-degree-international-business-barcelona/",
+      "title": "ESERP — Bachelor's Degree in International Business Barcelona",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept 2026 intake, bilingual, €7,970, €1,000+€400 registration"
+    },
+    {
+      "url": "https://www.global-business-school.org/rankings-accreditations/",
+      "title": "GBSB Global — Rankings & Accreditations",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Foreign university centre status, RUCT code 08073661, MFHEA"
+    },
+    {
+      "url": "https://www.global-business-school.org/application-guidelines-bachelor/",
+      "title": "GBSB Global — Application Guidelines Bachelor",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Oct/Jan/Apr starts; non-refundable deposit"
+    },
+    {
+      "url": "https://www.euruni.edu/en/Programs/Bachelor-s/BBA-Bachelor-of-Business-Administration-Barcelona/Overview/Overview.html",
+      "title": "EU Business School Barcelona — BBA",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "título propio UVic + Swiss + UK; Feb start"
+    },
+    {
+      "url": "https://www.slu.edu/madrid/about/accreditation.php",
+      "title": "SLU Madrid — Accreditation",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Degrees not official in Spain"
+    },
+    {
+      "url": "https://www.slu.edu/madrid/admissions/admissions-timeline.php",
+      "title": "SLU Madrid — Admissions timeline",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Spring 2027 start 11 Jan; visa-applicant deadline 1 Aug 2026"
+    },
+    {
+      "url": "https://www.cedeu.es/cursos-y-postgrados/bachelor-in-business-administration/",
+      "title": "CEDEU — Bachelor in Business Administration (English)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Non-official English BBA with Feb/Oct starts"
+    },
+    {
+      "url": "https://edem.eu/en/bba-in-business-administration/",
+      "title": "EDEM — BBA in Business Administration",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept–May; 50/50 Spanish/English"
+    },
+    {
+      "url": "https://www.floridauniversitaria.es/fechas-inicio-curso-2026-2027/",
+      "title": "Florida Universitària — Fechas inicio curso 2026/2027",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept start"
+    },
+    {
+      "url": "https://www.uneatlantico.es/en/students/deadlines-for-admission-and-registration",
+      "title": "UNEATLANTICO — Deadlines for admission and registration",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "No Feb intake"
+    },
+    {
+      "url": "https://www.udit.es/grado-en-diseno-multimedia-y-grafico/",
+      "title": "UDIT — Grado en Diseño Multimedia y Gráfico",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Start 01/09/2027"
+    },
+    {
+      "url": "https://lesroches.edu/programs/bachelor-science-hospitality-management/",
+      "title": "Les Roches — BSc Global Hospitality Management",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "US-accredited BSc, Marbella fees"
+    },
+    {
+      "url": "https://harbour.space/about",
+      "title": "Harbour.Space — About / Accreditation",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "UVic partnership diploma; non-official"
+    },
+    {
+      "url": "https://miuc.org/",
+      "title": "MIUC Marbella",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "UK (UWL) degrees, Oct intake"
+    },
+    {
+      "url": "https://www.cis-spain.com/en/blog/h1-bachelors-degree-in-spain-study-an-american-university-degree-in-madrid/",
+      "title": "CIS University — US bachelor in Madrid",
+      "official": true,
+      "last_updated": "11 May 2026",
+      "used_for": "Endicott/NECHE US degree"
+    },
+    {
+      "url": "https://www.schiller.edu/campuses/madrid/",
+      "title": "Schiller International University — Madrid campus",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "US-accredited programmes"
+    },
+    {
+      "url": "https://www.cardenalcisneros.es/admision/",
+      "title": "CU Cardenal Cisneros — Admisión Grados",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept start"
+    },
+    {
+      "url": "https://taiarts.com/admision-y-matricula/grado-oficial/",
+      "title": "TAI — Admisión grado oficial",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept start"
+    },
+    {
+      "url": "https://www.cedeu.es/cedeu-news/inicio-curso-cedeu-2026-2027",
+      "title": "CEDEU — Inicio de curso 2026-2027",
+      "official": true,
+      "last_updated": "2 Sept 2026",
+      "used_for": "Sept start of official grados"
+    },
+    {
+      "url": "https://www.ieb.es/estudios-ieb/grados/grado-en-ade/",
+      "title": "IEB — Grado en ADE",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept start"
+    },
+    {
+      "url": "https://www.cesag.org/admision/",
+      "title": "CESAG — Admisión",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept start"
+    },
+    {
+      "url": "https://centrosanisidoro.es/wp-content/images/adminision/centro-universitario-san-isidoro-upo-sevilla-admisiones-fechas.pdf",
+      "title": "CU San Isidoro — calendario admisión 2026-2027",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept start"
+    },
+    {
+      "url": "https://www.meridean.org/spain-january-intake",
+      "title": "Meridean — Spain January intake (agency)",
+      "official": false,
+      "last_updated": "not shown",
+      "used_for": "Lead only (UB/UAB/UPF/UC3M — covered by other agents)"
+    },
+    {
+      "url": "https://edvoy.com/articles/intakes-in-spain-for-international-students/",
+      "title": "Edvoy — Intakes in Spain (agency)",
+      "official": false,
+      "last_updated": "not shown",
+      "used_for": "Lead only (IQS, GBSB, Nebrija, UAH, UAM, UPF)"
+    }
+  ],
+  "notes": "DISCOVERY-SWEEP FINDINGS (English/French requirement applied):\n1) No French-taught official grado with a Jan/Feb start was found anywhere in Spain. French-taught options in Spain are either Sept-only public 'Estudios Franceses' / Franco-Spanish double degrees (UPO, US, UAM, UGR, UM...) or foreign French degrees (TBS Barcelona — French Bachelor in Management, Sept intake, not a Spanish grado).\n2) The only mechanism outside the other agents' lists that gives an OFFICIAL Feb start is the Catalan Generalitat 'Convocatòria de febrer' (preinscripció). Its Feb 2026 list includes affiliated centres NOT on the coordinator's covered list: Centre Universitari EAE (UdL) — ADE i Transformació de Negocis (44 places) and Màrqueting i Comunicació Digital (45 places), both Spanish/bilingual; Barcelona Culinary Hub (UB) — Direcció i Gestió Gastronòmica (10); Eina (UAB) — Disseny (5); Elisava (UVic) — Disseny i Innovació (12); UAB affiliated 'Turisme (docència en Anglès)' (5 places, Cerdanyola) and 'Direcció Hotelera' (10). ENGLISH-TAUGHT items in that list: ESIC Barcelona (URV) Màrqueting in English (16 places, B2), CETT Turisme in English (covered), UAB-affiliated Turisme in English (likely covered by the UAB agent — please confirm), UVic Global Studies in English (covered). Feb 2025 list also had Euroaula and Mediterrani (UdG) Turisme and Dret ESERP — absent in 2026. The Feb 2027 list will only be published around January 2027.\n3) BIG CAVEAT for all Catalan Feb-round places: preinscription is in early Feb (2026: 2–4 Feb, assignment 6 Feb, enrolment 9 Feb), so a non-EU applicant cannot get an admission letter by early Dec 2026 through that route. The only way around it is a direct admission/credit-recognition route (foreign university studies with at least 30 ECTS recognised), which must be confirmed with each centre.\n4) Outside Catalonia, the only public-university Feb entry for NEW students found is Universidad de León ('Admisión Segundo Semestre': apply 18–22 Jan 2027, degrees with vacancies only, Spanish-taught). Valladolid's 2nd enrolment period (26 Jan–4 Feb 2027) is only for extending enrolment and for new students in official MASTER's degrees (search snippet, not fetched). Zaragoza's January 'ampliación' is for current students only.\n5) Affiliated centres outside Catalonia that were checked (Florida, EDEM, Cardenal Cisneros, TAI, CEDEU, IEB, CESAG, San Isidoro, ESERP Madrid) are all September-only and mostly Spanish-taught.\n6) English-taught options WITH a Jan/Feb start do exist but are NON-OFFICIAL in Spain: GBSB Global (Maltese degree, authorised foreign centre in RUCT 08073661, Jan start), EU Business School (UVic título propio + Swiss + UK, Feb start), CEDEU English BBA (180 ECTS, partner degree, Feb start), SLU Madrid (US, Jan start, visa deadline already passed), Schiller (US), Les Roches Marbella (US NECHE BSc), Harbour.Space (rolling, non-official). If the applicant could accept a foreign EHEA degree, GBSB (Malta, MQF/EQF 6) is the closest English January option — but it is NOT a Spanish grado.\n7) Not checked because the web-search budget ran out: Ramon Llull faculties other than La Salle (ESADE BBA, IQS, Blanquerna, Sant Ignasi/HTSI — URL does not take part in the public Feb preinscription; ESADE/IQS bachelors are believed to be Sept-only), UNIBA (UB affiliate — absent from both Feb lists, so no Feb preinscription entry), Mondragon LEINN International (believed Sept-only; first application deadline 7 Feb for Sept), Universidad Loyola, San Jorge, UCV, UIE, UNIE, Vatel Madrid (site down), Suffolk Madrid (US degree), CES Felipe II, ESCUNI, EAE Madrid (URJC) bachelor intake.\n8) Useful contacts: SLU Madrid admissions-madrid@slu.edu; ESERP international info via eserp.com (+34 91 350 12 12); EAE Barcelona collections gestioncobros@eae.es (+34 93 499 38 40); GBSB info@global-business-school.org.\n"
+}

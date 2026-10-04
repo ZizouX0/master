@@ -1,0 +1,314 @@
+{
+  "group": "Private universities I — Madrid-based: Universidad Europea, Nebrija, IE University, ESIC, UAX, UCJC (+ U-tad, ESNE), CUNEF, Universidad Villanueva",
+  "programs": [],
+  "rejected": [
+    {
+      "university": "Universidad Europea (Madrid, Valencia/Alicante, Canarias, Andalucía-Málaga)",
+      "city": "Madrid / Valencia / Alicante / Tenerife / Málaga",
+      "type": "Private",
+      "degree": "All on-campus grados, including the English-taught ones (Computer Engineering, Cybersecurity, Business Administration/BBA, Global BBA, Business Analytics, International Business, Economics, Marketing, International Relations, Global IR, Tourism & Leisure Mgmt Valencia, Business Mgmt & Entrepreneurship Valencia, double degrees)",
+      "reason": "September start only for on-campus grados. All 246 degree pages in the official degree sitemaps (67 EN + 179 ES) were downloaded on 2026-10-04: every on-campus grado shows 'Start/Inicio: 14 sep 2026 / septiembre 2026 / 13 sep 2027' (e.g. Computer Engineering in English: 'Classes in English or Spanish ... Start: 14 sep. 2026'). The only February start on the site is for ONLINE grados ('Start dates: February and September', online modality, so no student visa = rejected). The 'February intake' in the brief comes from aggregators (gogoespana, etc.), not from UE. Open point: the official reservation-discount T&Cs (Oct 2026) say 'The 50% discount on place reservations for undergraduate programmes also applies to those enrolled this month for S2', i.e. there is some second-semester (S2) undergraduate intake, but no campus-based grado page names it. Worth one email to UE admissions to ask which on-campus English grados, if any, take S2 (Feb 2027) entrants.",
+      "source_urls": [
+        "https://universidadeuropea.com/en/degree-computer-engineering-madrid/",
+        "https://universidadeuropea.com/en/degree-business-administration/madrid/",
+        "https://universidadeuropea.com/en/degree-international-relations-madrid/",
+        "https://universidadeuropea.com/en/degree-tourism-leisure-management-valencia/",
+        "https://universidadeuropea.com/grado-ingenieria-informatica-madrid/",
+        "https://universidadeuropea.com/degrees-sitemap-en.xml",
+        "https://universidadeuropea.com/sitemap-grados.xml",
+        "https://universidadeuropea.com/en/admission-finance/scholarship-financial-aid/discount-advanced-reservations/",
+        "https://universidadeuropea.com/resources/media/documents/EN_BBLL_50_UG_y_TV_-_Octubre_27-28.v2.pdf"
+      ]
+    },
+    {
+      "university": "Universidad Europea (online grados)",
+      "city": "Online",
+      "type": "Private",
+      "degree": "Online grados (45+ grados and double degrees)",
+      "reason": "Online/distance only, so it cannot support a student visa. The official page says 'Format: Online ... Start dates: February and September'.",
+      "source_urls": [
+        "https://universidadeuropea.com/en/online-degree-programmes/",
+        "https://universidadeuropea.com/grados-online/"
+      ]
+    },
+    {
+      "university": "IE University",
+      "city": "Madrid / Segovia",
+      "type": "Private",
+      "degree": "All bachelor's degrees (e.g. Bachelor in Business Administration, Bachelor in Computer Science & Artificial Intelligence; English-taught)",
+      "reason": "September start only. Program pages list 'intake: September' (BBA: 4 years, English, Segovia or Madrid, September, in person). The 2027-28 admissions calendar has rounds (Early 18 Sep 2026, R1 6 Nov 2026, R2 15 Jan 2027, R3 5 Mar 2027), all for the September 2027 intake. No January intake for bachelor's. For reference, 2026-27 first-year tuition: BBA EUR 29,880/yr and CS&AI EUR 27,300/yr.",
+      "source_urls": [
+        "https://www.ie.edu/university/studies/academic-programs/bachelor-business-administration/admissions-fees/",
+        "https://www.ie.edu/university/studies/academic-programs/bachelor-computer-science-artificial-intelligence/admissions-fees/",
+        "https://www.ie.edu/university/admission/admission-process/admissions-rounds/"
+      ]
+    },
+    {
+      "university": "Universidad Nebrija",
+      "city": "Madrid",
+      "type": "Private",
+      "degree": "All on-campus grados, including the 100% English 'Bachelor in Business and Technology' (official, implemented 2026-27, 45 face-to-face places) and the bilingual/English-option ADE, International Relations, Marketing and Cybersecurity",
+      "reason": "September start only. The official 2026-27 GRADO academic calendar sets 'Inicio de curso para todos los estudiantes: 7 de septiembre'. The second semester (25 Jan 2027) continues the year for students already enrolled; there is no separate first-year entry. No 'inicio en febrero' on any degree page. February entry exists only for exchange/study-abroad (Inbound Mobility Fact Sheet 2026-27).",
+      "source_urls": [
+        "https://www.nebrija.com/pdf/calendario-academico.pdf",
+        "https://www.nebrija.com/en/bachelors-degrees/bachelor-business-technology/",
+        "https://www.nebrija.com/pdf/programas-internacionales/Fact-Sheet-26-27-EN.pdf"
+      ]
+    },
+    {
+      "university": "ESIC University (Madrid) and ESIC centres (Barcelona, Valencia, Zaragoza, etc.)",
+      "city": "Madrid / Barcelona / Valencia / Zaragoza",
+      "type": "Private (ESIC University, Madrid); other campuses are affiliated/associated centres",
+      "degree": "All grados, including the English-taught ones (Bachelor's Degree in Business Administration and Management, International Business, Marketing, Double Marketing + International Business; Digital Business, Data Science, Ingeniería Informática)",
+      "reason": "September start only. All 23 grado pages crawled on 2026-10-04 show 'Start/Inicio: September 2027' (e.g. Bachelor's Degree in Marketing Madrid: 'Start September 2027'). The international admissions page says: 'the academic year in Spain starts in September and ends in June.'",
+      "source_urls": [
+        "https://en.esic.edu/university/grados/bachelors-degree-marketing-madrid",
+        "https://www.esic.edu/university/grados/bachelors-degree-business-administration-and-management-madrid",
+        "https://www.esic.edu/university/grados/bachelors-degree-international-business-madrid",
+        "https://www.esic.edu/en/internacional/degrees-in-spain"
+      ]
+    },
+    {
+      "university": "Universidad Alfonso X el Sabio (UAX)",
+      "city": "Madrid (Villanueva de la Cañada) / Málaga / Oviedo",
+      "type": "Private",
+      "degree": "All on-campus grados (e.g. Relaciones Internacionales Spanish/English, Marketing, Doble Grado Informática + ADE, Computación e IA Málaga)",
+      "reason": "September start only. All 39 grado pages from the official programme sitemap show 'Comienzo/Inicio: Septiembre' (some Octubre). The only 'Inicio: Febrero' item is a non-degree 'Experto en Bienestar Animal' course. Most UAX grados are Spanish with a 'progressive bilingual model from 30% English', so even a September intake would not meet the English-only need.",
+      "source_urls": [
+        "https://www.uax.com/titulaciones/grado-en-relaciones-internacionales",
+        "https://www.uax.com/titulaciones/doble-grado-informatica-ade",
+        "https://www.uax.com/titulaciones/grado-en-marketing",
+        "https://www.uax.com/sitemap_program_uax_es.xml",
+        "https://www.uax.com/en/how-to-study-at-uax"
+      ]
+    },
+    {
+      "university": "U-tad, Centro Universitario de Tecnología y Arte Digital (affiliated centre of Universidad Camilo José Cela)",
+      "city": "Las Rozas (Madrid)",
+      "type": "Affiliated centre of a private university (UCJC)",
+      "degree": "Grado en Ingeniería del Software (Spanish or 100% English track), Ingeniería en Ciberseguridad y Sistemas en la Nube, Ingeniería/Diseño/Arte de Videojuegos, Animación, VFX, Diseño Digital, double degrees",
+      "reason": "September start only. Degree pages say 'Abierto el plazo de inscripción: Curso 2026-2027 / Plazo de matrícula: del 1 MAYO al 30 SEPTIEMBRE'. No February intake on any of the 89 study pages crawled. The only February mentions are in non-degree 'Schools' short courses. Relevant for a future September entry: Software Engineering can be taken '100% en inglés'. Foreign students can request a free 'estudio de convalidación parcial de estudios extranjeros'.",
+      "source_urls": [
+        "https://u-tad.com/grados/ingenieria-software",
+        "https://u-tad.com/proceso-de-admision/",
+        "https://u-tad.com/estudios-sitemap.xml"
+      ]
+    },
+    {
+      "university": "CUNEF Universidad",
+      "city": "Madrid",
+      "type": "Private",
+      "degree": "All grados, including the English ones (Bachelor in International Business & Economics; English/Spanish ADE, Economía, Empresa y Tecnología / Bachelor in Business Engineering, Ingeniería Informática with an English group pending approval)",
+      "reason": "No February intake found, so treated as September start only. Grado pages show no alternative start date; the admissions application is a single CRM form. CUNEF's own news says the 1,260 new students joined at the start of the 2026-27 academic year (September). No 'inicio en febrero' or spring entry for new degree students on any official page; spring entry is for exchange students only. Confirm by email if needed.",
+      "source_urls": [
+        "https://www.cunef.edu/estudios/bachelor-in-international-business-and-economics/",
+        "https://www.cunef.edu/en/programmes/bachelor-in-business-engineering/",
+        "https://www.cunef.edu/actualidad/cunef-universidad-acoge-a-la-mayor-promocion-de-su-historia-y-duplica-sus-estudiantes-internacionales/"
+      ]
+    },
+    {
+      "university": "Universidad Villanueva",
+      "city": "Madrid",
+      "type": "Private",
+      "degree": "All grados and double grados (ADE, Business Analytics, Ingeniería Informática, Marketing, Relaciones Internacionales doubles, etc.)",
+      "reason": "September start only. The official grados catalogue shows 'Inicio: Septiembre' for every programme (29 entries). Ingeniería Informática: 'Inicio Septiembre 2027'. ADE: 'Inicio Septiembre 2026'. Many are 'Híbrido – ActiveLearningV+'.",
+      "source_urls": [
+        "https://www.villanueva.edu/grados/",
+        "https://www.villanueva.edu/grado-ingenieria-informatica/",
+        "https://www.villanueva.edu/grado-en-ade/"
+      ]
+    },
+    {
+      "university": "Universidad Camilo José Cela (UCJC)",
+      "city": "Madrid (Villafranca del Castillo / Almagro)",
+      "type": "Private",
+      "degree": "All grados (incl. bilingual/English groups)",
+      "reason": "NOT VERIFIED. Every ucjc.edu (and sek.es/ucjc) URL returns a SiteGround 'Robot Challenge Screen' (HTTP 202) to automated fetching, including the official fee PDF 'Honorarios Académicos de Grados 2026-27' and the 'Curso 2026-2027' calendar page. The challenge was not bypassed, and the Wayback Machine returned HTTP 429. No official evidence of a February start for NEW grado students was obtained. Aggregator claims of a 'Spring Intake beginning in February' appear to describe study-abroad/exchange entry. A search-engine snippet of the official fee PDF says the first monthly payment falls 'in the month the degree program begins', which is inconclusive. Action: check the two URLs below in a normal browser, or email UCJC admissions.",
+      "source_urls": [
+        "https://ucjc.edu/pdfs/aula/becas/precios-grados-26-27.pdf",
+        "https://www.ucjc.edu/curso-academico/"
+      ]
+    },
+    {
+      "university": "ESNE, Escuela Universitaria de Diseño, Innovación y Tecnología (affiliated centre, UCJC)",
+      "city": "Madrid",
+      "type": "Affiliated centre of a private university",
+      "degree": "All grados (design, video games, interior design, fashion, etc.)",
+      "reason": "NOT VERIFIED. www.esne.es failed the TLS handshake through the proxy, esne.es served a certificate name mismatch, and WebFetch returned HTTP 503 (tried 2026-10-04). No evidence of a February intake was obtained. ESNE's programmes are mainly design/arts, outside the CS/IT/Business priority.",
+      "source_urls": [
+        "https://www.esne.es/"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://universidadeuropea.com/en/degree-computer-engineering-madrid/",
+      "title": "Computer Engineering Degree (UE Madrid)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "English/Spanish on-campus CS grado: Start 14 sep 2026"
+    },
+    {
+      "url": "https://universidadeuropea.com/degrees-sitemap-en.xml",
+      "title": "UE degrees sitemap (EN)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "full crawl of 67 EN degree pages; all on-campus starts in September"
+    },
+    {
+      "url": "https://universidadeuropea.com/sitemap-grados.xml",
+      "title": "UE grados sitemap (ES)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "full crawl of 179 ES grado pages; all on-campus starts in September"
+    },
+    {
+      "url": "https://universidadeuropea.com/en/online-degree-programmes/",
+      "title": "UE Online degree programmes",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Feb + Sept starts are online only"
+    },
+    {
+      "url": "https://universidadeuropea.com/en/admission-finance/scholarship-financial-aid/discount-advanced-reservations/",
+      "title": "UE Discount for Advanced Reservations",
+      "official": true,
+      "last_updated": "not shown (campaign Oct 2026)",
+      "used_for": "'S2' undergraduate intake mention; place-reservation fee concept"
+    },
+    {
+      "url": "https://universidadeuropea.com/resources/media/documents/EN_BBLL_50_UG_y_TV_-_Octubre_27-28.v2.pdf",
+      "title": "UE legal T&Cs 50% reservation discount UG Oct 2026",
+      "official": true,
+      "last_updated": "Oct 2026 campaign",
+      "used_for": "S2 mention (quote)"
+    },
+    {
+      "url": "https://www.ie.edu/university/studies/academic-programs/bachelor-business-administration/admissions-fees/",
+      "title": "IE BBA Admissions & Fees",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "intake September; tuition 29,880 EUR"
+    },
+    {
+      "url": "https://www.ie.edu/university/studies/academic-programs/bachelor-computer-science-artificial-intelligence/admissions-fees/",
+      "title": "IE CS & AI Admissions & Fees",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "intake September; tuition 27,300 EUR"
+    },
+    {
+      "url": "https://www.ie.edu/university/admission/admission-process/admissions-rounds/",
+      "title": "IE University Admissions Rounds 2027-28",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "rounds calendar (Sept 2027 intake)"
+    },
+    {
+      "url": "https://www.nebrija.com/pdf/calendario-academico.pdf",
+      "title": "Nebrija Calendario Académico GRADO 2026-2027",
+      "official": true,
+      "last_updated": "2026-27 edition",
+      "used_for": "start 7 Sept for all students"
+    },
+    {
+      "url": "https://www.nebrija.com/en/bachelors-degrees/bachelor-business-technology/",
+      "title": "Nebrija Bachelor in Business and Technology",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "100% English official grado, 45 F2F places, Sept start"
+    },
+    {
+      "url": "https://en.esic.edu/university/grados/bachelors-degree-marketing-madrid",
+      "title": "ESIC Bachelor's Degree in Marketing Madrid",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Start September 2027"
+    },
+    {
+      "url": "https://www.esic.edu/en/internacional/degrees-in-spain",
+      "title": "ESIC Degrees in Spain (international)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "academic year starts in September"
+    },
+    {
+      "url": "https://www.uax.com/titulaciones/grado-en-relaciones-internacionales",
+      "title": "UAX Grado en Relaciones Internacionales",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Comienzo Septiembre"
+    },
+    {
+      "url": "https://www.uax.com/sitemap_program_uax_es.xml",
+      "title": "UAX programme sitemap",
+      "official": true,
+      "last_updated": "2026-10-03",
+      "used_for": "crawl of 39 grado pages"
+    },
+    {
+      "url": "https://u-tad.com/grados/ingenieria-software",
+      "title": "U-tad Grado en Ingeniería del Software",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "enrolment 1 May-30 Sept; 100% English option"
+    },
+    {
+      "url": "https://u-tad.com/proceso-de-admision/",
+      "title": "U-tad Proceso de admisión",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "reserva de plaza; foreign-studies convalidation study"
+    },
+    {
+      "url": "https://www.cunef.edu/actualidad/cunef-universidad-acoge-a-la-mayor-promocion-de-su-historia-y-duplica-sus-estudiantes-internacionales/",
+      "title": "CUNEF news: start of 2026-27",
+      "official": true,
+      "last_updated": "Sept 2026",
+      "used_for": "new students start at beginning of academic year"
+    },
+    {
+      "url": "https://www.cunef.edu/estudios/bachelor-in-international-business-and-economics/",
+      "title": "CUNEF Bachelor in International Business & Economics",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "English-taught grado; no alternative intake"
+    },
+    {
+      "url": "https://files.griddo.cunef.edu/cunefuniversidad-reconocimiento-transferenciacreditos-grado-24102022-aprobada-formato.pdf",
+      "title": "CUNEF Normativa reconocimiento y transferencia de créditos (grado)",
+      "official": true,
+      "last_updated": "2022-10-24",
+      "used_for": "foreign official degrees: credit recognition decided by commission"
+    },
+    {
+      "url": "https://www.villanueva.edu/grados/",
+      "title": "Universidad Villanueva Grados",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Inicio: Septiembre for all"
+    },
+    {
+      "url": "https://ucjc.edu/pdfs/aula/becas/precios-grados-26-27.pdf",
+      "title": "UCJC Honorarios Académicos de Grados 2026-27",
+      "official": true,
+      "last_updated": "unknown (blocked)",
+      "used_for": "could not be read: bot challenge"
+    },
+    {
+      "url": "https://www.ucjc.edu/curso-academico/",
+      "title": "UCJC Curso 2026-2027",
+      "official": true,
+      "last_updated": "unknown (blocked)",
+      "used_for": "could not be read: bot challenge"
+    },
+    {
+      "url": "https://gogoespana.com/en/universities-in-spain/madrid/universidad-europea/",
+      "title": "GoGoEspaña UE profile (aggregator)",
+      "official": false,
+      "last_updated": "not shown",
+      "used_for": "lead only: claimed Sept+Feb intake at UE; not confirmed on official site for on-campus grados"
+    }
+  ],
+  "notes": "Result for this group: no on-campus OFFICIAL grado taught in English (or any language) with a January/February 2027 start for NEW full-degree students was confirmed at Universidad Europea, IE University, Nebrija, ESIC, UAX, U-tad, CUNEF or Universidad Villanueva, so 'programs' is empty. Method: full crawls of the official degree sitemaps/pages (UE 246 pages, ESIC 23, UAX 39, U-tad 89, Villanueva 34, CUNEF all grado pages), grepping the 'Start/Inicio' fields and any febrero/February/enero/January text. Key nuances: (1) Universidad Europea: February starts exist only for ONLINE grados (no visa). Its October 2026 reservation-discount T&Cs mention an undergraduate 'S2' (second-semester) enrolment, but no on-campus grado page shows an S2/Feb start. This is the single lead worth one email to UE admissions (Madrid admissions phone +34 918257503, shown on the site) asking whether any campus-based English grado admits S2 entrants in Feb 2027. (2) IE University: September intake only. Rounds for Sept 2027 are Early 18 Sep 2026, R1 6 Nov 2026 (decision by 11 Dec 2026), R2 15 Jan 2027, R3 5 Mar 2027. Tuition 2026-27: BBA EUR 29,880 and CS&AI EUR 27,300 per year (first year). Visa contact iestudentservices@ie.edu. (3) Nebrija now has a 100% English official 'Bachelor in Business and Technology' (from 2026-27, 45 places), September start only. (4) U-tad's Grado en Ingeniería del Software can be taken 100% in English, September start only, enrolment 1 May-30 Sep. (5) UCJC and ESNE could not be verified: UCJC's site sits behind a bot challenge that was not circumvented, and ESNE's site failed TLS/503. Treat them as unverified, check manually in a browser, and do not treat them as confirmed Feb options. (6) In every institution here, February entry is for exchange/study-abroad students only (e.g. Nebrija fact sheet, UE study-abroad semesters Feb-June), which the spec excludes. Session constraint: the shared WebSearch budget (200 calls) ran out mid-task, so later checks used direct official-site downloads only."
+}

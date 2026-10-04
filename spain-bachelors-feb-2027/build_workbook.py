@@ -1,8 +1,11 @@
 """Build spanish_bachelors_feb_2027.xlsx from the agents' JSON research files.
 
+Usage: python3 curate.py research research/final/final.json
+       python3 build_workbook.py research/final spanish_bachelors_feb_2027.xlsx
+
 Reads every *.json in RESEARCH_DIR (one per research group), merges programs,
 rejected entries and sources, de-duplicates URLs, sorts programs by the cheapest
-deposit needed to obtain an admission letter, and writes three sheets:
+payment needed for a visa-valid admission (deposit or enrolment fees), and writes three sheets:
 Programs, Rejected, Sources.
 """
 import json
@@ -25,11 +28,13 @@ PROGRAM_COLS = [
     ("City", 14, "city"),
     ("Public / Private", 22, "type"),
     ("Degree", 34, "degree"),
-    ("Field", 12, "field"),
-    ("Language", 16, "language"),
+    ("Field", 10, "field"),
+    ("Language", 24, "language"),
     ("Feb 2027 start for NEW students", 14, "feb_start_confirmed"),
-    ("Feb-start evidence", 40, "feb_start_evidence"),
-    ("Application deadline (Feb 2027 intake)", 22, "application_deadline"),
+    ("Places in Feb 2026 round", 10, "feb_places_2026"),
+    ("Payment needed for a visa-valid admission (EUR) — SORT KEY", 16, "visa_payment_eur"),
+    ("How that payment is worked out", 44, "visa_payment_text"),
+    ("Application deadline (Feb 2027 intake)", 30, "application_deadline"),
     ("Application fee (EUR)", 12, "application_fee_eur"),
     ("Application fee detail", 30, "application_fee_text"),
     ("Deposit before admission letter (EUR)", 14, "deposit_before_letter_eur"),
@@ -40,15 +45,16 @@ PROGRAM_COLS = [
     ("Annual tuition non-EU (EUR)", 14, "annual_tuition_non_eu_eur"),
     ("Tuition detail", 40, "tuition_text"),
     ("Foreign bachelor's holders eligible?", 12, "foreign_graduate_eligible"),
-    ("Admission route for graduates", 40, "graduate_route"),
+    ("Admission route for graduates", 44, "graduate_route"),
     ("Language requirement", 32, "language_requirement"),
     ("Official grado (RUCT)?", 20, "official_ruct"),
     ("Data year", 18, "data_year"),
     ("Page last updated", 14, "page_last_updated"),
     ("Visa-timing note", 36, "visa_timing_note"),
     ("Risks / flags", 40, "risks"),
+    ("Feb-start evidence", 40, "feb_start_evidence"),
     ("Sources (by fact)", 60, "_sources"),
-    ("Research group", 18, "_group"),
+    ("Research group", 14, "_group"),
 ]
 
 REJECTED_COLS = [
@@ -87,15 +93,14 @@ def as_number(v):
     return None
 
 
-def deposit_sort_key(p):
-    """Cheapest-known first; then unknown deposits; Feb-UNCLEAR rows last."""
+def sort_key(p):
+    """Confirmed Feb starts first; then the cheapest payment that yields a visa-valid
+    admission (the visa needs paid fees, RD 1155/2024 art. 53.1.a); unknown amounts last."""
     unclear = 0 if str(p.get("feb_start_confirmed", "")).upper().startswith("YES") else 1
+    pay = as_number(p.get("visa_payment_eur"))
     dep = as_number(p.get("deposit_before_letter_eur"))
-    fee = as_number(p.get("application_fee_eur")) or 0.0
-    tuition = as_number(p.get("annual_tuition_non_eu_eur"))
-    if dep is None:
-        return (unclear, 1, 0.0, tuition if tuition is not None else 1e9)
-    return (unclear, 0, dep + fee, tuition if tuition is not None else 1e9)
+    first = pay if pay is not None else dep
+    return (unclear, first is None, first or 0.0)
 
 
 def fmt_sources(fs):
@@ -137,10 +142,10 @@ def main():
         data = json.loads(f.read_text(encoding="utf-8"))
         group = data.get("group") or f.stem
         for p in data.get("programs", []):
-            p["_group"] = group
+            p.setdefault("_group", group)
             programs.append(p)
         for r in data.get("rejected", []):
-            r["_group"] = group
+            r.setdefault("_group", group)
             rejected.append(r)
         for s in data.get("sources", []):
             url = (s.get("url") or "").strip()
@@ -151,7 +156,7 @@ def main():
                 if s.get("used_for") and s["used_for"] not in (prev.get("used_for") or ""):
                     prev["used_for"] = (prev.get("used_for", "") + "; " + s["used_for"]).strip("; ")
             else:
-                s["_group"] = group
+                s.setdefault("_group", group)
                 sources[url] = s
         # make sure every URL cited in a row also appears in Sources
         for p in data.get("programs", []):
@@ -183,7 +188,7 @@ def main():
                 "_group": p["_group"],
             })
     programs = kept
-    programs.sort(key=deposit_sort_key)
+    programs.sort(key=sort_key)
 
     wb = Workbook()
     ws = wb.active
@@ -208,12 +213,13 @@ def main():
                 c.fill = OLD_FILL
         if re.search(r"\b(no|impossible|not realistic|unlikely)\b", str(p.get("visa_timing_note", "")), re.I):
             ws.cell(row=r, column=[c[0] for c in PROGRAM_COLS].index("Visa-timing note") + 1).fill = RISK_FILL
-    for col in ("Application fee (EUR)", "Deposit before admission letter (EUR)", "Annual tuition non-EU (EUR)"):
+    for col in ("Application fee (EUR)", "Deposit before admission letter (EUR)", "Annual tuition non-EU (EUR)",
+                "Payment needed for a visa-valid admission (EUR) — SORT KEY"):
         idx = [c[0] for c in PROGRAM_COLS].index(col) + 1
         for r in range(2, ws.max_row + 1):
             c = ws.cell(row=r, column=idx)
             if isinstance(c.value, (int, float)):
-                c.number_format = '#,##0" €"'
+                c.number_format = '#,##0.00" €"'
     style_sheet(ws, PROGRAM_COLS, len(programs), "Programs")
 
     ws2 = wb.create_sheet("Rejected")

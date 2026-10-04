@@ -1,0 +1,914 @@
+{
+  "group": "Catalonia — centres affiliated to public universities + Catalan private universities",
+  "programs": [
+    {
+      "university": "ESIC Business & Marketing School (ESIC Barcelona) — Universitat Rovira i Virgili (URV)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat Rovira i Virgili (URV) (private-priced)",
+      "degree": "Grado en Marketing — docencia en inglés (Graduat/ada en Màrqueting per la URV), preinscription code 71074",
+      "field": "Business",
+      "language": "English (official degree subjects in English; some complementary 'P'/diploma subjects in the ESIC syllabus are listed in Spanish, e.g. 'Habilidades Personales I', 'Modelos de Negocio III' — these belong to ESIC's own add-on diploma, not the grado)",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat Feb-2026 call list: '71074 Màrqueting \"ESIC\" (docència en Anglès) URV Barcelona U. Públ. CA 16 places, 4.815 € (preu orientatiu febrer, 1r quadrimestre feb-juny)', note 26: B2 English required. NOT in the Feb-2025 list. ESIC's own pages only advertise September starts.",
+      "application_deadline": "Expected ~2-4 Feb 2027 via accesuniversitat.gencat.cat (Feb 2026 call: 2-4 Feb 2026, assignment 6 Feb, enrolment 9 Feb). Feb 2027 dates NOT FOUND (not yet published).",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "ESIC admission tests (motivation letter, business case, English test) — no fee stated on esic.edu/grados/bachelors-degree-marketing-barcelona or esic.edu/en/degrees/admissions-and-grants. Official preinscription itself has no fee.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "ESIC: 'Once you have passed the admission tests, you will receive a pre-enrollment letter. To secure your place, you must pay the reservation and enrollment fees within the period indicated by your advisor.' Amount not published for Barcelona grados (the 2.000 € figure found online is ESIC University Madrid masters — not applicable). For a Feb start the legal place still comes only from the Generalitat preinscription.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "ESIC Barcelona Guía académica 2022-23 (POSSIBLY OUTDATED): reservation amount is refunded 'a aquellos alumnos internacionales que acrediten que se les ha negado el visado' (proof required). The newer 2024-25 Barcelona guide drops the visa clause and states 'no se devolverán las cantidades pagadas correspondientes a Matrícula, reserva de plaza...' on withdrawal. Get the current visa clause in writing.",
+      "annual_tuition_non_eu_eur": 10143,
+      "tuition_text": "esic.edu Barcelona English Marketing page: 'Financial conditions 10.143 € / 10.555 € Price per course. Subject to change' (page shows Sept 2027 start); pathway with extra ESIC diploma 11.000 €/yr, with extra ESIC degree 11.700 €/yr. No separate non-EU surcharge shown. Feb-June (1st 4-month term) indicative price in Feb-2026 call: 4.815 €.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "Generalitat rules: completed foreign degree -> homologation/equivalence at the Ministry then preinscription as 'titulat universitari' (5.0 access mark); or (centre-dependent) partial credit recognition: >=30 ECTS recognised -> direct admission to the centre without preinscription; 1-29 ECTS -> preinscription only to that centre with access mark 5. ESIC offers a 'validation plan based on the studies you have taken'. Alternative: foreign secondary diploma homologated/UNEDasiss.",
+      "language_requirement": "B2 English (Generalitat listing: 'Nivell de llengua anglesa equivalent al B2'; Feb-2026 list note 26: if not accredited before enrolment the centre runs a level test). ESIC accepted certificates: Cambridge First/Advanced/Proficiency, IELTS, TOEFL, TOEIC (one search lead quoted IELTS 6.5 / TOEFL 95 — not verified on official page). ESIC admission includes its own English test (waived with official certificate).",
+      "official_ruct": "Yes (per Generalitat Canal Universitats: 'Graduat/ada en Màrqueting per la Universitat Rovira i Virgili'); RUCT code not shown",
+      "data_year": "Feb place list: Feb 2026 call (2025-26) — POSSIBLY OUTDATED for Feb 2027; tuition shown for 2026-27/2027-28 intake on ESIC page",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). ESIC issues a 'pre-enrollment letter' after its admission tests, which could come earlier, but it is not a legal admission for a Feb start until the Feb preinscription/enrolment. Ask ESIC (admissions Barcelona, +34 93 117 07 84) whether it issues a visa-valid letter for Feb entrants.",
+      "risks": "Feb places in English appeared only in the Feb-2026 list (not 2025) — may not repeat in 2027. Feb entrants join mid-year (curriculum sequencing unknown). Deposit amount and current visa-refund clause unconfirmed. Price ~10k €/yr.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona",
+          "https://www.esic.edu/en/degrees/admissions-and-grants"
+        ],
+        "refund": [
+          "https://www.esic.edu/sites/default/files/2022-12/guia_academica_grados_oficiales_bcn2022_2023.pdf",
+          "https://www.esic.edu/sites/default/files/2025-05/24_25%20Gu%C3%ADa%20acad%C3%A9mica%20GRADO%20oficial_ES_BARCELONA_0.pdf"
+        ],
+        "tuition": [
+          "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://universitats.gencat.cat/ca/acces-universitat/acces-segons-perfils-estudiants/estudiant-sistema-educatiu-estranger/",
+          "https://www.esic.edu/en/international/programs/degrees"
+        ],
+        "language": [
+          "https://universitats.gencat.cat/ca/detalls/oferta/4637-Marketing-ESIC-docencia-en-Ingles",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://www.esic.edu/en/international/programs/degrees"
+        ],
+        "ruct": [
+          "https://universitats.gencat.cat/ca/detalls/oferta/4637-Marketing-ESIC-docencia-en-Ingles"
+        ]
+      }
+    },
+    {
+      "university": "CETT-UB (Escola Universitària d'Hoteleria i Turisme CETT) — Universitat de Barcelona",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat de Barcelona (UB) (private-priced)",
+      "degree": "Grado en Turismo — 100% in English (code 11086)",
+      "field": "Other",
+      "language": "English (100% English track; bilingual Spanish/Catalan track is code 11011)",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat lists: Feb-2026 '11086 Turisme \"CETT\" (docència en anglès) UB Barcelona 10 places 4.645 €'; also in Feb-2025 list (10 places, 4.534 €). CETT admission page: 'Pre-enrollment dates: consult the calls for February, June and September in the Canal Universitats'.",
+      "application_deadline": "Expected ~2-4 Feb 2027 (Feb 2026 call: 2-4 Feb). Feb 2027 dates NOT FOUND (not yet published).",
+      "application_fee_eur": 0,
+      "application_fee_text": "Official preinscription: no fee found. Credit-recognition route ('study of academic record'): non-refundable 55 € (deducted from enrolment if you enrol).",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "No deposit described for bachelor preinscription entrants (place assigned by Generalitat, then enrolment). CETT 'seat reservation within one month of admission letter' text found applies to masters. Bachelor deposit NOT FOUND.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "No visa-refusal refund clause found on cett.es/en/admission or the degree page.",
+      "annual_tuition_non_eu_eur": 8107,
+      "tuition_text": "CETT degree page: Non-EU: enrolment 925 € + price 7.182 € = 8.107 € (single payment); EU 7.309 €; plus UB fees 314,20 € ('amount corresponding to 2024/2025 academic year; update pending the Generalitat Price Decree'). Non-EU residents >=1 year in Spain pay EU price. Feb-June indicative price (Feb-2026 call): 4.645 €.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "CETT: completed foreign degree -> homologation/equivalence at the Ministry, then preinscription; if homologation is denied (except for listed reasons) you may use the 'studies started' route: academic-record study (55 €, resolution in ~3 weeks) for validated credit transfer; favourable resolution allows applying directly to the centre. Generalitat: >=30 ECTS recognised -> direct admission; <30 -> preinscription to that centre only.",
+      "language_requirement": "B2 CEFR English recommended for the 100% English option (degree page). CETT generally accepts Cambridge, IELTS, TOEFL, EOI, CRUE/ACLES certificates (stated for masters).",
+      "official_ruct": "Yes (RUCT code 2500521 per CETT page)",
+      "data_year": "Feb list 2026 call (2025-26) — POSSIBLY OUTDATED for Feb 2027; tuition figure shown on page for Sept 2026 intake with UB fees of 2024/25",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). Credit-recognition route (55 €, ~3 weeks) could yield a direct-admission decision earlier, but recognising 30 ECTS of tourism subjects from a Business Computing degree is uncertain.",
+      "risks": "Field is tourism (not CS/business). Only 10 Feb places. No visa refund/deposit info. Mid-year entry sequencing unknown.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+          "https://www.cett.es/en/admission"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.cett.es/en/admission"
+        ],
+        "refund": [
+          "https://www.cett.es/en/admission"
+        ],
+        "tuition": [
+          "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "graduate_route": [
+          "https://www.cett.es/en/admission",
+          "https://universitats.gencat.cat/ca/acces-universitat/acces-segons-perfils-estudiants/estudiant-sistema-educatiu-estranger/"
+        ],
+        "language": [
+          "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT"
+        ],
+        "ruct": [
+          "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT"
+        ]
+      }
+    },
+    {
+      "university": "CETT-UB — Universitat de Barcelona",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat de Barcelona (UB) (private-priced)",
+      "degree": "Grado en Dirección Hotelera Internacional (International Hotel Management), code 11114 — 100% English or bilingual option",
+      "field": "Business",
+      "language": "English or bilingual: CETT offers '100% in English: your entire degree will be in English' or 'bilingual degree: first two years in Spanish or Catalan, final two years in English'. Single preinscription code 11114 for both.",
+      "feb_start_confirmed": "UNCLEAR",
+      "feb_start_evidence": "Feb-2026 Generalitat list: '11114 Direcció Hotelera Internacional \"CETT\" UB Barcelona 10 places 5.483 €'. It is not stated whether Feb entrants can take the 100% English track.",
+      "application_deadline": "Expected ~2-4 Feb 2027 (Feb 2026 pattern). NOT FOUND for 2027.",
+      "application_fee_eur": 0,
+      "application_fee_text": "Preinscription: no fee found; credit-recognition study 55 € non-refundable (deducted on enrolment).",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "Not found for bachelor entrants.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "No visa-refusal clause found on CETT admission/degree pages.",
+      "annual_tuition_non_eu_eur": 9671.08,
+      "tuition_text": "CETT page: Non-EU 925 € enrolment + 8.746,08 € = 9.671,08 € (single payment); EU 8.734 €; + UB fees 314,20 € (2024/25 amount). Feb-June indicative (Feb-2026 call): 5.483 €.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "Same as CETT Tourism: homologation then preinscription, or academic-record study (55 €) for >=30 ECTS direct admission.",
+      "language_requirement": "B2 English for English track (CETT: English programmes 'CEFR B2 level in all four skills' stated in admission section; degree-level requirement not separately stated).",
+      "official_ruct": "Yes (CETT page shows RUCT code 1500244 — as displayed)",
+      "data_year": "Feb list 2026 call — POSSIBLY OUTDATED; tuition as shown for Sept 2026 intake",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). ",
+      "risks": "Must confirm that Feb entrants can follow the 100% English group; bilingual track is 50% Spanish/Catalan. No deposit/refund info.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.cett.es/en/admission"
+        ],
+        "refund": [
+          "https://www.cett.es/en/admission"
+        ],
+        "tuition": [
+          "https://www.cett.es/en/university-degrees/bachelor-degree-in-international-hotel-management-GDHI"
+        ],
+        "graduate_route": [
+          "https://www.cett.es/en/admission"
+        ],
+        "language": [
+          "https://www.cett.es/en/university-degrees/bachelor-degree-in-international-hotel-management-GDHI"
+        ],
+        "ruct": [
+          "https://www.cett.es/en/university-degrees/bachelor-degree-in-international-hotel-management-GDHI"
+        ]
+      }
+    },
+    {
+      "university": "Escola Universitària de Turisme i Direcció Hotelera / Escola FUAB Formació — Universitat Autònoma de Barcelona",
+      "city": "Cerdanyola del Vallès (Bellaterra campus)",
+      "type": "Affiliated centre of Universitat Autònoma de Barcelona (UAB) (private-priced)",
+      "degree": "Grado en Turismo (Inglés) — code 21114",
+      "field": "Other",
+      "language": "English (UAB: 'docència 100% en anglès')",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat Feb-2026 list: '21114 Turisme (docència en Anglès) UAB Cerdanyola del Vallès U. Públ. CA 5 places 2.760 €'; Feb-2025 list: 10 places 2.760 €. (FUAB's own 2025-26 calendar does not list the Feb call.)",
+      "application_deadline": "Expected ~2-4 Feb 2027; NOT FOUND for 2027.",
+      "application_fee_eur": 0,
+      "application_fee_text": "Preinscription: no fee found.",
+      "deposit_before_letter_eur": 0,
+      "deposit_text": "No deposit: place assigned via Generalitat preinscription, then enrolment.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "No visa clause on FUAB price page (uab.cat ... preus-de-matricula-1345932946444).",
+      "annual_tuition_non_eu_eur": 5640,
+      "tuition_text": "UAB degree page: 'Preu per crèdit: 94 euros' x 60 = 5.640 €/yr; price per credit includes 160 € UAB management fee + insurance. No non-EU surcharge shown. Feb-June indicative (Feb-2026 call): 2.760 €.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "Homologated degree -> preinscription as graduate; or 'convalidación de estudios extranjeros' (>=30 ECTS) — FUAB window for 2026-27 was 24 Feb-7 Apr 2026 (Sept start; 6 places in English track in 24/25). No February-start window for this route found.",
+      "language_requirement": "B2 CEFR English recommended; 'No hi ha prova específica d'accés'.",
+      "official_ruct": "Yes (per Generalitat: 'Graduat/ada en Turisme per la Universitat Autònoma de Barcelona'); RUCT code not shown",
+      "data_year": "Feb list 2026 call — POSSIBLY OUTDATED; price per credit on current UAB page (year not stated)",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). ",
+      "risks": "Tourism field; only 5 Feb places in 2026; cheapest English option but letter timing incompatible with Dec visa target.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.uab.cat/web/estudiar/graus/matricula/preus-de-matricula-1345932946444.html"
+        ],
+        "refund": [
+          "https://www.uab.cat/web/estudiar/graus/matricula/preus-de-matricula-1345932946444.html"
+        ],
+        "tuition": [
+          "https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/turisme-angles-escola-adscrita-1216708251447.html?param1=1345680861890"
+        ],
+        "graduate_route": [
+          "https://www.uab.cat/web/estudiar/grados/acceso-internacional/pasos-a-seguir-1345919527949.html",
+          "https://www.uab.cat/doc/cal-academic-admin-2526"
+        ],
+        "language": [
+          "https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/turisme-angles-escola-adscrita-1216708251447.html?param1=1345680861890"
+        ],
+        "ruct": [
+          "https://universitats.gencat.cat/ca/detalls/oferta/3567-Turisme-docencia-en-angles"
+        ]
+      }
+    },
+    {
+      "university": "Universitat de Vic - Universitat Central de Catalunya (UVic-UCC), Faculty of Business and Communication",
+      "city": "Vic",
+      "type": "Private (foundation university, 'naturalesa pública i de gestió mixta'; takes part in the Generalitat preinscription)",
+      "degree": "Grado en Global Studies / Estudis Globals (docència en anglès), code 91062",
+      "field": "Other",
+      "language": "English (100% English) + compulsory Language B: French or Chinese (6 ECTS per semester in years 1-2, optional later)",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "uvic.cat/febrer: 'Vols començar la carrera al febrer? Preinscripció: del 2 al 4 de febrer 2026 ... Et pots matricular de: ... Estudis Socials: Global Studies'. Generalitat lists Feb-2026 (10 places, 3.180 €) and Feb-2025 (10 places).",
+      "application_deadline": "Expected ~2-4 Feb 2027 (Feb 2026: 2-4 Feb, assignment 6 Feb, enrolment 9 Feb). NOT FOUND for 2027.",
+      "application_fee_eur": 0,
+      "application_fee_text": "Public preinscription: no fee found.",
+      "deposit_before_letter_eur": 0,
+      "deposit_text": "No deposit; place via Generalitat preinscription. UVic: for degrees with enrolment after term start 'possibilitat de venir d'oient mitjançant una matrícula provisional'.",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "NOT FOUND",
+      "refund_text": "No visa-refusal refund clause found on UVic price/access pages.",
+      "annual_tuition_non_eu_eur": 5757,
+      "tuition_text": "UVic degree page / Preus de graus: 95,95 €/ECTS x 60 = 5.757 € + per year 125 € file management + 125 € university services + 50 € insurance (+1,12 € school insurance <28) — 'preus del curs vigent'. No non-EU surcharge shown. Feb-June indicative (Feb-2026 call): 3.180 €.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "Access via 'University graduates' (requires homologated degree) or foreign-system routes; partial foreign university studies: validation of >=30 ECTS -> enrol directly (UVic 2026-27 calendar for this route: applications 8 Apr-3 Jul and 28 Jul-15 Sep — no February window). Affinity points favour economics/business backgrounds.",
+      "language_requirement": "From 2025-26 a B2 English certificate is 'no longer required ... although it is still recommended'.",
+      "official_ruct": "Yes (UVic page links RUCT certificate; AQU EUC record 15533)",
+      "data_year": "Feb dates 2026 (2025-26) — POSSIBLY OUTDATED for 2027; price 'curs vigent' (2026-27 assumed, not stated)",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). UVic's direct (30-ECTS) route has no Feb window.",
+      "risks": "Field is international relations/social sciences (some business: Global Economics, Marketing, Trade). Vic is ~70 km from Barcelona. Only 10 Feb places.",
+      "field_sources": {
+        "feb_start": [
+          "https://www.uvic.cat/febrer",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://www.uvic.cat/en/access-and-enrolment",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.uvic.cat/febrer"
+        ],
+        "refund": [
+          "https://www.uvic.cat/preus/graus"
+        ],
+        "tuition": [
+          "https://www.uvic.cat/en/degree/global-studies",
+          "https://www.uvic.cat/preus/graus"
+        ],
+        "graduate_route": [
+          "https://www.uvic.cat/en/foreignacces",
+          "https://www.uvic.cat/tramits-academics/reconeixement-credits/acces",
+          "https://www.uvic.cat/grau/global-studies/acces-per-credits-reconeguts-convalidats"
+        ],
+        "language": [
+          "https://www.uvic.cat/en/degree/global-studies"
+        ],
+        "ruct": [
+          "https://www.uvic.cat/en/degree/global-studies"
+        ]
+      }
+    },
+    {
+      "university": "Centre Universitari EAE (EAE Business School Barcelona) — Universitat de Lleida (UdL)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat de Lleida (UdL) (private-priced)",
+      "degree": "Grado en Administración y Dirección de Empresas y Transformación de Negocios (code 61077) — marketed in English as 'BBA'",
+      "field": "Business+IT",
+      "language": "Bilingual Spanish/English or English (CONFLICTING): EAE fees page lists 'Bachelor Degree in Business Administration & Management (BBA) — Inglés y Bilingüe — 11,500 €' vs 'Grado en ADE — Spanish y Bilingüe — 9,900 €'; but the BBA page FAQ says 'taught in Spanish, with a bilingual Spanish/English study mode' and 'Spanish and Bilingual Spanish/English'. English share of the bilingual mode not stated.",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat Feb-2026 list: '61077 Administració i Direcció d'Empreses i Transformació de Negocis \"Centre Universitari EAE\" UdL Barcelona 44 places 5.750 €'; Feb-2025: 39 places 5.450 €. EAE's own page shows only 'October 2026' start.",
+      "application_deadline": "Expected ~2-4 Feb 2027 via Generalitat; NOT FOUND for 2027.",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Not stated on eaebarcelona.com BBA/fees pages.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "EAE General Terms: 'Admission does not imply that the Student's place ... is reserved. The place will be deemed fully reserved ... when payment has been made'; full programme fee becomes owed on signing (instalments possible).",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "Yes",
+      "refund_text": "EAE Barcelona General Terms (Oct 2024): 'EAE shall only reimburse the amount paid ... if the Spanish Consulate or Embassy ... refuses to grant the Student a study visa ... after all necessary documentation has been submitted and the ADMINISTRATIVE APPEAL FOR RECONSIDERATION has been made'; student must submit official refusal notice after the appeal; options: credit to an online programme or bank refund 'once any applicable bank and administrative costs have been deducted'.",
+      "annual_tuition_non_eu_eur": 11500,
+      "tuition_text": "EAE fees page: BBA (English/bilingual) 11,500 €; Grado ADE (Spanish/bilingual) 9,900 € ('for the October 2026 intake'). No separate non-EU surcharge shown. Feb-June indicative (Feb-2026 call): 5.750 €.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "UdL access rules and credit-recognition criteria (linked on EAE page); Generalitat: homologation then graduate quota, or >=30 ECTS recognised -> direct admission. A Business Computing degree is likely to match several ADE/IT subjects (not verified).",
+      "language_requirement": "NOT FOUND (no certificate level published for the English/bilingual mode).",
+      "official_ruct": "Yes (per Generalitat: 'Graduat/ada en Administració i Direcció d'Empreses i Transformació de Negocis per la Universitat de Lleida'; EAE links RUCT)",
+      "data_year": "Feb list 2026 call — POSSIBLY OUTDATED; fees for Oct 2026 intake",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). Ask EAE whether a Feb entrant can be pre-admitted/enrolled with a letter before December.",
+      "risks": "Unclear whether a fully English group exists and whether Feb entrants can join it; bilingual mode includes substantial Spanish. Large Feb place count (44) suggests real Feb cohort.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf"
+        ],
+        "refund": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf"
+        ],
+        "tuition": [
+          "https://www.eaebarcelona.com/en/fees",
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba"
+        ],
+        "graduate_route": [
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba",
+          "https://universitats.gencat.cat/ca/acces-universitat/acces-segons-perfils-estudiants/estudiant-sistema-educatiu-estranger/"
+        ],
+        "language": [
+          "https://www.eaebarcelona.com/en/fees",
+          "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba"
+        ],
+        "ruct": [
+          "https://universitats.gencat.cat/ca/detalls/oferta/5146-Administracio-i-Direccio-dEmpreses-i-Transformacio-de-Negocis-Centre-Universitari-EAE"
+        ]
+      }
+    },
+    {
+      "university": "Centre Universitari EAE (EAE Business School Barcelona) — Universitat de Lleida (UdL)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat de Lleida (UdL) (private-priced)",
+      "degree": "Grado en Marketing y Comunicación Digital (code 61078)",
+      "field": "Business",
+      "language": "Spanish or bilingual Spanish/English (EAE fees page: 'Spanish y Bilingüe'); English share not stated",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat Feb-2026 list: '61078 Màrqueting i Comunicació Digital \"Centre Universitari EAE\" UdL Barcelona 45 places 4.450 €'; Feb-2025: 38 places.",
+      "application_deadline": "Expected ~2-4 Feb 2027; NOT FOUND for 2027.",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Not stated.",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "As EAE General Terms (place reserved on payment).",
+      "deposit_deducted_from_tuition": "NOT FOUND",
+      "refund_if_visa_refused": "Yes",
+      "refund_text": "Same EAE General Terms visa clause (refund after visa refusal + administrative appeal, minus bank/admin costs).",
+      "annual_tuition_non_eu_eur": 8900,
+      "tuition_text": "EAE fees page: 'Grado en Marketing, Comunicación y Negocios Digitales — Spanish y Bilingüe — 8,900 €'. Feb-June indicative (Feb-2026 call): 4.450 €.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "As EAE ADE (UdL rules).",
+      "language_requirement": "NOT FOUND",
+      "official_ruct": "Yes (per Generalitat Feb lists as official grau of UdL)",
+      "data_year": "Feb list 2026 call — POSSIBLY OUTDATED",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). ",
+      "risks": "No English-only track advertised; bilingual mode has substantial Spanish — likely unsuitable for an English/French-only student.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ],
+        "fees_deposit": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf"
+        ],
+        "refund": [
+          "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf"
+        ],
+        "tuition": [
+          "https://www.eaebarcelona.com/en/fees"
+        ],
+        "graduate_route": [
+          "https://universitats.gencat.cat/ca/acces-universitat/acces-segons-perfils-estudiants/estudiant-sistema-educatiu-estranger/"
+        ],
+        "language": [
+          "https://www.eaebarcelona.com/en/fees"
+        ],
+        "ruct": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ]
+      }
+    },
+    {
+      "university": "Euncet Business School (Centre Universitari Euncet) — Universitat Politècnica de Catalunya (UPC)",
+      "city": "Terrassa / Barcelona (Campus 22@)",
+      "type": "Affiliated centre of Universitat Politècnica de Catalunya (UPC) (private-priced)",
+      "degree": "Grau en Empresa, Innovació i Tecnologia (codes 31128 Terrassa presencial, 31127 Terrassa semipresencial, 31125 22@ semipresencial; same rules for Grau en Màrqueting, Innovació i Tecnologia 31131/31133/31134 and double degrees 31130/31136/31137)",
+      "field": "Business+IT",
+      "language": "Catalan, Spanish and English by subject ('Bilingual model: you will study subjects in English') — English share NOT FOUND; no complete English track advertised",
+      "feb_start_confirmed": "YES",
+      "feb_start_evidence": "Generalitat Feb-2026 list: Empresa, Innovació i Tecnologia EUNCET — Terrassa presencial 20 places 3.600 €, Terrassa semipresencial 15 places 3.300 €, 22@ semipresencial 10 places 3.300 €; also Marketing and double degrees. Also in Feb-2025 list. (EUNCET's own practical-info page lists only June and September 2026 calls.)",
+      "application_deadline": "Expected ~2-4 Feb 2027 via Generalitat; NOT FOUND for 2027.",
+      "application_fee_eur": "NOT FOUND",
+      "application_fee_text": "Not stated. Credit-recognition file study ('Estudis d'expedient acadèmic per a la convalidació ...'): 54,54 €.",
+      "deposit_before_letter_eur": 600,
+      "deposit_text": "Price policy 2026-27, §3 Admissió: 'Per formalitzar l'admissió en un grau, la persona interessada haurà de fer un pagament per import de 600 € en concepte de bestreta de la matrícula' via myEUNCET; 'Aquest pagament no garanteix en cap cas l'accés al grau ... cal complir els requisits ... (Accesnet)'.",
+      "deposit_deducted_from_tuition": "Yes",
+      "refund_if_visa_refused": "No",
+      "refund_text": "'No es realitzarà cap reemborsament, ni total ni parcial, d'aquest import, excepte en el cas que la persona candidata no compleixi amb els requisits d'accés.' Visa refusal is not an exception. Enrolment renunciation only in justified cases within the calendar deadline, excluding the 600 € advance.",
+      "annual_tuition_non_eu_eur": 8040,
+      "tuition_text": "Price policy 2026-27: 1st-year subjects presencial 134 €/credit (semipresencial 118 €) x 60 = 8.040 € (7.080 € blended); 2nd-3rd year 120 €/110 €. Recognised credits from studies outside EUNCET 5 €/credit. No non-EU surcharge. 5% discount for single payment. Feb-June indicative (Feb-2026 call): 3.600 € presencial / 3.300 € semipresencial.",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "EUNCET practical info: foreign graduates may request homologation from the Ministry OR partial convalidation directly from the university (never both). >=30 ECTS convalidated (compulsory subjects) -> apply directly to the centre (no preinscription); <30 -> preinscription only to that centre with the convalidation certificate. A Business Computing degree is a plausible match for >=30 ECTS.",
+      "language_requirement": "EUNCET: no language requirement, 'candidates are advised to have a sufficient level of Spanish, spoken and written'.",
+      "official_ruct": "Yes (per Generalitat and UPC listing as official UPC grau)",
+      "data_year": "2026-27 prices (approved 05/02/2026); Feb places from Feb 2026 call — POSSIBLY OUTDATED",
+      "page_last_updated": "Price policy approved 05/02/2026",
+      "visa_timing_note": "Through the official February preinscription (Feb 2026 pattern: apply 2-4 Feb, places published 6 Feb, enrolment 9 Feb) no admission letter can exist by early Dec 2026; the Feb 2027 offer list is not yet published (latest on Canal Universitats = Feb 2026). Direct admission via >=30 ECTS convalidation could produce a centre decision earlier — ask EUNCET (935 476 066) whether a Feb start via this route is possible and whether it issues a visa letter in Nov/Dec.",
+      "risks": "Primarily Catalan/Spanish with some English subjects — applicant cannot study in Spanish/Catalan, so likely unsuitable unless EUNCET confirms an English path. 600 € not refunded on visa refusal.",
+      "field_sources": {
+        "feb_start": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+        ],
+        "deadline": [
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+          "https://www.euncet.com/ca/graus/informacio-practica-graus/"
+        ],
+        "fees_deposit": [
+          "https://image.euncet.es/lib/fe2c11737364047d7c1276/m/1/aa187178-24d0-4b85-9a53-610e96815ef5.pdf",
+          "https://www.euncet.com/ca/graus/informacio-practica-graus/"
+        ],
+        "refund": [
+          "https://image.euncet.es/lib/fe2c11737364047d7c1276/m/1/aa187178-24d0-4b85-9a53-610e96815ef5.pdf"
+        ],
+        "tuition": [
+          "https://image.euncet.es/lib/fe2c11737364047d7c1276/m/1/aa187178-24d0-4b85-9a53-610e96815ef5.pdf",
+          "https://www.euncet.com/en/degrees/degree-business-innovation-and-technology/"
+        ],
+        "graduate_route": [
+          "https://www.euncet.com/ca/graus/informacio-practica-graus/"
+        ],
+        "language": [
+          "https://www.euncet.com/en/degrees/degree-business-innovation-and-technology/",
+          "https://www.euncet.com/en/degrees/degrees-practical-information/"
+        ],
+        "ruct": [
+          "https://www.upc.edu/grau/fitxa_grau.php?id_estudi=214",
+          "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+        ]
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "university": "ESIC Barcelona (URV)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of URV",
+      "degree": "Grado en Marketing (Spanish version, code 71062) — Feb 2026: 13 places",
+      "reason": "Taught in Spanish/Catalan only — applicant needs English or French (the English version, code 71074, is listed under programs)",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "CETT-UB (UB)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of UB",
+      "degree": "Feb-2026 CETT offers without English track: Ciències Culinàries i Gastronòmiques (11113), Màrqueting, Esdeveniments i Entreteniment (11115), Negoci Digital i Innovació en Turisme (11102), NDIT/Turisme double (11112), Grau obert (11118), Turisme bilingual (11011)",
+      "reason": "Taught in Spanish/Catalan only — applicant needs English or French — CETT's 'University degrees in English' page lists only Tourism and International Hotel Management with English",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://www.cett.es/en/academic-offer-bachelors-degrees"
+      ]
+    },
+    {
+      "university": "ELISAVA (UVic-UCC affiliated)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of UVic-UCC (private)",
+      "degree": "Grau en Disseny i Innovació (91056) — Feb 2026: 12 places, 5.250 €",
+      "reason": "Feb start exists, but taught 'Catalan / Spanish — Subjects in English (60-84 ECTS)' of 240: cannot be completed in English",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://www.elisava.net/en/degrees/bachelor-in-design/"
+      ]
+    },
+    {
+      "university": "Barcelona Culinary Hub (UB affiliated)",
+      "city": "L'Hospitalet de Llobregat",
+      "type": "Affiliated centre of UB",
+      "degree": "Grado en Dirección y Gestión Gastronómica (11110) — Feb 2026: 10 places, 5.600 €",
+      "reason": "No English/French track advertised (Generalitat list has no '(docència en anglès)' label; official site in Spanish). Language not explicitly stated — treat as Spanish unless centre confirms.",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://www.barcelonaculinaryhub.com/en/degree-gastronomic-management/"
+      ]
+    },
+    {
+      "university": "Escola FUAB Formació (UAB)",
+      "city": "Cerdanyola del Vallès",
+      "type": "Affiliated centre of UAB",
+      "degree": "Turisme (21059) and Direcció Hotelera (21107) — Feb 2026: 10 places each",
+      "reason": "Taught in Spanish/Catalan only — applicant needs English or French (no '(docència en anglès)' label; the English Tourism code 21114 is listed under programs)",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "Eina, Centre Universitari de Disseny i Art (UAB)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of UAB",
+      "degree": "Grau en Disseny (21015) — Feb 2026: 5 places",
+      "reason": "Taught in Spanish/Catalan only — applicant needs English or French (listed without English label)",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "UVic-UCC (other Feb-start grados)",
+      "city": "Vic / Manresa",
+      "type": "Private",
+      "degree": "Audiologia General, Comunicació Audiovisual, Educació Social, Multimèdia. Aplicacions i Videojocs, Nutrició Humana i Dietètica, Periodisme, Teràpia Ocupacional, Gestió de la Societat Digital (Manresa); Feb-2025 also ADE Manresa, Màrqueting i Comunicació Empresarial, Podologia",
+      "reason": "Taught in Spanish/Catalan only — applicant needs English or French (only Global Studies carries the '(docència en Anglès)' label; Multimèdia is the IT-related one)",
+      "source_urls": [
+        "https://www.uvic.cat/febrer",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "EU Salesiana de Sarrià — EUSS (UAB)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of UAB",
+      "degree": "Engineering grados (Automoció, Electrònica Industrial i Automàtica, Organització Industrial, Mecànica)",
+      "reason": "Had a few Feb places in Feb 2025 only, none in Feb 2026; listed without English label — Taught in Spanish/Catalan only — applicant needs English or French",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "ESERP (UVic-UCC affiliated)",
+      "city": "Barcelona",
+      "type": "Affiliated centre of UVic-UCC",
+      "degree": "Grado en Derecho 'ESERP' (91053)",
+      "reason": "Feb places only in Feb 2025 (10), none in Feb 2026; law in Spanish (no English label) — Taught in Spanish/Catalan only — applicant needs English or French",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "UdG-affiliated centres: EU Mediterrani, Euroaula, EUHT Sant Pol, ERAM, Formatic Barcelona",
+      "city": "Barcelona / Sant Pol de Mar / Salt",
+      "type": "Affiliated centres of Universitat de Girona",
+      "degree": "Turisme 'Mediterrani', Logística Empresarial 'Mediterrani', Turisme 'Euroaula', Direcció d'Empreses Hoteleres i Gastronòmiques (Sant Pol); ERAM/Formatic not in any Feb list",
+      "reason": "UdG is not in the Feb 2026 call at all (only UB, UAB, UPC, UdL, URV, UVic-UCC); some UdG centres had Feb places in Feb 2025, without English label — may reappear in Feb 2027 but no English track evidenced",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "TecnoCampus Mataró-Maresme (UPF)",
+      "city": "Mataró",
+      "type": "Affiliated centre of Universitat Pompeu Fabra",
+      "degree": "ADE, Informàtica/Enginyeria Informàtica de Gestió i Sistemes d'Informació, Videojocs, etc.",
+      "reason": "September start only — UPF and its centres have no places in the Feb 2026 Generalitat call (and none for TecnoCampus in Feb 2025)",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "ESCI-UPF",
+      "city": "Barcelona",
+      "type": "Affiliated centre of Universitat Pompeu Fabra",
+      "degree": "Grau en Negocis i Màrqueting Internacionals (100% English)",
+      "reason": "September start only — not in Feb 2025 or Feb 2026 Generalitat calls (UPF centres absent)",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+        "https://www.esci.upf.edu/en"
+      ]
+    },
+    {
+      "university": "CITM (UPC affiliated) and Bau Design College (UVic affiliated)",
+      "city": "Terrassa / Barcelona",
+      "type": "Affiliated centres",
+      "degree": "Multimèdia / Videojocs (CITM); Disseny (Bau)",
+      "reason": "September start only — not in Feb 2025 or Feb 2026 Generalitat calls",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "La Salle Campus Barcelona (Universitat Ramon Llull)",
+      "city": "Barcelona",
+      "type": "Private",
+      "degree": "All grados incl. International Computer Engineering, Business Intelligence, Animation & VFX, AI & Data Science (English)",
+      "reason": "September start only — 2026-27 admission process: €100 fee, €2,000 reservation within 15 days, €1,500 by 10 July, remainder before 1 Sept 2026; no February intake for bachelors (counter-cycle March start exists only for masters)",
+      "source_urls": [
+        "https://www.salleurl.edu/en/admissions/admission-process",
+        "https://www.salleurl.edu/en/faqs-la-salle-campus-barcelona"
+      ]
+    },
+    {
+      "university": "Universitat Internacional de Catalunya (UIC Barcelona)",
+      "city": "Barcelona / Sant Cugat",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "September start only (no February intake mentioned) — international admission: period from November until enrolment closes; reserve place by paying 20% of first-year fee within 10 days of acceptance letter",
+      "source_urls": [
+        "https://www.uic.es/en/international/study-uic-barcelona/regular-studies/admission-process-degrees"
+      ]
+    },
+    {
+      "university": "Universitat Abat Oliba CEU",
+      "city": "Barcelona",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "September start only — reservation 1.500 € (deducted) tied to the June PAU/Sept enrolment; no February-start process on admissions page",
+      "source_urls": [
+        "https://www.uaoceu.es/proceso-de-admision"
+      ]
+    },
+    {
+      "university": "EU Business School Barcelona",
+      "city": "Barcelona",
+      "type": "Private (non-university)",
+      "degree": "BBA / Bachelor programmes",
+      "reason": "Non-official: degrees are UK partner degrees (University of Derby, London Met, Dublin Business School) or Spanish 'título propio' via UVic-UCC/UCAM — not grado oficial",
+      "source_urls": [
+        "https://www.euruni.edu/en/About-EU/Accreditations/Our-accreditations.html"
+      ]
+    },
+    {
+      "university": "Harbour.Space Institute of Technology",
+      "city": "Barcelona",
+      "type": "Private institute (non-university)",
+      "degree": "Bachelor in Computer Science / Business",
+      "reason": "No evidence of a Spanish grado oficial (not in any Generalitat preinscription list; not a Catalan university or affiliated centre); module-based 'intake every 3 weeks'",
+      "source_urls": [
+        "https://harbour.space/bachelors",
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    },
+    {
+      "university": "URV / UOC",
+      "city": "Tarragona (online)",
+      "type": "Public",
+      "degree": "Antropologia i Evolució Humana (71049)",
+      "reason": "Online/virtual or semipresencial; Catalan/Spanish",
+      "source_urls": [
+        "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2026-Febrer.pdf",
+      "title": "PREINSCRIPCIÓ UNIVERSITÀRIA 2026 Convocatòria febrer — Llista de centres d'estudi (Generalitat)",
+      "official": true,
+      "last_updated": "not shown (Feb 2026 call)",
+      "used_for": "Master list of all Catalan grados with Feb 2026 entry, places, Feb-June price, English labels, dates 2-4/6/9 Feb"
+    },
+    {
+      "url": "https://universitats.gencat.cat/web/.content/02_preinscripcio/enllac-documents/Preins-2025-Febrer.pdf",
+      "title": "PREINSCRIPCIÓ UNIVERSITÀRIA 2025 Convocatòria febrer (Generalitat)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Year-on-year consistency of Feb offer"
+    },
+    {
+      "url": "https://universitats.gencat.cat/ca/preinscripcions/oferta-de-places/",
+      "title": "Oferta de places — Canal Universitats",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Confirms latest published Feb list is Feb 2026; Feb 2027 not yet published"
+    },
+    {
+      "url": "https://universitats.gencat.cat/ca/acces-universitat/acces-segons-perfils-estudiants/estudiant-sistema-educatiu-estranger/",
+      "title": "Estudiant d'un sistema educatiu estranger — Canal Universitats",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Foreign-graduate routes (homologation; >=30 ECTS direct admission)"
+    },
+    {
+      "url": "https://www.euncet.com/ca/graus/informacio-practica-graus/",
+      "title": "EUNCET — Informació pràctica graus",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Admission steps, 600 € paga i senyal, foreign-studies convalidation route, June/Sept calls"
+    },
+    {
+      "url": "https://image.euncet.es/lib/fe2c11737364047d7c1276/m/1/aa187178-24d0-4b85-9a53-610e96815ef5.pdf",
+      "title": "EUNCET Política de preus, beques i ajuts 2026-2027",
+      "official": true,
+      "last_updated": "approved 05/02/2026",
+      "used_for": "Per-credit prices, 600 € advance non-refundable rule, renunciation"
+    },
+    {
+      "url": "https://www.euncet.com/en/degrees/degree-business-innovation-and-technology/",
+      "title": "EUNCET — Bachelor's in Business, Innovation and Technology",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Language (Catalan, Spanish, English), places, 8.040 € first year"
+    },
+    {
+      "url": "https://universitats.gencat.cat/ca/detalls/oferta/4637-Marketing-ESIC-docencia-en-Ingles",
+      "title": "Màrqueting 'ESIC' (docència en Anglès) — Canal Universitats",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Official status, B2 requirement, 35 places"
+    },
+    {
+      "url": "https://www.esic.edu/grados/bachelors-degree-marketing-barcelona",
+      "title": "ESIC — Bachelor's Degree in Marketing in Barcelona",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Tuition 10.143/10.555 €, admission steps, pre-enrollment letter"
+    },
+    {
+      "url": "https://www.esic.edu/sites/default/files/2022-12/guia_academica_grados_oficiales_bcn2022_2023.pdf",
+      "title": "ESIC Barcelona Guía académica titulaciones oficiales 2022-23",
+      "official": true,
+      "last_updated": "2022-12",
+      "used_for": "Visa-denial refund of reservation (older rule)"
+    },
+    {
+      "url": "https://www.esic.edu/sites/default/files/2025-05/24_25%20Gu%C3%ADa%20acad%C3%A9mica%20GRADO%20oficial_ES_BARCELONA_0.pdf",
+      "title": "ESIC Barcelona Guía académica titulación oficial 2024-25",
+      "official": true,
+      "last_updated": "2025-05",
+      "used_for": "Newer rule: no refunds of reserva/matrícula on withdrawal; visa clause absent"
+    },
+    {
+      "url": "https://www.esic.edu/en/international/programs/degrees",
+      "title": "ESIC — International students, official degrees",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "B2 English certificates accepted; legal access docs"
+    },
+    {
+      "url": "https://www.cett.es/en/admission",
+      "title": "CETT — Admission",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Feb/June/Sept calls; foreign-degree routes; 55 € academic record study"
+    },
+    {
+      "url": "https://www.cett.es/en/university-degrees/bachelors-degree-in-tourism-GT",
+      "title": "CETT — Bachelor's Degree in Tourism",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "100% English option, code 11086, fees, RUCT 2500521"
+    },
+    {
+      "url": "https://www.cett.es/en/university-degrees/bachelor-degree-in-international-hotel-management-GDHI",
+      "title": "CETT — Bachelor's Degree in International Hotel Management",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "100% English or bilingual, fees, code 11114"
+    },
+    {
+      "url": "https://www.cett.es/en/academic-offer-bachelors-degrees",
+      "title": "CETT — University degrees in English",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Only Tourism and IHM offered with English"
+    },
+    {
+      "url": "https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/turisme-angles-escola-adscrita-1216708251447.html?param1=1345680861890",
+      "title": "UAB — Grau en Turisme (Anglès)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "100% English, 94 €/credit, B2 recommended, 60 places"
+    },
+    {
+      "url": "https://www.uab.cat/web/estudiar/graus/matricula/preus-de-matricula-1345932946444.html",
+      "title": "EUTDH/FUAB — Preus de matrícula",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "What the credit price includes; no visa clause"
+    },
+    {
+      "url": "https://www.uab.cat/web/estudiar/grados/acceso-internacional/pasos-a-seguir-1345919527949.html",
+      "title": "EUTDH — Convalidación estudios extranjeros: pasos a seguir",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Foreign-studies convalidation route places/calendar (Sept start)"
+    },
+    {
+      "url": "https://www.uab.cat/doc/cal-academic-admin-2526",
+      "title": "FUAB Calendari matrícula, acadèmic i administratiu 2025-2026",
+      "official": true,
+      "last_updated": "05/06/2025",
+      "used_for": "Admission by change of studies 24.02-07.04.2026 for 2026-27"
+    },
+    {
+      "url": "https://www.uvic.cat/febrer",
+      "title": "UVic — Matrícula febrer",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Feb entry degrees incl. Global Studies; dates 2-4/6/9 Feb 2026"
+    },
+    {
+      "url": "https://www.uvic.cat/en/degree/global-studies",
+      "title": "UVic — Degree in Global Studies",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "100% English + French/Chinese, 95,95 €/ECTS, 5.757 €, B2 no longer required"
+    },
+    {
+      "url": "https://www.uvic.cat/preus/graus",
+      "title": "UVic — Preus de graus",
+      "official": true,
+      "last_updated": "not shown ('curs vigent')",
+      "used_for": "Price table and extra annual fees"
+    },
+    {
+      "url": "https://www.uvic.cat/tramits-academics/reconeixement-credits/acces",
+      "title": "UVic — Reconeixement de crèdits per a l'accés",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "30-ECTS route calendar 2026-27 (no Feb window)"
+    },
+    {
+      "url": "https://www.uvic.cat/en/foreignacces",
+      "title": "UVic — Access for students from foreign educational systems",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Foreign partial university studies route"
+    },
+    {
+      "url": "https://www.eaebarcelona.com/en/bachelor-degree-business-administration-management-bba",
+      "title": "EAE Barcelona — Bachelor's in Business Administration and Business Transformation (BBA)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Official UdL degree, languages, 9.900 € Oct 2026, 150 places"
+    },
+    {
+      "url": "https://www.eaebarcelona.com/en/fees",
+      "title": "EAE Barcelona — Fees",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "BBA English/bilingual 11.500 €, ADE 9.900 €, Marketing 8.900 €"
+    },
+    {
+      "url": "https://www.eaebarcelona.com/sites/eae.bcn/files/media_files/CONDICIONES%20GENERALES%20EAE%20BARCELONA%20OCTUBRE%202024_ENG_V1.pdf",
+      "title": "EAE Barcelona General Terms and Conditions (Oct 2024)",
+      "official": true,
+      "last_updated": "October 2024",
+      "used_for": "Place reservation on payment; visa-refusal refund after administrative appeal"
+    },
+    {
+      "url": "https://www.elisava.net/en/degrees/bachelor-in-design/",
+      "title": "ELISAVA — Bachelor in Design and Innovation",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Language Catalan/Spanish with 60-84 ECTS in English"
+    },
+    {
+      "url": "https://www.salleurl.edu/en/admissions/admission-process",
+      "title": "La Salle-URL — Undergraduate admission process",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Sept-only process, fees, deposits"
+    },
+    {
+      "url": "https://www.uic.es/en/international/study-uic-barcelona/regular-studies/admission-process-degrees",
+      "title": "UIC Barcelona — Admission process for degrees (international)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "No Feb intake; 20% reservation"
+    },
+    {
+      "url": "https://www.uaoceu.es/proceso-de-admision",
+      "title": "UAO CEU — Proceso de admisión",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "1.500 € reservation tied to June PAU; Sept start"
+    },
+    {
+      "url": "https://www.euruni.edu/en/About-EU/Accreditations/Our-accreditations.html",
+      "title": "EU Business School — Accreditations",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Degrees are UK partner degrees or títulos propios"
+    },
+    {
+      "url": "https://www.umanresa.cat/ca/comunicacio/blog/preinscripcio-universitaria-tambe-al-febrer",
+      "title": "UManresa blog — Preinscripció universitària també al febrer",
+      "official": true,
+      "last_updated": "not shown (Feb 2025 dates)",
+      "used_for": "Lead only (UVic Manresa Feb entry 2025)"
+    }
+  ],
+  "notes": "KEY RULE: In Catalonia, February entry to an official grado happens only through the Generalitat's extraordinary February preinscription ('places vacants'), covering UB, UAB, UPC, UdL, URV and UVic-UCC and their affiliated centres; UPF, UdG (in 2026) and the private universities (URL incl. La Salle/Esade/IQS/Blanquerna, UIC, UAO CEU) are outside it. Feb 2026 call: apply 2-4 Feb 2026 on accesuniversitat.gencat.cat (up to several preferences), assignment 6 Feb, enrolment 9 Feb; the Feb 2027 list/dates are NOT yet published (Canal Universitats still shows Feb 2026 as latest) — expect the same pattern (~1st week of Feb 2027). Consequence for the visa: an official admission/enrolment letter cannot exist by early Dec 2026 through this route; only (a) a direct-admission decision via >=30 ECTS credit recognition (centre-by-centre; UVic and FUAB windows found are for Sept only; EUNCET and CETT describe the route without a fixed Feb window) or (b) a private-centre pre-admission/pre-enrollment letter (ESIC, EAE, EUNCET) could come earlier — must be asked explicitly, and these centres warn the place is only legal once the Generalitat assignment/access requirements are met. ENGLISH-TAUGHT Feb-start grados in Catalonia in the Feb 2026 list (label '(docència en anglès)'): ESIC Màrqueting (URV, 16 places, new in 2026), CETT Turisme (UB, 10), FUAB/EUTDH Turisme (UAB, 5), UVic Global Studies (10, includes French as Language B). CETT International Hotel Management (11114) has a 100% English option but the Feb code is shared — confirm. EAE ADE (UdL) is marketed as 'BBA English/bilingual' (11.500 €) but official page says Spanish + bilingual — confirm English group for Feb entrants. No CS/IT grado taught in English has a Feb start in Catalonia (UVic Multimèdia, EUNCET, EUSS are Catalan/Spanish). OUT-OF-GROUP LEADS for coordinator: (1) Feb-2025 list had UPF 41066 'Estudis Globals' with 30 places reserved for students whose secondary studies are from non-EU systems (absent in Feb 2026) — UPF Global Studies is largely English-taught; worth checking with UPF for Feb 2027. (2) UdL Lleida 61054 'Estudis Anglesos' (English Studies, public) had 5 Feb-2026 places. Foreign graduate access (Generalitat page): completed foreign degree -> homologation/equivalence at Ministerio de Ciencia, Innovación y Universidades then 'titulats universitaris' quota (3% of places, access mark 5) — slow; partial convalidation (>=30 ECTS -> direct centre admission, no preinscription; 1-29 -> preinscription only to that centre with mark 5). Several centres (EUNCET, CETT) state foreign graduates may choose convalidation instead of homologation (never simultaneously). Alternatively use foreign secondary diploma (homologation/UNEDasiss). Not verified (sites blocked or search budget exhausted): Esade BBA, IQS, Blanquerna (URL private schools — not in the Generalitat Feb call), GBSB Global Business School and Barcelona Technology School (likely non-official; sites returned 403/525). Contacts: EUNCET 935 476 066 / 680 582 321; ESIC Barcelona admissions +34 93 117 07 84 (Pg. Santa Eulàlia 2); CETT +34 934 280 777 (Av. Can Marcet 36-38); UVic access office +34 938 815 534 / 938 816 171; EAE Barcelona +34 932 492 938; La Salle bachelor.admissions@salleurl.edu; UIC international@uic.es. Downloads saved under scratchpad/research/B_dl/."
+}

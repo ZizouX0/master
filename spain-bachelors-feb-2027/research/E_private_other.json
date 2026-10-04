@@ -1,0 +1,688 @@
+{
+  "group": "Private universities II — UCAM, CEU group, UFV and the rest of Spain's private universities (outside Catalonia; Madrid UE/Nebrija/IE/ESIC/UAX/UCJC/CUNEF/Villanueva handled elsewhere)",
+  "programs": [
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Cartagena (Murcia region)",
+      "type": "Private",
+      "degree": "Grado en Odontología — English-taught group (Bachelor's Degree in Dentistry, Cartagena campus)",
+      "field": "Other",
+      "language": "English (programme page: 'Taught in English'); a B2-level Spanish certificate is required before the start of the 3rd year, so clinical years assume Spanish",
+      "feb_start_confirmed": "UNCLEAR",
+      "feb_start_evidence": "Official UCAM news of 18/01/2024 lists 'Odontología (Inglés, Cartagena)' first among the 'Grados con posibilidad de matriculación' for students starting in the second semester (Feb 2024). It is NOT in the January 2025 list (15/01/2025) or the January 2026 list (12/01/2026). Those two lists contain only Spanish-taught in-person grados plus the semipresencial/online offer. No February 2027 announcement yet: UCAM publishes the list in mid-January each year. UCAM 2026/27 calendars: 2nd-semester classes start 1 Feb 2027.",
+      "application_deadline": "NOT FOUND for Feb 2027. Past second-semester windows ran from mid-January to 28 Feb 2025 or 'hasta final de febrero' 2026, which is far too late for a visa. The English-programme pages give no deadline.",
+      "application_fee_eur": 150,
+      "application_fee_text": "Fee box on international.ucam.edu programme pages: Application fee 150€; Pre-Inscription fee 390€; Opening of academic records 450€; Student insurance 96,12€. 'The application, pre-inscription and reservation fees are non-refundable' (refund policy says except for visa denial for the reservation fee, see refund_text). Pre-enrolment fee is 'NOT refundable under any circumstances' (Finance Division Regulations art. 3).",
+      "deposit_before_letter_eur": "NOT FOUND",
+      "deposit_text": "The official pages do not say exactly which amount is due before the admission letter. Charged at the application/pre-enrolment stage: application fee €150 + pre-inscription €390 (= €540). A 'reservation fee' is also charged; for international/English programmes its amount is not published. The general UCAM rule (Finance Regulations art. 4/6) is that new students pay part of the enrolment fee in advance as a reservation fee. In the domestic rules the non-refundable cancellation amount is €2,000 for Medicine/Dentistry and €1,100 for other grados. International students and English-taught programmes follow the separate international refund policy.",
+      "deposit_deducted_from_tuition": "Yes",
+      "refund_if_visa_refused": "Partial",
+      "refund_text": "UCAM international Refund Policy (applies to all applicants who accepted a place): 'A refund of the reservation fee will be issued if an applicant is unable to take their place due to a student visa denial (administrative fees are non-refundable), provided that: the visa application is valid (genuine documents, required financial resources and qualifications); the visa application is timely (applied before the start date of the program); proof/documentary evidence of their visa refusal is provided.' Application fees and pre-inscription payments are non-refundable in all cases unless the university is at fault. No refunds after the programme start date. That includes a visa applied for after the start date and then refused. Other cancellations: more than 28 days before start, 20% of the reservation fee is kept plus the application and pre-inscription fees; within 28 days, nothing is refunded. Withdrawal must be in writing to the International Admissions Office (admissions@ucam.edu). Refund form required; processed within about 6 weeks; Flywire payments are refunded via Flywire; transfer costs are not covered. The PDF shows no date.",
+      "annual_tuition_non_eu_eur": 15200,
+      "tuition_text": "Programme page: 'TUITION FEES PER YEAR 253.33 €/ECTS — 15,200 €/Curso' (60 ECTS). Same price shown for all nationalities; no non-EU surcharge stated. The academic year of the figure is not stated on the page (fetched 2026-10-04).",
+      "foreign_graduate_eligible": "Conditional",
+      "graduate_route": "UCAM Normativa de Acceso 2026/27 art. 2: access route 10 covers university graduates with Spanish or equivalent degrees. Route 11 covers students with foreign university studies, partial or completed, without Spanish homologation: 'será requisito indispensable que esta Universidad les haya reconocido al menos 30 créditos'. A Business Computing degree is unlikely to yield 30 ECTS in Dentistry. The realistic route is the secondary-school path the international pages ask for (High School transcript/diploma/national exam), with a UNEDasiss credential or homologation of the school diploma; the pre-enrolment guide asks for the same document number 'used for UNED or Homologation procedure'. Art. 25 also keeps a 10% extra quota for transfers and for students with ≥30 ECTS recognised. Foreign documents must be legalised/apostilled and translated.",
+      "language_requirement": "'A B2 English level is required to be admitted in this Degree. You can provide any language proficiency certificate from this list. Any other English certificate will be evaluated individually.' Also: 'B2-level Spanish certificate required prior to the start of the 3rd year.'",
+      "official_ruct": "Yes (per university page — official Grado en Odontología; RUCT code not checked)",
+      "data_year": "Fees: academic year not stated on page (current page fetched 2026-10-04). Feb-entry evidence: 2023-24 only — POSSIBLY OUTDATED",
+      "page_last_updated": "not shown",
+      "visa_timing_note": "Unlikely. UCAM only announces its second-semester list in mid-January (18 Jan 2024, 15 Jan 2025, 12 Jan 2026), and the English Dentistry group was missing from the last two lists. An admission letter by early Dec 2026 would need individual written confirmation from UCAM International Admissions (admissions@ucam.edu) that an English-group February 2027 entry exists.",
+      "risks": "Feb entry for the English group appears only in the 2024 list, so it is very likely discontinued. The field is unrelated to the applicant's (Business Computing). It is a 5-year health degree with clinical sequencing, so a mid-year entry may leave first-year annual subjects incomplete. Spanish B2 is needed by year 3. Tuition is high (€15,200/yr). A foreign-graduate entry via 30 ECTS recognition is unlikely, so a secondary-school credential via UNEDasiss/homologation would be needed. The reservation fee is refundable on visa denial only if the visa was applied for before the programme start date. Application and pre-inscription fees (€540) are never refundable.",
+      "field_sources": {
+        "feb_start": [
+          "https://www.ucam.edu/noticias/ucam-posibilita-comenzar-estudios-grado-tambien-enero",
+          "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+          "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam",
+          "https://www.ucam.edu/sites/default/files/public/vicerrectorado-calidad-ordenacion-academica/calendario-cartagena.pdf"
+        ],
+        "deadline": [
+          "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+          "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam"
+        ],
+        "fees_deposit": [
+          "https://international.ucam.edu/studies/bachelor-in-dentistry-cartagena-on-campus",
+          "https://www.ucam.edu/sites/default/files/public/la-universidad/normativa/normativa-de-gestion-economica-en.pdf",
+          "https://international.ucam.edu/services/finance-division"
+        ],
+        "refund": [
+          "https://international.ucam.edu/sites/ucam.edu.en/files/documentos/refund_policy.pdf",
+          "https://www.ucam.edu/sites/default/files/public/la-universidad/normativa/normativa-de-gestion-economica-en.pdf",
+          "https://www.ucam.edu/sites/default/files/public/la-universidad/normativa/normativa-de-acceso-admision-y-matricula-de-grado-y-master.pdf"
+        ],
+        "tuition": [
+          "https://international.ucam.edu/studies/bachelor-in-dentistry-cartagena-on-campus"
+        ],
+        "graduate_route": [
+          "https://www.ucam.edu/sites/default/files/public/la-universidad/normativa/normativa-de-acceso-admision-y-matricula-de-grado-y-master.pdf",
+          "https://international.ucam.edu/sites/ucam.edu.en/files/public/admissions/guidelines.pdf",
+          "https://international.ucam.edu/studies/bachelor-in-dentistry-cartagena-on-campus"
+        ],
+        "language": [
+          "https://international.ucam.edu/studies/bachelor-in-dentistry-cartagena-on-campus"
+        ],
+        "ruct": [
+          "https://international.ucam.edu/studies/bachelor-in-dentistry-cartagena-on-campus"
+        ]
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Murcia / Cartagena",
+      "type": "Private",
+      "degree": "Grado en Marketing y Dirección Comercial (presencial)",
+      "reason": "Taught in Spanish only — applicant needs English or French. (A February start for new students IS offered: it is on UCAM's official 12/01/2026 list of in-person grados open for second-semester entry, enrolment open until end of Feb 2026, classes from 2nd semester. In Jan 2025 it was offered only 'A Distancia'.)",
+      "source_urls": [
+        "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam",
+        "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero"
+      ]
+    },
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Murcia",
+      "type": "Private",
+      "degree": "Grado en Ingeniería en Tecnologías de Telecomunicación (presencial)",
+      "reason": "Taught in Spanish only — applicant needs English or French. Feb start for new students offered in the 2024, 2025 (presencial) and 2026 (presencial) lists.",
+      "source_urls": [
+        "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam",
+        "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+        "https://www.ucam.edu/noticias/ucam-posibilita-comenzar-estudios-grado-tambien-enero"
+      ]
+    },
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Murcia",
+      "type": "Private",
+      "degree": "Grado en Ingeniería Informática",
+      "reason": "Taught in Spanish only — applicant needs English or French. The second-semester entry for this degree has been offered only 'A Distancia' (Jan 2025 list) or within the semipresencial/online offer (Jan 2026 list: not among the presencial grados). Online/hybrid is not visa-eligible.",
+      "source_urls": [
+        "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+        "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam",
+        "https://www.ucam.edu/estudios/grados/ingenieria-informatica-presencial"
+      ]
+    },
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Murcia",
+      "type": "Private",
+      "degree": "Grado en Administración y Dirección de Empresas (Spanish track)",
+      "reason": "Feb entry offered only as 'A Distancia – Español' (Jan 2025 list); not in the Jan 2026 in-person list. Online-only and Spanish-only, so not eligible.",
+      "source_urls": [
+        "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+        "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam"
+      ]
+    },
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Murcia / Cartagena",
+      "type": "Private",
+      "degree": "Other in-person grados with Feb 2026 entry: Nutrición Humana y Dietética, Gastronomía, Terapia Ocupacional, Podología, Comunicación Audiovisual, Periodismo, Publicidad RRPP y Marketing de Contenidos, Educación Infantil, Educación Primaria, Ingeniería de Edificación, Ingeniería Civil (2025 also: Biotecnología, CAFD-Español, Fisioterapia, Traducción e Interpretación)",
+      "reason": "Taught in Spanish only — applicant needs English or French (UCAM does run a Feb start for new students in these, per official lists 2024-2026).",
+      "source_urls": [
+        "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam",
+        "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+        "https://www.ucam.edu/noticias/ucam-posibilita-comenzar-estudios-grado-tambien-enero"
+      ]
+    },
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Murcia / Cartagena",
+      "type": "Private",
+      "degree": "All semipresencial and online grados (Feb entry: 'la oferta completa de grados semipresenciales y online')",
+      "reason": "Online/semipresencial and Spanish-taught. Not eligible for a student visa, and the applicant needs English or French. UCAM does advertise a February start for these.",
+      "source_urls": [
+        "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam"
+      ]
+    },
+    {
+      "university": "UCAM Universidad Católica San Antonio de Murcia",
+      "city": "Murcia / Cartagena",
+      "type": "Private",
+      "degree": "English-taught bachelors: Business Administration (Murcia, 7,550 €/yr, B2 English), International Relations, Modern Languages, Psychology, Physical Activity & Sport Sciences, Veterinary Medicine, Dentistry (Murcia)",
+      "reason": "September start only: no February intake advertised for English groups. UCAM's official second-semester entry lists for Jan 2025 and Jan 2026 contain only Spanish-taught in-person grados (CAFD explicitly 'Español') plus online/semipresencial. The only English group ever listed was Dentistry Cartagena (Jan 2024), recorded under programs as UNCLEAR. Worth a direct question to admissions@ucam.edu, but there is no evidence.",
+      "source_urls": [
+        "https://international.ucam.edu/studies/bachelor-in-business-administration",
+        "https://international.ucam.edu/",
+        "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+        "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam"
+      ]
+    },
+    {
+      "university": "Universidad CEU San Pablo",
+      "city": "Madrid",
+      "type": "Private",
+      "degree": "Grado en Administración y Dirección de Empresas — English track (and all grados)",
+      "reason": "September start only. The official programme page shows 'Start date: September 2027'. 2026-27 fees: reservation €950, enrolment €1,500, €225/credit English track (€13,500/yr). The CEU San Pablo new-student rules describe one annual selection/pre-registration/enrolment cycle.",
+      "source_urls": [
+        "https://www.uspceu.com/en/academic-programs/degree/business-administration-and-management",
+        "https://www.uspceu.com/Portals/0/docs/conocenos/normativa-universitaria/Normas-generales-para-alumno-de-nuevo-ingreso-grado.pdf"
+      ]
+    },
+    {
+      "university": "Universidad CEU Cardenal Herrera (CEU UCH)",
+      "city": "Valencia (Alfara/Moncada), Castellón, Elche",
+      "type": "Private",
+      "degree": "All grados incl. English/French tracks: Veterinary Medicine (English+Spanish), Médecine Vétérinaire (French+Spanish), Dentistry (English), Medicine (English+Spanish), Pharmacy/Physiotherapy (English+Spanish), Architecture (English)",
+      "reason": "September start only. The 2026-27 new-student fee schedule has a single annual cycle: place reservation paid on admission, 'Inscripción: se abona entre el 1 de julio y el 15 de septiembre', tuition 'desde octubre a junio, en 9 mensualidades'. No second-semester entry for new students found. Note: the same rules state 'El estudiante internacional no tiene derecho al reembolso de las cantidades abonadas en concepto de honorarios académicos por denegación de visado'.",
+      "source_urls": [
+        "https://www.uchceu.es/docs/nuevo-alumno/tasas-academicas/grado/campus-valencia.pdf?id=2026",
+        "https://www.uchceu.es/en/new-student/degree/fees",
+        "https://www.uchceu.es/en/degree-veterinary"
+      ]
+    },
+    {
+      "university": "Universidad CEU Fernando III",
+      "city": "Sevilla (Bormujos)",
+      "type": "Private",
+      "degree": "All grados (incl. Spanish/English Odontología and international bilingual programmes)",
+      "reason": "September start only. The official 2026/27 academic calendar has one start for the year (welcome day 3 Sep, 1st-semester classes 4 Sep–10 Dec; the 2nd semester from 8 Feb is the continuation, not a new intake). The admission page advertises only 'Matrícula abierta para grados y posgrados 26/27'.",
+      "source_urls": [
+        "https://uf3ceu.es/normativas/calendario-academico-uf3.pdf",
+        "https://uf3ceu.es/admision/nacional/",
+        "https://uf3ceu.es/en/admission/international-admission/"
+      ]
+    },
+    {
+      "university": "Universidad Francisco de Vitoria (UFV)",
+      "city": "Pozuelo de Alarcón (Madrid)",
+      "type": "Private",
+      "degree": "Grado en Ingeniería Informática — English track (also English/bilingual Business Analytics, Economics & Finance, International Relations, French-bilingual Physiotherapy)",
+      "reason": "September start only. The official programme page shows 'Start Date: September 2027' (English track €12,465/yr 2026-27: €1,500 down payment + monthly). The admission process page lists only one intake: admission tests weekly, €80 test fee, €950 reservation non-refundable except if legal admission requirements are not met.",
+      "source_urls": [
+        "https://www.ufv.es/en/study-degree-computer-engineering-madrid-spain/",
+        "https://www.ufv.es/en/undergraduate-admission-process/",
+        "https://www.ufv.es/en/"
+      ]
+    },
+    {
+      "university": "Universidad Pontificia Comillas (ICADE)",
+      "city": "Madrid",
+      "type": "Private",
+      "degree": "Grado en ADE (E-2 English) and all grados",
+      "reason": "September start only. The official page shows 'Start date 01/09/2027'; 'Open calls for registrations from 01/10/26 to 14/04/27'; 60 seats.",
+      "source_urls": [
+        "https://www.comillas.edu/en/degrees/bachelors-degree-in-business-administration-and-management-ade-e-2-english/"
+      ]
+    },
+    {
+      "university": "Universidad de Navarra",
+      "city": "Pamplona / San Sebastián / Madrid",
+      "type": "Private",
+      "degree": "All grados (incl. English/bilingual)",
+      "reason": "September start only. A single annual admission and enrolment cycle (new-student enrolment April–May per the official enrolment page). No February entry for new degree students mentioned.",
+      "source_urls": [
+        "https://en.unav.edu/admission-and-financial-aid/degree/enrollment",
+        "https://en.unav.edu/admission-and-financial-aid/degree/admission"
+      ]
+    },
+    {
+      "university": "Universidad de Deusto",
+      "city": "Bilbao / San Sebastián / Madrid",
+      "type": "Private",
+      "degree": "All grados (incl. English-taught BMA + International Relations, Bilbao)",
+      "reason": "September start only. The official undergraduate application page (indexed text) gives the 2027-28 application window as 2–30 Nov 2026 for a September 2027 start. Deusto pages block automated fetching (HTTP 403), so the text could not be re-read directly. An aggregator claim of a 'February intake' could not be verified on deusto.es and is presumed to refer to postgraduate/exchange.",
+      "source_urls": [
+        "https://www.deusto.es/en/home/study/admissions/undergraduate/1-solicitud-de-ingreso/tramite",
+        "https://www.deusto.es/en/home/study/courses/double-degree/bma-international-relations"
+      ]
+    },
+    {
+      "university": "Mondragon Unibertsitatea",
+      "city": "Arrasate-Mondragón / Oñati / Bilbao etc.",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "September start only. The official registration-dates page gives registration for the 2027-28 intake from 16/10/2026 to 14/04/2027 (Engineering, BCC) or 28/05/2027 (Business, HUHEZI), then an extraordinary period. No February entry.",
+      "source_urls": [
+        "https://www.mondragon.edu/en/bachelors-degree/registration-dates-procedures"
+      ]
+    },
+    {
+      "university": "Universidad Católica de Valencia San Vicente Mártir (UCV)",
+      "city": "Valencia and other sites",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "September start only. The official new-student key dates run one annual cycle (early application from 1 Dec, early reservation 8–24 Feb, official reservation from 1 Mar; €300 reservation). No second-semester entry and no English-taught grado listed.",
+      "source_urls": [
+        "https://www.ucv.es/nuevos-alumnos/fechas-de-interes",
+        "https://www.ucv.es/admision-y-becas/condiciones-de-la-reserva-y-matricula"
+      ]
+    },
+    {
+      "university": "Universidad Europea del Atlántico (UNEATLANTICO)",
+      "city": "Santander",
+      "type": "Private",
+      "degree": "All grados (Spanish-taught)",
+      "reason": "September start only. Official deadlines page: admissions from 7 Jan until capacity; new-student registration 16 Jun–14 Sep (extraordinary to 15 Oct). The only 'February' item is an early round for completing studies (TFG, up to 12 ECTS), not an intake. Pre-registration/place reservation €360.",
+      "source_urls": [
+        "https://www.uneatlantico.es/en/students/deadlines-for-admission-and-registration",
+        "https://www.uneatlantico.es/en/students/pre-enrolment-and-enrolment"
+      ]
+    },
+    {
+      "university": "Universidad Europea Miguel de Cervantes (UEMC)",
+      "city": "Valladolid",
+      "type": "Private",
+      "degree": "In-person grados (Spanish-taught)",
+      "reason": "September start only. Official in-person admission page: pre-registration from 26/28 Jan 2026; enrolment June–July 2026 for the 2026-27 year; no February entry. Pre-registration €500–1,000 deducted from tuition. Online grados are run separately (uemconline) and are online-only.",
+      "source_urls": [
+        "https://grados.uemc.es/admision",
+        "https://www.uemc.es/p/informacion-y-plazos"
+      ]
+    },
+    {
+      "university": "Universidad Pontificia de Salamanca (UPSA)",
+      "city": "Salamanca / Madrid",
+      "type": "Private",
+      "degree": "All grados (Spanish-taught)",
+      "reason": "No February intake for new students found, and no English-taught grado listed. The admissions page (JS-rendered) shows only the standard annual process, so this is a weak negative. Treat as September start only.",
+      "source_urls": [
+        "https://www.upsa.es/admisiones",
+        "https://www.upsa.es/"
+      ]
+    },
+    {
+      "university": "Universidad Católica de Ávila (UCAV)",
+      "city": "Ávila",
+      "type": "Private",
+      "degree": "In-person grados; hybrid (semipresencial) and virtual grados",
+      "reason": "In-person grados have a single admission window, 2 Feb–16 Oct 2026, so September start only. Hybrid and virtual grados have a 2nd admission window, 16 Nov 2026–1 Mar 2027, which suggests a second-semester entry, but these are hybrid/online and Spanish-taught. Not visa-suitable, and the applicant needs English or French.",
+      "source_urls": [
+        "https://www.ucavila.es/images/files/GuiaEstudiante/26-27/grado/2.ADMISION.GR.PRES.HIBR.26.27.pdf",
+        "https://www.ucavila.es/images/files/GuiaEstudiante/26-27/grado/2.ADMISION.GR.VRT.26.27.pdf"
+      ]
+    },
+    {
+      "university": "Universidad Loyola Andalucía",
+      "city": "Sevilla (Dos Hermanas) / Córdoba",
+      "type": "Private",
+      "degree": "Grado en ADE Bilingüe (Spanish/English) and all grados",
+      "reason": "February entry exists only for exchange students (spring-semester nominations 14 Oct–15 Nov). Full degrees are September start only: the 2026/27 admission tests run Nov 2025–Sep 2026 for the September 2026 intake. The bilingual track is partly Spanish.",
+      "source_urls": [
+        "https://www.uloyola.es/servicios/oficina-internacional/incoming-students/faq",
+        "https://www.uloyola.es/grados/grado-ade-bilingue"
+      ]
+    },
+    {
+      "university": "Universidad del Atlántico Medio",
+      "city": "Las Palmas de Gran Canaria",
+      "type": "Private",
+      "degree": "All grados (Spanish-taught)",
+      "reason": "Taught in Spanish only — applicant needs English or French. February starts seen (Psychology, Primary/Infant Education) are for the Virtual/telepresencial versions, advertised via partner Magister (non-official lead, not verified on the university site). Online, so not visa-eligible either.",
+      "source_urls": [
+        "https://www.universidadatlanticomedio.es/admision/accesogrado",
+        "https://web.magister.com/unam-psico-feb25/"
+      ]
+    },
+    {
+      "university": "Universidad Fernando Pessoa-Canarias",
+      "city": "Las Palmas / Guía (Gran Canaria)",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "UNVERIFIED: the official site (ufpcanarias.es → ufpcanarias.com) is behind a captcha and could not be read, and the search budget was exhausted. No evidence found of a February intake or an English/French-taught grado. Presumed September start, Spanish-taught.",
+      "source_urls": [
+        "https://www.ufpcanarias.com/"
+      ]
+    },
+    {
+      "university": "UNIE Universidad",
+      "city": "Madrid",
+      "type": "Private",
+      "degree": "English-taught Bachelors: Business Administration, Business Analytics, Economics, International Business, International Relations, Marketing & Communication, Psychology, Dentistry",
+      "reason": "September/October start only. The official programme pages show 'Starts on OCT 2026' (Bachelor in Business Administration, English, Campus Arapiles) and 'SEP 2026' (International Business, International Relations, Psychology). No February intake shown.",
+      "source_urls": [
+        "https://www.universidadunie.com/programmes/bachelor-business-administration",
+        "https://www.universidadunie.com/bachelor-international-business",
+        "https://www.universidadunie.com/grados-universitarios-madrid"
+      ]
+    },
+    {
+      "university": "Universidad Intercontinental de la Empresa (UIE)",
+      "city": "Vigo / A Coruña",
+      "type": "Private",
+      "degree": "All grados (e.g. Ingeniería en Sistemas Inteligentes, Administración de Negocios Digitales)",
+      "reason": "September start only ('INICIO Agosto 2026'; tuition billed September–June). Taught in Spanish and English, with only the 6th semester in English (B2 needed), so mostly Spanish. Reservation €1,500 paid before the admission letter.",
+      "source_urls": [
+        "https://uie.edu/grado/grado-en-ingenieria-en-sistemas-inteligentes/",
+        "https://uie.edu/grado/grado-en-administracion-de-negocios-digitales-de-uie/"
+      ]
+    },
+    {
+      "university": "Universidad San Jorge (USJ)",
+      "city": "Villanueva de Gállego (Zaragoza)",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "September start only. Per the official admission page (indexed text; direct fetch blocked with 403): pre-admission phases end 30 Aug and 6 Sep 2026, the process closes 30 Sep 2026, and the 2026-27 year starts 8 Sep 2026. Spanish-taught with English requirements of A2–B2 depending on degree.",
+      "source_urls": [
+        "https://www.usj.es/admision/proceso-admision/grados"
+      ]
+    },
+    {
+      "university": "Universidad EUNEIZ",
+      "city": "Vitoria-Gasteiz",
+      "type": "Private",
+      "degree": "All grados (e.g. Grado en Ciberseguridad, presencial, 40 places)",
+      "reason": "No February intake advertised and no English/French-taught grado listed. The programme page gives in-person, 08:00–15:00, with no language/start beyond the standard academic year. Presumed September start, Spanish-taught.",
+      "source_urls": [
+        "https://www.euneiz.com/grados-universitarios/grado-ciberseguridad/",
+        "https://www.euneiz.com/"
+      ]
+    },
+    {
+      "university": "Universidad Europea de Valencia",
+      "city": "Valencia",
+      "type": "Private",
+      "degree": "English-taught bachelors (Business Management & Entrepreneurship, International Business, Computer Engineering, etc.) and Spanish grados",
+      "reason": "September start only. The official pages show 'Inicio: 13 sep. 2027' (Ingeniería Informática Valencia) and promote 'Discount on place reservation for 27/28 intake'. No February intake for degrees; a spring semester exists only for study-abroad/foundation courses. (Universidad Europea de Madrid is covered by another agent.)",
+      "source_urls": [
+        "https://universidadeuropea.com/grado-ingenieria-informatica-valencia/",
+        "https://universidadeuropea.com/en/degree-international-business-valencia/",
+        "https://universidadeuropea.com/en/valencia-degree-programmes/"
+      ]
+    },
+    {
+      "university": "Universidad Europea de Canarias",
+      "city": "La Orotava (Tenerife)",
+      "type": "Private",
+      "degree": "All grados (e.g. ADE)",
+      "reason": "September start only. The official ADE page lists only September start dates ('Inicio: 1/7/14 sep 2026', '13 sep 2027').",
+      "source_urls": [
+        "https://universidadeuropea.com/grado-administracion-direccion-empresas-ade/canarias/"
+      ]
+    },
+    {
+      "university": "UNIR Universidad Internacional de La Rioja",
+      "city": "Logroño (online)",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "Online-only — not eligible for a student visa. The site returned HTTP 403 to automated fetching. UNIR is known to run several start dates a year (including February); not re-verified because of the block.",
+      "source_urls": [
+        "https://www.unir.net/"
+      ]
+    },
+    {
+      "university": "VIU Universidad Internacional de Valencia",
+      "city": "Valencia (online)",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "Online-only — not eligible for a student visa (homepage: 'Clases online interactivas en directo', 'enseñanza... online'). Lists several calls a year (October dates shown); February start not verified.",
+      "source_urls": [
+        "https://www.universidadviu.com/es/"
+      ]
+    },
+    {
+      "university": "UDIMA Universidad a Distancia de Madrid",
+      "city": "Collado Villalba (online)",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "Online-only — not eligible for a student visa (homepage: 'Descubre todos nuestros grados online', distance learning).",
+      "source_urls": [
+        "https://www.udima.es/"
+      ]
+    },
+    {
+      "university": "Universidad Internacional Isabel I de Castilla",
+      "city": "Burgos (online)",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "Online-only — not eligible for a student visa (homepage: 'ESTUDIO ONLINE', 'EXÁMENES ONLINE O PRESENCIALES'; advertises rolling class start dates).",
+      "source_urls": [
+        "https://www.ui1.es/"
+      ]
+    },
+    {
+      "university": "UTAMED Universidad Tecnológica Atlántico-Mediterráneo",
+      "city": "Málaga (online)",
+      "type": "Private",
+      "degree": "All grados",
+      "reason": "Online-only — not eligible for a student visa (homepage: '100% online', 'Online / Semipresencial').",
+      "source_urls": [
+        "https://www.utamed.es/"
+      ]
+    },
+    {
+      "university": "UOC Universitat Oberta de Catalunya",
+      "city": "Barcelona (online)",
+      "type": "Private (publicly funded foundation)",
+      "degree": "All grados",
+      "reason": "Online-only — not eligible for a student visa (homepage: 'modelo educativo 100 % en línea'). UOC runs two enrolment periods per year (Sept/Oct and Feb/Mar semesters).",
+      "source_urls": [
+        "https://www.uoc.edu/es"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ucam.edu/noticias/enero-un-buen-momento-iniciar-un-grado-ucam",
+      "title": "UCAM news: 'Enero, un buen momento para iniciar un grado en la UCAM' (12/01/2026)",
+      "official": true,
+      "last_updated": "2026-01-12",
+      "used_for": "Feb-2026 entry list: in-person grados (all Spanish) + all semipresencial/online"
+    },
+    {
+      "url": "https://www.ucam.edu/noticias/ucam-abre-nuevo-matricula-enero",
+      "title": "UCAM news: 'La UCAM abre de nuevo la matrícula en enero' (15/01/2025)",
+      "official": true,
+      "last_updated": "2025-01-15",
+      "used_for": "Feb-2025 entry list with modality/language; deadline 28 Feb 2025"
+    },
+    {
+      "url": "https://www.ucam.edu/noticias/ucam-posibilita-comenzar-estudios-grado-tambien-enero",
+      "title": "UCAM news: 'La UCAM posibilita comenzar estudios de grado también en enero' (18/01/2024)",
+      "official": true,
+      "last_updated": "2024-01-18",
+      "used_for": "Feb-2024 entry list incl. 'Odontología (Inglés, Cartagena)'"
+    },
+    {
+      "url": "https://www.cope.es/emisoras/region-de-murcia/murcia-provincia/murcia-san-javier/noticias/nuevas-oportunidades-estudiar-ucam-grados-posgrados-matricula-abierta-febrero-20260114_3286253.html",
+      "title": "COPE Murcia: UCAM grados y posgrados con matrícula abierta en febrero (14/01/2026)",
+      "official": false,
+      "last_updated": "2026-01-15",
+      "used_for": "Lead/confirmation of 2026 second-semester entry"
+    },
+    {
+      "url": "https://www.ucam.edu/sites/default/files/public/vicerrectorado-calidad-ordenacion-academica/calendario.pdf",
+      "title": "UCAM Calendario Académico 2026/27 Sede Murcia",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "2nd-semester classes start 1 Feb 2027"
+    },
+    {
+      "url": "https://www.ucam.edu/sites/default/files/public/vicerrectorado-calidad-ordenacion-academica/calendario-cartagena.pdf",
+      "title": "UCAM Calendario Académico 2026/27 Sede Cartagena",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "2nd-semester classes start 1 Feb 2027"
+    },
+    {
+      "url": "https://www.ucam.edu/sites/default/files/public/la-universidad/normativa/normativa-de-acceso-admision-y-matricula-de-grado-y-master.pdf",
+      "title": "UCAM Normativa de Acceso, Admisión y Matrícula Grado y Máster, Curso 2026/27",
+      "official": true,
+      "last_updated": "2026/27 edition",
+      "used_for": "Access routes (graduates, foreign studies ≥30 ECTS), non-refundable pre-registration/reservation, NO-UE specific refund policy, 10% transfer/30-ECTS quota"
+    },
+    {
+      "url": "https://international.ucam.edu/sites/ucam.edu.en/files/documentos/refund_policy.pdf",
+      "title": "UCAM International Refund Policy (PDF)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Reservation fee refund on visa denial and conditions"
+    },
+    {
+      "url": "https://www.ucam.edu/sites/default/files/public/la-universidad/normativa/normativa-de-gestion-economica-en.pdf",
+      "title": "UCAM Finance Division Regulations for Official Degrees (EN)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Pre-enrolment non-refundable; reservation fee as advance deducted; €1,100/€2,000 non-refundable amounts; international students follow international regulations"
+    },
+    {
+      "url": "https://international.ucam.edu/services/finance-division",
+      "title": "UCAM International – Finance Division",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "'The reservation fee will automatically be deducted once you confirm your enrolment'"
+    },
+    {
+      "url": "https://international.ucam.edu/studies/bachelor-in-dentistry-cartagena-on-campus",
+      "title": "UCAM – Bachelor's Degree in Dentistry, Cartagena (English)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Tuition 15,200€/yr (253.33€/ECTS), English B2, Spanish B2 before 3rd year, fee box"
+    },
+    {
+      "url": "https://international.ucam.edu/studies/bachelor-in-business-administration",
+      "title": "UCAM – Bachelor's Degree in Business Administration (English)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "English BBA: 7,550€/yr, B2 English, fees €150/€390/€450/€96.12; no Feb intake"
+    },
+    {
+      "url": "https://international.ucam.edu/sites/ucam.edu.en/files/public/admissions/guidelines.pdf",
+      "title": "UCAM Registration and Pre-inscription Guidelines (PDF)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Pre-enrolment portal steps; UNED/homologation document reference"
+    },
+    {
+      "url": "https://www.uspceu.com/en/academic-programs/degree/business-administration-and-management",
+      "title": "CEU San Pablo – Business Administration and Management",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Start date September 2027; 2026-27 fees"
+    },
+    {
+      "url": "https://www.uspceu.com/Portals/0/docs/conocenos/normativa-universitaria/Normas-generales-para-alumno-de-nuevo-ingreso-grado.pdf",
+      "title": "CEU San Pablo – Normas generales nuevo ingreso grado",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Single annual selection/pre-registration cycle; €60 selection fee; non-refundable reservation"
+    },
+    {
+      "url": "https://www.uchceu.es/docs/nuevo-alumno/tasas-academicas/grado/campus-valencia.pdf?id=2026",
+      "title": "CEU UCH – Honorarios nuevo estudiante 2026-2027 Campus Valencia",
+      "official": true,
+      "last_updated": "2026-27",
+      "used_for": "Annual payment cycle (Sept start); English/French track fees; no visa refund of academic fees"
+    },
+    {
+      "url": "https://www.uchceu.es/en/new-student/degree/fees",
+      "title": "CEU UCH – Fees page",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Reservation/registration structure"
+    },
+    {
+      "url": "https://uf3ceu.es/normativas/calendario-academico-uf3.pdf",
+      "title": "CEU Fernando III – Calendario académico 2026/27",
+      "official": true,
+      "last_updated": "2026/27",
+      "used_for": "Single September start"
+    },
+    {
+      "url": "https://www.ufv.es/en/study-degree-computer-engineering-madrid-spain/",
+      "title": "UFV – Computer Engineering (English/Spanish)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Start September 2027; English-track price"
+    },
+    {
+      "url": "https://www.ufv.es/en/undergraduate-admission-process/",
+      "title": "UFV – Undergraduate admission process",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "€80 test, €950 reservation; single intake"
+    },
+    {
+      "url": "https://www.comillas.edu/en/degrees/bachelors-degree-in-business-administration-and-management-ade-e-2-english/",
+      "title": "Comillas – ADE E-2 English",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Start 01/09/2027"
+    },
+    {
+      "url": "https://en.unav.edu/admission-and-financial-aid/degree/enrollment",
+      "title": "Universidad de Navarra – Enrollment",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Annual enrolment April–May"
+    },
+    {
+      "url": "https://www.mondragon.edu/en/bachelors-degree/registration-dates-procedures",
+      "title": "Mondragon – Registration dates",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Registration 16/10/2026–14/04 or 28/05/2027"
+    },
+    {
+      "url": "https://www.ucv.es/nuevos-alumnos/fechas-de-interes",
+      "title": "UCV – Fechas de interés",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Annual reservation cycle"
+    },
+    {
+      "url": "https://www.uneatlantico.es/en/students/deadlines-for-admission-and-registration",
+      "title": "UNEATLANTICO – Deadlines",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Registration 16 Jun–14 Sep; Feb item = TFG completion"
+    },
+    {
+      "url": "https://grados.uemc.es/admision",
+      "title": "UEMC – Admisión grados presenciales",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Pre-registration Jan, enrolment June–July"
+    },
+    {
+      "url": "https://www.ucavila.es/images/files/GuiaEstudiante/26-27/grado/2.ADMISION.GR.PRES.HIBR.26.27.pdf",
+      "title": "UCAV – Guía admisión grado presencial/híbrida 2026/27",
+      "official": true,
+      "last_updated": "Edición enero 2026",
+      "used_for": "In-person window to 16 Oct 2026; hybrid 2nd window 16 Nov 2026–1 Mar 2027"
+    },
+    {
+      "url": "https://www.uloyola.es/servicios/oficina-internacional/incoming-students/faq",
+      "title": "Loyola – Incoming students FAQ",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Feb only for exchange"
+    },
+    {
+      "url": "https://www.universidadunie.com/programmes/bachelor-business-administration",
+      "title": "UNIE – Bachelor in Business Administration (English)",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Starts OCT 2026"
+    },
+    {
+      "url": "https://uie.edu/grado/grado-en-ingenieria-en-sistemas-inteligentes/",
+      "title": "UIE – Grado en Ingeniería en Sistemas Inteligentes",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Inicio Agosto 2026; 6th semester in English; €1,500 reservation"
+    },
+    {
+      "url": "https://universidadeuropea.com/grado-ingenieria-informatica-valencia/",
+      "title": "Universidad Europea Valencia – Ingeniería Informática",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "Inicio 13 sep 2027"
+    },
+    {
+      "url": "https://universidadeuropea.com/grado-administracion-direccion-empresas-ade/canarias/",
+      "title": "Universidad Europea Canarias – ADE",
+      "official": true,
+      "last_updated": "not shown",
+      "used_for": "September starts only"
+    },
+    {
+      "url": "https://web.magister.com/unam-psico-feb25/",
+      "title": "Magister – UNAM Psicología inicio febrero 2025 (partner page)",
+      "official": false,
+      "last_updated": "not shown",
+      "used_for": "Lead only: Atlántico Medio Feb starts are virtual"
+    }
+  ],
+  "notes": "ENGLISH/FRENCH REQUIREMENT APPLIED (coordinator update). Result for this group: NO confirmed in-person, English- or French-taught official grado with a February 2027 start for new students. (1) UCAM (Murcia/Cartagena) is the only university in this group with a real, recurring February start for NEW grado students: lists published 18/01/2024, 15/01/2025 and 12/01/2026; enrolment open to end of February; classes from the 2nd semester (1 Feb 2027 in the 2026/27 calendars). In 2025 and 2026, however, the in-person grados on those lists were all Spanish-taught. Business and IT entries were Marketing y Dirección Comercial (presencial), Telecom Engineering (presencial), and ADE and Informática only online. The single English-taught entry ever listed was Odontología (Inglés, Cartagena) in Jan 2024; it is recorded in programs as UNCLEAR. UCAM also announces the list only in mid-January, too late for a December visa letter unless International Admissions confirms individually. (2) UCAM money rules worth knowing even for a September plan: application €150 + pre-inscription €390 (never refundable); opening of records €450; insurance €96.12. The reservation fee is deducted from tuition and refunded on visa denial if the visa was applied for before the programme start date, with genuine documents and proof of refusal. Withdraw in writing to admissions@ucam.edu; refund in about 6 weeks. Normativa 2026/27 art. 23: NO-UE students and English programmes have a specific refund policy. Foreign graduates without homologation need ≥30 ECTS recognised (access route 11); otherwise they enter on the school-leaving credential (UNEDasiss/homologation). (3) CEU group: CEU San Pablo (BBA in English €13,500/yr, reservation €950), CEU UCH (English and French tracks in Veterinary, Dentistry, Medicine etc.) and CEU Fernando III are all September-only. CEU UCH's rules explicitly deny refunds of academic fees for visa refusal for international students. (4) UFV: English tracks (Computer Engineering €12,465/yr, Business Analytics, Economics & Finance, IR; French-bilingual Physiotherapy) are September 2027 only. (5) The rest (Comillas, Navarra, Deusto, Mondragon, UCV, UNEATLANTICO, UEMC, UPSA, Loyola, UNIE, UIE, USJ, EUNEIZ, UE Valencia, UE Canarias) are September/October only. Second-semester entry appears only in online or hybrid modes: UCAM online/semipresencial, UCAV hybrid/virtual (2nd window 16 Nov 2026–1 Mar 2027), Atlántico Medio virtual. Online-only universities (UNIR, VIU, UDIMA, Isabel I, UTAMED, UOC) are rejected; UOC and UCAV-virtual clearly have February entry. Limitations: Deusto, USJ, Loyola and UNIR block automated fetching; Pessoa-Canarias is behind a captcha. The session web-search budget ran out mid-sweep, so some negatives (UPSA, EUNEIZ, Pessoa-Canarias) are weak. Nothing suggests a February English intake at any of them. Contacts: UCAM International Admissions admissions@ucam.edu, enquiries@ucam.edu, +34 968 27 88 83 (international), info@ucam.edu / +34 968 27 88 00 (general), gestioneconomica@ucam.edu (finance). CEU UCH international@uchceu.es. UFV info@ufv.es, +34 91 324 80 64. UCAV estudiaconnosotros@ucavila.es. Suggested action: email admissions@ucam.edu asking whether any English-taught grado (BBA, Dentistry Cartagena, Sport Sciences, Psychology) will admit new first-year or transfer students in February 2027, and whether a conditional admission letter can be issued by early December 2026."
+}
