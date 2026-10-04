@@ -72,6 +72,8 @@ SOURCE_COLS = [
     ("Research group", 18, "_group"),
 ]
 
+LANG_OK = re.compile(r"english|ingl[eé]s|angl[eè]s|french|franc[eé]s|fran[cç]ais", re.I)
+
 HEADER_FILL = PatternFill("solid", fgColor="1F3864")
 HEADER_FONT = Font(bold=True, color="FFFFFF")
 WRAP = Alignment(wrap_text=True, vertical="top")
@@ -164,6 +166,23 @@ def main():
                 sources.setdefault(u, {"url": u, "title": "", "official": "", "last_updated": "",
                                        "used_for": f"Rejected: {r.get('university')}", "_group": group})
 
+    # The applicant can only study in English or French: anything else is rejected.
+    kept = []
+    for p in programs:
+        if LANG_OK.search(str(p.get("language", ""))):
+            kept.append(p)
+        else:
+            rejected.append({
+                "university": p.get("university", ""), "city": p.get("city", ""),
+                "type": p.get("type", ""), "degree": p.get("degree", ""),
+                "reason": f"Taught in {p.get('language') or 'an unconfirmed language'} — "
+                          "applicant needs English or French. (Feb 2027 start: "
+                          f"{p.get('feb_start_confirmed', '?')})",
+                "source_urls": [u for urls in (p.get("field_sources") or {}).values()
+                                for u in ([urls] if isinstance(urls, str) else urls or [])][:3],
+                "_group": p["_group"],
+            })
+    programs = kept
     programs.sort(key=deposit_sort_key)
 
     wb = Workbook()
